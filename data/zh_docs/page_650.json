@@ -1,0 +1,18 @@
+{
+  "page_id": "650",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "46",
+  "page_title": "WEB 报警设置",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n### 操作步骤：\n1.打开电脑游览器输入设备本地网络IP地址，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef35298af179240004652dcb08a904ad)\n2.点击&quot;普通设置&quot;&gt;&gt;&gt;&quot;告警设置&quot;来到报警功能配置界面\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b723d6a6ea5e5eddf309a4bfd4fa182e)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5ccb851f02ea3693c0fa0da4e4225876)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=9722668d46ae633011efd2fd1ae764f5)\n3.点击“基本设置”栏，配置设备报警录像文件的时长（报警前预录时长+报警后延录时长=报警录像时长）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=26b434a62f48144c437c6e9921071713)\n4.点击“告警联动”栏，配置设备IO报警输入开关、触发高低电平、功能、联动抓拍图片通道和上传、联动报警视频通道和上传、联动设备显示屏本地放大通道和联动设备报警输出out（这里的上传指的是TTX通天星私有平台）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ae9f7599e493deadc94805e0ce7141e1)\n5.点击“告警输出”栏，配置设备报警输出线sensor out电平和功能\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=719d5af2146987629ab80f18f800229c)\n",
+  "s_number": "5",
+  "addtime": "2026-07-31 16:01:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-31 15:52:02",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--WEB配置"
+}

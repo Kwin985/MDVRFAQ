@@ -1,0 +1,18 @@
+{
+  "page_id": "303",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "82",
+  "page_title": "Client-APP previews the video through hotspot connection",
+  "page_content": "#### Prerequisites:\n- If the device has a WiFi module, switch to AP mode to connect. If the device does not have a WiFi module, insert E-set into the USB port to connect to the hotspot\n- Download and install the APP. For the download address, see the document above---Platform Software Download Article\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=495fc9af2faf4ee566b99ffcb219ac0b)\n\n#### Operation steps:\n#####The device has a WiFi module\n1. Remotely enter Menu&gt;&gt;Settings&gt;&gt;Network Settings&gt;&gt;WiFi, enter the WiFi configuration interface\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=931c314da1b9161e60810da3e9751d61)![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=9bd70f30d7191ffad9363bd937ae32c3)\n\n2. Move to the WiFi mode bar Select AP mode, confirm and save\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c2125bf7205e4929f53fdbb15d923c26)\n\n\n#####Insert the E-set module into the device\n1. Insert the E-set into the USB port of the device, the device will automatically recognize and switch to AP mode\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp; sign=eca0749b47221101c1d7a3eb904e9fde)\n\n2. Press the arrow key on the remote control to go to the network status to view the AP mode status\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=103265f6a01e29f8d8368a2192d6d50a)\n\n#####Connection and use\n1. Open the mobile phone wifi to connect to the wifi named &quot;MDVR+device number&quot;, click to connect, the default password is 99999999\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b7f56a01dd80dd7e4577d3abc8aca785)\n\n2. After the phone connects to the device's wifi hotspot, click the 'Search' button\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=13a76b562c79bba03a16d1f2df5079de)\n\n3. After entering, click the device connected to wifi No.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0c106c32949f3d54e6a909536b25f364)\n\n4. Preview channel screen in default interface\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=846d5ba2c4550e54f7e32a57bd05fe9e)\n\n5. The bottom navigation bar has Playback menu, more (WEB menu) configuration use\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b32fc84f8e77446b3cf6accc163d27ee)![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2e1097fa787603d2ec7fb9414c9674a1)\n",
+  "s_number": "6",
+  "addtime": "2025-09-26 16:01:30",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:01:30",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Platform Function - Tongtianxing CMS V7"
+}

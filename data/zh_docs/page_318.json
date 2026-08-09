@@ -1,0 +1,18 @@
+{
+  "page_id": "318",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "IO输入联动报警",
+  "page_content": "#### 如何在设备端触发一个报警？\n\n除了设备内部检测触发的报警，如 没插硬盘，SD卡或摄像头等；还可以通过外力来使设备触发一个报警，如IO，Gsensor，ADAS，DSM等，这里讲下设备最常用的通过 IO输入 来使设备触发一个报警；\n进入设备菜单 设置 》报警设置 》输入 具体设置界面如下图；比如我要触发一个刹车的报警，那么勾选 输入3 的使能，设备接上串口线，找到标注 SENSOR-IN3 的线，将其和红色5V或12V的线接一起即可触发报警；在实际装车环境中请把 SENSOR-IN 线和车辆信号线接一起\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5fad4f27b403cf689b19ec5326479d97)\n\n#### 触发报警后能做什么？\n平台上可以看到设备上传的报警信息，平台会根据报警信息生成统计报表，可以在平台上或设备上做报警联动，下面讲设备的报警联动功能：\n\n#### 如何在触发报警后对通道进行抓拍和录像？\n如我上面的步骤启用了输入3刹车的功能，那么在联动的菜单这里，可以对应配置刹车的抓拍配置和录像配置及显示的通道，如下图二，进入抓拍上传的配置菜单，可以选择要抓拍的通道，抓拍后要把图片上传到平台的通道，录像的配置菜单里也是一样；显示的作用是，当触发报警时，在车载显示屏上把某个通道全屏化，如要做倒车影像的功能，通道三的摄像头安装在了车尾，那么可以勾选报警输入，在联动这里对应地选择显示CH3，把报警输入线和倒车信号线接一起，当车辆倒车时，车载显示屏上就会全屏化通道三的画面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=22de1c55aef07b408f5280c8765c8476)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a34f02f7e1b647a68942436f0ebd782f)\n\n#### 如何远程配置？\n1. 点击“告警设置”；\n2. 点击“输入”；\n3. 勾选对应的使能;\n4. 选择高电平或低电平时触发；\n5. 选择对应的功能\n6. 设置完毕之后记得点击“设置参数”；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9be10d31656c4f78c2219a501c31bb63)\n\n7. 点击“联动”；\n8. 设置抓拍和录像；\n9. 选择联动时要抓拍和录像的通道，并选择勾选要不要发送给平台；\n10. 选择触发时要显示的通道；\n11. 配置完参数后点击“设置参数”；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fd0872defd2b29c5eaa85f352ff3705a)\n\n#### 报警录像时长配置：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f57595677bbf2522aaaaac5a0ec46b30)\n预录时长：当触发报警时，往前多少秒的录像文件作为报警录像；\n延录时长：当触发报警时，往后多少秒的录像文件作为报警录像。一个报警录像文件就由这两部分组成\n\n\n",
+  "s_number": "7",
+  "addtime": "2025-11-04 17:32:07",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:45:37",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

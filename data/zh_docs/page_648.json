@@ -1,0 +1,18 @@
+{
+  "page_id": "648",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "MDVR_Info_Tool运维扫描工具",
+  "page_content": "##### 说明\n- 需要提前部署拿到通天星服务器登入账号和地址\n- 该软件使用通天星平台的WEB API获取我司设备的ID、设备类型、APP版本、所有固件版本等信息\n- 使用了平台的WEB端口和6607端口\n- 下面“C:\\Users\\yong\\Documents\\DeviceData\\”路径举例是指按照默认C盘用户路径，实际根据用户电脑用户路径更改\n\n##### 操作步骤\n1.点击下载解压软件 [GetMDVRInfoTool.v2.9.1201.1.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c8c4131c3580cc1fb87cb0579f5dd297 &quot;[GetMDVRInfoTool.v2.9.1201.1.zip&quot;)，运行MVMS_Client.exe程序\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b558bde0e84f9739dd7ecc3535c73498)\n\n2.在登录对话框，使用用户名和密码登录通天星平台, 工具将扫描该用户所管理的所有设备。\n3.默认web端口88，可在登录对话框上或者配置文件LocalConfig.xml的SdkPort字段修改。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7e1964dd7821613b57d358dbc678ee70)\n4.登入进去后程序每隔20秒，会扫描在线的设备，并发出请求获取设备的信息，获取的设备信息在界面中会显示，另外也会保存到“C:\\Users\\yong\\Documents\\DeviceData\\FullData.xml”文件中。再次启动程序，程序会读取FullData.xml, 已经获取的设备，不会再次获取，也不会显示在界面列表中。想要重新扫描已经获取过的设备，可以备份FullData.xml文件后删除给文件，系统将新建该文件。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=4a410792cfeb9316bf7a6725d5ede4f6)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=dbe87d1968b81074b973ead305a1d9e5)\n5.生成Excel：把FullData.xml文件拖进Excel的空表中，Excel将自动生成表格文件。\n6.支持系统选项：每次启动生成新的数据文件\n选中：则支持每次启动程序时，生成新的数据文件，存放目录：“C:\\Users\\yong\\Documents\\DeviceData\\\n文件格式Data_年月日_时分秒.xml”\n不选中：则数据存放在执行文件目录下的“C:\\Users\\yong\\Documents\\DeviceData\\FullData.xml”中\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c97a016ed5e76db9bad0de61b5e296b8)![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8a184d664b5e7ecd8f2af37ecfb49f9b)\n7.单个设备查询\n在工具栏上，点击“单个设备查询...”按钮，在弹出的对话框中输入设备ID，确定后，查询结果将出现在\n列表中\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=a4837f0b479c2b61ee5d6be97c5236ca)\n8.发送自定义命令\n指定设备号，可使用下面3种方式之一指定设备号\n8.1在设备号的编辑框中，输入1个或者多个设备号，逗号分隔。\n设备的信息列表中，点击条目，工具将自动填写该设备号到设备号编辑框中。\n在设备的信息列表中，批量选定条目（鼠标单击开始，鼠标单击+Shift键结束），点右键，选择菜单项‘给设备发送命令...’,\n工具将添加批量设备ID到编辑框中，选择命令，即可对所有设备生效。\n8.2在命令窗口中输入xml命令，也可以在命令列表中选择。\n8.3点发送命令，在结果窗口中，将显示相应的结果。如果是批量设备，将显示每个设备ID和反馈的结果。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7a5b9394b74a7fffc27fbd459e2ae29b)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fc67ef922c13ca66444ab7efaf310c73)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=703c2f611cce5aa326e7667e86d92519)\n\n\n",
+  "s_number": "8",
+  "addtime": "2026-07-29 17:25:46",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-29 16:20:04",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

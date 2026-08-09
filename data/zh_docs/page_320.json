@@ -1,0 +1,18 @@
+{
+  "page_id": "320",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "摄像头混插配置",
+  "page_content": "[TOC]\n\n\n### 说明\n-  摄像头混插指的是同种制式不同分辨率的AHD摄像头任意插到设备的某个通道上，但设备上需要配置，当前出货的机型都支持\n\n### 操作步骤\n#### 遥控配置方法\n遥控器进入设备的设置菜单，录像设置 》摄像头，如下图\n比如，通道一接了1080的摄像头，那么请勾选1080P，通道二插了720P的摄像头，请勾选720P，通道三插了1080P的摄像头请勾选1080P，以此类推。。。注意，设置保存完毕后请重启设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e3626c81da30cb482015eaff6925dd80)\n\n#### 远程配置方法\n客户端上右键点击在线的设备，点击 参数配置，接着如下图步骤操作\n1. 点击“编码设置”；\n2. 点击“摄像机类型”；\n3. 选择通道使用的类型；\n4. 设置完毕之后点击“设置参数”；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2a65fb8c9c601e96280be8ad58935e42)",
+  "s_number": "7",
+  "addtime": "2025-09-08 16:20:25",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:20:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

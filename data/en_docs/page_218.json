@@ -1,0 +1,18 @@
+{
+  "page_id": "218",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "The remote control configuration screen displays OSD information",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Available remote control, normal display screen\n- The camera is plugged in and the screen is displayed (refer to basic configuration --- [Remote control configuration camera resolution, format](http://pug2.4000329988.com/fqa/web/#/13/188 &quot;Remotely configure camera resolution and format&quot;))\n\n###Operation steps\n1. Press the remote control [ENTER] key to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bb37e2439916c95cbbd85b1203663bcd)\n2. Select [Settings] in the main menu interface and press the &quot;ENTER&quot; key to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef8cec62bf649e15d1312ea2187b49fa)\n3. Move to [Encode] in the settings interface and press the &quot;ENTER&quot; key to enter the encoding settings\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5f68332482b852145264dd883e051181)\n4. Press the right arrow key to move to the [OSD] settings interface, press the &quot;ENTER&quot; key to enter the editing state, move the down arrow key to check the OSD information to be displayed, confirm and save to take effect immediately, the display effect is as shown below.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4e11d79d55e11759447891a87a9f94ef)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=036fbb00bc632d3c8fb7adf2888531a6)\n",
+  "s_number": "8",
+  "addtime": "2025-12-25 17:33:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:25:03",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "94",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "61",
+  "page_title": " AI BSD calibration instructions for drawing irregular lines with",
+  "page_content": "[TOC]\n\n\n### Prerequisites:\n- Use a browser to access the WEB in the same network environment as the device (you can use the local IP address of the wired access device or connect to the device hotspot to access 192.168.42.100)\n- Upgrade customized firmware\n\n### Steps:\n1. Access device WEB (direct network cable access &amp; AP hotspot access)\n   The device connects to the device's AP hotspot through the mobile phone to access the device's 192.168.42.100 address. For the operation steps, refer to the AP hotspot connection instructions - Q&amp;A\n2. The device uses a wired direct connection to access the device's local IP address through the computer to access the WEB address.\n3. Steps to check the local IP address of the device: Connect the vehicle-mounted device to the network cable, use the remote control to enter Menu &gt; Settings &gt; Network Settings &gt; Network\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ae12940da4875bb56664587d9804c5cc)\n4. The WEB address of the browser access device, for example, the local IP address of the network cable access device is 192.168.43.253, enter the password &quot;Adm_123&quot; to log in.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d09aad971fcada49a9cf39701439d77e)\n5. Click &quot;General Settings&quot;&gt;&gt;&quot;Alarm Settings&quot;&gt;&gt;&quot;Left BSD Settings&quot; (select which BSD channel to calibrate based on actual installation needs) to come to the BSD line drawing calibration menu.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f4eecbde69bd126c4f4a603c3b0ee6aa)&gt;&gt;![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=daef1623c0df9c47da3a09f8b05dbcda)\n6. Click &quot;Redraw 3 Alarm Areas&quot; to start drawing lines, as shown below. After drawing 3 lines, save it and it will take effect. Note that line drawing only supports rectangles and only four lines can be drawn in one area.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2eefaa95e7c98ad14e1c2c6fc4fe191)\n",
+  "s_number": "6",
+  "addtime": "2025-12-31 15:57:47",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:30:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--AI function"
+}

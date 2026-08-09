@@ -1,0 +1,18 @@
+{
+  "page_id": "325",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "98",
+  "page_title": "Device RTSP protocol streaming",
+  "page_content": "### Description\n- Device RTSP protocol: Through a player that supports obtaining RTSP streams, you can directly obtain the device's video without the need for the device to report to the platform (MDVR B/S end &gt;&gt;&gt; PC computer C/S end)\n- The regular versions of the new MDVR models currently shipped all support this function\n\n### Operation steps\n1. Get the player for the device's RTSP streaming media:\nThe computer has a player that supports playing RTSP video streams, such as VLC. You can click the link to download and install the VLC player https://vlc-media-player.en.softonic.com/\n2. Connect the device network to WiFi. The IP network segment of the Internet access must be the same as that of the computer and can be pinged, or the device and computer can communicate with each other through a wired connection.\nFor example: Computer IP 192.168.1.212   Device end 192.168.1.113\nNote that when connecting to WiFi, the device cannot be too far away from WiFi, the signal is too weak, and the request cannot be received.\n\n3. Download VLC media player on your computer and install it\n4. Open VLC media player--enter the following content and change the IP to the device IP\n\n```xml\nrtsp://admin:999999@192.168.1.5:554/live/vchn=1_stream=0_achn=1\n```\n&gt; Notes:\nrtsp stream:\nrtsp://admin:999999@192.168.1.5:554/live/vchn=1_stream=0_achn=1\nstream=0 0 means main stream 1 means sub-stream\nadmin:999999 is the user name and password for accessing the device, which does not need to be modified by default\nvchn=1 1 means the first channel\nachn=1 1 means requesting audio\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e169453f41d1f54ea8a3af6907c5f12)\n\n5.Change the framed IP part to the device IP and fill in the network streaming address, then click Play\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d69e0c316bba61717cfc493fe551c6e8)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c95088ed830b085ce0d463581ad5bed5)\n",
+  "s_number": "11",
+  "addtime": "2025-11-04 18:05:41",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:18:10",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Registration platform configuration"
+}

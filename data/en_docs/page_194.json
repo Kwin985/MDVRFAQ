@@ -1,0 +1,18 @@
+{
+  "page_id": "194",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "112",
+  "page_title": "Control configuration of power on/off mode and delay",
+  "page_content": "[TOC]\n\n### Prerequisites\n- A usable remote control and normal display screen\n\n### Operation steps\n1.Enter the main menu function interface, operate the direction keys and ENTER key of the remote control, and enter the settings-basic settings-power on/off menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8529df093c1023a3882ffff59be83742)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=29024f147779df6cd6cc568489ed9369)\n2.Select &quot;Ignition Mode,&quot; check the &quot;Power-off Delay&quot; checkbox, enter the desired delay duration (range: 0–65535 minutes), and configure which cameras remain active during the ACC disconnection delay period.\nps: The vehicle ACC ignition device is turned on and works, and the ACC disconnection device is turned off. For wiring, refer to &quot;[Power line wiring installation](http://pug2.4000329988.com/web/#/13/181 &quot;Power Cord Wiring Installation&quot;)&quot; Ignition mode schematic diagram introduction.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b1842a3a8e9c8ead025ad0f2a2df8437)\n3.Select &quot;Timer Mode&quot; and enter the scheduled start time and shutdown time\nps: Wiring reference &quot;[Power Cord Wiring Installation](http://pug2.4000329988.com/web/#/13/181 &quot;Power Cord Wiring Installation&quot;)&quot; Timer Mode Schematic diagram introduction\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ca863f3f7e6c168fb3aba3a5f54477ef)\n4.Select &quot;Ignition off mode&quot; to support waking up and starting the machine for a period of time in the shutdown state due to collision and other situations (not yet implemented)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c559f820bd313fe845ce46239c70c5cf)\n",
+  "s_number": "6",
+  "addtime": "2026-07-31 18:51:19",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:14:16",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Basic Configuration"
+}

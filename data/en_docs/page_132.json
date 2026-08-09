@@ -1,0 +1,18 @@
+{
+  "page_id": "132",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "98",
+  "page_title": "CMSV7--Local WEB registration private platform",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- The device network can access the Internet normally, for example: 4G dial-up is successful or wired network routing is successful or WiFi connection is successful, refer to the article introduction of &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Function&quot;!\n- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n\n### Operation steps:\n1. Open the computer browser and enter the local network IP address of the device, fill in the login password &quot;Adm_123&quot; and click &quot;Login&quot;. The local network IP address of the device can be viewed by referring to the article introduction of &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Function&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3e7dd3e6a73bfa81d053a4a6ff25dba8)\n\n2. Click &quot;General Settings&quot; &gt;&gt;&gt; &quot;Basic Settings&quot; &gt;&gt;&gt; &quot;Basic Information&quot; &gt;&gt;&gt; &quot;Device Number&quot; column, fill in the device number and save\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b4d3a9f12efd80401783537fd5d4f751)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d8695d7bb9c330f3c8e7515131d3b576)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f7fa3e0243519ea8fce08e3adbf92a43)\n\n3. Return to the previous menu and click &quot;Network Settings&quot; &quot;&gt;&gt;&gt;&quot;Platform Settings&quot; column Select IP or domain name registration, fill in the IP or domain name address, fill in the port number to save\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3b5f2eb876420e159f3c22f9b99b17ba)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3a4a7028e6fd9e983bb6c61beed7133f)\n\n4. Return to the previous menu and click &quot;System Information&quot; in the upper right corner &quot;&gt;&gt;&gt;&quot;CMS Module&quot; column Click to expand View the first item Status Is the connection successful That is, whether the private platform registration is successful\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9aa5196d6f1ecb6b8eb39d776ea745ee)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c94fdc2b43d3d3bacc80021022ee3ae5)",
+  "s_number": "5",
+  "addtime": "2025-11-04 18:03:53",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:20:26",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Registration platform configuration"
+}

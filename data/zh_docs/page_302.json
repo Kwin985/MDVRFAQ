@@ -1,0 +1,18 @@
+{
+  "page_id": "302",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-APP通过热点连接预览视频",
+  "page_content": "#### 前提条件：\n- 设备带WiFi模块，切换成AP模式即可连接，设备不带WIFI模块，可在USB口插入E-set进行热点连接\n- 下载安装好APP，下载地址查看上面文档---平台软件下载 文章\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=495fc9af2faf4ee566b99ffcb219ac0b)\n\n#### 操作步骤：\n#####设备带WiFi模块\n1、遥控进入菜单&gt;&gt;设置&gt;&gt;网络设置&gt;&gt;WiFi,进入WiFi配置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ab06a1bdb61e6896fe617e162fef0c1e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=915c81ab24825b68953f418530c27b0a)\n\n2、移动到WiFi模式栏 选择AP模式，确认保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d45c78579fdc1a2d5df5864bcb388268)\n\n#####设备插入E-set模块\n1、把E-set插入到设备的usb口，设备会自动识别并切到到AP模式\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eca0749b47221101c1d7a3eb904e9fde)\n\n2、遥控按方向键来到网络状态可以查看AP模式状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=936f28bb9365f8cfbc05ca51ffc54cee)\n\n#####连接使用\n1、打开手机wifi连接“MDVR+设备号”名称的wifi，点击连接默认密码是99999999\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7698d72a5afa301c12537d74d0de4cd2)\n\n2、手机连上设备的wifi热点后点击‘搜索’按钮\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=18c56d9701d50b71b31078d718b34508)\n\n3、进去后点击连接wifi的设备号\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aa4ad95a759d34e2c7a7c4c659609bc6)\n\n4、默认界面预览通道画面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b052a79fa0023a3a76d74d0bb3fa1346)\n\n5、底部导航栏分别有 回放菜单、更多（WEB菜单）配置使用\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=85b987a17eae1e2a1db43ff7cf849698)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5f492c2f7f41bb5068b6fbe49aba6b86)\n",
+  "s_number": "20",
+  "addtime": "2025-12-17 14:00:46",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:20:48",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

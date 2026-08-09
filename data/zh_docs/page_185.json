@@ -1,0 +1,18 @@
+{
+  "page_id": "185",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "遥控配置摄像头分辨率、制式",
+  "page_content": "[TOC]\n\n\n### 前提条件\n-  可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤\n\n设置之前请务必核准摄像头的硬件分辨率、制式参数（如图），如摄像头的硬件分辨率、制式和设备配置不符，摄像头将不会显示图像。\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2985bf484ad79810a6d446c9e3565767)\n摄像头标签参数示意图\nps:中国大部分地区使用PAL制式，日本、韩国及东南亚地区与美国等欧美国家使用NTSC制式,具体以实际购买摄像头参数为准。\n\n1、遥控按中间“ENTER”确认键来到登入界面，输入默认管理员密码 “999999”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1aecd555bcb6ba1c3929718f2e53fd6a)\n\n2、点击【设置】=【录像设置】 ，进入需按下遥控器“ENTER键”。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=61df8c9c59def7b5b7b53eda832e636d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5af15873fa9f931e48f88bcc74dfdb1c)\n3、选择对应摄像头制式和勾选分辨率参数，设置完成后点击【确定】。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1c0db0b6a32944ce657ebf807e47eac1)\n4、 再次回到一级菜单【工具】=【操作管理】\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=40dc0a1ae2c7366e602ad8e178f981d6)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c6ce74afad3bd87f012f46023f088384)\n5、 选择【重启】按键后，点击【同意】，系统重启完毕分辨率设置生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6662dd702fe94ac16f5739d48a4b2dda)\n",
+  "s_number": "3",
+  "addtime": "2025-09-08 16:16:00",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:16:00",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

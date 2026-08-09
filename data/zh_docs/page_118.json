@@ -1,0 +1,18 @@
+{
+  "page_id": "118",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "部标JT808--参数下发注册平台",
+  "page_content": "\n[TOC]\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍！\n\n### 操作步骤：\n\n1. 设备通过本地工具、远程插件等方式下发，具体方法参考”功能使用”&gt;&gt;&gt;”配置工具”文章介绍\n\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1f8aa55fd856ff85dfbd9d9df238f335)\n2.  复制开启部标功能开启参数指令\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;\n&lt;stNetWorkMode ucFD_EnableHR808=&quot;129&quot;/&gt;\n&lt;/VariCfgSec&gt;\n```\n&gt; 配置是否开启同时注册两个部标平台，ucFD_EnableHR808=&quot;1&quot;注册第一个部标平台，=&quot;129&quot;注册第一、二个部标平台\n\n2.  复制注册第一个部标平台的参数指令下发，一般必填项有：IP或域名地址、端口号、手机号、设备号等，有些平台上线还需设备定位成功，具体质询平台方要求\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;\n&lt;st808CMS1 ucFD_AddressType=&quot;0&quot; uiFD_IP=&quot;139.9.251.220&quot; strFD_Domain=&quot;&quot; usFD_Port=&quot;6608&quot; /&gt;\n&lt;stCarInfo  strFD_DeviceNum=&quot;&quot; strFD_Phonenumber=&quot;13662226086&quot;  strFD_ProvincialId=&quot;&quot; strFD_CityDomainId=&quot;&quot; strFD_CarColors=&quot;&quot;  strFD_TerminalType=&quot;&quot; strFD_TerminalID=&quot;&quot; strFD_FacturerID=&quot;&quot; strFD_CarVIN=&quot;&quot; strFD_CarType=&quot;&quot;  /&gt;\n&lt;/VariCfgSec&gt;\n```\n&gt; 参数注释：\nucFD_AddressType=&quot;0&quot;:连接类型IP注册;&quot;1&quot;域名注册；\nuiFD_IP=&quot;139.9.251.220&quot;:注册IP地址；\nstrFD_Domain=&quot;hy.ent.cn&quot;:注册域名地址；\nusFD_Port=&quot;6608&quot;:注册端口\n下列信息根据平台厂家要求注册上线必须认证来，一般必填项有手机号、设备号等，具体质询平台方要求\nstrFD_DeviceNum=&quot;&quot;:设备号 \nstrFD_Phonenumber=&quot;13662226086&quot;:手机号\nstrFD_ProvincialId=&quot;&quot;:省域ID\nstrFD_CityDomainId=&quot;&quot;:市域ID \nstrFD_CarColors=&quot;1&quot;:汽车颜色黄;&quot;0&quot;蓝;&quot;2&quot;黑;&quot;3&quot;白 \nstrFD_TerminalType=&quot;&quot;:终端型号\nstrFD_TerminalID=&quot;&quot;:终端ID\nstrFD_FacturerID=&quot;&quot;:厂商ID\nstrFD_CarVIN=&quot;&quot;:车架号\nstrFD_CarType=&quot;&quot;:终端类型\n\n1. 复制注册第二个部标平台的参数指令下发，不需要设备同时注册两个部标平台时忽略此步骤\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;\n&lt;st1078CMS1 ucFD_AddressType=&quot;0&quot; uiFD_IP=&quot;139.9.251.220&quot; strFD_Domain=&quot;&quot; usFD_Port=&quot;6608&quot; /&gt;\n&lt;stCarInfo1 strFD_DeviceNum=&quot;&quot; strFD_Phonenumber=&quot;13255556666&quot;  strFD_ProvincialId=&quot;&quot; strFD_CityDomainId=&quot;&quot; strFD_CarColors=&quot;&quot;  strFD_TerminalType=&quot;&quot; strFD_TerminalID=&quot;&quot; strFD_FacturerID=&quot;&quot; strFD_CarVIN=&quot;&quot; strFD_CarType=&quot;&quot;  /&gt;\n&lt;/VariCfgSec&gt;\n```\n&gt; 参数注释：参考第2步注释\n\n1. 下发成功后立即生效，不需要重启\n4. 本地遥控查看是否注册成功或平台查看是否上线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f252484b1c08097f805e80ee855cbd53)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6d535f47b9c41f85b32096371959e20f)\n",
+  "s_number": "10",
+  "addtime": "2026-07-03 16:08:17",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:37:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

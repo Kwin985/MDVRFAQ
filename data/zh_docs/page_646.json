@@ -1,0 +1,18 @@
+{
+  "page_id": "646",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "Telnet 固件升级方法",
+  "page_content": "##### 说明：\n- 此方法适用于设备直连启动ping通IP 地址情况下升级固件，如果不通参考下面文档升级\n[烧录程序TFTP升级方法-联咏](http://pug2.4000329988.com/fqa/web/#/11/326 &quot;烧录程序TFTP升级方法-联咏&quot;)\n- 下面步骤每次输入命令都要输入回车键发送\n- 擦除分区命令扩展：\nflash_eraseall /dev/mtd11   擦除MDVR系列 AI分区\nflash_eraseall /dev/mtd8    擦除MDVR系列 APP分区\n\n##### 准备工作：\n1.MDVR、HDD OR SD 适配器和电源线、航空头转网口线、网线、电脑、固件（询问技术）\n2.安装串口调试工具或window电脑提前开启telnet模块并打开cmd窗口，具体搜索网上开启方法\n\n\n##### 方法1、img文件升级\n1.1 设备插入拷贝好img\\crc升级固件放置第一分区根目录下插入设备关锁，可参考设备固件升级文章[固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;)\n1.2 USB转网口线和网线直连电脑后通电开机，ping挂掉的设备IP是否通，192.168.1.188\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=54660c5e43c3670c81516e97e3a5eb91)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=abc6af3c9c342583959c6c507dbea61d)\n1.3 输入 “telnet 192.168.1.188” 命令登入，登入用户名和密码询问我司技术\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d7c2d089dbdf9fa6ec554a69a68916e5)\n1.4 输入“ mount -t vfat /dev/mmcblk0p1 /mnt/”挂载SD卡，各个设备机型路径不一致询问我司技术\n1.5 输入“cd /mnt/” 切换挂载路径，输入“ls” 查看SD卡拷贝固件根目录是否挂载成功\n1.6 输入“flashcp -v M15Sv-APP-V010101.img /dev/mtd8” 擦除重新升级APP固件（这里以M15SV为例）\n显示3个OK后 输入“reboot”重启设备查看是否正常启动\n1.7 正常启动后会继续升级crc文件请不要断电关机\n\n##### 方法2、擦除分区 crc文件升级\n2.1 设备插入拷贝好crc升级固件放置第一分区根目录下插入设备关锁，可参考设备固件升级文章[固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;)\n2.2 USB转网口线和网线直连电脑后通电开机，ping挂掉的设备IP是否通，192.168.43.253\n2.3 输入 “telnet 192.168.43.253” 命令登入，登入用户名和密码询问我司技术\n2.4 输入“ killall -9 MDVR_App” 回车，输入“feeddog&amp; ”回车 杀掉程序和喂狗\n2.5 输入“flash_eraseall /dev/mtd8” 擦除APP分区，各个设备机型分区不一致询问我司技术\n2.6 输入“reboot”重启设备查看是升级APP固件，升级完后是否正常进入系统工作。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ecd6ff896b99042c95b6f3736410cf5f)\n",
+  "s_number": "6",
+  "addtime": "2026-07-23 19:09:18",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-23 15:30:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

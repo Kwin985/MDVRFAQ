@@ -1,0 +1,18 @@
+{
+  "page_id": "257",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "RS232 485协议互转盒使用配置",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232or485 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  RS232 485协议互转盒和外设 |  1 |常用接线工具| n |\n\n### 必要说明\n- RS232 485协议互转盒是我司定制开发款串口协议互转工具，方便扩展当设备协议不够或不同时接入外设使用，这里以**485温感外设**接入设备232协议为例。\n- 互转盒232协议那头的5/12V电源是接入电源给盒子供电，当接入外设时供电根据外设电源直接接入设备IO线束的12or5V线供电使用。\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bbfffe8ff091d68efc8244b8c2551273)\nMX-232T485\n\n### 操作步骤\n#### 一、接线\n**232输入接线**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6860c8389f783cf112b90f574a225341)\n\n**485输出接线**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9aa3f85addab5be98514f37b893fb0e4)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能温度传感器、协议类型type1、波特率9600，其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b0d0898c14c62b1bc0cb1b0dccced50c)\n\n#### 三、测试\n重启后按遥控方向键来到串口状态查看是否已连接和显示当前环境温度\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=85f93c1193e57ec733fb9de16ec645f4)\n\n#### 四、接口定义\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=69088ad252af57427f9bf78c395d4c0c)\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "9",
+  "addtime": "2025-11-04 17:50:49",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:53:15",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

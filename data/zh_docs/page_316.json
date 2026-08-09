@@ -1,0 +1,18 @@
+{
+  "page_id": "316",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "远程控油控电配置使用",
+  "page_content": "[TOC]\n\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR设备  |  1 |MDVR sensor out IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n| 继电器  |  1 |常用接线工具|n  |\n\n\n### 必要说明\n- 平台远程下发指令控制设备sensor out输出或关闭12V电压来控制车辆电路或油路\n- 使用条件：**IO输出功能要配控油/控电、设备要定位、ACC要关闭状态**\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5dacd17c0b198ff4fa9d80a74d184b7f)\n**实物图**：\n\n### 操作步骤\n#### 一、接线\n下图不包含MDVR接电的示意，请接好设备的电源正极，负极及黄色ACC线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6047979285263cc8ae2f459457def94a)\n\n\n#### 二、设备或平台菜单配置\n**设备**\n遥控进入设置&gt;&gt;报警设置&gt;&gt;输出，输出1 选择控油，确认保存重启生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=276a9f23330dc814b11e2b2f187f63d5)\nps:功能 输出1对应 sensor out1 IO线，输出2对应 sensor out2，有些设备有两个sensor out线 例如M51HV 根据实际接线使用哪根配置哪个功能。\n**平台**\n2.1 登入平台客户端，选择在线需要控制车辆，鼠标右键选择 参数配置 插件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=106dea269fe81fcc81524782aed191c0)\n2.2 点击告警设置&gt;&gt;输出&gt;&gt;输出1&gt;&gt;控油or控电&gt;&gt;设置参数，配置完成后远程重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5172c91eecdc5c70af371363d196ea94)\n\n#### 三、测试\n3.1 在平台菜单点击信息管理&gt;&gt;车辆信息 选择刚刚配置的车辆 点击编辑图标，在 设备信息 栏勾选 油路控制器or电路控制器，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f2fdca06da4bd3425567c42bac79304e)\n\n3.2 点击实时预览菜单回到监控车辆界面，点击在线控制车辆&gt;&gt;控制模块菜单&gt;&gt;断开油路 or关闭电源，弹出输入登入密码窗口 输入正确的密码，确认，弹出 断开油路，成功 代表下发控制命令成功 设备断开油路。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f663dc490a589dcf8e68e57d65e83560)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1cd8e0965a21d15907b6c3a718d62af6)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e5d48c772cb09899f9083950fb7c3e40)\n\n### 常见问题\n控油or控电不成功？\n1.检查设备和继电器及被控设备的接线，继电器正常可用\n2.该功能需设备正常定位，检查设备是否已经定位，还需设备的ACC状态为关闭，请把ACC线断开\n3.sensor out的输出功能要与操作的功能一致，如接线使用sensor out1，设备端设置sensor out1的输出功能为 控油\n\n\n\n\n",
+  "s_number": "16",
+  "addtime": "2025-11-04 17:52:59",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:55:49",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

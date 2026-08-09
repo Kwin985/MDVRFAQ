@@ -1,0 +1,18 @@
+{
+  "page_id": "286",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "46",
+  "page_title": "Web基本设置",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n- 或设备带WiFi模块切换成AP模式，电脑连接AP热点访问192.168.42.100地址\n\n### 说明\n- WEB基本设置用于配置设备一些基本参数，例如：时间、镜像和重启\n\n### 操作步骤：\n\n1、打开电脑游览器输入设备本地网络IP地址或AP热点地址来到WEB登入界面，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=20bf4f571655954ba109e9b1d3b92ad0)\n2、在登陆页面输入用户名和密码进入设置页面，默认用户名：admin，默认密码：Adm_123 \n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e3a6ac6d8e54681291ae05b00debb94)\n3、在设置页面点击 普通设置&gt;&gt;基本设置进入基本设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=816aee7d2f7d3c3c63a79f27ec3c9979)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d1aa49606e87e9c507a1dbf6b655c043)\n4、 时间栏可以设置自动校时、日期、时间、时区参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=85587a5af087b3c99eb4e32d85117272)\n5、夏令时栏可以设置开启夏令时相关参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8b1d37e0da0ad9cdaf581c31ef816d31)\n6、 基本信息栏可以设置注册私有平台设备ID号、设备定位模式、车牌、司机姓名、公司名称\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8409c4f5a1767f68dbfe99722a59c8f3)\n7、串口配置栏可以设置串口配置参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=1b93aa02dff3e92fde5c488c3c6084e8)\n8、开关机设置栏可以设置开关机模式、ACC延时时长、ACC关闭开关通道录像\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=776458b58412c35591f885c9db4792a4)\n9、镜像设置栏可以设置视频通道画面镜像上、下、左、右旋转\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2f1eabc2bf9768555400b9c3f56a5f42)\n10、编码设置栏可以设置视频制式、显示屏输出分辨率、视频or音频编码类型、音量大小、视频通道编码参数，注意这里设置视频编码关闭请按重下到上顺序关闭\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=004f0b4b47f284a0ff113bd2e8afd6c4)\n11、OSD叠加栏可设置开关OSD一些OSD叠加视频显示和自定义OSD通道叠加\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b74676886e423c6e4737fcd55bc60869)\n12、点击 重启设备栏 可以重启设备\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=715ac109bb29ff717489066f389dfdfd)",
+  "s_number": "3",
+  "addtime": "2026-07-30 15:03:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:03:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--WEB配置"
+}

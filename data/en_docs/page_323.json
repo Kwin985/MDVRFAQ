@@ -1,0 +1,18 @@
+{
+  "page_id": "323",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "58",
+  "page_title": "Routing Function",
+  "page_content": "##### Introduction to routing function: This device can connect to the Internet and provide other devices with Internet access through AP or network cable\n\n### Operation steps\n##### M91HV ball camera, single-soldier built-in WiFi module device:\nInsert 4G card, dial successfully, turn on AP mode, connect the mobile phone or computer to AP, and the mobile phone or computer can connect to the Internet through the device's 4G\n\n##### Car-mounted wired devices:\nConnect the network ports of two devices together through a network cable. For example, if there are two devices A and B, device A goes online through 4G dial-up and checks the configuration of the local network, as follows\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=51ec42cd28d1f79e3fff653d1b8b9fc5)\nThen device B changes the gateway to the IP address of device A, and pay attention to modifying the IP address and MAC address of device B so that they are not the same as those of device A, as follows\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=96323d69ae3e8a99386839a15c3fba70)\nIn this way, device B can connect to the platform through the network of device A. The same is true for the computer. Consider the computer as device B, and connect the device and computer through a network cable. Then configure the computer's network as shown above. The computer can connect to the Internet through the network of device A. If you don't know how to configure the computer's network, please go to [《How to set the IP address》](https://jingyan.baidu.com/article/3c343ff7be3c570d377963a5.html &quot;《How to set the IP address》&quot;)\n",
+  "s_number": "6",
+  "addtime": "2025-11-04 18:02:32",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:17:28",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Network Configuration"
+}

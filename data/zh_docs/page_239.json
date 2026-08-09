@@ -1,0 +1,18 @@
+{
+  "page_id": "239",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "“通天星”部标透传工具",
+  "page_content": "#####   本章节介绍808部标扩展的&quot;数据下行透传&quot;协议功能，下面是“通天星”平台说明，其他支持扩展的平台大同小异，找到下行透传窗口填入数据类型和要下发的参数配置即可！\n\n### 操作步骤：\n1、设备注册上标准808协议通天星平台\n2、鼠标右击选择“808功能菜单”→→→“数据下行透传”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=461ceab58f4543736dfe770718baf645)\n3、透传消息类型输入“242”\n4、透传消息内容输入需要下发的参数参数指令，例如复制下面重启指令下发，其他指令参考[常见配置参数指令](http://pug2.4000329988.com/fqa/web/#/11/74 &quot;常见配置参数指令&quot;)文章\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_REBOOT&quot;&gt;&lt;/VariCfgSec&gt;\n```\n5、在操作结果栏查看状态是否设置成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7be04b1e9a5441a91dfb79c380677048)\n注：808下行透传只支持参数下发配置，看不到配置后的返回值。下发成功后需通过其他方式验证配置功能是否成功。",
+  "s_number": "1",
+  "addtime": "2025-11-17 16:38:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:08:55",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

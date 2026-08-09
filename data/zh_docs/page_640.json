@@ -1,0 +1,18 @@
+{
+  "page_id": "640",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "本地配置工具Mxc_Config生成配置文件",
+  "page_content": "#### 前提条件：\n- 设备的SD或TF卡已经在设备工作使用分好两个分区状态，可以插入电脑查看判断如下图，如果没有使用过先插入设备开机会自动格式化分区等设备开始录像后在关机取出卡。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f386b80eb5021b678193cc40b5895568)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=cbfc8cbd0fb480a198ed4f665f343303)\n- 配置导入设备参考：[CMSV7--本地配置导入注册平台](http://pug2.4000329988.com/fqa/web/#/11/111 &quot;CMSV7--本地配置导入注册平台&quot;)\n\n#### 操作步骤：\n1.点击下载[MmxConfig](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;)配置工具，解压安装后点击“Mxc_Config” 打开工具![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=defe35a6af2c5dc8e58fa0bde53b14df)\n2.打开工具后点击 New Config\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=78a16a4c306bf2f6d684f1daad0adf43)\n3.进入该界面后，配置红框内的参数即可让设备上线：设置参数后需要点击SET，图标变灰即可，最后点击保存（Save Config）。\n注意：3G/4G一般不需要设置，默认即可，无配置不要去点击SET（特殊APN设置按照演示图更改相关参数）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=551a934910a78eb3bb41b4462c41ffd9)\n演示：\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=35535a66b9453403da0a14d07a49112d)\n4.保存文件后，在工具文件夹内把该文件（config.xml）拷贝到存储卡内，插入设备，开机后自动完成导入配置。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ac9d1c73adea6e9d54ad37aadd4fd092)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=318697b487120ab08cc09f636be95d5a)",
+  "s_number": "5",
+  "addtime": "2026-06-24 15:57:05",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-06-24 15:23:32",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

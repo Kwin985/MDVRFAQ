@@ -1,0 +1,18 @@
+{
+  "page_id": "217",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Configure sub-stream video encoding",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Available remote control, normal display screen\n- The camera is plugged in and the screen is displayed (refer to basic configuration --- [Remote control configuration camera resolution, format](http://pug2.4000329988.com/fqa/web/#/13/188 &quot;Remotely configure camera resolution and format&quot;))\n\n###Operation steps\n1. Press the remote control [ENTER] button to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef0ceefbfa405b7cfd69fcaab81dde1)\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; button to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7a3d1a3711467c7b48476ba8c8cfc098)\n3. Move to [Encode] in the settings interface and press the &quot;ENTER&quot; key to enter the main stream settings\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cc6ac4d7b4b7a68ba356c4d24319c266)\n4. Press the right arrow key to move to the [SUB] settings interface, press the &quot;ENTER&quot; key to enter the editing state, and move the down arrow key to the encoding mode selection item. Select the required mode. In the custom mode, you can change the image quality, frame rate, and bit rate parameters separately. Other modes automatically match the best value. Confirm and save and restart to take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=64fa861158275e4b92517a30d5bd0552)\n",
+  "s_number": "7",
+  "addtime": "2025-12-25 17:32:35",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:24:44",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

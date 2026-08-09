@@ -1,0 +1,18 @@
+{
+  "page_id": "635",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "语言相关-遥控菜单更改非中文或英文语言无法开机问题",
+  "page_content": "**问题描述：**\n前期MDVR系列产品因为一个删减占用FLASH语言空间BUG导致当你操作UI界面更改不是中文或者英文，例如配置法语保存重启会导致无法开机卡在 LOADING状态 如下图：\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=381f0f718dd1dcc843b81df3df2b7179)\n\n**解决方法：**\n准备工作：\n1.MDVR带网口设备接入一根网口转接线和网线，如图\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=50ee80a84978240e50cd3f910d9ebd62)\n2.带网口的电脑并且设置本地网口为192.168.1段范围，例如192.168.1.170\n\n\n开始操作：\n1.连接好网线跟电脑直连并且设备通电开机后电脑打开CMD窗口\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ffed004d248847374ffdc9af1ab04cce)\n2.复制输入&quot;Telnet 192.168.1.188&quot; 回车\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=60c5878ded3b7a6765b930130b636f21)\n3.输入用户名 root和密码，密码询问我司技术或业务人员协助操作\n4.继续复制输入&quot;rm -f /mnt/DB/config.xml /mnt/DB/M51H_cfg.db /mnt/user/config.xml&quot; 回车\n5.再次复制输入&quot;reboot&quot; 回车，这期间要是系统重启断开连接请重复1-5步骤完成操作\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=cca730190162355ad1f07cc6201f050e)\n6.输入reboot命令重启后系统将正确启动运行\n",
+  "s_number": "1",
+  "addtime": "2026-03-04 11:22:02",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-03-04 09:37:30",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

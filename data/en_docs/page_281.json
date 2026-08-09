@@ -1,0 +1,18 @@
+{
+  "page_id": "281",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "113",
+  "page_title": "Video file export",
+  "page_content": "[TOC]\n\n### Prerequisites:\n\n- MDVR host with USB port, remote control, display, storage medium and video files\n\n- The storage medium of the USB disk or USB interface must be in FAT32 format\n\n###Operation steps\n1. Insert the USB disk into the USB port, turn on the power, and press the left and right buttons on the remote control to go to the disk status interface to check whether the USB disk is recognized\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d0ece55bf61dd14de3c04d4a899f0e6f)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=3a6ea42c6f9f6a0e9d7d1b48859e7be8)\nps: If it is not recognized, please try to plug and unplug several times\n2. Enter the menu settings&gt;&gt;Recording settings&gt;&gt;Recording interface on the remote control, move to USB use, select Data export, and confirm to save.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8298be9afdb1b9cdd02d49f892539616)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=933d5fd23bccf72557c7bd9de9e53452)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d83269b380c1d3fabbcf64b89444217a)\n3. Press the return key to move to the Tools&gt;&gt;Data Export&gt;&gt;Video Export interface, select the disk location, video type, and time range of the device video storage, and press Confirm Search Query.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2fe48e170b6e219cfe95d6f4d14552ec)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=014b4c6a7268af00434afc8b78a2c18a)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e4355a090ffebf0d2dda983c5cc1d3ba)\n4. Move to the list of video files to be queried Press the confirmation button to export a video file you want to export. When the export progress bar pops up and disappears at 100%, it proves that the export is successful. Unplug the USB drive and insert it into the computer to play it using the dedicated playback software.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f70fd8ab4b3a68b4cc255df0fa1c3bc1)\n",
+  "s_number": "5",
+  "addtime": "2025-09-26 16:40:45",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:40:45",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Daily maintenance"
+}

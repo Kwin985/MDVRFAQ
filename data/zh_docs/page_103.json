@@ -1,0 +1,18 @@
+{
+  "page_id": "103",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "通天星客户端插件在线配置工具",
+  "page_content": "[TOC]\n### 必要说明\n- 只支持设备私有协议上线车辆配置；\n- 在线车辆网络良好畅通；\n- 一些功能配置设备必须支持才生效；\n- “智能识别配置”暂未启用；\n- 安装最新插件方法参考：[客户端-参数配置插件替换](http://pug2.4000329988.com/fqa/web/#/11/359 &quot;客户端-参数配置插件替换&quot;)\n\n### 操作步骤\n\n1. 使用账号登入客户端\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3edd2749fabcd35833d59ad239dd5ccd)\n2. 在默认监控界面鼠标右击在线需要修改的车辆，点击“参数配置”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6f15ac667760dbb8da4a2e0c0627db0c)\n3. 关于界面：可以查看设备版本号，在这个界面双击右键，可以查看设备型号\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=22019015aba8876c175f4ecbeff06340)\n4.网络界面：在这个界面，可以修改网络模式、GPS上传间隔、本地IP、WiFi以及4/5G参数，视频平台是指TTX私有协议，点击右边箭头翻页，可以设置PTT、808平台等参数。如需配置808上平台，下图框选的808参数都需要填写（IP域名二选一即可）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8d1bc081e86927d01620c596e7a2cfee)\n5.编码设置：可以设置主子码流录像的分辨率，视频镜像可以设置摄像头镜像（设置后需要重启设备生效）信息叠加可以打开或者关闭视频的OSD，设置摄像头分辨率时，需要点击“通道类型配置”在弹窗上修改（也需要重启才能生效）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=21265ee77bf0640628d0242fe6910776)\n6.告警设置:设置IO报警相关参参数、Gsensor等参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b508a6ddaa507cd63ecb1db0ab275d34)\n7.串口设置：配置串口和云台\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7f905620f012916f07a45df6b8f36eb3)\n8.驾驶行为：驾驶相关报警设置，常用超速报警，下图超速报警参数表示，当车速超过了100KM/H，且持续5秒以上，平台会收到超速报警，当车速低于80KM/H结束该次超速报警，如果不设置消警阀值，无论后面车速多少，都会实时上报超速报警到平台\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=99d2a03cafae910f1a6d501a6ed70431)\n9.用户与安全：设置车牌号以及设备登录界面密码修改\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d139ab23c60b39cb031714dd1729c275)\n10.AI基本配置：设置开启AI测试模式、校验、启动等相关配置\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=09d5bd0664bd31d1e67a269fc768cf58)\n11.ADAS配置：设置ADAS开启、标定和灵敏度相关参数配置\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ef605ef551679e0ca0779196f265f753)\n12.DSM配置：设置DSM开启、灵敏度相关参数配置\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d5d4d537fb87a4573f12796bc2a033ff)\n13.BSD配置：设置左右前后4个BSD开启、灵敏度相关参数配置\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f5d8891ebd41de6afcbc5a31fe449301)\n14.其他设置：主要设置时间、时区、夏令时、延时关机等参数。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=381de1466238e308db57a73cfd553aaf)\n15.自定义数据：可以下发自定义命令设置或者查询设备参数，在输入框输入参数后点击“设置参数”，输出框会返回结果，具体自定义命令参照我司FAQ链接设置参数、查询参数，或者咨询我司技术支持\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f5d4ce243874e8d6eb0921a9bcb3089f)\n ps:提示失败或没有反应请检查车辆在线是否正常、复制参数是否有误、设备是否不支持此命令\n ps:常见参数指令参考[常见配置参数指令](http://pug2.4000329988.com/fqa/web/#/11/74 &quot;常见配置参数指令&quot;)和[常见查询参数指令](http://pug2.4000329988.com/fqa/web/#/11/75 &quot;常见查询参数指令&quot;)\n\n\n\n\n",
+  "s_number": "3",
+  "addtime": "2026-06-18 19:07:28",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:09:29",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

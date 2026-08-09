@@ -1,0 +1,18 @@
+{
+  "page_id": "178",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "MDVR series LED light status definition",
+  "page_content": "### Introduction\nThis chapter will introduce the LED status of our vehicle-mounted MDVR series equipment. The LED positions are different but the status of each light has the same meaning.\n### Schematic diagram\n#####M51/52Hv series:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=937c2344b1b322f4217214156ec50b64)\n#####M32Hv series:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=305c869b848d0f012a3cdb52f70ec537)\n#####M16Hv series:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fbb467b75810e107981a7d3c9f6a6e0c)\n#####M15Hv series:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f693cd89f3199fba46e03decb07efa5c)\n#####Status description:\n· PWR (power indicator)\n· GPS (positioning indicator)\n· REC (recording indicator)\n· NET (network indicator)\nPWR: always on and flashing (device is powered on normally), always on (camera video is normal), flashing (video is lost, i.e. the device is not connected to a camera, no camera is connected or the camera settings do not match), off (device is not powered on);\nGPS: always on (GPS positioning is successful), flashing (GPS module exists but positioning is not successful), off (GPS module does not exist or GPS module is faulty);\nREC: always on (hard disk or SD card exists but not recording), flashing (recording), off (no storage medium);\nNET: always on (device is connected to the Internet normally and online), flashing (not registered on the platform), off (4G or WiFi module does not exist and is not on the platform)\n",
+  "s_number": "5",
+  "addtime": "2025-11-04 17:57:20",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:11:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

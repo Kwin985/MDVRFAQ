@@ -1,0 +1,18 @@
+{
+  "page_id": "255",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "Configuration and use of sound and light alarm",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR AI device | 1 | MDVR 485 IO harness | 1 |\n| Remote controller | 1 | Display | 1 |\n| Sound and light alarm | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- The sound and light alarm is used in conjunction with the MDVR AI device to trigger the BSD alarm, so the device itself must support the AI ​​BSD function and configure related parameters to trigger the alarm.\n- Generally, the MDVR 485 IO wiring harness will be made into an aviation connector for direct insertion before shipment. If there is no need to remove the wiring, it can be used to connect the 4 serial ports of the device and the alarm. For details, please refer to the [Detailed definition of aviation header pins](http://pug2.4000329988.com/fqa/web/#/13/182 &quot;Detailed definition of aviation header pins&quot;)\n- Currently, there are two models and four models for shipment. To distinguish between Chinese and English prompts, you must distinguish the language version when placing an order. The details are as follows:\nMX-SL-02-CH: Model A, Chinese\nMX-SL-02-EN: Model A, English\nMX-SL-CH-B-003: Model B, Chinese\nMX-SL-EN-B-003: Model B, English\n\n- Here, the **MX-SL-CH-B-003** sound and light alarm is taken as an example. The device menu configuration parameters are the same. For details, see the &quot;Model Corresponding Configuration Parameter Table&quot; below.\n**Model corresponding configuration parameter table**\n\n| Model | Serial port index|Serial port function|Protocol type|Baud rate|\n| ------------ | ------------ |------------ |------------ |------------ |\n| MMX-SL-CH-B-003 | RS485 | AlarmOut|Default|Default|\n\n**Actual picture**:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=79464a964b77cb971440ea531c570e4b)\nMX-SL-CH-B-003, MX-SL-EN-B-003\n\n### Operation steps\n#### 1. Wiring\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4ee090d5aecaa8bacc83ec4d8610a8e0)\n\n#### 2. Device menu configuration\nRemote control to enter menu&gt;&gt;Settings&gt;&gt;Serial port settings&gt;&gt;Serial port, serial port index configuration RS485, serial port function AlarmOut, other parameters default, confirm save restart device to take effect.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=27a0a6bf5efcc99d7c50ab2ff446e2be)\n\n#### 3. Alarm test\nAfter restarting, trigger any BSD alarm to link the sound and light alarm to sound and light alarm. For the AI BSD alarm function, refer to [Active Safety AI Local Remote Control Configuration](http://pug2.4000329988.com/fqa/web/#/11/145 &quot;Active Safety AI Local Remote Control Configuration&quot;)\n\n",
+  "s_number": "7",
+  "addtime": "2026-03-12 14:46:55",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:34:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "233",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "开启Gsensor功能",
+  "page_content": "[TOC]\n\n\n### 前提条件\n遥控配置：\n- 可使用的遥控、正常显示显示屏\n\n平台配置：\n- 设备以注册上线平台\n- 拥有参数配置权限账号和安装好客户端\n\n\n### 操作步骤\n####使用遥控器显示屏菜单开启\n\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f109a4eb1b0a8e3d6d5019aafadaa750)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c026905ed7ee64ec33e61da7ac07d074)\n3、在【设置】界面选择【报警设置】，按“ENTER”键进入报警设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aebb5916da028f192b6b362405e329c9)\n4、在【报警设置】界面按方向右键来到【加速度】界面，按“ENTER”键进入编辑状态，按方向下键移动到开启复选框 勾选开启，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f8e7ed4541e32f35d0ee48ec936580b8)\n\n####平台下发指令开启\n1、账号登入平台客户端，使用客户端插件发送命令开启，使用方法参考[通天星客户端插件在线配置工具](http://pug2.4000329988.com/web/#/11/103 &quot;通天星客户端插件在线配置工具&quot;)\n\n2、输入框复制下面命令 ，点击“设置参数”，完成后远程重启设备生效。\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stOSD ucFD_GSensorEnable=&quot;1&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a3961996553c80c65c2ffa5b821ce37e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7729814a30ada4f75ffaab703129147d)\n\n####开启后进行动态校准\n1、先开启此功能，接入GPS天线使其定位成功\n2、车辆开到平坦路面直线行驶且速度在20KM/H以上，保持行驶10s以上\n3、稍微急刹踩下紧急制动完成校准，校准成功后可以在显示屏查看状态或听语音提示（前提导入此语音包）\n显示 Mtn ACC Calibrated 表示校准成功\n显示 Stn ACC Calibrated 表示未校准成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=04168a177fcd1ea87e176697c38194d2)\n####各个报警字段说明\nRollover：翻转\nOverturn：翻车\nFront Impact：撞车\nRear Impact：追尾（被后车）\nLeft Impact：左侧碰撞\nRight Impact：右侧碰撞\nHarsh Acceleration：急加速\nHarsh Braking：急刹车\nLeft Harsh Cornering：向左急转弯\nRight Harsh Cornering：向右急转弯\n\n\n\n\n\n",
+  "s_number": "6",
+  "addtime": "2025-11-04 17:31:52",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:45:16",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "254",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "声光报警器配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR AI设备  |  1 |MDVR 485 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  声光报警器 |  1 |常用接线工具| n |\n\n### 必要说明\n- 声光报警器是在MDVR AI设备触发BSD报警联动使用，所以设备本身要支持AI BSD功能和配置相关参数来触发报警。\n- 出货一般会把MDVR 485 IO线束做好航空头直接插入使用，如果没有需要拆线对接设备和报警器的4根串口线使用，详情参考[航空头针脚详细定义](http://pug2.4000329988.com/fqa/web/#/11/174 &quot;航空头针脚详细定义&quot;)\n- 目前出货有两款四种型号，区分中文和英文提示音在下单选型时要区分语言版本，详情如下：\nMX-SL-02-CH :   A型号，中文\nMX-SL-02-EN :    A型号，英文\nMX-SL-CH-B-003 :  B型号，中文\nMX-SL-EN-B-003 : B型号，英文\n\n- 这里以**MX-SL-CH-B-003**声光报警器为例，设备菜单配置参数都一致，详情见下面“型号对应配置参数表”。\n**型号对应配置参数表**\n\n| 型号  |  串口索引|串口功能|协议类型|波特率|\n| ------------ | ------------ |------------ |------------ |------------ |\n|  MMX-SL-CH-B-003 |  RS485 | AlarmOut|默认| 默认|\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=79464a964b77cb971440ea531c570e4b)\nMX-SL-CH-B-003，MX-SL-EN-B-003\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4ee090d5aecaa8bacc83ec4d8610a8e0)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS485、串口功能AlarmOut，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3287981d8d444516f0cfe1b989762500)\n\n#### 三、报警器测试\n重启后触发任意一项BSD报警即可联动声光报警器发出声音和灯光报警,AI BSD报警功能开启使用参考[主动安全AI本地遥控配置](http://pug2.4000329988.com/fqa/web/#/11/145 &quot;主动安全AI本地遥控配置&quot;)\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "7",
+  "addtime": "2026-07-23 15:13:48",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:52:37",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

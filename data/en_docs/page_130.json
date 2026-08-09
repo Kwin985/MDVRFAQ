@@ -1,0 +1,18 @@
+{
+  "page_id": "130",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "98",
+  "page_title": "CMSV7--Parameters are sent to register a private platform",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- The device network can access the Internet normally, for example: 4G dial-up is successful or wired network routing is successful or WiFi connection is successful, refer to &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Function&quot; article introduction!\n\n### Operation steps:\n\n1. The device is issued through local tools, remote plug-ins, etc. For specific methods, refer to the &quot;Function Use&quot; &gt;&gt;&gt; &quot;Configuration Tool&quot; article introduction\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=497cf0d5bc5aa0317b8e63b5e62bd75b)\n\n2. Copy the parameter instructions of the registration platform and issue them. For specific instructions, refer to the [Common Configuration Parameter Instructions](http://pug2.4000329988.com/web/#/13/83 &quot;Common Configuration Parameter Instructions&quot;) article introduction\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stBaseInfo strFD_DeviceNo=&quot;111111&quot;/&gt; &lt;stCMS ucFD_AddressType=&quot;0&quot; uiFD_IP=&quot;&quot; strFD_Domain=&quot;&quot; usFD_Port=&quot;6608&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n&gt; Parameter Notes:\nstrFD_DeviceNo=&quot;111111&quot;:Device number;\nucFD_AddressType=&quot;0&quot;:Connection type IP registration;&quot;1&quot;Domain registration;\nuiFD_IP=&quot;&quot;:Registered IP address;\nstrFD_Domain=&quot;hy.ent.cn&quot;:Registered domain name address;\nusFD_Port=&quot;6608&quot;:Registered port\n\n3. It takes effect immediately after being successfully issued, and no restart is required\n\n4. Check whether the registration is successful locally or check whether the platform is online\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=abbdb8eb95ce22008911d79f9e887f6d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=070d67e7aedc0ca4090254906d58d311)\n",
+  "s_number": "3",
+  "addtime": "2025-11-04 18:03:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:19:39",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Registration platform configuration"
+}

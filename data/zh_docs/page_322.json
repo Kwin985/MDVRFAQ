@@ -1,0 +1,18 @@
+{
+  "page_id": "322",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "路由功能",
+  "page_content": "#####  路由功能简介：即本设备可连接互联网，并可通过AP或网线的方式供其它设备上网\n\n### 操作步骤\n##### M91HV球机、单兵自带WiFi模块设备：\n插入4G卡，并拨号成功，开启AP模式，手机或电脑连接AP，手机或电脑即可通过设备的4G连接互联网\n\n##### 车载有线设备：\n通过网线把两台设备的网口连接在一起，如现在有A和B两台设备，A设备通过4G拨号上线，查看本地网络的配置，如下\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=de36dc40b5541b2e958d388fc587e2e4)\n那么B设备把网关改为A设备的IP地址，同时注意修改B设备的IP地址及MAC地址不要与A设备的相同，如下\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ab12de15ef1cd3f1e762362888ec4702)\n这样B设备即可通过A设备的网络来连接到平台，同样电脑也是可以的，把电脑看成是B设备，也是通过网线把设备和电脑连接一起，然后像上图一样配置电脑的网络，电脑即可通过A设备的网络连接到互联网，如不知如何配置电脑的网络，请移步[《如何设置IP地址》](https://jingyan.baidu.com/article/3c343ff7be3c570d377963a5.html &quot;《如何设置IP地址》&quot;)\n\n",
+  "s_number": "6",
+  "addtime": "2025-09-08 16:29:04",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:26:06",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

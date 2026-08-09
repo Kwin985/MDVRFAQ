@@ -1,0 +1,18 @@
+{
+  "page_id": "207",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Control configuration SD card mode",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display, remote control, storage media (SD card, hard disk, etc.)\n\n### SD card mode description:\n###### Hard disk + single card model (M51HV series)\nMirror recording: Hard disk records main stream, SD card records sub-stream\nLoop recording: Hard disk and SD card record main stream in a loop\nMissing recording: SD card records main stream when hard disk does not exist, otherwise SD card does not record\nNo recording: Hard disk records main stream, SD card does not record\n\n###### Hard disk + dual card model (M32HV series)\nMirror recording: hard disk or SD1 card records main stream (when both hard disk and SD1 card exist, otherwise the one that exists will record the main stream), SD2 card records sub stream\nLoop recording: hard disk and SD1 card and SD2 card loop recording main stream\nMissing recording: when hard disk and SD1 card do not exist, SD2 card records main stream, otherwise SD2 card does not record\nNo recording: hard disk or SD1 card records main stream (when both hard disk and SD1 card exist, otherwise the one that exists will record the main stream), SD card does not record\n\n###### Dual card model (M16HV/M20HV...)\nMirror recording: SD1 card records main stream, SD2 card records sub stream\nLoop recording: SD1 card and SD2 card loop recording main stream\nMissing recording: when SD1 card does not exist, SD2 card records main stream, otherwise SD2 card does not record\nNo recording: SD1 card records main stream, SD card does not record\nps: SD1 described above SD2 card refers to the card slot position. Usually the card slot will be marked with SD1 2 silk screen. If there is no mark or the silk screen is damaged, please distinguish SD1 SD2 cards from left to right and from top to bottom. You can also turn the page left and right after the device is turned on to see the storage status.\n### Operation steps\n1. Press the remote control [ENTER] key to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b2776c439877912082db4bf230373157)\n\n2. Select [Settings] in the main menu interface and press the &quot;ENTER&quot; key to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e5c000b7b4c76d6a6299f35a367a400b)\n\n3. Select [Record] in the [Settings] interface, and press the &quot;ENTER&quot; key to enter the recording settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=66e1694a26cefb5499642b32e69cc583)\n\n4. Select [Record] in the [Recording Settings] interface to enter the recording interface, select the desired mode for the SD card usage, and press OK to save and take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=061dba99976ab4174b893eea2b8bd4c1)\n",
+  "s_number": "2",
+  "addtime": "2025-12-25 14:13:55",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:23:03",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

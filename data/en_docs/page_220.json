@@ -1,0 +1,18 @@
+{
+  "page_id": "220",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "59",
+  "page_title": "Configure alarm recording duration",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, storage media (SD card, hard disk, etc.)\n\n### Alarm duration description:\n- Alarm pre-recording duration: the time from the moment the alarm occurs to the moment the alarm occurs, that is, the alarm recording start time\n- Alarm delay duration: the time from the moment the alarm occurs to the moment the alarm occurs, that is, the recording alarm end time\n- Alarm recording duration = alarm pre-recording duration + alarm delay duration. For example, if the device triggers an alarm at 12:01:00, the configured alarm pre-recording duration and alarm delay duration are 30s respectively. The alarm recording start time is 12:00:30 and the end time is 12:01:30, and the recording duration is 1 minute\n- This configuration applies to all types of alarm recording durations of the device, such as AI, IO....\n\n###Operation steps\n\n1. Press the [ENTER] button on the remote control to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9b564035b2a5a51685d9852bcb3edd6c)\n\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; button to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b0de39de2ad5030607dff091a8f87989)\n\n3. Select [Settings] in the [Alarm] interface and press the &quot;ENTER&quot; key to enter\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=97b0d3ca150395612fea25206da22d8e)\n\n4. Press the &quot;ENTER&quot; key on the default first page [Alarm ] to enter the editing state. If it is not on the first page [Alarm ], press the left and right arrow keys to move to this page, press the remote control down key to move to the &quot;Alarm Pre-recording Duration&quot; and &quot;Alarm Delayed Recording Duration&quot; input boxes to fill in the duration, confirm and save, and restart to trigger the alarm to take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=22913245adb10137325a70165c074a40)\n",
+  "s_number": "1",
+  "addtime": "2025-12-26 15:38:31",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:25:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Alarm function"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "101",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "68",
+  "page_title": "AI related--Failed to enter the menu through remote control operation and ended up on a certain AI calibration menu",
+  "page_content": "Why does the remote control operation fail to enter the menu and it leads to a certain AI function calibration menu? As shown below:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5d897383b1ff295cbe4045e65ae75329)\n\nTroubleshooting steps:\n1. Press the &quot;RETURN&quot; key several times on the remote control to return to the main interface of the real-time screen. Press the 0 key to switch to all channel screens, and press the &quot;ENTER&quot; key again to enter the menu. Still not working, check the steps below\n2. Check whether AI is enabled and only one video channel is opened. Re-import the factory configuration or issue the configuration online to open multiple channel interfaces.\n3. Follow step 1 again\n",
+  "s_number": "8",
+  "addtime": "2026-03-04 11:06:45",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:07:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Daily Maintenance--Handling Common Issues"
+}

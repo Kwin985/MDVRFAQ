@@ -1,0 +1,18 @@
+{
+  "page_id": "153",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "34",
+  "page_title": "固件升级方式",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 以准备配套机型升级固件，固件获取打开 [升级固件、更新表](http://pug2.4000329988.com/fqa/web/#/11/65 &quot;升级固件、更新表&quot;) 文章链接\n\n### 操作步骤：\n###### 本地拷贝升级方式\n1. 开锁取出设备里面的SD卡或硬盘，使用读卡器或硬盘读写器连接插入电脑\nps:SD卡或硬盘一定要在设备上已经正常识别加载录像工作状态，否则先在设备上格式一次SD或硬盘\n1. 电脑上操作打开&quot;我的电脑&quot;&gt;&gt;&gt;&quot;SD卡第一分区根目录&quot; 一般在我的电脑 最后两个盘符位置，第一分区根目录会有一个创建好的&quot;rec_file&quot;文件夹\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b93fa1dba9d8dbbe7f94413d9f72a976)\n\n1. 下载下来的固件压缩包解压，拷贝需要升级&quot;.crc&quot;尾缀文件到&quot;SD卡第一分区根目录&quot;，完成后拔出SD卡插回设备关锁。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1f369c8495bf83ffc28a065aedd19058)\n1. 设备通电开机会自动升级固件，升级完成会重启一次在进入正常工作状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5b7513e7a7230c634405c1c3cdc4551e)\n1. 使用遥控按方向左键两次来到”版本号” 界面，查看各个版本号是否和升级文件版本号一致，一致代表升级成功。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=63757e21d7e2db685714105d5f75873e)\nps:单片机版本=MUC\n   硬件版本=FDT\n   引导程序版本=LDR\n   内核版本=KNL\n   文件系统版本=RFS\n   应用程序版本=APP\n   资源数据库版本=DBT\n\n###### 远程CMSV6客户端升级方式\n1. 电脑登录客户端，鼠标右键点击 在线的设备，选择 &quot;设备升级&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=83b2a9d6f65e4e265a6b6d9f1ae0e417)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f29a57364e4c6d4a681ac957fb37f74e)\n1. 在 设备升级 对话框 点击&quot;游览&quot;&gt;&gt;&gt;选择电脑上需要升级的&quot;.crc&quot;尾缀文件&gt;&gt;&gt;&quot;打开&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2ecdd0b406a036d22db0e571de0d986d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=362ffdc74e2d50769d5b774c66ce223e)\n1. 回到 设备升级 对话框 点击&quot;升级&quot;按钮，等待一段时间看到显示升级&quot;100%&quot;代表文件传送完成，开始重复上面操作升级下一个文件不需要升级多个文件就结束退出\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=23e7e0a11000eb9ecb095392aa2a288b)\n1. 再次鼠标右键点击 在线的设备，选择&quot;模块控制菜单&quot;&gt;&gt;&gt;&quot;重启设备&quot;&gt;&gt;&gt;&quot;输入登入密码&quot;&gt;&gt;&gt;&quot;确认&quot;  当看到提示重启成功 代表已经完成设备远程重启，失败检查设备网络是否畅通，可以打开视频或刷新终端信息观察\nps:当没有看到重启设备按钮 请寻找平台监管人员是否给此登入账号分配控制权限\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=74dd875e7b2bd89f63080b947175666e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=be7836aef6d25f90c03faf20e1fbe648)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=08f6421c0006fc0183fb5bf795f61b4b)\n1. 设备重启后会自动升级，完成后会再次上线平台\n1. 再次鼠标右键点击 在线的设备，选择&quot;终端信息&quot; 查看应用程序（APP）版本号是否和升级文件版本号一致，一致代表升级成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6529d95ac179bc338bc9942860f22c00)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=210e88cd6e78cd8bf5ebc7137dee71e9)\n查看其他固件版本点击&quot;参数配置&quot; 来到配置插件首页面，右边就是各个固件版本号\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=accd64f0b404c9828dae0b7ca1694603)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=01ae544ab7bcaac4b6ba8070c4f66676)\n",
+  "s_number": "1",
+  "addtime": "2025-11-11 18:37:32",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:01:48",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--升级和导入"
+}

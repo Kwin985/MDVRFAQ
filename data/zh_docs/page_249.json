@@ -1,0 +1,18 @@
+{
+  "page_id": "249",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "刷卡机配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR设备  |  1 |MDVR 485or232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n| 刷卡器和卡 |  1 |常用接线工具| n |\n\n### 必要说明\n- 接触式刷卡器+IC卡：MX-RFID-A1-01 MX-RFID-A1-02 \n接触式刷卡器的工作原理是通过刷卡器上的触点与卡片上的触点相接触，从而接通电路进行信息的读写。当卡片插入或靠近刷卡器时，卡片上的触点会与刷卡器上的对应触点接触，形成一个闭合的电路。此时，刷卡器会向卡片发送读写指令，卡片则根据指令将相应的信息发送给刷卡器\n- RFID刷卡器+RFID标签：MX-RFID-02-01 MX-RFID-C2-02 \nRFID刷卡器的工作原理是基于非接触式的射频识别技术。RFID刷卡器内部包含一个射频模块和一个读写模块。当卡片靠近刷卡器时，射频模块会发射电磁波，卡片内部的芯片则会通过天线接收电磁波并产生感应电流。此时，芯片会运行内置的程序，将内部储存的信息通过天线发送出去。读写模块则会接收这些信息，并对其进行处理或存储\n- 这里以**MX-RFID-A1-02（485SYC）**接触式刷卡器为例，其他型号根据协议类型参考下面232和485接线，设备菜单配置详情见下面“型号对应配置参数表”\n**型号对应配置参数表**\n\n| 型号  |  串口索引|串口功能|协议类型|\n| ------------ | ------------ |------------ |------------ |\n|  MX-RFID-A1-01 |  RS232 | 刷卡机4||\n|  MX-RFID-A1-02 | RS485  | 刷卡机4||\n|  MX-RFID-02-01 | RS232 | 刷卡机1|Type1 |\n|  MX-RFID-C2-02 | RS485| 刷卡机1 |Type1 |\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=965433d207b9a9c00c0c2e8e8e2b29ac)\n MX-RFID-A1-01 ，MX-RFID-A1-02\n\n### 操作步骤\n#### 一、接线\n**MX-RFID-A1-01 （232）**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=63d988048a7639c15c89e9e8c3ceecbd)\n\n**MX-RFID-A1-02（485）**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b150de2be49c684f07c4bf1f9c8dfa36)\n\n\n#### 二、设备菜单配置\nMX-RFID-A1-02（485）\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS485、串口功能刷卡机4，其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c8ee735e5b968e5ca9f2fd2419f7b78c)\n\n#### 三、刷卡测试\n本地查看\n重启后按遥控方向键来到串口状态界面，拿一张IC卡触碰接收器，听到滴一声且接收器亮绿灯表示刷卡成功。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9946c0d337bfc5ff063abbf8a6eb11ae)\n\n\n",
+  "s_number": "5",
+  "addtime": "2025-11-04 17:49:33",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:51:54",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

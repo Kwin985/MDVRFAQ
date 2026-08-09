@@ -1,0 +1,18 @@
+{
+  "page_id": "226",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "配置IO报警联动",
+  "page_content": "\n[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、配套IO扩展线（部分机型自带）\n\n\n### 说明:\n- IO报警联动根据IO报警输入配置的功能来，使用报警联动必须选完成IO报警输入配置，参考上面-配置IO报警输入 文章\n- 需要抓拍图片和产生报警录像需要插入存储介质并正常识别\n- 这里的图片和报警录像上传指的是注册CMSV7平台\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f109a4eb1b0a8e3d6d5019aafadaa750)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c026905ed7ee64ec33e61da7ac07d074)\n3、在【设置】界面选择【报警设置】，按“ENTER”键进入报警设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aebb5916da028f192b6b362405e329c9)\n4、在【报警设置】界面按方向右键来到【联动】界面，按“ENTER”键进入编辑状态，左侧功能灰色不可更改根据IO报警输入配置的功能名称联动，按方向下键移动抓拍上传按钮，再次按“ENTER”键进入勾选开启是否抓拍和上传图片界面，确认保存返回。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1590e91bf2f77eef1a592642a3a07249)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4df80fb07a26995934ce172ff36a3e0d)\n5、按方向右键移动录像上传按钮，再次按“ENTER”键进入勾选开启是否报警录像和上传录像界面，确认保存返回。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=60808633ddb4e34bf5fe2c8e1c3d48d3)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d5b787b5b7b361994f7879c39dadc004)\n6、按方向右键移动显示选择框，选择联动的通道当触发报警时显示屏会放大此通道，默认全部就是显示所有通道，确认保存生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9fdf5ed941360ac332201ad173460c31)",
+  "s_number": "3",
+  "addtime": "2025-11-04 17:31:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:44:02",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

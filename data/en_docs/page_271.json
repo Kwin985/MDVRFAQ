@@ -1,0 +1,18 @@
+{
+  "page_id": "271",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "Serial port peripheral 232 transparent transmission configuration and use",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR device | 1 | MDVR 232 IO harness | 1 |\n| Remote controller | 1 | Display | 1 |\n| Transparent transmission server | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- The function is to forward some 232 protocol peripherals to the transparent transmission server through the device\n\n### Operation steps\n#### 1. Wiring\nFor specific peripherals to connect, refer to the above serial port configuration and usage document\n\n#### 2. Device menu configuration\n2.1 Remote control enters menu&gt;&gt;Settings&gt;&gt;Serial&gt;&gt;Serial, serial port index configuration RS232, serial port function transparent transmission, baud rate configuration 4800, other parameters default, confirm and save.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fe41589015691cb6d081ee7639cffe74)\n\n2.2 Press the return button on the remote control to enter the Settings&gt;&gt;Network Settings&gt;&gt;Center Menu interface, move to the bottom bar to fill in the transparent server address and port, confirm to save and restart to take effect.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e77e49832e18ea15b3c18a18e65f1d14)\n\n#### 3. Test\nAfter the peripheral is connected to the device, the device sends the peripheral data to the registered transparent server through 4G or other networks.\n",
+  "s_number": "15",
+  "addtime": "2025-09-26 16:37:31",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:37:31",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

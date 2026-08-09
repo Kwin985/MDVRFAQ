@@ -1,0 +1,18 @@
+{
+  "page_id": "197",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "配置WiFi网络",
+  "page_content": "[TOC]\n\n\n### 前提条件\n-  可使用的遥控、正常显示显示屏\n-  可使用的WiFi网络、WiFi天线、设备自带WiFi模块\n\n### 操作步骤\n1、设备接好显示屏，接入WiFi天线（不知道位置参考上面“接口状态定义”栏），上电开机。\n2、使用遥控器ENTER进入设备网络设置菜单，按确认键在按方向键选择 WiFi 模式，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=67b86e890e6eb39f9e9e95318d49517d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=24755951ead477afc5116c5afc40e3f8)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7a03da30f340c071190ff56fb48ba8ce)\n3、按遥控方向右键移动到WiFi配置菜单，选择WiFi模式“client”,填入用户名、密码、认证方式、加密类型，通常现在的WiFi路由都是WPA2PSK认证和TKIP or AES加密，默认不用更改，如果是很旧的老路由器根据实际参数修改；默认勾选DHCP自动获取IP地址，如果有要求固定WiFi IP这里取消勾选并填入下面的IP地址、子网掩码、网关参数，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e3995281f281a5890ab40625eeee4891)\nWiFi连接成功后，可以返回到实时预览界面按遥控左键来到WiFi状态查看状态，如下图。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6ec1e2bce87dd3451952841e31fa75e6)\n\n4、WiFi配置AP即热点模式，在上面的菜单WiFi模式选择AP，确认保存。\nAP模式切换成功后，可以通过手机搜到“MDVR”开头+设备ID号的热点并连接，默认密码999999\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=df86210da14223bb01fb64690e459188)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb7497e2c0b64f3924c7606be4269e12)\n",
+  "s_number": "3",
+  "addtime": "2025-09-08 16:24:44",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:24:44",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

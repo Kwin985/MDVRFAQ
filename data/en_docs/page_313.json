@@ -1,0 +1,18 @@
+{
+  "page_id": "313",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "62",
+  "page_title": "Mileage Custom Import",
+  "page_content": "### Operation steps:\n1. Create a TXT file named &quot;licheng&quot; and open it for editing. The format is as follows:\n\n2020 12 15 10 10 0 5000 180000 0\n\nAll the above format must be copied to the TXT file. &quot;'180000'&quot; represents a total mileage of 180 kilometers. Just edit this parameter. Other parameters will not take effect for the time being!\n\n2. After editing and saving, place it in the root directory of the first partition of the SD card. The device will automatically import it when it is turned on. If the import is successful, the SD card file will disappear!\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2bebb7d807ed3d57dc8b25867d5e90dd)\n",
+  "s_number": "3",
+  "addtime": "2026-02-24 17:21:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:42:18",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Firmware upgrade"
+}

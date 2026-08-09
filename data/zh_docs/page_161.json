@@ -1,0 +1,18 @@
+{
+  "page_id": "161",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-MDVRPlayer回放软件使用",
+  "page_content": "#### 前提条件：\n- PC电脑已经成功安装配套MDVRPlayer回放软件，下载地址：[TTX最新安装包、说明书下载](http://faq.cmsv8.com/web/#/page/425 &quot;TTX最新安装包、说明书下载&quot;)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7b620ad9c3dbb16d370e20126d4c8eda)\n\n- PC电脑已经插入连接从MDVR设备取出来的SD卡或硬盘，或者电脑上有拷贝过来的录像文件\n\n#### 操作步骤：\n###### 录像播放\n\n这里以打开MDVR SD卡文件为例，拷贝到电脑的文件方法一致\n1. 打开“MDVRPlayer”回放软件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=00e387edc6ad2aa63668f36f0752b7f1)\n\n1. 播放文件夹的录像文件，点击&quot;选择文件夹&quot;打开SD卡或硬盘录像文件夹路径，文件夹名称为“rec_file”确认打开会扫描打开所有录像文件\nps:这里打开文件夹时会有一段查询扫描录像文件时间，取决于磁盘大小和文件熟练，当SD卡或硬盘从设备带电热拔取出来也会增加扫描时间\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=41789952a907d82774d8eddf04000c71)\n1. 在扫描完成后的界面选择时间，点击某个窗口文件开始播放\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=553090a30027d8cd80f523804cdfca2c)\n1. 播放单个录像文件，点击&quot;选择文件&quot;打开SD卡或硬盘录像文件夹路径，文件夹名称为“rec_file”，再次打开选择播放里面某个.cv1结尾的录像文件，确认打开会开始播放\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a17e76d8c480138d7275aff7565a11aa)\n播放界面功能介绍：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9d41657e82c88a9868e21648eff817fe)\nps:当播放录像文件系统卡死或画面卡顿时 请打开Windows任务管理器查看CPU 内存资源是不是已占有100%，播放越多通道越清晰画质录像时对PC电脑硬件要求更高的解码能力\n\n###### 录像转码MP4\n点击工具栏的“MP4”按钮弹窗转换详情界面，按需要更改转换录像的一些参数和输出路径，点击“开始转换” 等待进度完成100% ，打开转换后输出的录像文件路径查看使用转换后的MP4文件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c1f4681d97018601feaee923801238d7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0616d832c980ea474b93cc9da95802ab)\n",
+  "s_number": "19",
+  "addtime": "2025-12-17 13:59:02",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:20:33",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

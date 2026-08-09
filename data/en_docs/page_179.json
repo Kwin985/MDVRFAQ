@@ -1,0 +1,18 @@
+{
+  "page_id": "179",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "M20Hv LED light status definition",
+  "page_content": "### Introduction\nThis chapter will introduce the LED status of our M20Hv equipment\n### Schematic diagram\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=daf637dd78ebdfc0f74bac332a1477e2)\n\n##### Status description:\n· PWR (power indicator) ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6b6ba3ee4ca51a32b69b2c82212b7f10)\n· GPS (positioning indicator)\n· REC (recording indicator)\n· NET (network indicator)\n· WIFI (WIFI function indicator)\nPWR: always on and flashing (device is powered on normally), always on (camera video is normal), flashing (video is lost, i.e. the device is not connected to a camera, no camera is connected or the camera settings do not match);\nGPS: always on (GPS positioning is successful), flashing (GPS module exists but positioning is not successful), off (GPS module does not exist or GPS module is faulty);\nREC: always on (TF card exists, recording), flashing (not recording), off (no storage medium);\nNET: always on (device is connected to the network normally and on the platform), flashing (not registered on the platform), off (4G or WiFi module)\nWIFI: always on (4G+AP mode), off (4G+WIFI mode)\n",
+  "s_number": "6",
+  "addtime": "2025-11-04 17:57:32",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:11:49",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

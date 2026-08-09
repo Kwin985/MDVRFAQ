@@ -1,0 +1,18 @@
+{
+  "page_id": "174",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "23",
+  "page_title": "航空头针脚详细定义",
+  "page_content": "[TOC]\n\n\n### 简介\n本章节将介绍我司产品常见一些接口针脚详细定义\n\n\n#####设备DEBUG口\n`M32HV(RS232)  M32/M32H(TTL)`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b75f0df295e9c6abfcae1fc3a8223d0c)\nps:公头是设备端接口，母头为线端\n\n[========]\n\n#####设备端视频四芯输入口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e2726a14af1ed408ec7f4247ed7399c2)\n\n[========]\n\n#####设备端视频四芯输出口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b670f60e51767192755902d05a37986c)\n\n[========]\n\n#####设备端视频六芯输入口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d4bcef27a1173432590ecbc875826871)\n\n[========]\n\n#####设备端电源输入口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6c81f7823a2ab2a853f27f0484ff3b41)\n\n[========]\n\n#####设备端视频输出口（CVBS）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb57ab54906b1e65289471f5793cbbbd)\n\n[========]\n\n#####设备端视频输出口（VGA）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=074f3a12383018f6aa59abfb5a149533)\n\n[========]\n\n#####设备端网络输入口（LAN）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cdf0bc9c8a3560a298f2cf4e6bc2c8e9)\n\n[========]\n\n#####外设：网络HUB输入输出口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=843f8fee0eda62439703c1af277845ca)\n\n\n[========]\n\n#####设备232调试口接线定义\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=805938f9ae8d6a06f0354815b4f70a2d)\nNote: Direction is DTE (Computer) relative DCE (Modem). Note: Do not connect SHIELD(1) to GND(7).\n\n#####声光报警器4pin母头\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5dc203b2524e359066e276c98b8c53ff)\n\n\n\n\n",
+  "s_number": "7",
+  "addtime": "2025-09-05 11:02:20",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 11:02:20",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--接口状态定义"
+}

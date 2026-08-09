@@ -1,0 +1,18 @@
+{
+  "page_id": "200",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "58",
+  "page_title": "Check IMEI/ICCID number",
+  "page_content": "[TOC]\n\n### Prerequisites\nRemote control configuration:\n- Available remote control, normal display screen\n- Available SIM card, 4G antenna\n\nWEB configuration:\n- Matching network port adapter, network cable and computer in the same LAN, computer\n- Or the device has WiFi and is connected to the same LAN, computer\n- Available SIM card, 4G antenna\n\n### Note:\n- IMEI is the International Mobile Equipment Identity, that is, the identification code of the wireless module.\n- ICCID is the integrated circuit card identification code, that is, the SIM card number.\n- Note: After the SIM card is inserted into the device, the device lock needs to be in the locked state.\n\n### Operation steps\n#### Use the remote control display menu configuration\n1. Connect the device to the display, insert the SIM card, and power on.\n2. Use the remote control to press LOGIN![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fa1f1539feacffd4cda05aa3729322ad) and DOT![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d20d71d418f24a044261bccfeacc02ac) at the same time button, the display screen will enter the test status display page, as shown below:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=888a92d2f5c74a25c8500e723d4d523e)\nNote: Currently the display screen does not support the acquisition and viewing of ICCID information.\n\n#### View using device Web information\n1. Connect the device using a wired or WIFI network\n2. Use a browser to log in to the WEB system of the device IP. For example, if the device IP is 192.168.1.173, enter http://192.168.1.173 in the browser address bar. Default password: Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bb854fcecd5913c87c7ba9d7e375c9bb)\n\n3. Enter General Settings, click System Information, and click GNet Module Information Check the IMEI number and ICCID of the current device\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=722e28b0b61b5ee05df63fd65b6185c7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d80bc15059017a8d183d2e60bea74d58)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8355948264043c011376e3f0521e61f3)\nNote: To obtain the above information, you need to insert a SIM card. If the device is still dialing, the above information needs to be updated by manually refreshing the web page.\n",
+  "s_number": "2",
+  "addtime": "2025-11-04 18:01:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:15:20",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Network Configuration"
+}

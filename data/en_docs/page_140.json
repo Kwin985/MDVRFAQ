@@ -1,0 +1,18 @@
+{
+  "page_id": "140",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "98",
+  "page_title": "JT808--Local configuration import registration department standard platform",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- The device network can access the Internet normally, for example: 4G dial-up is successful or wired network routing is successful or WiFi connection is successful, refer to the &quot;Function Usage&quot;&gt;&gt;&gt;&quot;Network Function&quot; article introduction!\n\n### Operation steps:\n1. Download this configuration file template [config.zip](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e6e4c139fb0eabdd1e6f101c9def4133 &quot;[config.zip&quot;) and unzip it locally\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=439939d4aeed81dabab0f3edc233bfa4)\n1. Open the text editing tool and fill in &quot;Open function&quot; &quot;Server IP&quot; &quot;Server port&quot; &quot;Mobile phone number&quot; &quot;Terminal ID number&quot; Parameters such as . Please refer to the xml document parameter comments\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4476ba9e916628338d7f2c2ef9aee9ce)\n\n1. Unlock the device and remove the hard disk or SD card storage. Use a hard disk reader or SD card reader to insert it into the computer and open the root directory of the first partition of the storage\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6a665965003a18a71cbee9142ce5f903)\n1. Copy the config file you just edited and saved to this directory, disconnect the device, insert the device and lock it\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=59a3e48b230d029ceef9ee92d6469108)\n1. When the device is powered on, it will automatically import the configuration and restart. The configuration will take effect after the restart\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a7491d52f58c7cf79e922b12e4888352)\n1. Check whether the registration is successful locally or check whether the platform is online\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=87424c8a22b4e8c0e916d3f47e04569a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6d535f47b9c41f85b32096371959e20f)\n",
+  "s_number": "8",
+  "addtime": "2025-11-04 18:04:48",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:21:26",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "Function--Registration platform configuration"
+}

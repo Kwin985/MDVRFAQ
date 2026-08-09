@@ -1,0 +1,4228 @@
+{
+ "generatedAt": "2026-08-09T07:10:09.443Z",
+ "items": [
+  {
+   "id": "acc-zh-A01",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "AI提醒器",
+   "line": "",
+   "model": "",
+   "group": "A",
+   "specDocx": "media/zh/accessory/acc-zh-A01/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/accessory/acc-zh-A01/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-A01/images/01.webp",
+    "media/zh/accessory/acc-zh-A01/images/02.webp",
+    "media/zh/accessory/acc-zh-A01/images/03.webp",
+    "media/zh/accessory/acc-zh-A01/images/04.webp",
+    "media/zh/accessory/acc-zh-A01/images/05.webp",
+    "media/zh/accessory/acc-zh-A01/images/06.webp"
+   ],
+   "imageCount": 6,
+   "lineKey": "",
+   "summary": "为车载终端配置AI功能的发声、显示设备，当设备产生报警信息时讲报警信息转化为声光提醒和图标提醒，包括请勿分神驾驶、请勿疲劳驾驶、道路偏移等，用以引起驾驶员的注意，避免交通事故，是现代理想的行车安全装置。",
+   "keySpecs": [
+    {
+     "k": "工作电压",
+     "v": "适配MDVR9~36V电压，可用于各大中小型车辆"
+    }
+   ]
+  },
+  {
+   "id": "acc-zh-A02",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "安全带电子卡扣",
+   "line": "",
+   "model": "",
+   "group": "A",
+   "specDocx": "media/zh/accessory/acc-zh-A02/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-A02/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-A02/images/01.webp",
+    "media/zh/accessory/acc-zh-A02/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "汽车安全带电子卡扣，自带插座连接器、警告报警信号底座，可以通过报警线（常开）连接主机，让主机快速检测安全带状态，以确定司机是否正常驾驶。"
+  },
+  {
+   "id": "acc-zh-C03",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "串口盒子",
+   "line": "",
+   "model": "",
+   "group": "C",
+   "specDocx": "media/zh/accessory/acc-zh-C03/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-C03/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-C03/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "用于RS232、RS485接口的智能外设扩展，如对讲通讯、温度传感、重量传感等，以配合智能终端形成系统性的解决方案。",
+   "keySpecs": [
+    {
+     "k": "电源",
+     "v": "5V-12V"
+    }
+   ],
+   "chips": [
+    "5V-12V"
+   ]
+  },
+  {
+   "id": "acc-zh-C04",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "传感器",
+   "line": "",
+   "model": "",
+   "group": "C",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-C05",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "出租车顶灯",
+   "line": "",
+   "model": "",
+   "group": "C",
+   "specDocx": "media/zh/accessory/acc-zh-C05/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-C05/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-C05/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "采用恒流LED驱动方式，确保了产品亮度的一致性，采用多重安全性能保护措施包括电源输入端的过流保护、内部电路的自动保护，确保电路的安生性和设备的可靠性；保证通讯可靠性，采用CRC效验，断点续传，FLASH保存中间结果的方式，保证通讯可靠性；可调节播放速度和显示停留时间 ，多种时间显…",
+   "keySpecs": [
+    {
+     "k": "工作电压",
+     "v": "9-36V 50HZ"
+    }
+   ],
+   "chips": [
+    "9-36V 50HZ"
+   ]
+  },
+  {
+   "id": "acc-zh-C06",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "吹尘器",
+   "line": "",
+   "model": "",
+   "group": "C",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-C07",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "存储介质",
+   "line": "",
+   "model": "",
+   "group": "C",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-D08",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "DC转换器",
+   "line": "",
+   "model": "",
+   "group": "D",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": "media/zh/accessory/acc-zh-D08/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-D08/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-D09",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "定位终端",
+   "line": "",
+   "model": "",
+   "group": "D",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-D10",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "电源（特种）",
+   "line": "",
+   "model": "",
+   "group": "D",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-F11",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "防火盒",
+   "line": "",
+   "model": "",
+   "group": "F",
+   "specDocx": "media/zh/accessory/acc-zh-F11/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-F11/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-F11/images/01.webp",
+    "media/zh/accessory/acc-zh-F11/images/02.webp",
+    "media/zh/accessory/acc-zh-F11/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-FB-01-064",
+   "summary": "MX-FB-01-064是一款防火防水，具有录像存储功能的车辆移动数据保护盒。用于保护火灾等灾害现场的数据存储设备,特别适用于汽车行驶记录仪、车载音视频存储数据在火灾及其他灾害保护,防止出现物理性的、不可逆的数据损坏。可以实现在灾后读取受保护的数据以分析现场。"
+  },
+  {
+   "id": "acc-zh-G12",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "工牌（智慧）",
+   "line": "",
+   "model": "",
+   "group": "G",
+   "specDocx": "media/zh/accessory/acc-zh-G12/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-G12/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-G12/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "modelCode": "MX-A28-NGWE-L A28",
+   "summary": "A28是专为企业员工/执勤人员/环卫工人打造的一款4G 全网通智能定位工牌，采用GPS/BeiDou/LBS/WIFI多方式室内外定位，轻薄，易佩戴，低功耗设计，自带高精度计步器，能实时统计佩戴人员运动信息，能有效解决员工出勤/执勤安全管理难题。",
+   "keySpecs": [
+    {
+     "k": "工作电压",
+     "v": "3.7V"
+    }
+   ],
+   "chips": [
+    "3.7V"
+   ]
+  },
+  {
+   "id": "acc-zh-H13",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "HUB线网络盒子",
+   "line": "",
+   "model": "",
+   "group": "H",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-J14",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "机芯",
+   "line": "",
+   "model": "",
+   "group": "J",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-J15",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "交换机（盒式）",
+   "line": "",
+   "model": "",
+   "group": "J",
+   "specDocx": "media/zh/accessory/acc-zh-J15/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-J15/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-J15/images/01.webp",
+    "media/zh/accessory/acc-zh-J15/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-NHUB-04-V1.0",
+   "summary": "车载HUB的主要功能是对多路IPC信号进行聚合并传输给车载终端，以此来达到网络信号能够在车载终端上快速读取，最终扩展车载视频的输入数量和输入模式。"
+  },
+  {
+   "id": "acc-zh-J16",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "继电器",
+   "line": "",
+   "model": "",
+   "group": "J",
+   "specDocx": "media/zh/accessory/acc-zh-J16/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-J16/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-J16/images/01.webp",
+    "media/zh/accessory/acc-zh-J16/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "继电器是用于车辆的电控制器件，是当输入量的变化达到规定要求时，在电气输出电路中使被控量发生预定的阶跃变化的一种电器。常用于小电流控制大电流运作的自动开关系统。继电器在整个汽车设备的电路中起着自动调节、安全保护、转换电路等作用。"
+  },
+  {
+   "id": "acc-zh-J17",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "酒精检测仪",
+   "line": "",
+   "model": "",
+   "group": "J",
+   "specDocx": "media/zh/accessory/acc-zh-J17/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-J17/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-J17/images/01.webp",
+    "media/zh/accessory/acc-zh-J17/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "功能破窗酒检仪是专为快速酒精检测及汽车破窗研发的产品。本产品集酒精快速检测、强力破窗器、照明灯、爆闪灯、割刀、强磁吸盘、液晶显示屏等多功能为一体，具备检测迅速、精准，操作简单及轻巧便携等特点。产品支持蓝牙、车载连接线等选配定制。",
+   "keySpecs": [
+    {
+     "k": "尺寸",
+     "v": "长117mm*厚22mm*宽87mm(带吹管），不带吹管宽65mm"
+    }
+   ]
+  },
+  {
+   "id": "acc-zh-K18",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "开关（按键）",
+   "line": "",
+   "model": "",
+   "group": "K",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-L19",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "LED面板",
+   "line": "",
+   "model": "",
+   "group": "L",
+   "specDocx": "media/zh/accessory/acc-zh-L19/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-L19/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-L19/images/01.webp",
+    "media/zh/accessory/acc-zh-L19/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "可通过LED面板指示灯查看MDVR的状态，可接收遥控器信号遥控MDVR，适用于MDVR安装的位置较隐蔽，不方便查看状态和控制时使用；该设备还支持一键报警功能，按压面板上的红色ALM键即可向平台发起报警。"
+  },
+  {
+   "id": "acc-zh-L20",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "喇叭",
+   "line": "",
+   "model": "",
+   "group": "L",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-L21",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "蓝牙车速传感器",
+   "line": "",
+   "model": "",
+   "group": "L",
+   "specDocx": "media/zh/accessory/acc-zh-L21/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/accessory/acc-zh-L21/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-L21/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "蓝牙车速传感器是一种安装在叉车、矿车、铲车、装载车、拖拉机等车轮（通常是前轮）上的小型电子设备。核心功能是测量车轮的旋转速度和圈数，通过蓝牙，将这些数据实时传输到车载智能终端，再通过智能终端将车速传给后端管理平台。",
+   "keySpecs": [
+    {
+     "k": "工作电压",
+     "v": "5~32V DC"
+    },
+    {
+     "k": "尺寸",
+     "v": "41*20mm"
+    },
+    {
+     "k": "工作温度",
+     "v": "-30℃～80℃"
+    }
+   ],
+   "chips": [
+    "5~32V DC"
+   ]
+  },
+  {
+   "id": "acc-zh-L22",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "雷达",
+   "line": "",
+   "model": "",
+   "group": "L",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-O23",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "OBD",
+   "line": "",
+   "model": "",
+   "group": "O",
+   "specDocx": "media/zh/accessory/acc-zh-O23/spec.docx",
+   "docCount": 1,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": "",
+   "summary": "OBD Power Supply Solution Document"
+  },
+  {
+   "id": "acc-zh-P24",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "屏",
+   "line": "",
+   "model": "",
+   "group": "P",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-R25",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "RFID",
+   "line": "",
+   "model": "",
+   "group": "R",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-S26",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "声光报警器",
+   "line": "",
+   "model": "",
+   "group": "S",
+   "specDocx": "media/zh/accessory/acc-zh-S26/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-S26/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-S26/images/01.webp",
+    "media/zh/accessory/acc-zh-S26/images/02.webp",
+    "media/zh/accessory/acc-zh-S26/images/03.webp",
+    "media/zh/accessory/acc-zh-S26/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-SL-CH-B-003",
+   "summary": "MX-SL-CH-B-003是一款应用于多领域的声光报警器，采用宽电压DC 9-36V输入.内置高亮发光二极管和5W大功率喇叭，可以实现语音播报和频闪灯光报警。",
+   "keySpecs": [
+    {
+     "k": "型号",
+     "v": "MX-SL-CH-B-003"
+    },
+    {
+     "k": "工作电压",
+     "v": "DC：9V-36V"
+    },
+    {
+     "k": "尺寸",
+     "v": "见尺寸图"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20度 〜+70度"
+    }
+   ],
+   "chips": [
+    "DC：9V-36V"
+   ]
+  },
+  {
+   "id": "acc-zh-S27",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "手唛",
+   "line": "",
+   "model": "",
+   "group": "S",
+   "specDocx": "media/zh/accessory/acc-zh-S27/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/accessory/acc-zh-S27/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-S27/images/01.webp",
+    "media/zh/accessory/acc-zh-S27/images/02.webp",
+    "media/zh/accessory/acc-zh-S27/images/03.webp",
+    "media/zh/accessory/acc-zh-S27/images/04.webp",
+    "media/zh/accessory/acc-zh-S27/images/05.webp",
+    "media/zh/accessory/acc-zh-S27/images/06.webp",
+    "media/zh/accessory/acc-zh-S27/images/07.webp",
+    "media/zh/accessory/acc-zh-S27/images/08.webp"
+   ],
+   "imageCount": 8,
+   "lineKey": "",
+   "modelCode": "MX-HMC-02",
+   "summary": "基于无线传输的对讲手唛，不受距离限制，实现多人同时对话。音质清晰，语音传递快捷，无延迟，即时沟通，一呼百应，用户容量大，可以任意分组通讯，方便快捷,轻松实现信息交流。",
+   "keySpecs": [
+    {
+     "k": "电源",
+     "v": "5-12V/200mA(最高)"
+    },
+    {
+     "k": "工作电压",
+     "v": "5-12V"
+    },
+    {
+     "k": "外观尺寸",
+     "v": "82*58*40mm"
+    },
+    {
+     "k": "工作温度",
+     "v": "-30℃~+60℃"
+    }
+   ],
+   "chips": [
+    "5-12V/200mA(最高)",
+    "5-12V"
+   ]
+  },
+  {
+   "id": "acc-zh-T28",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "TTS",
+   "line": "",
+   "model": "",
+   "group": "T",
+   "specDocx": "media/zh/accessory/acc-zh-T28/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/accessory/acc-zh-T28/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-T28/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "modelCode": "MX-TTS-01-01",
+   "summary": "MX-TTS-01-01是将文本转化为语音的语音播报器，主要作为NVR产品的配件使用，应用于NVR所有产品线。",
+   "keySpecs": [
+    {
+     "k": "尺寸",
+     "v": "91*76.6*25.2mm"
+    }
+   ]
+  },
+  {
+   "id": "acc-zh-T29",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "天线",
+   "line": "",
+   "model": "",
+   "group": "T",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-T30",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "太阳能板",
+   "line": "",
+   "model": "",
+   "group": "T",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-U31",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "UPS",
+   "line": "",
+   "model": "",
+   "group": "U",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-W32",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "温湿度看板",
+   "line": "",
+   "model": "",
+   "group": "W",
+   "specDocx": "media/zh/accessory/acc-zh-W32/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-W32/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-W32/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "该温湿度看板电路采用美国进口工业级微处理器芯片、进口高精度传感器，确保产品优异的可靠性、高精度和互换性。本产品采用铝合金边框，高品质亚克力面板，外观美观大方。输出信号类型为RS485，最远可通信 2000 米，标准的 modbus 协议，支持二次开发。"
+  },
+  {
+   "id": "acc-zh-W33",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "网口转接线",
+   "line": "",
+   "model": "",
+   "group": "W",
+   "specDocx": "media/zh/accessory/acc-zh-W33/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-W33/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-W33/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "modelCode": "MX-DL-01-01",
+   "summary": "车载网口转接线的主要功能是完成设备端航空头接口对RJ45接口的转化，以此达到网络信号能够在车载终端上快速连接的目的，最终扩展网络或视频的接入模式或者数量。"
+  },
+  {
+   "id": "acc-zh-X34",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "线材（特制）",
+   "line": "",
+   "model": "",
+   "group": "X",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": "media/zh/accessory/acc-zh-X34/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-X34/images/01.webp",
+    "media/zh/accessory/acc-zh-X34/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-zh-Y35",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "遥控器",
+   "line": "",
+   "model": "",
+   "group": "Y",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-232to485",
+   "type": "accessory",
+   "lang": "en",
+   "name": "232to485",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-232to485/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-232to485/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-232to485/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "keySpecs": [
+    {
+     "k": "Size",
+     "v": "4.7(L)*2(W)*1(H) cm"
+    }
+   ]
+  },
+  {
+   "id": "acc-en-ai-reminder",
+   "type": "accessory",
+   "lang": "en",
+   "name": "AI Reminder",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-ai-reminder/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/accessory/acc-en-ai-reminder/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-ai-reminder/images/01.webp",
+    "media/en/accessory/acc-en-ai-reminder/images/02.webp",
+    "media/en/accessory/acc-en-ai-reminder/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "summary": "The vehicle terminal is equipped with an AI-enabled voice and display device. When the device generates an alarm message, the alarm message …"
+  },
+  {
+   "id": "acc-en-alcohol-test",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Alcohol test",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-alcohol-test/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-alcohol-test/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-alcohol-test/images/01.webp",
+    "media/en/accessory/acc-en-alcohol-test/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "The functional window breaking alcohol detector is a product specially developed for rapid alcohol detection and car window breaking. This p…"
+  },
+  {
+   "id": "acc-en-display",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Display",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-dust-blower",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Dust blower",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-fire-box",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Fire box",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-fire-box/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-fire-box/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-fire-box/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "Vehicle fireproof box----waterproof and fireproof;"
+  },
+  {
+   "id": "acc-en-gtracker",
+   "type": "accessory",
+   "lang": "en",
+   "name": "GTracker",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-gtracker/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-gtracker/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-gtracker/images/01.webp",
+    "media/en/accessory/acc-en-gtracker/images/02.webp",
+    "media/en/accessory/acc-en-gtracker/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "summary": "GTRACKER-308 is a highly modular positioning product,Based on 4G communication network and GPS global satellite positioning system. Its Inte…",
+   "keySpecs": [
+    {
+     "k": "Size",
+     "v": "75mm x 35mm x 15mm"
+    }
+   ]
+  },
+  {
+   "id": "acc-en-hub-nub",
+   "type": "accessory",
+   "lang": "en",
+   "name": "HUB&NUB",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-hand-label",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Hand label",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-hand-label/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/accessory/acc-en-hand-label/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-hand-label/images/01.webp",
+    "media/en/accessory/acc-en-hand-label/images/02.webp",
+    "media/en/accessory/acc-en-hand-label/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "keySpecs": [
+    {
+     "k": "Power",
+     "v": "5-12V/200mA"
+    }
+   ],
+   "chips": [
+    "5-12V/200mA"
+   ]
+  },
+  {
+   "id": "acc-en-led",
+   "type": "accessory",
+   "lang": "en",
+   "name": "LED",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-led/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-led/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-led/images/01.webp",
+    "media/en/accessory/acc-en-led/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "The status of MDVR can be viewed through the LED panel indicator light, and remote control signals can be received to remotely control MDVR.…"
+  },
+  {
+   "id": "acc-en-obd",
+   "type": "accessory",
+   "lang": "en",
+   "name": "OBD",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-obd/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/accessory/acc-en-obd/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-obd/images/01.webp",
+    "media/en/accessory/acc-en-obd/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "OBD Power Supply Solution Document"
+  },
+  {
+   "id": "acc-en-oil-sensor",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Oil sensor",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-port-box",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Port box",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-port-box/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-port-box/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-port-box/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "Multifunctional expansion box"
+  },
+  {
+   "id": "acc-en-rfid",
+   "type": "accessory",
+   "lang": "en",
+   "name": "RFID",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-radar",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Radar",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-radar/spec.docx",
+   "docCount": 1,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": "",
+   "summary": "77Ghz Millimeter Wave Radar Obstacle Avoidance Early Warning System"
+  },
+  {
+   "id": "acc-en-relay",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Relay",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-relay/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-relay/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-relay/images/01.webp",
+    "media/en/accessory/acc-en-relay/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "Relays are electrical control devices used in vehicles . When the change in input quantity reaches the specified requirement, a relay causes…"
+  },
+  {
+   "id": "acc-en-sos",
+   "type": "accessory",
+   "lang": "en",
+   "name": "SOS",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-sos/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-sos/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-sos/images/01.webp",
+    "media/en/accessory/acc-en-sos/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-sound-and-light-alarm",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Sound and Light Alarm",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-sound-and-light-alarm/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-sound-and-light-alarm/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-sound-and-light-alarm/images/01.webp",
+    "media/en/accessory/acc-en-sound-and-light-alarm/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "Industrial appearance design, using new heat dissipation materials, long product life",
+   "keySpecs": [
+    {
+     "k": "Interface",
+     "v": "Aviation head GX12-4 female socket (customizab…"
+    }
+   ]
+  },
+  {
+   "id": "acc-en-tts",
+   "type": "accessory",
+   "lang": "en",
+   "name": "TTS",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-tts/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-tts/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-tts/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "TTS Voice Broadcast Specification",
+   "keySpecs": [
+    {
+     "k": "Interface",
+     "v": "RS232 interface"
+    },
+    {
+     "k": "Size",
+     "v": "91*76.6*25.2mm"
+    }
+   ],
+   "chips": [
+    "RS232 interface"
+   ]
+  },
+  {
+   "id": "acc-en-taxi-ceiling-light",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Taxi ceiling light",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-taxi-ceiling-light/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-taxi-ceiling-light/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-taxi-ceiling-light/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "Double-sided empty roof screen",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "27800/ m²"
+    }
+   ]
+  },
+  {
+   "id": "acc-en-taxi-meter",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Taxi meter",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-taxi-meter/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-taxi-meter/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-taxi-meter/images/01.webp"
+   ],
+   "imageCount": 1,
+   "lineKey": "",
+   "summary": "The unique operation management function of this product effectively utilizes the intelligent advantages of the meter and hardware resources…"
+  },
+  {
+   "id": "acc-en-temperature-sensor",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Temperature sensor",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "acc-en-ups",
+   "type": "accessory",
+   "lang": "en",
+   "name": "UPS",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-ups/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-ups/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-ups/images/01.webp",
+    "media/en/accessory/acc-en-ups/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "It is a conversion device used in vehicles that uses batteries to generate on-board (8-36V) electrical energy. Mainly used for temporary pow…"
+  },
+  {
+   "id": "cam-zh-110",
+   "type": "camera",
+   "lang": "zh",
+   "name": "110",
+   "line": "",
+   "model": "110",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-110/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-110/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-110/images/01.webp",
+    "media/zh/camera/cam-zh-110/images/02.webp",
+    "media/zh/camera/cam-zh-110/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-110B-ANP-015,2.8mm",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8mm镜头"
+    },
+    {
+     "k": "水平角度",
+     "v": "100°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0Lux"
+    },
+    {
+     "k": "插口",
+     "v": "M12航空母头（带O型圈）"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "2.8mm镜头",
+    "100°"
+   ]
+  },
+  {
+   "id": "cam-zh-113",
+   "type": "camera",
+   "lang": "zh",
+   "name": "113",
+   "line": "",
+   "model": "113",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-113/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-113/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-113/images/01.webp",
+    "media/zh/camera/cam-zh-113/images/02.webp",
+    "media/zh/camera/cam-zh-113/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-113A-AXP-005,2.8mm",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.8″ SONY AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8mm镜头"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.01Lux"
+    },
+    {
+     "k": "插口",
+     "v": "M12航空母头（带O型圈）"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃ ~ +70℃"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "2.8mm镜头"
+   ]
+  },
+  {
+   "id": "cam-zh-115",
+   "type": "camera",
+   "lang": "zh",
+   "name": "115",
+   "line": "",
+   "model": "115",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-115/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-115/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-115/images/01.webp",
+    "media/zh/camera/cam-zh-115/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-115B-NNP-005,2.1mm",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.1mm镜头"
+    },
+    {
+     "k": "最低照度",
+     "v": "0Lux"
+    },
+    {
+     "k": "红外灯照射距离",
+     "v": "0-3米"
+    },
+    {
+     "k": "插口",
+     "v": "宝马头"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "2.1mm镜头"
+   ]
+  },
+  {
+   "id": "cam-zh-260",
+   "type": "camera",
+   "lang": "zh",
+   "name": "260",
+   "line": "",
+   "model": "260",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-260/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-260/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-260/images/01.webp",
+    "media/zh/camera/cam-zh-260/images/02.webp",
+    "media/zh/camera/cam-zh-260/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-260A-NXP-005H",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "水平角度",
+     "v": "130/160°/180°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.01Lux"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃ ~ +70℃"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "130/160°/180°"
+   ]
+  },
+  {
+   "id": "cam-zh-264",
+   "type": "camera",
+   "lang": "zh",
+   "name": "264",
+   "line": "",
+   "model": "264",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-264/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-264/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-264/images/01.webp",
+    "media/zh/camera/cam-zh-264/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-264A-NNP-005H",
+   "summary": "小外观支持更好的防水功能 ◎ 多安装孔位快捷安装方式",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P/720p"
+    },
+    {
+     "k": "像素",
+     "v": "1920(H)*1080(V)/1280(H)*720(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "水平角度",
+     "v": "130°/160°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.01Lux"
+    },
+    {
+     "k": "插口",
+     "v": "专业航空接口"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃ ~ +70℃"
+    }
+   ],
+   "chips": [
+    "1080P/720p",
+    "130°/160°"
+   ]
+  },
+  {
+   "id": "cam-zh-266",
+   "type": "camera",
+   "lang": "zh",
+   "name": "266",
+   "line": "",
+   "model": "266",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-266/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-266/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-266/images/01.webp",
+    "media/zh/camera/cam-zh-266/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-266A-NNP-005H",
+   "summary": "小外观支持更好的防水功能 ◎ 多安装孔位快捷安装方式",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "1.58mm镜头"
+    },
+    {
+     "k": "水平角度",
+     "v": "165°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.01Lux"
+    },
+    {
+     "k": "插口",
+     "v": "M12航空母头（带O型圈）"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V±10%"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "1.58mm镜头",
+    "165°"
+   ]
+  },
+  {
+   "id": "cam-zh-267",
+   "type": "camera",
+   "lang": "zh",
+   "name": "267",
+   "line": "",
+   "model": "267",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-267/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-267/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-267/images/01.webp",
+    "media/zh/camera/cam-zh-267/images/02.webp",
+    "media/zh/camera/cam-zh-267/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDM-267A-NNP-005H",
+   "keySpecs": [
+    {
+     "k": "最低照度",
+     "v": "0.01lux"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V-24V"
+    },
+    {
+     "k": "工作温度",
+     "v": "-30°C ~ 75°C"
+    }
+   ]
+  },
+  {
+   "id": "cam-zh-301",
+   "type": "camera",
+   "lang": "zh",
+   "name": "301",
+   "line": "",
+   "model": "301",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-301/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/camera/cam-zh-301/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-301/images/01.webp",
+    "media/zh/camera/cam-zh-301/images/02.webp",
+    "media/zh/camera/cam-zh-301/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-301A-NNP-005H,2.8mm",
+   "summary": "低功耗,易散热;色彩还原性好,画质清晰;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P/720P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)/1280（H) x 720(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/2.9″ CMOS AHD/1/4″ CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8mm/3.6mm"
+    },
+    {
+     "k": "水平角度",
+     "v": "105°/80°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0Lux"
+    },
+    {
+     "k": "红外灯照射距离",
+     "v": "5M"
+    },
+    {
+     "k": "插口",
+     "v": "VIDEO OUT (专业航空接口 )"
+    }
+   ],
+   "chips": [
+    "1080P/720P",
+    "2.8mm/3.6mm",
+    "105°/80°"
+   ]
+  },
+  {
+   "id": "cam-zh-610",
+   "type": "camera",
+   "lang": "zh",
+   "name": "610",
+   "line": "",
+   "model": "610",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-610/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-610/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-610/images/01.webp",
+    "media/zh/camera/cam-zh-610/images/02.webp",
+    "media/zh/camera/cam-zh-610/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-610A-NNP-005H,2.8mm",
+   "summary": "1.设计精美，做工精湛，线条精准，结构严谨，体现了最高技术水平；",
+   "keySpecs": [
+    {
+     "k": "图像传感器",
+     "v": "1/2.7英寸CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8毫米"
+    },
+    {
+     "k": "最低照度",
+     "v": "白天：0.01Lux，0Lux(IR ON)"
+    },
+    {
+     "k": "电源",
+     "v": "直流12V+/-20%"
+    }
+   ],
+   "chips": [
+    "2.8毫米"
+   ]
+  },
+  {
+   "id": "cam-zh-701",
+   "type": "camera",
+   "lang": "zh",
+   "name": "701",
+   "line": "",
+   "model": "701",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-701/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/camera/cam-zh-701/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-701/images/01.webp",
+    "media/zh/camera/cam-zh-701/images/02.webp",
+    "media/zh/camera/cam-zh-701/images/03.webp",
+    "media/zh/camera/cam-zh-701/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-701A-NNP-005H",
+   "summary": "低功耗,易散热;色彩还原性好,画质清晰;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P/720P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "图像传感器",
+     "v": "1/4″ CMOS AHD"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8mm/3.6mm镜头"
+    },
+    {
+     "k": "水平角度",
+     "v": "100°/80°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.001（Lux）（红外开）"
+    },
+    {
+     "k": "红外灯照射距离",
+     "v": "5M"
+    },
+    {
+     "k": "插口",
+     "v": "M12航空母头（带O型圈）"
+    }
+   ],
+   "chips": [
+    "1080P/720P",
+    "2.8mm/3.6mm镜头",
+    "100°/80°"
+   ]
+  },
+  {
+   "id": "cam-zh-705",
+   "type": "camera",
+   "lang": "zh",
+   "name": "705",
+   "line": "",
+   "model": "705",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-705/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-705/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-705/images/01.webp",
+    "media/zh/camera/cam-zh-705/images/02.webp",
+    "media/zh/camera/cam-zh-705/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-705A-NNP-005H,2.8mm",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;"
+  },
+  {
+   "id": "cam-zh-708",
+   "type": "camera",
+   "lang": "zh",
+   "name": "708",
+   "line": "",
+   "model": "708",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": "media/zh/camera/cam-zh-708/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-708/images/01.webp",
+    "media/zh/camera/cam-zh-708/images/02.webp",
+    "media/zh/camera/cam-zh-708/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-zh-803",
+   "type": "camera",
+   "lang": "zh",
+   "name": "803",
+   "line": "",
+   "model": "803",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-803/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/camera/cam-zh-803/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-803/images/01.webp",
+    "media/zh/camera/cam-zh-803/images/02.webp",
+    "media/zh/camera/cam-zh-803/images/03.webp",
+    "media/zh/camera/cam-zh-803/images/04.webp",
+    "media/zh/camera/cam-zh-803/images/05.webp",
+    "media/zh/camera/cam-zh-803/images/06.webp",
+    "media/zh/camera/cam-zh-803/images/07.webp",
+    "media/zh/camera/cam-zh-803/images/08.webp",
+    "media/zh/camera/cam-zh-803/images/09.webp",
+    "media/zh/camera/cam-zh-803/images/10.webp",
+    "media/zh/camera/cam-zh-803/images/11.webp",
+    "media/zh/camera/cam-zh-803/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-803-NNP-WIFI-H",
+   "keySpecs": [
+    {
+     "k": "图像传感器",
+     "v": "1/2.9 英寸 CMOS"
+    },
+    {
+     "k": "最低照度",
+     "v": "彩色：0.01Lux，黑白：0.001Lux，0Lux（红外开启）"
+    },
+    {
+     "k": "电源",
+     "v": "直流12V±20%"
+    }
+   ]
+  },
+  {
+   "id": "cam-zh-806",
+   "type": "camera",
+   "lang": "zh",
+   "name": "806",
+   "line": "",
+   "model": "806",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-806/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-806/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-806/images/01.webp",
+    "media/zh/camera/cam-zh-806/images/02.webp",
+    "media/zh/camera/cam-zh-806/images/03.webp",
+    "media/zh/camera/cam-zh-806/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-806A-NNP-005H",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技;",
+   "keySpecs": [
+    {
+     "k": "解析度",
+     "v": "1080P"
+    },
+    {
+     "k": "像素",
+     "v": "1920（H）*1080（V）"
+    },
+    {
+     "k": "镜头",
+     "v": "2.8mm/3.6mm"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.01Lux"
+    },
+    {
+     "k": "防护等级",
+     "v": "IP68"
+    },
+    {
+     "k": "工作温度",
+     "v": "－20°C~70°C"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "2.8mm/3.6mm",
+    "IP68"
+   ]
+  },
+  {
+   "id": "cam-zh-813",
+   "type": "camera",
+   "lang": "zh",
+   "name": "813",
+   "line": "",
+   "model": "813",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-813/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-813/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-813/images/01.webp",
+    "media/zh/camera/cam-zh-813/images/02.webp",
+    "media/zh/camera/cam-zh-813/images/03.webp",
+    "media/zh/camera/cam-zh-813/images/04.webp",
+    "media/zh/camera/cam-zh-813/images/05.webp"
+   ],
+   "imageCount": 5,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-813-ANP-015",
+   "keySpecs": [
+    {
+     "k": "像素",
+     "v": "1920 （水平）x 1080（垂直）"
+    },
+    {
+     "k": "图像传感器",
+     "v": "MX-AHDH-813-ANP-015"
+    },
+    {
+     "k": "水平角度",
+     "v": "85°/130°"
+    },
+    {
+     "k": "最低照度",
+     "v": "0 Lux"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃～+70℃"
+    }
+   ],
+   "chips": [
+    "85°/130°"
+   ]
+  },
+  {
+   "id": "cam-zh-831",
+   "type": "camera",
+   "lang": "zh",
+   "name": "831",
+   "line": "",
+   "model": "831",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-831/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-831/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-831/images/01.webp",
+    "media/zh/camera/cam-zh-831/images/02.webp",
+    "media/zh/camera/cam-zh-831/images/03.webp",
+    "media/zh/camera/cam-zh-831/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-ADASH-831A-NNP-025V",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技；",
+   "keySpecs": [
+    {
+     "k": "最低照度",
+     "v": "0.01 LUX/F1.2"
+    },
+    {
+     "k": "防护等级",
+     "v": "IP65"
+    }
+   ],
+   "chips": [
+    "IP65"
+   ]
+  },
+  {
+   "id": "cam-zh-838",
+   "type": "camera",
+   "lang": "zh",
+   "name": "838",
+   "line": "",
+   "model": "838",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-838/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-838/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-838/images/01.webp",
+    "media/zh/camera/cam-zh-838/images/02.webp",
+    "media/zh/camera/cam-zh-838/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-DSMM-838A1-NNP-025H",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技；",
+   "keySpecs": [
+    {
+     "k": "镜头",
+     "v": "3.9MM,940窄带滤光片"
+    },
+    {
+     "k": "最低照度",
+     "v": "0.1LUX"
+    },
+    {
+     "k": "电源",
+     "v": "DC 12V±10%"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃～70℃"
+    }
+   ],
+   "chips": [
+    "3.9MM,940窄带滤光片"
+   ]
+  },
+  {
+   "id": "cam-zh-839",
+   "type": "camera",
+   "lang": "zh",
+   "name": "839",
+   "line": "",
+   "model": "839",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-839/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-839/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-839/images/01.webp",
+    "media/zh/camera/cam-zh-839/images/02.webp",
+    "media/zh/camera/cam-zh-839/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-DSMM-839A-NNP-015H",
+   "summary": "精巧设计，做工精致，精密的线路及严谨结构，体现最高科技；",
+   "keySpecs": [
+    {
+     "k": "镜头",
+     "v": "4.0mm"
+    },
+    {
+     "k": "水平角度",
+     "v": "80°"
+    },
+    {
+     "k": "工作温度",
+     "v": "－20°C~70°C , RH95％ MAX"
+    }
+   ],
+   "chips": [
+    "4.0mm",
+    "80°"
+   ]
+  },
+  {
+   "id": "cam-zh-S19",
+   "type": "camera",
+   "lang": "zh",
+   "name": "双目",
+   "line": "",
+   "model": "",
+   "group": "S",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-zh-Y20",
+   "type": "camera",
+   "lang": "zh",
+   "name": "云台",
+   "line": "",
+   "model": "",
+   "group": "Y",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-en-110",
+   "type": "camera",
+   "lang": "en",
+   "name": "110",
+   "line": "",
+   "model": "110",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-110/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-110/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-110/images/01.webp",
+    "media/en/camera/cam-en-110/images/02.webp",
+    "media/en/camera/cam-en-110/images/03.webp",
+    "media/en/camera/cam-en-110/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-110B-ANP-015,2.8mm",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P AHD"
+    },
+    {
+     "k": "Pixel",
+     "v": "1920(H) x 1080(V)"
+    },
+    {
+     "k": "Horizontal angle",
+     "v": "100°"
+    },
+    {
+     "k": "Interface",
+     "v": "BMW head interface"
+    }
+   ],
+   "chips": [
+    "1080P AHD"
+   ]
+  },
+  {
+   "id": "cam-en-113",
+   "type": "camera",
+   "lang": "en",
+   "name": "113",
+   "line": "",
+   "model": "113",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-113/spec.docx",
+   "docCount": 1,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": "",
+   "summary": "Exquisite design, exquisite workmanship, precise circuit and rigorous structure, reflecting the highest technology;",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P"
+    },
+    {
+     "k": "Pixel",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.8″ SONY AHD"
+    },
+    {
+     "k": "Interface",
+     "v": "M12 aircraft carrier head (with O-ring)"
+    }
+   ],
+   "chips": [
+    "1080P"
+   ]
+  },
+  {
+   "id": "cam-en-115",
+   "type": "camera",
+   "lang": "en",
+   "name": "115",
+   "line": "",
+   "model": "115",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-115/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-115/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-115/images/01.webp",
+    "media/en/camera/cam-en-115/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "summary": "Exquisite design, fine workmanship, precise circuitry and rigorous structure, reflecting the highest level of technology;",
+   "keySpecs": [
+    {
+     "k": "Image sensor",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "Interface",
+     "v": "BMW Connector"
+    }
+   ]
+  },
+  {
+   "id": "cam-en-260",
+   "type": "camera",
+   "lang": "en",
+   "name": "260",
+   "line": "",
+   "model": "260",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-260/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-260/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-260/images/01.webp",
+    "media/en/camera/cam-en-260/images/02.webp",
+    "media/en/camera/cam-en-260/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-260A-NXP-005H",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P"
+    },
+    {
+     "k": "Pixel",
+     "v": "1920（H) x 1080(V)"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "Interface",
+     "v": "Professional aviation interface"
+    }
+   ],
+   "chips": [
+    "1080P"
+   ]
+  },
+  {
+   "id": "cam-en-264",
+   "type": "camera",
+   "lang": "en",
+   "name": "264",
+   "line": "",
+   "model": "264",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-264/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-264/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-264/images/01.webp",
+    "media/en/camera/cam-en-264/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-264A-NNP-005H",
+   "summary": "1/2.9″ high-resolution CMOS sensor",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P/720p"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "Horizontal angle",
+     "v": "130°/ 160 °"
+    }
+   ],
+   "chips": [
+    "1080P/720p"
+   ]
+  },
+  {
+   "id": "cam-en-266",
+   "type": "camera",
+   "lang": "en",
+   "name": "266",
+   "line": "",
+   "model": "266",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-266/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-266/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-266/images/01.webp",
+    "media/en/camera/cam-en-266/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-266A-NNP-005H",
+   "summary": "1/2.9″ high-resolution CMOS sensor",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "Interface",
+     "v": "M12 aircraft carrier bow (with O-ring)"
+    }
+   ],
+   "chips": [
+    "1080P"
+   ]
+  },
+  {
+   "id": "cam-en-267",
+   "type": "camera",
+   "lang": "en",
+   "name": "267",
+   "line": "",
+   "model": "267",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-267/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-267/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-267/images/01.webp",
+    "media/en/camera/cam-en-267/images/02.webp",
+    "media/en/camera/cam-en-267/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-en-301",
+   "type": "camera",
+   "lang": "en",
+   "name": "301",
+   "line": "",
+   "model": "301",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-301/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/camera/cam-en-301/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-301/images/01.webp",
+    "media/en/camera/cam-en-301/images/02.webp",
+    "media/en/camera/cam-en-301/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-301A-NNP-005H",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P/720P"
+    },
+    {
+     "k": "Pixel",
+     "v": "PAL/NTSC：1920（H) x 1080(V)/1280（H) x 720(V)"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.9” Aptina 0130 with Nextchip2431"
+    },
+    {
+     "k": "Lens",
+     "v": "Standard 2.8mm/3.6mm lens"
+    },
+    {
+     "k": "Power",
+     "v": "DC12V±10%"
+    }
+   ],
+   "chips": [
+    "1080P/720P"
+   ]
+  },
+  {
+   "id": "cam-en-610",
+   "type": "camera",
+   "lang": "en",
+   "name": "610",
+   "line": "",
+   "model": "610",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-610/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-610/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-610/images/01.webp",
+    "media/en/camera/cam-en-610/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "",
+   "modelCode": "MX-AHDL-610A-NNP-005H",
+   "summary": "1.Exquisite design, exquisite workmanship, precise lines and rigorous structure, reflecting the highest technology;",
+   "keySpecs": [
+    {
+     "k": "Lens",
+     "v": "2.8mm"
+    }
+   ],
+   "chips": [
+    "2.8mm"
+   ]
+  },
+  {
+   "id": "cam-en-701",
+   "type": "camera",
+   "lang": "en",
+   "name": "701",
+   "line": "",
+   "model": "701",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-701/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/camera/cam-en-701/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-701/images/01.webp",
+    "media/en/camera/cam-en-701/images/02.webp",
+    "media/en/camera/cam-en-701/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-701A-NNP-005H",
+   "summary": "Low power consumption, easy heat dissipation; good color reproduction, clear picture quality;",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P/720P"
+    },
+    {
+     "k": "Pixel",
+     "v": "1920 ( H) x 1080(V)"
+    }
+   ],
+   "chips": [
+    "1080P/720P"
+   ]
+  },
+  {
+   "id": "cam-en-705",
+   "type": "camera",
+   "lang": "en",
+   "name": "705",
+   "line": "",
+   "model": "705",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-705/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/camera/cam-en-705/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-705/images/01.webp",
+    "media/en/camera/cam-en-705/images/02.webp",
+    "media/en/camera/cam-en-705/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-en-708",
+   "type": "camera",
+   "lang": "en",
+   "name": "708",
+   "line": "",
+   "model": "708",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": "media/en/camera/cam-en-708/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-708/images/01.webp",
+    "media/en/camera/cam-en-708/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-en-803",
+   "type": "camera",
+   "lang": "en",
+   "name": "803",
+   "line": "",
+   "model": "803",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-803/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/camera/cam-en-803/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-803/images/01.webp",
+    "media/en/camera/cam-en-803/images/02.webp",
+    "media/en/camera/cam-en-803/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-803-NNP-WIFI-H"
+  },
+  {
+   "id": "cam-en-806",
+   "type": "camera",
+   "lang": "en",
+   "name": "806",
+   "line": "",
+   "model": "806",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-806/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-806/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-806/images/01.webp",
+    "media/en/camera/cam-en-806/images/02.webp",
+    "media/en/camera/cam-en-806/images/03.webp",
+    "media/en/camera/cam-en-806/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "summary": "Exquisite design, fine workmanship, precise circuitry and rigorous structure, reflecting the highest level of technology;",
+   "keySpecs": [
+    {
+     "k": "Resolution",
+     "v": "1080P"
+    },
+    {
+     "k": "Protection level",
+     "v": "IP68"
+    }
+   ],
+   "chips": [
+    "1080P",
+    "IP68"
+   ]
+  },
+  {
+   "id": "cam-en-813",
+   "type": "camera",
+   "lang": "en",
+   "name": "813",
+   "line": "",
+   "model": "813",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-813/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-813/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-813/images/01.webp",
+    "media/en/camera/cam-en-813/images/02.webp",
+    "media/en/camera/cam-en-813/images/03.webp",
+    "media/en/camera/cam-en-813/images/04.webp"
+   ],
+   "imageCount": 4,
+   "lineKey": "",
+   "modelCode": "MX-AHDH-813-ANP-015",
+   "keySpecs": [
+    {
+     "k": "Pixel",
+     "v": "1920(H) x 1080(V)"
+    },
+    {
+     "k": "Image sensor",
+     "v": "1/2.9″ CMOS AHD"
+    },
+    {
+     "k": "Lens",
+     "v": "3.6mm/2.1MM"
+    },
+    {
+     "k": "Interface",
+     "v": "M12"
+    }
+   ],
+   "chips": [
+    "3.6mm/2.1MM"
+   ]
+  },
+  {
+   "id": "cam-en-831",
+   "type": "camera",
+   "lang": "en",
+   "name": "831",
+   "line": "",
+   "model": "831",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-831/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-831/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-831/images/01.webp",
+    "media/en/camera/cam-en-831/images/02.webp",
+    "media/en/camera/cam-en-831/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-ADASH-831A-NNP-025V",
+   "summary": "1.Exquisite design, exquisite workmanship, precise lines and rigorous structure, reflecting the highest technology;",
+   "keySpecs": [
+    {
+     "k": "Protection level",
+     "v": "IP65"
+    }
+   ],
+   "chips": [
+    "IP65"
+   ]
+  },
+  {
+   "id": "cam-en-838",
+   "type": "camera",
+   "lang": "en",
+   "name": "838",
+   "line": "",
+   "model": "838",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-838/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-838/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-838/images/01.webp",
+    "media/en/camera/cam-en-838/images/02.webp",
+    "media/en/camera/cam-en-838/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-DSMM-838A1-NNP-025H",
+   "summary": "Exquisite design, exquisite workmanship, precise circuit and rigorous structure, reflecting the highest technology;",
+   "keySpecs": [
+    {
+     "k": "Lens",
+     "v": "3.9MM, 940 narrowband filter"
+    },
+    {
+     "k": "Interface",
+     "v": "M12 quad core aviation interface (1:+12V, 2: G…"
+    }
+   ]
+  },
+  {
+   "id": "cam-en-839",
+   "type": "camera",
+   "lang": "en",
+   "name": "839",
+   "line": "",
+   "model": "839",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-839/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-839/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-839/images/01.webp",
+    "media/en/camera/cam-en-839/images/02.webp",
+    "media/en/camera/cam-en-839/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "summary": "Exquisite design, fine workmanship, precise circuitry and rigorous structure, reflecting the highest level of technology;",
+   "keySpecs": [
+    {
+     "k": "Horizontal angle",
+     "v": "80 °"
+    }
+   ]
+  },
+  {
+   "id": "cam-en-dsm-independent",
+   "type": "camera",
+   "lang": "en",
+   "name": "DSM-Independent",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-dsm-independent/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/camera/cam-en-dsm-independent/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-dsm-independent/images/01.webp",
+    "media/en/camera/cam-en-dsm-independent/images/02.webp",
+    "media/en/camera/cam-en-dsm-independent/images/03.webp",
+    "media/en/camera/cam-en-dsm-independent/images/04.webp",
+    "media/en/camera/cam-en-dsm-independent/images/05.webp",
+    "media/en/camera/cam-en-dsm-independent/images/06.webp",
+    "media/en/camera/cam-en-dsm-independent/images/07.webp",
+    "media/en/camera/cam-en-dsm-independent/images/08.webp",
+    "media/en/camera/cam-en-dsm-independent/images/09.webp",
+    "media/en/camera/cam-en-dsm-independent/images/10.webp",
+    "media/en/camera/cam-en-dsm-independent/images/11.webp",
+    "media/en/camera/cam-en-dsm-independent/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "",
+   "modelCode": "MX-DSMH-839A",
+   "summary": "产品名称（Customer Name） ： AI DSM车载摄像头"
+  },
+  {
+   "id": "cam-en-ptz",
+   "type": "camera",
+   "lang": "en",
+   "name": "PTZ",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-ptz/spec.docx",
+   "docCount": 1,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "cam-en-passenger-counting",
+   "type": "camera",
+   "lang": "en",
+   "name": "Passenger Counting",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": ""
+  },
+  {
+   "id": "host-zh-m15hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M15Hv",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m15hv/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/host/host-zh-m15hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m15hv/images/01.webp",
+    "media/zh/host/host-zh-m15hv/images/02.webp",
+    "media/zh/host/host-zh-m15hv/images/03.webp",
+    "media/zh/host/host-zh-m15hv/images/04.webp",
+    "media/zh/host/host-zh-m15hv/images/05.webp",
+    "media/zh/host/host-zh-m15hv/images/06.webp",
+    "media/zh/host/host-zh-m15hv/images/07.webp",
+    "media/zh/host/host-zh-m15hv/images/08.webp",
+    "media/zh/host/host-zh-m15hv/images/09.webp",
+    "media/zh/host/host-zh-m15hv/images/10.webp",
+    "media/zh/host/host-zh-m15hv/images/11.webp",
+    "media/zh/host/host-zh-m15hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M15Hv是专为车载视频监控、远程视频监控开发的一款高性能、高拓展延伸的产品，融合IT尖端领域H.264/H.265视频压缩/解压缩、4G网络、GPS/BD定位等技术。M15Hv结构紧密、外观大气、安装使用方便，是一款轻量级应用的基础级产品，适合公安警察、金融押运、长途客运、路政…",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "外接4*1080P"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "SD卡",
+     "v": "1张，最大1TB"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    },
+    {
+     "k": "RS485",
+     "v": "1组（选配）"
+    }
+   ],
+   "chips": [
+    "外接4*1080P",
+    "H.264/H.265",
+    "1张，最大1TB"
+   ]
+  },
+  {
+   "id": "host-zh-m16hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M16Hv",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m16hv/spec.docx",
+   "docCount": 4,
+   "cover": "media/zh/host/host-zh-m16hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m16hv/images/01.webp",
+    "media/zh/host/host-zh-m16hv/images/02.webp",
+    "media/zh/host/host-zh-m16hv/images/03.webp",
+    "media/zh/host/host-zh-m16hv/images/04.webp",
+    "media/zh/host/host-zh-m16hv/images/05.webp",
+    "media/zh/host/host-zh-m16hv/images/06.webp",
+    "media/zh/host/host-zh-m16hv/images/07.webp",
+    "media/zh/host/host-zh-m16hv/images/08.webp",
+    "media/zh/host/host-zh-m16hv/images/09.webp",
+    "media/zh/host/host-zh-m16hv/images/10.webp",
+    "media/zh/host/host-zh-m16hv/images/11.webp",
+    "media/zh/host/host-zh-m16hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M16Hv系列采用了迷你机身，可在狭小空间顺畅安装使用。支持双SD卡，有效提升存储空间。产品兼容主流H.265视频解码技术、4G网络技术、GPS/BD定位技术、WIFI技术等，适用于各种路政巡防车、搅拌车、物流车、渣土车等工业用车。",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "外接4*1080P"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "SD卡",
+     "v": "2张，最大1T*2"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4/5.8G（选配）"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    }
+   ],
+   "chips": [
+    "外接4*1080P",
+    "H.264/H.265",
+    "2张，最大1T*2"
+   ]
+  },
+  {
+   "id": "host-zh-m18ev",
+   "type": "host",
+   "lang": "zh",
+   "name": "M18Ev",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m18ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/host/host-zh-m18ev/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m18ev/images/01.webp",
+    "media/zh/host/host-zh-m18ev/images/02.webp",
+    "media/zh/host/host-zh-m18ev/images/03.webp",
+    "media/zh/host/host-zh-m18ev/images/04.webp",
+    "media/zh/host/host-zh-m18ev/images/05.webp",
+    "media/zh/host/host-zh-m18ev/images/06.webp",
+    "media/zh/host/host-zh-m18ev/images/07.webp",
+    "media/zh/host/host-zh-m18ev/images/08.webp",
+    "media/zh/host/host-zh-m18ev/images/09.webp",
+    "media/zh/host/host-zh-m18ev/images/10.webp",
+    "media/zh/host/host-zh-m18ev/images/11.webp",
+    "media/zh/host/host-zh-m18ev/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M18Ev系列是一款采用一体化设计，集成4G、GPS、WIFI，内置一个高清摄像头，具备便捷性和安全性两方面优势。M18Ev系列支持H.265视频解码技术、GPS/BD定位技术等，可根据需求选配急速检测和碰撞检测功能，适用于货运车、客运巴士、工程车、环卫车等车载或远程监控环境。",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "TF卡",
+     "v": "2张，最大1T*2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    },
+    {
+     "k": "尺寸",
+     "v": "110mm（L）*70.5mm（W）*35.6mm（H）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20〜+70℃"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2张，最大1T*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m19ev",
+   "type": "host",
+   "lang": "zh",
+   "name": "M19Ev",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m19ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/host/host-zh-m19ev/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m19ev/images/01.webp",
+    "media/zh/host/host-zh-m19ev/images/02.webp",
+    "media/zh/host/host-zh-m19ev/images/03.webp",
+    "media/zh/host/host-zh-m19ev/images/04.webp",
+    "media/zh/host/host-zh-m19ev/images/05.webp",
+    "media/zh/host/host-zh-m19ev/images/06.webp",
+    "media/zh/host/host-zh-m19ev/images/07.webp"
+   ],
+   "imageCount": 7,
+   "lineKey": "车载",
+   "summary": "M19Ev系列是一款采用一体化设计，集成前后双摄像头、4G、WIFI、GPS的产品。在后端摄像头录制车内环境的同时，前端摄像头可同步录制路况信息，在便捷性和安全性等方面具备明显优势。M19Ev系列支持H.265视频编码、GPS/BD混合定位等主流技术，可根据需求选配急速检测和碰撞…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.265/ H.264"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "TF卡",
+     "v": "2张，最大512G*2"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    },
+    {
+     "k": "尺寸",
+     "v": "123.6mm（L）*80.5mm（W）*47.7mm（H）"
+    }
+   ],
+   "chips": [
+    "H.265/ H.264",
+    "2张，最大512G*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m20ev",
+   "type": "host",
+   "lang": "zh",
+   "name": "M20Ev",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m20ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/host/host-zh-m20ev/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m20ev/images/01.webp",
+    "media/zh/host/host-zh-m20ev/images/02.webp",
+    "media/zh/host/host-zh-m20ev/images/03.webp",
+    "media/zh/host/host-zh-m20ev/images/04.webp",
+    "media/zh/host/host-zh-m20ev/images/05.webp",
+    "media/zh/host/host-zh-m20ev/images/06.webp",
+    "media/zh/host/host-zh-m20ev/images/07.webp",
+    "media/zh/host/host-zh-m20ev/images/08.webp",
+    "media/zh/host/host-zh-m20ev/images/09.webp",
+    "media/zh/host/host-zh-m20ev/images/10.webp",
+    "media/zh/host/host-zh-m20ev/images/11.webp",
+    "media/zh/host/host-zh-m20ev/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M20Ev系列是一款采用一体化设计，集成前后双摄像机、4G、GPS、WIFI的产品，在后端摄像头录制车内的同时，前视摄像头还可以录制路况信息，在便捷性和安全性两方面具备非常明显的优势。M20Ev系列支持H.265视频解码技术、GPS/BD定位技术等主流视频/网络技术，可根据需求选…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.265/ H.264"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "TF卡",
+     "v": "2张，最大1TB*2"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    },
+    {
+     "k": "尺寸",
+     "v": "126mm（L）*81.5mm（W）*41mm（H）"
+    }
+   ],
+   "chips": [
+    "H.265/ H.264",
+    "2张，最大1TB*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m25hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M25Hv",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m25hv/spec.docx",
+   "docCount": 4,
+   "cover": "media/zh/host/host-zh-m25hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m25hv/images/01.webp",
+    "media/zh/host/host-zh-m25hv/images/02.webp",
+    "media/zh/host/host-zh-m25hv/images/03.webp",
+    "media/zh/host/host-zh-m25hv/images/04.webp",
+    "media/zh/host/host-zh-m25hv/images/05.webp",
+    "media/zh/host/host-zh-m25hv/images/06.webp",
+    "media/zh/host/host-zh-m25hv/images/07.webp",
+    "media/zh/host/host-zh-m25hv/images/08.webp"
+   ],
+   "imageCount": 8,
+   "lineKey": "车载",
+   "summary": "M25Hv系列是专为车载视频监控、图像智能识别、高拓展延伸性产品，采用高速处理器NT98321和嵌入式操作系统，融合IT尖端领域H.264/H.265视频压缩/解压缩等技术。具有多融合性，可实现多元化产品。如：4路视频分割器，4路BSD智能识别报警器，DMS疲劳辅助驾驶等。",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "外接4*1080P"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "TF卡",
+     "v": "1张，最大1TB"
+    },
+    {
+     "k": "RS232",
+     "v": "1个（支持GPS模组）"
+    },
+    {
+     "k": "尺寸",
+     "v": "130mm(L)*71.2mm(T)*27.8mm(H)"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20〜+70℃"
+    }
+   ],
+   "chips": [
+    "外接4*1080P",
+    "H.264/H.265",
+    "1张，最大1TB"
+   ]
+  },
+  {
+   "id": "host-zh-m32hv-sv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M32Hv&Sv",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m32hv-sv/spec.docx",
+   "docCount": 5,
+   "cover": "media/zh/host/host-zh-m32hv-sv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m32hv-sv/images/01.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/02.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/03.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/04.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/05.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/06.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/07.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/08.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/09.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/10.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/11.webp",
+    "media/zh/host/host-zh-m32hv-sv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M32HV系列是一款采用高速处理器和嵌入式操作系统的车载音视频监控专用产品，采用防水防尘结构设计和嵌入式操作系统，融合IT尖端领域H.264/H.265视频压缩/解压缩、4G网络、GPS/BD定位等技术。具有抗震能力强、外观简洁、安装灵活方便、功能全面、可靠性高等特点。适合公安警…",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "外接4*1080P"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "SD卡",
+     "v": "2张，最大1T*2"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4/5.8G（选配）"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组"
+    }
+   ],
+   "chips": [
+    "外接4*1080P",
+    "H.264/H.265",
+    "2张，最大1T*2"
+   ]
+  },
+  {
+   "id": "host-zh-m51-52hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M51&52Hv",
+   "line": "车载 MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m51-52hv/spec.docx",
+   "docCount": 3,
+   "cover": "media/zh/host/host-zh-m51-52hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m51-52hv/images/01.webp",
+    "media/zh/host/host-zh-m51-52hv/images/02.webp",
+    "media/zh/host/host-zh-m51-52hv/images/03.webp",
+    "media/zh/host/host-zh-m51-52hv/images/04.webp",
+    "media/zh/host/host-zh-m51-52hv/images/05.webp",
+    "media/zh/host/host-zh-m51-52hv/images/06.webp",
+    "media/zh/host/host-zh-m51-52hv/images/07.webp",
+    "media/zh/host/host-zh-m51-52hv/images/08.webp",
+    "media/zh/host/host-zh-m51-52hv/images/09.webp",
+    "media/zh/host/host-zh-m51-52hv/images/10.webp",
+    "media/zh/host/host-zh-m51-52hv/images/11.webp",
+    "media/zh/host/host-zh-m51-52hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "车载",
+   "summary": "M51&52Hv系列是专为车载视频监控、远程视频监控开发的一款高性能、高拓展延伸性产品，采用硬盘可自弹出结构设计和高速处理器NT98323和嵌入式操作系统，融合IT尖端领域H.264/H.265视频压缩/解压缩、4G网络、GPS/BD定位等技术。具有抗震能力强、外观简洁、安装灵活…",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "M51Hv最多外接4*1080P M52Hv最多外接8*1080P"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P/D1"
+    },
+    {
+     "k": "SD卡",
+     "v": "1张，最大1T"
+    },
+    {
+     "k": "硬盘",
+     "v": "SSD/HDD，最大8TB"
+    },
+    {
+     "k": "4G无线",
+     "v": "1张SIM卡"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4/5.8G（选配）"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "1张，最大1T",
+    "SSD/HDD，最大8TB"
+   ]
+  },
+  {
+   "id": "host-zh-ex91a",
+   "type": "host",
+   "lang": "zh",
+   "name": "Ex91A",
+   "line": "布控球 / 应急球机",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-ex91a/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/host/host-zh-ex91a/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-ex91a/images/01.webp",
+    "media/zh/host/host-zh-ex91a/images/02.webp",
+    "media/zh/host/host-zh-ex91a/images/03.webp",
+    "media/zh/host/host-zh-ex91a/images/04.webp",
+    "media/zh/host/host-zh-ex91a/images/05.webp",
+    "media/zh/host/host-zh-ex91a/images/06.webp"
+   ],
+   "imageCount": 6,
+   "lineKey": "布控球",
+   "summary": "Ex-91A高清智能布控球是集录像、高清视频无线传输、语音对讲、远程控制、防爆于一体的便携式产品。采用高速处理器和嵌入式操作系统，结合IT 领域中最先进的H.265音视频压缩、无线网传、远程控制等技术。该产品外观简洁、携带便捷、安装灵活 方便，功能强大，可靠性高且具有超强抗震，防…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "最大4K(选配）"
+    },
+    {
+     "k": "SD卡",
+     "v": "2张，最大1TB*2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "尺寸",
+     "v": "220mm（φ）*305mm（H）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-25℃〜+60℃ （通风良好条件下的环境温度）"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2张，最大1TB*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m91hv-91av",
+   "type": "host",
+   "lang": "zh",
+   "name": "M91Hv&91Av",
+   "line": "布控球 / 应急球机",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m91hv-91av/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/host/host-zh-m91hv-91av/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m91hv-91av/images/01.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/02.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/03.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/04.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/05.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/06.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/07.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/08.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/09.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/10.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/11.webp",
+    "media/zh/host/host-zh-m91hv-91av/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "布控球",
+   "summary": "4G高清智能布控球是集录像、高清视频无线传输、语音监听、对讲、远程控制于一体的便携式产品。采用高速处理器和嵌入式操作系统，结合IT 领域中最先进的H.265音视频压缩、无线网传、远程控制等技术。该产品外观简洁、携带便捷、安装灵活 方便，功能强大，可靠性高且具有超强抗振，防水等特点…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "最大4K(选配）"
+    },
+    {
+     "k": "SD卡",
+     "v": "2张，最大512G*2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "尺寸",
+     "v": "170mm（W）*277mm（H）*170mm（D）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-25℃〜+60℃ （通风良好条件下的环境温度）"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2张，最大512G*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m91sv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M91Sv",
+   "line": "布控球 / 应急球机",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m91sv/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/host/host-zh-m91sv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m91sv/images/01.webp",
+    "media/zh/host/host-zh-m91sv/images/02.webp",
+    "media/zh/host/host-zh-m91sv/images/03.webp",
+    "media/zh/host/host-zh-m91sv/images/04.webp",
+    "media/zh/host/host-zh-m91sv/images/05.webp",
+    "media/zh/host/host-zh-m91sv/images/06.webp",
+    "media/zh/host/host-zh-m91sv/images/07.webp",
+    "media/zh/host/host-zh-m91sv/images/08.webp",
+    "media/zh/host/host-zh-m91sv/images/09.webp",
+    "media/zh/host/host-zh-m91sv/images/10.webp",
+    "media/zh/host/host-zh-m91sv/images/11.webp",
+    "media/zh/host/host-zh-m91sv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "布控球",
+   "summary": "M91Sv轻量化MINI布控球是一款功能全面、轻便化安装及使用的无线视频应用一体化产品，其具备高集成度、大容量锂电池组、防水防震、体型MINI化的特点，裸机重量仅1.4KG，可随身携带，满足临时快速布控、远程调度指挥的特殊要求。适用于电力施工、外勤执法、侦查布控、应急指挥、巡线管…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "TF卡",
+     "v": "1张，最大1T"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "尺寸",
+     "v": "102.4mm（W）*188mm（H）*85mm（D）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-25℃〜+60℃ （良好通风环境）"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "1张，最大1T",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-zh-m92sv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M92Sv",
+   "line": "布控球 / 应急球机",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m92sv/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/host/host-zh-m92sv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m92sv/images/01.webp",
+    "media/zh/host/host-zh-m92sv/images/02.webp",
+    "media/zh/host/host-zh-m92sv/images/03.webp",
+    "media/zh/host/host-zh-m92sv/images/04.webp",
+    "media/zh/host/host-zh-m92sv/images/05.webp",
+    "media/zh/host/host-zh-m92sv/images/06.webp",
+    "media/zh/host/host-zh-m92sv/images/07.webp"
+   ],
+   "imageCount": 7,
+   "lineKey": "布控球",
+   "summary": "M92Sv轻量化小型布控球是一款功能全面、轻便化安装及使用的无线视频应用一体化产品，其具备高集成度、大容量锂电池组、防水防震、体型MINI化的特点，裸机重量仅2.5KG，可随身携带，满足临时快速布控、远程调度指挥的特殊要求。适用于电力施工、外勤执法、侦查布控、应急指挥、巡线管理等…",
+   "keySpecs": [
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "WIFI 6 （向下兼容5.8/2.4G） 支持STA/AP模式"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "尺寸",
+     "v": "150mm（W）*250.8mm（H）*99mm（D）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-25℃〜+60℃（良好通风环境）"
+    }
+   ],
+   "chips": [
+    "H.264/H.265"
+   ]
+  },
+  {
+   "id": "host-zh-013",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "布控球附件",
+   "line": "布控球 / 应急球机",
+   "model": "",
+   "group": "",
+   "specDocx": null,
+   "docCount": 0,
+   "cover": null,
+   "gallery": [],
+   "imageCount": 0,
+   "lineKey": "布控球",
+   "reclassified": true
+  },
+  {
+   "id": "host-zh-m71hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M71HV",
+   "line": "单兵 / 图传",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m71hv/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/host/host-zh-m71hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m71hv/images/01.webp",
+    "media/zh/host/host-zh-m71hv/images/02.webp",
+    "media/zh/host/host-zh-m71hv/images/03.webp",
+    "media/zh/host/host-zh-m71hv/images/04.webp",
+    "media/zh/host/host-zh-m71hv/images/05.webp",
+    "media/zh/host/host-zh-m71hv/images/06.webp",
+    "media/zh/host/host-zh-m71hv/images/07.webp",
+    "media/zh/host/host-zh-m71hv/images/08.webp",
+    "media/zh/host/host-zh-m71hv/images/09.webp",
+    "media/zh/host/host-zh-m71hv/images/10.webp",
+    "media/zh/host/host-zh-m71hv/images/11.webp",
+    "media/zh/host/host-zh-m71hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "单兵",
+   "summary": "M71Hv单兵图传是为无人机监控、抓拍、指挥以及HDMI类超高清晰度视频传输开发的一款便携性、高拓展延伸性产品。产品采用一体化工业设计，集成音视频硬件编码、5G/4G网络、GPS&北斗、数据存储、锂电池等模块。可通过HDMI接口与无人机、机器人、DV摄像机连接，让管理端远程实时获…",
+   "keySpecs": [
+    {
+     "k": "AHD输入",
+     "v": "1路"
+    },
+    {
+     "k": "视频编码",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "视频分辨率",
+     "v": "1080P/720P"
+    },
+    {
+     "k": "TF卡",
+     "v": "1张，最大1T"
+    },
+    {
+     "k": "WIFI",
+     "v": "WiFi Client/WiFi 热点"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "尺寸",
+     "v": "149mm（L）*98.1mm（W）*42.6mm（H） （不含天线、背夹）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20〜+60℃"
+    }
+   ],
+   "chips": [
+    "1路",
+    "H.264/H.265",
+    "1张，最大1T"
+   ]
+  },
+  {
+   "id": "host-zh-m93hv",
+   "type": "host",
+   "lang": "zh",
+   "name": "M93Hv",
+   "line": "4G 一体机",
+   "model": "",
+   "group": "",
+   "specDocx": "media/zh/host/host-zh-m93hv/spec.docx",
+   "docCount": 2,
+   "cover": "media/zh/host/host-zh-m93hv/images/01.webp",
+   "gallery": [
+    "media/zh/host/host-zh-m93hv/images/01.webp",
+    "media/zh/host/host-zh-m93hv/images/02.webp",
+    "media/zh/host/host-zh-m93hv/images/03.webp",
+    "media/zh/host/host-zh-m93hv/images/04.webp",
+    "media/zh/host/host-zh-m93hv/images/05.webp",
+    "media/zh/host/host-zh-m93hv/images/06.webp",
+    "media/zh/host/host-zh-m93hv/images/07.webp",
+    "media/zh/host/host-zh-m93hv/images/08.webp",
+    "media/zh/host/host-zh-m93hv/images/09.webp",
+    "media/zh/host/host-zh-m93hv/images/10.webp",
+    "media/zh/host/host-zh-m93hv/images/11.webp",
+    "media/zh/host/host-zh-m93hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "4G摄像头",
+   "summary": "M93Hv 4G摄像头是一款功能全面、轻便化安装使用的无线视频应用一体化产品，其具备高集成度、防水防震，安装简单，满足快速布控、远程调度指挥的特殊要求。适用于工地施工、车辆监控、防偷盗等业务场景。AI版本还可支持人脸识别，盲区人员监测，疲劳驾驶预警等功能。",
+   "keySpecs": [
+    {
+     "k": "TF卡",
+     "v": "1张，最大512GB"
+    },
+    {
+     "k": "WIFI",
+     "v": "不支持"
+    },
+    {
+     "k": "北斗/GPS",
+     "v": "支持，可混合定位"
+    },
+    {
+     "k": "RS232",
+     "v": "1组（选配）"
+    },
+    {
+     "k": "尺寸",
+     "v": "77.5mm（W）*61mm（H）*74mm（D）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20℃〜+70℃（良好通风环境）"
+    }
+   ],
+   "chips": [
+    "1张，最大512GB",
+    "不支持"
+   ]
+  },
+  {
+   "id": "host-en-m15hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M15Hv",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m15hv/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m15hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m15hv/images/01.webp",
+    "media/en/host/host-en-m15hv/images/02.webp",
+    "media/en/host/host-en-m15hv/images/03.webp",
+    "media/en/host/host-en-m15hv/images/04.webp",
+    "media/en/host/host-en-m15hv/images/05.webp",
+    "media/en/host/host-en-m15hv/images/06.webp",
+    "media/en/host/host-en-m15hv/images/07.webp",
+    "media/en/host/host-en-m15hv/images/08.webp",
+    "media/en/host/host-en-m15hv/images/09.webp",
+    "media/en/host/host-en-m15hv/images/10.webp",
+    "media/en/host/host-en-m15hv/images/11.webp",
+    "media/en/host/host-en-m15hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "MDVR",
+   "summary": "M15Hv is a high-performance, high- expansion product specially developed for in-vehicle video surveillance and remote video surveillance. et…",
+   "keySpecs": [
+    {
+     "k": "Video encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "SD card",
+     "v": "1 , maximum 1T"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "RS485",
+     "v": "1 group(optional)"
+    },
+    {
+     "k": "Size",
+     "v": "102.8mm ( L ) *120mm ( W ) *32.23mm ( H ) (exc…"
+    }
+   ],
+   "chips": [
+    "1 , maximum 1T"
+   ]
+  },
+  {
+   "id": "host-en-m16hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M16Hv",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m16hv/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m16hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m16hv/images/01.webp",
+    "media/en/host/host-en-m16hv/images/02.webp",
+    "media/en/host/host-en-m16hv/images/03.webp",
+    "media/en/host/host-en-m16hv/images/04.webp",
+    "media/en/host/host-en-m16hv/images/05.webp",
+    "media/en/host/host-en-m16hv/images/06.webp",
+    "media/en/host/host-en-m16hv/images/07.webp",
+    "media/en/host/host-en-m16hv/images/08.webp",
+    "media/en/host/host-en-m16hv/images/09.webp",
+    "media/en/host/host-en-m16hv/images/10.webp",
+    "media/en/host/host-en-m16hv/images/11.webp",
+    "media/en/host/host-en-m16hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "MDVR",
+   "summary": "The M16Hv series uses a mini body, which can be easily installed and used in small spaces. Support dual SD card, effectively improve the sto…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4 / 5.8G ( optional)"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "RS485",
+     "v": "1 group"
+    },
+    {
+     "k": "Size",
+     "v": "135.5mm ( L ) *137.7mm ( W ) *36.5mm ( H )"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2.4 / 5.8G ( optional)"
+   ]
+  },
+  {
+   "id": "host-en-m18ev",
+   "type": "host",
+   "lang": "en",
+   "name": "M18Ev",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m18ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m18ev/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m18ev/images/01.webp",
+    "media/en/host/host-en-m18ev/images/02.webp",
+    "media/en/host/host-en-m18ev/images/03.webp",
+    "media/en/host/host-en-m18ev/images/04.webp",
+    "media/en/host/host-en-m18ev/images/05.webp",
+    "media/en/host/host-en-m18ev/images/06.webp",
+    "media/en/host/host-en-m18ev/images/07.webp",
+    "media/en/host/host-en-m18ev/images/08.webp",
+    "media/en/host/host-en-m18ev/images/09.webp",
+    "media/en/host/host-en-m18ev/images/10.webp",
+    "media/en/host/host-en-m18ev/images/11.webp",
+    "media/en/host/host-en-m18ev/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "MDVR",
+   "summary": "M18Ev is a car mounted device that adopts an integrated structure. The device comes with one front facing camera and integrates 4G, WIFI, GP…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "TF card",
+     "v": "2, maximum 1T*2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "Size",
+     "v": "110mm (L)*70.5mm (W)*35.6mm (H)"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2, maximum 1T*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-en-m19ev",
+   "type": "host",
+   "lang": "en",
+   "name": "M19Ev",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m19ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m19ev/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m19ev/images/01.webp",
+    "media/en/host/host-en-m19ev/images/02.webp",
+    "media/en/host/host-en-m19ev/images/03.webp",
+    "media/en/host/host-en-m19ev/images/04.webp",
+    "media/en/host/host-en-m19ev/images/05.webp"
+   ],
+   "imageCount": 5,
+   "lineKey": "MDVR",
+   "summary": "The M19Ev series features an integrated design, incorporating front and rear dual cameras, 4G, Wi-Fi, and GPS. While the rear camera records…",
+   "keySpecs": [
+    {
+     "k": "Video input",
+     "v": "Built-in 2* CMOS 1080P cameras ( front and rea…"
+    },
+    {
+     "k": "Video encoding",
+     "v": "H.265/ H.264"
+    },
+    {
+     "k": "TF card",
+     "v": "2 cards, maximum 512GB *2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "RS232",
+     "v": "Group 1"
+    },
+    {
+     "k": "Size",
+     "v": "123.6mm (L)*80.5mm (W)*47.7mm (H)"
+    }
+   ],
+   "chips": [
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-en-m20ev",
+   "type": "host",
+   "lang": "en",
+   "name": "M20Ev",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m20ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m20ev/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m20ev/images/01.webp",
+    "media/en/host/host-en-m20ev/images/02.webp",
+    "media/en/host/host-en-m20ev/images/03.webp",
+    "media/en/host/host-en-m20ev/images/04.webp",
+    "media/en/host/host-en-m20ev/images/05.webp",
+    "media/en/host/host-en-m20ev/images/06.webp",
+    "media/en/host/host-en-m20ev/images/07.webp",
+    "media/en/host/host-en-m20ev/images/08.webp",
+    "media/en/host/host-en-m20ev/images/09.webp",
+    "media/en/host/host-en-m20ev/images/10.webp"
+   ],
+   "imageCount": 10,
+   "lineKey": "MDVR",
+   "summary": "M20Ev series is an integrated design with front and rear dual cameras, 4G, GPS and WIFI. While the rear camera can record the car, the front…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.265/H.264"
+    },
+    {
+     "k": "TF card",
+     "v": "2, maximum 1TB*2"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "Size",
+     "v": "126 mm (L) * 81.5 mm (W) * 41 mm (H)"
+    }
+   ],
+   "chips": [
+    "H.265/H.264",
+    "2, maximum 1TB*2",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-en-m25hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M25Hv",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m25hv/spec.docx",
+   "docCount": 4,
+   "cover": "media/en/host/host-en-m25hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m25hv/images/01.webp",
+    "media/en/host/host-en-m25hv/images/02.webp",
+    "media/en/host/host-en-m25hv/images/03.webp",
+    "media/en/host/host-en-m25hv/images/04.webp",
+    "media/en/host/host-en-m25hv/images/05.webp"
+   ],
+   "imageCount": 5,
+   "lineKey": "MDVR",
+   "summary": "The M25Hv series is designed for in-vehicle video surveillance, intelligent image recognition, and highly expandable products. It utilizes t…",
+   "keySpecs": [
+    {
+     "k": "AHD input",
+     "v": "External 4 * 1080P"
+    },
+    {
+     "k": "Video encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "TF card",
+     "v": "1, maximum 1TB"
+    },
+    {
+     "k": "RS232",
+     "v": "1( GPS module )"
+    },
+    {
+     "k": "Size",
+     "v": "1 30 mm (L) * 71.2 mm (T) * 27.8 mm (H)"
+    }
+   ],
+   "chips": [
+    "External 4 * 1080P",
+    "1, maximum 1TB"
+   ]
+  },
+  {
+   "id": "host-en-m32hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M32Hv",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m32hv/spec.docx",
+   "docCount": 4,
+   "cover": "media/en/host/host-en-m32hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m32hv/images/01.webp",
+    "media/en/host/host-en-m32hv/images/02.webp",
+    "media/en/host/host-en-m32hv/images/03.webp",
+    "media/en/host/host-en-m32hv/images/04.webp",
+    "media/en/host/host-en-m32hv/images/05.webp",
+    "media/en/host/host-en-m32hv/images/06.webp",
+    "media/en/host/host-en-m32hv/images/07.webp",
+    "media/en/host/host-en-m32hv/images/08.webp",
+    "media/en/host/host-en-m32hv/images/09.webp",
+    "media/en/host/host-en-m32hv/images/10.webp",
+    "media/en/host/host-en-m32hv/images/11.webp",
+    "media/en/host/host-en-m32hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "MDVR",
+   "summary": "M32Hv series is a dedicated vehicle-mounted audio and video surveillance product that uses a high-speed processor. It adopts a waterproof an…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4/5.8G ( optional)"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "RS485",
+     "v": "1 group (enhanced version)"
+    },
+    {
+     "k": "Size",
+     "v": "154mm ( L ) *148mm ( W ) *39mm ( H ) (excludin…"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2.4/5.8G ( optional)"
+   ]
+  },
+  {
+   "id": "host-en-m51-52hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M51&52Hv",
+   "line": "Vehicle MDVR",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m51-52hv/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m51-52hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m51-52hv/images/01.webp",
+    "media/en/host/host-en-m51-52hv/images/02.webp",
+    "media/en/host/host-en-m51-52hv/images/03.webp",
+    "media/en/host/host-en-m51-52hv/images/04.webp",
+    "media/en/host/host-en-m51-52hv/images/05.webp",
+    "media/en/host/host-en-m51-52hv/images/06.webp",
+    "media/en/host/host-en-m51-52hv/images/07.webp",
+    "media/en/host/host-en-m51-52hv/images/08.webp",
+    "media/en/host/host-en-m51-52hv/images/09.webp",
+    "media/en/host/host-en-m51-52hv/images/10.webp",
+    "media/en/host/host-en-m51-52hv/images/11.webp",
+    "media/en/host/host-en-m51-52hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "MDVR",
+   "summary": "M51/52Hv is designed for vehicle video monitoring, remote video monitoring development of a high-performance, highly expandable product, fea…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4/5.8G ( optional)"
+    },
+    {
+     "k": "RS232",
+     "v": "1 group"
+    },
+    {
+     "k": "RS485",
+     "v": "1 group"
+    },
+    {
+     "k": "Size",
+     "v": "176.9mm ( L ) *186.8mm ( W ) *54mm ( H ) (with…"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2.4/5.8G ( optional)"
+   ]
+  },
+  {
+   "id": "host-en-m91hv-m91ev",
+   "type": "host",
+   "lang": "en",
+   "name": "M91Hv&M91Ev",
+   "line": "Emergency PTZ",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m91hv-m91ev/spec.docx",
+   "docCount": 3,
+   "cover": "media/en/host/host-en-m91hv-m91ev/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m91hv-m91ev/images/01.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/02.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/03.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/04.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/05.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/06.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/07.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/08.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/09.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/10.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/11.webp",
+    "media/en/host/host-en-m91hv-m91ev/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "Emergency deployment ptz cameras",
+   "summary": "4G HD IR PTZ Camera is a professional HD IR PTZ camera integrated with record, HD video wireless transmit, audio ,talk and remote control. I…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    },
+    {
+     "k": "4G",
+     "v": "1/2 SIM cards (optional)"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-en-m91sv",
+   "type": "host",
+   "lang": "en",
+   "name": "M91Sv",
+   "line": "Emergency PTZ",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m91sv/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/host/host-en-m91sv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m91sv/images/01.webp",
+    "media/en/host/host-en-m91sv/images/02.webp",
+    "media/en/host/host-en-m91sv/images/03.webp",
+    "media/en/host/host-en-m91sv/images/04.webp",
+    "media/en/host/host-en-m91sv/images/05.webp",
+    "media/en/host/host-en-m91sv/images/06.webp"
+   ],
+   "imageCount": 6,
+   "lineKey": "Emergency deployment ptz cameras",
+   "summary": "The M91Sv lightweight MINI surveillance ball is a wireless video application integrated product with comprehensive functions, easy installat…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "TF card",
+     "v": "1 , maximum 1T"
+    },
+    {
+     "k": "WIFI",
+     "v": "2.4G"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "1 , maximum 1T",
+    "2.4G"
+   ]
+  },
+  {
+   "id": "host-en-m92sv",
+   "type": "host",
+   "lang": "en",
+   "name": "M92Sv",
+   "line": "Emergency PTZ",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m92sv/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/host/host-en-m92sv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m92sv/images/01.webp",
+    "media/en/host/host-en-m92sv/images/02.webp"
+   ],
+   "imageCount": 2,
+   "lineKey": "Emergency deployment ptz cameras",
+   "summary": "The M9 2 Sv lightweight mini surveillance PTZ camera is a comprehensive, portable, and easy-to-install wireless video application product. I…",
+   "keySpecs": [
+    {
+     "k": "Video input",
+     "v": "1-channel IPC input"
+    },
+    {
+     "k": "Video encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "WIFI",
+     "v": "WIFI 6 (backward compatible with 5.8/2.4G ) Su…"
+    }
+   ]
+  },
+  {
+   "id": "host-en-m71hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M71HV",
+   "line": "Body-worn / Image Transmission",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m71hv/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/host/host-en-m71hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m71hv/images/01.webp",
+    "media/en/host/host-en-m71hv/images/02.webp",
+    "media/en/host/host-en-m71hv/images/03.webp",
+    "media/en/host/host-en-m71hv/images/04.webp",
+    "media/en/host/host-en-m71hv/images/05.webp",
+    "media/en/host/host-en-m71hv/images/06.webp",
+    "media/en/host/host-en-m71hv/images/07.webp",
+    "media/en/host/host-en-m71hv/images/08.webp",
+    "media/en/host/host-en-m71hv/images/09.webp"
+   ],
+   "imageCount": 9,
+   "lineKey": "Drone image transmission",
+   "summary": "The M71Hv portable video transmission system is a highly portable and extensible product developed for drone monitoring, capturing, command…",
+   "keySpecs": [
+    {
+     "k": "Video Encoding",
+     "v": "H.264/H.265"
+    },
+    {
+     "k": "TF card",
+     "v": "1 sheet, maximum 1T"
+    },
+    {
+     "k": "WIFI",
+     "v": "WiFi Client connection / WiFi AP hotspot"
+    }
+   ],
+   "chips": [
+    "H.264/H.265",
+    "1 sheet, maximum 1T"
+   ]
+  },
+  {
+   "id": "host-en-m93hv",
+   "type": "host",
+   "lang": "en",
+   "name": "M93Hv",
+   "line": "4G All-in-one",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/host/host-en-m93hv/spec.docx",
+   "docCount": 2,
+   "cover": "media/en/host/host-en-m93hv/images/01.webp",
+   "gallery": [
+    "media/en/host/host-en-m93hv/images/01.webp",
+    "media/en/host/host-en-m93hv/images/02.webp",
+    "media/en/host/host-en-m93hv/images/03.webp",
+    "media/en/host/host-en-m93hv/images/04.webp",
+    "media/en/host/host-en-m93hv/images/05.webp",
+    "media/en/host/host-en-m93hv/images/06.webp",
+    "media/en/host/host-en-m93hv/images/07.webp",
+    "media/en/host/host-en-m93hv/images/08.webp",
+    "media/en/host/host-en-m93hv/images/09.webp",
+    "media/en/host/host-en-m93hv/images/10.webp",
+    "media/en/host/host-en-m93hv/images/11.webp",
+    "media/en/host/host-en-m93hv/images/12.webp"
+   ],
+   "imageCount": 12,
+   "lineKey": "4G Camera",
+   "summary": "M93H 4G camera is a comprehensive, lightweight, and easy-to-install wireless video application product. It features high integration, waterp…",
+   "keySpecs": [
+    {
+     "k": "TF card",
+     "v": "1 sheet, maximum 512GB"
+    },
+    {
+     "k": "WIFI",
+     "v": "No"
+    },
+    {
+     "k": "4G",
+     "v": "Supports all network compatible 4G cards"
+    },
+    {
+     "k": "RS232",
+     "v": "Supports one RS232 input (optional)"
+    },
+    {
+     "k": "Size",
+     "v": "77.5 mm ( W ) * 61 mm ( H ) * 74 mm ( D )"
+    }
+   ],
+   "chips": [
+    "1 sheet, maximum 512GB",
+    "No"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "310",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "107",
+  "page_title": "摄像头角度与距离关系",
+  "page_content": "![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a0a004ebbc88a518d6d96d8cde059493)\n\n监控摄像头的毫米数跟角度的关系如下：\n\n摄像机镜头的毫米数越小，那么监控画面的角度就越大（范围大），但是最清晰的距离就越近（近景）；反之，摄像头的镜头毫米数越大，那么监控画面的角度就越小（范围小），但是最清晰的距离就越远（远景）。\n\n焦距：监控摄像头的焦距指的是镜头和感光元件之间的距离。镜头的放大倍数约等于焦距与物距之比。也就是说，随着监控摄像头焦距的增加，放大倍数增加，可以将近景拉远，远景细节更清晰，反之，成立。\n",
+  "s_number": "2",
+  "addtime": "2025-12-17 14:07:42",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:25:15",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "行业科普"
+}

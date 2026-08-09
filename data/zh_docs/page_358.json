@@ -1,0 +1,18 @@
+{
+  "page_id": "358",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-车辆报表导出导入",
+  "page_content": "[TOC]\n\n### 说明\n- 适用于只迁移部分和全部已添加的车辆信息，不包括大数据 需要大数据迁移请使用数据库备份和恢复功能，参考上面文章\n\n### 操作步骤\n1.在新的平台上创建和原来服务器相对应的公司以及子公司。\n1）点击“信息管理”\n2）点击“公司信息”\n3）点击“添加”\n4）填写公司名称\n5）填写登录账号\n6）设置登录密码\n7）选择上级公司\n8）以上信息设置完毕后点击保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e18dbd332ffaa78fdc87da59c37da138)\n\n2.创建好新公司之后可以将原公司的设备从原平台中导出之后重新导入到新服务器中。\n1）点击“信息管理”\n2）点击“车辆信息”\n3）选择对应的公司\n4）先导出Excel表格\n5）去另外的服务器的该位置点击此处将前面导出的表格导入进去\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7c7aa8efef0fed8c68a548c8083fd05a)\n注意：可以全部公司一起导入，但这样导入的出错率高，建议进入对应的公司一个个导入，若一直导不进去只能一个个手动添加。\n\n3.有些用户可能会自己的公司下添加一些用户账号以及角色分配给客户使用，对应原来的平台的数据，自行添加原平台上的角色和用户账号。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ba31bdcabb383062e218e900a47232ec)",
+  "s_number": "25",
+  "addtime": "2025-12-17 14:02:43",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:22:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

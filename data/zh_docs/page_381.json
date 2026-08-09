@@ -1,0 +1,18 @@
+{
+  "page_id": "381",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-车辆到期提醒",
+  "page_content": "#### 前提条件：\n- 车辆已经添加好到期时间\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ceb6184b5baadb9984f900eeb2a8e8d5)\n\n#### 说明：\n- 此功能只在WEB端实时监控菜单弹窗提醒\n- 设备上线且定位成功往平台发定位数据才会触发\n- 报警和弹窗只生成1次，需要再次触发在规则里取消车辆在重新分配\n\n#### 操作步骤\n1、添加到期提醒规则\n账号登入后点击&gt;&gt;&gt;信息管理&gt;&gt;&gt;规则管理&gt;&gt;&gt;规则维护&gt;&gt;&gt;其他规则&gt;&gt;&gt;到期提醒&gt;&gt;&gt;添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c676a4441fc0da0abf67ef1375f6a0bd)\n2、填入规则名称、勾选到期提醒类型、填入提前提醒天数、确认保存\n3、开启平台到期提醒弹窗\n点击回到实时预览监控菜单&gt;&gt;&gt;开启报警弹窗&gt;&gt;&gt;到期提醒时间勾选（可以在最上面输入框输入到期文字快速定位）&gt;&gt;&gt;保存开启\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=69dbc572c47caefaba041a7d1800501b)\n4、车辆上线后 右下角会弹窗提醒\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=46c81fb6c6b7e26f38d553a6055c5d75)\n",
+  "s_number": "30",
+  "addtime": "2025-12-17 14:05:27",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:23:33",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

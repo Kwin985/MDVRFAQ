@@ -1,0 +1,18 @@
+{
+  "page_id": "642",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "22",
+  "page_title": "自定义制作开机LOG图",
+  "page_content": "#### 前提条件：\n- 设备支持两种输出屏幕开机 LOGO 自定义：CVBS 模拟屏、VGA 数字屏，两类图片参数标准不同，需按屏幕类型对应制作，图片不满足规范将导致开机 LOGO 无法显示、黑屏、画面拉伸。\n- 统一强制规范（两类图片通用）\n文件名称：必须命名为 logo.jpg，大小写不可修改，后缀只能为 jpg\n色彩标准：24 位真彩色，仅支持 JPG 格式，禁止 PNG、BMP、WebP 等格式\n文件大小：图片保存后体积必须小于 120KB，超出限制设备无法加载\n- 分屏幕分辨率标准\nCVBS 输出屏：分辨率固定 720 宽 × 576 高 像素\nVGA 输出屏：分辨率固定 1024 宽 × 768 高 像素\n#### 示例图点击下载可用：\n默认logo（CVBS\\VGA通用）：[logo.jpg](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=57de00402c04ff6b4662789340dd5ef6 &quot;[logo.jpg&quot;)\n测试logo（CVBS）:[logo.jpg](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=954834f073ba915fbfc67bf2a8f0ad97 &quot;[logo.jpg&quot;)\n测试logo（VGA）:[logo.jpg](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=520dad46996b3f7558572c413b87c0ce &quot;[logo.jpg&quot;)\n\n#### 操作步骤：\n##### 制作工具 ：Windows 自带「画图」（推荐，无需额外下载）\n也可使用其他工具编辑修改图片，符合上面图片规范要求即可。\n##### 步骤 1：新建标准尺寸画布（杜绝画面拉伸）\nWindows 左下角搜索「画图」，打开系统自带画图软件\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e67f4e53ce5cf140857ab3e3d8d8dda2)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=dc8225d0dda099548c9da872dfe6ca1c)\n顶部菜单栏点击「文件」→「属性」\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=25f1820b5258b736b889052ceef766b4)\n单位选择【像素】，根据设备屏幕填入对应数值：\nCVBS 屏：宽度 720，高度 576\nVGA 屏：宽度 1024，高度 768\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e6584cc25d7afb24e0aa66610b1e91ba)\n点击「确定」，生成无拉伸标准空白画布\n##### 步骤 2：导入 LOGO 素材\n导入或复制您的企业 LOGO、文字、背景图，粘贴至画布内\n拖动素材调整位置，建议整体画面居中放置，预留边缘安全区域和刚好覆盖白画布边缘，避免屏幕裁切\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2aef9e170b9bfdff315d135b3812d96b)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b0ee0a01d5f2539b5a21065332f54421)\n##### 步骤 3：导出合规 logo.jpg 文件\n左上角「文件」→「另存为」，文件类型选择【JPEG】\n文件名称修改为 logo.jpg，点击保存\n校验文件是否合规：右键图片→「属性」\n查看详细信息：位深度 = 24，分辨率匹配屏幕规格\n查看大小：占用空间＜120KB；若体积超标，重新另存，降低画质滑块压缩文件\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b21160da4151bd4fefdc4945c30ea6e8)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c558f90afef9424f892a63d3d03be097)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0ecac246bf0cf748b8ebc33c77d6313a)\n##### 步骤 4:导入到设备\n把图片拷贝到FAT32格式的U盘或已在MDVR设备正常使用的SD卡根目录下，插入设备通电开机会自动完成导入，再次重启开机观察屏幕是否正常显示画面。\nSD卡导入图片参考配置导入放入位置一致----参考：[CMSV7--本地配置导入注册平台](http://pug2.4000329988.com/fqa/web/#/11/111 &quot;CMSV7--本地配置导入注册平台&quot;)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=08e1059dd753c4efbfc90ec1a770927e)",
+  "s_number": "3",
+  "addtime": "2026-07-16 17:43:27",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-16 17:32:19",
+  "ext_info": "",
+  "attachment_count": "3",
+  "unique_key": "",
+  "cat_name": "功能定制--提示音-开机LOG"
+}

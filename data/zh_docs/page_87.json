@@ -1,0 +1,18 @@
+{
+  "page_id": "87",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "22",
+  "page_title": "提示音批量导入\\删除\\查询",
+  "page_content": "[TOC]\n\n## 一、提示音批量导入\n1. 点击此处“[upaudios.tar.gz](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b0a970520fe71f343285e01167b1961 &quot;[upaudios.tar.gz&quot;)”压缩包下载到本地，双击两次打开压缩包，可以看到里面有很音频文件。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a511f7f69e5cfacfd9b19d92a0285655)\n1. 删除不需要的音频文件和复制拖入进来需要导入的音频文件，关闭压缩包保存重新压缩，此时升级压缩包制作完成。\n音频文件获取和定义说明参考[提示音定制说明](http://pug2.4000329988.com/fqa/web/#/11/85 &quot;提示音定制说明&quot;)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=49b38d0881e4737483262b56f228ac66)\n\n1. 导入设备\n3.1远程导入\n登入平台客户端使用在线升级功能升级此压缩包，方法参考 [固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;) 文章 远程升级步骤\n`注意：文件命名必须是“audios.tar.gz”结尾，最好不要更改文件名称保持下载时候一致，如图：`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fbbc5e016f51c976019a98ebcda4ef87)\n3.2本地导入\n取出在设备已使用的SD卡或硬盘插入电脑，打开第一分区根目录拷贝此压缩包放入，方法参考 [固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;) 文章 本地升级步骤\n`注意：文件命名必须是“audios.tar.gz”，下载下来的压缩包需要去除&quot;up&quot;字母重新命名。`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5874831573daccd4888f031965a2c090)\n1. 重启设备，设备再次开机后会快速导入完成\n\n## 二、提示音批量删除\n1. 点击此处“[delaudios.tar.gz](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9890b390df364e1c4afb3a5402e5a3ff &quot;[delaudios.tar.gz&quot;)”压缩包下载到本地，双击两次打开压缩包，可以看到VoiceFilesDiff.xml文件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=79e7b3071b84e654060ea28a0b163e5b)\n1. 打开此文件填入需要删除的音频文件完整名称，如下图，保存后关闭文件重新压缩，此时删除包制作完成。\n`注意：文件命名必须是“audios.tar.gz”结尾，最好不要更改文件名称保持下载时候一致。`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d30b308a7355f060d3b1425dd9bb97e7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3aaa11ba2091dc723f0185bee812c33e)\n1. 保存后删除压缩包制作完成，在平台操作远程升级在重启设备\n3.1远程导入\n登入平台客户端使用在线升级功能升级此压缩包，方法参考 [固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;) 文章 远程升级步骤\n`注意：文件命名必须是“audios.tar.gz”结尾，最好不要更改文件名称保持下载时候一致，如图：`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c3359e7f3c24e21d2878bfd30caa0f0f)\n3.2本地导入\n取出在设备已使用的SD卡或硬盘插入电脑，打开第一分区根目录拷贝此压缩包放入，方法参考 [固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;) 文章 本地升级步骤\n`注意：文件命名必须是“audios.tar.gz”，下载下来的压缩包需要去除&quot;del&quot;字母重新命名。`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5874831573daccd4888f031965a2c090)\n1. 重启设备，设备再次开机后会快速删除文档填入的音频文件。\n\n## 三、提示音批量查询\n1. 登入平台客户端，选择在线设备点击参数配置，客户端参数配置方法参考[通天星客户端插件在线配置工具](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;TTX客户端插件工具 - Q&amp;A&quot;)\n1. 发送下列查询命令，输出窗口返回设备以存在的音频文件名称。\n```xml\n&lt;Control&gt;&lt;CmdType&gt;GetAudioList&lt;/CmdType&gt;&lt;SN&gt;11&lt;/SN&gt;&lt;Param&gt;0&lt;/Param&gt;&lt;/Control&gt;\n&lt;!-- &lt;Param&gt;0&lt;/Param&gt;代表查询第0-30个音频文件，&lt;Param&gt;1&lt;/Param&gt;代表查询第31-60个音频文件 --&gt;\n```\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a3d0adf4c858cf65cbc66ed42a4d128b)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "2",
+  "addtime": "2025-11-17 16:48:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-10-11 11:22:56",
+  "ext_info": "",
+  "attachment_count": "2",
+  "unique_key": "",
+  "cat_name": "功能定制--提示音-开机LOG"
+}

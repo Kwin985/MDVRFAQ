@@ -1,0 +1,18 @@
+{
+  "page_id": "216",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Configure main stream video encoding and audio enable",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Available remote control, normal display screen\n- The camera is inserted and the picture is displayed (refer to basic configuration --- [Remote control configuration camera resolution, format](http://pug2.4000329988.com/fqa/web/#/13/188 &quot;Remote control configuration camera resolution, format&quot;))\n\n### Note:\n- Here CH1 CH2 CH3...channel refers to the device back panel camera inserted into the corresponding video input port AV1 AV2 AV3...For details, please see the &quot;Interface Status Definition&quot; article\n- The prerequisite for opening the audio of the corresponding channel is to insert the corresponding camera with a microphone to support audio. Currently, the M51HV series models support up to four channels of audio from CH1 to 4, and other models support up to two channels of audio from CH1 to 2. For specific specifications, please ask our staff\n- By default, all channel video encoding will be turned on. Turning off the video encoding of a channel here will result in no picture. The channels must be closed from bottom to top. You cannot close a channel from the middle, such as turning on CH1 CH2 and turning off CH3 Turning on CH4 video encoding will cause system abnormalities\n\n###Operation steps\n1. Press the remote control [ENTER] button to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef0ceefbfa405b7cfd69fcaab81dde1)\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; button to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7a3d1a3711467c7b48476ba8c8cfc098)\n3. Move to [Encode] in the settings interface and press the &quot;ENTER&quot; key to enter the main stream settings\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cc6ac4d7b4b7a68ba356c4d24319c266)\n4. Press the &quot;ENTER&quot; key in the main stream settings interface to enter the editing state, move the down key to the channel resolution selection item and select the required resolution. The corresponding frame rate and bit rate will automatically match the optimal value. It is not recommended to modify the frame rate and bit rate separately here. Move to the right check box to enable the audio and video encoding of the corresponding channel, confirm to save and restart to take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c43a8c529f04eb92c68ab6295e68117b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aec295e458efdb657798ad01c662ffa2)\n",
+  "s_number": "6",
+  "addtime": "2025-12-25 17:31:47",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:24:24",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "213",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置子码流视频编码",
+  "page_content": "[TOC]\n\n### 前提条件\n- 可使用的遥控、正常显示显示屏\n- 摄像头插入且出画面（参考基本配置---[遥控配置摄像头分辨率、制式](http://pug2.4000329988.com/fqa/web/#/11/185 &quot;遥控配置摄像头分辨率、制式&quot;)）\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=96437dadb76d6c432c3e5005d08a0b36)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=123220c5fb0f1f707c09ee6b5e6f69c4)\n3、在设置界面移动到【编码设置】，按“ENTER”键进入编码设置\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=06e9aff8e26e6570d5e0600feebd7215)\n4、按右方向键移动到【子码流】设置界面，按“ENTER”键进入编辑状态，移动方向下键来到编码模式选择项  选择需要的模式，自定义模式下可以单独更改画质、帧率、码率参数，其他模式自动匹配最佳值，确认保存重启生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dc99bd959338c9ddc81f791809d3cb21)",
+  "s_number": "7",
+  "addtime": "2025-11-04 17:29:23",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:14:47",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "203",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置录像模式",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n\n\n###操作步骤\n####开机录像\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8715e16df26ea9b79209b9eabbdc69aa)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2c33a27e29df44261e2e4ddc2c30c211)\n3、在【设置】界面选择【录像设置】，按“ENTER”键进入录像设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d1f27d1b585794046fd355cd5ff1f1df)\n4、在【录像设置】界面选择【录像】，将录像模式选择为“开机录像”，按确定保存生效。设备出厂默认开机录像模式，此模式下，设备开机立马录像，关机停止录像\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=98a5507b716015172ae1a1f4792324d2)\nps:“报警录像”模式暂不可用\n####手动录像\n1、在【录像】界面，将录像模式选择为“手动录像”，按确定保存生效。手动模式下，按遥控器REC键开始和停止录像。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e2a794965a71b369c68e8380d71cfb3f)\n####定时录像\n1、在【录像设置】界面选择【录像】，将录像模式选择为“定时录像”，按确定保存生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=974cfde141a8d883c4c5a4eeaa594503)\n2、在【录像】界面按遥控器右键进入【定时】界面，设定需要定时的参数，按确定保存生效\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=acb3b8a2a91ccdb2c1f83d87091c9e91)\n",
+  "s_number": "1",
+  "addtime": "2025-11-04 17:22:08",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:03:24",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

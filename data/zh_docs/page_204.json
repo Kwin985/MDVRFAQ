@@ -1,0 +1,18 @@
+{
+  "page_id": "204",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置SD卡模式",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n\n### SD卡模式说明：\n###### 硬盘+单卡机型（M51HV系列）\n镜像录像：硬盘录主码流、SD卡录子码流\n循环录像：硬盘和SD卡循环录主码流\n缺失录像：硬盘不存在时SD卡录主码流，否则SD卡不录像\n不录像：硬盘录主码流，SD卡不录像\n\n###### 硬盘+双卡机型（M32HV系列）\n镜像录像：硬盘或SD1卡录主码流（当硬盘和SD1卡都存在时，否则存在一个就在哪个录主码流），SD2卡录子码流\n循环录像：硬盘和SD1卡和SD2卡循环录主码流\n缺失录像：硬盘和SD1卡都不存在时SD2卡录主码流，否则SD2卡不录像\n不录像：硬盘或SD1卡录主码流（当硬盘和SD1卡都存在时，否则存在一个就在哪个录主码流），SD卡不录像\n\n###### 双卡机型（M16HV/M20HV...）\n镜像录像：SD1卡录主码流、SD2卡录子码流\n循环录像：SD1卡和SD2卡循环录主码流\n缺失录像：SD1卡不存在时SD2卡录主码流，否则SD2卡不录像\n不录像：SD1卡录主码流，SD卡不录像\nps:上面描述的SD1 SD2卡指的是卡槽位置，通常卡槽口会标记SD1 2丝印，如果没有标记或丝印毁坏请遵从从左到右、从上到下规则区分SD1 SD2卡，也可以在设备开机后左右翻页查看存储状态有区分。\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9f5d631bb42054b3405742ed54ddd6cf)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6172552a0e8ad6adab368f9f508824d2)\n3、在【设置】界面选择【录像设置】，按“ENTER”键进入录像设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=db237cbb2e5f7d4d3041706085987859)\n4、在【录像设置】界面选择【录像】进入录像界面，将SD卡用途选择为需要的模式，按确定保存生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2ddef2c3aeda9cdb2ac0ab940d65efa9)\n\n",
+  "s_number": "2",
+  "addtime": "2025-11-04 17:27:27",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:03:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

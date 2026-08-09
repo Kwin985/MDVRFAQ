@@ -1,0 +1,18 @@
+{
+  "page_id": "353",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-数据库备份还原",
+  "page_content": "[TOC]\n\n### 使用说明：\n数据库备份还原，可用于服务器迁移旧服务器备份和新服务器的还原\n\n### 操作说明：\n#### 第一步：查看备份数据库（backup）的储存路径\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=54f071e13649728b1437ef1068da5046)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2625f4667a31ad4f25ac82bd9ed0418d)\n\n#### 第二步：数据库数据备份\n数据库数据备份有两种方式：自动备份跟手动备份。\n服务器软件自动备份的数据：\n（服务器是默认启动这个服务的，只要你的服务器软件不关闭，服务器软件就会每天在设定好的时间进行数据的自动备份）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c8b9c00dbedafc357732fc252c08a35c)\n自动备份的数据就直接储存在backup文件夹的根目录。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=199e2740eb33c3f68b57df0a3f23db3e)\n服务器软件手动备份的数据：\n（手动备份建议只备份基础数据就好，如果要备份大数据，需要的备份时间较长）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=db1832df233265f33d51b12642b46e33)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f8ed9881bbc4d69c584294ec97ae9948)\n手动备份的数据会在backup文件夹的根目录里面生成一个repair文件夹。\nrepair文件夹里面的数据就是手动备份的数据。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=879f8c931a4f74ad36dcec256cc77626)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=21495b81c4ae3f66920e796b182ad5b5)\n\n#### 第三步：数据库数据还原\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a26640e7f3f53c18081ae910f491d49d)\n#### 特别提醒：\n还原数据，数据库配置工具会优先选择repair文件夹里面的数据来进行数据的还原。也就是说会优先选择手动备份的数据库数据来进行数据的还原。\n只有在backup文件夹里面没有repair文件夹（也就是说服务器软件没有进行手动备份）的时候，还原数据才会选择backup文件夹里面自动备份的数据来进行数据的还原。\n所以：\n（在repair这个手动备份的文件夹存在的情况下，可以通过对repair这个文件夹进行重命名的方式，来避免数据库配置工具读取手动备份的数据来进行数据的还原。）\n\n#### 补充：\n邮件备份功能（此备份只备份基础数据）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5f54d2e268a608eac99f182f1713efcd)\n登录对应邮箱，下载邮件备份的基础数据来进行数据的还原：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c9698c0f4f46b69bb2b53483309f944c)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e8890ca08a213d874d329a3f0b3ff985)\n下载下来之后，把备份数据的压缩包放到GPSDBBackup文件夹里面，然后解压。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1834e82945611a8a395513277c21ea08)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=667fd0b95a61d944a6326de362b5554b)\n就可以使用了\n",
+  "s_number": "7",
+  "addtime": "2025-11-17 16:50:50",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:17:08",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

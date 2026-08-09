@@ -1,0 +1,18 @@
+{
+  "page_id": "209",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "配置IPC摄像头参数",
+  "page_content": "[TOC]\n\n\n### 前提条件\n**遥控配置：**\n-  可使用的遥控、正常显示显示屏  \n-  配套网口转接线、网线\n- 可使用的IPC摄像头\n\n**Mxc_Config工具配置：**\n- 配套网口转接线、网线、带网口的电脑\n- 或者设备带WiFi且连接在同一局域网电脑可ping通设备WiFi IP地址\n-  可使用的IPC摄像头\n\n\n### 说明:\n- 必须先获取到连接访问IPC摄像头必要信息：\n1、访问IPC摄像头 IP地址 \n2、IPC摄像头支持且开启了onvif协议，可通过电脑直连IPC摄像头使用游览器访问IPC IP地址确认\n3、IPC摄像头 onvif协议认证用户名、密码，可以查看IPC摄像头标签或询问IPC厂家了解，如果没有这项参数可不填\n- 设备本地网络IP地址必须和IPC摄像头 IP地址是同一网段且不冲突，设备本地网络IP地址可通过遥控显示屏查看或工具搜索显示（一般情况下设备默认IP是43或1段）\n\n\n### 操作步骤\n####使用遥控器显示屏菜单配置\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b7ebdaa2d5b23de0e128d7c1bf448040)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=84c34d957048a6c37ab542ef6e4eff3c)\n3、在【设置】界面选择【录像设置】，按“ENTER”键进入录像设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0a5bffadc59b1ae2a9a6f6480ea7c85d)\n4、在【录像设置】界面勾选开启IPC 复选框\n5、选择【IPC设置】进入IPC设置界面，可根据需要是否开启AHD+IPC摄像头混合模式，选择接入IPC摄像头数量，填入IPC摄像头连接认证用户名和密码，分别填入各个IPC摄像头 IP地址，确认保存重启生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=23cf9cb84f03f818923ca52e3eab89ab)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=394621d9ddfe5c906638af9fa16175e4)\nps:如果需要接入多个IPC摄像头请把各个IPC摄像头访问IP地址必须是一个IP段，例如192.168.1.100,192.168.1.101\n\n####使用Mxc_Config工具配置\n1、点击下载[MmxConfig](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;)配置工具，解压安装后点击“Mxc_Config” 打开工具![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=defe35a6af2c5dc8e58fa0bde53b14df)\n2、点击Search搜索局域网内设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=545fb5ee726a12114c60424dbc3a83fc)\n3、点击需要配置的设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=93525305df96d01158e9bd3985ae3081)\n4、在输入框复制下面参数到电脑上，可用记事本方式打开编辑修改对应字段，字段含义可查看下面参数注释，修改完后复制完整指令到工具输入框，参数注释内容可以不用复制，点击发送。\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stIpc ucFD_PureNVR =&quot;1&quot; ucFD_Enable=&quot;1&quot; ucFD_IPCNum=&quot;4&quot; strFD_User=&quot;admin&quot; strFD_Pass=&quot;Admin123&quot;&gt;&lt;stChnIpc&gt;&lt;Chn_0 uiFD_IP=&quot;&quot; /&gt;&lt;Chn_1 uiFD_IP=&quot;&quot; /&gt;&lt;Chn_2 uiFD_IP=&quot;&quot; /&gt;&lt;Chn_3 uiFD_IP=&quot;&quot; /&gt;&lt;/stChnIpc&gt;&lt;/stIpc&gt;&lt;/VariCfgSec&gt;\n```\n&gt; 参数注释：\nucFD_PureNVR =&quot;1&quot; 表示纯IPC模式，0 IPC+AHD混合模式\nucFD_Enable=&quot;1&quot; 表示开启IPC功能，0则表示关闭IPC功能；\nucFD_IPCNum=&quot;4&quot; 表示启用4个IPC通道；\nstrFD_User=&quot;admin&quot; 表示用admin这个用户名来访问IPC；\nstrFD_Pass=&quot;Admin123&quot; 表示用Admin123这个密码来访问IPC；\nChn_0 uiFD_IP=&quot;&quot; 这里填入对应的IPC的IP地址，Chn_0表示配置第一个IPC通道的图像，Chn_1表示第二个IPC，以此类推\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=71b5e613eccb3dc7b388a39eace4f9c2)\n5、复制下面查询命令查看刚刚配置的IPC参数是否配置成功，确认后重启设备生效。\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stIpc&gt;&lt;/VariCfgSec&gt;\n```\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=05909255ebc5c7a1570c2213b7aad81f)\n\n\n\n\n\n",
+  "s_number": "4",
+  "addtime": "2025-11-04 17:28:18",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:04:42",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "115",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "国标GB28181--本地WEB注册平台",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍！\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n### 操作步骤：\n1. 打开电脑游览器输入设备本地网络IP地址，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cf5feb186e3df63dc5788f0c97a77615)\n1. 点击&quot;普通设置&quot;&gt;&gt;&gt;&quot;网络设置&quot;&gt;&gt;&gt;&quot;GB28181设置&quot;栏 填入”打开功能” “服务器IP” “服务器端口” “认证用户名” “认证密码” 等参数\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9cff0747c97ebdd813b8f05a3f593bf3)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bf13e8fa01349b55a037bc7edc32cb27)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c6ecc2f4d5531f75853561bbf97d1500)\n1. 返回到上级菜单点击右上角&quot;系统信息&quot;&gt;&gt;&gt;&quot;CMS模块&quot;栏点击展开 查看 第三项 状态是否连接 成功 即国标平台注册是否成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=02c1e8f13b63f5a456235debff50f7eb)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7344826e9b32952ad11d93ddb01a9b78)\n",
+  "s_number": "8",
+  "addtime": "2025-10-11 10:59:31",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:36:20",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

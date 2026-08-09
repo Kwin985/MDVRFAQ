@@ -1,0 +1,18 @@
+{
+  "page_id": "188",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "112",
+  "page_title": "Configure camera resolution and format",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Available remote control, normal display screen\n\n### Operation steps\n\nPlease be sure to verify the hardware resolution and format parameters of the camera before setting (as shown in the figure). If the hardware resolution, format and device configuration of the camera do not match, the camera will not display the image.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2985bf484ad79810a6d446c9e3565767)\nCamera label parameter diagram\nps: Most parts of China use the PAL format, while Japan, South Korea, Southeast Asia and the United States and other European and American countries use the NTSC format. The specific parameters are subject to the actual purchased camera.\n\n1. Press the middle &quot;ENTER&quot; confirmation button on the remote control to enter the login interface and enter the default administrator password &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=44dd24f4044fb4ca15dcda4f9c153f2a)\n\n2. Click [Settings] = [Recording Settings], and press the remote control &quot;ENTER&quot; to enter.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8778c6524186351c2d55e1fa777ce059)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=86887794ad678f707cf49634eab18ceb)\n\n3. Select the corresponding camera format and check the resolution parameter. After setting, click [OK].\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dccdfaa4de89b24633d2ce2c70b4e917)\n\n4. Return to the first level menu [Tools] = [Operation Management]\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1dc153acd8e8d7702e5b524749bb7746)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7c1c631439aa76889a7e18a03a5ede81)\n\n5. After selecting the [Restart] button, click [Agree] and the system will restart and the resolution setting will take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f2f14dc6c6c14eefe1d32f225093fef0)\n",
+  "s_number": "3",
+  "addtime": "2025-11-04 17:59:36",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:13:31",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Basic Configuration"
+}

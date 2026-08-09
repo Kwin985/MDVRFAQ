@@ -1,0 +1,18 @@
+{
+  "page_id": "167",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "23",
+  "page_title": "M16HV接口定义",
+  "page_content": "### 简介\n本章节将介绍我司车载MDVR系列后面板接口、前面板插槽定义说明！\n\n#####M16HV接口定义:\n######后板\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b01438d571c0f9f21a68613243df664b)\n使用说明：左边三个分别是GPS、WIFI、3/4G天线插口使用配套的GPS、WIFI、3/4G天线插入顺时针扭紧，中间是IO扩展线插入口使用配套的IO线束缺口朝下按压下面卡扣插入，右边是POWE电源视频输入口使用配套的电源线束缺口朝下按压下面卡口插入，如上图。\n\n######前板\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2c784e9f7871bf4886b8f6447fa5f75)\n使用说明：右边是开关锁使用配套钥匙缺口朝下轻压插入顺时针扭到左边水平缺口开锁，轻掰开前盖，最左边是SIM卡槽使用大卡缺口朝右插入，中间上下两个是SD1\\SD2卡槽使用SD卡缺口朝右插入，完成后轻推前盖向上合拢使用钥匙逆时针扭到垂直口锁紧，如上图。",
+  "s_number": "3",
+  "addtime": "2025-09-05 11:00:00",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 11:00:00",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--接口状态定义"
+}

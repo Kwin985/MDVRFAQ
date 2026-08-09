@@ -1,0 +1,18 @@
+{
+  "page_id": "264",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "OBD配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 485 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  OBD |  1 |常用接线工具| n |\n\n### 必要说明\n- 这里以**MX-OBD-02-D2-018-12V**为例，**这款只支持12V 小车使用**。\n- 出货一般会把MDVR 485 IO线束做好插头直接对插OBD母头使用，如果没有请联系我司技术寻求帮助。\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a451ef93044e484a161e8b8fce7c52ed)\nMX-OBD-02-D2-018-12V\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7b6abf62c26ab871a23a3a7724756d75)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS485、串口功能OBD、协议类型 type6、波特率配置38400、其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=443c5b0f0c55eb2bfd02e6dbf4bef018)\n\n#### 三、测试\n3.1 登入平台，在平台车辆信息菜单点击编辑勾选开启OBD功能\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f6a533466ba65b81dbc101a560d3d875)\n\n3.2 点击电子地图&gt;&gt;在线车辆，地图气泡框会显示车辆实时状态，点击OBD图标查看上报的OBD详细信息，例如车速、转速、冷却液温度等。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=241b8903daad2aeb0cfc547edb86d7ef)\n\n3.3 点击 信息管理&gt;&gt;统计报表&gt;&gt;OBD报表 可以查看OBD历史数据\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=26a2e67748601ea5e1a932a3c7ee990f)\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "12",
+  "addtime": "2025-11-04 17:51:46",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:54:22",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

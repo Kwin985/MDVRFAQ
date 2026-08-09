@@ -1,0 +1,18 @@
+{
+  "page_id": "91",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "31",
+  "page_title": "AI司机人脸识别功能说明",
+  "page_content": "[TOC]\n\n\n### 使用AI司机人脸识别功能需要先满足以下几个前提条件！\n\n- 内置AI算法的机型（已授权、算法正常运行、DSM使能开启）\n\n- 搭建好一个FTP服务器并开放好端口 IP试设备能够访问（已知访问FTP服务器的账号）\n\n- 插入能够供设备正确识别使用的存储介质（HDD OR SD）\n\n- 插入DSM摄像头并配置好参数使其出画面\n\n### 操作步骤：\n\n##### 1、平台下发指令开启和配置相关AI司机人脸识别参数\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stAiFace ucFD_Enable=&quot;1&quot; ucFD_FaceVChn=&quot;2&quot; fFD_Similar=&quot;0.75&quot; usFD_MOkTOut=&quot;60&quot; usFD_MFailTOut=&quot;10&quot; usFD_NoFaceTOut=&quot;5&quot; ucFD_MFailTryMax=&quot;3&quot; usFD_ReportBit=&quot;3&quot; &gt;&lt;/stAiFace&gt;&lt;/VariCfgSec&gt;\n```\n&gt; 参数注释：\nucFD_Enable=&quot;1&quot; 1表示开启，0关闭\nfFD_Similar=&quot;0.75&quot;表示相似度阀值，建议保持缺省 0.75\nucFD_FaceVChn=&quot;2&quot;表示使用第三通道，根据实际情况配置，即对着司机的视频通道（DSM摄像头）\nusFD_MOkTOut=&quot;60&quot;表示比对成功后的下一次比对间隔时间，秒为单位\nusFD_MFailTOut=&quot;10&quot;表示比对失败后的下一次比对间隔时间，秒为单位\nusFD_NoFaceTOut=&quot;5&quot;表示通道里面没找到人脸时的下一次比对间隔时间，秒为单位\nucFD_MFailTryMax=&quot;3&quot;表示人脸比对失败尝试次数，超过次数进行平台报警，例如：usFD_MFailTOut=10s 10*3=30 即0.5分钟报警和抓拍\nusFD_ReportBit=&quot;3&quot; 表示TTS提醒和屏幕显示；2  无手麦声音，TTS声音和屏显；1 有手麦声音，无TTS声音和屏显；0 都不显示\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8ba80dcc085d13784739139cea9d3d66)\n#####2、设备添加人脸图片，两种方式：FTP服务器下载&amp;访问设备WEB添加\n###### 2.1 FTP服务器下载添加\n2.1.1 FTP服务器上放置一张人脸图片并记住路径和图片命名（对应的人脸文件，不要超过512KB，可以手机拍摄，截图人脸，保存文件.jpg格式）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=95f1d1efbd1f9ca29b81766bd5742f0b)\n2.1.2 平台下发如下指令增加人脸库图片（删除包括”“号内容填入正确参数）\n```xml\n&lt;Control&gt;&lt;CmdType&gt;FaceDBAdd&lt;/CmdType&gt;&lt;SN&gt;11&lt;/SN&gt;&lt;FaceID&gt;&quot;填入人脸ID不要重复，例00001&quot;&lt;/FaceID&gt;&lt;FaceName&gt;&quot;人脸ID对应的人名字&quot;&lt;/FaceName&gt;&lt;WhiteFlag&gt;1&lt;/WhiteFlag&gt;&lt;FaceFile&gt;FTP=&quot;填入FTP服务IP&quot;,&quot;填入FTP服务登入用户名&quot;,&quot;填入FTP服务登入密码&quot;,&quot;填入FTP服务注册端口&quot;,&quot;填入FTP服务图片存放路径 例:/AiFace/110/yong3.jpg&quot;,230400,230400,0&lt;/FaceFile&gt;&lt;/Control&gt;\n```\n###### 2.2 设备WEB添加\n2.2.1 在保证和设备同一段网络环境下使用游览器访问  (可使用有线访问设备本地IP地址或连接设备热点访问192.168.42.100进入)，点击菜单进入添加人脸如下图，人在画框居中  输入编号、名称、类型后点击保存即可，可刷新游览器更新画面矫正。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=226c0ef90aa64fe5afef2fdb02c06fdf)\n#####3、重启设备开始使用人脸识别功能，如下图：\n- 屏幕弹出”请完成人脸识别检测“ 对话框并有语音提示\n- 人脸正中间对着DSM摄像头完成人脸识别检测\n- 屏幕弹出”人脸识别检测成功“ 并向平台主动安全实时报警菜单发送识别成功报警\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=947fb8ec1eb2d4ab98823d252b3f454b)\n#####4、其他参数说明:\n- 获取设备的人脸库配置，执行后设备将会把设备内的FaceDatabase.xml 文件上传到指定的FTP（比如：139.9.251.220）路径下，比如 /AiFace/30057\n```xml\n&lt;Control&gt;&lt;CmdType&gt;FaceDBGet&lt;/CmdType&gt;&lt;SN&gt;11&lt;/SN&gt;&lt;Ftp&gt;FTP=&quot;FTP ip&quot;,&quot;FTP用户名&quot;,&quot;FTP密码&quot;,&quot;FTP端口&quot;,&quot;ftp路径&quot;&lt;/Ftp&gt;&lt;/Control&gt;\n```\n\n- 删除设备人脸库图片\n```xml\n&lt;Control&gt;&lt;CmdType&gt;FaceDBDel&lt;/CmdType&gt;&lt;SN&gt;11&lt;/SN&gt;&lt;FaceID&gt;&quot;人脸ID&quot;&lt;/FaceID&gt;&lt;/Control&gt;\n```\n\n- 查询配置参数\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stAiFace /&gt;&lt;/VariCfgSec&gt;\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "6",
+  "addtime": "2025-11-04 17:47:05",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:48:17",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--AI功能配置"
+}

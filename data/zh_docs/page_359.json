@@ -1,0 +1,18 @@
+{
+  "page_id": "359",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-参数配置插件替换",
+  "page_content": "[TOC]\n### 必要说明\n- 只支持设备私有协议上线车辆配置；\n- 文件替换之前关闭退出客户端；\n\n### 替换方法\n1、点击下载需要替换的库文件 libconfig_18.dll并解压，点击这里下载[libconfig_18-2026-05-25(1).zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0181095e6075cc32d6c4104d1dfe67f3 &quot;[libconfig_18-2026-05-25(1).zip&quot;)\n2、打开CMSV6客户端的安装路径，默认安装C盘此库在这个路径下C:\\Program Files (x86)\\CMSV6\\plugin\\config\\libconfig_18\n替换这五个文件\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f08b04da9e207386fb3ac5042b369ac7)\n3.点击“language”文件夹替换这两个文件\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7a851ca56f0ff7dbbf8de5db11050802)\n4、再次打开客户端，点击参数配置打开配置插件来进行各项参数配置\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ef0f5c85c32c07f9df99926dd263f28b)\n详情使用说明参考：[通天星客户端插件在线配置工具](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;通天星客户端插件在线配置工具&quot;)\n\n\n",
+  "s_number": "26",
+  "addtime": "2026-07-15 11:01:21",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:22:38",
+  "ext_info": "",
+  "attachment_count": "3",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

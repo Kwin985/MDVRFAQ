@@ -1,0 +1,18 @@
+{
+  "page_id": "189",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "遥控配置定位模式、定位上传间隔",
+  "page_content": "[TOC]\n\n\n### 前提条件\n-  可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤\n1、 进入主菜单功能界面，操作遥控器方向键、ENTER键，进入设置--基本设置--用户，设置定位模式\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bcfc46e53cdf4081a42b21ff0282e480)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9febe8f3e22aed51e88333049c20dafc)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d111e14fd818a549534f35fb12b4358f)\n\n2、进入主菜单功能界面，操作遥控器方向键、ENTER键，进入设置--网络设置--模式，设置GPS上传间隔\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=379aa704b996e9be1f61610f165466e4)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c09825e737276aae995388f556ee0c46)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=05604e2bcfaba1dac383567256961d21)",
+  "s_number": "4",
+  "addtime": "2025-09-08 16:16:28",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:16:28",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

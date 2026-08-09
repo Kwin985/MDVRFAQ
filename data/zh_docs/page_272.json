@@ -1,0 +1,18 @@
+{
+  "page_id": "272",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "系统日志查看",
+  "page_content": "[TOC]\n\n### 前提条件：\n遥控本地查询：\n- MDVR主机、遥控器、显示屏。\n\n平台远程查询：\n- 以登入客户端、设备在线、存储介质存在日志事件\n\n\n### 说明:\n- MDVR支持设备运行过程中记录各类业务日志，保存在机器磁盘的第二个分区中，有些记录在 轻量级Sqlite数据库文件中，有些记录在文本文件中；\n- MDVR db数据库日志，只记录设备开机、关机、升级、SOS、设备恢复出厂值及其其他部分关键告警日志记录；\n- MDVR文本日志只记录核心运行日志，可以通过配置指定参数打开需要的特定业务模块运行日志，如：通天星平台库运行日志、GPS原始数据日志、AT指令运行日志、GB28181交互日志；\n- MDVR设备运行缺省文本日志文件命名如下：log_20240606_154903，log_ 开头，20240606 表示年月日，154903表示时分秒，时间是该文件创建时的机器本地时间；每次机器重启会重新建立一个文件，机器每次重启会检测该类文件总数，如果超过32个，则删除最老的该类日志文件，如果单个日志文件内行数超过20W条，则重新建立文件日志记录；\n- MDVR在磁盘第二个分区有单独记录告警和GPS单项数据文件，每天一个目录，该目录最大保存2个月最新数据，设备每次重启加载磁盘时候进行检测删除超过时长的目录；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=815ca659bb83dcf53807955717928793)\nalm: 记录报警记录\ngpx: 记录gps记录，文件的详细格式请咨询相关专业技术人员。\n\n\n###操作步骤\n####使用遥控本地查询\n1、通电开机遥控进入菜单&gt;&gt;工具&gt;&gt;日志管理&gt;&gt;日志菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=40963e582c10cd5ca00cd6e6c8cf769c)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=80b063696e202b8b0985d48b6b71c51c)\n2、在此界面选择时间范围和存储路径，确认进入查询具体日志信息。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=52f28aca1f0c76fc83b8d67143160d76)\n\n####CMSV7平台远程查询\n1、在客户端登入后点击&gt;&gt;录像回放&gt;&gt;填入设备ID&gt;&gt;时间范围&gt;&gt;存储位置（设备）&gt;&gt;文件类型（录像），点击搜索\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4848fb54db191d14b501646dae624888)\n2、鼠标右键日志选择下载，下载后会有进度可以查看等完成后右击选择打开文件夹即可查看下载好的日志文件。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ce7c1b27037114ef885e49b84fdf424c)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=90a363d865f39744b31bfd3f5441f4c1)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3b043255b9a8feb9de0a5b6b300feb92)\n\n####设备特定业务日志记录功能\nMDVR支持额外打开其他业务日志，比如GPS、AT、GB28181交互日志等，可以通过远程下发命令打开。\n\n####命令格式说明\n1、复制命令\n命令内容格式：\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stBaseInfo usFD_Customize=&quot;0&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n\n说明：\nusFD_Customize： 值就是需要打开相关业务日志的值，如果同时打开多个业务模块日志，以下对应值数值相加，参考下表：\n\n| 业务模块  | 值  |  说明 |\n| ------------ | ------------ | ------------ |\n|  GPS |  32768 | 打开后GPS的每条模块数据会计入文本日志内容，这样可以用于分析某些GPS不定位，信号差的情况；  |\n| AT  | 16384  |打开后，4G/5G 模块拨号的所有AT命令和响应会记录在文本日志内，方便分析拨号相关事项；   |\n| GB28181 SIP交互  | 65536  |  打开后，会在磁盘的第二个分区建立 hp开头的文本日志，里面会记录所有和服务器进行交互的SIP内容。 |\n\n比如要同时打开AT和GPS日志，usFD_Customize：49152 是 32768+6384 相加之和。命令如下：\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stBaseInfo usFD_Customize=&quot;49152&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n\n2、复制命令在客户端插件下发具体操作方式参考[通天星客户端插件在线配置工具](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;通天星客户端插件在线配置工具&quot;)\nps:AT和GPS 日志，命令下发后立刻生效，而且会保存配置，设备下次开机日志会照常打开。\nGB28181 SIP交互日志，需要设备重启后生效。\n同时调试完成后，建议关闭单独下发的业务模块配置的日志打开，否则信息太多。\n3、关闭特定日志复位，下发以下命令即可：\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stBaseInfo usFD_Customize=&quot;0&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n注意：如果打开了设备的4G模块收发数据变化检测和平台上线检测的控制逻辑机制，那么复位关闭日志需要特别注意，usFD_Customize值不能为0，请咨询专业技术人员协助。\n\n\n\n",
+  "s_number": "1",
+  "addtime": "2025-11-11 17:13:51",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:57:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

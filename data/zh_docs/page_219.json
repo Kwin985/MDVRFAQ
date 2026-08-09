@@ -1,0 +1,18 @@
+{
+  "page_id": "219",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "配置报警录像时长",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n\n\n### 报警时长说明:\n- 报警预录时长:报警发生那一刻往前时长，即报警录像开始时长\n- 报警延录时长:报警发生那一刻往后时长，即录像报警结束时长\n- 报警录像时长=报警预录时长+报警延录时长，例如设备在12:01:00 触发报警，配置的报警预录时长和报警延录时长分别是30s，此条报警录像开始时间是12:00:30 结束时间12:01:30 ，录像时长1 分钟\n- 设备发生的所有类型报警录像时长都适用此配置，例如AI、IO....\n\n\n###操作步骤\n\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8715e16df26ea9b79209b9eabbdc69aa)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2c33a27e29df44261e2e4ddc2c30c211)\n3、在【设置】界面选择【报警设置】按“ENTER”键进入\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=28d228947d734924709eb70e1eb92b80)\n4、在默认第一页【基本】按“ENTER”键进入编辑状态，不在第一页【基本】就按左右方向键移动到此页，按遥控下键移动到“报警预录时长”和“报警延录时长”输入框 填入时长，确认保存重启触发报警生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dbfe8d3005fc10e24de14bb3746031fb)\n\n",
+  "s_number": "1",
+  "addtime": "2025-11-04 17:30:32",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:43:15",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "117",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "部标JT808--本地配置导入注册平台",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n\n### 操作步骤：\n1. 下载此配置文件模板  [config.zip](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6d52a9c5b2a66b1601dfaf6c74818589 &quot;[config.zip&quot;)本地解压\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=439939d4aeed81dabab0f3edc233bfa4)\n1. 文本编辑工具打开，填入&quot;打开功能&quot; &quot;服务器IP&quot; &quot;服务器端口&quot; &quot;手机号&quot; &quot;终端ID号&quot; 等参数，参考xml文档参数注释\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=58e4b419dbeb313a64fe5ac79a5a8c07)\n\n1. 设备开锁取出硬盘或SD卡存储，使用硬盘读写器或SD卡读取器插入电脑，打开存储第一分区根目录\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=98b4cff9f3b33ab145dce14aa4163f91)\n1. 把刚编辑保存好的config配置文件复制到此目录下，断开连接插入设备关锁\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5a7c4cedfdb1ba9476c4a63eda7b989b)\n1. 设备通电开机会自动导入配置并重启，重启开机后配置生效\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=797acaece4c7ae0364a430089df2cc85)\n1. 本地遥控查看是否注册成功或平台查看是否上线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f252484b1c08097f805e80ee855cbd53)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6d535f47b9c41f85b32096371959e20f)\n\n",
+  "s_number": "11",
+  "addtime": "2025-10-11 11:03:14",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-03 18:52:35",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

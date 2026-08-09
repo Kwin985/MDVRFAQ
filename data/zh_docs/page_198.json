@@ -1,0 +1,18 @@
+{
+  "page_id": "198",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "配置有线网络",
+  "page_content": "[TOC]\n\n\n### 前提条件\n-  可使用的遥控、正常显示显示屏\n-  可使用的网口路由、网线、网口转接线\n\n### 操作步骤\n1、设备接好显示屏，插入网线（不知道位置参考上面“接口状态定义”栏），上电开机。\n2、使用遥控器ENTER进入设备网络设置菜单，按确认键在按方向键选择 有线 模式，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c17687e0657138a748a2f53195970f44)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f331f60dd57dcbfec7f16764aca99fa3)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b7305e1e194de7e76925b9fb72f01e9)\n3、按遥控方向右键移动到网络配置菜单，填入IP地址、子网掩码、网关，MAC默认不要修改，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=79127f1e397b1d7b868d01151e20c85c)\n4、有线网络配置立即生效，当有配置过注册V7平台参数网络联网成功后可返回到实时预览界面按遥控右键来到注册平台状态查看\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9b535c20dafb8d26b6ca9950e46c372e)",
+  "s_number": "4",
+  "addtime": "2025-09-08 16:25:10",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:25:10",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

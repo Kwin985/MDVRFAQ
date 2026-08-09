@@ -1,0 +1,18 @@
+{
+  "page_id": "637",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "82",
+  "page_title": "Client-Parameter Configuration Plugin Replacement",
+  "page_content": "[TOC]\n\n### Necessary Notes\n- Only supports vehicle configuration via device-specific protocols;\n- Close and exit the client before replacing the file;\n\n### Replacement Method\n1. Click to download the library file to be replaced, libconfig_18.dll, and extract it. Click here to download [libconfig_18-2026-05-25(1).zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0181095e6075cc32d6c4104d1dfe67f3 &quot;[libconfig_18-2026-05-25(1).zip&quot;)\n2. Open the installation path of the CMSV6 client. The default installation location is C:\\Program Files. Replace these five files in (x86)\\CMSV6\\plugin\\config\\libconfig_18\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fe912ffb1bf314d491698f032bb06b21)\n3. Click the &quot;language&quot; folder and replace these two files\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=500b78c033e817afb9550b5be99cc7f5)\n4. Reopen the client, click on parameter configuration to open the configuration plugin and configure various parameters.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d214d18c88e8b286c91cea173c5ad191)\nFor detailed usage instructions, please refer to: [Tongtianxing Client Plugin Online Configuration Tool](http://pug2.4000329988.com/fqa/web/#/13/104 &quot;Tongtianxing Client Plugin Online Configuration Tool&quot;)",
+  "s_number": "8",
+  "addtime": "2026-07-15 11:04:10",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-05-26 19:12:09",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Platform Function - Tongtianxing CMS V7"
+}

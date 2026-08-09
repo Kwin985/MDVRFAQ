@@ -1,0 +1,18 @@
+{
+  "page_id": "146",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "31",
+  "page_title": "主动安全AI 本地WEB配置",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n- 设备已经是出货状态（AI已授权、算法已导入）\n\n### 操作步骤：\n###### 1. 开启AI功能\n1.1打开电脑游览器输入设备本地网络IP地址，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f29f0efac80226b99f7a68457482e712)\n1.2点击”普通设置”&gt;&gt;&gt;”报警设置”&gt;&gt;&gt;”AI设置”菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=233e795e3a7cb5f5fb5341b9cdef006b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0186dff6c7b8bfa1a33ed86ab5bfcb34)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dd7bd98052e1eaadce1796a9af6a2130)\n1.3在&quot;AI设置&quot;菜单里点击开启AI功能和关联通道\n1.3.1开启ADAS功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ade536108f74a94ef9aed6c10e7055c4)\n1.3.2开启DSM功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4c4ce22357d16561d87ec5ff48eef0aa)\n1.3.3开启R BSD(右BSD)功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6fbc874f401bca58186d664801e9168c)\nps:使用的是鱼眼摄像头用于BSD功能，不用勾选&quot;R 非鱼眼镜头：&quot;复选框，使用普通摄像头用于BSD功能勾选此项。\n1.3.4开启L BSD(左BSD)功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7f627e819c8be2fa3ee4e5f7b97ba681)\nps:使用的是鱼眼摄像头用于BSD功能，不用勾选&quot;L 非鱼眼镜头：&quot;复选框，使用普通摄像头用于BSD功能勾选此项。\n1.3.5开启F BSD(前BSD)功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5db2cc6c8c797d5ed80dc1a0858b03b1)\nps:使用的是鱼眼摄像头用于BSD功能，不用勾选&quot;F 非鱼眼镜头：&quot;复选框，使用普通摄像头用于BSD功能勾选此项。\n1.3.6开启B BSD(后BSD)功能和关联通道：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e0cc0d5bc8f3ac3254ecf056f9b50c5c)\nps:使用的是鱼眼摄像头用于BSD功能，不用勾选&quot;B 非鱼眼镜头：&quot;复选框，使用普通摄像头用于BSD功能勾选此项。\n1.3.7 开启测试模式，不需要测试忽略此步骤，保存重启设备。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d30783a756ba03abbf5b0c079b30102c)\n1.3.8 MD5不检测和超前启动，MD5不检测开启后算法不进行MD5校验一般用于算法升级场景 这里默认建议不开启；超前启动开启后会提高设备开机启动使用主动安全功能速度但由于加载在磁盘检查前开启后无法升级算法，当需要升级算法时应该关闭。\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fc1c72759ef0e86394aed587b30e0ea5)\n\n###### 2. 查看AI是否正常运行\n2.1设备重启后再次打开游览器操作上面步骤来到&quot;普通设置&quot;菜单界面\n2.2 点击&quot;系统信息&quot;&gt;&gt;&gt;”AI状态”菜单，查看AI状态是否正确显示版本号、运行状态、授权状态、授权类型、芯片ID号\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6994425d5cc5bb737f979281e115190c)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=445efa936bd3afc883942d40793dff89)\n\n\n\n",
+  "s_number": "2",
+  "addtime": "2025-11-04 17:44:49",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:46:23",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--AI功能配置"
+}

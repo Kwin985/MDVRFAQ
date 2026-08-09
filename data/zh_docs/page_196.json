@@ -1,0 +1,18 @@
+{
+  "page_id": "196",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "查询IMEI/ICCID号",
+  "page_content": "[TOC]\n\n\n### 前提条件\n遥控配置：\n-  可使用的遥控、正常显示显示屏\n-  可使用的SIM卡、4G天线\n\nWEB配置：\n- 配套网口转接线、网线且和电脑在同一局域网可访问、电脑\n- 或者设备带WiFi且连接在同一局域网可访问、电脑\n-  可使用的SIM卡、4G天线\n\n### 说明:\n- IMEI是国际移动设备识别码，即无线模块的身份识别码。\n- ICCID是集成电路卡识别码，即SIM卡卡号。\n- 注意：SIM卡插入设备内后，设备锁需要处于锁闭合状态。\n\n### 操作步骤\n####使用遥控器显示屏菜单配置\n1、设备接好显示屏，插入SIM卡，上电开机。\n2、使用遥控器同时按压LOGIN![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fa1f1539feacffd4cda05aa3729322ad)和DOT![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d20d71d418f24a044261bccfeacc02ac)按键，显示屏将进入测试状态显示页，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=888a92d2f5c74a25c8500e723d4d523e)\n说明：目前显示屏暂不支持ICCID信息的获取查看。\n\n#### 使用设备Web信息查看\n1、使用有线或者WIFI网络连接设备\n2、使用浏览器登录设备IP的WEB系统，比如设备IP是192.168.1.173，浏览器地址栏输入：http://192.168.1.173，缺省密码：Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a30ddc86acc6a0845ca9f4092168e7ec)\n3、 进入普通设置，点击系统信息，点击GNet模块信息 查看当前设备的IMEI号和ICCID\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2d9447342ca238293bb73b732530307)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2ef7ec12f30e11bd3ed4f0ecab64b36a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ccbb01535e3a73b0d044df45c12a157e)\n说明：以上信息获取需要插入SIM卡，如果设备还在拨号过程中，以上信息需要通过手动刷新网页进行更新。",
+  "s_number": "2",
+  "addtime": "2025-09-08 16:23:56",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:23:56",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

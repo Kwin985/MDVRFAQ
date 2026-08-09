@@ -1,0 +1,18 @@
+{
+  "page_id": "279",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "113",
+  "page_title": "Configuration export, factory reset and Gsensor calibration value export",
+  "page_content": "[TOC]\n\n### Prerequisites:\n\n- MDVR host, remote control, display, storage media or USB flash drive\n\n### Operation steps\n##### Configuration export\n1. Power on the remote control and enter the menu&gt;&gt;Tools&gt;&gt;Configuration Management&gt;&gt;Configuration Management Interface\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5a8dddaaa36dfa1f71dc7b58ce16c834)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=eeab0e7025926843b8caca524249073b)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b7a3d2272a1b8ca77d33acf843ca9ea8)\n2. Move to Export configuration file item and press ENTER to confirm. The pop-up window will show successful export\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=9fcf8ba6debeb1750f43a1f466172b61)\n\n#####Restore factory settings\n3. Move to To restore factory settings, press the ENTER button on the remote control. A pop-up window will pop up to confirm the factory settings, &quot;Are you sure you want to restore factory settings?&quot; Select Yes to restore factory settings. A prompt &quot;Restore completed, system will restart!&quot; will appear. The device will restart (select No to cancel the factory restore operation)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2d1709efd1225cb8251cd6e4ef0e71d9)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=53ac554f57453aac8b32c1876f8c47ae)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bfb6a2c71de799c797ed25f4943021f9)\n\n#####Gsensor calibration value export\n4. Move to Export the Gsensor calibration value, press the ENTER button on the remote control, and the export is successful.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=795b7134a518618d0c4362e5a8ca099a)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=63e52c2c233120c12244ee40c0285622)\nps: Remove the storage medium, insert the storage medium into other devices, lock and power on, and the device automatically completes the import of config.xml and gsensor files and automatically restarts. You can check and copy multiple config.xml and gsensor files on the computer before inserting the storage medium into the device for batch import.\n",
+  "s_number": "4",
+  "addtime": "2025-09-26 16:40:30",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:40:30",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Daily maintenance"
+}

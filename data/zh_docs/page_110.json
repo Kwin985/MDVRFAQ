@@ -1,0 +1,18 @@
+{
+  "page_id": "110",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "CMSV7--参数下发注册平台",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍！\n\n### 操作步骤：\n\n1. 设备通过本地工具、远程插件等方式下发，具体方法参考”功能使用”&gt;&gt;&gt;”配置工具”文章介绍\n\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1f8aa55fd856ff85dfbd9d9df238f335)\n\n2.  复制注册平台的参数指令下发，具体一些指令参考 [常见配置参数指令](http://pug2.4000329988.com/fqa/web/#/11/74 &quot;常见配置参数指令&quot;)文章介绍\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stBaseInfo strFD_DeviceNo=&quot;111111&quot;/&gt; &lt;stCMS ucFD_AddressType=&quot;1&quot; uiFD_IP=&quot;&quot; strFD_Domain=&quot;pug1.4000329988.com&quot; usFD_Port=&quot;6608&quot; /&gt;&lt;/VariCfgSec&gt;\n```\n&gt; 参数注释：\nstrFD_DeviceNo=&quot;111111&quot;:设备号；\nucFD_AddressType=&quot;0&quot;:连接类型IP注册;&quot;1&quot;域名注册；\nuiFD_IP=&quot;&quot;:注册IP地址；\nstrFD_Domain=&quot;pug1.4000329988.com&quot;:注册域名地址；\nusFD_Port=&quot;6608&quot;:注册端口\n\n1. 下发成功后立即生效，不需要重启\n\n4. 本地遥控查看是否注册成功或平台查看是否上线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7c617ea63c6d03947807f67c4cd71434)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=35e4a454bec6069ec38dda100acb3428)\n\n",
+  "s_number": "3",
+  "addtime": "2025-10-11 10:54:31",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:31:55",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

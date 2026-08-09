@@ -1,0 +1,18 @@
+{
+  "page_id": "221",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "录像回放",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n- 设备识别到存储且产生录像文件\n\n\n###操作步骤\n1、遥控按中间”ENTER”确认键来到登入界面，输入默认管理员密码 “999999”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=87e99c3e20ddc78150edf3683c1cf27d)\n2、遥控按方向键移动到”回放”按钮，按“ENTER”键进入”回放”菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fe47e81fa2e9ea8a07d78e741f519e95)\n3、按方向下键移动到下拉栏选择录像存储位置、录像类型，填入日期和时间范围，按“ENTER”键进入录像文件列表界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e8cf3303ac986081a3adc8a252bf7476)\nps:上面日期显示黄色代表存在录像文件，灰色代表不存在。\n4、按方向下键移动到某个录像文件，按“ENTER”键开始回放，可以按遥控方向左右键、ENTER键、数字键进行快进、快退、暂停、单通道放大等控制，退出回放按“RETURN”返回键。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=03861b0325c99551e8f7cb25e28a6c0b)\n",
+  "s_number": "9",
+  "addtime": "2025-11-04 17:29:55",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:15:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

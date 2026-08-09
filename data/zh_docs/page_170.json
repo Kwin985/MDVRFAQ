@@ -1,0 +1,18 @@
+{
+  "page_id": "170",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "23",
+  "page_title": "MDVR系列LED灯状态定义",
+  "page_content": "### 简介\n本章节将介绍我司车载MDVR系列设备LED灯状态，LED灯位置不同但各个灯的状态含义相同。\n###示意图\n#####M51/52Hv系列:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=937c2344b1b322f4217214156ec50b64)\n#####M32Hv系列:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=305c869b848d0f012a3cdb52f70ec537)\n#####M16Hv系列:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7a4d5b763226f32aaa377a3fbf61c894)\n#####M15Hv系列:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f693cd89f3199fba46e03decb07efa5c)\n#####状态说明:\n· PWR(电源指示灯)\n· GPS(定位指示灯)\n· REC(录像指示灯)\n· NET(网络指示灯)\n  PWR:常亮和闪烁（设备通电正常），常亮（摄像头视频正常），闪烁（视频丢失，即设备少接摄像头、没接摄像头或摄像头设定不匹配 ），灭（设备未通电）；\n GPS:常亮（GPS定位成功），闪烁（GPS模块存在未定位成功），灭（GPS模块不存在或GPS模块故障）；\n REC:常亮（硬盘或SD卡存在，未录像），闪烁（正在录像），灭（无存储介质）；\n NET:常亮（设备联网正常且已上线），闪烁（未注册上平台），灭（4G或WiFi模块不存在且未上平台）",
+  "s_number": "5",
+  "addtime": "2025-09-05 11:00:53",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 11:00:53",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--接口状态定义"
+}

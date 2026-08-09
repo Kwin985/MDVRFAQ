@@ -1,0 +1,18 @@
+{
+  "page_id": "214",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置画面显示OSD信息",
+  "page_content": "[TOC]\n\n### 前提条件\n- 可使用的遥控、正常显示显示屏\n- 摄像头插入且出画面（参考基本配置---[遥控配置摄像头分辨率、制式](http://pug2.4000329988.com/fqa/web/#/11/185 &quot;遥控配置摄像头分辨率、制式&quot;)）\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=96437dadb76d6c432c3e5005d08a0b36)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=123220c5fb0f1f707c09ee6b5e6f69c4)\n3、在设置界面移动到【编码设置】，按“ENTER”键进入编码设置\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=06e9aff8e26e6570d5e0600feebd7215)\n4、按右方向键移动到【OSD】设置界面，按“ENTER”键进入编辑状态，移动方向下键勾选需要显示的OSD信息，确认保存立即生效，显示效果如下图。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=626066c5a4ca83e605fdb5268fde5f86)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0bb68cc98bf484de4bc1389a35e32094)\n\n",
+  "s_number": "8",
+  "addtime": "2025-11-04 17:29:37",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:15:23",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

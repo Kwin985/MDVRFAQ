@@ -1,0 +1,18 @@
+{
+  "page_id": "162",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "82",
+  "page_title": "Client-MDVRPlayer playback software usage",
+  "page_content": "[TOC]\n\n\n#### Prerequisites:\n- The PC has successfully installed the matching MDVRPlayer playback software, download address: [TTX latest installation package, manual download](http://faq.cmsv8.com/web/#/page/1156 &quot;TTX latest installation package, manual download&quot;)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=29f16f4f2dc145cdc2938913c18b2fa5)\n\n- The PC has been connected to the SD card or hard disk taken out from the MDVR device, or there are video files copied on the computer\n\n#### Operation steps:\n###### Video playback\nHere we take opening the MDVR SD card file as an example, the method of copying files to the computer is the same\n1. Open the &quot;MDVRPlayer&quot; playback software\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=00e387edc6ad2aa63668f36f0752b7f1)\n\n1. Play the video files in the folder, click &quot;Select Folder&quot; to open the SD card or hard disk video folder path, the folder name is &quot;rec_file&quot; confirm to open and scan and open all video files\nps: When opening the folder here, there will be a query and scan video file time, depending on the disk size and file proficiency. When the SD card or hard disk is hot-plugged from the device, the scanning time will also increase\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5cc3b14de1cdd94bfd4ad7e6d52bd00f)\n1. Select the time in the interface after scanning is completed, and click a window file to start playing\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fd550281ceee780afff641a553a24541)\n1. To play a single video file, click &quot;Select File&quot; to open the SD card or hard disk video folder path. The folder name is &quot;rec_file&quot;. Open it again and select a video file ending with .cv1. Confirm to start playing.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ef86b0ec1d96f30c77c8f22977337882)\nPlay interface function introduction:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=da9d55ccf04f6e8823c111743da648cd)\nps: When the video file system is stuck or the screen is stuck, please open the Windows Task Manager to check the CPU Is the memory resource occupied 100%? The more channels you play, the clearer the video quality, and the higher the decoding capability required of the PC hardware.\n\n###### Convert video to MP4\nClick the &quot;MP4&quot; button on the toolbar to pop up the conversion details interface, change some parameters and output path of the converted video as needed, click &quot;Start conversion&quot; and wait for the progress to complete 100%, open the converted video file path to view the converted MP4 file\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=642593c49724e124bbc5b37d454fd0fa)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8e05cf758f3584748bc0f95cb6e6aecb)\n",
+  "s_number": "5",
+  "addtime": "2025-09-26 16:01:05",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:01:05",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Platform Function - Tongtianxing CMS V7"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "159",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "串口相关--油量不上报排查方法",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备保持最新固件版本，升级方法参考 [固件升级方式](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;固件升级方式&quot;) 文章\n\n\n### 排查步骤：\n这里以CMSV7平台为例\n###### 状态1：MDVR设备有油感数据，平台没有数据\n1.1 先接显示屏，使用遥控按右键翻页来到串口状态界面 查看是否有油感数据\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f853f67ecfb5a15f8d04369bbe9a607d)\n1.2 登入平台在车辆管理查看车辆权限是否开启油感接口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d85d04ed53b1d1fae287c98477a60de0)\n###### 状态2：MDVR设备没有数据\n2.1 先接显示屏，使用遥控在串口菜单查看配置串口参数是否正确，不同厂家串口连接配置参数参考FQA串口文章或联系厂家技术\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=60814a09b2e9fd76933c60d73bd45eca)\n2.2 查看串口线是否正确接入必要时可以调换测试，参考厂家提供的接线说明文档，这里以某厂家232协议油感接线为例\nMDVR IO线 -------       油感线\n12V OUT --------12-24V\nGND    ---------GND\nRS232-TX -------RS232RX\nRS232-RX -------RS232TX\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e2b1784b918af188982aa6f7784211aa)\n2.3 查看供电是否稳定、MDVR和油感供电是否为同一电源，单独油感供电就把GND黑色线分离接入设备串口GND黑色线\n###### 状态3：油感外设没有数据\n3.1 使用厂家配套校准检查工具 连接油感外设查看是否有数据\n某厂家超声波蓝牙连接APP检测\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=de2e0b052b9addff471d50df13e64115)\n3.2 安装是否按厂家文档要求规范安装\n某厂家超声波安装示例\n清洁油箱底部，寻找安装点\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=08e629b2303ac907fa6dcd6c91baa607)\nA. 选取区域3~5cm的正方形区域\nB. 确保避开回油管和原车油浮子油杆\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1202213ee9dfb32207e2306c654152f7)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=11e2e9f66d4a11ef200f03b183ccfa5f)\nC. 如果是黑色铁皮油箱，需要将外层黑色漆用砂纸磨掉。铝合金油箱、不锈钢油箱不需要用砂纸\nD.固定探头,清洁用于找安装点的探头，并且再次清洁刚刚选定的安装位置，确保干燥,固定探头到支架里面，对准卡槽卡好背支架\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6c9492cc55d24c0c73d417beaae9adf3)\nE.粘贴圆形硅胶圈，灌入黄油硅脂\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bb9b94d754f68686b145e2072c211193)\nF. 移除支架左右两边的双面胶粘贴，贴于目标安装点，并且用304不锈钢扎带固定好探头\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c41531f2485af04dc67210837c65afa4)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b6e471b96b58520e875b331b008c8924)\nG.固定好探头，锁好螺丝支架\n###### 状态4：油感上报平台数据不准\n4.1登入平台客户端 配置几组油量比例数据\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=24068ac3a9355bac145c078073bef6a4)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1ce4b5f06b3c797012ede3daec39757e)\n\n\n",
+  "s_number": "11",
+  "addtime": "2025-11-17 16:45:39",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:14:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

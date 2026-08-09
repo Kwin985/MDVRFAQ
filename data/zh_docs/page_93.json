@@ -1,0 +1,18 @@
+{
+  "page_id": "93",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "31",
+  "page_title": "主动安全AI BSD画不规则线条标定说明",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 在保证和设备同一段网络环境下使用游览器访问WEB (可使用有线访问设备本地IP地址或连接设备热点访问192.168.42.100进入)\n- 升级定制固件\n\n### 操作步骤：\n1、访问设备WEB（网线直连访问&amp;AP热点访问）\n  设备通过手机连接设备AP热点访问设备192.168.42.100地址，操作步骤参考AP热点连接使用说明 - Q&amp;A\n2、设备通过电脑使用有线直连访问设备本地IP地址访问WEB地址\n3、查看设备本地IP地址步骤：车载设备连接网线，使用遥控器进入 菜单 &gt; 设置 &gt; 网络设置 &gt; 网络\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b7b46dcaa91637768ce63d1a7acda881)\n4、游览器访问设备WEB地址，例如网线访问设备本地IP地址是192.168.43.253，输入密码“Adm_123”登入。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0170c0bc087e349a115330babc01a48c)\n5、点击&quot;普通设置&quot;&gt;&gt;&gt;&quot;报警设置&quot;&gt;&gt;&gt;&quot;左BSD设置&quot;（根据实际安装需要标定哪个BSD通道选择哪个），来到BSD画线标定菜单。\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dacfaaf07376121ca1fb5a4fe93a8309)\n6、点击 “重新绘制3个报警区域” 开始画线，如下图。画完3根线后保存 生效，注意画线只支持矩形一个区域只能画四条线。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=51e56880f18454d9faad4a6cc3ae2c5a)\n \n\n\n",
+  "s_number": "5",
+  "addtime": "2025-11-04 17:46:50",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:47:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--AI功能配置"
+}

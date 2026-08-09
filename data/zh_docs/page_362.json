@@ -1,0 +1,18 @@
+{
+  "page_id": "362",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-屏蔽不使用的通道",
+  "page_content": "[TOC]\n\n### 场景说明\n举例一台设备是4路摄像头机器，只接了通道一和通道四摄像头，那么通道二和通道三就是没图像的；这样可以在平台上配置车辆只显示有图像的通道出来\n\n\n### 操作步骤\n1.点击“信息管理”\n2.点击“设备管理”\n3.选择好要设置的设备点击编辑图标\n4.选择要启用的通道数\n5.选择通道要显示的对应物理通道号\n6.设置完毕之后点击保存即可\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2a69b9e4397df1ece33ee0355382d545)",
+  "s_number": "29",
+  "addtime": "2025-12-17 14:03:46",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:23:18",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

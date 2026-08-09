@@ -1,0 +1,18 @@
+{
+  "page_id": "116",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "部标JT808--本地遥控注册平台",
+  "page_content": "\n[TOC]\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n- 可以使用的遥控、正常显示显示屏\n\n### 操作步骤：\n1. 遥控按中间&quot;ENTER&quot;确认键来到登入界面，输入默认管理员密码 &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef7b8405cd4b980e502d9627d5fd1eb)\n1. 在一级菜单界面遥控按方向键移动到&quot;设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入二级&quot;设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f9e7338ee3100d4522f834a355f4b7e)\n1. 在二级&quot;设置&quot;菜单界面遥控按方向右键移动到&quot;网络设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入三级&quot;网络设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9a8aeee3a609806ca1f4772109d7f0af)\n1. 在三级”网络设置”菜单界面遥控按方向右键移动到”808”界面，遥控按中间”ENTER”确认键进入”808”菜单修改状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=865376f94c1c25ffae460757c0fdb835)\n1. 在修改状态下按方向下键光标移动到”开启部标”复选框按中间”ENTER”确认键开启勾选使能，继续按下键移动光标到 “手机号” “服务器IP” “端口”填入框使用遥控 数字+&quot;.DOT&quot;键快速填入数字和小数点字符\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=36a96e5b504cca4e0e83eb25ea56dd81)\n1. 按下键移动光标到&quot;备用IP&quot; &quot;端口&quot;填入框使用遥控数字键快速填入数字字符（这里备用指的是注册第一个部标服务器失败后会切换到此备用服务器注册连接，不需要注册备用服务器忽略此步骤）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d2f30721b0d42c865b1c788ab71b27af)\n1. 按下键移动光标到第二个部标配置参数填入框重复5 6步骤填入参数，不需要设备同时注册两个部标平台时忽略此步骤\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=26bb512acf4bb21c8c0527552255cefe)\n1. 按方向下键移动到”确认”按钮，按”ENTER”确认键确认保存配置参数，部标注册平台参数配置完立即生效不需重启\n1. 按遥控方向键右下角的”RETURN”返回键来到设备实时预览主界面，再次按方向右键三次来到”网络状态”界面查看部标平台注册状态是否成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4d56f83054d85924e6488d351873c2fd)\n",
+  "s_number": "9",
+  "addtime": "2025-10-11 11:02:47",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:36:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

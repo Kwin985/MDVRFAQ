@@ -1,0 +1,18 @@
+{
+  "page_id": "394",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "Forward and reverse speed sensor",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR device | 1 | MDVR ADC IO harness | 1 |\n| Remote controller | 1 | Display | 1 |\n| Front and back sensor | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- Here we take **MX-TSH51-SX** as an example\n\n** Actual picture**:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c4a8243fdfaf8ada60d9285eb7465e6d)\n\n### Operation steps\n#### 1. Wiring\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8a313b2e94cec87069943e4a1722ccb6)\n\n#### 2. Device menu configuration\nRemotely enter the menu&gt;&gt;Settings&gt;&gt;Alarm &gt;&gt;Input, configure ADC1 function: Positive, ADC2 function: pulse, confirm and save.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fdd222e4e8705153f04346e95be83cdc)\n\n#### 3. Test\nThe vehicle starts the rolling detection tank or simulates the can, and the alarm platform bubble box will display the real-time status (as shown below), and the historical data can be viewed in the forward and reverse report.\n\n",
+  "s_number": "20",
+  "addtime": "2025-09-26 16:39:00",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:39:00",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "337",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "Network HUB",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR device | 1 | Network port adapter | 1 |\n| Remote control | 1 | Display | 1 |\n| Network HUB | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- The network HUB is used to expand the network port of the MDVR series equipment. It can be connected to the aviation head IPC camera or the network port adapter to access the wired network.\n- Here we take **MX-NHUB-02-V1.0** as an example\n\n**Actual picture**:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8d7ccdf09c531dc137e69154b8237fdc)\nMX-NHUB-02-V1.0\n\n### Operation steps\n#### 1. Wiring\nThe left aviation male connector is inserted into the MDVR 6-core LAN network port, and the right 4 aviation female connectors are inserted into the IPC camera or network port adapter cable. For details, see the interface definition below\n\n#### 2. Interface definition\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f9dd3a94d0b9da6eaf4e89db4651b6e8)\n\n#### 3. Physical size\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=339144ff4137145d76a62fbdb8513b6c)",
+  "s_number": "19",
+  "addtime": "2025-09-26 16:38:45",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:38:45",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

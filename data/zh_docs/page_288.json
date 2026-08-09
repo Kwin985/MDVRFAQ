@@ -1,0 +1,18 @@
+{
+  "page_id": "288",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "46",
+  "page_title": "WEB网络配置",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n- 或设备带WiFi模块切换成AP模式，电脑连接AP热点访问192.168.42.100地址\n\n### 说明\n- WEB网络配置用于配置设备一些网络参数，例如：4G\\WIFI\\CMSV7平台\n\n\n### 操作步骤：\n\n1、打开电脑游览器输入设备本地网络IP地址或AP热点地址来到WEB登入界面，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=20bf4f571655954ba109e9b1d3b92ad0)\n2、在登陆页面输入用户名和密码进入设置页面，默认用户名：admin，默认密码：Adm_123 \n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e3a6ac6d8e54681291ae05b00debb94)\n3、在设置页面点击 普通设置&gt;&gt;网络设置进入网络设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=841b46c2d37c823efef0447528e74463)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d7eac70f92a3635bf6b285cbc9d819ff)\n4、在 网络设置页面点击 平台设置栏 可以配置私有协议上CMSV7平台注册参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=132c10f1e2fddd31849d1e7101c5c414)\n5、点击 网络模式栏 可以配置设备网络模式4G\\WIFI\\4G+WIFI模式\\有线、4G认证类、GPS定位发送平台间隔\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=1453cfae6841c217a2c3201b8806a121)\n6、点击  GNet设置栏 可以配置4G拨号网络类型、接入点、认证用户名和密码一些拨号参数（国内使用缺省默认即可，像是国外或VPN专用物联网卡需要配置这些参数请询问SIM卡厂家提供）\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=6784b4d50e6a70d92fcbbe5e8f618df7)\n7、点击WiFi 设置栏 可以配置WiFi工作模式、SSID名称、密码、安全类型、自动或固定配置IP地址等参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ddae9be8213f629493b56e6eb0a414a9)\n8、点击LAN设置可配置本地有线网络IP地址、掩码、网关、MAC地址\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=31ea96b8b97228d7bb3ed04f67c062cc)\n9、点击  GB28181设置栏 可以配置注册28181国标协议平台相关参数。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=02ea2c271ae7a4ed750b564f88392506)\n10、点击部标808平台设置栏可以配置注册808部标协议平台相关参数\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=966423fdcf9d692deac9acfa37913478)",
+  "s_number": "4",
+  "addtime": "2026-07-30 18:28:14",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:06:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--WEB配置"
+}

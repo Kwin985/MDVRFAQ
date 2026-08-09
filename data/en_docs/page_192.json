@@ -1,0 +1,18 @@
+{
+  "page_id": "192",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "112",
+  "page_title": "Control configuration positioning mode, positioning upload interval",
+  "page_content": "[TOC]\n\n### Prerequisites\n- A usable remote control and normal display screen\n\n### Operation steps\n1. Enter the main menu function interface, operate the direction keys and ENTER key of the remote control, enter Settings-Basic Settings-User, and set the positioning mode\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=61f7ae4339a7f7589345a6f150f98076)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=85d396395f4a01d53716dad5c80a3a8f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9e4b92e9f6920d8c0d2532ce1b24a5a2)\n\n2. Enter the main menu function interface, operate the remote control direction keys and ENTER key, enter Settings--Network Settings--Mode, and set the GPS upload interval\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=feb6a70efe729a156b455a55c6e133eb)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c9713a9477b1d2b88c3b4340a9235225)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5aa7709114e6ecd4625299d7737990eb)\n",
+  "s_number": "4",
+  "addtime": "2025-11-04 17:59:51",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:13:47",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Basic Configuration"
+}

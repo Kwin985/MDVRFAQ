@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"> 
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="edge">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Cache" content="no-cache">
+  <title>Help System</title>
+  <meta name="keywords" content="Help System,帮助文档,帮助视频"> 
+  <meta name="description" content="Help System - 提供帮助文档、帮助视频及在线工具，解决用户使用问题">
+  
+
+  <style>
+
+    .custom-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      background-color: #fff;
+      padding: 0 50px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      margin: 0;
+      border: none;
+    }
+
+
+    .custom-header > div {
+      display: flex;
+      align-items: center;
+    }
+    .custom-header img {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    .project-title {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333; 
+    }
+
+
+    .custom-nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .custom-nav-item {
+      position: relative;
+      margin: 0 15px;
+      list-style: none; 
+    }
+    .custom-nav-item a {
+      text-decoration: none;
+      padding: 5px 0;
+      display: inline-block;
+      color: #333; 
+      transition: color 0.2s; 
+    }
+    .custom-nav-item a:hover {
+      color: #1890ff; 
+    }
+
+  .custom-submenu {
+  position: absolute;
+  top: 100%;
+  left: -15px; 
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 4px 4px; 
+  display: none;
+  width: auto !important; 
+  min-width: unset !important;
+  white-space: nowrap; 
+  z-index: 10000;
+}
+
+    .custom-nav-item:hover .custom-submenu {
+      display: block; 
+    }
+    .custom-submenu-item {
+      padding: 5px 10px;
+	  font-size: 13px; 
+
+    }
+    .custom-submenu-item a {
+      color: #333;
+      text-decoration: none;
+	  line-height: 0.5;
+    }
+    .custom-submenu-item a:hover {
+      color: #1890ff;
+    }
+
+
+    .custom-lang-btn {
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+
+
+    #app.grey-bg,
+    div[data-v-48a4bbba] {
+      margin-top: 70px !important;
+	    margin-right: 5px !important; 
+
+    }
+  </style>
+
+
+  <script type="text/javascript">
+    window.DocConfig = {
+      staticPath: './static/',
+      server: window.location.protocol + '//' + window.location.host + window.location.pathname + '../server/index.php?s=',
+      lang: 'zh-cn'
+    }
+  </script>
+  <link href="./static/css/app.808335d554d6dee6cd8036727b752172.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="custom-header">
+
+    <div style="display: flex; align-items: center;">
+      <img src="static/images/folder.png" alt="Help System Logo" width="30" height="30">
+      <span class="project-title" style="margin-left: 10px; font-size: 16px; font-weight: bold;"></span>
+    </div>
+
+
+    <nav class="custom-nav-menu">
+      <div class="zh-nav" style="display: none;">
+	  
+	  		<!--
+    <div class="custom-nav-item">
+      <a href="http://pug2.4000329988.com/ai/chat/P340uOEFgfUarZDP" target="_blank" rel="noopener noreferrer">AI智能助手</a>
+    </div> -->
+
+        <div class="custom-nav-item">
+          <a href="javascript:;">下载中心 ▾</a>
+          <div class="custom-submenu">
+            <div class="custom-submenu-item"><a href="#/11/65" style="font-size: 13px;">升级固件下载</a></div>
+            <div class="custom-submenu-item"><a href="#/11/66" style="font-size: 13px;">说明书</a></div>
+            <div class="custom-submenu-item"><a href="#/11/67" style="font-size: 13px;">提示音</a></div>
+            <div class="custom-submenu-item"><a href="#/11/69" style="font-size: 13px;">常用工具</a></div>
+          </div>
+        </div>
+		
+        <div class="custom-nav-item">
+          <a href="#/11/62">帮助文档</a>
+        </div>
+        <div class="custom-nav-item">
+          <a href="#/8/27">帮助视频</a>
+        </div>
+		<!--
+  <div class="custom-nav-item">
+      <a href="calculator.html" target="_blank" rel="noopener noreferrer">在线工具</a>
+    </div> -->
+     </div>
+	 
+
+
+      <div class="en-nav" style="display: none;">
+
+        <div class="custom-nav-item">
+          <a href="javascript:;">Download Center ▾</a>
+          <div class="custom-submenu">
+            <div class="custom-submenu-item"><a href="#/13/76"style="font-size: 13px;">Upgrade firmware</a></div>
+            <div class="custom-submenu-item"><a href="#/13/77"style="font-size: 13px;">Manual</a></div>
+            <div class="custom-submenu-item"><a href="#/13/78"style="font-size: 13px;">Presentation sound</a></div>
+            <div class="custom-submenu-item"><a href="#/13/80"style="font-size: 13px;">common tools</a></div>
+          </div>
+		  </div>
+		  
+        <div class="custom-nav-item">
+          <a href="#/13/64">Help Documentation</a>
+        </div>
+        <div class="custom-nav-item">
+          <a href="#/12/63">Help Videos</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <button class="custom-lang-btn"></button>
+  </header>
+
+
+  <div id="app" class="grey-bg"></div>
+
+
+  <script type="text/javascript" src="./static/js/manifest.3ad1d5771e9b13dbdad2.js"></script>
+  <script type="text/javascript" src="./static/js/vendor.8fe48b2c0939b5b4931a.js"></script>
+  <script type="text/javascript" src="./static/js/app.25f17ea1a87cbfa9cf26.js"></script>
+  <script type="text/javascript" src="./static/js/langMap.js"></script>
+  
+  <script type="text/javascript">
+    const currentHash = window.location.hash;
+    const headElement = document.head;
+    const zhNav = document.querySelector('.zh-nav');
+    const enNav = document.querySelector('.en-nav');
+    const langBtn = document.querySelector('.custom-lang-btn');
+
+    const projectConfig = {
+      zhDoc: { 
+        cssUrl: './static/css/topshi-zh.css',
+        langBtnText: 'EN',
+        langBtnHref: '#/13/64'
+      },
+      enDoc: { 
+        cssUrl: './static/css/topshi-en.css',
+        langBtnText: 'CN',
+        langBtnHref: '#/11/62'
+      },
+      zhVideo: { 
+        cssUrl: './static/css/topshi-zh.css',
+        langBtnText: 'EN',
+        langBtnHref: '#/12/63'
+      },
+      enVideo: { 
+        cssUrl: './static/css/topshi-en.css',
+        langBtnText: 'CN',
+        langBtnHref: '#/8/27'
+      }
+    };
+
+    let type = 'zhDoc';
+    if (currentHash.includes('13')) type = 'enDoc';
+    else if (currentHash.includes('8')) type = 'zhVideo';
+    else if (currentHash.includes('12')) type = 'enVideo';
+
+    const cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = projectConfig[type].cssUrl;
+    headElement.appendChild(cssLink);
+
+    if (type === 'zhDoc' || type === 'zhVideo') {
+      zhNav.style.display = 'flex';
+      enNav.style.display = 'none';
+    } else {
+      enNav.style.display = 'flex';
+      zhNav.style.display = 'none';
+    }
+
+    langBtn.textContent = projectConfig[type].langBtnText;
+	
+   langBtn.onclick = function() {
+  const currentHash = window.location.hash; 
+
+  const targetHash = langMapping[currentHash] || projectConfig[type].langBtnHref;
+  window.location.href = targetHash; 
+  };
+
+    window.addEventListener('hashchange', () => window.location.reload());
+  </script>
+
+
+  <style>
+
+    .header-right .el-tooltip.icon-item:nth-child(2),
+    .header-right .el-tooltip.icon-item:nth-child(3),
+    .header-right .el-tooltip.icon-item:nth-child(4),
+    .header .inline-block.align-middle {
+      display: none !important;
+    }
+
+
+    .el-tree-node:has(#node-cat_19) {
+      display: none !important; 
+    }
+    .el-tree-node:has(#node-cat_19).is-expanded,
+    .el-tree-node:has(#node-cat_19).is-current,
+    .el-tree-node:has(#node-cat_19).is-focusable {
+      display: none !important;
+    }
+
+    .el-tree-node:has(#node-cat_53) {
+      display: none !important; 
+    }
+    .el-tree-node:has(#node-cat_53).is-expanded,
+    .el-tree-node:has(#node-cat_53).is-current,
+    .el-tree-node:has(#node-cat_53).is-focusable {
+      display: none !important;
+    }
+
+
+    .header[data-v-680e67fd] { height: 50px !important; }
+    .el-dialog { margin-top: 10vh !important; }
+    .cat-btn-div[data-v-7f1a370f] {
+      position: absolute !important; 
+      top: 100px !important; 
+      left: 5px !important;
+      z-index: 999 !important;
+    }
+	
+
+    #left-side[data-v-d3bf69e6] {
+      width: 351px !important;
+      margin-left: -50px !important;
+    }
+
+
+.search-box[data-v-5bebb1df] {
+ width: 330px;
+}
+
+#left-side-menu[data-v-5bebb1df] .el-tree {
+  width: 350px;
+}
+
+#left-side-menu[data-v-5bebb1df] {
+  color: #333;
+  position: fixed;
+  height: calc(100% - 150px);
+  overflow: scroll;
+  margin-right: 10px;
+  width: 350px;
+  background: #f9f9f9;
+}
+
+
+#attachment {
+  display: none !important;
+}
+
+  </style>
+</body>
+</html>

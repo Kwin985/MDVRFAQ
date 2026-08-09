@@ -1,0 +1,77 @@
+{
+  "_note": "预置 MDVR 配置方案种子（SEED）。由 AI 按资料夹结构初拟，需人工审阅/增删。每套方案 = 1 台主机 + 若干摄像头/配件。parts 中 id 对应 catalog.json 的 item.id，qty 为数量，role 为安装位置/用途说明。",
+  "bundles": [
+    {
+      "id": "b-taxi-4ch",
+      "lang": "zh",
+      "name": "出租车 4 路录像方案",
+      "nameEn": "Taxi 4-Channel Recording Kit",
+      "summary": "面向出租车行业的 4 路音视频录像 + 定位 + 报警整体方案，满足营运取证与安全监管。",
+      "summaryEn": "4-channel A/V recording with GPS and alarm for taxi operation and safety compliance.",
+      "host": "host-zh-m16hv",
+      "parts": [
+        { "id": "cam-zh-110", "qty": 4, "role": "前视/后视/左后视/车内各 1" },
+        { "id": "acc-zh-C05", "qty": 1, "role": "出租车顶灯（含 LED 屏）" },
+        { "id": "acc-zh-O23", "qty": 1, "role": "OBD 车辆数据" },
+        { "id": "acc-zh-D09", "qty": 1, "role": "定位终端" },
+        { "id": "acc-zh-S26", "qty": 1, "role": "声光报警器（一键报警）" },
+        { "id": "acc-zh-A01", "qty": 1, "role": "AI 提醒器（语音提醒）" }
+      ],
+      "highlights": ["4 路 1080P 录像", "GPS 轨迹回放", "AI 语音提醒", "一键声光报警"]
+    },
+    {
+      "id": "b-truck-8ch",
+      "lang": "zh",
+      "name": "货车/冷链 8 路方案",
+      "nameEn": "Truck / Cold-Chain 8-Channel Kit",
+      "summary": "面向货运与冷链车辆的 8 路录像 + 宽压电源 + 外设扩展方案，适配恶劣车载环境。",
+      "summaryEn": "8-channel recording with wide-voltage power and peripheral expansion for harsh vehicle environments.",
+      "host": "host-zh-m32hv-sv",
+      "parts": [
+        { "id": "cam-zh-110", "qty": 8, "role": "周视 8 路摄像头" },
+        { "id": "acc-zh-D10", "qty": 1, "role": "特种宽压电源" },
+        { "id": "acc-zh-C07", "qty": 1, "role": "存储介质（扩容）" },
+        { "id": "acc-zh-J16", "qty": 1, "role": "继电器（外设控制）" },
+        { "id": "acc-zh-C03", "qty": 1, "role": "串口盒子（RS232/485）" },
+        { "id": "acc-zh-L22", "qty": 1, "role": "雷达（盲区预警）" },
+        { "id": "acc-zh-A01", "qty": 1, "role": "AI 提醒器" }
+      ],
+      "highlights": ["8 路录像", "宽压电源适应", "RS232/485 扩展", "雷达盲区预警"]
+    },
+    {
+      "id": "b-bus-6ch",
+      "lang": "zh",
+      "name": "公交/客运 6 路方案",
+      "nameEn": "Bus / Passenger 6-Channel Kit",
+      "summary": "面向公交与客运车辆的 6 路录像 + 车载显示 + 行为安全监管方案。",
+      "summaryEn": "6-channel recording with in-vehicle display and driver-behavior monitoring for buses.",
+      "host": "host-zh-m51-52hv",
+      "parts": [
+        { "id": "cam-zh-110", "qty": 6, "role": "前/后/内外各路" },
+        { "id": "acc-zh-P24", "qty": 1, "role": "车载显示屏" },
+        { "id": "acc-zh-S26", "qty": 1, "role": "声光报警器" },
+        { "id": "acc-zh-A01", "qty": 1, "role": "AI 提醒器" },
+        { "id": "acc-zh-C04", "qty": 1, "role": "传感器（车门/状态）" },
+        { "id": "acc-zh-J17", "qty": 1, "role": "酒精检测仪" }
+      ],
+      "highlights": ["6 路录像", "车载显示", "酒精检测", "驾驶行为 AI"]
+    },
+    {
+      "id": "b-rapid-deploy",
+      "lang": "zh",
+      "name": "布控球/应急快速部署方案",
+      "nameEn": "Rapid-Deploy / Emergency Kit",
+      "summary": "面向临时布控与应急场景的快速部署方案，支持 4G 图传与集中供电。",
+      "summaryEn": "Quick-deploy kit with 4G video transmit and centralized power for temporary surveillance.",
+      "host": "host-zh-ex91a",
+      "parts": [
+        { "id": "cam-zh-113", "qty": 2, "role": "变焦摄像机" },
+        { "id": "acc-zh-D09", "qty": 1, "role": "定位终端" },
+        { "id": "acc-zh-S26", "qty": 1, "role": "声光报警器" },
+        { "id": "acc-zh-H13", "qty": 1, "role": "HUB 线网络盒子" },
+        { "id": "acc-zh-J15", "qty": 1, "role": "交换机（盒式）" }
+      ],
+      "highlights": ["快速部署", "4G 图传", "集中供电", "多机联网"]
+    }
+  ]
+}

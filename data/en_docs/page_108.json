@@ -1,0 +1,18 @@
+{
+  "page_id": "108",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "65",
+  "page_title": "Local configuration tool MVMS_NetPlayer",
+  "page_content": "#### Prerequisites:\n- The device and computer are in the same LAN, and the computer can ping the local IP address of the device\n\n#### Operation steps:\n1. Click to download [MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bcf73b34785e55ddca10620c69fda809 &quot;[MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip&quot;) configuration tool, unzip and install, click to complete the installation\n1. Click &quot;Find Device&quot;, select the device to view the configuration, and click Confirm, as shown below\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=00dfe04859c319429c754dd224409375)\n1. On the left are some common function controls, such as channel real-time preview, PTZ control, etc., and the upper right corner is for playback of device history recordings, playback of computer local recording files, etc.\n1. Configuration parameters Click the &quot;Configure&quot; button on the left to pop up the plug-in configuration box\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c0e16c53716720d8d07991b17bc6a740)\n1. For the plugin configuration function, please refer to the previous article &quot;[Tongtianxing Client Plugin Online Configuration Tool](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;Tongtianxing Client Plugin Online Configuration Tool&quot;)&quot;\n",
+  "s_number": "5",
+  "addtime": "2026-07-03 16:27:07",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:47:18",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Configuration Tool"
+}

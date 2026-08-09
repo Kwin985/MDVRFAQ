@@ -1,0 +1,18 @@
+{
+  "page_id": "114",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "国标GB28181--本地配置导入注册平台",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n\n### 操作步骤：\n1. 下载此配置文件模板 [config.zip](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=00a0857c2916c0223fbb6db3a546c164 &quot;[config.zip&quot;) 本地解压\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=439939d4aeed81dabab0f3edc233bfa4)\n1. 文本编辑工具打开，填入&quot;打开功能&quot; &quot;服务器IP&quot; &quot;服务器端口&quot; &quot;认证用户名&quot; &quot;认证密码&quot; 等参数，参考下面参数注释\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=884a6c34646a2ad2f5048d7e962e9aae)\n&gt; 参数注释：\nucFD_Enable=&quot;1&quot;:功能打开且上传子码流;&quot;0&quot;功能关闭;&quot;129&quot;功能打开且上传主码流\nucFD_Version=&quot;1&quot;:GB28181版本2022;&quot;0&quot; GB28181版本2016\nucFD_TcpSip=&quot;0&quot;:sip UDP协议;&quot;1&quot;sip TCP协议\nucFD_TcpMedia=&quot;0&quot;:媒体UDP协议;&quot;1&quot;媒体TCP协议\nucFD_AutoGps=&quot;0&quot;:位置数据 需要订阅;&quot;1&quot;位置数据 自动发送\nucFD_TalkChn=&quot;0&quot;:声音通道 auto;&quot;1&quot;声音通道 CHN \nstrFD_Manufacturer=&quot;BBC&quot;:设备厂家\nstrFD_ModelName=&quot;M51Hv&quot;:设备型号\nstrFD_ServerIp=&quot;139.9.251.220&quot;:服务器IP或域名\nusFD_ServerPort=&quot;6608&quot;:服务器端口 \nstrFD_ServerID=&quot;34017101041328000012&quot;:服务器设ID号\nstrFD_ServerDomain=&quot;8000012&quot;:服务器域 \nstrFD_DeviceId=&quot;281812016&quot;:设备ID号 \nusFD_DevicePort=&quot;5888&quot;:设备端口 \nstrFD_DeviceUser=&quot;34017101041328000012&quot;:认证用户名 \nstrFD_DevicePass=&quot;123456&quot;:认证密码\nSUBDEVID_0 strFD_LensId=&quot;&quot;:配置第一个通道ID号\nSUBDEVID_1 strFD_LensId=&quot;&quot;配置第二个通道ID号，以此类推\n```\n1. 设备开锁取出硬盘或SD卡存储，使用硬盘读写器或SD卡读取器插入电脑，打开存储第一分区根目录\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=98b4cff9f3b33ab145dce14aa4163f91)\n1. 把刚编辑保存好的config配置文件复制到此目录下，断开连接插入设备关锁\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5a7c4cedfdb1ba9476c4a63eda7b989b)\n1. 设备通电开机会自动导入配置并重启，重启开机后配置生效\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=797acaece4c7ae0364a430089df2cc85)\n1. 本地遥控查看是否注册成功或平台查看是否上线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=376c550064ac67e41e351fff10e79328)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b4084f4f396cf41144778979f1dc1fbd)\n",
+  "s_number": "7",
+  "addtime": "2025-10-11 10:58:43",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-03 18:51:40",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

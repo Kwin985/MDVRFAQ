@@ -1,0 +1,18 @@
+{
+  "page_id": "95",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "平台相关--三一部标平台注册不成功",
+  "page_content": "为什么三一部标平台注册不成功？\n\n排查步骤：\n1、登入三一平台车辆维护信息查看 车牌号、手机号、终端ID号、端口号（默认7000）、IP地址、车牌颜色这些信息，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2d436524874d9112904335e439e3f6e2)\n\n2、远程插件或本地遥控进808菜单查看核对上面参数是否都正常，808使能是否开启。",
+  "s_number": "9",
+  "addtime": "2025-11-17 16:44:59",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:14:04",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

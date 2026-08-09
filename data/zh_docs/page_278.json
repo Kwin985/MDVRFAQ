@@ -1,0 +1,18 @@
+{
+  "page_id": "278",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "配置导出、恢复出厂和Gsensor校准值导出",
+  "page_content": "[TOC]\n\n### 前提条件：\n\n- MDVR主机、遥控器、显示屏、存储介质或U盘\n\n\n###操作步骤\n#####配置导出\n1、通电开机遥控进入菜单&gt;&gt;工具&gt;&gt;配置管理&gt;&gt;配置管理界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1759310e17fa7776a2603a75c6c3869a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=15a8e61633718d087a328443a6886798)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f34405330c9b203335a05471d0c7045f)\n2、移动到 导出配置文件项 再按ENTER确认键，弹出导出成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=abf936c7acf849f94523954e57f212f1)\n#####恢复出厂设置\n3、移动到 恢复出厂设置，按遥控器ENTER键，弹窗恢复出厂设置确认信息“确认要恢复出厂设置吗？”，选择是，进行恢复出厂设置操作，提示“恢复完毕，系统即将重启！”，设备重启（选择否取消恢复出厂操作）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7f18002a4a62918b9e88057869d87cdc)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=163afa95d9520d0183c8a179e275f11d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a4d61fa682ab87efc99536b57f8534e2)\n#####Gsensor校准值导出\n4、移动到 导出Gsensor校准值，按遥控器ENTER键，返回导出成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=99721264dbf701d42d1103e46fc9a91e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=653a959aa946b543b5b41297ce99e2a9)\nps:取出存储介质，把存储介质插入其他设备关锁通电开机，设备自动完成config.xml和gsensor文件导入并自动重启。可在存储介质插入设备前先在电脑查看复制多个config.xml和gsensor文件用于批量导入。\n\n\n",
+  "s_number": "4",
+  "addtime": "2025-11-11 17:33:53",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:58:53",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

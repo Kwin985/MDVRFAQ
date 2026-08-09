@@ -1,0 +1,18 @@
+{
+  "page_id": "368",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "41",
+  "page_title": "客户端-账号和用户车辆添加",
+  "page_content": "[TOC]\n\n### 操作步骤\n##### 1、客户端用管理员账号 admin 登录\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=439dd5d9a3bc0a74a7edf034f93b0617)\n##### 2、点击 信息管理 -》运营管理 -》用户管理\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1277dcafc57a6dc64f39871f44ccb039)\n##### 3、添加用户组\n先点击 admin 用户组，admin用户组为所有用户组的基础， 添加用户组\n带 * 号为必填项，依据实际需要填写对应参数信息\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ac79ed71f9437f9289e66866403e01ee)\n##### 4、添加一个登陆账号\n新增用户基于用户组下操作，以 admin 用户组为例，先点击一个用户组，如下图 2 在这个用户组下，点击添加用户，依据实际需要填写对应参数即可\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4560cd945e8fa5767dffe03af9e5e21a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=638c50994c9e790a5069da1c57631798)\n##### 5、添加设备组\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b9257cb217018156e6d0cb4219be6b8f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8466da0079908194c86d5353e10a496b)\n设备组顾名思义就是指定设备的节点，在平台上添加设备，需要在某个设备组下才能够添加；而设备组则对应某个用户组，该用户组下的用户可以查看到设备组下的设备\n##### 6、添加设备\n设备需要创建到某个设备组下，所以首先如下图 1 ，先点击选择一个设备组，在点击下图 2 的位置，添加设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4fc6beb33589e235071054c7269654ad)\n依据实际情况填写设备号，设备号为设备上报平台的ID号码，需保持唯一；勾选批量添加设备，填写对应的数量，即可批量添加设备数；设备名为客户端上设备树形列表中显示的名称，不填则默认为设备号；通道数，依据改设备号对应的设备实际使用的数量填写，如改设备使用4个摄像头则这里填4\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef3747f5e917fa2d37e1024f1f318c7c)\n",
+  "s_number": "3",
+  "addtime": "2025-12-17 14:07:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:24:44",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--YH平台"
+}

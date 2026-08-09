@@ -1,0 +1,18 @@
+{
+  "page_id": "202",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "58",
+  "page_title": "Configuring Wired Network",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Available remote control, normal display screen\n- Available network router, network cable, network port adapter\n\n### Operation steps\n1. Connect the device to the display screen, insert the network cable (if you don't know the position, refer to the &quot;Interface Status Definition&quot; column above), and power on the device.\n2. Use the remote control ENTER to enter the device network setting menu, press the confirmation key and press the direction key to select Wired mode, and confirm to save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e8a19975846d73a5db8f73ac0b189ba8)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7cd8e21baf56996812a42da42c42ebb7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef35fb615e0feab61167c9358c0bff54)\n\n3. Press the right button on the remote control to move to the network configuration menu, fill in the IP address, subnet mask, gateway, and do not modify the default MAC. Confirm and save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb4627ea85b9c1c11165034c4adbcb56)\n\n4. The wired network configuration takes effect immediately. When the network connection is successful after the configuration of the registered V7 platform parameters, you can return to the real-time preview interface and press the right button of the remote control to view the registered platform status\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5fc400d76b334e87021f1963026d59dc)\n",
+  "s_number": "4",
+  "addtime": "2025-11-04 18:02:00",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:16:56",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Network Configuration"
+}

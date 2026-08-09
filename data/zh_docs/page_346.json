@@ -1,0 +1,18 @@
+{
+  "page_id": "346",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-平台WEB API对接开发文档",
+  "page_content": "##### 平台WEB API对接开发文档使用介绍\n\n### 操作步骤\n1、打开游览器输入已安装好的服务器IP地址和端口，进入WEB登入界面。如下图：\n\n2、点击API链接进入API帮助文档界面，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a92955a9bf37e64864719e8695b28b48)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=076fb42c849b4fec92dbe974c04fe997)\n\nAPI链接示例：\n[Web开发接口文档](http://pug1.4000329988.com/808gps/open/webApi.html &quot;Web开发接口文档&quot;)",
+  "s_number": "14",
+  "addtime": "2025-11-17 16:54:09",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:19:08",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

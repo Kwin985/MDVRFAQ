@@ -1,0 +1,18 @@
+{
+  "page_id": "106",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "65",
+  "page_title": "The local configuration tool Mxc_Config is used to configure LAN device parameters",
+  "page_content": "#### Prerequisites:\n- The device and computer are in the same LAN, and the computer can ping the local IP address of the device\n\n#### Operation steps:\n1. Click to download [MmxConfig_V1.0.10.rar](http://pug2.4000329988.comfqa/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;) configuration tool, unzip and install, click &quot;Mxc_Config&quot; to open the tool\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c578daf4102c0f11a7a530004641029c)\n2. Click Search to search for devices in the LAN\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=545fb5ee726a12114c60424dbc3a83fc)\n3. Select the device to view the configuration\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=93525305df96d01158e9bd3985ae3081)\n4. On the left are some common function configuration items. After filling in the parameters, click the &quot;set&quot; button on the right to save the settings\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=58165b6a384d5a508dbdf8a971a8f2de)\n5. On the right is the custom configuration command. Click to send\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4658c6e0621d85ddba71e1b6a4ee944f)\n6. Get the feedback result after sending\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0fc0490a7a3fc87d0d02f6baa4848734)\n7. Click to clear the contents of the custom command window and response window below\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6880341ee4318c6e26bafdad8bf873b2)\n",
+  "s_number": "3",
+  "addtime": "2026-06-24 15:56:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:47:02",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Configuration Tool"
+}

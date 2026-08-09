@@ -1,0 +1,18 @@
+{
+  "page_id": "328",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "冰恒PTT--远程配置注册对讲",
+  "page_content": "[TOC]\n\n\n### 前提条件\n\n-  设备已注册上线CMSV7平台，已登入客户端\n-  使用客户端插件下发命令，参考[CMSV7客户端插件参数配置](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;CMSV7客户端插件参数配置&quot;)\n\n### 操作步骤\n1、复制命令配置PTT IP和端口，使用客户端参数配置插件自定义设置如下格式命令：\n```xml\n &lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stPttDcn ucFD_AddressType=&quot;0&quot; uiFD_IP=&quot;120.79.255.229&quot; usFD_Port=&quot;6689&quot; &gt;&lt;/stPttDcn&gt;&lt;/VariCfgSec&gt;\n```\n&gt; 注释：\nuiFD_IP=&quot;冰恒PTT服务器IP；usFD_Port=&quot;冰恒PTT服务器端口&quot;\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=da265af310ac71bf2c6a4c5d227baff0)\n2、下发配置后可以复制查询命令核对参数是否正确和配置成功\n\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stPttDcn&gt;&lt;/VariCfgSec&gt;\n```\n\n3、复制命令配置PTT用户名和密码，使用客户端参数配置插件自定义设置如下格式命令：\n\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stPtt strFD_UserName=&quot;20200304002&quot; strFD_Password=&quot;123456&quot; ucFD_PttType = &quot;1&quot;/&gt;&lt;/VariCfgSec&gt;\n```\n&gt; 注释：\nstrFD_UserName=&quot;用户名&quot;；strFD_Password=&quot;用户密码&quot;\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aec61e459bd15a30ae6aab1bccd43dbc)\n4、下发配置后可以复制查询命令核对参数是否正确和配置成功\n\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stPtt&gt;&lt;/VariCfgSec&gt;\n```\n5、在网络连接状态界面查看PTT服务器是否连接成功。如下图所示：\nPTT状态：DCN请求成功，表示连接PTT服务器成功。\nPTT状态：失败，表示连接PTT服务器失败，请检查服务器IP、端口，以及用户名和密码是否正确，网络拨号是否成功。\nPTT IP：123.56.93.33，显示的是PTT服务器IP。\nPTT Port：6689，显示的是PTT服务器端口。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8303d414de6f29e01901c9fc7a68d6e8)\nPTT状态：PTT发起；表示本机正在讲话。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a5be63863f56b0411d7173fe286978c9)\nPTT状态：PTT接收；表示本机整机接听。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=837f2ce4850d23be69ff352400034728)\n\n\n\n",
+  "s_number": "12",
+  "addtime": "2025-10-11 11:04:15",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:38:16",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

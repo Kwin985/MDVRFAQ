@@ -1,0 +1,18 @@
+{
+  "page_id": "262",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "TTS语音播报器配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  TTS语音播报器 |  1 |常用接线工具| n |\n\n### 必要说明\n- 这里以**MX-TTS-01-01（hd）**为例，**注意：这款TTS是5V请不要接到12V供电否则会烧坏，当使用的机型IO扩展线不带5V时请单独接一个5V供电使用**\n- 出货一般会把MDVR 232 IO线束做好插头直接对插TTS母头使用，如果没有需要找到设备5V供电和232串口两根线接入使用请联系我司技术寻求帮助。\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=47727dab69673ce2be883d49c83e03f0)\nMX-TTS-01-01\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ab9e55f2ed9998a4cce93b845db86be9)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能TTS、波特率4800、其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2fe4cf7dbcb806b5cb2f5141ba0c98cc)\n\n#### 三、测试\n3.1 登入平台，在平台车辆信息菜单点击编辑勾选开启TTS功能\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ea5545e872223454518d64d9a7cd6232)\n\n3.2 点击在线车辆选择 下发文字信息 测试TTS播报功能，下发成功后设备显示屏会弹出对话框并且播报语音提示。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb1d3b0e2df612173b5ca22a40dec516)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fa20b14d2a71c65f50c2d0be845adfdf)\n\n\n\n\n",
+  "s_number": "11",
+  "addtime": "2025-11-04 17:51:26",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:54:03",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

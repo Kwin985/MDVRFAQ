@@ -1,0 +1,18 @@
+{
+  "page_id": "105",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "本地配置工具Mxc_Config配置局域网设备参数",
+  "page_content": "#### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n#### 操作步骤：\n1. 点击下载[MmxConfig](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;)配置工具，解压安装后点击“Mxc_Config” 打开工具![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=defe35a6af2c5dc8e58fa0bde53b14df)\n1. 点击Search搜索局域网内设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=545fb5ee726a12114c60424dbc3a83fc)\n1. 选择要查看配置的设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=93525305df96d01158e9bd3985ae3081)\n1. 左边是一些常见功能配置项，填入参数后点击右侧“set”按钮设置保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=58165b6a384d5a508dbdf8a971a8f2de)\n1. 右边是自定义配置命令，点击发送\n ps:常见参数指令参考[常见配置参数指令](http://pug2.4000329988.com/fqa/web/#/11/74 &quot;常见配置参数指令&quot;)和[常见查询参数指令](http://pug2.4000329988.com/fqa/web/#/11/75 &quot;常见查询参数指令&quot;)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4658c6e0621d85ddba71e1b6a4ee944f)\n1. 获取发送后反馈的结果\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0fc0490a7a3fc87d0d02f6baa4848734)\n7.可点击清除下面自定义命令窗口和响应窗口的内容\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6880341ee4318c6e26bafdad8bf873b2)",
+  "s_number": "4",
+  "addtime": "2026-06-24 15:22:26",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:09:44",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

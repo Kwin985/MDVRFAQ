@@ -1,0 +1,18 @@
+{
+  "page_id": "205",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置录像保存天数",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b7ebdaa2d5b23de0e128d7c1bf448040)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=84c34d957048a6c37ab542ef6e4eff3c)\n3、在【设置】界面选择【录像设置】，按“ENTER”键进入录像设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0a5bffadc59b1ae2a9a6f6480ea7c85d)\n4、在【录像设置】界面选择【录像】进入录像界面，勾选录像保存天数，设置需要的天数，按确定保存生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a76c55fe91f9ef42531d251587d4caba)",
+  "s_number": "3",
+  "addtime": "2025-11-04 17:27:44",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:04:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

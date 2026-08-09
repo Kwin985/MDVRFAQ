@@ -1,0 +1,18 @@
+{
+  "page_id": "223",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Video playback",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, storage media (SD card, hard disk, etc.)\n- The device recognizes the storage and generates a video file\n\n### Operation steps\n1. Press the middle &quot;ENTER&quot; confirmation key on the remote control to enter the login interface and enter the default administrator password &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d8c070ef0b03aeddd2a3e0f1465bfa0a)\n\n2. Press the arrow keys on the remote control to move to the &quot;Playback&quot; button and press the &quot;ENTER&quot; key to enter the &quot;Playback&quot; menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7b2258f052163a04fad29b02f882c1d1)\n\n3. Press the down arrow key to move to the drop-down bar to select the video storage location, video type, fill in the date and time range, and press the &quot;ENTER&quot; key to enter the video file list interface.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=800281f3dd246b1513c58251a7835c0d)\nps: The date above is displayed in yellow, indicating that there is a video file, and gray, indicating that there is no video file.\n\n4. Press the down arrow key to move to a video file, press the &quot;ENTER&quot; key to start playback, and you can press the left and right arrow keys, ENTER key, and number keys on the remote control to fast forward, fast rewind, pause, single channel zoom, etc. Press the &quot;RETURN&quot; key to exit playback.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f8d1f5d210f4e89e09f2ceab687b232)\n",
+  "s_number": "9",
+  "addtime": "2025-12-25 17:36:25",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:25:18",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

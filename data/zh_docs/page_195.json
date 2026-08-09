@@ -1,0 +1,18 @@
+{
+  "page_id": "195",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "配置4G/5G网络",
+  "page_content": "[TOC]\n\n\n### 前提条件\n遥控配置：\n-  可使用的遥控、正常显示显示屏\n-  可使用的SIM卡、4G天线\n\nWEB配置：\n- 配套网口转接线、网线且和电脑在同一局域网可访问、电脑\n- 或者设备带WiFi且连接在同一局域网可访问、电脑\n-  可使用的SIM卡、4G天线\n\n\n### 说明:\n- 在国内非VPN卡基本不需要单独设置，直接使用出厂缺省值即可。\n- VPN卡需要先找SIM卡运营商拿到拨号相关的参数，比如认证类型和APN接入点、账号、密码。\n- 注意：SIM卡插入设备内后，设备锁需要处于锁闭合状态。\n\n### 操作步骤\n####使用遥控器显示屏菜单配置\n1、设备接好显示屏，插入SIM卡，接入4G天线（不知道位置参考上面“接口状态定义”栏），上电开机。\n2、使用遥控器ENTER进入设备网络设置菜单，如下\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9d6bd022cb8dc558b9cb3a11bf8680e8)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d205f0850d3f7068b8ee49093f6ffa4d)\n3、拨号鉴权模式，设备出厂鉴权模式的CHAP，如果SIM卡拨号鉴权是PAP，那么需要修改，如下图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=45aca59cdeb1e7a5cedc0371424085bf)\n4、修改拨号参数，如APN等信息，遥控器ENTER和上下键操作切换到需要修改的项目栏\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3d1c229ded2e7c9d1276807b9c6b68ce)\nps:菜单缺省登录密码 999999，修改后确保点击菜单下发 OK 按键保存， 拨号参数的修改即时生效，不需要重启设备。\n#### 使用设备Web配置拨号参数\n1、使用有线或者WIFI网络连接设备\n2、使用浏览器登录设备IP的WEB系统，比如设备IP是192.168.1.173，那么浏览器地址栏输入：http://192.168.1.173，缺省密码：Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a44d5512dba38665b0256d9eb60f5fbb)\n3、 进入普通设置，点击网络设置菜单，点击网络模式菜单下拉项，选择SIM卡拨号鉴权模式，设备出厂鉴权模式是CHAP。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=666a1e2e7033e41b8041b9ad8d504761)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=af2da5702ffc2fb94cc2ff2078865fd2)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c36f286f27985e9cf052efb6cb71182f)\n4、点击GNet设置菜单下拉项，设置SIM卡拨号参数，根据实际SIM卡拨号参数输入对应参数，点击保存，拨号参数保存后即时生效，不需要重启设备。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d81ba25eb2b6b517d1a57c3252e103f4)\n\n\n",
+  "s_number": "1",
+  "addtime": "2025-09-08 16:22:35",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:21:01",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

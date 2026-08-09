@@ -1,0 +1,18 @@
+{
+  "page_id": "133",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "CMSV7和部标808--本地遥控快捷配置注册",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n- 可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤：\n\n1. 遥控按最右上角红色按钮来到登入界面，输入默认管理员密码 &quot;999999&quot;来到快捷设置菜单，上部分参数注册CMSV7平台，下部分参数注册部标平台\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef7b8405cd4b980e502d9627d5fd1eb)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0ad0d49fc88087b4116a7ac7b985a88a)\n1. 按方向下键光标移动到填入注册CMSV7平台的&quot;设备号&quot; &quot;服务器IP&quot; &quot;端口&quot; 或选择&quot;域名&quot;连接方式填入域名地址\nps:输入不是纯数字时候，光标对着输入框按遥控按中间”ENTER”确认键进入”输入字符”菜单，默认界面是小写英文输入字符菜单移动方向键来需要输入的英文字符，再次按遥控中间”ENTER”确认键英文字符输入成功；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d3ba9aa9613d9d9daf7b709b261e7c6b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bd925aab4a835c06b8eaebf5d004694b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=73c0e0a7bc7b9d6b4d7f319bea41f591)切换数字、字母、符号按钮，遥控移动光标到此按&quot;ENTER&quot;确认键切换\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=497eb6a7a41a6d78977d0c143b378696)删除字符按钮，遥控移动光标到此按&quot;ENTER&quot;确认键删除\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=98aec8d29706b3b8a857063853ed5272)返回按钮，遥控移动光标到此按&quot;ENTER&quot;确认键返回\n1. 按方向下键光标移动到&quot;开启部标&quot;复选框 &quot;手机号&quot; &quot;JT808 IP&quot; &quot;端口&quot;或选择&quot;域名&quot;连接方式填入域名地址\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9786d0ece20982d66de92fa8919bdd41)\n1. 按方向下键移动到&quot;确认&quot;按钮，按&quot;ENTER&quot;确认键确认保存配置参数，CMSV7、部标注册平台参数配置完立即生效不需重启\n1. 按遥控方向键右下角的”RETURN”返回键来到设备实时预览主界面，再次按方向右键三次来到”网络状态”界面查看CMSV7、部标平台注册状态是否成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=232e1bfdab501f1ff5f82bda0c101446)\n\n\n",
+  "s_number": "1",
+  "addtime": "2025-10-11 12:01:42",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:26:34",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

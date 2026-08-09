@@ -1,0 +1,18 @@
+{
+  "page_id": "342",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-邮件配置说明",
+  "page_content": "[TOC]\n\n\n##### 操作步骤\n1.服务器管理软件点击“邮件配置”；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=79bf91d81fd122e8649e1e283b535014)\n2.配置发送邮件的邮箱，密码即为授权码；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bbe32893f50e45b83adba77badc4aa1e)\n3.获取授权码，以下QQ邮箱为例；\na.登录邮箱-设置-帐户；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=317589dd7561a90e7d42d962295d6a78)\nb.帐户页面下拉，IMAP/SMTP服务开启后才会生成授权码；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=13846cfade5b0ef5adc2eb5ea7234550)\nc.发短信内容为：配置邮件客户端 到1069070069,在发送成功了之后点击我已发送;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=34581596c3100782b3b245f60a054ee9)\nd.点我已发送后就会出来对应的授权码（密码）；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d14fdc71a94529f28bf593b279777ee5)\ne.获取SMTP地址，端口，安全链接；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d2af68dc1db9448f365b59fb445698c6)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7e32d2147d73b8089ce4d89d735bf42c)\n4.配置授权码和相应SMTP信息；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ead7244757d5122575974f47bd8af6da)\n5.测试发送邮件；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=12e00a7617bb7978bfa1ff17648384be)\n注：邮件配置只有先进行测试，测试成功了之后才能在平台上进行实际的运用；\n6.配置好了之后，就可以在规则管理里面添加规则,配置接收邮件的地址了（可以同时配置多个，用;分隔）；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0e653e964a8cd131cefb34063b0647a2)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=12141fd9d36fcc898cae0beda1354d47)\n7.配置规则还要进行分配，只有分配了规则的设备才会执行这个规则，设备在对应的报警触发了之后，就会有发邮件的功能；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=54167ef976a9e6d13e0893d0f3828864)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b4978ac9f3997f2310a2426e6272141)\n8.分配好了之后，最好再单独重启一下网关服务器；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f4a31728b2a0bed20aef29fad8967a6a)",
+  "s_number": "12",
+  "addtime": "2025-11-17 16:52:36",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:18:37",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

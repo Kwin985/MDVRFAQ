@@ -1,0 +1,18 @@
+{
+  "page_id": "268",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "LED面板配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  LED面板 |  1 |常用接线工具| n |\n\n### 必要说明\n- 出货一般会把MDVR 232 IO线束做好插头直接对插ED面板使用，如果没有请联系我司技术寻求帮助。\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0723f9cfc0b6b1da95f66ec6a8dcc628)\n03.A.M61.LP-030\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7845895a47bc09f6593f0709885e2f4c)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能LDE面板、波特率配置9600、其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2e5a4c4ca2a891a7021fa4f13b44fd00)\n\n#### 三、测试\n设备重启后查看LED灯状态是否正常显示，ALM按钮是否能触发报警，详细LED灯状态定义参考下面 状态定义\n\n#### 四、状态定义\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a1727a5ff38f3983e59db2afed22b49f)",
+  "s_number": "14",
+  "addtime": "2025-11-04 17:52:18",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:55:08",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

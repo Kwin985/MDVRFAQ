@@ -1,0 +1,18 @@
+{
+  "page_id": "324",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "设备RTSP协议拉流",
+  "page_content": "### 说明\n- 设备RTSP协议：通过支持获取RTSP流的播放器，直接就能获取到设备的视频，无需设备上报平台（MDVR B/S端&gt;&gt;&gt;PC电脑 C/S端）\n- 当前出货的新款MDVR机型常规版本都支持此功能\n\n### 操作步骤\n1、获取设备RTSP流媒体的播放器：\n电脑安装有支持播放RTSP视频流的播放器，如VLC，可点击链接下载安装VLC播放器https://vlc-media-player.en.softonic.com/\n2、将设备网络连接WiFi,上网的ip网段与电脑端必须为同一个网段且可以ping通，或者设备和电脑都通过有线连接互通。\n例如:电脑IP 192.168.1.212    设备端 192.168.1.113\n注意WiFi连接时设备不能离WIFI太远，信号太弱，没法收到请求。\n\n3、电脑下载VLC media player 播放器安装\n4、打开VLC media player播放器--输入以下内容且将IP改为设备IP\n\n```xml\nrtsp://admin:999999@192.168.1.5:554/live/vchn=1_stream=0_achn=1\n```\n\n&gt; 注释：\nrtsp 码流:\nrtsp://admin:999999@192.168.1.5:554/live/vchn=1_stream=0_achn=1\nstream=0   0 表示主码流   1 子码流\nadmin:999999  是设备的访问用户名和密码，缺省不需要修改\nvchn=1  1表示第一个通道\nachn=1  1表示请求音频\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1dfe395261fd81eaa1a12da7a7a8cd22)\n\n5、将框起来的IP部分改为设备IP后填入网络串流地址，点击播放\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=55aa0e9d86a51d6bc5c5965d4d752bf2)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c95088ed830b085ce0d463581ad5bed5)\n\n\n",
+  "s_number": "14",
+  "addtime": "2025-10-11 10:57:36",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:27:02",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

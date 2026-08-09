@@ -1,0 +1,18 @@
+{
+  "page_id": "165",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "23",
+  "page_title": "M51HV接口定义",
+  "page_content": "### 简介\n本章节将介绍我司车载MDVR系列后面板接口、前面板插槽定义说明！\n\n#####M51HV/52HV接口定义:\n######后板\n使用说明：左上角是IO扩展线插入口使用配套的IO线束缺口朝下按压下面卡扣插入，中间是HMIC手唛扩展插入口使用配套的手唛线束+手唛使用（不标配），右边分别是GPS、3/4G、WIFI天线插口使用配套的GPS、3/4G、WIFI（不标配）天线插入顺时针扭紧，最右上角是POWE电源输入口使用配套电源线缺口朝上插入并顺时针扭紧，如下图。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dedc3398d6a2c73ee121f7582702b2e0)\n左下角是显示屏输入口，四芯即CVBS屏插入使用、五芯即VGA屏插入使用，中间是网口转接线插入口，使用配套网口转接线使用（不标配），右下角分别是AV1-4摄像头插入口这里以M52HV机型为例，五芯口需要插入配套一分二转接线在把摄像头插入转接线四芯口，如果是M51HV机型AV1-4是四芯口摄像头直接插入使用，如上图。\n\n######前板\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=76330beae2c5f9ae6df93751959a62c7)\n使用说明：右边是开关锁使用配套钥匙缺口朝下轻压插入顺时针扭到左边水平缺口开锁，轻压“PUSH”指示位置打开仓门，内测分别是SIM卡、SD卡、硬盘插入口，使用SIM(大卡)、SD卡缺口朝右插入，在手指标识位置拉开硬盘推盖 使用2.5寸硬盘(SSD OR HDD)缺口朝下插入再次把硬盘推盖推入，完成后往上合拢仓门，使用钥匙逆时针扭到垂直口锁紧，左边是USB插口用于插入U盘等介质升级固件、配置导入等操作，如上图。\nPs:所有设备必须在关锁状态下工作!",
+  "s_number": "1",
+  "addtime": "2025-09-26 18:22:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 10:58:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--接口状态定义"
+}

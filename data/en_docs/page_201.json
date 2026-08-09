@@ -1,0 +1,18 @@
+{
+  "page_id": "201",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "58",
+  "page_title": "Configure WiFi Network",
+  "page_content": "[TOC]\n\n### Prerequisites\n- A usable remote control, a normal display screen\n- A usable WiFi network, WiFi antenna, and a WiFi module built into the device\n\n### Operation steps\n1. Connect the device to the display screen, connect the WiFi antenna (if you don't know the location, refer to the &quot;Interface Status Definition&quot; column above), and power on the device.\n2. Use the remote control ENTER to enter the device network settings menu, press the confirmation key and press the direction key to select WiFi mode, and confirm to save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0132e34eca6a0de24d7513a9cf9bebe4) ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d4666c17d78fe4ebdb448a0f3311c027)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a72bb8ebf3657fd717cb2f6b392f4838)\n\n3. Press the right button on the remote control to move to the WiFi configuration menu, select WiFi mode &quot;client&quot;, fill in the user name, password, authentication method, and encryption type. Usually, current WiFi routers are WPA2PSK authenticated and TKIP or AES encrypted. Do not change the default. If it is an old router, modify it according to the actual parameters; DHCP is checked by default to automatically obtain an IP address. If a fixed WiFi IP is required, uncheck it here and fill in the following IP address, subnet mask, and gateway parameters, confirm and save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ec0dd80b36b069beed75771468f8531a)\nAfter the WiFi connection is successful, you can return to the real-time preview interface and press the left button of the remote control to view the WiFi status, as shown below.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8ce20d085895741e0d33b2c68b79e7e0)\n\n4. WiFi configuration AP is hotspot mode. Select AP in the WiFi mode menu above and confirm to save.\nAfter the AP mode is successfully switched, you can search for the hotspot starting with &quot;MDVR&quot; + device ID number through your mobile phone and connect. The default password is 999999\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=987143cc1139416172752c447c670c27)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a4a26f9a6108e3cd02861e3dd20d61fc)\n",
+  "s_number": "3",
+  "addtime": "2025-11-04 18:01:43",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:16:39",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Network Configuration"
+}

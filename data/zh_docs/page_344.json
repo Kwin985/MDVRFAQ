@@ -1,0 +1,18 @@
+{
+  "page_id": "344",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-实时数据库迁移",
+  "page_content": "[TOC]\n\n##### 实时数据库迁移到另外一个磁盘\n\n### 操作步骤\n##### 第一步：到服务器软件的my.ini配置文件里面查看服务器软件实时数据库的存储路径\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=60315964881ed2a3574c8ddfa668e2ea)\n根据上图路径所示，可以找到对应的实时数据库\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9493e2834efbb3868675a6456cdb53e9)\n##### 第二步：停掉服务器软件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=45ce317a2b4970f76e09a3e76d0e9719)\n##### 第三步：把实时数据库拷贝一份到其他磁盘的对应路径（路径上不要出现中文）\n##### 第四步：更改服务器软件的my.ini配置文件里面服务器软件实时数据库的存储路径\n##### 第五步：重启服务器软件（观察一下服务器软件是否运行正常）",
+  "s_number": "11",
+  "addtime": "2025-11-17 16:52:14",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:18:11",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "230",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "59",
+  "page_title": "Configure IO alarm output",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, supporting IO expansion cable (some models come with it)\n\n### Note:\n- The number of IO alarm output lines is defined according to the model, some are two and some are one. Please refer to the specifications of each model or ask our technical staff for details\n- The application scenario of IO alarm output is to output level signals for use by peripheral electronic devices, such as controlling the car to cut off oil, power off, turn on the alarm horn sound and light through relays\n- The low level of IO alarm output is 0V, the high level is 12V 1A, and the default is low level\n- Supports the platform to send commands remotely to control IO alarm output services, such as controlling power failure, oil failure, etc.\n\n###Operation steps\n1. Press the remote control [ENTER] key to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d21340dd380b78d93ca5bb49cde9b78a)\n\n2. Select [Settings] in the main menu interface and press the &quot;ENTER&quot; key to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c7ba20e0047cb02d6ad17fdc148faa3f))\n\n3. Select [Alarm] in the [Settings] interface, and press the &quot;ENTER&quot; key to enter the alarm settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3aa8e8d6771e810adae8cae455fbad80)\n\n4. In the [Alarm Settings] interface, press the right arrow key to come to the [Output] interface, press the &quot;ENTER&quot; key to enter the editing state, press the down arrow key to move the function selection item to select the corresponding function business, and confirm to save and take effect immediately.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0d8d2b99265c0e34a4c6a39f2c9d6517)\n",
+  "s_number": "4",
+  "addtime": "2025-12-26 15:40:33",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:27:28",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Alarm function"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "240",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "65",
+  "page_title": "TTX Ministry Standard Transmission Tool",
+  "page_content": "##### This chapter introduces the &quot;data downlink transparent transmission&quot; protocol function extended by the 808 standard. The following is the description of the &quot;Tongtianxing&quot; platform. Other platforms that support the extension are similar. Find the downlink transparent transmission window and fill in the data type and parameter configuration to be sent!\n\n### Operation steps:\n1. Register the device on the standard 808 protocol Tongtianxing platform\n2. Right-click and select &quot;808 Function Menu&quot; →→→ &quot;Data Downlink Transparent Transmission&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=017c661b88f8e179def528f7956e876d)\n3. Enter &quot;242&quot; for the transparent transmission message type\n4. Enter the parameter parameter command to be sent for the transparent transmission message content, such as copying the following restart command to send, and other commands refer to the [Common Configuration Parameter Command](http://pug2.4000329988.com/fqa/web/#/13/83 &quot;Common Configuration Parameter Command&quot;) article\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_REBOOT&quot;&gt;&lt;/VariCfgSec&gt;\n```\n5. Check the status in the operation result column to see if the setting is successful\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a13cf25e8f019624a8eec84affbdad2e)\nNote: 808 downlink transparent transmission only supports parameter sending configuration, and the return value after configuration cannot be seen. After the sending is successful, other methods need to be used to verify whether the configuration function is successful.\n",
+  "s_number": "1",
+  "addtime": "2026-06-18 16:44:06",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:46:18",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Configuration Tool"
+}

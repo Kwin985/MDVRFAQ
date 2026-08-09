@@ -1,0 +1,8 @@
+.r2.env
+.env
+__pycache__/
+*.pyc
+
+.trash_png/
+.workbuddy/
+node_modules/

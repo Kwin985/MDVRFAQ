@@ -1,0 +1,18 @@
+{
+  "page_id": "102",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "“三一”部标透传下发工具",
+  "page_content": "#####   本章节介绍808部标扩展的&quot;数据下行透传&quot;协议功能，下面以“三一”平台举例说明，其他支持扩展的平台大同小异，找到下行透传窗口填入数据类型和要下发的参数配置即可！\n\n### 操作步骤：\n1. 登入“三一”部标平台WEB端找到“终端参数指令”菜单，点击“数据下行透传”\n\n1. 填入“数据类型” F2、“数据内容”需要复制的指令，点击需要下发的车辆，再次右侧点击&quot;发送指令&quot;按钮，发送成功会返回状态“成功”这样一条指令就下发成功。\n\n ps:提示失败或没有反应请检查车辆在线是否正常、复制参数是否有误、设备是否不支持此命令。\n ps:常见参数指令参考[常见配置参数指令](http://pug2.4000329988.com/fqa/web/#/11/74 &quot;常见配置参数指令&quot;)和[常见查询参数指令](http://pug2.4000329988.com/fqa/web/#/11/75 &quot;常见查询参数指令&quot;)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=faf515adc65b8d99ca7444cb75af2811)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef7a8ee40e5d4d17064e72de42d68a30)\n\n",
+  "s_number": "2",
+  "addtime": "2025-11-17 16:38:39",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:09:14",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "364",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "网络相关--2.4G WIFI路由其他终端正常连接，MDVR设备无法连接",
+  "page_content": "[TOC]\n\n### WIFI路由其他终端正常连接，MDVR设备无法连接\n\n答：\n进WiFi路由器里面高级设置查看WiFi参数配置的信道是否是12或者13,改成其他信道在试\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3b318907da74c5387114fed76511711a)",
+  "s_number": "5",
+  "addtime": "2025-11-17 16:43:43",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:13:04",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

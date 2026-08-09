@@ -1,0 +1,18 @@
+{
+  "page_id": "191",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "遥控配置开关机模式、延时",
+  "page_content": "[TOC]\n\n\n### 前提条件\n-  可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤\n1、进入主菜单功能界面，操作遥控器方向键、ENTER键，进入设置--基本设置--开关机菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=87c1be073244d033fb5ba0f096598d81)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b41449c5bbef54833ee906a6acc84274)\n2、选择”点火模式”,勾选关机延时复选框，填入延时时长，可填范围0-65535分钟，可配置ACC断开延时期间指定哪些摄像头依然工作。\nps:车辆ACC点火设备开机工作，ACC断开设备关机，接线参考&quot;[电源线接线安装](http://pug2.4000329988.com/fqa/web/#/11/172 &quot;电源线接线安装&quot;)&quot;点火模式 示意图介绍。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=188e9cc15e26106e10593f9694d01ee3)\n3、选择&quot;定时模式&quot;，填入定时开机时间、关机时间\nps:接线参考&quot;[电源线接线安装](http://pug2.4000329988.com/fqa/web/#/11/172 &quot;电源线接线安装&quot;)&quot;定时模式 示意图介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=583ef31983d06ab756eddabac70b8718)\n4、选择&quot;熄火模式&quot;，支持关机状态下碰撞等一些情况实现唤醒开机工作一段时间（暂未实现）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0cf75f7c14825220038619b46948f7e7)\n",
+  "s_number": "6",
+  "addtime": "2026-07-31 18:49:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:20:07",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

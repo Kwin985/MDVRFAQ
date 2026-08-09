@@ -1,0 +1,18 @@
+{
+  "page_id": "224",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Picture playback",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, storage media (SD card, hard disk, etc.)\n- The device recognizes the storage and generates images\n\n### Operation steps\n1. Press the middle &quot;ENTER&quot; confirmation button on the remote control to enter the login interface and enter the default administrator password &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=55db57f6e0a9462ea2a1cfcb8015d1cb)\n2. Use the arrow keys on the remote control to move to the &quot;Preview&quot; button, and press the &quot;ENTER&quot; key to enter the &quot;Preview&quot; menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c14cf420b08aff2d7e2751f1052f391b)\n3. Press the down arrow key to move to the drop-down bar to select the image storage location, fill in the date and start time, press the &quot;ENTER&quot; key to start playing back the images, press the left and right arrow keys on the remote control to turn the pages, and press the &quot;RETURN&quot; key to exit.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=90f4eb4f8d674b79e8d9528b233c796c)\nps: The date above is displayed in yellow, which means the image exists, and in gray, which means it does not exist.\n",
+  "s_number": "10",
+  "addtime": "2025-12-25 17:36:42",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:25:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

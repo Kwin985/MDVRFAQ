@@ -1,0 +1,18 @@
+{
+  "page_id": "285",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "66",
+  "page_title": "WEB Setup Wizard",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n- Or the device with WiFi module is switched to AP mode, and the computer connects to the AP hotspot to access the 192.168.42.100 address\n\n### Instructions\n- The WEB setup wizard is used to quickly configure the network and register the parameters of the private platform\n\n### Operation steps:\n\n1. Open the computer browser and enter the local network IP address of the device or the AP hotspot address to come to the WEB login interface, fill in the login password &quot;Adm_123&quot; and click &quot;Login&quot; , refer to the &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Function&quot; article introduction for the local network IP address of the device\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=20bf4f571655954ba109e9b1d3b92ad0)\n\n2. Enter the username and password on the login page to enter the settings page. The default username is: admin, and the default password is: Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=29af2389909eb5a37c864491aa6e51fe)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=820336e204c53c24c2ed47e820b78002)\n\n3. Click Setup Wizard on the setup page to enter the platform setup interface, fill in the device ID number, address type, center address and port of the registered platform, and click Next.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=22bc824a595cdfe99a985f0e72137558)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cd4ec832e9ef197952d64230426f1b9e)\n\n4. Select the device registration network type. If you insert a 4G card, select 4G. If you connect to a WiFi router, select WiFi or WiFi+4G mode\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5d50fe13fa819b274bc1d0f6a9cd9f13)\n\n5. In the GNet + WIFI mode setting interface, enter the 4G SIM card APN parameters: network type, access point, center code, user name, password (domestic operator cards generally do not need to be filled in. The module automatically obtains registration. For example, VPN or IoT cards have specified APN parameters for access, so fill them in here. For specific requirements, ask the SIM card manufacturer)\nEnter the WIFI type, SSID, password, authentication type and encryption type, and click to complete the setting.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4e3f8f9fc95dd71a23afca5d6f61ec31)\n",
+  "s_number": "2",
+  "addtime": "2025-11-11 17:50:49",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:43:16",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--WEB configuration"
+}

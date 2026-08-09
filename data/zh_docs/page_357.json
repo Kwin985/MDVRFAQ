@@ -1,0 +1,18 @@
+{
+  "page_id": "357",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-油量传感器对接",
+  "page_content": "[TOC]\n\n### 使用说明：\n油量传感器对接\n\n### 操作说明：\n#### 1.设备直接传油量值到服务器\n（如果是直接传油量值到服务器的设备，就只需要在平台的车辆信息里面勾选上油量传感器即可，不需要再操作其他。）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2d2d9cf05cd3bd7070f1894324bfcc4)\n重启一下客户端之后，在车辆状态显示框里面就可以看到准确的油量值\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fbbce543ecd8ab2a6fc5b622af77ce1c)\n#### 2.设备外接油量传感器\n通过油量传感器测量出相应油量对应的电阻值，把电阻值传到服务器，并通过在客户端的油量传感器设置上配置的电阻值/对应油量的比例值来计算出实时的油量值。\n下面要说明的就是外接油量传感器的设备的油量值如何在平台上实现显示：\n油量传感器一般有两种：\n压力传感器：（通过检测油对油箱底部产生的压力值来计算油量值。由于油自身的重量会对油箱底部产生压力，而随着车辆的行驶，油量会不断地减少，油对油箱产生的压力值也会不断地变小，所以压力传感器传到服务器上的压力值（传到服务器上之后会转换成SRC电阻值）也会不断的变小，再通过客户端上设定好的电阻值/对应油量的比例值来换算其他电阻值相对应的油量值。这样就可以实现油量在平台的实时显示。）\n压力传感器不用考虑油箱是否规则，因为它传的是油对油箱所产生的压力值。\n超声波传感器：（通过测量油在油箱的高度值来计算油量值。不管油箱是规则的油箱还是不规则的油箱都是一样，油都会有一个相对于油箱底部的高度值，而随着车辆的行驶，油量会不断地减少，所以油在油箱里的高度值也会不断的下降，而超声波传感器传到服务器上的高度值（传到服务器上之后会转换成SRC电阻值）也会不断的下降，再通过客户端上设定好的电阻值/对应油量的比例值来换算其他电阻值相对应的油量值。这样就可以实现油量在平台的实时显示。）\n超声波传感器需要考虑油箱是否规则，因为它传的是油在油箱的高度值。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c26afe9cf479ef217b2355dec96e9b0c)\n在车辆信息里面勾选油量传感器。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7c59d0427247682c8ed1b81a317b1a2d)\n重启客户端之后，在车辆状态显示框里面就可以看到对应的油量值，但这个时候显示的油量值还不是真正的油量值。\n如果还没有在客户端的油量传感器设置里面进行设置的话，那么车辆状态显示框里面显示的油量值就是设备传的电阻值。\n记录此时的电阻值，并记录下油箱里面此时真实的油量值。\n（压力传感器，记录一组数据就可以）\n（超声波传感器，则需要考虑油箱是否规则：\n理论上来说，规则的油箱记录一组数据就可以，因为这个比例值是固定的。不规则的油箱则需要记录多组数据，因为这个比例值是不固定的。）\n为了确定电阻值的缩放比例，最好还是去日志里面确定一下电阻值。\n在网页上直接输入ip:web端口/log.html就可以访问服务器端的日志。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=60506da47701b21f7348d185546d0344)\n把日志等级设置为0\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=67b16148774e3f7eff83f3219ad59fe7)\n搜索oil\n设备上传到服务器的油量传感器值（电阻值）可以在对应日志里面搜到：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=65a9e744808ce2dfd23287a829e10c23)\nSRCYouLiang:0的话，就表明设备没有上传电阻值。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5ddaa8d407bc2af539e5717534c918e5)\n日志里面SRC所对应的值就是设备实时上传到服务器的油量传感器值（电阻值）。\n这个日志里面的电阻值在客户端的油量传感器设置上填入的时候，这个值要往前移动两位小数点（也就是缩小100倍）。\n就好比上面的日志：\n设备传给服务器的电阻值是15780，所以客户端的油量传感器设置中对应位置输入的电阻值就应该填157.80\n然后对应油量的话，再根据油箱里面测量的真实油量值来填入（单位为升！！）\n就好比：\n157.8/1.2\n配好了之后点击保存或保存到多个终端\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=28d1e78aaca12c0745540b86b73bab22)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8263dd48a6ebf57edfacffafe7380385)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb241af8a356ae0ebdc95f52f6bd4ae7)\n\n配置好了之后，oil日志里面的DESTYouLiang（油量值）就会根据在油量传感器设置上配置的电阻值/油量值的比例值来进行相应的计算，从而得出对应电阻值所对应的油量值。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=690d250aa636a26cacbfab38849da52b)\n上图中的DESTYouLiang为50,往前移两位小数点就是真实的油量值，即为0.5L\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e7435b4ca7bc7061f0dc136dde128f44)\n车辆油箱里面的油量值也会在车辆状态框里面显示出来：0.5L\n",
+  "s_number": "24",
+  "addtime": "2025-12-17 14:02:19",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:22:06",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

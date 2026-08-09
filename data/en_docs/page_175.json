@@ -1,0 +1,18 @@
+{
+  "page_id": "175",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "0",
+  "page_title": "function--Login menu",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Available remote control and normal display screen\n\n### Operation steps:\n1. Aim at the IR icon on the device panel and press the ENTER button on the remote control to enter the login menu interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c0f5c2e57b01535a5530355306816d71)\n\n2. Press the numeric keys to enter the password. The default password is 999999\n3. Enter the main menu function interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=86c2d12bd7f39662684e8f1a50b50135)",
+  "s_number": "3",
+  "addtime": "2025-11-11 18:49:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:10:14",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": ""
+}

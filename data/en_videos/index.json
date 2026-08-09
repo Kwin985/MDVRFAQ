@@ -1,0 +1,161 @@
+{
+  "section": "en_videos",
+  "pages": [
+    {
+      "page_id": "63",
+      "title": "Help Videos",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "369",
+      "title": "1-ADAS configuration",
+      "cat_id": "116",
+      "cat_name": "AI--ADAS function"
+    },
+    {
+      "page_id": "370",
+      "title": "2-ADAS calibration",
+      "cat_id": "116",
+      "cat_name": "AI--ADAS function"
+    },
+    {
+      "page_id": "371",
+      "title": "3-ADAS function demonstration",
+      "cat_id": "116",
+      "cat_name": "AI--ADAS function"
+    },
+    {
+      "page_id": "372",
+      "title": "4-ADAS platform display",
+      "cat_id": "116",
+      "cat_name": "AI--ADAS function"
+    },
+    {
+      "page_id": "373",
+      "title": "1-DSM configuration",
+      "cat_id": "117",
+      "cat_name": "AI--DSM function"
+    },
+    {
+      "page_id": "374",
+      "title": "2-DSM calibration",
+      "cat_id": "117",
+      "cat_name": "AI--DSM function"
+    },
+    {
+      "page_id": "375",
+      "title": "3-DSM function demonstrate",
+      "cat_id": "117",
+      "cat_name": "AI--DSM function"
+    },
+    {
+      "page_id": "376",
+      "title": "4-DSM platform display",
+      "cat_id": "117",
+      "cat_name": "AI--DSM function"
+    },
+    {
+      "page_id": "377",
+      "title": "1-BSD configuration",
+      "cat_id": "118",
+      "cat_name": "AI--BSD function"
+    },
+    {
+      "page_id": "378",
+      "title": "2-BSD calibration",
+      "cat_id": "118",
+      "cat_name": "AI--BSD function"
+    },
+    {
+      "page_id": "379",
+      "title": "3-BSD function demonstrate",
+      "cat_id": "118",
+      "cat_name": "AI--BSD function"
+    },
+    {
+      "page_id": "380",
+      "title": "4-BSD platform display",
+      "cat_id": "118",
+      "cat_name": "AI--BSD function"
+    },
+    {
+      "page_id": "389",
+      "title": "1.wifi connect",
+      "cat_id": "123",
+      "cat_name": "app--device hotspot configuration"
+    },
+    {
+      "page_id": "390",
+      "title": "2.APP login to WEB（APP）",
+      "cat_id": "123",
+      "cat_name": "app--device hotspot configuration"
+    },
+    {
+      "page_id": "391",
+      "title": "3.Configuration 808（APP）",
+      "cat_id": "123",
+      "cat_name": "app--device hotspot configuration"
+    },
+    {
+      "page_id": "392",
+      "title": "4.View 808 status（APP）",
+      "cat_id": "123",
+      "cat_name": "app--device hotspot configuration"
+    },
+    {
+      "page_id": "615",
+      "title": "01.wifi connect",
+      "cat_id": "124",
+      "cat_name": "browser--device hotspot configuration"
+    },
+    {
+      "page_id": "616",
+      "title": "02.808 Configuration（Web).mp4",
+      "cat_id": "124",
+      "cat_name": "browser--device hotspot configuration"
+    },
+    {
+      "page_id": "617",
+      "title": "03.View Status（Web).mp4",
+      "cat_id": "124",
+      "cat_name": "browser--device hotspot configuration"
+    },
+    {
+      "page_id": "618",
+      "title": "1 The differences between the five MDVR models",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    },
+    {
+      "page_id": "619",
+      "title": "2 MDVR power on.mp4",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    },
+    {
+      "page_id": "620",
+      "title": "3 MDVR Office Testing Steps 2.mp4",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    },
+    {
+      "page_id": "621",
+      "title": "4 Dash camera usage settings2.mp4",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    },
+    {
+      "page_id": "622",
+      "title": "5 Download cmsv7(IOS).mp4",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    },
+    {
+      "page_id": "623",
+      "title": "6 Download cmsv7(Android).mp4",
+      "cat_id": "125",
+      "cat_name": "Equipment Usage Introduction"
+    }
+  ]
+}

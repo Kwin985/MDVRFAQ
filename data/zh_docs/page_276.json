@@ -1,0 +1,18 @@
+{
+  "page_id": "276",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "语言和重启配置",
+  "page_content": "[TOC]\n\n### 前提条件：\n\n- MDVR主机、遥控器、显示屏。\n\n\n###操作步骤\n\n1、通电开机遥控进入菜单&gt;&gt;工具&gt;&gt;操作管理&gt;&gt;语言和重启界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1759310e17fa7776a2603a75c6c3869a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=077551d88bf7ce7933c63fa98a7d6190)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=83cd908d38df9b00d6d9b6463fd53288)\n2、移动到语言下拉框选择语言，弹出重启对话框选择 是 重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d1209fc0ebcde999f8b7a63aab36d6a8)\nps:目前设备支持4种UI语言\n\n\n\n\n",
+  "s_number": "3",
+  "addtime": "2025-11-11 17:15:08",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:58:23",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

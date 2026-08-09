@@ -1,0 +1,18 @@
+{
+  "page_id": "227",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "配置IO报警输出",
+  "page_content": "\n[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、配套IO扩展线（部分机型自带）\n\n\n### 说明:\n- IO报警输出线数量根据机型定义，有些是两根有些是一根，具体参考各个机型规格书或询问我司技术\n- IO报警输出应用场景是输出电平信号提供外围电子设备使用，比如通过继电器控制车断油、断电、打开报警喇叭声光等业务\n- IO报警输出低电平为0V，高电平为12V 1A，默认低电平\n- 支持平台远程发送命令控制IO报警输出业务，例如控制断电、断油等\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f109a4eb1b0a8e3d6d5019aafadaa750)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c026905ed7ee64ec33e61da7ac07d074)\n3、在【设置】界面选择【报警设置】，按“ENTER”键进入报警设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aebb5916da028f192b6b362405e329c9)\n4、在【报警设置】界面按方向右键来到【输出】界面，按“ENTER”键进入编辑状态，按方向下键移动功能选择项选择对应功能业务，确认保存立即生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fcb391801d17fe85729d747d4b90899a)",
+  "s_number": "4",
+  "addtime": "2025-11-04 17:31:20",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:44:19",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

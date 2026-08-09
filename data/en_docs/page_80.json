@@ -1,0 +1,18 @@
+{
+  "page_id": "80",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "53",
+  "page_title": "common tools",
+  "page_content": "[TOC]\n\n#### **Cross-Compilation Tool**\nThis tool is compatible with the Hi3521DV100/Hi3520DV400 platform, and can be used on the following machines: M51H/M52H/M32H/M16H/M10C!\n[download](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=40b7d6bec828c31977e8e70103627b23 &quot;[arm-hisiv500-linux.tgz&quot;)\nThis tool is also compatible with the Novatek platform, and can be used on the following machines: M51HV/M52HV/M32HV/M16HV/M10CV!\n[download](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=946cb866a095dd3c4e17e57056087512 &quot;[arm-ca9-linux-gnueabihf-6.5.tar.gz&quot;)\nThis tool is compatible with the Novatek platform and is compiled for the M91HV PTZ camera series.\n[download](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=4670e81704e4bb675ce942887fc043c9 &quot;[arm-ca53-linux-gnueabihf-8.4.tar.bz2.gz&quot;)\n\n#### **Mxc_Config LAN Configuration Tool**\n[MmxConfig](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;)\n\n#### **MVMS Platform Installation Package**\nServer package:[MVMS_Server_Setup_V3.4.0721.1.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=389c7f693fd1b79c05043c098d50870b &quot;[MVMS_Server_Setup_V3.4.0721.1.zip&quot;)\nClient package:[MVMS_Client_Setup_V2.8.0929.1.car.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=96c4550845ec7f8793b000edc784fa1c &quot;[MVMS_Client_Setup_V2.8.0929.1.car.zip&quot;)\n\n#### **MVMS_NetPlayer LAN Playback Configuration Tool**\n[MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bcf73b34785e55ddca10620c69fda809 &quot;[MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip&quot;)\n\n#### **TFTP Burning Tool Package**\n[tftptool.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e5de4ea18acd60496c46fcd8c9bc6d3b &quot;[tftptool.zip&quot;)\n\n#### **Happytime Online Vif Client-based LAN search tool for IPC network cameras**\n[happytime-onvif-client.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2dbe7406e1d64494e8db23ca9ac166e8 &quot;[happytime-onvif-client.zip&quot;)\n\n#### **VLC video playback tool**\n[vlc-3.0.11.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=457257f1d59325316b92c07cfd3e69dd &quot;[vlc-3.0.11.zip&quot;)\n\n#### **APP Direct Connection to Terminal**\n[mdvrlocalviewer.apk](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=fba43df6366a7a3a4f16d58c0bdc7898 &quot;[mdvrlocalviewer.apk&quot;)\n\n#### **Passenger Flow Statistics Client Tool**\n[client.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8d482179800c3a6718d095d7e77bbd97 &quot;[client.zip&quot;)\n",
+  "s_number": "4",
+  "addtime": "2026-07-28 15:12:34",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-03 18:18:49",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Download Center"
+}

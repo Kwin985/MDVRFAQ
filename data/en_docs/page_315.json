@@ -1,0 +1,18 @@
+{
+  "page_id": "315",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "58",
+  "page_title": "AP E-set hotspot connection configuration",
+  "page_content": "### Two ways to connect to AP hotspot\n1. It already supports AP mode, switch to AP mode to connect;\n2. When there is no WIFI module in the vehicle device, you can insert E-set into the USB port to configure AP hotspot.\nIn addition, the host M10C does not support WIFI and AP hotspot.\nThe following will take the second point as an example to explain step by step!\n\n#### Insert E-set for AP hotspot\n###### WIFI model equipment\n1. Prepare an E-set, a device that supports AP hotspot\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a499b128bb266c5863248277f3cf5158)》》》![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=101ec02d14bd824d3cddc2b59b7c1d14)\n2. Status of WIFI module before E-set is inserted Display\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d0cf72a540bcf555934b86656ec9e537)\n3. After inserting E-set into the USB port, the status of the WIFI module is displayed\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3f7b3bf8ba2c0fdc888d0f42d6c0e87d)\n4. Turn on the mobile phone WIFI and search for MDVR111111AP hot Click, connection password: 99999999\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=941c362bf798f46f86c438b6e490b819)\n5. After connecting to the AP hotspot: open the mobile browser, enter 192.168.42.100, and log in Password: Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e40589c88fd8b1052af35c7031634f0)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f7c68555f23615529870fc338412494d)\n6. The interface after login is the device system WEB configuration parameter interface, such as registration CMSV7 platform, system status, etc.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8acd15ca527f87d7cd8e8389e0dcbaa0)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f8f3da46fe38cf94fd124a2df649397a)\n",
+  "s_number": "5",
+  "addtime": "2025-11-04 18:02:17",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:17:12",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Network Configuration"
+}

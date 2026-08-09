@@ -1,0 +1,18 @@
+{
+  "page_id": "266",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "LED显示屏(出租车顶灯)配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  LED显示屏(出租车顶灯) |  1 |常用接线工具| n |\n\n### 必要说明\n- 这里以**MX-LED-taxi-jrcx-232**为例\n- LED显示屏DC头+独立适配器供电使用\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5e884e7e17f2695dd4721fdbeb778947)\nMX-LED-taxi-jrcx-232\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7ed2258b9492b391f3dfbdf8e48e396f)\n\n#### 二、设备菜单配置\n2.1 遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能LDE显示屏、波特率配置2500、其他参数默认，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=12b35915b4da10b4e43903a2760629e8)\n\n2.2 遥控按返回键进入设置&gt;&gt;网络设置&gt;&gt;中心菜单界面,移动到最下栏填入厂家提供的透传地址和端口，确认保存重启生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e99c68f6b06949426d888e867b8aed7f)\n\n\n#### 三、测试\n3.1 登入LED无线广告发布客户端，点击编辑节目&gt;&gt;写上标题号（如宣传）&gt;&gt;输入广告标语（如恭喜发财），保存即可。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d55481656c6b79aefc472f953b0127eb)\n\n3.2 再次点击发布节目&gt;&gt;默认编组勾选角色&gt;&gt;索引下勾选标题号，发布节目即可。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d6febf91ba8c843ebebc42093249055b)",
+  "s_number": "13",
+  "addtime": "2025-11-04 17:52:02",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:54:46",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

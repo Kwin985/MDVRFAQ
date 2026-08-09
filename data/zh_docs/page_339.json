@@ -1,0 +1,18 @@
+{
+  "page_id": "339",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "107",
+  "page_title": "WLAN(WIFI)协议标准",
+  "page_content": "###  说明\nWi-Fi是无线局域网（WLAN）的一种传输技术，基于国际电工电子工程学会（IEEE）为无线局域网络制定的标准：802.11协议。\nWLAN遵循802.11协议标准，从最开始的802.11a/b/g，经历802.11n（Wi-Fi 4）、802.11ac（Wi-Fi 5）、802.11ax（Wi-Fi 6/Wi-Fi 6e）、发展到最新的802.11be（Wi-Fi 7），每一次的演进都带来了数据传输速率上的飞跃。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3ec87ba9ccf6c9a9bfa1e4d76904ca3d)\n\n###频率范围和信道\nIEEE802.11协议标准规定了使用频段和信道，各个国家自己制定政策使用哪些信道。\n##### IEEE802.11协议对6GHz频段的规定：\n频段范围：6GHz频段，共有1200MHz的频谱用于WiFi 6E，频段从5.925GHz到7.125GHz。\n主要标准：基于IEEE 802.11ax（即WiFi 6）的扩展版本，也被称为WiFi 6E。\n\n##### IEEE802.11协议对2.4GHz频段的规定：\n频率范围：2.4GHz～2.4835GHz；14个信道，信道带宽20M（相邻多个信道频率重叠）。下面你看到的频率范围包含22M，是因为有2M被用作强制隔离频带，不参与数据传输。\n\n##### IEEE802.11协议对5GHz频段的规定：\n频率范围：5.150-5.250GHz、5.250-5.350GHz、5.470-5.725GHz、5.745-5.825GHz；共201个信道，信道带宽40M/80M/160M（可选择，相邻多个信道频率重叠）。\n\n##### 中国对Wi-Fi 2.4GHz频段的规定：\n使用频率范围2.4GHz～2.4835GHz，共83.5MHz带宽。对应信道如下：\n信道　中心频率　 频率范围\n01　　　2412　　2401-2423\n02　　　2417　　2406-2428\n03　　　2422　　2411-2433\n04　　　2427　　2416-2438\n05　　　2432　　2421-2443\n06　　　2437　　2426-2448\n07　　　2442　　2431-2453\n08　　　2447　　2426-2448\n09　　　2452　　2441-2463\n10　　　2457　　2446-2468\n11　　　2462　　2451-2473\n12　　　2467　　2456-2478\n13　　　2472　　2461-2483\n\n每个信道带宽为22MHz，相邻信道的中心频率间隔5MHz，相邻的多个信道存在频率重叠（如1信道与2、3、4、5信道有频率重叠），整个频段内只有3个（1、6、11）互不干扰信道。因此在使用2.4GHz频段的Wi-Fi设备时，距离较近的多个设备应该错开信道防止互相干扰。\n\n##### 中国对Wi-Fi 5GHz频段的规定：\n使用频率范围5.150GHz～5.350GHz、5.725GHz～5.850GHz，共325MHz带宽。对应信道如下：\n信道　中心频率\n036　　5180　DFS\n040　　5200　DFS\n044　　5220　DFS\n048　　5240　DFS\n052　　5260　DFS\n056　　5280　DFS\n060　　5300　DFS\n064　　5320　DFS\n149　　5745\n153　　5765\n157　　5785\n161　　5805\n165　　5825\n\n\n### 最新详细信道分布图\n##### 2.4G WIFI\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ae1e03db9e29ac1666d4c8ed757b95b4)\n##### 5G WIFI\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=acc42e14ee0cfdda1bb2ed5a697b0d96)\n##### 4.9G WIFI\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ce49bdb6a26956525327e9f4fa1f9f5c)\n##### 6G WIFI\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b91b84a20958e6b94a207605bdfa836b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0be525bb56d78637a8a5330bc320641f)\n\n\n\n\n\n",
+  "s_number": "3",
+  "addtime": "2025-12-17 14:08:09",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:25:27",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "行业科普"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "107",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "33",
+  "page_title": "本地配置工具MVMS_NetPlayer",
+  "page_content": "#### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n#### 操作步骤：\n1. 点击下载[MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bcf73b34785e55ddca10620c69fda809 &quot;[MVMS_NetPlayer_Setup_V2.9.20260316.1.exe.zip&quot;) 配置工具，解压安装后点击程序完成安装\n1. 点击“查找设备”，选择要查看配置的设备，点击确认，如下图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a924e468d1f874ff06056d3633fd6142)\n1. 左侧是一些常用功能控制，比如通道实时预览、云台控制等，右上角一栏是回放设备历史录像、回放电脑本地录像文件等功能\n1. 配置参数点击左侧的“配置”按钮弹出插件配置框\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=abebab6d4888cbb441aa31ee54b8c140)\n1. 插件配置功能参考上一文章“[通天星客户端插件在线配置工具](http://pug2.4000329988.com/fqa/web/#/11/103 &quot;通天星客户端插件在线配置工具&quot;)”介绍\n\n",
+  "s_number": "6",
+  "addtime": "2026-07-03 16:26:14",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:10:01",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": "功能使用--配置工具"
+}

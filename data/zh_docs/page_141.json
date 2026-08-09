@@ -1,0 +1,18 @@
+{
+  "page_id": "141",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "本地遥控配置各家PTT注册对讲",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n- 可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤：\n\n###### 1.登入菜单\n遥控按中间&quot;ENTER&quot;确认键来到登入界面，输入默认管理员密码 &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef7b8405cd4b980e502d9627d5fd1eb)\n在一级菜单界面遥控按方向键移动到&quot;设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入二级&quot;设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f9e7338ee3100d4522f834a355f4b7e)\n在二级&quot;设置&quot;菜单界面遥控按方向右键移动到&quot;网络设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入三级&quot;网络设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9a8aeee3a609806ca1f4772109d7f0af)\n###### 2. 填入PTT参数\n在三级&quot;网络设置&quot;菜单界面遥控按方向右键移动到&quot;PTT&quot;界面，遥控按中间&quot;ENTER&quot;确认键进入&quot;PTT&quot;菜单修改状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1b92747d43e526fd7eaacb1c1dfe1cd1)\n在修改状态下按方向下键来到”PTT类型”选择框选择注册PTT平台类型:\n &quot;Type1&quot;指的是CMSV7  PTT平台\n &quot;Type2&quot;指的是 冰恒  PTT平台\n &quot;Type3&quot;指的是Citops PTT平台\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=06b146a65adedeced5456bc119a07a08)\n###### 3. 注册CMSV7  PTT平台\n选择PTT 类型&quot;Type1&quot;,开启使能复选框，注册平台其他参数绑定CMSV7协议注册上线一致，参考注册CMSV7平台文章。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dbe9ca21d7c52c38a5005ac89211b502)\n###### 4. 注册冰恒  PTT平台\n选择PTT 类型&quot;Type2&quot;，填入&quot;PTT端口&quot; &quot;用户名&quot; &quot;密码&quot; &quot;连接方式IP或域名&quot; &quot;PTT服务器地址&quot; ，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b5165684dea92a06d831e4180d56bf9)\n###### 5. 注册Citops PTT平台\n选择PTT 类型&quot;Type3&quot;，开启使能复选框，填入&quot;PTT分组&quot; &quot;PTT端口&quot;  &quot;连接方式IP或域名&quot; &quot;PTT服务器地址&quot; ，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6bfaadf0451ce7bee1792d74c240ea20)\n按遥控方向键右下角的”RETURN”返回键三次来到设备实时预览主界面，再次按方向右键三次来到”网络状态”界面 可以查看PTT平台是否注册成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c3475865fe708903dd5f325e5cd95def)\n",
+  "s_number": "13",
+  "addtime": "2025-10-11 11:05:12",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:38:36",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

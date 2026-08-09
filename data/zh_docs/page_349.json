@@ -1,0 +1,18 @@
+{
+  "page_id": "349",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-阿里云报警联动短信",
+  "page_content": "[TOC]\n\n### 阿里云报警联动发送短信功能说明\n\n#### 前提条件\n1).有阿里云账号\n2).已启用短信服务\n3).已申请短信签名和短信短信模板\n4).已申请AccessKey\n\n#### 一、阿里云短信服务\n1.登录阿里云, https://www.aliyun.com\n2.搜索进入“短信服务”,根据提示免费开通短信服务\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b105ac2dd6d6c29f1c0d120dc5b8c0e3)\n3.成功开通短信服务后,进入短信控制台\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e7fce73fa57d9ccdddf00d42c95e16ea)\n4.点击“国内消息”-&gt;“签名管理”-&gt;“添加签名”\n申请短信签名说明—-阿里云\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e6e28211b6f6ba043ee72118f6e88cfa)\n5.点击“国内消息”-&gt;“模板管理”-&gt;“添加模板”\n申请短信模板说明—-阿里云\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6646f8eb1f21df0201d3a4e9719654ce)\n示例参数\n模版类型:通知短信\n模版名称:车辆报警通知\n模版内容:收到新报警，车辆：${vehicle}，报警类型：${alarmtype}，报警时间：${alarmtime}，报警地点：${latlng}，报警描述：${alarmdesc}。\n变量属性:vehicle-其他；alarmtype-其他；alarmtime-时间；latlng-其他；alarmdesc-其他；\n申请说明:用于测试车辆报警通知的短信\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=17e17eefa18ec2b80f0b17e7f84b51c4)\n6.发送频率设置,建议添加到号码白名单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0338df26a6d962959a0e64950315d44f)\n\n7.申请AccessKey,在右上角头像，进入AccessKey管理\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=77e7e75c71b8d8659df8c2226a6bd5a2)\n8.申请AccessKey,请注意:本文档不使用子用户AccessKey,不对此功能进行说明\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=625e3cf8e63f0fe0fa8d1bad1586ef61)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=47902ebd28baa359a741ff313b1ab2d0)\n注意:验证通过后会显示申请的AccessKey ID和Access Key Secret,请注意保存信息,关闭此窗口后将无法查看到Access Key Secret!!!\n\n#### 二、平台短信配置\n1.打开“服务器管理”-&gt;“参数配置”-&gt;“短信配置”，录入阿里云参数\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=505a35c19ef51e8535a52e20a16f5ee3)\n2.发送一条测试短信,注意:先保存数据后再进行测试！\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=172f25734cd6ab7bd106f947c5c304b8)\n3.测试发送正常，能正常接收再进行规则配置。\n\n#### 三、平台规则配置\n实现报警信息发送给指定手机号或者车辆联系人\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ca135e119894b5efd739a07adfe158ff)\n若勾选“通知车辆联系人”请完善“车辆信息”-&gt;“购买登记信息”-&gt;“联系电话”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b234204405c4de57a5eea6850532c8cc)\n",
+  "s_number": "21",
+  "addtime": "2025-12-17 14:01:13",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:21:05",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

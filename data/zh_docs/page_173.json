@@ -1,0 +1,18 @@
+{
+  "page_id": "173",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "0",
+  "page_title": "功能使用--遥控登入菜单",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 可以使用的遥控、正常显示显示屏\n\n### 操作步骤：\n1. 对准设备面板IR图标，按遥控器ENTER按键，进入登入菜单界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b6b7de5cb64474672e14e3eb7a2fe0b2)\n2. 按数字键输入密码默认密码999999\n3. 进入主菜单功能界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4a440fd62c6b89658ab4e014605d2656)",
+  "s_number": "3",
+  "addtime": "2025-10-11 10:47:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 10:58:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": ""
+}

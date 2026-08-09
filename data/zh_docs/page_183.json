@@ -1,0 +1,18 @@
+{
+  "page_id": "183",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "遥控配置时间、时区、自动校时",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、GPS天线\n\n###操作步骤\n\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c9634866f26c0ec7fe25292e1cfd34aa)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=26357e54b8843da57c5504cee68af21d)\n\n3、在【设置】界面选择【基本设置】，按“ENTER”键进入基本设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=33fd4de7866b0b7b6898a130a55114a4)\n4、在【基本设置】界面选择【时间】，进入时间设置页面，修改时间、时区，修改完成后，按“确定”保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=32aa7b415f481287119fcf5ce86b4cc5)\n###自动校时\n\n勾选了自动校时，设备开机后GPS定位成功，设备会自动校准时间\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=04f3ca44edb4c8ce6a59b91a0685b36c)",
+  "s_number": "1",
+  "addtime": "2025-09-08 15:22:08",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 15:18:12",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

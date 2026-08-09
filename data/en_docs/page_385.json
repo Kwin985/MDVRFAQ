@@ -1,0 +1,18 @@
+{
+  "page_id": "385",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "61",
+  "page_title": "Active Safety AI Speed ​​Threshold Profile",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Prepare the matching AI model and enable the corresponding AI function\n\n### Operation steps:\n\n1. Download this configuration file template Click to download the configuration file compressed package [config.zip](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f948996ae26bcbc27f36cf23ef5c1a5 &quot;[config.zip&quot;) Local decompression\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=439939d4aeed81dabab0f3edc233bfa4)\n\n1. Open the text editing tool and fill in the speed threshold on the right. For the specific meaning of the fields, refer to the parameter notes below:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6c187b80c8203f95778d9ef7a610fba4)\n&gt; fFD_DsmLowVel;DSM alarm low speed threshold, unit km/h default 30\nfFD_DsmHighvel;DSM alarm high-speed speed threshold, unit km/h default 50\n\n &gt;fFD_Hmwvel;HMW alarm speed threshold, unit km/h 30.00\nfFD_Fcwvel;FCW alarm speed threshold, unit km/h 30.00\nfFD_Ldwvel;LDW alarm speed threshold, unit km/h 55.00\nfFD_Pcwvel;PCW Alarm speed threshold, unit km/h 50.00\n\n &gt;fFD_BsdFirstvel; BSD first-level alarm speed threshold, unit km/h 30.00 BSD algorithm library is not used\nfFD_BsdSecondvel; BSD second-level alarm speed threshold, unit km/h 30.00\nfFD_BsdThirdvel; BSD third-level alarm speed threshold, unit km/h 30.00\n\n1. Unlock the device and remove the hard disk or SD card storage, use a hard disk reader or SD card reader to insert it into the computer, and open the root directory of the first storage partition\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1af67e05be7087b5900c819dcaf652b3)\n1. Copy the config file you just edited and saved to this directory, disconnect the device, insert the device and lock it\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5a7c4cedfdb1ba9476c4a63eda7b989b)\n1. When the device is powered on, it will automatically import the configuration and restart. The configuration will take effect after the restart\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f29b6a7205685638632647c31d7ec5e4)\n",
+  "s_number": "4",
+  "addtime": "2025-12-31 15:55:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:29:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--AI function"
+}

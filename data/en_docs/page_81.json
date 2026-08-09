@@ -1,0 +1,18 @@
+{
+  "page_id": "81",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "M51HV Interface Definition",
+  "page_content": "### Introduction\nThis chapter will introduce the definition of the rear panel interface and front panel slot of our car-mounted MDVR series!\n\n#####M51HV/52HV interface definition:\n######Back panel\nInstructions for use: The upper left corner is the IO expansion cable insertion port. Use the matching IO harness with the notch facing down and press the buckle below to insert. The middle is the HMIC hand mark extension insertion port. Use the matching hand mark harness + hand mark (not standard). On the right are the GPS, 3/4G, and WIFI antenna sockets. Use the matching GPS, 3/4G, and WIFI (not standard) antennas to insert and tighten clockwise. The upper right corner is the POWE power input port. Use the matching power cable with the notch facing up and tighten clockwise, as shown below.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dedc3398d6a2c73ee121f7582702b2e0)\nThe lower left corner is the display input port, four-core is for CVBS screen, five-core is for VGA screen, the middle is the network port adapter cable insertion port, use the matching network port adapter cable (not standard), the lower right corner is the AV1-4 camera insertion port. Here, take the M52HV model as an example, the five-core port needs to be inserted into the matching one-to-two adapter cable and then the camera is inserted into the four-core port of the adapter cable. If it is the M51HV model, AV1-4 is a four-core camera that is directly inserted, as shown above.\n\n######Front panel\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=76330beae2c5f9ae6df93751959a62c7)\nInstructions: The right side is the switch lock. Use the matching key with the notch facing down and gently press it. Turn it clockwise to the horizontal notch on the left to unlock it. Press the &quot;PUSH&quot; indicator to open the door. The inner test is the SIM card, SD card, and hard disk insertion port. Use the SIM (large card) and SD card to insert the notch to the right. Pull open the hard disk push cover at the finger mark position. Use the 2.5-inch hard disk (SSD OR HDD) with the notch facing down and insert the hard disk push cover again. After completion, close the door upwards and use the key to turn it counterclockwise to the vertical port to lock it. The left side is the USB port for inserting U disk and other media to upgrade firmware, import configuration, etc., as shown above.\nPs: All devices must work in the locked state\n",
+  "s_number": "1",
+  "addtime": "2025-11-04 17:56:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:10:34",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

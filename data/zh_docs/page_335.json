@@ -1,0 +1,18 @@
+{
+  "page_id": "335",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "ADC水位传感",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR设备  |  1 |MDVR ADC IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n| ADC传感器 |  1 |常用接线工具| n |\n\n### 必要说明\n- 这里以**MX-LLS-01-01**为例\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3cd34f900a4acb6ebbb8d243d8936460)\nMX-LLS-01-01\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=922384360be0cd35e32cceec354d5388)\n\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;报警设置&gt;&gt;输入,配置ADC1功能：水量，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9684ccf897a634d818543be7ee0c6cfe)\n\n#### 三、平台菜单配置\n3.1 登入客户端，点击在线车辆插件下发命令形式复制下发参数，usHPX33MaxVoltage、usHPX33MaxHeight值根据传感器参数修改\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;\n&lt;stAlarmIn usHPX33MaxVoltage=&quot;10&quot; usHPX33MaxHeight=&quot;200&quot; ucADC1Func=&quot;3&quot;/&gt;\n&lt;/VariCfgSec&gt;\n```\n&gt; 注释：\nusHPX33MaxVoltage 最大电压：10V\nusHPX33MaxHeight 最大高度：200cm=2m(参数填入单位厘米)\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fd31e6be8b25860b1ba819f74dc5638b)\n下发成功后重启设备参数生效。\n\n3.2 在平台WEB菜单点击 运营管理--车辆信息--编辑菜单勾选 水位传感器开启功能\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=575df90aa04320514adbc60617166744)\n注：只勾选 水位传感器 地图气泡框显示单位L  同时勾选 水位传感器+水深传感器显示CM。此款ADC水位探测高度单位所以勾选深度\n\n#### 四、测试\n4.1 本地查看\n遥控 logln+.DOT 键进入测试界面查看ADC1是否有电压值\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8b387d73ca781a8b50969308df8d38fd)\n4.2 远程平台查看\n设备注册上平台可在电子地图 气泡框显示水量数据\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6527e33b9e6b33c4c138431daea0e80c)\n\n#### 五、远程校准\n如果气泡框显示数据和实际水位数据不准，可以使用平台校准比例配置。\n5.1 在客户端鼠标右击ID弹出菜单选择 水位传感器设置 进行比例配置\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3ea72bf671af3173e7780aa73ef36f6c)\n水位刻度值 填气泡框显示的值，对应水位 填实际水箱当前测量的值。\n5.2 多次循环配置几个比例值，至少三个来校准。如：第一次把水箱灌满配置比例、第二次把水箱灌一半、第三次把水箱灌1/3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "18",
+  "addtime": "2025-11-04 17:53:33",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:56:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "100",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "68",
+  "page_title": "AI related--Querying the ID number of the AI algorithm chip resulted in an empty response.",
+  "page_content": "Why is the query AI algorithm chip ID number empty? As shown below:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f98c0943c5572cc4f5d907553877b6b5)\n\nTroubleshooting steps:\n1. Check whether the device hardware is an AI model\n2. Is AI enablement enabled?\n3. Check whether the latest APP and FDT version firmware of the device are the latest AI version\n4. Check whether the AI algorithm package is the latest and matches the 2-step firmware\n5. Does the video channel associated with a certain AI function conflict with other function channels?\n",
+  "s_number": "6",
+  "addtime": "2026-03-04 11:06:36",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:06:58",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Daily Maintenance--Handling Common Issues"
+}

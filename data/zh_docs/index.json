@@ -1,0 +1,1043 @@
+{
+  "section": "zh_docs",
+  "pages": [
+    {
+      "page_id": "62",
+      "title": "帮助文档使用（Help Document Usage）",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "143",
+      "title": "功能使用--本地遥控查看各个状态信息",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "173",
+      "title": "功能使用--遥控登入菜单",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "65",
+      "title": "升级固件下载",
+      "cat_id": "19",
+      "cat_name": "下载中心"
+    },
+    {
+      "page_id": "66",
+      "title": "说明书",
+      "cat_id": "19",
+      "cat_name": "下载中心"
+    },
+    {
+      "page_id": "67",
+      "title": "提示音",
+      "cat_id": "19",
+      "cat_name": "下载中心"
+    },
+    {
+      "page_id": "69",
+      "title": "常用工具",
+      "cat_id": "19",
+      "cat_name": "下载中心"
+    },
+    {
+      "page_id": "165",
+      "title": "M51HV接口定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "166",
+      "title": "M32HV接口定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "167",
+      "title": "M16HV接口定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "168",
+      "title": "M15HV接口定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "170",
+      "title": "MDVR系列LED灯状态定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "171",
+      "title": "M20Hv LED灯状态定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "174",
+      "title": "航空头针脚详细定义",
+      "cat_id": "23",
+      "cat_name": "功能使用--接口状态定义"
+    },
+    {
+      "page_id": "169",
+      "title": "GPS天线安装",
+      "cat_id": "24",
+      "cat_name": "功能使用--接线安装"
+    },
+    {
+      "page_id": "172",
+      "title": "电源线接线安装",
+      "cat_id": "24",
+      "cat_name": "功能使用--接线安装"
+    },
+    {
+      "page_id": "183",
+      "title": "遥控配置时间、时区、自动校时",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "184",
+      "title": "遥控配置镜像画面",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "185",
+      "title": "遥控配置摄像头分辨率、制式",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "189",
+      "title": "遥控配置定位模式、定位上传间隔",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "190",
+      "title": "遥控配置车牌、司机、公司信息",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "191",
+      "title": "遥控配置开关机模式、延时",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "320",
+      "title": "摄像头混插配置",
+      "cat_id": "110",
+      "cat_name": "功能使用--基本配置"
+    },
+    {
+      "page_id": "195",
+      "title": "配置4G/5G网络",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "196",
+      "title": "查询IMEI/ICCID号",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "197",
+      "title": "配置WiFi网络",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "198",
+      "title": "配置有线网络",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "314",
+      "title": "AP E-set热点连接配置",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "322",
+      "title": "路由功能",
+      "cat_id": "26",
+      "cat_name": "功能使用--网络配置"
+    },
+    {
+      "page_id": "133",
+      "title": "CMSV7和部标808--本地遥控快捷配置注册",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "109",
+      "title": "CMSV7--本地遥控注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "110",
+      "title": "CMSV7--参数下发注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "111",
+      "title": "CMSV7--本地配置导入注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "112",
+      "title": "CMSV7--本地WEB注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "113",
+      "title": "国标GB28181--参数下发注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "114",
+      "title": "国标GB28181--本地配置导入注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "115",
+      "title": "国标GB28181--本地WEB注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "116",
+      "title": "部标JT808--本地遥控注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "118",
+      "title": "部标JT808--参数下发注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "117",
+      "title": "部标JT808--本地配置导入注册平台",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "328",
+      "title": "冰恒PTT--远程配置注册对讲",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "141",
+      "title": "本地遥控配置各家PTT注册对讲",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "324",
+      "title": "设备RTSP协议拉流",
+      "cat_id": "50",
+      "cat_name": "功能使用--注册平台配置"
+    },
+    {
+      "page_id": "203",
+      "title": "遥控配置录像模式",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "204",
+      "title": "遥控配置SD卡模式",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "205",
+      "title": "遥控配置录像保存天数",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "209",
+      "title": "配置IPC摄像头参数",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "211",
+      "title": "遥控配置定时抓拍",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "212",
+      "title": "遥控配置主码流视频编码和音频开启",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "213",
+      "title": "遥控配置子码流视频编码",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "214",
+      "title": "遥控配置画面显示OSD信息",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "221",
+      "title": "录像回放",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "222",
+      "title": "图片回放",
+      "cat_id": "25",
+      "cat_name": "功能使用--录像编码配置"
+    },
+    {
+      "page_id": "219",
+      "title": "配置报警录像时长",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "225",
+      "title": "配置IO报警输入",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "226",
+      "title": "配置IO报警联动",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "227",
+      "title": "配置IO报警输出",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "231",
+      "title": "配置ADC功能",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "233",
+      "title": "开启Gsensor功能",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "318",
+      "title": "IO输入联动报警",
+      "cat_id": "27",
+      "cat_name": "功能使用--报警功能配置"
+    },
+    {
+      "page_id": "145",
+      "title": "主动安全AI本地遥控配置",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "146",
+      "title": "主动安全AI 本地WEB配置",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "89",
+      "title": "主动安全AI相关参数下发配置说明",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "384",
+      "title": "主动安全AI速度阈值配置文件",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "93",
+      "title": "主动安全AI BSD画不规则线条标定说明",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "91",
+      "title": "AI司机人脸识别功能说明",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "149",
+      "title": "垃圾算法AI本地遥控配置",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "235",
+      "title": "客流统计-AI主机",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "237",
+      "title": "客流统计-AI摄像头",
+      "cat_id": "31",
+      "cat_name": "功能使用--AI功能配置"
+    },
+    {
+      "page_id": "241",
+      "title": "云台配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "243",
+      "title": "温度传感器配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "245",
+      "title": "胎压传感器配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "247",
+      "title": "油量传感器配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "249",
+      "title": "刷卡机配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "251",
+      "title": "手唛配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "254",
+      "title": "声光报警器配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "256",
+      "title": "串口扩展盒配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "257",
+      "title": "RS232 485协议互转盒使用配置",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "260",
+      "title": "导航屏配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "262",
+      "title": "TTS语音播报器配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "264",
+      "title": "OBD配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "266",
+      "title": "LED显示屏(出租车顶灯)配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "268",
+      "title": "LED面板配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "270",
+      "title": "串口外设232透传配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "316",
+      "title": "远程控油控电配置使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "333",
+      "title": "外置UPS使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "335",
+      "title": "ADC水位传感",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "336",
+      "title": "网络HUB",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "338",
+      "title": "正反转转速传感器",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "644",
+      "title": "AI提醒器使用",
+      "cat_id": "28",
+      "cat_name": "功能使用--串口外设配置"
+    },
+    {
+      "page_id": "272",
+      "title": "系统日志查看",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "274",
+      "title": "磁盘分区和格式化",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "276",
+      "title": "语言和重启配置",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "278",
+      "title": "配置导出、恢复出厂和Gsensor校准值导出",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "280",
+      "title": "录像文件导出",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "646",
+      "title": "Telnet 固件升级方法",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "326",
+      "title": "烧录程序TFTP升级方法-联咏",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "648",
+      "title": "MDVR_Info_Tool运维扫描工具",
+      "cat_id": "111",
+      "cat_name": "功能使用--日常维护"
+    },
+    {
+      "page_id": "153",
+      "title": "固件升级方式",
+      "cat_id": "34",
+      "cat_name": "功能使用--升级和导入"
+    },
+    {
+      "page_id": "154",
+      "title": "主动安全AI算法升级方式",
+      "cat_id": "34",
+      "cat_name": "功能使用--升级和导入"
+    },
+    {
+      "page_id": "312",
+      "title": "里程自定义导入",
+      "cat_id": "34",
+      "cat_name": "功能使用--升级和导入"
+    },
+    {
+      "page_id": "282",
+      "title": "WEB登陆、修改密码和系统语言",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "284",
+      "title": "WEB设置向导",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "286",
+      "title": "Web基本设置",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "288",
+      "title": "WEB网络配置",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "650",
+      "title": "WEB 报警设置",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "157",
+      "title": "WEB AI配置",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "289",
+      "title": "Web 查看设备系统状态",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "304",
+      "title": "WEB配置安装ADAS摄像头",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "306",
+      "title": "WEB配置安装DSM摄像头",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "308",
+      "title": "WEB配置安装BSD摄像头",
+      "cat_id": "46",
+      "cat_name": "功能使用--WEB配置"
+    },
+    {
+      "page_id": "239",
+      "title": "“通天星”部标透传工具",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "102",
+      "title": "“三一”部标透传下发工具",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "103",
+      "title": "通天星客户端插件在线配置工具",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "105",
+      "title": "本地配置工具Mxc_Config配置局域网设备参数",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "640",
+      "title": "本地配置工具Mxc_Config生成配置文件",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "107",
+      "title": "本地配置工具MVMS_NetPlayer",
+      "cat_id": "33",
+      "cat_name": "功能使用--配置工具"
+    },
+    {
+      "page_id": "74",
+      "title": "常见配置参数指令",
+      "cat_id": "45",
+      "cat_name": "功能使用--参数指令配置"
+    },
+    {
+      "page_id": "75",
+      "title": "常见查询参数指令",
+      "cat_id": "45",
+      "cat_name": "功能使用--参数指令配置"
+    },
+    {
+      "page_id": "635",
+      "title": "语言相关-遥控菜单更改非中文或英文语言无法开机问题",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "292",
+      "title": "录像相关--不识别SD卡或硬盘",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "296",
+      "title": "录像相关--通道无画面",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "98",
+      "title": "网络相关--WiFi参数配置正确无法连接",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "364",
+      "title": "网络相关--2.4G WIFI路由其他终端正常连接，MDVR设备无法连接",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "293",
+      "title": "定位相关--GPS不定位排查方法",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "96",
+      "title": "AI相关--查询AI算法芯片ID号是空",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "97",
+      "title": "AI相关--遥控操作进菜单失败来到某个AI校准菜单",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "95",
+      "title": "平台相关--三一部标平台注册不成功",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "298",
+      "title": "平台相关--注册不上平台",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "159",
+      "title": "串口相关--油量不上报排查方法",
+      "cat_id": "21",
+      "cat_name": "日常维护--常见问题处理"
+    },
+    {
+      "page_id": "85",
+      "title": "提示音定制规范",
+      "cat_id": "22",
+      "cat_name": "功能定制--提示音-开机LOG"
+    },
+    {
+      "page_id": "87",
+      "title": "提示音批量导入\\删除\\查询",
+      "cat_id": "22",
+      "cat_name": "功能定制--提示音-开机LOG"
+    },
+    {
+      "page_id": "642",
+      "title": "自定义制作开机LOG图",
+      "cat_id": "22",
+      "cat_name": "功能定制--提示音-开机LOG"
+    },
+    {
+      "page_id": "634",
+      "title": "WiFi自动下载框架图",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "300",
+      "title": "服务端-平台最新安装包下载",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "345",
+      "title": "服务端-安装和卸载",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "351",
+      "title": "服务端-端口相关配置",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "341",
+      "title": "服务端-分布式部署",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "340",
+      "title": "服务端-升级",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "353",
+      "title": "服务端-数据库备份还原",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "363",
+      "title": "服务端-WiFi自动下载",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "354",
+      "title": "服务端-单独部署WIFI下载服务器",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "347",
+      "title": "服务端-添加多个流媒体或其他服务器",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "344",
+      "title": "服务端-实时数据库迁移",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "342",
+      "title": "服务端-邮件配置说明",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "343",
+      "title": "服务端-主动安全报警类型自定义",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "346",
+      "title": "服务端-平台WEB API对接开发文档",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "163",
+      "title": "服务端-WiFi(4G)自动下载方案配置参考",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "348",
+      "title": "服务端-809数据转发",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "350",
+      "title": "服务端-亚马逊云短信配置",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "352",
+      "title": "服务端-报表名称修改",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "161",
+      "title": "客户端-MDVRPlayer回放软件使用",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "302",
+      "title": "客户端-APP通过热点连接预览视频",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "349",
+      "title": "客户端-阿里云报警联动短信",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "355",
+      "title": "客户端-运营车辆权限以及添加",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "356",
+      "title": "客户端-轮询播放设置",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "357",
+      "title": "客户端-油量传感器对接",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "358",
+      "title": "客户端-车辆报表导出导入",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "359",
+      "title": "客户端-参数配置插件替换",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "360",
+      "title": "客户端-自定义一些客户端/WEB/APP图标方法和要求",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "361",
+      "title": "客户端-设备实时录像上传",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "362",
+      "title": "客户端-屏蔽不使用的通道",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "381",
+      "title": "客户端-车辆到期提醒",
+      "cat_id": "40",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "365",
+      "title": "服务端-平台最新安装包下载",
+      "cat_id": "41",
+      "cat_name": "平台功能--YH平台"
+    },
+    {
+      "page_id": "367",
+      "title": "服务端-Windows安装和卸载",
+      "cat_id": "41",
+      "cat_name": "平台功能--YH平台"
+    },
+    {
+      "page_id": "368",
+      "title": "客户端-账号和用户车辆添加",
+      "cat_id": "41",
+      "cat_name": "平台功能--YH平台"
+    },
+    {
+      "page_id": "151",
+      "title": "运营商通讯频段",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "310",
+      "title": "摄像头角度与距离关系",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "339",
+      "title": "WLAN(WIFI)协议标准",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "386",
+      "title": "中国标准文件命名术语科普",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "387",
+      "title": "GB/T 28181公安部视频监控要求",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "444",
+      "title": "阿里云短信收费标准",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    },
+    {
+      "page_id": "445",
+      "title": "Amazon亚马逊短信收费标准",
+      "cat_id": "107",
+      "cat_name": "行业科普"
+    }
+  ]
+}

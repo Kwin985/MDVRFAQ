@@ -1,0 +1,18 @@
+{
+  "page_id": "277",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "113",
+  "page_title": "Language and restart configuration",
+  "page_content": "[TOC]\n\n### Prerequisites:\n\n- MDVR host, remote control, display screen.\n\n### Operation steps\n\n1. Power on and enter the remote control menu&gt;&gt;Tools&gt;&gt;Operation Management&gt;&gt;Language and Restart Interface\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f800241cc7c36aba8d64b4e63b5959ab)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0234bd6710bf39ffd53e2a96608acaa0)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=df9347f70209dc8963a168196663d950)\n2. Move to the language drop-down box to select the language. When the restart dialog box pops up, select Yes to restart the device to take effect.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=a1be87d42b8f17b04d77263a5e4cd95c)\nps: Currently the device supports 4 UI languages\n",
+  "s_number": "3",
+  "addtime": "2025-09-26 16:40:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:40:11",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Daily maintenance"
+}

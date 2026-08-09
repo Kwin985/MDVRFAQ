@@ -1,0 +1,18 @@
+{
+  "page_id": "143",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "0",
+  "page_title": "功能使用--本地遥控查看各个状态信息",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 可以使用的遥控、正常显示显示屏\n- 设备在实时预览主界面，如果在菜单界面按遥控方向键右下角的”RETURN&quot;退出到实时预览主界面。\n\n### 操作步骤：\n###### 1、查看4G拨号信息\n按一次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;4G拨号状态&quot; 界面,这里可以查看4G拨号是否成功和信号值状态。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9ae2a9b5d0ebed4f094512f97c373e20)\n###### 2、查看定位信息\n按两次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;定位模块&quot; 界面,这里可以查看定位是否成功和坐标信息。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3c460cf72af6d40728d78f15f4588034)\n###### 3、查看注册一些平台信息\n按三次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;网络状态&quot; 界面,这里可以查看CMSV7、808、28181、PTT平台注册是否成功。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=314af446cf8fdf293704982cbb023929)\n###### 4、查看磁盘容量信息\n按四次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;磁盘容量信息&quot; 界面,这里可以查看硬盘、SD卡、U盘等存储容量信息。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c8a3802fb473a1d3e807a173efa2d858)\n###### 5、查看定位卫星信号信息\n按五次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;卫星信号&quot; 界面,这里可以查看参与定位的卫星数量和信号，左边是GPS右边是北斗卫星。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=54feef330c927d986a7b57f1407c1371)\n###### 6、查看WiFi拨号信息\n按六次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;WIFI拨号状态&quot; 界面,这里可以查看WiFi拨号是否成功和信号值状态。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=41a28015bfaa1cdd18bd7cd199701915)\n###### 7、查看版本号信息\n按七次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;版本号&quot; 界面,这里可以查看应用程序、单片机、数据库等固件版本号。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=23cf165dac2355dda128a8e643e45313)\n###### 8、查看串口、AI信息\n按八次遥控方向右键&quot;&amp;rarr;&quot; 来到&quot;串口、AI&quot; 界面,这里可以查看各个串口配置的功能和连接状态、AI配置的功能和授权状态。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=881871e7000a46fb268564e1481de561)",
+  "s_number": "2",
+  "addtime": "2025-11-21 14:23:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-03 18:42:20",
+  "ext_info": "",
+  "attachment_count": "1",
+  "unique_key": "",
+  "cat_name": ""
+}

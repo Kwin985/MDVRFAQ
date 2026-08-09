@@ -1,0 +1,18 @@
+{
+  "page_id": "150",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "61",
+  "page_title": "Garbage algorithm AI local remote control configuration",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- A usable remote control and a normal display screen\n- The device is already in shipping status (AI has been authorized and the algorithm has been imported)\n- The device firmware is already a customized version that supports the garbage algorithm\n\n### Operation steps:\n\n###### 1. Login menu\n1.1 Press the middle &quot;ENTER&quot; confirmation button on the remote control to enter the login interface and enter the default administrator password &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bc9b41537e1828e07a47065483a5556b)\n1.2 In the first-level menu interface, press the arrow key to move to the &quot;Settings&quot; button, and press the middle &quot;ENTER&quot; confirmation key to enter the second-level &quot;Settings&quot; menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6b5d96b4614768fae909fae369e87be9)\n1.3 In the second-level &quot;Settings&quot; menu interface, press the right arrow key to move to the &quot;Network Settings&quot; button, and press the middle &quot;ENTER&quot; confirmation key to enter the second-level &quot;Settings&quot; menu Press the &quot;ENTER&quot; confirmation key to enter the third-level &quot;Alarm Settings&quot; menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=81500a86b49ec665cd0720aaded2ce7c)\n1.4 Third-level &quot;Alarm Settings&quot; menu interface Press the right direction key on the remote control to move to the &quot;AI&quot; menu, and press the middle &quot;ENTER&quot; confirmation key on the remote control to enter the &quot;AI&quot; menu modification status\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b69bfb2019371cad890a8afc5801de1e)\n1.5 Press the down direction key on the remote control&amp;darr; Move the cursor to the &quot;Select garbage detection channel&quot; checkbox, open which channel to detect garbage as needed, save and restart the device\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2504cdf07863db014a0b32b0dd019cd)\n\n###### 2. Check whether the garbage algorithm AI is running normally\n2.1 The device is in the real-time preview main interface. If you press &quot;RETURN&quot; in the lower right corner of the remote control direction key in the menu interface to exit to the real-time preview main interface.\nPress the left button on the remote control ← to go to the &quot;Serial Port, AI&quot; interface, and check whether the AI ​​status in the red box in the lower left corner is running normally. If it is running normally, there should be the following information:\nAI rbs: open channel, algorithm threshold\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7f302e8ab932208a025f8bc2274fedd1)\n",
+  "s_number": "7",
+  "addtime": "2025-12-31 15:58:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:30:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--AI function"
+}

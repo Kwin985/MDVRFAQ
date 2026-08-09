@@ -1,0 +1,18 @@
+{
+  "page_id": "157",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "46",
+  "page_title": "WEB AI配置",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n### 操作步骤：\n1.打开电脑游览器输入设备本地网络IP地址，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef35298af179240004652dcb08a904ad)\n2.点击&quot;普通设置&quot;&gt;&gt;&gt;&quot;AI设置&quot;来到主动安全AI功能配置界面\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=073dd3cf338950fe07d937caa71d14d1)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7188b6f74b2ee9a8209509c02c39ed99)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=55378d7004b1ee8be65a4e5730007c30)\n3.点击“AI设置”栏，这里分别有 ADAS、R BSD、DSM、安全帽、司机人脸识别、L BSD、F BSD、B BSD功能开启和关联通道、测试模式、MD5校验、超前启动等相关参数配置，根据需要配置开启保存使用。具体功能介绍参考 [主动安全AI 本地WEB配置](http://pug2.4000329988.com/fqa/web/#/11/146 &quot;主动安全AI 本地WEB配置&quot;) 文章介绍\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e8248f3e821867f381df348fea6c4533)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bdbc7c3a9242256b9ab43dc3b7726875)\n4.点击&quot;ADAS灭点&quot;栏 ，这里配置主动安全 ADAS灭点标定功能，点击方向键移动红十字架位置到ADAS镜头正前方天际线位置，点击保存完成灭点标定\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=47afdf6d2fbab2ff6bd107a3f1b415eb)\n5.点击&quot;ADAS标定&quot;栏，这里配置主动安全ADAS镜头相关参数标定功能，根据实际装车测量数据填入保存完成参数标定\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5e14d1cf511b3c1f05c8fed1884362c2)\n6.点击&quot;ADAS灵敏度调节&quot;栏，这里配置主动安全ADAS各个类型报警的灵敏度阈值和间隔\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d701e7851057a4c604608fd89e8e62e6)\n7.点击&quot;DSM标定&quot;栏,这里配置主动安全DMS校准功能，驾驶员根据平时开车坐姿 正视前方点击保存完成标定\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7652b2486dd1faec19e9051b89361c41)\n8.点击&quot;DSM灵敏度调节&quot;栏,这里配置主动安全DMS各个类型报警的灵敏度阈值和间隔\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=bf3dd7532e92f3cef88ca69b99d29d01)\n9.下面四栏&quot;右BSD&quot;&quot;左BSD&quot;&quot;前BSD&quot;&quot;后BSD&quot;配置主动安全BSD相关标定功能，分为3个区域等级，点击线条4个角即可拖动方块移动调整到想要框住的画面范围，点击保存完成标定\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=567f8e343b8cce3e4c4583a979a3ebd3)\n10.点击&quot;添加新人脸&quot;栏，这里用于司机人脸功能添加人脸，配套第一项“AI设置”&gt;&gt;&gt;&quot;司机人脸识别&quot;功能使用，驾驶员根据平时开车坐姿 正视前方点击保存完成人脸添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2273842de2a668ea9f6a58525eab197b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5b9d98fc6b811b5ac7ef10ba9f116c64)",
+  "s_number": "6",
+  "addtime": "2026-07-31 14:47:43",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:06:56",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--WEB配置"
+}

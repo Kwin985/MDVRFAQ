@@ -1,0 +1,18 @@
+{
+  "page_id": "314",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "26",
+  "page_title": "AP E-set热点连接配置",
+  "page_content": "### AP热点的连接两种方式\n\n1.本就支持AP模式，切换成AP模式即可连接；\n2.当车载设备不存在WIFI模块时，可以在USB口 插入E-set进行AP热点的配置。\n另外主机M10C是不支持WIFI和AP热点。\n下文以第二点为例进行分步讲解！\n\n#### 插入E-set进行AP热点\n###### WIFI机型设备\n1、准备一个E-set，一台支持AP热点的设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a499b128bb266c5863248277f3cf5158)》》》![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=101ec02d14bd824d3cddc2b59b7c1d14)\n2、未插入E-set之前WIFI模块的状态显示\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=99af07bdc214d09964e354c248005a03)\n3、在USB口插入E-set之后WIFI模块的状态显示\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=be2f71b90880854ea01129ea61b2d7a3)\n4、打开手机WIFI，搜索MDVR111111AP热点，连接密码:99999999\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bedb5b1d9a5528a73f0e23d3ffca1439)》》》![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c22c88ba1139cb891ba83c1f15830c22)\n5、连接到AP热点之后：打开手机浏览器，输入192.168.42.100，登录密码：Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=70943b9c998bcb26f463f280f15fd384)》》》![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2965fa4e23a392139c223f20d4f60687)\n6、登录之后的界面就是设备系统WEB配置参数界面，例如注册CMSV7平台、系统状态等。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d2e146bc63c6d648c517db96f50a3726)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f0588d2fce1263691cc1b579283393d3)\n\n\n",
+  "s_number": "5",
+  "addtime": "2025-09-08 16:25:38",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:25:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--网络配置"
+}

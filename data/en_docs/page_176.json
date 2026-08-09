@@ -1,0 +1,18 @@
+{
+  "page_id": "176",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "M16HV Interface Definition",
+  "page_content": "### Introduction\nThis chapter will introduce the definition of the rear panel interface and front panel slot of our car-mounted MDVR series!\n\n#####M16HV interface definition:\n######Back panel\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b01438d571c0f9f21a68613243df664b)\nInstructions: The three on the left are GPS, WIFI, and 3/4G antenna sockets. Use the matching GPS, WIFI, and 3/4G antennas to insert and tighten clockwise. The middle is the IO expansion cable insertion port. Use the matching IO harness notch to press the buckle below to insert. The right is the POWE power video input port. Use the matching power harness notch to press the buckle below to insert, as shown above.\n\n######Front panel\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2c784e9f7871bf4886b8f6447fa5f75)\nInstructions: The right side is the switch lock. Use the matching key with the notch facing down and gently press it. Insert it clockwise to the horizontal notch on the left to unlock it. Gently pry open the front cover. The leftmost is the SIM card slot. Insert the large card notch to the right. The two in the middle are the SD1\\SD2 card slots. Insert the SD card notch to the right. After completion, gently push the front cover upwards to close it. Use the key to twist it counterclockwise to the vertical notch to lock it, as shown above.\n",
+  "s_number": "3",
+  "addtime": "2025-11-04 17:56:50",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:11:04",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

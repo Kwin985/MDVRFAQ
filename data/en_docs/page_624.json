@@ -1,0 +1,18 @@
+{
+  "page_id": "624",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "82",
+  "page_title": "Server-WIFI Auto Download",
+  "page_content": "Login with admin account\n\n1. Add WiFi download site\nManage——Server——Download Site——Add\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=05e71d15b1270edb612b1cf72c08fa1b)\nNote: the SSID of the WiFi download site must be consistent with the WiFi name of the device, otherwise the download plan will not be executed。\nThe name of the download site can be defined by yourself。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=4da2d580d2a4783a15e3242b1623972f)\n\n2. Modify WiFi Download Server\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=c62e0a438853dab1e57bb898e3697bdb)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7d3288e8b3084e4eb396bf1aa54938d3)\n\n3. Add WiFi download rules\nRules ——Rule Maintenace——WIFI Download——Add\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=3cefaff4be30fb919e7f363702716dce)\n\n4.  Assign WiFi download rules\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7e21b38bada7a7b622eb3e610f8347b2)\nSelect the vehicle to assign the rule and click Assign.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5e761017a2adc5ef2889a37976a7155a)\n\n5. Set the WiFi download path and status on the server software\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b0d814972423402f37b859df6ca8b26b)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5f5711ff0026617f0b6cfa6561f0e3be)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=145038a2bb62f8e3574bdd826b439a59)\n\n6. Go to video playback to play back the downloaded video\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=6db2c0430c9a65d43e28416e8642080b)",
+  "s_number": "4",
+  "addtime": "2025-09-26 15:59:30",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:56:07",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Platform Function - Tongtianxing CMS V7"
+}

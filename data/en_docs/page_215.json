@@ -1,0 +1,18 @@
+{
+  "page_id": "215",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Control configuration timed snapshot",
+  "page_content": "[TOC]\n\n### Prerequisites\n- Display screen, remote control, storage media (SD card, hard disk, etc.)\n\n### Rule description:\n- Supports snapping pictures of specified video channels at fixed intervals\n- The captured channel pictures are saved in the second partition pic directory of the storage medium, one directory per day, such as 2024-06-03 directory name\n- The captured video channel pictures are named in this format 30065_235247_369-3.jpg, where 30065 is the device ID, the following 235247 is the capture time of the day, 369 is milliseconds or other specific event number values, and 3 represents the channel number\n- Considering the size of the disk partition space, the device will automatically detect the remaining space of the partition every 5 minutes. If the remaining space is less than 15%, the oldest video of the day will be automatically deleted during the current detection, and it will be detected again after 5 minutes\n- The device supports automatic deletion of historical snapshots in the disk that exceed the device configuration image storage days\n\n###Operation steps\n1. Press the remote control [ENTER] key to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f04c04c1c672d4280ad210d7f73f1beb)\n\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; key to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d2322239a7d42c323df1d904c621030b)\n\n3. Select [Record] in the [Settings] interface and press the &quot;ENTER&quot; key to enter the recording settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eba366cb47d68e1c9f54ba2fff3a6143)\n\n4. Press the right arrow key to come to the Snapshot settings interface, press the &quot;ENTER&quot; key to enter the editing state, check the Scheduled Snapshot checkbox to enable the snapshot function, fill in the snapshot interval, number of days to save, and resolution, check the snapshot channel and upload platform channel, and confirm to save to take effect immediately.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a1330930c783017c9a5f4fb59114a658)\nps: The number of days to save this configuration item will only take effect when there is enough disk space. Otherwise, it will be deleted in advance according to the above rules when the disk space is less than 15%;\nThe default resolution &quot;Default&quot; is the default main stream encoding resolution, and 1080P/720P/960H resolution can be configured separately;\nThe picture capture and upload are on the CMSV7 platform.\n",
+  "s_number": "5",
+  "addtime": "2025-12-25 17:27:57",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:24:04",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "356",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-轮询播放设置",
+  "page_content": "[TOC]\n\n### 操作步骤：\n1 点击截图中框选的图标\n2 点击显示轮询窗口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3434ae93bf9b80a0fccd5def44f64468)\n3 选择需要轮询的设备，可在分组中整个组的选择，也可以在终端信息中一台台选择\n4点击参数配置\n5设置轮询的时长，以及其他相关的时间设置\n6点击开始轮询即可\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=203210d5ee5636f135c4a6d962dfb94a)\n\n\n",
+  "s_number": "23",
+  "addtime": "2025-12-17 14:01:56",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:21:36",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "296",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "录像相关--通道无画面",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备能正常启动；\n- 可以使用的遥控、正常显示显示屏；\n\n\n\n### 操作步骤：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=da5b1d5d645d6a09ff5162d1c179e068)\n\n\n\n###  排查方法图文说明\n\n#####方法1 连接线材\n1.1检查设备后板”AV1”（AV1代表第一个通道摄像头AV2第二个........）标签摄像头插入口是否插入、是否扭紧、摇晃无松动情况，检查延长线之间公母含空调是否扭紧松动、氧化 腐朽接触不良现象。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bdd21e3df71498d322c9c381840386f4)\n\n1.2  检查设备后板摄像头插入口一直到摄像头位置线材是否破裂、断开现象。\n\n#####方法2 设备参数\n2.1设备接入显示屏，遥控按回车键输入登入密码“999999”进入设置菜单》》》录像设置》》》摄像头  菜单 查看视频制式、通道分辨率类型是否和实际插入摄像头参数符合，摄像头参数可以在标签、包装盒、型号或询问购买方确认，参数不对按上下键切换更改保存确认。如下图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ec462e585d50f8c400d77fc2d217109e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5ac330a154ff0bce77e29835bcc3f9e0)\n\n2.2 进设置菜单》》》编码设置》》》主码流   菜单查看 最后一排 视频复选框是否勾选，未开启按下键移动到复选框开启保存确认。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=db26a4814a8ffd4089de5d0c7ff383a2)\n\n#####方法3 设备供电\n3.1 设备接入显示屏 同时按遥控”LOGIN+.DOT”键进入测试界面查看第二行 “V”字符显示电压值是否在8-36 范围。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4c6f1a4396e8d292efac94d6cf5e179c)\n\n3.2 查看摄像头是否带红外功能，带红外遮住光线感应区域看是否打开红外证明摄像头有供电。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9e2de791ef1ff26e3a620308316c9f69)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e78a16b338698f93e868ba4a7fe6079f)\n\n3.3 拔掉设备后面板所有其他摄像头、IO线束外设、硬盘、手麦等一切需要供电的外设，重启设备查看此摄像头是否恢复画面\n\n#####方法4 摄像头质量\n4.1 设备接入显示屏 把其他正常有画面且同规格参数的摄像头调换到此通道直接插入后面板看是否出画面\n\n4.2 购买新款同规格参数摄像头替换插入设备后板查看是否出画面\n\n执行完所有步骤后，仍然无图像，请联系我司销售人员进行售后等相关流程\n",
+  "s_number": "3",
+  "addtime": "2025-11-17 16:43:12",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:12:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

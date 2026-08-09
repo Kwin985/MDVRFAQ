@@ -1,0 +1,18 @@
+{
+  "page_id": "329",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "98",
+  "page_title": "Iceheng PTT - Remote Configuration Intercom Registration",
+  "page_content": "[TOC]\n\n### Prerequisites\n\n- The device has been registered on the CMSV7 platform and logged into the client\n- Use the client plug-in to issue commands, refer to [CMSV7 client plug-in parameter configuration](http://pug2.4000329988.com/web/#/13/104 &quot;CMSV7 client plug-in parameter configuration&quot;)\n\n### Operation steps\n1. Copy the command to configure the PTT IP and port, and use the client parameter configuration plug-in to customize the following format command:\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stPttDcn ucFD_AddressType=&quot;0&quot; uiFD_IP=&quot;120.79.255.229&quot; usFD_Port=&quot;6689&quot; &gt;&lt;/stPttDcn&gt;&lt;/VariCfgSec&gt;\n```\n&gt; Notes:\nuiFD_IP=&quot;Bingheng PTT server IP;usFD_Port=&quot;Bingheng PTT server port&quot;\n\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ec0039c567020a4163cb64e52fe0647d)\n\n2. After sending the configuration, you can copy the query command to check whether the parameters are correct and the configuration is successful\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stPttDcn&gt;&lt;/VariCfgSec&gt;\n```\n\n3. Copy the command to configure the PTT username and password, and use the client parameter configuration plug-in to customize the following format command:\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_SET&quot;&gt;&lt;stPtt strFD_UserName=&quot;20200304002&quot; strFD_Password=&quot;123456&quot; ucFD_PttType = &quot;1&quot;/&gt;&lt;/VariCfgSec&gt;\n```\n&gt; Notes:\nstrFD_UserName=&quot;Username&quot;；strFD_Password=&quot;User password&quot;\n\n ![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f6173e1c27012407c21301b569523220)\n\n4. After sending the configuration, you can copy the query command to check whether the parameters are correct and the configuration is successful.\n```xml\n&lt;VariCfgSec Action=&quot;DEVICE_QUERY&quot;&gt;&lt;stPtt&gt;&lt;/VariCfgSec&gt;\n```\n\n5. Check whether the PTT server is connected successfully in the network connection status interface. \nPTT status: DCN request is successful, indicating that the connection to the PTT server is successful.\nPTT status: Failed, indicating that the connection to the PTT server failed. Please check whether the server IP, port, username and password are correct, and whether the network dial-up is successful.\nPTT IP: 123.56.93.33, which shows the PTT server IP.\nPTT Port: 6689, which shows the PTT server port.\nPTT status: PTT initiated; indicating that the machine is speaking.\nPTT status: PTT receiving; indicates that the whole device is answering.\n\n",
+  "s_number": "9",
+  "addtime": "2025-11-04 18:05:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:22:05",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Registration platform configuration"
+}

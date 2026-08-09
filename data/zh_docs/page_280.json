@@ -1,0 +1,18 @@
+{
+  "page_id": "280",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "111",
+  "page_title": "录像文件导出",
+  "page_content": "[TOC]\n\n### 前提条件：\n\n- MDVR主机带USB口、遥控器、显示屏、存储介质且存在录像文件\n- U盘或USB接口的存储介质必须是FAT32格式\n\n###操作步骤\n1、将U盘插入USB口通电开机，遥控左右按键来到磁盘状态界面查看是否识别到U盘\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d0ece55bf61dd14de3c04d4a899f0e6f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=107a4e66533cb85efd05ef888a160d52)\nps:没有识别到请多试几次插拔\n2、遥控进入菜单设置&gt;&gt;录像设置&gt;&gt;录像界面，移动到USB用途 选择 数据导出，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ac07c9d748b99f5b091a17f0d7bf52e2)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ae21772e840bf70bdd6854d07e4e19e7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8c1ca37516ef53c80149bb7dce279d4e)\n3、按返回键移动到工具&gt;&gt;数据导出&gt;&gt;录像导出界面，选择设备录像存储的磁盘位置、录像类型、时间范围，按确认搜索查询。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a10cf78de75e51ac404e7c7eed17f130)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9519bd0c1ca546029c01b4a8c13c9bd0)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cf9f4cb52ca61cc2dd2076d91df2f7e3)\n4、移动到查询的录像文件列表 按确认键导出想要导出的某个录像文件，弹出导出进度条状态等待100%消失后证明导出成功，拔掉U盘插入电脑即可使用专用回放软件播放。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ae35569219b5c233dee53a685078994c)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d6b0dbe11b58492c64899fb0d06ed666)",
+  "s_number": "5",
+  "addtime": "2025-11-11 17:34:23",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:59:11",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--日常维护"
+}

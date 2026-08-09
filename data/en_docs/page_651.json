@@ -1,0 +1,18 @@
+{
+  "page_id": "651",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "66",
+  "page_title": "WEB alarm settings",
+  "page_content": "[TOC]\n\n### Prerequisites:\n\n- The device and computer must be on the same local area network segment, and the computer must be able to ping the device's local IP address.\n\n### Operation Steps:\n1.Open your computer's browser, enter the device's local network IP address, and enter the login password &quot;Adm_123&quot;. Click &quot;Login&quot;. For the device's local network IP address, refer to the article &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Functions&quot; for details.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=cbd4fd184c2743b1ac18e48ab0a3da6b)\n2.Click &quot;General Settings&quot; &gt;&gt;&gt; &quot;Alarm Settings&quot; to access the alarm function configuration interface.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=2e1d0e1bf924d7bc23b380da183a9045)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f86efa76d7b79eba51512330828af2ed)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e1f49716efd91daba717d84da10775b0)\n3.Click the &quot;Basic Settings&quot; tab to configure the duration of the device's alarm recording file (pre-recording duration before alarm + delayed recording duration after alarm = alarm recording duration)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=e1830fc5a3b453f196a5b6350327b43f)\n4.Click the &quot;Alarm Linkage&quot; tab Configure the device's IO alarm input switch, trigger high/low level, function, linkage image capture channel and upload, linkage alarm video channel and upload, linkage device display screen local magnification channel, and linkage device alarm output (upload here refers to the TTX Tongtianxing private platform)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=f91c96d599f6d4b69f5314c1518a2f59)\n5.Click the &quot;Alarm Output&quot; column to configure the device's alarm output line sensor out level and function\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=6e0f8b02e33b9302f431cfb7bb25daa2)\n",
+  "s_number": "5",
+  "addtime": "2026-07-31 18:39:15",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-31 16:25:22",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--WEB configuration"
+}

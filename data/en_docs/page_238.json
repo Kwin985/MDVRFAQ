@@ -1,0 +1,18 @@
+{
+  "page_id": "238",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "61",
+  "page_title": "Customer Flow Statistics-AI Camera",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- A usable remote control and a normal display screen\n- The device is already in shipping status (AI has been authorized and the algorithm has been imported)\n- The device firmware is a customized version that supports passenger flow statistics\n- The computer has the PC-Client tool installed and can ping the AI camera in the same LAN\n\n### Operation steps:\n1. Press the middle &quot;ENTER&quot; confirmation button on the remote control to enter the login interface and enter the default administrator password &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e28d2a36007aa4bd6f01ba5d107fa186)\n\n2. Press the ENTER button on the remote control to enter [Settings]---[Serial]---[Serial]. Press the ENTER button again to enter the editing state, move to the bottom to select the serial port index, serial port function and baud rate, and confirm to save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dfb4bf41b96f7d93db158a6f7edc5d5f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b440d9335d6a8514835877517a4db65d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=abbf373ffa3f79b7fca460ee0f1470fb)\n\n3. Use a network cable to directly connect the computer and the camera to ping, or in the same LAN, run the PC-Client tool to search for the connected camera. The default IPIP of the general camera is: 192.168.1.253. Set the AI ​​camera parameters and restart the device and AI camera after completion.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1f480eb6ae0f8e32acc9f1fea7f5fed2)\n\n4. After restarting, you can check the number of passengers and the door opening and closing status in the lower right corner of the display\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a2b6eaaa80c5b5b5fe947b70b71f5ba9)\n",
+  "s_number": "9",
+  "addtime": "2025-12-31 15:59:51",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:31:42",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--AI function"
+}

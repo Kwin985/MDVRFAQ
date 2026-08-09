@@ -1,0 +1,18 @@
+{
+  "page_id": "347",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-添加多个流媒体或其他服务器",
+  "page_content": "[TOC]\n\n### 使用说明：\n添加多个流媒体服务器/存储服务器\n\n### 操作说明：\n增加多个服务器 ，在CMSServerV6\\GPSDaemon.ini配置文件里面添加配置\n[COUNT]\ngpsgatewaysvr=2（启动2个网关服务器）\ngpsusersvr=2（启动2个用户服务器）\ngpsmediasvr=2（启动2个流媒体服务器）\ngpsStorageSvr=2（启动2个存储服务器）\ngpsdownsvr=2（启动2个下载服务器）\n以启动3个存储服务器和3个WiFi自动下载服务器为例子\n1.配置参数\n[COUNT]\nGPSDownSvr=3\nGPSStorageSvr=3\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4999ba4471c7bab50561e806d68dc110)\n在这个GPSDaemon.ini配置文件里面加上如上配置之后，重启服务器软件。\n重启服务器软件之后,就可以在服务器软件控制台上看到3个存储服务器和3个WiFi自动下载服务器。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=30d7fce870b2f51898b951baee11d6cd)\n2.配置服务器参数\n下面以存储服务器为例子，进行相关配置\n在服务器控制台上对存储服务器1和存储服务器2分别进行参数配置。（编号，端口不可重复）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=22c882a3ec9cef9200d13530f4b439e2)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c3f49138c07ce2802c3412e3ff226086)\n然后在服务器后台的服务器管理的存储服务器上添加多2个存储服务器，配置如下：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d3e49e95454a3ad7c274d435316d0f06)![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f42e482529094510e6c6726b5c88dfa0)\n添加成功后如下：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1cf2dd684d2a38f04630c4e38a853dde)\n3.配置完成后启动服务\n单独重启一下存储服务器1和存储服务器2。完成后：\n服务器软件控制台界面显示如下:正常运行\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7fe9232a8ad09647359c4776df3f5b80)\nWeb端服务器管理界面显示如下：在线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=59a1d5541c5550e7bc8c5f82c7d93113)\n",
+  "s_number": "10",
+  "addtime": "2025-11-17 16:51:54",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:17:56",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

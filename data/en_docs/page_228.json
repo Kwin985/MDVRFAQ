@@ -1,0 +1,18 @@
+{
+  "page_id": "228",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "59",
+  "page_title": "Configure IO alarm input",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, supporting IO extension cable (some models come with it)\n\n### Description:\n- Input 1: The white sensor in1 line of the IO extension cable, input 2 sensor in2... (refer to the interface status definition-back panel article above)\n- Enable: which IO alarm input is turned on\n- Level: whether the input level signal to the IO alarm line is high or low, H high level, L low level, the default configuration H high level when the input high level signal will trigger the alarm, the configuration L low level when the input low level signal will trigger the alarm, high level voltage range: 3.3~36V, low level voltage range: 0~3.3V\n- Function: what function the IO input line is connected to, for example, the left turn function line configured in IO1 should be connected to the vehicle left turn level signal line, and the IO linkage will be associated with this function linkage later.\n\n###Operation steps\n1. Press the remote control [ENTER] button to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4c1cc8435765398132de78cfb5723d28)\n\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; button to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4ff272292afafd0e79d0ac27c7c8a6f1)\n\n3. Select [Alarm] in the [Settings] interface, and press the &quot;ENTER&quot; key to enter the alarm settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c853e4deaaa877014fe712e205ecefd2)\n\n4. Press the right arrow key in the [Alarm Settings] interface to come to the [Input] interface, press the &quot;ENTER&quot; key to enter the editing state, press the down arrow key to move the Enable Recurrence box and press the &quot;ENTER&quot; key again to check Enable, move to the Level box to select high and low levels, and move to the Function to select the Enabled function. The other alarm input operations are similar, and confirm to save and take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b450952d30f9b91a836a775c4353090d)\n",
+  "s_number": "2",
+  "addtime": "2025-12-26 15:39:02",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:26:12",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Alarm function"
+}

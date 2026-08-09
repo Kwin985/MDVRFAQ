@@ -1,0 +1,18 @@
+{
+  "page_id": "363",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-WiFi自动下载",
+  "page_content": "[TOC]\n\n\n### 说明\n- admin管理员账号登录，能远程连接服务器后台\n\n### 操作步骤\n1. 增加wifi下载站点\n信息管理——服务器管理——下载站点——添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dae81e9365fa636abf781524a7cb08c1)\n注意：wifi下载站点的SSID必须和设备上报时使用的wifi名称保持一致，否则不会执行下载计划\n下载站点的名称可以自行定义\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e932abacef9222891d43eb88302c55e6)\n\n2. 修改wifi下载服务器\n由于默认已存在一个下载服务器，所以可以直接点击修改\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2bbb401bbc091821aaed8947ea7461f4)\n框起来的部分选择前面的对应站点\n地址全部填写服务器的IP地址\n端口默认\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d10a4bd10a8ef79d56529cc1fd0fc772)\n\n3. 增加wifi下载规则\n规则管理——规则维护——wifi下载——添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d5f62dbc1f02a46bcff00b320e79d046)\n3.1 命名该规则的名称\n3.2 设置要下载的时间段\n3.3 选择下载的类型\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=51ee979d958422dac9473a07e8ad3694)\n\n4. 分配wifi下载规则\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d568edfd4f8e0f179a9114957f5eca0a)\n选择好需要分配该规则的车辆之后点击分配\n勾选需要分配规则的车辆\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=59569b64aa4587f58105756442884c84)\n\n5. 在服务器软件上设置wifi下载路径和状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fd172103f3b4bf5c38f13ddc51e550f1)\n查看下载状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6d2ec67adf51811dcf819e5536c83ea4)\n5.1 可以切换选择下载路径\n5.2 下载最近3天的录像文件\n5.3 一个设备同时可以下载的文件个数\n5.4 支持几个设备同时下载\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a34ca6333ecff2feb813115af78504ce)\n\n6. 去录像回放中回放下载好的录像\n6.1 点击“录像回放”\n6.2 选择配置了规则的设备\n6.3 选择相对应的日期时间\n6.4 选择“下载服务器（录像）”\n6.5 点击搜索\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=95aee98563f7e6fcdd3428dea934849b)\n\n\n\n\n\n",
+  "s_number": "8",
+  "addtime": "2025-11-17 16:51:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:17:23",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

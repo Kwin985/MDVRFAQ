@@ -1,0 +1,18 @@
+{
+  "page_id": "149",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "31",
+  "page_title": "垃圾算法AI本地遥控配置",
+  "page_content": "\n[TOC]\n\n\n### 前提条件：\n- 可以使用的遥控、正常显示显示屏\n- 设备已经是出货状态（AI已授权、算法已导入）\n- 设备固件已经是支持垃圾算法的定制版本\n\n### 操作步骤：\n\n###### 1.登入菜单\n1.1遥控按中间&quot;ENTER&quot;确认键来到登入界面，输入默认管理员密码 &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef7b8405cd4b980e502d9627d5fd1eb)\n1.2在一级菜单界面遥控按方向键移动到&quot;设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入二级&quot;设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f9e7338ee3100d4522f834a355f4b7e)\n1.3在二级&quot;设置&quot;菜单界面遥控按方向右键移动到&quot;网络设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入三级&quot;报警设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e6fce32b804e9e0ef3e242d8c51b0ec5)\n1.4三级&quot;报警设置&quot;菜单界面遥控按方向右键移动到&quot;AI&quot;菜单，遥控按中间&quot;ENTER&quot;确认键进入&quot;AI&quot;菜单修改状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d2d0d5c9226b4c5a0cae4b5114646c30)\n1.5遥控按方向下键&amp;darr; 移动光标到&quot;选择垃圾检测通道&quot;复选框，根据需要开启哪个通道检测垃圾，保存重启设备\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9b582eca10469df1bf2a319d39b4d5a1)\n\n###### 2.查看垃圾算法AI是否正常运行\n2.1设备在实时预览主界面，如果在菜单界面按遥控方向键右下角的”RETURN”退出到实时预览主界面。\n   按遥控方向左键 ← 来到”串口、AI” 界面,查看左下角红框里面的AI状态是否正常运行，正常运行应该有如下信息：\n   AI rbs:开启的通道，算法阈值\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=89621384c9555cc4280e53450b77225a)",
+  "s_number": "7",
+  "addtime": "2025-11-04 17:47:23",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:48:37",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--AI功能配置"
+}

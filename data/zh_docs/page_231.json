@@ -1,0 +1,18 @@
+{
+  "page_id": "231",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "配置ADC功能",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 显示屏、遥控器、配套IO扩展线（部分机型自带）\n\n### 说明:\n- M15Hv机型ADC和IO输入线共用一根，其他机型都是单独ADC线\n- ADC线数量根据机型定义，有些是两根有些是一根，具体参考各个机型规格书或询问我司技术\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f109a4eb1b0a8e3d6d5019aafadaa750)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c026905ed7ee64ec33e61da7ac07d074)\n3、在【设置】界面选择【报警设置】，按“ENTER”键进入报警设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aebb5916da028f192b6b362405e329c9)\n4、在【报警设置】界面按方向右键来到【输入】界面，按“ENTER”键进入编辑状态，按方向下键移动到ADC功能选择项选择功能，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a5bba7aeac3640075c73f24ca9213516)\n",
+  "s_number": "5",
+  "addtime": "2025-11-04 17:31:36",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:44:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

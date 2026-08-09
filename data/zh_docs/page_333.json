@@ -1,0 +1,18 @@
+{
+  "page_id": "333",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "外置UPS使用",
+  "page_content": "[TOC]\n\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR设备  |  1 |外置UPS |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n| 常用接线工具  |  n |常用接线工具|  ||\n\n\n### 必要说明\n######UPS使用两种接线方式\n1. ACC断开耗电瓶电\n 出货UPS输出和输入电源线已经做好对应航空头，输出直接插入MDVR设备供电口，输入口插入配套的航空头电源线，另一头三根正负极和ACC线接入车辆电瓶正负极和ACC线,**接线参考接线图1**\n这种方式ACC关闭后UPS电池给MDVR供电，当耗到UPS电压低于电瓶电压 电瓶会开始给MDVR供电（并联原理），**注意这种方式会有耗尽电瓶电导致车辆无法启动风险，需要计算下MDVR功耗来配置ACC延时时长来避免，参考下面UPS充放电长计算方式\n**\n2. ACC断开不耗电瓶电\n 出货UPS输出和输入电源线已经做好对应航空头，输出直接插入MDVR设备供电口，输入口剪断航空头找到正负极和ACC线把\n正极和ACC接入电瓶ACC线，不用接电瓶正极，负极接负极，**参考接线图2和UPS航空头定义**\n这种方式ACC关闭后UPS电池给MDVR供电直到耗尽，不会耗电瓶电。\n\n######UPS充放电长计算方式\n**放电：**\nUPS瓦时（wh）➗MDVR瓦时(wh)=放电时长（MDVR供电时长）\n举例：\n这款UPS电池的容量为44wh，当M32HV MDVR最大功耗是18wh，UPS能供电时长是：44Wh/18Wh=2.44h\n延申：\n能量(WH)=电流(A)×电压(V)×时间(h)\n**充电：**\n按限定1.5A进行充电,不考虑同时给MDVR供电情况下（需要计算就减去给MDVR供电电流，这只是粗略计算大概值，实际要受电流抵消、方向 波动等一些因素影响）\n充电时间（h） = 电池容量（Ah） / 充电电流（A）\n即充电时长为2=3Ah➗1.5A，考虑实际充电是曲线形到涓流充电完全充满大概时长≤ 2.5h\n\n\n######UPS输入输出充放电切换说明\n电瓶给UPS输入低于9V，切换UPS给MDVR供电，供电电压：12-16.5V\n电瓶给UPS输入高于9V，切换电瓶给MDVR供电，供电电压随电瓶输入大小，同时给UPS充电。\n\n######UPS LED灯状态说明\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b7df00b97c9f4b693955bdaa0bebcc0a)\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=12e90839a5b1c5148e568d59d0b5b589)\n**MX-UPS-02**\n\n### 操作步骤\n##### 一、接线\n\n1. ACC断开耗电瓶电\n###### 接线图1\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f5edd5ecb960d9af08303c55edb1e148)\n2.ACC断开不耗电瓶电\n###### 接线图2\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f250c11cc070100426929451cefa4710)\n\n- UPS航空头定义\n航空公\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b893597c47f09deceb0258f2df7ce482)引脚定义：![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=24c1baa783aa1e9166549c739f1954b1)\n航空母头\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef9e47712880ef59617f84d5faee0788)引脚定义：![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=60b90ddf07eb59c4903316fc3b3b8182)\n\n##### 二、测试\n当接好线车辆启动状态下，钥匙拔到ACC挡断开ACC连接，查看MDVR是否显示ACC断开并进入关机倒计时，这个时候UPS开始工作。\n\n\n\n",
+  "s_number": "17",
+  "addtime": "2025-11-04 17:53:15",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:56:14",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

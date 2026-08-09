@@ -1,0 +1,18 @@
+{
+  "page_id": "211",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置定时抓拍",
+  "page_content": "[TOC]\n\n### 前提条件\n- 显示屏、遥控器、存储介质（SD卡、硬盘等）\n\n\n\n### 规则说明:\n- 支持循环固定间隔时间对指定视频通道进行抓拍图片\n- 抓拍的通道图片保存在存储介质的第二个分区pic目录下，每天一个目录，比如 2024-06-03 目录名\n- 抓拍的视频通道图片 按照此格式命名 30065_235247_369-3.jpg，其中30065是设备ID，后面235247是当天的抓拍时间时分秒，369是毫秒或者其他特定事件编号值，3表示通道号\n- 考虑到磁盘分区空间大小，设备会每隔5分钟自动检测分区剩余空间，如果剩余空间不足15%,则当次检测自动删除最老的那天录像，5分钟后将再次检测\n- 设备支持自动删除磁盘中历史抓拍的超过设备配置的图片保存天数的图片目录\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=96437dadb76d6c432c3e5005d08a0b36)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=123220c5fb0f1f707c09ee6b5e6f69c4)\n3、在【设置】界面选择【录像设置】，按“ENTER”键进入录像设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=13a193a86c1afa94cca93f1a6bbf4d5d)\n4、按方向右键来到 抓拍 设置界面 ，按“ENTER”键进入编辑状态，勾选 定时抓拍 复选框 开启抓拍功能，填入抓拍间隔时长、保存天数、分辨率，勾选抓拍通道和上传平台通道，确认保存立即生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6c5508370929246050e1e743af852522)\nps:保存天数在磁盘空间足够情况下才会生效此配置项，否则会先按上面规则检测磁盘空间不足15%提前删除；\n分辨率默认&quot;Default&quot;就是默认主码流编码分辨率，可单独配置1080P/720P/960H分辨率；\n图片抓拍上传的是CMSV7平台。",
+  "s_number": "5",
+  "addtime": "2025-11-04 17:28:44",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:09:34",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

@@ -1,0 +1,815 @@
+{
+  "section": "en_docs",
+  "pages": [
+    {
+      "page_id": "64",
+      "title": "Help Documentation",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "144",
+      "title": "function--Local remote control to view various status information",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "175",
+      "title": "function--Login menu",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "76",
+      "title": "Upgrade firmware",
+      "cat_id": "53",
+      "cat_name": "Download Center"
+    },
+    {
+      "page_id": "77",
+      "title": "Manual",
+      "cat_id": "53",
+      "cat_name": "Download Center"
+    },
+    {
+      "page_id": "78",
+      "title": "Presentation sound",
+      "cat_id": "53",
+      "cat_name": "Download Center"
+    },
+    {
+      "page_id": "80",
+      "title": "common tools",
+      "cat_id": "53",
+      "cat_name": "Download Center"
+    },
+    {
+      "page_id": "81",
+      "title": "M51HV Interface Definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "82",
+      "title": "M32HV Interface Definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "176",
+      "title": "M16HV Interface Definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "177",
+      "title": "M15HV Interface Definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "178",
+      "title": "MDVR series LED light status definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "179",
+      "title": "M20Hv LED light status definition",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "182",
+      "title": "Detailed definition of aviation header pins",
+      "cat_id": "55",
+      "cat_name": "Function--Interface Status Definition"
+    },
+    {
+      "page_id": "180",
+      "title": "GPS Antenna Installation",
+      "cat_id": "56",
+      "cat_name": "Function--Wiring Installation"
+    },
+    {
+      "page_id": "181",
+      "title": "Power cord installation",
+      "cat_id": "56",
+      "cat_name": "Function--Wiring Installation"
+    },
+    {
+      "page_id": "186",
+      "title": "Configure time, time zone, and automatic time calibration",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "187",
+      "title": "Control configuration mirroring screen",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "188",
+      "title": "Configure camera resolution and format",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "192",
+      "title": "Control configuration positioning mode, positioning upload interval",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "193",
+      "title": "Configure license plate, driver, and company information",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "194",
+      "title": "Control configuration of power on/off mode and delay",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "321",
+      "title": "Camera Mixing Configuration",
+      "cat_id": "112",
+      "cat_name": "Function--Basic Configuration"
+    },
+    {
+      "page_id": "199",
+      "title": "Configuring 4G/5G Network",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "200",
+      "title": "Check IMEI/ICCID number",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "201",
+      "title": "Configure WiFi Network",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "202",
+      "title": "Configuring Wired Network",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "315",
+      "title": "AP E-set hotspot connection configuration",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "323",
+      "title": "Routing Function",
+      "cat_id": "58",
+      "cat_name": "Function--Network Configuration"
+    },
+    {
+      "page_id": "134",
+      "title": "CMSV7 and JT808--Local remote control quick configuration registration",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "129",
+      "title": "CMSV7--Local remote registration private platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "130",
+      "title": "CMSV7--Parameters are sent to register a private platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "131",
+      "title": "CMSV7--Import local configuration to register private platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "132",
+      "title": "CMSV7--Local WEB registration private platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "138",
+      "title": "JT808--Local remote control registration platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "139",
+      "title": "JT808--Parameter issuance and registration department standard platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "140",
+      "title": "JT808--Local configuration import registration department standard platform",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "329",
+      "title": "Iceheng PTT - Remote Configuration Intercom Registration",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "142",
+      "title": "Local remote control configuration for each PTT registration for intercoms",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "325",
+      "title": "Device RTSP protocol streaming",
+      "cat_id": "98",
+      "cat_name": "Function--Registration platform configuration"
+    },
+    {
+      "page_id": "206",
+      "title": "Control configuration of recording mode",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "207",
+      "title": "Control configuration SD card mode",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "208",
+      "title": "Configure the number of days to save video",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "210",
+      "title": "Configure IPC camera parameters",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "215",
+      "title": "Control configuration timed snapshot",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "216",
+      "title": "Configure main stream video encoding and audio enable",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "217",
+      "title": "Configure sub-stream video encoding",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "218",
+      "title": "The remote control configuration screen displays OSD information",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "223",
+      "title": "Video playback",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "224",
+      "title": "Picture playback",
+      "cat_id": "57",
+      "cat_name": "Function--Video coding configuration"
+    },
+    {
+      "page_id": "220",
+      "title": "Configure alarm recording duration",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "228",
+      "title": "Configure IO alarm input",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "229",
+      "title": "Configure IO alarm linkage",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "230",
+      "title": "Configure IO alarm output",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "232",
+      "title": "Configuring ADC Function",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "234",
+      "title": "Enable Gsensor function",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "319",
+      "title": "IO input linkage alarm",
+      "cat_id": "59",
+      "cat_name": "Function--Alarm function"
+    },
+    {
+      "page_id": "148",
+      "title": "Active safety AI local remote control configuration",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "147",
+      "title": "Active safety AI local WEB configuration",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "90",
+      "title": "AI related parameter delivery configuration instructions",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "385",
+      "title": "Active Safety AI Speed ​​Threshold Profile",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "92",
+      "title": "AI driver face recognition function description",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "94",
+      "title": " AI BSD calibration instructions for drawing irregular lines with",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "150",
+      "title": "Garbage algorithm AI local remote control configuration",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "236",
+      "title": "Passenger flow statistics-AI host",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "238",
+      "title": "Customer Flow Statistics-AI Camera",
+      "cat_id": "61",
+      "cat_name": "Function--AI function"
+    },
+    {
+      "page_id": "242",
+      "title": "PTZ configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "244",
+      "title": "Temperature sensor configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "246",
+      "title": "Tire pressure sensor configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "248",
+      "title": "Oil level sensor configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "250",
+      "title": "Card swiping machine configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "252",
+      "title": "Hand mark configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "255",
+      "title": "Configuration and use of sound and light alarm",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "258",
+      "title": "Serial port expansion box configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "259",
+      "title": "RS232 485 protocol conversion box usage configuration",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "261",
+      "title": "Navigation screen configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "263",
+      "title": "TTS voice announcer configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "265",
+      "title": "OBD configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "267",
+      "title": "LED display screen (taxi roof light) configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "269",
+      "title": "LED panel configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "271",
+      "title": "Serial port peripheral 232 transparent transmission configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "317",
+      "title": "Remote oil and electricity control configuration and use",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "334",
+      "title": "External UPS",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "393",
+      "title": "ADC water level sensor",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "337",
+      "title": "Network HUB",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "394",
+      "title": "Forward and reverse speed sensor",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "645",
+      "title": "Using the AI Reminder",
+      "cat_id": "60",
+      "cat_name": "Function--Serial peripherals"
+    },
+    {
+      "page_id": "273",
+      "title": "System log view",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "275",
+      "title": "Disk partitioning and formatting",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "277",
+      "title": "Language and restart configuration",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "279",
+      "title": "Configuration export, factory reset and Gsensor calibration value export",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "281",
+      "title": "Video file export",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "647",
+      "title": "Telnet Firmware Upgrade Method",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "327",
+      "title": "TFTP upgrade method for burning program-Novatek",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "649",
+      "title": "MDVR_Info_Tool Operation and Maintenance Scanning Tool",
+      "cat_id": "113",
+      "cat_name": "Function--Daily maintenance"
+    },
+    {
+      "page_id": "155",
+      "title": "Firmware upgrade method",
+      "cat_id": "62",
+      "cat_name": "Function--Firmware upgrade"
+    },
+    {
+      "page_id": "156",
+      "title": "Active safety AI algorithm upgrade method",
+      "cat_id": "62",
+      "cat_name": "Function--Firmware upgrade"
+    },
+    {
+      "page_id": "313",
+      "title": "Mileage Custom Import",
+      "cat_id": "62",
+      "cat_name": "Function--Firmware upgrade"
+    },
+    {
+      "page_id": "283",
+      "title": "WEB login, password change and system language",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "285",
+      "title": "WEB Setup Wizard",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "287",
+      "title": "Web Basic Settings",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "290",
+      "title": "WEB network configuration",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "651",
+      "title": "WEB alarm settings",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "158",
+      "title": "WEB AI configuration",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "291",
+      "title": " Web view device system status on the",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "305",
+      "title": "WEB configuration and installation of ADAS camera",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "307",
+      "title": "WEB configuration and installation of DSM camera",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "309",
+      "title": "WEB configuration and installation of BSD camera",
+      "cat_id": "66",
+      "cat_name": "Function--WEB configuration"
+    },
+    {
+      "page_id": "240",
+      "title": "TTX Ministry Standard Transmission Tool",
+      "cat_id": "65",
+      "cat_name": "Function--Configuration Tool"
+    },
+    {
+      "page_id": "104",
+      "title": "TTX client plug-in online configuration tool",
+      "cat_id": "65",
+      "cat_name": "Function--Configuration Tool"
+    },
+    {
+      "page_id": "106",
+      "title": "The local configuration tool Mxc_Config is used to configure LAN device parameters",
+      "cat_id": "65",
+      "cat_name": "Function--Configuration Tool"
+    },
+    {
+      "page_id": "641",
+      "title": "The local configuration tool Mxc_Config generates configuration files",
+      "cat_id": "65",
+      "cat_name": "Function--Configuration Tool"
+    },
+    {
+      "page_id": "108",
+      "title": "Local configuration tool MVMS_NetPlayer",
+      "cat_id": "65",
+      "cat_name": "Function--Configuration Tool"
+    },
+    {
+      "page_id": "83",
+      "title": "Common configuration parameter instructions",
+      "cat_id": "64",
+      "cat_name": "Function--parameter command"
+    },
+    {
+      "page_id": "84",
+      "title": "Common query parameter instructions",
+      "cat_id": "64",
+      "cat_name": "Function--parameter command"
+    },
+    {
+      "page_id": "636",
+      "title": "Language-related - Issues with remote control menu failing to boot after changing to a language other than Chinese or English.",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "294",
+      "title": "Video related--Unable to recognize SD card or hard drive",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "297",
+      "title": "Video related--No picture on the channel",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "99",
+      "title": "Network related--WiFi parameters configured correctly but unable to connect",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "295",
+      "title": "Positioning related--GPS Unreliable Positioning Troubleshooting Method",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "100",
+      "title": "AI related--Querying the ID number of the AI algorithm chip resulted in an empty response.",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "299",
+      "title": "Platform related--Unable to register on the platform",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "101",
+      "title": "AI related--Failed to enter the menu through remote control operation and ended up on a certain AI calibration menu",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "160",
+      "title": "Serial Port Related--Troubleshooting Method for Oil Quantity Not Being Reported",
+      "cat_id": "68",
+      "cat_name": "Daily Maintenance--Handling Common Issues"
+    },
+    {
+      "page_id": "86",
+      "title": "Customization Specifications for Ringtone",
+      "cat_id": "76",
+      "cat_name": "Function Customization - Ringtone-Boot log"
+    },
+    {
+      "page_id": "88",
+      "title": "Batch import/export/query of alert tones",
+      "cat_id": "76",
+      "cat_name": "Function Customization - Ringtone-Boot log"
+    },
+    {
+      "page_id": "643",
+      "title": "Customize your boot logo",
+      "cat_id": "76",
+      "cat_name": "Function Customization - Ringtone-Boot log"
+    },
+    {
+      "page_id": "633",
+      "title": "WiFi speichert bilder automatisch",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "301",
+      "title": "Server-Download the latest platform installation package",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "164",
+      "title": "Server-WiFi (4G) automatic download solution configuration reference",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "624",
+      "title": "Server-WIFI Auto Download",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "162",
+      "title": "Client-MDVRPlayer playback software usage",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "303",
+      "title": "Client-APP previews the video through hotspot connection",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "388",
+      "title": "Client-operating vehicle permissions and addition",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    },
+    {
+      "page_id": "637",
+      "title": "Client-Parameter Configuration Plugin Replacement",
+      "cat_id": "82",
+      "cat_name": "Platform Function - Tongtianxing CMS V7"
+    }
+  ]
+}

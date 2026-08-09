@@ -1,0 +1,18 @@
+{
+  "page_id": "232",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "59",
+  "page_title": "Configuring ADC Function",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display screen, remote control, matching IO expansion cable (some models come with it)\n\n### Note:\n- M15Hv model ADC and IO input line share one, other models have separate ADC lines\n- The number of ADC lines is defined according to the model. Some have two lines and some have one line. Please refer to the specifications of each model or ask our technical staff for details.\n\n\n###Operation steps\n1. Press the remote control [ENTER] key to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d21340dd380b78d93ca5bb49cde9b78a)\n\n2. Select [Settings] in the main menu interface and press the &quot;ENTER&quot; key to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c7ba20e0047cb02d6ad17fdc148faa3f))\n\n3. Select [Alarm] in the [Settings] interface, and press the &quot;ENTER&quot; key to enter the alarm settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3aa8e8d6771e810adae8cae455fbad80)\n\n4. In the [Alarm Settings] interface, press the right arrow key to come to the [Input] interface, press the &quot;ENTER&quot; key to enter the editing state, press the down arrow key to move to the ADC function selection item, select the function, and confirm to save.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0ef69011380f204bbf4c5da8403e0c38)\n",
+  "s_number": "5",
+  "addtime": "2025-12-26 15:41:21",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:27:48",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Alarm function"
+}

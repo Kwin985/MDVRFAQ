@@ -1,0 +1,18 @@
+{
+  "page_id": "292",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "录像相关--不识别SD卡或硬盘",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备能正常启动；\n- 已经插入了SD或者HDD（如果设备支持的话）；\n- 可以使用的遥控、正常显示显示屏；\n\n\n\n### 操作步骤：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cf1706affbf9e49c45a2ff0fe31b8f8f)\n\n\n\n###  图文说明\n\n#####状态1 不存在\n设备接入显示屏，查看右上角最右边两个图标状态，从右到左分别是HDD》》SD图标。如下图：\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=06d402d56b0d2a0cd0a165acdd4b1270)\n\n检查设备锁开关是否在关锁位置，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b3d7afa55b96b4522b3528f13664ea3b)\n\n检查显示屏是否没出现开锁图标，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6ddb5302737e4cf5954e44768d3f4c4f)\n检查HDD or SD插入槽是是否到位（到位会有回弹手感），检查HDD 或 SD金手指触点是否有氧化、腐蚀、脱落等不良现象。如下图：\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d21482851bd51700f806cb115d17b029)\n\n##### 状态2 存在未挂载\n\n设备接入显示屏，查看右上角最右边两个图标状态，从右到左分别是HDD》》SD图标。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=36bb5b0ea30c781d40aa6b4a9e93adb7)\n遥控按回车键输入密码“999999”进入工具菜单》》》磁盘管理》》》按下键移动到格式化按钮再按回车键格式化确认 ，在弹窗出是否生效、是否重启对话框选择“是” ，设备会重启开机进行格式化并有提示正在格式化。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=29979ab851eeb123b42f92351a3209ab)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5655a0f273f7df8651eeb4f686e94ddd)\n格式化完成后查看是否能识别到HDD OR SD。如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1e85b1dbf2ce2e8f455af93cb8b0b6b0)\n\n开锁取出HDD or SD使用读写器连接电脑，查看是否能识别到，识别到使用DiskGenius.exe磁盘管理工具进行分区》》》格式化，如果能格式化成功后拔出放入设备关锁，再次操作2.1步骤 MDVR手动格式。如果电脑操作格式化报错异常则无法使用需要更换，如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4875028df8223b534efbdd2c44c6988f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b429ca40a72cbab3add5eb13d302cfea)\n\n设备SD卡介质开锁取出来查看左侧lock锁是否推在最下面（打开写保护状态），如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8d6f5bb780c15d75dae620b3817c5f61)\n",
+  "s_number": "2",
+  "addtime": "2025-11-17 16:42:52",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:12:03",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

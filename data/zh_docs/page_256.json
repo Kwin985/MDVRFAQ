@@ -1,0 +1,18 @@
+{
+  "page_id": "256",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "串口扩展盒配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  串口扩展盒和扩展外设 |  1 |常用接线工具| n |\n\n### 必要说明\n- 串口扩展盒是我司定制开发款的串口扩展外设，方便扩展接入多个232or485外设，这里以扩展接入**485温感外设**为例。\n- 12V/5V串口盒电源输入口支持5-12V宽幅电平，在接入设备可以选择12V或5V out供电。\n- 串口盒输出电压是5V，所以这里接入扩展外设供电是5V供电，需要12V供电需要接入设备 IO线束的12V线。\n- 设备菜单配置参数见下面“型号对应配置参数表”。\n**型号对应配置参数表**\n\n| 型号  |  串口索引|串口功能|协议类型|波特率|\n| ------------ | ------------ |------------ |------------ |------------ |\n|  MX-RHUB-01-V1.0 |  RS232 | 串口盒|默认| 默认|\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ce20d2dfbc412fca6688092f4cf52e73)\nMX-RHUB-01-V1.0\n\n### 操作步骤\n#### 一、接线\n**输入接线**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d66fdef16aaf7bd0ff5dc15b25dd8345)\n\n**输出接线**\n参考[温度传感器配置使用](http://pug2.4000329988.com/web/#/11/243 &quot;温度传感器配置使用&quot;)接入串口盒输出扩展的232或485线束上。串口盒输出口线束详细定义参考下面 输出接口定义。\nps:接入其他外设参考“串口外设配置”其他一些串口文档接入串口扩展盒输出线束上。\n\n#### 二、设备菜单配置\n2.1 遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能串口盒，其他参数默认，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=100821e160f6efe49c161d7e6b2fb4f4)\n2.2 遥控进入串口盒 配置&gt;&gt;串口，串口索引配置EX-RS485，串口功能温度传感器，其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1e04e81ce2a0d8634dbab45103d0341a)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=af2bbed55fbac218e6fa06e2f2a8d7f6)\nps:接入其他外设参考“串口外设配置”其他一些串口文档在串口扩展菜单配置串口或其他IO、脉冲等扩展功能使用。\n\n#### 三、测试\n重启后按遥控方向键来到串口状态查看串口盒和外设是否已连接\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2c788cdf1e467b3de98302e7c81f1473)\n\n#### 四、接口定义\n**输入接口定义**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cb9a6fc6eff3192697be3b42616453aa)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e4af1e9e7a86f15d7ece3245076f5e7)\n\n**输出接口定义**\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4d9f2e7f555c3a069859bf4460721e56)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=148132670078af2d08f968adc9090b50)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a90671e668bbd24ff3cdaf78ec83b40a)\n\n\n\n\n\n\n",
+  "s_number": "8",
+  "addtime": "2025-11-04 17:50:29",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:52:56",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

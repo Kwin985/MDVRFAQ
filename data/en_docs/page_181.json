@@ -1,0 +1,18 @@
+{
+  "page_id": "181",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "56",
+  "page_title": "Power cord installation",
+  "page_content": "### Introduction\nThis chapter will introduce the different wiring modes of our vehicle-mounted MDVR series. The device uses DC power input. The normal working range of the input voltage is +8V ~ +36V. Do not connect a power supply beyond this range. If the voltage is too low, the device will not work properly. If the voltage is too high, the device may burn out.\n##### Ignition mode (ACC switch or key switch):\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f3f510bc981847e05790f15b2ea374c2)\nDescription: In this mode, the vehicle ACC signal is used to control the opening and closing of the device. In the off state, the power consumption is 0 and the battery power is not consumed. It is recommended to use the ignition mode.\n##### Timing mode (main switch mode):\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=923ad0cba2759fe683c4042d7f59ce1d)\nDescription: This mode directly connects the positive and negative poles of the battery to the normal power supply state, which can realize timed power on and off or 24-hour normal power on. Please note that after the vehicle is turned off, the battery power will be consumed and there will be a risk of low voltage and inability to start the vehicle.\n",
+  "s_number": "2",
+  "addtime": "2025-11-04 17:58:31",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:12:40",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Wiring Installation"
+}

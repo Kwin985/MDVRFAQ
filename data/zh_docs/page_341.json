@@ -1,0 +1,18 @@
+{
+  "page_id": "341",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-分布式部署",
+  "page_content": "[TOC]\n\n\n### 操作说明：\nMysql服务使用到的默认端口是3311。\nMysql服务正常运行，并且把3311端口映射到外网，才有可能在外网远程访问主服务器的数据库。\n\n### 操作步骤\n以存储服务器为例进行说明\n##### 第一步：（主服务器上的相关操作）\n1.允许远程访问主服务器的数据库\n将 bind-address = 127.0.0.1 改成 #bind-address=127.0.0.1\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5b90c131110dd2306b25ab9b69db35c7)\n把localhost改为%\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a8cb272bd92c3c2bd0dfe9a442e6b6d4)\n改好了之后，重启一下主服务器的mysql服务。\n\n##### 第二步：（从服务器上的相关操作）\n2.让从服务器的存储服务器与主服务器建立关联\n让从服务器的存储服务器找到并连接上主服务器的登录服务器\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef37aabc59719e627eaf720e56a98b1f)\n让从服务器的存储服务器找到并连接上主服务器的数据库\n框中填主服务器的公网IP及主服务器的数据库访问端口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5164c79c65b144951b0bd4d12a186340)\n\n##### 第三步：（主服务器上的相关操作）\n3.在主服务器的服务器管理界面添加从服务器存储服务器的相关信息\n用主服务器的admin账号登录，在服务器后台的服务器管理的存储服务器上添加配置对应的从服务器的存储服务器信息\n1为编号要跟从服务器控制台的存储服务器配置里面的编号一致\n2和3为从服务器的公网IP\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2d4333627372b6ea39b97bd8627d1a84)\n服务器后台添加的从服务器存储服务器的端口（客户端访问端口和设备访问端口）要跟从服务器软件控制台的存储服务器配置里面的端口（客户端访问端口和设备访问端口）保持一致。\n如果从服务器跟主服务器不在同一个局域网内的话：\n从服务器的存储服务器的访问端口（客户端访问端口和设备访问端口）可以允许跟主服务器的存储服务器的访问端口（客户端访问端口和设备访问端口）一样。\n如果从服务器跟主服务器在同一个局域网内的话：\n就不能使用一样的访问端口。\n",
+  "s_number": "5",
+  "addtime": "2025-11-17 16:50:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:16:34",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

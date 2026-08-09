@@ -1,0 +1,18 @@
+{
+  "page_id": "267",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "LED display screen (taxi roof light) configuration and use",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR device | 1 | MDVR 232 IO harness | 1 |\n| Remote controller | 1 | Display | 1 |\n| LED display (taxi roof light) | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- Here we take **MX-LED-taxi-jrcx-232** as an example\n- LED display screen DC head + independent adapter power supply\n\n** Actual picture **:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=5e884e7e17f2695dd4721fdbeb778947)\nMX-LED-taxi-jrcx-232\n\n### Operation steps\n#### 1. Wiring\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7ed2258b9492b391f3dfbdf8e48e396f)\n\n#### 2. Device menu configuration\n2.1 Remote control enters menu&gt;&gt;Settings&gt;&gt;Serial&gt;&gt;Serial, serial port index configuration RS232, serial port function LDE display, baud rate configuration 2500, other parameters default, confirm and save.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=4020f670e94f5a145d31f733886bec00)\n\n2.2 Press the return key on the remote control to enter Settings&gt;&gt;Network Settings&gt;&gt;Center Menu interface, move to the bottom column to fill in the transparent transmission address and port provided by the manufacturer, confirm and save and restart to take effect.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=8d60cf3a94b7e5600abf9ba16915a10a)\n\n#### 3. Test\n3.1 Log in to the LED wireless advertising client, click Edit Program&gt;&gt;Write the title number (such as Promotion)&gt;&gt;Enter the advertising slogan (such as Congratulations and Get Rich), and save it.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d55481656c6b79aefc472f953b0127eb)\n\n3.2 Click Publish Program again&gt;&gt;Check the role in the default group&gt;&gt;Check the title number under the index, and publish the program.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=d6febf91ba8c843ebebc42093249055b)",
+  "s_number": "13",
+  "addtime": "2025-09-26 16:36:55",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:36:55",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

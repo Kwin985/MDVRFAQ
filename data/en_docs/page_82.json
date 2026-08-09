@@ -1,0 +1,18 @@
+{
+  "page_id": "82",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "M32HV Interface Definition",
+  "page_content": "### Introduction\nThis chapter will introduce the definition of the rear panel interface and front panel slot of our car-mounted MDVR series!\n\n#####M32HV interface definition:\n######Back panel\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=30980d4f07e3b082ac3da2503cb673a0)\nInstructions for use: The two on the left are the GPS and 3/4G antenna sockets. Use the matching GPS and 3/4G antennas to insert and tighten clockwise (AUX expansion port is for expansion use, WIFI port is for models with WiFi module). The right side is a one-to-two USB adapter and an RJ45 network cable adapter, power supply, video input, IO expansion integrated wiring harness, AV1-4 video input, and CVBS display output port, as shown above.\n\n######Front panel\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=7aa8f6cab9117fa33230415e4544f65e)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fc9d70b0cf615afa747dd3c6afed1686)\nInstructions: The right side is the switch lock. Use the matching key with the notch facing upwards and gently press it. Insert it counterclockwise to the vertical notch to unlock it. Open the head of the right buckle and then open the door. The internal test is the SIM card, SD1/2 card, and hard disk insertion port. Use the SIM (large card) and SD card notch to the right. Use a 2.5-inch hard disk (SSD OR Insert the HDD into the hard disk port with the notch facing downwards. After completion, close the door, buckle the buckle on the right, and use the key to turn it clockwise to the horizontal notch to lock it. The USB port on the left is used to insert U disk and other media to upgrade firmware, import configurations, and other operations, as shown above.\n",
+  "s_number": "2",
+  "addtime": "2025-11-04 17:56:29",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:10:50",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

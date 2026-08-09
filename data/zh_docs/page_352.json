@@ -1,0 +1,18 @@
+{
+  "page_id": "352",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-报表名称修改",
+  "page_content": "[TOC]\n\n### 操作步骤：\n1、打开平台软件安装位置\n如下图所示位置，依次进入 tomcat &gt; webapps &gt; gpsweb &gt; 808gps &gt; js 文件夹\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=33acf97198a685d1248dbb1c6e4c22c9)\n2、在 js 文件夹中，找到 lang.js 文件，并打开（其他的lang 文件分别是别的语言的文件）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d024ac69339fe8133582da6a8fac84ec)\n3、查看对应要修改的报表名称，以 司机报表 为例\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=702f57ca4b79f68436f18319e5ed36fa)\n4、在打开的 lang.js 文件中，按CTRL+F，输入 司机报表，定位到相应的位置，并把司机报表相应的文字进行修改，如下图中修改成了 站点报表，修改后保存，并重启平台软件\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=69a212d475b2f0891ab8f9671439d7c7)\n5、最后，电脑浏览器关闭已打开的页面，重新访问WEB即可，如下图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c17b8e91b2a4b75519ca95daf40db0a8)\n\n\n\n",
+  "s_number": "18",
+  "addtime": "2025-12-17 13:58:22",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:20:19",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

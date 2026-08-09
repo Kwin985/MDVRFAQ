@@ -1,0 +1,18 @@
+{
+  "page_id": "354",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-单独部署WIFI下载服务器",
+  "page_content": "[TOC]\n\n### 说明：\n- 现有A和B两台服务器，设备注册到A服务器，需要把录像通过WIFI自动下载的方式储存到B服务器\n- 用admin管理员账号登录\n\n### 操作步骤：\n##### 1. 在A服务器增加wifi下载站点\n信息管理——服务器管理——下载站点——添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e0e2cb1f776c42a9889d44261fdcba81)\n注意：wifi下载站点的SSID必须和设备上报时使用的wifi名称保持一致，否则不会执行下载计划\n下载站点的名称可以自行定义\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fea17ee10568a577ea4950b8901a062b)\n\n##### 2. 在A服务器上修改或者添加wifi下载服务器\n由于默认已存在一个下载服务器，所以可以直接点击修改\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=39c048a7908488a3c28f66221c05e8f9)\n1——和前面添加的站点保持一致\n2——填写B服务器的IP地址\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=69df5d09ea0135afa63c8e94fcb9996d)\n\n##### 3. 在A服务器上增加wifi下载规则\n规则管理——规则维护——wifi下载——添加\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3d8d94e97965cdafef60f10f72ee975e)\n1——命名规则名称\n2——设置要下载的时间段\n3——选择要下载的类型\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b23758c2c7ca41edd067d6af3668ef5)\n\n##### 4. 在A服务器上分配wifi下载规则\n 点击此处进行规则分配\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1901cdd2c73a1b55e848255f6ada3981)\n选择好需要分配该规则的车辆之后点击分配（在框中选择需要分配此规则的设备）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ccae8f71be39242065c405ed42c43f89)\n\n##### 5. 在B服务器软件上设置wifi下载路径和状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e40b3bb9d86bd162039b3c7dca655b7d)\n1——填写A服务器的地址\n2——跟A服务器的端口和编号对应\n3——跟A服务器对应\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a1dac2745860983e47e1ef0b63144858)\n\n点击框起来的部分查看状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bb38fb34f1b9a652845b7af303b86da7)\n1——可以选择下载路径\n2——下载最近三天的录像文件\n3——个设备同时可以下载的文件个数\n4——支持几个设备同时下载\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fddbfd52e7a666163b413e60d0de4de3)\n\n##### 6.去录像回放中回放下载好的录像\n1——点击录像回放\n2——选择相对应的设备\n3——选择下载服务器（录像）\n4——点击搜索\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0ac524b0a459045b787f824602c7201c)\n\n\n",
+  "s_number": "9",
+  "addtime": "2025-11-17 16:51:34",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:17:38",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

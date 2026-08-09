@@ -1,0 +1,18 @@
+{
+  "page_id": "338",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "正反转转速传感器",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR设备  |  1 |MDVR ADC IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n| 正反传感器 |  1 |常用接线工具| n |\n\n### 必要说明\n- 这里以**MX-TSH51-SX**为例\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c4a8243fdfaf8ada60d9285eb7465e6d)\n\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eb542ac935e27acfa125a7756b28568d)\n\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;报警设置&gt;&gt;输入,配置ADC1功能：正反转，ADC2功能：脉冲输入，确认保存。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a67efef3ebf808b29c3287545404a7c0)\n\n#### 三、测试\n车辆启动滚动检测罐或模拟拨动罐子，触发报警平台气泡框会有实时状态显示（如下图），历史数据在正反转报表查看。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3126366a941fb754164189cb324c247a)\n\n\n\n\n\n\n\n\n\n\n",
+  "s_number": "20",
+  "addtime": "2025-11-04 17:54:13",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:57:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

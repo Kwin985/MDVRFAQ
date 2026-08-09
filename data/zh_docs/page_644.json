@@ -1,0 +1,18 @@
+{
+  "page_id": "644",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "AI提醒器使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR AI设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  AI提醒器 |  1 |常用接线工具| n |\n\n### 必要说明\n- AI提醒器是在MDVR AI设备触发AI报警联动使用，所以设备本身要支持AI功能和配置相关参数来触发报警。\n- 出货一般会把MDVR 232 线束做好4PIN头直接插入使用\n- 相关文档链接：[固件下载](http://pug2.4000329988.com/fqa/web/#/11/65 &quot;固件下载&quot;)/ [升级指南](http://pug2.4000329988.com/fqa/web/#/11/153 &quot;升级指南&quot;)/ [AI配置](http://pug2.4000329988.com/fqa/web/#/11/145 &quot;AI配置&quot;)\n\n**型号对应配置参数表**\n\n| 型号  |  串口索引|串口功能|协议类型|波特率|\n| ------------ | ------------ |------------ |------------ |------------ |\n|  MX-AITXQ-02-V1.0 |  RS232 | KWatch|Type4| 57600|\n\n**实物图**：\nAI提醒器实物图\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=1e33699c2f917b76e918da84fa33d797)\nMDVR IO尾线实物图\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=61c85454b5bcbb67bdebf5d0ed97a7ff)\n\n### 操作步骤\n#### 一、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能KWatch、协议类型Type4、波特率57600，确认保存重启设备生效。\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7bc034cd6805d36f41165388e80dc5bc)\n\n#### 二、报警器测试\n重启后触发任意一项AI报警即可联动AI提醒器报警，报警功能开启使用参考\n例如触发MDVR AI前车碰撞、车道偏移、BSD报警AI提醒器会有相应的图标显示\n\n#### 三、安装注意\n**左右人形区分方法**\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=4c2c6fcfaa4ec65941fac6437baecf1c)左人形贴有易碎标签，右人形未贴标签\n** IR与光敏传感器位置**\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=cb8f2ce6f1e9e5349dc0e447691e7ae6)IR接收器设备正面上方，用于接收遥控信号；光敏传感器设备正面下方，用于环境光检测\n**显示屏保护**\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=039ca652ba736d72732bf5ed8623ea9b)AI提醒器显示屏贴有保护膜，使用前请勿撕除，以防刮伤屏幕。\n\n#### 四、自检模式测试\n###### 自检模式进入方法\n1.将遥控器对准设备的IR接收位置\n2.按遥控器 MUTE键 进入自检模式\n3.系统将遍历显示报警图片及左右人形提示器\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=6b44ab6ae16d0c7152cf5fcf394a77ad)\n###### 自检验证标准\n| 检查项  |  正常状态 |\n| ------------ | ------------ |\n| 报警图片显示  | 依次正常显示  |\n| 左人形提示器  | 先亮（贴易碎标签侧）  |\n| 右人形提示器  | 后亮（未贴标签侧）  |\n###### 退出自检\n再次按遥控器 MUTE键 退出自检模式，返回正常工作状态。\n\n#### 五、常见问题排查\n| 现象  | 可能原因  |  解决方法 |\n| ------------ | ------------ | ------------ |\n| 自检时左右人形不亮  | 连接线松动  |  检查线束对插是否牢固 |\n|  显示屏无显示 | 保护膜遮挡或硬件故障  |  检查保护膜，确认供电正常 |\n|  AI识别不灵敏 | 人脸库未导入或阈值设置不当  |  重新导入人脸照片，调整灵敏度 |\n|  串口通信失败 | 波特率不匹配  |  确认主机和提醒器波特率一致 |\n\n\n\n\n\n\n",
+  "s_number": "21",
+  "addtime": "2026-07-22 18:47:34",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-07-22 17:51:45",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

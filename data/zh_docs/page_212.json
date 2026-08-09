@@ -1,0 +1,18 @@
+{
+  "page_id": "212",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "25",
+  "page_title": "遥控配置主码流视频编码和音频开启",
+  "page_content": "[TOC]\n\n### 前提条件\n- 可使用的遥控、正常显示显示屏\n- 摄像头插入且出画面（参考基本配置---[遥控配置摄像头分辨率、制式](http://pug2.4000329988.com/fqa/web/#/11/185 &quot;遥控配置摄像头分辨率、制式&quot;)）\n\n\n### 说明:\n- 这里CH1 CH2 CH3...通道指的是设备后板摄像头插入对应视频输入口AV1 AV2 AV3...详情请见“接口状态定义”文章\n- 开启对应通道的音频前提插入对应的摄像头带有麦支持音频,目前M51HV系列机型支持最大CH1-4四通道音频，其他机型最大支持CH1-2两通道音频具体规格可询问我司人员\n- 默认会开启所有通道视频编码，这里关闭某个通道视频编码会导致无画面，关闭通道要按从下到上顺序关闭 不能从中间关闭某个通道，例如开启CH1 CH2 关闭CH3 开启CH4视频编码，会引起系统异常\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=96437dadb76d6c432c3e5005d08a0b36)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=123220c5fb0f1f707c09ee6b5e6f69c4)\n3、在设置界面移动到【编码设置】，按“ENTER”键进入主码流设置\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=06e9aff8e26e6570d5e0600feebd7215)\n4、在主码流设置界面按“ENTER”键进入编辑状态，移动方向下键来到通道分辨率选择项 选择需要的分辨率，对应的帧率和码率会自动匹配最佳值，这里不推荐在单独修改帧率和码率，移动到右侧复选框开启对应通道的音频和视频编码，确认保存重启生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0c67916ee6d1a406fa29dd3fb0941121)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=af03cffcc91c4043ed9dfa6d617cea9c)\n\n",
+  "s_number": "6",
+  "addtime": "2025-11-04 17:29:03",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-22 17:09:59",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--录像编码配置"
+}

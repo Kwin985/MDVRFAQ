@@ -1,0 +1,18 @@
+{
+  "page_id": "641",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "65",
+  "page_title": "The local configuration tool Mxc_Config generates configuration files",
+  "page_content": "#### Prerequisites:\n\n- The device’s SD or TF card must already be partitioned into two separate partitions. You can insert it into a computer to verify this, as shown in the image below. If you have not used it before, first insert it into the device and power it on; the partitions will be automatically formatted. Once the device starts recording, shut it down and remove the card.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=40b09d509f2010fc1f434df1c74f7692)\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=b8f8d838cf3881b89857052c86bdbe7f)\n- Reference for importing device configurations:[CMSV7--Import local configuration to register private platform](http://pug2.4000329988.com/fqa/web/#/13/131 &quot;CMSV7--Import local configuration to register private platform&quot;)\n\n\n\n\n#### Steps:\n\n1. Click to download the [MmxConfig](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=025cf1442dcea388ae2941e15105009f &quot;[MmxConfig_V1.0.10.rar&quot;) Configuration tool: After unzipping and installing, click “Mxc_Config” to open the tool.![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ec1fdc33db828ea10df23c6adadd31de)\n2. After opening the tool, click “New Config”\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=78a16a4c306bf2f6d684f1daad0adf43)\n3. Once you’re on this screen, configure the parameters within the red box to connect the device to the network: After setting the parameters, click SET; the icon will turn gray, and then click Save Config.\nNote: 3G/4G settings generally do not need to be configured and can remain at their default values. Do not click SET if no configuration is required (for special APN settings, modify the relevant parameters as shown in the demonstration image).\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=551a934910a78eb3bb41b4462c41ffd9)\nps:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=35535a66b9453403da0a14d07a49112d)\n4. After saving the file, copy it (config.xml) from the Tools folder to the memory card, insert the card into the device, and the configuration will be imported automatically when the device is turned on.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=49ed1f234b567f485128b52d508b5cd6)\n",
+  "s_number": "4",
+  "addtime": "2026-06-24 16:13:12",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-06-24 15:57:15",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Configuration Tool"
+}

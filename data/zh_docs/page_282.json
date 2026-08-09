@@ -1,0 +1,18 @@
+{
+  "page_id": "282",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "46",
+  "page_title": "WEB登陆、修改密码和系统语言",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n- 或设备带WiFi模块切换成AP模式，电脑连接AP热点访问192.168.42.100地址\n\n### 操作步骤：\n##### WEB登入\n1、打开电脑游览器输入设备本地网络IP地址或AP热点地址来到WEB登入界面，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=20bf4f571655954ba109e9b1d3b92ad0)\n\n2、在登陆页面输入用户名和密码进入设置页面，默认用户名：admin，默认密码：Adm_123 \n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6e3a6ac6d8e54681291ae05b00debb94)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=31399593d635510f4ecd66b864fa85fb)\n\n##### WEB登入密码修改\n3、在登陆页面点击 更改密码&gt;&gt;填入旧密码和符合要求的新密码&gt;&gt;完成，修改密码成功请牢记修改后的WEB登入密码。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=51a854eaf7cf16a0e99f2bbcd8455989)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=69e9ebd065c0b07c8a00da2a51259fd7)\n\n##### WEB系统语言更改\n4、点击右上角的 语言设置&gt;&gt;选择语言，完成语言修改。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bc098e3a5efd47a9b0aa0e385409d367)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9b840e9c87739501a3efa1b514095bae)",
+  "s_number": "1",
+  "addtime": "2025-11-11 18:39:19",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:02:50",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--WEB配置"
+}

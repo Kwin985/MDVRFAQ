@@ -1,0 +1,113 @@
+{
+  "section": "zh_videos",
+  "pages": [
+    {
+      "page_id": "27",
+      "title": "帮助视频",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "32",
+      "title": "设备升级--本地SD卡拷贝",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "33",
+      "title": "设备升级--平台远程下发",
+      "cat_id": "0",
+      "cat_name": ""
+    },
+    {
+      "page_id": "28",
+      "title": "1-ADAS中文配置",
+      "cat_id": "10",
+      "cat_name": "AI--ADAS功能"
+    },
+    {
+      "page_id": "37",
+      "title": "2-ADAS中文校准",
+      "cat_id": "10",
+      "cat_name": "AI--ADAS功能"
+    },
+    {
+      "page_id": "38",
+      "title": "3-ADAS中文功能演示",
+      "cat_id": "10",
+      "cat_name": "AI--ADAS功能"
+    },
+    {
+      "page_id": "39",
+      "title": "4-ADAS中文平台",
+      "cat_id": "10",
+      "cat_name": "AI--ADAS功能"
+    },
+    {
+      "page_id": "30",
+      "title": "1-DSM中文配置",
+      "cat_id": "12",
+      "cat_name": "AI--DSM功能"
+    },
+    {
+      "page_id": "40",
+      "title": "2-DSM中文校准",
+      "cat_id": "12",
+      "cat_name": "AI--DSM功能"
+    },
+    {
+      "page_id": "41",
+      "title": "3-DSM中文功能演示",
+      "cat_id": "12",
+      "cat_name": "AI--DSM功能"
+    },
+    {
+      "page_id": "42",
+      "title": "4-DSM中文平台",
+      "cat_id": "12",
+      "cat_name": "AI--DSM功能"
+    },
+    {
+      "page_id": "31",
+      "title": "1-BSD中文配置",
+      "cat_id": "13",
+      "cat_name": "AI--BSD功能"
+    },
+    {
+      "page_id": "43",
+      "title": "2-BSD中文校准",
+      "cat_id": "13",
+      "cat_name": "AI--BSD功能"
+    },
+    {
+      "page_id": "44",
+      "title": "3-BSD中文功能演示",
+      "cat_id": "13",
+      "cat_name": "AI--BSD功能"
+    },
+    {
+      "page_id": "45",
+      "title": "4-BSD中文平台",
+      "cat_id": "13",
+      "cat_name": "AI--BSD功能"
+    },
+    {
+      "page_id": "46",
+      "title": "检测服务器端口",
+      "cat_id": "126",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "47",
+      "title": "切界面换风格",
+      "cat_id": "126",
+      "cat_name": "平台功能--通天星CMSV7"
+    },
+    {
+      "page_id": "48",
+      "title": "自定义服务器端口",
+      "cat_id": "126",
+      "cat_name": "平台功能--通天星CMSV7"
+    }
+  ]
+}

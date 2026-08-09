@@ -1,0 +1,18 @@
+{
+  "page_id": "361",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "客户端-设备实时录像上传",
+  "page_content": "[TOC]\n\n### 操作步骤\n1.关联设备到存储服务器\n用管理员账号登录，点击 信息管理 》服务器管理 》存储服务器 》终端关联，把要实时录像上传的设备关联到存储服务器，具体如下图步骤\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=552ae348ed87e16ba395db797c81bc6e)\n\n2.创建录像规则\n点击 信息管理 》规则管理 》定时录像 》添加 ，填写规则的名称，要录像的范围，选择要录像的通道及码流类型，点击保存即可\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=824df8fa703e74f5fdd63aec733aa9f7)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=80ca8d5763b98332b4ea767a59dfb42f)\n\n3.查询回传的录像文件\n3.1 点击“录像回放”\n3.2 选择配置了规则的设备\n3.3 选择相对应的日期时间\n3.4 选择“存储服务器（录像）”\n\n4.点击搜索\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f47e3db22891b7fac7a3edfb15bf18c7)\n\n\n\n\n\n",
+  "s_number": "28",
+  "addtime": "2025-12-17 14:03:27",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:23:01",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

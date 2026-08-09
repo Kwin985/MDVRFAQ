@@ -1,0 +1,18 @@
+{
+  "page_id": "283",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "66",
+  "page_title": "WEB login, password change and system language",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n- Or the device with WiFi module is switched to AP mode, and the computer connects to the AP hotspot to access the 192.168.42.100 address\n\n### Operation steps:\n##### WEB login\n1. Open the computer browser and enter the local network IP address of the device or the AP hotspot address to come to the WEB login interface, fill in the login password &quot;Adm_123&quot; and click &quot;Login&quot; , refer to the &quot;Function Usage&quot; &gt;&gt;&gt; &quot;Network Function&quot; article introduction for the local network IP address of the device\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f0590fdf9873548d6ac91a18097e0ff1)\n\n2. Enter the username and password on the login page to enter the settings page. The default username is: admin, and the default password is: Adm_123\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=afe8e540dccb5cd2917cf030caee2053)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=54437553573f9c2c7f3c0be9ec2c7d00)\n\n##### WEB login password modification\n3. Click Change Password on the login page&gt;&gt;Fill in the old password and the new password that meets the requirements&gt;&gt;Complete. If the password is successfully modified, please remember the modified WEB login password.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=66cb412d86393ae86b021474319c3903)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=91b492fc5fbaff0d1cfc714048e13935)\n\n##### Change the language of the WEB system\n4. Click Language Settings&gt;&gt;Select the language in the upper right corner to complete the language change.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=33f85166c7ce2c85e4d5fe83f68280d5)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=3b6d28e390cf96060880a125bc5f5503)\n",
+  "s_number": "1",
+  "addtime": "2025-11-11 17:51:11",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:42:59",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--WEB configuration"
+}

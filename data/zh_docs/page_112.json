@@ -1,0 +1,18 @@
+{
+  "page_id": "112",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "CMSV7--本地WEB注册平台",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍！\n- 设备和电脑在同一个局域网段下，电脑能ping通设备本地IP地址\n\n### 操作步骤：\n1. 打开电脑游览器输入设备本地网络IP地址，填入登入密码&quot;Adm_123&quot; 点击&quot;登入&quot; ，设备本地网络IP地址查看参考”功能使用”&gt;&gt;&gt;”网络功能”文章介绍\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cf5feb186e3df63dc5788f0c97a77615)\n1. 点击&quot;普通设置&quot;&gt;&gt;&gt;&quot;基本设置&quot;&gt;&gt;&gt;&quot;基本信息栏&quot;&gt;&gt;&gt;&quot;设备编号&quot;栏填入设备号保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=87a2f2569a1ee0786561c9041343596b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=32ae9638e5e35a2a06971fa3a093bd5d)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4f1c32053a00ae07eed41ea1ff201bc4)\n1. 返回到上级菜单点击&quot;网络设置&quot;&gt;&gt;&gt;&quot;平台设置&quot;栏 选择IP或域名注册、填入IP或域名地址、填入端口号保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e275b4d614947f04b2b7767bcf6818f3)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=214f07633d35dec47d0742bce1f4ef6f)\n1. 返回到上级菜单点击右上角&quot;系统信息&quot;&gt;&gt;&gt;&quot;CMS模块&quot;栏点击展开 查看 第一项 状态是否连接 成功 即CMSV7平台注册是否成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=02c1e8f13b63f5a456235debff50f7eb)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=22460d0a8dc8838b94678c45da329eb8)",
+  "s_number": "5",
+  "addtime": "2025-10-11 10:55:29",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:34:11",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

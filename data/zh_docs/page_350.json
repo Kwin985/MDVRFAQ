@@ -1,0 +1,18 @@
+{
+  "page_id": "350",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-亚马逊云短信配置",
+  "page_content": "[TOC]\n\n#### 1.从亚马逊网站获取访问密钥\n\n访问密钥包含两部分：\n访问密钥ID（例如 AKIAIOSFODNN7EXAMPLE）\n秘密访问密钥（例如 wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY）\n与用户名和密码一样，您必须同时使用访问密钥 ID 和秘密访问密钥对请求执行身份验证。\n\n#### 2.在服务器smsconf.ini中配置访问密钥\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=bb054b0828cf06539b58888fe63d78dd)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=380469cee52c42e78ba79c9569ec0a81)\n\n#### 3.在GPSGatewaySvr.ini文件中添加以下配置项，保存后重启网关服务器\n[CONFIG]\n;网关服务器是否加载sms短信发送插件,默认为0(不加载)\nLoadSMS=1\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=41e09c44f28d0395fcd2f09fa6d2f9fb)\n\n##### 注意事项：\n\n手机号码前需要添加国家码，不然11位的会默认附加+86(中国号码)，报警联动手机号码栏无法输入“+”，可以使用“00”代替，如下图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=574b51de47d324b16c82f9975c92a74d)\n\n判断短信是否已发送\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=53dc3fff7e6a3932d987ffbbc2511a37)\n配置LOG.INI中LEVEL=0，查看GPSGatewaySvr——libsms文件名日志，Ret=0即表示已发送，如下图：\n\n\n相关链接：\nhttp://docs.aws.amazon.com/zh_cn/IAM/latest/UserGuide/id_credentials_access-keys.html\n",
+  "s_number": "17",
+  "addtime": "2025-12-17 13:57:58",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:20:06",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

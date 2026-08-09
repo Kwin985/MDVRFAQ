@@ -1,0 +1,18 @@
+{
+  "page_id": "269",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "60",
+  "page_title": "LED panel configuration and use",
+  "page_content": "[TOC]\n\n### Installation list\n| Name | Quantity | Name | Quantity |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR device | 1 | MDVR 232 IO harness | 1 |\n| Remote controller | 1 | Display | 1 |\n| LED panel | 1 | Common wiring tools | n |\n\n### Necessary instructions\n- Generally, the MDVR 232 IO harness will be shipped with a plug directly plugged into the ED panel. If not, please contact our technical staff for help.\n\n**Actual image**:\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=0723f9cfc0b6b1da95f66ec6a8dcc628)\n03.A.M61.LP-030\n\n### Operation steps\n#### 1. Wiring\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=7845895a47bc09f6593f0709885e2f4c)\n\n#### 2. Device menu configuration\nRemote control to enter menu&gt;&gt;Settings&gt;&gt;Serial&gt;&gt;Serial, serial port index configuration RS232, serial port function LDE panel, baud rate configuration 9600, other parameters default, confirm to save and restart the device to take effect.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=81f8454c4fa9d5f7e35a7233371b0c6c)\n\n#### 3. Test\nAfter the device is restarted, check whether the LED status is displayed normally and whether the ALM button can trigger an alarm. For detailed LED status definition, refer to the following status definition\n\n#### 4. Status definition\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=464c668eb199dfb27b3a5d1333f48c58)",
+  "s_number": "14",
+  "addtime": "2025-09-26 16:37:13",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:37:13",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Serial peripherals"
+}

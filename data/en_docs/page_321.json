@@ -1,0 +1,18 @@
+{
+  "page_id": "321",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "112",
+  "page_title": "Camera Mixing Configuration",
+  "page_content": "[TOC]\n\n### Description\n- Camera mixed insertion means that AHD cameras of the same format but different resolutions can be inserted into any channel of the device, but the device needs to be configured. All currently shipped models support it.\n\n### Operation steps\n#### Remote control configuration method\nUse the remote control to enter the device's settings menu, Recording Settings &gt; Camera, as shown below\nFor example, if channel 1 is connected to a 960 camera, please check 960H, if channel 2 is connected to a 720P camera, please check 720P, if channel 3 is connected to a 1080P camera, please check 1080P, and so on. . . Note: Please restart the device after saving the settings\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=af951e42e762ba3e0c0b89ae20727e27)\n\n#### Remote configuration method\nRight-click the online device on the client, click Parameter Configuration, and then follow the steps below\n1. Click &quot;Encoding Settings&quot;;\n2. Click &quot;Camera Type&quot;;\n3. Select the type of channel to use;\n4. After setting, click &quot;Set Parameters&quot;;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=85ea52c7c6983ac83e2018aa1e23570b)\n",
+  "s_number": "7",
+  "addtime": "2025-11-04 18:00:39",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:14:29",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Basic Configuration"
+}

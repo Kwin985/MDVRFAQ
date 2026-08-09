@@ -1,0 +1,18 @@
+{
+  "page_id": "208",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "57",
+  "page_title": "Configure the number of days to save video",
+  "page_content": "[TOC]\n\n### Prerequisites:\n- Display, remote control, storage media (SD card, hard disk, etc.)\n\n### Operation steps\n1. Press the remote control [ENTER] button to enter the login interface, enter the password &quot;999999&quot;, and automatically log in to the main menu\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=de5385f5da980f88b81f446830608e6f)\n\n2. Select [Settings] on the main menu interface and press the &quot;ENTER&quot; button to enter the settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=54a57d4f22fb1af167a029fa05029135)\n\n3. Select [Record] in the [Settings] interface, and press the &quot;ENTER&quot; key to enter the recording settings interface\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9ae9336c796f92916b36cf95616d5c15)\n\n4. Select [Record] in the [Recording Settings] interface to enter the recording interface, check the number of days to save the recording, set the required number of days, and press OK to save and take effect.\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=13ee4c148a8a57f2c1dede949b6f5e75)\n",
+  "s_number": "3",
+  "addtime": "2025-12-25 16:53:15",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:23:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Video coding configuration"
+}

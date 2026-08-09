@@ -1,0 +1,18 @@
+{
+  "page_id": "225",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "27",
+  "page_title": "配置IO报警输入",
+  "page_content": "[TOC]\n\n### 前提条件：\n- 显示屏、遥控器、配套IO扩展线（部分机型自带）\n\n### 说明:\n- 输入1：IO扩展线白色那根sensor in1线，输入2 sensor in2...(参考上面接口状态定义-后板 文章)\n- 使能：开启哪根IO报警输入\n- 电平：给IO报警线输入电平信号是高电平还是低电平，H 高电平、L 低电平，默认配置H高电平当输入高电平信号会触发报警，配置L低电平当输入低电平信号会触发报警，高电平电压范围：3.3〜36V，低电平电压范围：0〜3.3V\n- 功能：IO输入线接的什么功能使用，例如IO1配置的左转功能线就应该接入车辆左转电平信号线，后面IO联动会关联此功能联动使用。\n\n###操作步骤\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f109a4eb1b0a8e3d6d5019aafadaa750)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c026905ed7ee64ec33e61da7ac07d074)\n3、在【设置】界面选择【报警设置】，按“ENTER”键进入报警设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=aebb5916da028f192b6b362405e329c9)\n4、在【报警设置】界面按方向右键来到【输入】界面，按“ENTER”键进入编辑状态，按方向下键移动使能复现框再次按“ENTER”键勾选开启、移动到电平框选择高 低电平、移动到功能选择开启的功能，其他几个报警输入操作类似，确认保存生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=42384d460862f49eaa9a6546e00ad207)",
+  "s_number": "2",
+  "addtime": "2025-11-04 17:30:47",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:43:39",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--报警功能配置"
+}

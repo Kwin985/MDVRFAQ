@@ -1,0 +1,18 @@
+{
+  "page_id": "109",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "50",
+  "page_title": "CMSV7--本地遥控注册平台",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 设备网络能正常上网，例如：4G拨号成功出网 or 有线网络路由出网 or WiFi连接成功出网，参考&quot;功能使用&quot;&gt;&gt;&gt;&quot;网络功能&quot;文章介绍！\n- 可以使用的遥控、正常显示显示屏\n\n\n### 操作步骤：\n\n1. 遥控按中间&quot;ENTER&quot;确认键来到登入界面，输入默认管理员密码 &quot;999999&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=eef7b8405cd4b980e502d9627d5fd1eb)\n1. 在一级菜单界面遥控按方向键移动到&quot;设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入二级&quot;设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8f9e7338ee3100d4522f834a355f4b7e)\n1. 在二级&quot;设置&quot;菜单界面遥控按方向右键移动到&quot;网络设置&quot;按钮，遥控按中间&quot;ENTER&quot;确认键进入三级&quot;网络设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9a8aeee3a609806ca1f4772109d7f0af)\n1. 在三级&quot;网络设置&quot;菜单界面遥控按方向右键移动到&quot;中心&quot;界面，遥控按中间&quot;ENTER&quot;确认键进入&quot;中心&quot;菜单修改状态\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d4bf413431f3bf93f33a7524237c43bf)\n1. 在修改状态下按方向下键来到&quot;设备号&quot;输入框输入注册平台设备号，如果输入是纯数字可以按遥控方向键左下角的&quot;del&quot;删除键快速删除默认数字，在按数字键输入设备号\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=76ffaffbb78c9d6bf18ce67385c329d8)\nps:输入不是纯数字时候，光标对着输入框按遥控中间”ENTER”确认键进入&quot;输入字符&quot;菜单，默认界面是小写英文输入字符菜单移动方向键来需要输入的英文字符，再次按遥控中间&quot;ENTER&quot;确认键英文字符输入成功；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d13b32c46970d17b6648a1e8afdce18b)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=73c0e0a7bc7b9d6b4d7f319bea41f591)切换数字、字母、符号按钮，遥控移动光标到此按&quot;ENTER&quot;确认键切换\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=497eb6a7a41a6d78977d0c143b378696)删除字符按钮，遥控移动光标到此按&quot;ENTER&quot;确认键删除\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=98aec8d29706b3b8a857063853ed5272)返回按钮，遥控移动光标到此按&quot;ENTER&quot;确认键返回\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=962717c71544deaf110f14b513138178)\n1. 按方向下键来到&quot;连接方式&quot;框，默认IP连接注册平台，如果需要域名注册平台按遥控&quot;ENTER&quot;确认键切换连接方式域名否则跳过进行下一步\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b88e26ee0b5f4272b26b987f57396d59)\n1. 按方向下键来到&quot;服务器IP&quot;输入框按步骤5输入IP地址，按方向右键来到&quot;端口&quot;输入框同步骤5输入端口\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=99d86bc5310ee5493cac660bf761eac9)\n1. 当步骤7切换域名注册方式时，按方向下键来到&quot;域名&quot;输入框参考步骤6进字母输入菜单输入域名地址\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=56d0eb3bfd27faa6eec41c01a23bc4a0)\n1. 输入完&quot;设备号&quot; &quot;端口&quot; &quot;服务器IP&quot; 或 &quot;连接方式&quot; &quot;域名&quot;后，按方向下键光标移动到&quot;确认&quot;按钮再按按&quot;ENTER&quot;确认键保存参数，此时注册CMSV7平台参数填入完成\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a171b027b8a3478468266e70cac318e0)\n1. 按遥控方向键右下角的&quot;RETURN&quot;返回键三次来到设备实时预览主界面，再次按方向右键三次来到&quot;网络状态&quot;界面 可以查看CMSV7平台是否注册成功\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=463315cf6d8bdb1beb7f0d5ccb215e5e)\n\n",
+  "s_number": "2",
+  "addtime": "2025-10-11 10:54:01",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:30:24",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--注册平台配置"
+}

@@ -1,0 +1,18 @@
+{
+  "page_id": "98",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "网络相关--WiFi参数配置正确无法连接",
+  "page_content": "为什么WiFi参数配置正确无法连接，IP地址获取失败？如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d9685451c8ceb6738148113abfee46bd)\n\n排查步骤:\n1、使用新款安卓手机或进WiFi路由器检查连接的WiFi是否是5G频段，常规批量出货的设备都是2.4g WIFI模块因此无法使用5G WiFi网络，如有需要联系我司人员更换5G WiFi模块。\n\n\n\n",
+  "s_number": "4",
+  "addtime": "2025-11-17 16:43:28",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:12:49",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}

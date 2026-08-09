@@ -1,0 +1,18 @@
+{
+  "page_id": "99",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "68",
+  "page_title": "Network related--WiFi parameters configured correctly but unable to connect",
+  "page_content": "Why can’t I connect if the WiFi parameters are correctly configured, and why can’t I obtain an IP address? As shown below:\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d9685451c8ceb6738148113abfee46bd)\n\nTroubleshooting steps:\n1. Use a new Android phone or enter a WiFi router to check whether the connected WiFi is in the 5G band. Conventional batch-shipped devices are all 2.4g WiFi modules, so they cannot use the 5G WiFi network. If necessary, contact our staff to replace the 5G WiFi module.",
+  "s_number": "4",
+  "addtime": "2026-03-04 11:05:32",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:07:50",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Daily Maintenance--Handling Common Issues"
+}

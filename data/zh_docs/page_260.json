@@ -1,0 +1,18 @@
+{
+  "page_id": "260",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "28",
+  "page_title": "导航屏配置使用",
+  "page_content": "[TOC]\n\n### 安装清单\n|  名称 |数量   | 名称 |数量   |\n| ------------ | ------------ |------------ | ------------ |\n| MDVR 设备  |  1 |MDVR 232 IO线束  |  1 |\n| 遥控器  |  1 | 显示屏  |  1 |\n|  导航屏 |  1 |常用接线工具| n |\n\n### 必要说明\n- 外设导航屏的应用场景是通过设备注册上线私有或其他平台，平台通过文本信息下发目的地坐标给设备 设备在转发给导航屏，导航屏收到坐标自动执行导航功能，因此设备需要上线平台并且拿到目的地坐标（地理位置坐标拾取）\n- 这里以**MX-NGS-07-01-C（wh）**为例。\n\n**实物图**：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=64e4f6622893cce30a9b98508ec56c2e)\nMX-NGS-07-01-C\n\n### 操作步骤\n#### 一、接线\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=94c797f41eb47af1a0f6bcc77e89c5f0)\n\n#### 二、设备菜单配置\n遥控进入菜单&gt;&gt;设置&gt;&gt;串口设置&gt;&gt;串口,串口索引配置RS232、串口功能导航屏1，其他参数默认，确认保存重启设备生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=1926a7506f423cc0aafade5fd9911569)\n\n#### 三、测试\n3.1 在电脑浏览器输入：http://api.map.baidu.com/lbsapi/getpoint/index.html 自动跳转到百度地图\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=8b2abd4c6286e005dcc1fee434884d86)\n\n3.2 在地图中输入目的地 (详见下图第一步)，在地图中找到搜索到的位置，点击位置会出现坐标和当前位置(详见下图第二步)找到右上角方向，方框内的坐标就是当前目的地的坐标，点击旁边复制按钮，复制此坐标。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=91392ecb17b720eb4c32df90a82af106)\n\n3.3 打开客户端，选择下发文字信息设备，点击鼠标右键找到下发文字信息一栏，点击打开把复制的坐标参数粘贴到下发文字信息栏中，点击发送。设备收到指令后转发给导航屏，此时导航屏会按照下发的定位坐标开始执行导航，并伴有语音提示音。下发命令如：116.403694,39.915378,天安门,推荐\n下发信息的内容分别为;坐标,坐标位置名称，推荐 （详细请看下图）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=be707ac2be9d7344212f803e1e8cde5e)\n\n3.4 发送命令成功，导航屏内置的道道通导航软件会自动弹出，自动规划起点与终点的线路，默认10秒后自动执行导航。执行导航时需要保证MDVR GPS定位正常，导航屏才能正常的执行导航。\n\n\n\n\n\n\n",
+  "s_number": "10",
+  "addtime": "2025-11-04 17:51:06",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 14:53:34",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--串口外设配置"
+}

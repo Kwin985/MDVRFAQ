@@ -1,0 +1,18 @@
+{
+  "page_id": "343",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-主动安全报警类型自定义",
+  "page_content": "### 说明：\n当设备上报平台主动安全报警平台没有显示设备有上报时，需要在服务后台手动添加报警类型。参考下列步骤\n例如添加一条BSD“前方左侧盲区报警”，添加其他报警类型重复下列步骤即可。\n\n### 操作步骤\n1、使用admin账号登入平台WEB端，点击“服务器管理”&gt;&gt;&gt;&quot;主动安全设置&quot;菜单\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=16b8659eb6c6af299338a243923d9460)\n2、点击“盲点监测BSD”栏，选择一个已存在未使用的类型，例如“前方接近报警”。\n#### 注意自定义主动安全报警类型一定要在这栏目范围之内替换，例如这次添加BSD“前方左侧盲区报警”就要在“盲点监测BSD”栏里找一个替换，添加ADAS相关类型替换要在上面ADAS栏找一个。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b5958e62187f454dc2c53234c400a888)\n3、按下键盘“F12”键打开游览器开发调试工具，点击工具栏左上角的页面元素检查或同时按键盘“Ctrl+Shift+C”，再次点击“前方接近报警”元素，这个时候在工具元素栏会显示出这个元素的值是“1444”并记住等会在服务器后台配置文件要填。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=911f69a691a1a5ef4525f3a63d5af173)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=129f43a9fa89bea6adfcdb34ef6ecaa2)\n4、点击“主动安全名称自定义”&gt;&gt;&gt;&quot;添加&quot;\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a9df0f3a7831b4105e85c886159b7517)\n5、点击“辅助选择”找到刚刚查看的“前方接近报警”&gt;&gt;&gt;点击“保存”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d3ac0d26555d2373c055d01f256b569e)\n6、选择语言类型“中文”&gt;&gt;&gt;填入报警名称“前方左侧盲区报警”&gt;&gt;&gt;“保存”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=be0ee90e6449a87d39b12a545fde00f7)\n7、这样后台就成功自定义了一条“前方左侧盲区报警”\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9410eea4584a1ea017fc8bbb5093e3bc)\n8、远程或者其他方式进入服务器后台找到监控平台运行安装路径&gt;&gt;&gt;找到这个配置文件“ArmConvert.ini” 例如在D盘这个路径下：D:\\Program Files\\CMSServerV6\\bin\\plugin\\MDVR\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a8d81689ff803bf90d6f43116dbbf4e3)\n9、打开这个配置文件添加报警值，例如这次添加的“前方左侧盲区报警”设备上报的值报警开始是“414”，结束是“415”，在上面数组尾部填入414，415和左下角两列值填入414=1444,1444,0         415=1494,1444,0   保存文本，如下图\n#### 注意这里填入上面的数组值和左下角两列值先检查下是否已经存在，已存在直接在等号右侧修改不存在在添加。\n私有协议设备主动安全报警类型值举例：\nBSD左前方盲区报警开始 414，结束415\nBSD右前方盲区报警开始432，结束433\nBSD左后方盲区报警开始238，结束239\nBSD右后方盲区报警开始240，结束241\nBSD后方盲区报警开始236，结束237\n异常检测 不系安全带报警开始111，结束112\n一些报警没有开始和结束时 只要在数组填入一个值和在左下角填入一列值即可，想要知道设备上报更多值询问我司技术。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b71ded13c02b113d9236b00bdb1ed690)\n10、在监控后台控制面板点击“网关服务器”&gt;&gt;&gt;“停止服务”&gt;&gt;&gt;“启动服务”来重启网关服务器，重启完成后自定义的报警类型开始生效。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=db3f485fa3dda5cd2b5bf9004591afa9)\n11、设备触发报警登入平台WEB端在报表可以查看是否生效\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0bffa5f198398a2bea779aee1f939ec1)\n",
+  "s_number": "13",
+  "addtime": "2025-11-17 16:53:33",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:18:53",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

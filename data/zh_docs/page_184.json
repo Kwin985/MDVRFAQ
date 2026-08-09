@@ -1,0 +1,18 @@
+{
+  "page_id": "184",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "110",
+  "page_title": "遥控配置镜像画面",
+  "page_content": "[TOC]\n\n\n### 前提条件：\n- 显示屏、遥控器、正确连接能出图的摄像头\n\n\n###操作说明\n\n1、按遥控器【ENTER】键进入登录界面，输入密码“999999”，自动登录主菜单\n\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=47012e5a1e65dd3aae97eea227555033)\n2、在主菜单界面选择【设置】，按“ENTER”键进入设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=41127ab3785d5c6c63bfa94e5012cf0f)\n\n3、在【设置】界面选择【基本设置】，按“ENTER”键进入基本设置界面\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a1729f563e49ec7966d85ca5ebaebcaa)\n4、在【基本设置】界面选择【镜像】，进入镜像设置页面，勾选需要镜像的通道和方向，按“确定”保存\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=91799e78cc214bf24b3ead95c59f3d70)\nps:配置完后可以立即返回到实时画面查看效果\n",
+  "s_number": "2",
+  "addtime": "2025-09-08 16:15:14",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-08 16:15:14",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--基本配置"
+}

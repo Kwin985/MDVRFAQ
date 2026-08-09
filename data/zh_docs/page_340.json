@@ -1,0 +1,18 @@
+{
+  "page_id": "340",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "40",
+  "page_title": "服务端-升级",
+  "page_content": "[TOC]\n\n\n### 步骤简介\n1、检查自动备份数据是否完整，不完整的先备份大数据再安排升级；\n2、手动备份基础数据，必要时还要备份当天大数据；\n3、使用bin_dbupdate大数据升级工具，升级数据库(bin_dbupdate版本需跟服务器版本匹配，建议数据量大的客户使用)；\n4、备份bin、tomcat文件夹；\n5、操作升级；\n6、升级结束后，检查平台各项功能（定位、轨迹、视频、报警附件等）和转发插件工作状态；\n### 详细步骤：\n##### 第一步：检查自动备份数据是否完整，查看自动备份文件夹中有没有近期的自动备份数据，如果没有就需要先备份大数据；\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=a0fbac2d87d0e70dacc274ba4789fa95)\n##### 第二步：手动备份数据（如果要备份大数据，需要的备份时间较长）\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=45f88109c3bb2466718389111649541c)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=c8976bdf0d9ba1934973942788759f54)\n备份成功了之后，可以到下图路径的配置文件里面看一下备份数据库（backup）的储存路径：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cdc03b496bbe025ffd5cadaf00808392)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d448b969931142c6ebddb6b3bdc32ea8)\n手动备份的数据会在backup文件夹的根目录里面生成一个repair文件夹，repair文件夹里面的数据就是手动备份的数据。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fdbb1169cdb6d6dfce766116c2247d8f)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=dec7e08cccfd1902cc11d1f2cb5716b6)\n##### 第三步：使用bin_dbupdate大数据升级工具，升级数据库(bin_dbupdate版本需跟服务器版本匹配，建议数据量大的客户使用)\n获取并解压bin_dbupdate工具，双击“gpsdbupdate.exe”，使其运行。\nbin_dbupdate下载地址：http://faq.cmsv8.com/fqa/web/#/3?page_id=425\n\n点击“开始升级”，软件自动升级数据库，升级成功之后，点击“退出”\n##### 第四步：升级前先将服务器软件安装目录下的Bin和tomcat文件夹进行复制备份，待升级结束确认各项数据正常后，再删除这两个备份文件夹。\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=836ef5295f9184d617d97d55410b521a)\n覆盖安装新版本的服务器软件。\n###### 升级过程中个别脚本可能耗时较长，耐心等待即可，切不可强行关闭升级过程。\n选择语言类型，可以选择中文或者英文\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=9d846a0daca57ec9a858a78e988313a9)\n直接点击下一步\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0aa25f8ba51a469b1b815fca35d67414)\n选择安装路径，选择好了路径之后，点击下一步\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=76f1d0ee924d4a79d95a98148ec42d0f)\n设置文件名称，设置好了之后，直接点击下一步\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=ef27e80192d41b828188cfa518a7538d)\n选择是否创建桌面快捷方式，选择好了之后，直接点击下一步\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=0b5711693ae5efd18afe32a49fe835fa)\n点击安装\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2eb8f7cd42d678a859d30d0e39990cfe)\n正在安装，请等待\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=4bfc9d408071cc34914415e9467081ec)\n勾选运行CMSServerV6，并点击完成\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=49bb19246a0d351f83faca3b280fddf3)\n下面就是向导数据库（一般情况下会自动进行）\n如果需要手动执行，全部直接点击下一步，直到完成\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=2e6c3390f05778001a78b4882687b546)\n##### 第五步：观察服务器软件运行是否正常\n登陆平台进行相关操作，检查平台各项功能（定位、轨迹、视频、报警附件等）和转发插件工作状态，观察是否有异常，一切正常，则表明服务器软件升级成功。\n\n\n\n",
+  "s_number": "6",
+  "addtime": "2025-11-17 16:50:24",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:16:51",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "平台功能--通天星CMSV7"
+}

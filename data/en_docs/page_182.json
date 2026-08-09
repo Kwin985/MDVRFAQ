@@ -1,0 +1,18 @@
+{
+  "page_id": "182",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "55",
+  "page_title": "Detailed definition of aviation header pins",
+  "page_content": "[TOC]\n\n\n### Introduction\nThis chapter will introduce the detailed definitions of some common interface pins of our products\n\n#####Device DEBUG port\n`M32HV(RS232) M32/M32H(TTL)`\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=088098e321443b0cd54507665b1908e0)\nps: The male connector is the device-side interface, and the female connector is the line-side\n\n[========]\n\n#####Equipment-side video four-core input port\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=e2726a14af1ed408ec7f4247ed7399c2)\n\n[========]\n\n#####Equipment-side video four-core output port\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=b670f60e51767192755902d05a37986c)\n\n[========]\n\n#####Equipment-side video six-core input port\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=d4bcef27a1173432590ecbc875826871)\n\n[========]\n\n#####Device power input port\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=6c81f7823a2ab2a853f27f0484ff3b41)\n\n[========]\n\n#####Device video output port (CVBS)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=fb57ab54906b1e65289471f5793cbbbd)\n\n[========]\n\n#####Device video output port (VGA)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=074f3a12383018f6aa59abfb5a149533)\n\n[========]\n\n#####Device network input port (LAN)\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=cdf0bc9c8a3560a298f2cf4e6bc2c8e9)\n\n[========]\n\n#####Peripheral: Network HUB input and output port\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=843f8fee0eda62439703c1af277845ca)\n\n[========]\n\n#####Device 232 debug port wiring definition\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=805938f9ae8d6a06f0354815b4f70a2d)\nNote: Direction is DTE (Computer) relative DCE (Modem). Note: Do not connect SHIELD(1) to GND(7).\n\n#####4pin female connector for sound and light alarm\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=5dc203b2524e359066e276c98b8c53ff)\n",
+  "s_number": "7",
+  "addtime": "2025-11-04 17:58:07",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 16:12:05",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Function--Interface Status Definition"
+}

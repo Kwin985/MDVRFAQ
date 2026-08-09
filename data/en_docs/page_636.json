@@ -1,0 +1,18 @@
+{
+  "page_id": "636",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "13",
+  "cat_id": "68",
+  "page_title": "Language-related - Issues with remote control menu failing to boot after changing to a language other than Chinese or English.",
+  "page_content": "**Problem Description:** Previously, the MDVR series products had a bug related to the deletion of FLASH language space. This caused issues when changing the UI interface (e.g., configuring French, saving, and restarting) and not using Chinese or English, resulting in the device being stuck in the LOADING state, as shown in the image below:\n\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=381f0f718dd1dcc843b81df3df2b7179)\n\n**Solution:**\nPreparation:\n1. Connect an MDVR device with a network port to a network adapter cable and a network cable, as shown in the image.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=50ee80a84978240e50cd3f910d9ebd62)\n2. A computer with a network port and its local network port set to the 192.168.1 range, for example, 192.168.1.170\n\nStart Operation:\n1. Connect the network cable directly to the computer and power on the device. Then open a CMD window on the computer.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=ffed004d248847374ffdc9af1ab04cce)\n2. Copy and enter &quot;Telnet&quot; 192.168.1.188&quot; Enter\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=60c5878ded3b7a6765b930130b636f21)\n3. Enter username root and password. Ask our technical or business personnel for password assistance.\n4. Continue copying and entering &quot;rm -f /mnt/DB/config.xml /mnt/DB/M51H_cfg.db /mnt/user/config.xml&quot; Enter\n5. Copy and enter &quot;reboot&quot; again. Press Enter. If the system restarts and disconnects during this process, please repeat steps 1-5 to complete the operation.\n![](http://pug2.4000329988.com/server/index.php?s=/api/attachment/visitFile&amp;sign=cca730190162355ad1f07cc6201f050e)\n\n6. Enter the reboot command. After restarting, the system will start and run correctly.\n",
+  "s_number": "1",
+  "addtime": "2026-03-04 11:22:39",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2026-03-04 11:01:03",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "Daily Maintenance--Handling Common Issues"
+}

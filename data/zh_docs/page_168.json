@@ -1,0 +1,18 @@
+{
+  "page_id": "168",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "23",
+  "page_title": "M15HV接口定义",
+  "page_content": "### 简介\n本章节将介绍我司车载MDVR系列后面板接口、前面板插槽定义说明！\n\n#####M15HV接口定义:\n######后板\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=24e63856c711ad8cc407e0086f56a0a5)\n使用说明：左边两个分别是GPS、3/4G天线插口使用配套的GPS、3/4G天线插入顺时针扭紧，右边是RS232/IO插口使用配套的IO线束缺口朝下按压下面卡扣插入，如上图。\n######前板\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=00cd53a45d756eb1b3b16ad374eace43)\n使用说明：右边是开关锁使用配套钥匙缺口朝下轻压插入顺时针扭到左边水平缺口开锁，往左推仓门，上面SIM卡槽使用大卡缺口朝右插入，下面是SD卡槽使用SD卡缺口朝右插入，完成后往右推合拢仓门使用钥匙逆时针扭到垂直口锁紧，左边是USB插口用于插入U盘等介质升级固件、配置导入等操作，如上图。",
+  "s_number": "4",
+  "addtime": "2025-09-05 11:00:25",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-05 11:00:25",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "功能使用--接口状态定义"
+}

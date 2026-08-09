@@ -1,0 +1,18 @@
+{
+  "page_id": "96",
+  "author_uid": "1",
+  "author_username": "showdoc",
+  "item_id": "11",
+  "cat_id": "21",
+  "page_title": "AI相关--查询AI算法芯片ID号是空",
+  "page_content": "为什么查询AI算法芯片ID号是空？如下图：\n![](http://pug2.4000329988.com/fqa/server/index.php?s=/api/attachment/visitFile&amp;sign=f98c0943c5572cc4f5d907553877b6b5)\n\n排查步骤：\n1、检查设备硬件是否是AI机型\n2、AI使能是否开启\n3、检查设备最新APP和FDT版本固件是否为最新AI版本\n4、检查AI算法包是否为最新和2 步骤固件匹配\n5、AI某个功能关联视频通道是否和其他功能通道冲突\n\n",
+  "s_number": "7",
+  "addtime": "2025-11-17 16:44:27",
+  "page_comments": "",
+  "is_del": "0",
+  "page_addtime": "2025-09-26 15:13:35",
+  "ext_info": "",
+  "attachment_count": "0",
+  "unique_key": "",
+  "cat_name": "日常维护--常见问题处理"
+}
