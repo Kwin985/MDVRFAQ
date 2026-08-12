@@ -18,6 +18,18 @@ const VIDEO_BASE = (process.env.VIDEO_BASE || 'https://media.mdvrfaq.com').repla
 const SITE_NAME = 'MDVR FAQ';
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 
+// ---------- Google Analytics (gtag.js) ----------
+// 在每个页面 <head> 之后注入，用于流量统计。GA_ID 即 Google 代码中的衡量 ID。
+const GA_ID = 'G-5T43SBNCLL';
+const GA_TAG = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GA_ID}');
+</script>`;
+
 const DIST = path.resolve(__dirname, '../dist');
 const CONTENT = path.join(DIST, 'content.json');
 
@@ -73,7 +85,7 @@ function renderFooter(lang) {
 // ---------- 产品选型板块 (Products) ----------
 // 由 tools/products.js 通过依赖注入提供渲染与媒体收集逻辑
 const createProducts = require('./products');
-let PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, CONTACT_EMAIL: CONTACT.email });
+let PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, GA_TAG, CONTACT_EMAIL: CONTACT.email });
 function renderContact(lang) {
   const c = CONTACT[lang] || CONTACT.zh;
   return `<aside class="contact-callout" aria-label="${esc(c.title)}">
@@ -173,7 +185,7 @@ for (const id in pages) {
   }
 }
 // 重建 PROD 注入 docsForProduct（工厂无副作用，安全重建）
-PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, CONTACT_EMAIL: CONTACT.email, docsForProduct });
+PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, GA_TAG, CONTACT_EMAIL: CONTACT.email, docsForProduct });
 
 // ---------- Markdown 预处理 + 渲染 ----------
 marked.setOptions({ gfm: true, breaks: false });
@@ -557,6 +569,7 @@ function renderPage(page) {
   const html = `<!DOCTYPE html>
 <html lang="${m.locale}" data-theme="light">
 <head>
+  ${GA_TAG}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff" id="themeColorMeta">
@@ -650,6 +663,7 @@ function renderLanding() {
   const html = `<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
+  ${GA_TAG}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
@@ -802,8 +816,8 @@ console.log(`✅ 产品选型: ${prodCount} 个页面 -> dist/products/ ; 拷贝
 writeFile('index.html', renderLanding());
 
 // 404
-writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=2"></head><body>
+writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
+<link rel="stylesheet" href="/assets/css/style.css?v=4"></head><body>
 <main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
 <h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
 

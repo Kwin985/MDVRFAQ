@@ -14,7 +14,7 @@ const BASE = '/products';
 const WEB = '/assets/products-media';
 
 module.exports = function createProducts(deps) {
-  const { esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, docsForProduct = {} } = deps;
+  const { esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, GA_TAG, docsForProduct = {} } = deps;
 
   const DIR = path.resolve(__dirname, '../data/accessories');
   const MEDIA = path.join(DIR, 'media');
@@ -220,6 +220,7 @@ module.exports = function createProducts(deps) {
     return `<!DOCTYPE html>
 <html lang="${locale}" data-theme="light">
 <head>
+  ${GA_TAG}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff" id="themeColorMeta">
