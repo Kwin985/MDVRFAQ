@@ -176,6 +176,13 @@ const items = catalog.items.map((raw) => {
 
     const sum = pickSummary(html);
     if (sum) { it.summary = sum; nSummary++; }
+    else {
+      // 兜底：pickSummary 未命中时，用非表格正文前 140 字（排除型号行）作为简介
+      const noTables = html.replace(/<table[\s\S]*?<\/table>/gi, ' ');
+      let fb = stripTags(noTables).replace(/\s+/g, ' ').trim();
+      fb = fb.replace(/^(产品型号|型号|(Product\s+)?Model(\s+No\.?)?|Type)\s*[:：][^\n]*/i, '').trim();
+      if (fb.length >= 18) { it.summary = clip(fb, 140); nSummary++; }
+    }
 
     const wl = (KEY_SPECS[raw.type] || KEY_SPECS.accessory)[raw.lang] || [];
     const specs = [];

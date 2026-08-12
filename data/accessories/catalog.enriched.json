@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-09T07:10:09.443Z",
+ "generatedAt": "2026-08-10T13:52:59.377Z",
  "items": [
   {
    "id": "acc-zh-A01",
@@ -730,6 +730,7 @@
    ],
    "imageCount": 1,
    "lineKey": "",
+   "summary": "RS232-RS485 Model:MX-232T485-01-V1.0 Core parameter",
    "keySpecs": [
     {
      "k": "Size",
@@ -883,6 +884,7 @@
    ],
    "imageCount": 3,
    "lineKey": "",
+   "summary": "Multil- functional Mic Model：MX-HMC-02 Product parameters Product size Installation matters Pins definition",
    "keySpecs": [
     {
      "k": "Power",
@@ -1030,7 +1032,8 @@
     "media/en/accessory/acc-en-sos/images/02.webp"
    ],
    "imageCount": 2,
-   "lineKey": ""
+   "lineKey": "",
+   "summary": "SOS button Model: MX-EPB-01-03 parameter size drawing product component"
   },
   {
    "id": "acc-en-sound-and-light-alarm",
@@ -2653,7 +2656,8 @@
    "cover": null,
    "gallery": [],
    "imageCount": 0,
-   "lineKey": ""
+   "lineKey": "",
+   "summary": "PTZ--Relay connection As following: Connection Description： The 85 and 86 pins of the relay are respectively connected to the negative pole …"
   },
   {
    "id": "cam-en-passenger-counting",

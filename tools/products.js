@@ -14,7 +14,7 @@ const BASE = '/products';
 const WEB = '/assets/products-media';
 
 module.exports = function createProducts(deps) {
-  const { esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, docsForProduct = {} } = deps;
+  const { esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, docsForProduct = {} } = deps;
 
   const DIR = path.resolve(__dirname, '../data/accessories');
   const MEDIA = path.join(DIR, 'media');
@@ -43,10 +43,16 @@ module.exports = function createProducts(deps) {
   function specHtml(it) {
     const p = path.join(itemDir(it), 'spec.html');
     if (!fs.existsSync(p)) return null;
-    const html = fs.readFileSync(p, 'utf8');
+    let html = fs.readFileSync(p, 'utf8');
     const re = new RegExp(WEB.replace(/\//g, '\\/') + '\\/[^"\')\\s]+', 'g');
     let m;
     while ((m = re.exec(html))) addWeb(m[0]);
+    // 补全规格图 alt：spec.html 自带图片多无 alt，用物料名兜底（SEO/无障碍）
+    html = html.replace(/<img\b([^>]*?)\/?>/gi, (full, attrs) => {
+      if (/\balt\s*=/.test(attrs)) return full;
+      const name = esc(it.name);
+      return `<img${attrs} alt="${name}" loading="lazy" decoding="async">`;
+    });
     return html;
   }
   // 收集一个物料的全部媒体（封面/画廊/规格书）
@@ -268,6 +274,8 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
     </div>
   </main>
 
+  ${renderFooter(lang)}
+
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">✕</span>
     <img class="lightbox-img" id="lightboxImg" src="" alt="">
@@ -349,7 +357,7 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
       const pics = list.filter((i) => i.cover).slice(0, 3);
       pics.forEach((p) => addRel(p.cover));
       return `<a class="pd-type-card" href="${esc(catUrl(lang, ty))}">
-        <div class="pd-type-pics">${pics.map((p) => `<img loading="lazy" src="${esc(mediaUrl(p.cover))}" alt="">`).join('')}</div>
+        <div class="pd-type-pics">${pics.map((p) => `<img loading="lazy" src="${esc(mediaUrl(p.cover))}" alt="${esc(p.name)}">`).join('')}</div>
         <div class="pd-type-info">
           <span class="pd-type-ico">${icon(ty)}</span>
           <div>
@@ -559,7 +567,7 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
     const main = it.cover ? mediaUrl(it.cover) : (imgs[0] || '');
     const thumbs = imgs.length > 1
       ? `<div class="pd-thumbs">${imgs.map((g, i) =>
-        `<button class="pd-thumb${i === 0 ? ' active' : ''}" type="button" data-full="${esc(g)}" aria-label="image ${i + 1}"><img loading="lazy" src="${esc(g)}" alt=""></button>`).join('')}</div>`
+        `<button class="pd-thumb${i === 0 ? ' active' : ''}" type="button" data-full="${esc(g)}" aria-label="image ${i + 1}"><img loading="lazy" src="${esc(g)}" alt="${esc(it.name)}"></button>`).join('')}</div>`
       : '';
 
     // 关键参数表

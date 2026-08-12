@@ -50,10 +50,30 @@ const CONTACT = {
   },
 };
 
+// ---------- 友情链接 (全站页脚, 中英文一致) ----------
+const FRIENDLY_LINKS = [
+  { name: 'citops.com', url: 'https://citops.com' },
+  { name: 'mdvr.ai', url: 'https://mdvr.ai' },
+  { name: 'ptzdome.cn', url: 'https://ptzdome.cn' },
+  { name: 'pixconvert.cn', url: 'https://pixconvert.cn' },
+];
+function renderFooter(lang) {
+  const label = lang === 'en' ? 'Friendly Links' : '友情链接';
+  const links = FRIENDLY_LINKS.map((l) =>
+    `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.name)}</a>`
+  ).join('');
+  return `<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-label">${esc(label)}</span>
+    <nav class="footer-links" aria-label="${esc(label)}">${links}</nav>
+  </div>
+</footer>`;
+}
+
 // ---------- 产品选型板块 (Products) ----------
 // 由 tools/products.js 通过依赖注入提供渲染与媒体收集逻辑
 const createProducts = require('./products');
-let PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, CONTACT_EMAIL: CONTACT.email });
+let PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, CONTACT_EMAIL: CONTACT.email });
 function renderContact(lang) {
   const c = CONTACT[lang] || CONTACT.zh;
   return `<aside class="contact-callout" aria-label="${esc(c.title)}">
@@ -65,7 +85,7 @@ function renderContact(lang) {
     <p class="contact-text">${esc(c.text)}</p>
     <div class="contact-links">
       <a class="contact-email" href="mailto:${esc(CONTACT.email)}">✉ ${esc(c.emailLabel)}: ${esc(CONTACT.email)}</a>
-      <a class="contact-phone" href="tel:${esc(CONTACT.phone)}">☎ ${esc(c.phoneLabel)}: ${esc(CONTACT.phone)}</a>
+      <a class="contact-phone" href="tel:+86${esc(CONTACT.phone)}">☎ ${esc(c.phoneLabel)}: +86 ${esc(CONTACT.phone)}</a>
     </div>
   </div>
 </aside>`;
@@ -153,7 +173,7 @@ for (const id in pages) {
   }
 }
 // 重建 PROD 注入 docsForProduct（工厂无副作用，安全重建）
-PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, CONTACT_EMAIL: CONTACT.email, docsForProduct });
+PROD = createProducts({ esc, SITE_URL, SITE_NAME, renderHeaderNav, renderSidebarSections, renderContact, renderFooter, CONTACT_EMAIL: CONTACT.email, docsForProduct });
 
 // ---------- Markdown 预处理 + 渲染 ----------
 marked.setOptions({ gfm: true, breaks: false });
@@ -271,13 +291,66 @@ function normalizeTableDelimiter(md) {
   return lines.join('\n');
 }
 
-function renderContent(md) {
-  const html = marked.parse(preprocess(md));
+// 清理文本，去除 Markdown 强调/链接语法，避免注入 alt 时破坏图片语法
+function cleanText(s) {
+  return String(s)
+    .replace(/`/g, '').replace(/\*\*/g, '').replace(/\*/g, '').replace(/_/g, '')
+    .replace(/[\[\]()]/g, '')          // 防止破坏 ![alt](url) 语法
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// 为内容图片补全 alt（SEO/无障碍）：图片 alt 缺失时，按优先级取
+//   1) 紧邻图注（图片后 1~2 行内的短纯文本标签，非标题/列表/图片/外链/句子续写）
+//   2) 最近的标题文本
+//   3) 页面标题
+// 站点图片文件名为哈希值（如 36aea4499c7b24b1.webp），无语义，故必须依赖上下文推导。
+function addImageAlt(md, pageTitle) {
+  const lines = md.split('\n');
+  let lastHeading = '';
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+    const hm = line.match(/^(#{1,6})\s+(.+?)\s*$/);
+    if (hm) lastHeading = cleanText(hm[2]);
+    if (line.indexOf('![') !== -1) {
+      let caption = '';
+      for (let k = i + 1; k <= i + 2 && k < lines.length; k++) {
+        const cand = lines[k];
+        if (cand === undefined) break;
+        if (cand.trim() === '') continue;                 // 允许隔一个空行
+        if (/^#{1,6}\s/.test(cand)) break;                // 遇到标题，交给 heading 逻辑
+        if (/!\[|https?:\/\/|\|/.test(cand)) break;       // 含图片/外链/表格，跳过
+        if (/^\s*[-*+]\s/.test(cand)) break;              // 无序列表项
+        if (/^\s*\d+[.)]\s/.test(cand)) break;            // 有序列表项
+        if (/^\s*>/.test(cand)) break;                    // 引用块
+        const t = cleanText(cand);
+        // 图注应是“短标签”：长度适中，且不是句子续写（含中英文逗号/分号/句号等多判为句子）
+        if (t.length >= 2 && t.length <= 30 && !/[，,；;。．！？!?]/.test(t)) caption = t;
+        break;
+      }
+      const alt = (caption || lastHeading || cleanText(pageTitle || '')).slice(0, 80);
+      if (alt) line = line.replace(/!\[\]\(/g, '![' + alt + '](');
+    }
+    out.push(line);
+  }
+  return out.join('\n');
+}
+
+function renderContent(md, pageTitle, lang) {
+  const html = marked.parse(addImageAlt(preprocess(md), pageTitle));
   // 给 h2-h4 加 id，给 img 加懒加载，给 video 加 preload=metadata
   let n = 0;
   let out = html.replace(/<h([2-4])>/g, (m, lvl) => `<h${lvl} id="${slugify('', ++n)}">`);
   out = out.replace(/<img\s/g, '<img loading="lazy" decoding="async" ');
   out = out.replace(/<video\s/g, '<video preload="metadata" ');
+  // 给每个代码块加「一键复制」按钮（中英按语言出文案），方便复制配置/查询参数
+  const copyLabel = lang === 'en' ? 'Copy' : '复制';
+  const copyAria = lang === 'en' ? 'Copy code' : '复制代码';
+  out = out.replace(/<pre\b([^>]*)>([\s\S]*?)<\/pre>/g,
+    (m, attrs, inner) =>
+      `<div class="code-block"><button type="button" class="code-copy-btn" data-label="${copyLabel}" aria-label="${copyAria}">${copyLabel}</button><pre${attrs}>${inner}</pre></div>`
+  );
   return out;
 }
 
@@ -438,7 +511,7 @@ function jsonLd(page, renderedHtml, faq) {
 function renderPage(page) {
   const m = SECTION_META[page.section];
   const canonical = pageAbsUrl(page.section, page.id);
-  const htmlContent = linkifyProducts(renderContent(page.content), m.lang);
+  const htmlContent = linkifyProducts(renderContent(page.content, page.title, m.lang), m.lang);
   const faq = detectFAQ(page.content);
   const ogImg = firstImage(htmlContent);
 
@@ -502,7 +575,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=4">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -553,6 +626,8 @@ function renderPage(page) {
     </div>
   </main>
 
+  ${renderFooter(m.lang)}
+
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">✕</span>
     <img class="lightbox-img" id="lightboxImg" src="" alt="">
@@ -562,7 +637,7 @@ function renderPage(page) {
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
   </button>
 
-  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/app.js?v=3"></script>
 </body>
 </html>`;
   return html;
@@ -590,7 +665,7 @@ function renderLanding() {
   <meta property="og:url" content="${SITE_URL}/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=4">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -598,17 +673,18 @@ function renderLanding() {
     description: 'MDVR（车载录像机）使用指南与教学视频中心：设备配置、平台操作、故障排查、安装演示',
   })}</script>
   <style>
-    .landing{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:32px;padding:24px;text-align:center;}
-    .landing h1{font-size:40px;margin-bottom:8px;}
-    .landing p{color:var(--color-text-secondary);max-width:560px;}
-    .lang-cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;}
-    .lang-card{padding:28px 40px;border:1px solid var(--color-border);border-radius:12px;min-width:200px;transition:all .2s;background:var(--color-bg);}
-    .lang-card:hover{border-color:var(--color-primary);box-shadow:0 4px 16px var(--color-shadow);transform:translateY(-2px);}
-    .lang-card .big{font-size:22px;font-weight:700;color:var(--color-primary);margin-bottom:6px;}
-    .lang-card .sub{font-size:13px;color:var(--color-text-secondary);}
-    .acc-note{font-size:12px;color:var(--color-text-tertiary);letter-spacing:.5px;text-transform:uppercase;margin-top:10px;}
+    .landing{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:30px;padding:0 24px 56px;text-align:center;
+      background:linear-gradient(180deg, var(--color-primary-light, #eef2ff) 0%, var(--color-bg) 320px);}
+    .landing h1{font-size:52px;line-height:1.1;font-weight:800;letter-spacing:-0.5px;margin-bottom:12px;color:var(--color-text);}
+    .landing p{font-size:18px;line-height:1.6;color:var(--color-text-secondary);max-width:580px;}
+    .lang-cards{display:grid;grid-template-columns:repeat(2,minmax(190px,240px));gap:18px;justify-content:center;width:100%;max-width:560px;}
+    .lang-card{padding:24px 26px;border:1px solid var(--color-border);border-left:4px solid var(--color-primary);border-radius:12px;transition:all .2s;background:var(--color-bg);text-align:left;}
+    .lang-card:hover{border-color:var(--color-primary);box-shadow:0 10px 28px var(--color-shadow);transform:translateY(-3px);background:var(--color-primary-light, #eef2ff);}
+    .lang-card .big{font-size:24px;font-weight:700;color:var(--color-text);margin-bottom:6px;}
+    .lang-card .sub{font-size:13.5px;line-height:1.55;color:var(--color-text-secondary);}
+    .acc-note{font-size:12px;color:var(--color-text-tertiary);letter-spacing:.5px;text-transform:uppercase;margin-top:6px;}
     .acc-entry{display:flex;align-items:center;gap:16px;padding:18px 26px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-bg);transition:all .2s;max-width:560px;width:100%;text-align:left;}
-    .acc-entry:hover{box-shadow:0 2px 10px var(--color-shadow);transform:translateY(-1px);}
+    .acc-entry:hover{box-shadow:0 2px 10px var(--color-shadow);transform:translateY(-1px);border-color:var(--color-primary);}
     .acc-entry .ico{flex:0 0 auto;width:40px;height:40px;border-radius:10px;background:var(--color-bg-tertiary);color:var(--color-text-secondary);display:flex;align-items:center;justify-content:center;}
     .acc-entry .txt{flex:1;}
     .acc-entry .big{font-size:17px;font-weight:600;color:var(--color-text);margin-bottom:3px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
@@ -616,7 +692,8 @@ function renderLanding() {
     .acc-entry .sub{font-size:12.5px;color:var(--color-text-secondary);line-height:1.6;}
     .acc-entry .arrow{flex:0 0 auto;color:var(--color-text-tertiary);font-size:20px;}
     @media (max-width:560px){
-      .landing h1{font-size:30px;}
+      .landing h1{font-size:34px;}
+      .lang-cards{grid-template-columns:1fr;max-width:320px;}
       .acc-entry{padding:18px 20px;gap:13px;}
       .acc-entry .arrow{display:none;}
     }
@@ -647,9 +724,11 @@ function renderLanding() {
       <span>如有建议或咨询，请联系作者：</span>
       <a href="mailto:${esc(CONTACT.email)}">✉ ${esc(CONTACT.email)}</a>
       <span class="sep">·</span>
-      <a href="tel:${esc(CONTACT.phone)}">☎ ${esc(CONTACT.phone)}</a>
+      <a href="tel:+86${esc(CONTACT.phone)}">☎ +86 ${esc(CONTACT.phone)}</a>
     </div>
   </div>
+
+  ${renderFooter('zh')}
 </body>
 </html>`;
   return html;
@@ -786,7 +865,7 @@ let llm = `# ${SITE_NAME}\n\n`;
 llm += `> 面向 MDVR / Mobile DVR（车载录像机）终端设备及监控平台的使用指南与教学视频中心，涵盖设备配置、平台操作、故障排查、安装演示等常见问题解答。\n\n`;
 llm += `## Contact\n`;
 llm += `- 邮箱 (Email): ${CONTACT.email}\n`;
-llm += `- 电话 (Phone): ${CONTACT.phone}\n`;
+llm += `- 电话 (Phone): +86 ${CONTACT.phone}\n`;
 llm += `- 说明: 如有任何建议或咨询，请联系作者。\n\n`;
 llm += `## Documentation\n`;
 llm += `- 中文文档: ${SITE_URL}/zh/docs/\n`;

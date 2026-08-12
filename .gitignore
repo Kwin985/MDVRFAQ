@@ -6,3 +6,5 @@ __pycache__/
 .trash_png/
 .workbuddy/
 node_modules/
+assets/videos/
+.wrangler/
