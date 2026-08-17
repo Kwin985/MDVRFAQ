@@ -31,6 +31,7 @@ const GA_TAG = `<!-- Google tag (gtag.js) -->
 </script>`;
 
 const DIST = path.resolve(__dirname, '../dist');
+const ROOT = path.resolve(__dirname, '..');
 const CONTENT = path.join(DIST, 'content.json');
 
 // 章节元信息: section -> {lang, type, prefix, label, home}
@@ -349,6 +350,29 @@ function addImageAlt(md, pageTitle) {
   return out.join('\n');
 }
 
+// 给 <video> 注入 poster（缩略图）；文件名与视频 basename 对应，由 build 拷贝到 dist
+// 注意：传入的 src 可能已被改写为绝对地址（VIDEO_BASE），故只认 .mp4 的 basename，兼容相对/绝对两种形式
+function addVideoPoster(html) {
+  return html.replace(/<video\b([^>]*)>/gi, (m, attrs) => {
+    if (/\bposter\s*=/.test(attrs)) return m;
+    const sm = attrs.match(/src\s*=\s*["']([^"']+\.mp4)["']/i);
+    if (!sm) return m;
+    const hash = path.basename(sm[1]).replace(/\.mp4$/i, '');
+    const poster = SITE_URL + '/assets/video-thumbs/' + hash + '.jpg';
+    return `<video${attrs} poster="${poster}">`;
+  });
+}
+
+// 视频页 description 剔除嵌入的 <video> 标签（含源内容里可能缺尾 `>` 的残缺标签），空则回退标题
+function videoDesc(page) {
+  const s = makeDesc(page.content)
+    .replace(/<[^>]*>/g, '')
+    .replace(/<\/?video\b[^>]*/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return s || page.title;
+}
+
 function renderContent(md, pageTitle, lang) {
   const html = marked.parse(addImageAlt(preprocess(md), pageTitle));
   // 给 h2-h4 加 id，给 img 加懒加载，给 video 加 preload=metadata
@@ -356,6 +380,7 @@ function renderContent(md, pageTitle, lang) {
   let out = html.replace(/<h([2-4])>/g, (m, lvl) => `<h${lvl} id="${slugify('', ++n)}">`);
   out = out.replace(/<img\s/g, '<img loading="lazy" decoding="async" ');
   out = out.replace(/<video\s/g, '<video preload="metadata" ');
+  out = addVideoPoster(out);
   // 给每个代码块加「一键复制」按钮（中英按语言出文案），方便复制配置/查询参数
   const copyLabel = lang === 'en' ? 'Copy' : '复制';
   const copyAria = lang === 'en' ? 'Copy code' : '复制代码';
@@ -516,6 +541,26 @@ function jsonLd(page, renderedHtml, faq) {
       mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
     });
   }
+  // 视频页补充 VideoObject 结构化数据（缩略图 + 视频地址），利于 Google 视频搜索索引
+  if (page.section.endsWith('videos')) {
+    const vm = renderedHtml.match(/<video\b[^>]*src=["']([^"']+)["']/i);
+    if (vm) {
+      const src = vm[1];
+      const hash = path.basename(src).replace(/\.mp4$/i, '');
+      const contentUrl = src.startsWith('http') ? src : (VIDEO_BASE + '/' + src.replace(/^assets\/videos\//, ''));
+      const thumbUrl = SITE_URL + '/assets/video-thumbs/' + hash + '.jpg';
+      ld.push({
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: page.title,
+        description: videoDesc(page),
+        thumbnailUrl: [thumbUrl],
+        contentUrl: contentUrl,
+        uploadDate: BUILD_DATE + 'T00:00:00+08:00',
+        publisher: { '@type': 'Organization', name: SITE_NAME },
+      });
+    }
+  }
   return ld.map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n  ');
 }
 
@@ -588,7 +633,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=4">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -679,7 +724,7 @@ function renderLanding() {
   <meta property="og:url" content="${SITE_URL}/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=4">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -817,7 +862,7 @@ writeFile('index.html', renderLanding());
 
 // 404
 writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=4"></head><body>
+<link rel="stylesheet" href="/assets/css/style.css?v=5"></head><body>
 <main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
 <h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
 
@@ -845,6 +890,49 @@ for (const u of urls) {
 sm += '</urlset>';
 writeFile('sitemap.xml', sm);
 
+// video-sitemap.xml（Google 视频搜索专用；含缩略图地址）
+let vsm = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' +
+  '        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n';
+for (const id in pages) {
+  const p = pages[id];
+  if (!p.section.endsWith('videos')) continue;
+  const vm = (p.content || '').match(/<video\b[^>]*src=["']([^"']+)["']/i);
+  if (!vm) continue;
+  const src = vm[1];
+  const hash = path.basename(src).replace(/\.mp4$/i, '');
+  const contentUrl = src.startsWith('http') ? src : (VIDEO_BASE + '/' + src.replace(/^assets\/videos\//, ''));
+  const thumbUrl = SITE_URL + '/assets/video-thumbs/' + hash + '.jpg';
+  vsm += '  <url>\n';
+  vsm += `    <loc>${esc(pageAbsUrl(p.section, p.id))}</loc>\n`;
+  vsm += '    <video:video>\n';
+  vsm += `      <video:thumbnail_loc>${esc(thumbUrl)}</video:thumbnail_loc>\n`;
+  vsm += `      <video:title>${esc(p.title)}</video:title>\n`;
+  vsm += `      <video:description>${esc(videoDesc(p))}</video:description>\n`;
+  vsm += `      <video:content_loc>${esc(contentUrl)}</video:content_loc>\n`;
+  vsm += `      <video:publication_date>${esc(BUILD_DATE)}</video:publication_date>\n`;
+  vsm += '      <video:family_friendly>yes</video:family_friendly>\n';
+  vsm += '    </video:video>\n';
+  vsm += '  </url>\n';
+}
+vsm += '</urlset>';
+writeFile('video-sitemap.xml', vsm);
+
+// 复制视频缩略图到 dist（供线上 https://mdvrfaq.com/assets/video-thumbs/ 访问）
+const VTHUMB_SRC = path.join(ROOT, 'assets', 'video-thumbs');
+const VTHUMB_DST = path.join(DIST, 'assets', 'video-thumbs');
+if (fs.existsSync(VTHUMB_SRC)) {
+  fs.mkdirSync(VTHUMB_DST, { recursive: true });
+  let copied = 0;
+  for (const f of fs.readdirSync(VTHUMB_SRC)) {
+    if (f.toLowerCase().endsWith('.jpg')) {
+      fs.copyFileSync(path.join(VTHUMB_SRC, f), path.join(VTHUMB_DST, f));
+      copied++;
+    }
+  }
+  console.log(`   视频缩略图已拷贝 ${copied} 张 -> dist/assets/video-thumbs/`);
+}
+
 // robots.txt
 const robots = `User-agent: *
 Allow: /
@@ -871,6 +959,7 @@ User-agent: Diffbot
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
+Sitemap: ${SITE_URL}/video-sitemap.xml
 `;
 writeFile('robots.txt', robots);
 
