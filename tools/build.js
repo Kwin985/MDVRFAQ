@@ -1020,8 +1020,23 @@ const headers = `/assets/*
 `;
 writeFile('_headers', headers);
 
-// _redirects (Cloudflare Pages) — 旧 /accessories 永久 301 迁移到 /products
-writeFile('_redirects', '/accessories/* /products/:splat 301\n/products /products/en/ 301\n');
+// _redirects (Cloudflare Pages)
+// 旧版站点结构（Google 仍抓取到的旧 URL）永久 301 迁移到现行结构，避免 404
+// - 旧 /en|zh/{host,camera,accessory}/ 分类页 -> 现行 /products/{en,zh}/{...}/
+// - 旧 /en、/zh 站点根（语言首页）-> 现行双语入口首页 /
+// - 旧 /accessories -> /products
+writeFile('_redirects', [
+  '/en/accessory /products/en/accessory/ 301',
+  '/en/host /products/en/host/ 301',
+  '/en/camera /products/en/camera/ 301',
+  '/zh/accessory /products/zh/accessory/ 301',
+  '/zh/host /products/zh/host/ 301',
+  '/zh/camera /products/zh/camera/ 301',
+  '/en / 301',
+  '/zh / 301',
+  '/accessories/* /products/:splat 301',
+  '/products /products/en/ 301',
+].join('\n') + '\n');
 
 console.log(`✅ 构建完成: ${count} 个页面 -> dist/`);
 console.log(`   sitemap.xml / robots.txt / llms.txt / 404.html / _headers 已生成`);
