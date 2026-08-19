@@ -34,6 +34,17 @@ const DIST = path.resolve(__dirname, '../dist');
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT = path.join(DIST, 'content.json');
 
+// 视频页 id -> 对应文字 FAQ 文档 id（同语言）。用于双向内链：文档页尾"相关视频指南"、视频页尾"相关文字说明"。
+// 手动编辑 data/faq-video-map.json 即可调整，无需改代码。
+const FAQ_VIDEO_MAP = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'faq-video-map.json'), 'utf8'));
+// 反向：文档 id -> 关联视频 id 列表
+const DOC_TO_VIDEOS = {};
+for (const vid in FAQ_VIDEO_MAP) {
+  for (const did of FAQ_VIDEO_MAP[vid]) {
+    (DOC_TO_VIDEOS[did] = DOC_TO_VIDEOS[did] || []).push(vid);
+  }
+}
+
 // 章节元信息: section -> {lang, type, prefix, label, home}
 const SECTION_META = {
   zh_docs:   { lang: 'zh', locale: 'zh-CN', type: 'docs',   prefix: '/zh/docs',   label: '中文使用指南', labelEn: 'Chinese Guide',    landingSub: 'MDVR 设备配置 · 平台操作 · 故障排查' },
@@ -564,6 +575,43 @@ function jsonLd(page, renderedHtml, faq) {
   return ld.map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n  ');
 }
 
+// 文档页/视频页双向内链区块：文档页尾推荐相关视频，视频页尾推荐相关文字说明
+function relatedSection(page) {
+  const meta = SECTION_META[page.section];
+  if (!meta) return '';
+  const isDoc = page.section === 'zh_docs' || page.section === 'en_docs';
+  const isVideo = page.section === 'zh_videos' || page.section === 'en_videos';
+  if (!isDoc && !isVideo) return '';
+
+  let ids, heading, intro, cls;
+  if (isDoc) {
+    ids = DOC_TO_VIDEOS[String(page.id)] || [];
+    if (!ids.length) return '';
+    heading = meta.lang === 'zh' ? '相关视频指南' : 'Related video guides';
+    intro = meta.lang === 'zh' ? '本文配套的视频演示，建议结合观看：' : 'Video demonstrations related to this article:';
+    cls = 'related-video';
+  } else {
+    ids = FAQ_VIDEO_MAP[String(page.id)] || [];
+    if (!ids.length) return '';
+    heading = meta.lang === 'zh' ? '相关文字说明' : 'Related written guides';
+    intro = meta.lang === 'zh' ? '本文对应的图文说明，便于对照操作：' : 'Written guides corresponding to this video:';
+    cls = 'related-doc';
+  }
+
+  const items = ids.map(id => {
+    const p = pages[id];
+    if (!p) return '';
+    return `<li><a href="${esc(pageUrl(p.section, p.id))}">${esc(p.title)}</a></li>`;
+  }).filter(Boolean);
+  if (!items.length) return '';
+
+  return `<section class="related-box ${cls}" aria-label="${esc(heading)}">\n` +
+    `  <h2 class="related-title">${esc(heading)}</h2>\n` +
+    `  <p class="related-intro">${esc(intro)}</p>\n` +
+    `  <ul class="related-list">${items.join('')}</ul>\n` +
+    `</section>`;
+}
+
 // ---------- 页面模板 ----------
 function renderPage(page) {
   const m = SECTION_META[page.section];
@@ -633,7 +681,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v=6">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -677,7 +725,7 @@ function renderPage(page) {
     <div class="content-wrapper">
       ${breadcrumb}
       <article class="article">
-        <div class="article-content">${htmlContent}</div>
+        <div class="article-content">${htmlContent}${relatedSection(page)}</div>
       </article>
       ${pageNav}
       ${renderContact(m.lang)}
@@ -724,7 +772,7 @@ function renderLanding() {
   <meta property="og:url" content="${SITE_URL}/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v=6">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -862,7 +910,7 @@ writeFile('index.html', renderLanding());
 
 // 404
 writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=5"></head><body>
+<link rel="stylesheet" href="/assets/css/style.css?v=6"></head><body>
 <main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
 <h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
 
