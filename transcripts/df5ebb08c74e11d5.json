@@ -1,13 +1,42 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "zh",
   "video_title": "3-ADAS中文功能演示",
-  "doc_title": "主动安全AI相关参数下发配置说明",
-  "doc_url": "/zh/docs/89/",
   "segments": [
     {
-      "heading": "主动安全AI相关参数下发配置说明",
-      "text": "[TOC]\n登入平台客户端选择需要配置的车辆点击“参数配置”》》》“自定义数据” ，在输入框复制参数点击“设置参数”如下图：\n常用参数说明：\n######1. AI授权查询\n``xml\nAiRuningStatus11\n`\n> 返回值注释：\n“AlgRunningStatus“  AI功能正在运行状态 ：ADAS=1,R BSD=2,DSM=4,ADAS+DSM=5,ADAS+DSM+R BSD=7\n“AuthStatus” AI授权状态：0未授权 1 已授权\n”AuthFunctionType“ AI以授权类型： ADAS=1,R BSD=2,DSM=4,ADAS+DSM=5,ADAS+DSM+R BSD=7\n \n######2. 算法功能基本配置查询\n`xml\n`\n> 返回值注释：\n“ucFD_RunMode” AI运行模式：0 行车模式  1 测试模式\n”ucFD_AdasEnable“ ADAS功能：0 关闭 1 开启；ucFD_AdasChn ADAS关联通道框： 0 CH1通道，1 CH2通道， 2 CH3通道, 3 CH4通道，4 CH5通道，5 CH6, 6 CH7, 7 CH8  \n注意：ADAS DSM BSD等功能关联通道框时请不要有通道重复的情况，否则失效。\n“ucFD_RightBsdEnable” 右BSD功能: 0关闭 1开启;ucFD_RightBs"
+      "start": 0.3,
+      "end": 15.3,
+      "text": "当车辆向左或向右偏离车道时,系统会发出警报。"
+    },
+    {
+      "start": 15.3,
+      "end": 20.5,
+      "text": "偏离行车道,请及时纠正。"
+    },
+    {
+      "start": 20.5,
+      "end": 24.5,
+      "text": "偏离行车道,请及时纠正。"
+    },
+    {
+      "start": 24.5,
+      "end": 29.5,
+      "text": "当车辆距离前车太近时,系统会发出警报。"
+    },
+    {
+      "start": 29.5,
+      "end": 32.5,
+      "text": "请保持车距。"
+    },
+    {
+      "start": 32.5,
+      "end": 37.5,
+      "text": "当车道前方有人行横道时,系统会语音提示。"
+    },
+    {
+      "start": 37.5,
+      "end": 41.5,
+      "text": "请注意人行横道。"
     }
   ]
 }

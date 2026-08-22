@@ -1,29 +1,82 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "en",
   "video_title": "1-BSD configuration",
-  "doc_title": "Active safety AI local remote control configuration",
-  "doc_url": "/en/docs/148/",
   "segments": [
     {
-      "heading": "Prerequisites:",
-      "text": "- A usable remote control and a normal display screen\n- The device is already in shipping status (AI has been authorized and the algorithm has been imported)"
+      "start": 1.8,
+      "end": 6.3,
+      "text": "Press enter key of the remote to control to enter the surleging interface."
     },
     {
-      "heading": "1. Login menu",
-      "text": "1.1 Press the middle \"ENTER\" confirmation button on the remote control to enter the login interface and enter the default administrator password \"999999\"\n1.2 In the first-level menu interface, press the arrow key on the remote control to move to the \"Settings\" button, and press the middle \"ENTER\" confirmation key on the remote control to enter the second-level \"Settings\" menu\n1.3 In the second-level \"Settings\" menu interface, press the right arrow key on the remote control to move to the \"Network Settings\" button, Press the middle \"ENTER\" confirmation key on the remote control to enter the thi…"
+      "start": 6.3,
+      "end": 10.3,
+      "text": "The default password is 999999."
     },
     {
-      "heading": "2. Enable AI function",
-      "text": "Active safety AI can enable the following functions:\nADAS\nDSM\nL BSD (left BSD)\nR BSD (right BSD)\nF BSD (front BSD)\nB BSD (rear BSD)\n2.1 For example, if you need to enable ADAS function and associate it with CH1 channel, press the down key of the remote control &darr; to move to the ADAS checkbox, then press the confirmation key &crarr; to check, press the right key &rarr; to move to the ADAS channel selection box and press the confirmation key &crarr; to select the channel, the default is CH1 channel. You do not need to select the button here, and the method of enabling other AI functions is t…"
+      "start": 10.3,
+      "end": 13.8,
+      "text": "Enter the main menu and fin-t them in the settings."
     },
     {
-      "heading": "3. Check if AI is running normally",
-      "text": "3.1 Check if the last human icon in the upper right corner is as shown in the figure below\n3.2 The device is in the real-time preview main interface. If you press \"RETURN\" in the lower right corner of the remote control direction key in the menu interface to exit to the real-time preview main interface.\nPress the left button on the remote control &larr; to go to the \"Serial Port, AI\" interface, check whether the AI ​​status in the red box in the lower left corner is running normally. If it is running normally, there should be the following information:\n3rd line MD5 verification: Success\n4th li…"
+      "start": 13.8,
+      "end": 15.8,
+      "text": "Enter left city of D menu."
     },
     {
-      "heading": "4. Enable AI test mode",
-      "text": "If you need to test the AI ​​function without installing it in the vehicle, refer to \"2. Enable AI function\" above to enter the AI ​​menu and check the test mode Check the box to save. If you need to restore the normal mode after loading, uncheck the box to save and restart the device."
+      "start": 15.8,
+      "end": 17.8,
+      "text": "Check the abstainable function."
+    },
+    {
+      "start": 17.8,
+      "end": 21.3,
+      "text": "Enter systemize associated with the 4th channel bidfall."
+    },
+    {
+      "start": 21.3,
+      "end": 24.3,
+      "text": "Tepline dare read divide dead into left and right sides."
+    },
+    {
+      "start": 24.3,
+      "end": 27.3,
+      "text": "Here, the right side is used as a sample."
+    },
+    {
+      "start": 27.3,
+      "end": 30.3,
+      "text": "If the abstlences inserted into the channels,"
+    },
+    {
+      "start": 30.3,
+      "end": 33.3,
+      "text": "please connect the other chalices of with the abstuncterite."
+    },
+    {
+      "start": 33.3,
+      "end": 36.8,
+      "text": "Go back to the settings directory and enter the camera settings off."
+    },
+    {
+      "start": 36.8,
+      "end": 42.8,
+      "text": "The recording setting stock up with a resolution of the 4th channel is 1080p."
+    },
+    {
+      "start": 42.8,
+      "end": 47.3,
+      "text": "Return to the abst level directory, select operation in the tools menu,"
+    },
+    {
+      "start": 47.3,
+      "end": 53.1,
+      "text": "and click reboot and select ease."
+    },
+    {
+      "start": 53.1,
+      "end": 56.6,
+      "text": "You can see the conscious further connection is successful."
     }
   ]
 }

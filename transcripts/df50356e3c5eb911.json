@@ -1,0 +1,127 @@
+{
+  "source": "asr",
+  "lang": "en",
+  "video_title": "3 MDVR Office Testing Steps 2.mp4",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "text": "MDVR office testing steps."
+    },
+    {
+      "start": 3.0,
+      "end": 11.9,
+      "text": "One, testing essential items, please prepare these things before testing."
+    },
+    {
+      "start": 11.9,
+      "end": 19.0,
+      "text": "To open MDVR, open the device with the key."
+    },
+    {
+      "start": 19.0,
+      "end": 21.0,
+      "text": "Three, loading card."
+    },
+    {
+      "start": 21.0,
+      "end": 28.9,
+      "text": "Insert the SD card, hard drive, or SIM card into the machine."
+    },
+    {
+      "start": 28.9,
+      "end": 33.9,
+      "text": "After installing the card, close and lock for accessory connection."
+    },
+    {
+      "start": 33.9,
+      "end": 37.9,
+      "text": "Find camera connection cable, connect camera."
+    },
+    {
+      "start": 37.9,
+      "end": 41.9,
+      "text": "Find the monitoring screen connection cable, connect monitoring,"
+    },
+    {
+      "start": 41.9,
+      "end": 47.2,
+      "text": "connect 4G antenna, connect GPS antenna."
+    },
+    {
+      "start": 47.2,
+      "end": 52.9,
+      "text": "5 power on, use power supply equipment to power MDVR,"
+    },
+    {
+      "start": 52.9,
+      "end": 58.9,
+      "text": "voltage 8 to 36 volt."
+    },
+    {
+      "start": 58.9,
+      "end": 62.9,
+      "text": "Connect the black wire to the power ground wire."
+    },
+    {
+      "start": 62.9,
+      "end": 70.5,
+      "text": "Connect the red and yellow wires to the live wire."
+    },
+    {
+      "start": 70.5,
+      "end": 75.4,
+      "text": "Connect the power cord to the MDVR."
+    },
+    {
+      "start": 75.4,
+      "end": 77.4,
+      "text": "If other power supply equipment is used,"
+    },
+    {
+      "start": 77.4,
+      "end": 79.4,
+      "text": "this connection is also possible."
+    },
+    {
+      "start": 79.4,
+      "end": 81.4,
+      "text": "Six, debugging."
+    },
+    {
+      "start": 81.4,
+      "end": 85.4,
+      "text": "In the remote control at the IR of MDVR,"
+    },
+    {
+      "start": 85.4,
+      "end": 87.4,
+      "text": "press enter on the remote control,"
+    },
+    {
+      "start": 87.4,
+      "end": 91.7,
+      "text": "according to the steps displayed on the screen."
+    },
+    {
+      "start": 91.7,
+      "end": 94.7,
+      "text": "According to your SIM card configuration here."
+    },
+    {
+      "start": 94.7,
+      "end": 96.7,
+      "text": "Finally, press give directional key."
+    },
+    {
+      "start": 96.7,
+      "end": 99.7,
+      "text": "Press continuously for three times."
+    },
+    {
+      "start": 99.7,
+      "end": 102.7,
+      "text": "This content appears successfully launched."
+    }
+  ]
+}

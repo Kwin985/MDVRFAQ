@@ -1,29 +1,67 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "zh",
   "video_title": "自定义服务器端口",
-  "doc_title": "服务端-端口相关配置",
-  "doc_url": "/zh/docs/351/",
   "segments": [
     {
-      "heading": "服务器软件端口说明",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=24\n操作说明：\n服务器默认需要开放的端口：\n6601-6612 tcp udp\n6613-6613 tcp\n6617-6622 tcp\n6630-6636 tcp\n2121-2162 tcp\nWEB端口 tcp"
+      "start": 0.0,
+      "end": 5.3,
+      "text": "自定义服务器端口 以登陸服务器为例 其他服务器操作相似"
     },
     {
-      "heading": "服务器端口映射连通检测",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=58"
+      "start": 5.3,
+      "end": 10.7,
+      "text": "打开服务器管理面板 选中登陸服务器点击服务配置"
     },
     {
-      "heading": "修改服务器软件端口",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=224"
+      "start": 10.7,
+      "end": 17.1,
+      "text": "自定义端口 将默认端口修改为自定义的端口"
     },
     {
-      "heading": "自定义WEB端口(非80,88,8080,8088)",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=6"
+      "start": 17.1,
+      "end": 22.5,
+      "text": "点击确定 服务器会自动重启"
     },
     {
-      "heading": "网关服务器添加多个设备接入端口",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=225"
+      "start": 23.7,
+      "end": 27.8,
+      "text": "修改网关服务器中配置使用的登陸服务器端口"
+    },
+    {
+      "start": 27.8,
+      "end": 39.5,
+      "text": "修改流媒体服务器使用的登陸服务器端口"
+    },
+    {
+      "start": 44.4,
+      "end": 53.2,
+      "text": "修改用户服务器使用的登陸服务器端口"
+    },
+    {
+      "start": 53.2,
+      "end": 83.7,
+      "text": "后面的WiFi、存储、数据处理都修改对应的登陸服务器端口即可"
+    },
+    {
+      "start": 83.7,
+      "end": 86.3,
+      "text": "用Admin登陸平台"
+    },
+    {
+      "start": 86.3,
+      "end": 90.7,
+      "text": "选择服务器管理登陸服务器修改对应端口即可"
+    },
+    {
+      "start": 90.7,
+      "end": 94.5,
+      "text": "需要注意的是 配置的对应端口要保持一致"
+    },
+    {
+      "start": 94.5,
+      "end": 97.3,
+      "text": "修改后点保存即可"
     }
   ]
 }

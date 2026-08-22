@@ -1,33 +1,112 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "en",
   "video_title": "2-BSD calibration",
-  "doc_title": "WEB configuration and installation of BSD camera",
-  "doc_url": "/en/docs/309/",
   "segments": [
     {
-      "heading": "Prerequisites:",
-      "text": "- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n- Or the device with WiFi module is switched to AP mode, and the computer connects to the AP hotspot to access the 192.168.42.100 address\n- The device is already in the shipping state (AI has been authorized, the algorithm has been imported)"
+      "start": 1.8,
+      "end": 5.8,
+      "text": "Fix the absence and tear a city or front city of the vehicle."
     },
     {
-      "heading": "1. Camera installation",
-      "text": "1.1 R L BSD installation angle\nThe BSD camera is installed at the head or tail position on both sides of the vehicle. Keep the camera base and the body parallel and vertical. You can find a vertical plane position to install it, otherwise it will affect the calibration of the \"body line\" behind. If this condition is not met, you can first disassemble the camera base and use the matching screws or other welding methods to fix it. Put the camera back on the base again. Do not tighten the screws on both sides of the base. The installation height of large trucks is greater than 1.6M, and other mod…"
+      "start": 5.8,
+      "end": 12.7,
+      "text": "Adjusting the tightness of screw can adjust the direction of the lens."
     },
     {
-      "heading": "2. Function activation",
-      "text": "2.1 Open the computer browser and enter the local network IP address of the device, fill in the login password \"Adm_123\" and click \"Login\"\n2.2 Click \"General Settings\" >>> \"Alarm Settings\" >>> \"AI Settings\" menu\n2.3 In the \"AI Settings\" menu, click to enable R BSD & L BSD function, associated BSD camera inserted into the host rear panel video input channel\n2.4 Distinguishing between left L BSD and right R BSD:\nThe direction is based on the camera lens orientation. The BSD alarm is enabled on the side that is the alarm area. For example, in the following figure, the camera lens orientation is t…"
+      "start": 12.7,
+      "end": 15.7,
+      "text": "Press the number key corresponding to the channel off."
     },
     {
-      "heading": "3. Camera Configuration",
-      "text": "BSD camera channel display screen configuration (such as in WEB BSD calibration menu has been displayed, so you can ignore this step)\n3.1 Configure the BSD camera channel parameters through the \"MVMS_NetPlayer\" configuration tool, click the link to download to the local computer for installation or consult the technology.\nClick to download the tool\n3.2 Click to search \"Find device\">>> Double-click the search result and you need to configure the device ID\n3.3 Click \"Configuration\" >>> \"Encoding Settings\" >>> \"Channel Type Configuration\"\n3.4 Select the corresponding resolution camera \"1080\" in t…"
+      "start": 15.7,
+      "end": 18.2,
+      "text": "The motor control tone lags every decanel."
     },
     {
-      "heading": "4. Calibration configuration",
-      "text": "4. The steps for enabling left and right BSD are similar. Here we take the right R BSD function as an example. Click the \"Right BSD Calibration\" column in the WEB menu. Open the calibration menu\n4.1 Click to select the blue line (alarm boundary line), click the arrow keys to move it up and down so that it is at the intersection of the sky\n4.2 Click to select the white line (horizontal line of the vehicle body), click the arrow keys to move it left and right so that the yellow line is close to the horizontal position of the vehicle body\n4.3 Click to select the red line (first-level alarm line),…"
+      "start": 18.2,
+      "end": 20.7,
+      "text": "Press enter key of the remote to control."
     },
     {
-      "heading": "5. Alarm test",
-      "text": "5.1 Alarm occurs in test mode (BSD parameters have been enabled here before, so ignore this step)\nClick \"AI Settings\" >>> \"Test Mode\" in the WEB menu Save and restart the device\n5.2 Normal driving mode alarm occurs, GPS antenna needs to be connected and positioning is successful, and the alarm will occur when the previously configured threshold is reached\n5.3 Log in to the V7 client to view the alarm information\n5.3.1 Real-time preview interface OSD alarm message\n5.3.2 Active safety panel to view real-time alarm messages\n5.3.3 Active safety menu to view historical alarm messages"
+      "start": 20.7,
+      "end": 23.7,
+      "text": "And screen displays band area of bling zone."
+    },
+    {
+      "start": 23.7,
+      "end": 29.2,
+      "text": "For lens of the for encloser 0, 1, 2, 3, and for correspond."
+    },
+    {
+      "start": 29.2,
+      "end": 35.2,
+      "text": "Press the number key 0, 1, 2, 3, and for inter-remotor control."
+    },
+    {
+      "start": 35.2,
+      "end": 39.2,
+      "text": "Respectively, press the number key 0 off the remote to control to."
+    },
+    {
+      "start": 39.2,
+      "end": 42.2,
+      "text": "Select boolean, telum range in front of st."
+    },
+    {
+      "start": 42.2,
+      "end": 47.2,
+      "text": "And press up and down direction key 0 for remote to control to adjust the position."
+    },
+    {
+      "start": 47.2,
+      "end": 51.2,
+      "text": "Press the number key 1 off the remote to control to select baller border line."
+    },
+    {
+      "start": 51.2,
+      "end": 56.2,
+      "text": "And press the left and right direction key 0 for remote to control to adjust the position."
+    },
+    {
+      "start": 56.2,
+      "end": 59.2,
+      "text": "So far I low line AIs aligned with the vehicle."
+    },
+    {
+      "start": 59.2,
+      "end": 66.2,
+      "text": "Press 2, 3, and for key 0 for remote to control to select the yellow and green lines."
+    },
+    {
+      "start": 66.2,
+      "end": 67.2,
+      "text": "Sadi alam range."
+    },
+    {
+      "start": 67.2,
+      "end": 70.2,
+      "text": "Respectively, use the up and down arrow key 0."
+    },
+    {
+      "start": 70.2,
+      "end": 73.2,
+      "text": "Select the upper and lower position point so for color line."
+    },
+    {
+      "start": 73.2,
+      "end": 78.2,
+      "text": "And press the left and right key 0 just for position."
+    },
+    {
+      "start": 78.2,
+      "end": 82.3,
+      "text": "Press enter to serve."
+    },
+    {
+      "start": 82.3,
+      "end": 85.3,
+      "text": "Calibration complete."
     }
   ]
 }

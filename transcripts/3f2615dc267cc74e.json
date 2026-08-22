@@ -1,0 +1,62 @@
+{
+  "source": "asr",
+  "lang": "en",
+  "video_title": "4 Dash camera usage settings2.mp4",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.0,
+      "text": "1. Connect to hotspot using Wi-Fi"
+    },
+    {
+      "start": 7.0,
+      "end": 10.0,
+      "text": "2. Click to find"
+    },
+    {
+      "start": 10.0,
+      "end": 13.0,
+      "text": "3. Find your device"
+    },
+    {
+      "start": 13.0,
+      "end": 16.0,
+      "text": "4. Check the video footage"
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "text": "5. Click on More"
+    },
+    {
+      "start": 18.0,
+      "end": 23.0,
+      "text": "Enter the password here to enter the settings page"
+    },
+    {
+      "start": 23.0,
+      "end": 27.0,
+      "text": "6. Click on Settings"
+    },
+    {
+      "start": 27.0,
+      "end": 31.0,
+      "text": "Here we will show you the functions of system into"
+    },
+    {
+      "start": 31.0,
+      "end": 101.9,
+      "text": "Next, we will show you the net setup"
+    },
+    {
+      "start": 101.9,
+      "end": 136.6,
+      "text": "Next is the alarm setup"
+    },
+    {
+      "start": 136.6,
+      "end": 138.6,
+      "text": "Finally, basic setup"
+    }
+  ]
+}

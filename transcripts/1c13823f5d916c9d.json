@@ -1,17 +1,127 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "en",
   "video_title": "2 MDVR power on.mp4",
-  "doc_title": "Control configuration of power on/off mode and delay",
-  "doc_url": "/en/docs/194/",
   "segments": [
     {
-      "heading": "Prerequisites",
-      "text": "- A usable remote control and normal display screen"
+      "start": 0.0,
+      "end": 3.2,
+      "text": "How to connect the device to a power source?"
     },
     {
-      "heading": "Operation steps",
-      "text": "1.Enter the main menu function interface, operate the direction keys and ENTER key of the remote control, and enter the settings-basic settings-power on/off menu\n2.Select \"Ignition Mode,\" check the \"Power-off Delay\" checkbox, enter the desired delay duration (range: 0–65535 minutes), and configure which cameras remain active during the ACC disconnection delay period.\nps: The vehicle ACC ignition device is turned on and works, and the ACC disconnection device is turned off. For wiring, refer to \"Power line wiring installation\" Ignition mode schematic diagram introduction.\n3.Select \"Timer Mode\"…"
+      "start": 3.2,
+      "end": 5.4,
+      "text": "First, prepare three things."
+    },
+    {
+      "start": 5.4,
+      "end": 6.8,
+      "text": "One power line."
+    },
+    {
+      "start": 6.8,
+      "end": 10.8,
+      "text": "They are live wire, ACC wire, ground wire."
+    },
+    {
+      "start": 10.8,
+      "end": 14.6,
+      "text": "To remove the tools, open the shell and find the fuse box."
+    },
+    {
+      "start": 15.3,
+      "end": 17.8,
+      "text": "Three, automotive fuse box."
+    },
+    {
+      "start": 17.8,
+      "end": 20.4,
+      "text": "Refer to the vehicle manual to find him."
+    },
+    {
+      "start": 21.0,
+      "end": 22.6,
+      "text": "Second, open the shell."
+    },
+    {
+      "start": 23.1,
+      "end": 24.5,
+      "text": "This is the disassembly."
+    },
+    {
+      "start": 25.1,
+      "end": 28.3,
+      "text": "Process of the screws on the left side of a taxi."
+    },
+    {
+      "start": 29.3,
+      "end": 32.8,
+      "text": "Then we remove the screws located at the bottom."
+    },
+    {
+      "start": 32.8,
+      "end": 34.1,
+      "text": "The fuse box in here."
+    },
+    {
+      "start": 34.9,
+      "end": 38.0,
+      "text": "Before connecting the device to the power supply,"
+    },
+    {
+      "start": 38.0,
+      "end": 41.5,
+      "text": "it is necessary to test whether there is any issue."
+    },
+    {
+      "start": 41.5,
+      "end": 43.4,
+      "text": "Thirdly, connect the fuse box."
+    },
+    {
+      "start": 44.1,
+      "end": 47.8,
+      "text": "This step, it is recommended to turn off the power first."
+    },
+    {
+      "start": 47.8,
+      "end": 49.9,
+      "text": "Select the 10 ampere fuse unplug it."
+    },
+    {
+      "start": 50.7,
+      "end": 54.3,
+      "text": "Insert the red line into the 10 ampere live wire interface."
+    },
+    {
+      "start": 55.0,
+      "end": 57.4,
+      "text": "Insert the yellow gray line into"
+    },
+    {
+      "start": 57.5,
+      "end": 59.4,
+      "text": "the 10 ampere ACC interface."
+    },
+    {
+      "start": 60.0,
+      "end": 63.2,
+      "text": "Insert the black wire into the ground wire slot."
+    },
+    {
+      "start": 63.8,
+      "end": 66.5,
+      "text": "Fourthly, restore the power supply."
+    },
+    {
+      "start": 66.5,
+      "end": 68.8,
+      "text": "Put light on the host lights up."
+    },
+    {
+      "start": 68.8,
+      "end": 70.1,
+      "text": "Great job!"
     }
   ]
 }

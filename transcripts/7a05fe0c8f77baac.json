@@ -1,37 +1,22 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "en",
   "video_title": "2-DSM calibration",
-  "doc_title": "WEB configuration and installation of DSM camera",
-  "doc_url": "/en/docs/307/",
   "segments": [
     {
-      "heading": "Prerequisites:",
-      "text": "- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n- Or the device with WiFi module is switched to AP mode, and the computer connects to the AP hotspot to access the 192.168.42.100 address\n- The device is already in the shipping state (AI has been authorized, the algorithm has been imported)"
+      "start": 2.1,
+      "end": 11.9,
+      "text": "After adjusting the installation angle some, fix the camera, face forward to simulate a driving state and start calibration."
     },
     {
-      "heading": "1. Camera installation",
-      "text": "1.1 Installation angle\nThe DSM camera needs to be installed on the instrument panel in front of the steering wheel. The preferred installation position should be in a straight line with the center line of the steering wheel, as shown in the center line marked by A in the figure below. If the installation center point is inconvenient or affects the driver's driving vision, it can be moved to the left and right sides of the steering wheel. The maximum movement range cannot exceed the outer diameter edge of the steering wheel (as shown in the B mark line in the figure below).\nWhen installing a DS…"
+      "start": 11.9,
+      "end": 14.9,
+      "text": "Thin enter the surpass word and you will have prompt tone."
     },
     {
-      "heading": "2. Function activation",
-      "text": "2.1 Open the computer browser and enter the local network IP address of the device, fill in the login password \"Adm_123\" and click \"Login\"\n2.2 Click \"General Settings\" >>> \"Alarm Settings\" >>> \"AI Settings\" menu\n2.3 In the \"AI Settings\" menu, click to enable the DSM function, and associate the DSM camera to the video input channel on the back panel of the host.\n2.4 Click \"Save\" to enable the DSM function and restart the host"
-    },
-    {
-      "heading": "3. Camera Configuration",
-      "text": "DSM camera channel display screen configuration (such as in WEB DSM calibration menu has been displayed, so you can ignore this step)\n3.1 Configure the DSM camera channel parameters through the \"MVMS_NetPlayer\" configuration tool, click the link to download to the local computer for installation or consult the technology.\nClick to download the tool\n3.2 Click to search \"Find device\">>> Double-click the search result and you need to configure the device ID\n3.3 Click \"Configuration\" >>> \"Encoding Settings\" >>> \"Channel Type Configuration\"\n3.4 Select the corresponding resolution camera \"720P\" in t…"
-    },
-    {
-      "heading": "4. Calibration configuration",
-      "text": "Click the \"DSM calibration\" column in the WEB menu to open the calibration menu. The driver sits in the driving position and keeps the normal driving posture and looks forward. Click Save to complete the calibration"
-    },
-    {
-      "heading": "5. Threshold and sensitivity adjustment",
-      "text": "5.1 Click the DSM sensitivity adjustment column in the WEB menu to check the DSM alarm speed condition judgment and fill in the DSM alarm low speed threshold and DSM alarm high speed threshold parameters\nNote: When the vehicle speed reaches the \"DSM alarm low speed threshold\", all types of DSM alarms will be triggered\nWhen the vehicle speed reaches the \"DSM alarm high-speed threshold\", the following distracted driving alarm type (left and right head tilt, up and down head down) high-speed duration will be triggered to generate the alarm threshold condition. The default high-speed duration is l…"
-    },
-    {
-      "heading": "6. Alarm test",
-      "text": "6.1 Alarm in test mode (ADAS parameters have been enabled here before, so ignore this step)\nClick \"AI Settings\" >>> \"Test Mode\" in the WEB menu Save and restart the device\n6.2 Normal driving mode alarm occurs, GPS antenna needs to be connected and positioning is successful, and the alarm will occur when the previously configured threshold is reached\n6.3 Log in to the V7 client to view the alarm information\n6.3.1 Real-time preview interface OSD alarm message\n6.3.2 Active safety panel to view real-time alarm messages\n6.3.3 Active safety menu to view historical alarm messages"
+      "start": 14.9,
+      "end": 16.9,
+      "text": "Calibration complete."
     }
   ]
 }

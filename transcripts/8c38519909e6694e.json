@@ -1,29 +1,107 @@
 {
-  "source": "doc-derived",
+  "source": "asr",
   "lang": "zh",
   "video_title": "检测服务器端口",
-  "doc_title": "服务端-端口相关配置",
-  "doc_url": "/zh/docs/351/",
   "segments": [
     {
-      "heading": "服务器软件端口说明",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=24\n操作说明：\n服务器默认需要开放的端口：\n6601-6612 tcp udp\n6613-6613 tcp\n6617-6622 tcp\n6630-6636 tcp\n2121-2162 tcp\nWEB端口 tcp"
+      "start": 1.4,
+      "end": 4.8,
+      "text": "接下来我为大家掩饰一下如何用客户端"
     },
     {
-      "heading": "服务器端口映射连通检测",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=58"
+      "start": 4.8,
+      "end": 7.3,
+      "text": "检验服务器的端口是否通"
     },
     {
-      "heading": "修改服务器软件端口",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=224"
+      "start": 8.7,
+      "end": 11.7,
+      "text": "除了常规的我们Tianet指令之外"
     },
     {
-      "heading": "自定义WEB端口(非80,88,8080,8088)",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=6"
+      "start": 11.7,
+      "end": 14.9,
+      "text": "我们客户端上面自带了一个测试端口的工具"
     },
     {
-      "heading": "网关服务器添加多个设备接入端口",
-      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=225"
+      "start": 15.4,
+      "end": 18.5,
+      "text": "就是在客户端的登录右上角有一个设置"
+    },
+    {
+      "start": 19.7,
+      "end": 22.9,
+      "text": "我们打开这个设置之后会有一个端口检测"
+    },
+    {
+      "start": 24.7,
+      "end": 28.4,
+      "text": "这里面就会有一个登录服务器的IP以及端口"
+    },
+    {
+      "start": 28.8,
+      "end": 33.2,
+      "text": "端口默认6605这个IP就是我们需要检测的服务器的IP"
+    },
+    {
+      "start": 34.0,
+      "end": 37.0,
+      "text": "我们点开始之后它就会自动检测相应的端口"
+    },
+    {
+      "start": 38.5,
+      "end": 42.5,
+      "text": "这里我们可以看得到检测结果会有一个IP和域名"
+    },
+    {
+      "start": 43.0,
+      "end": 45.6,
+      "text": "就是我们服务器上面配置的是IP"
+    },
+    {
+      "start": 45.8,
+      "end": 47.1,
+      "text": "让它返回的就是IP"
+    },
+    {
+      "start": 47.3,
+      "end": 49.1,
+      "text": "配置的是域名就返回的是域名"
+    },
+    {
+      "start": 50.6,
+      "end": 53.4,
+      "text": "后面接着是我们检测端口的一个结果返回"
+    },
+    {
+      "start": 53.9,
+      "end": 57.4,
+      "text": "所以就可以看到TCP和UDP是否成功"
+    },
+    {
+      "start": 58.1,
+      "end": 60.9,
+      "text": "其中会有一个6636端口的TCP"
+    },
+    {
+      "start": 60.9,
+      "end": 62.8,
+      "text": "这个是失败的这个没有关系"
+    },
+    {
+      "start": 63.1,
+      "end": 64.3,
+      "text": "我们用不到这个端口"
+    },
+    {
+      "start": 65.1,
+      "end": 66.6,
+      "text": "只要其他的端口是成功的"
+    },
+    {
+      "start": 66.6,
+      "end": 69.2,
+      "text": "就说明我们端口开放的是没问题的"
     }
   ]
 }
