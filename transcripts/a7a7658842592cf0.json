@@ -1,0 +1,17 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "4.View 808 status（APP）",
+  "doc_title": "JT808--Local remote control registration platform",
+  "doc_url": "/en/docs/138/",
+  "segments": [
+    {
+      "heading": "Prerequisites:",
+      "text": "- The device network can access the Internet normally, for example: 4G dial-up is successful or wired network routing is successful or WiFi connection is successful, refer to the \"Function Usage\">>>\"Network Function\" article introduction!\n- Usable remote control, normal display screen"
+    },
+    {
+      "heading": "Operation steps:",
+      "text": "1. Press the middle \"ENTER\" confirmation button on the remote control to enter the login interface, and enter the default administrator password \"999999\"\n1. In the first-level menu interface, press the direction key on the remote control to move to the \"Settings\" button, and press the middle \"ENTER\" confirmation button on the remote control to enter the second-level \"Settings\" menu\n1. In the second-level \"Settings\" menu interface, press the right arrow key on the remote control to move to the \"Network Settings\" button, and press the middle \"ENTER\" confirmation key on the remote control to ente…"
+    }
+  ]
+}

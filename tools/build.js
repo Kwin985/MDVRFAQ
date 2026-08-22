@@ -32,6 +32,7 @@ const GA_TAG = `<!-- Google tag (gtag.js) -->
 
 const DIST = path.resolve(__dirname, '../dist');
 const ROOT = path.resolve(__dirname, '..');
+const TRANSCRIPTS_DIR = path.join(ROOT, 'transcripts');
 const CONTENT = path.join(DIST, 'content.json');
 
 // 视频页 id -> 对应文字 FAQ 文档 id（同语言）。用于双向内链：文档页尾"相关视频指南"、视频页尾"相关文字说明"。
@@ -612,6 +613,53 @@ function relatedSection(page) {
     `</section>`;
 }
 
+function videoTranscript(page) {
+  if (page.section !== 'zh_videos' && page.section !== 'en_videos') return '';
+  const m = (page.content || '').match(/<video\b[^>]*src=["']([^"']*assets\/videos\/[^"']+\.mp4)["']/i);
+  if (!m) return '';
+  const hash = path.basename(m[1]).replace(/\.mp4$/i, '');
+  const fp = path.join(TRANSCRIPTS_DIR, hash + '.json');
+  if (!fs.existsSync(fp)) return '';
+  let data;
+  try { data = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch (e) { return ''; }
+  const segs = data.segments || [];
+  if (!segs.length) return '';
+
+  if (data.source === 'asr') {
+    const fmt = s => {
+      const t = Math.max(0, Math.floor(s || 0));
+      const mm = String(Math.floor(t / 60)).padStart(2, '0');
+      const ss = String(t % 60).padStart(2, '0');
+      return mm + ':' + ss;
+    };
+    const items = segs.map(s =>
+      `<li><span class="ts" data-t="${fmt(s.start)}">[${fmt(s.start)}]</span> <span class="tx">${esc(s.text)}</span></li>`
+    ).join('');
+    const note = data.lang === 'zh'
+      ? '本文字稿由语音识别自动生成，可能存在误差，仅供辅助参考。'
+      : 'Auto-generated transcript via speech recognition; may contain errors, for reference only.';
+    const heading = data.lang === 'zh' ? '视频文字稿' : 'Video Transcript';
+    return `<section class="video-transcript" aria-label="${esc(heading)}">\n` +
+      `  <h2 class="vt-title">${esc(heading)}</h2>\n` +
+      `  <ol class="transcript-list">${items}</ol>\n` +
+      `  <p class="vt-note">${esc(note)}</p>\n</section>`;
+  }
+
+  // doc-derived（整理自对应帮助文档，非逐字稿）
+  const chapters = segs.map(s =>
+    `<div class="vt-chapter"><h3>${esc(s.heading || '')}</h3><p>${esc(s.text || '')}</p></div>`
+  ).join('');
+  const heading = data.lang === 'zh' ? '视频配套文字说明' : 'Written guide for this video';
+  const docLink = `<a href="${esc(data.doc_url)}">${esc(data.doc_title)}</a>`;
+  const intro = data.lang === 'zh'
+    ? `本视频演示《${docLink}》的操作要点，以下文字整理自对应帮助文档，非逐字稿：`
+    : `This video demonstrates the steps from ${docLink}. The text below is summarized from the corresponding help doc (not a verbatim transcript):`;
+  return `<section class="video-transcript doc-derived" aria-label="${esc(heading)}">\n` +
+    `  <h2 class="vt-title">${esc(heading)}</h2>\n` +
+    `  <p class="vt-intro">${intro}</p>\n` +
+    `  <div class="vt-chapters">${chapters}</div>\n</section>`;
+}
+
 // ---------- 页面模板 ----------
 function renderPage(page) {
   const m = SECTION_META[page.section];
@@ -681,7 +729,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -725,7 +773,7 @@ function renderPage(page) {
     <div class="content-wrapper">
       ${breadcrumb}
       <article class="article">
-        <div class="article-content">${htmlContent}${relatedSection(page)}</div>
+        <div class="article-content">${htmlContent}${videoTranscript(page)}${relatedSection(page)}</div>
       </article>
       ${pageNav}
       ${renderContact(m.lang)}
@@ -772,7 +820,7 @@ function renderLanding() {
   <meta property="og:url" content="${SITE_URL}/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=7">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -910,7 +958,7 @@ writeFile('index.html', renderLanding());
 
 // 404
 writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=6"></head><body>
+<link rel="stylesheet" href="/assets/css/style.css?v=7"></head><body>
 <main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
 <h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
 

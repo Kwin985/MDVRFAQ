@@ -1,0 +1,37 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "2-ADAS calibration",
+  "doc_title": "WEB configuration and installation of ADAS camera",
+  "doc_url": "/en/docs/305/",
+  "segments": [
+    {
+      "heading": "Prerequisites:",
+      "text": "- The device and computer are in the same LAN segment, and the computer can ping the local IP address of the device\n- Or the device with WiFi module is switched to AP mode, and the computer connects to the AP hotspot to access the 192.168.42.100 address\n- The device is already in the shipping state (AI has been authorized, the algorithm has been imported)"
+    },
+    {
+      "heading": "1. Camera installation",
+      "text": "1.1 With the center axis of the vehicle as the center, the intersection of the horizontal line above the wiper and the central axis is the best installation position for the device (be careful not to be blocked by the wiper). The center axis position can be determined with a tape measure, and the horizontal line position can be determined with a level, as shown in the following figure:\n1.2 After wiping the inner surface of the windshield clean, tear off the camera 3M adhesive protective film and lens protective film and then paste and install it inside. When pasting, make sure that the camera…"
+    },
+    {
+      "heading": "2. Function activation",
+      "text": "2.1 Open the computer browser and enter the local network IP address of the device, fill in the login password \"Adm_123\" and click \"Login\"\n2.2 Click \"General Settings\" >>> \"Alarm Settings\" >>> \"AI Settings\" menu\n2.3 In the \"AI Settings\" menu, click to enable the ADAS function, and associate the ADAS camera to insert into the host rear panel video input channel\n2.4 Click \"Save\" to enable the ADAS function and restart the host"
+    },
+    {
+      "heading": "3. Camera screen configuration",
+      "text": "ADAS camera channel display screen configuration (such as in WEB ADAS If the vanishing point menu has already been displayed, you can ignore this step)\n3.1 Configure the ADAS camera channel parameters through the \"MVMS_NetPlayer\" configuration tool, click the link to download to the local computer for installation or consult the technology.\nClick to download the tool\n3.2 Click to search \"Find device\">>> Double-click the search result and you need to configure the device ID\n3.3 Click \"Configuration\" >>> \"Encoding Settings\" >>> \"Channel Type Configuration\"\n3.4 Select the corresponding resolution…"
+    },
+    {
+      "heading": "4. Vanishing point and calibration configuration",
+      "text": "4.1 Click the \"ADAS Vanishing Point\" column in the WEB menu Open the vanishing point menu, click the arrow keys to move the red cross to the skyline in front of the ADAS lens, and click Save to complete the vanishing point calibration\nPs: When the horizontal line of the red cross cannot be completely overlapped with the skyline (the junction of the sky and the earth) after moving it in the menu, you can loosen the fixing screws with the matching ADAS camera \"7\" shaped hexagonal tool, then gently buckle the pointer and slide it to the required scale, and then tighten the fixing screws. Use the…"
+    },
+    {
+      "heading": "5. Threshold and sensitivity adjustment",
+      "text": "5.1 Click ADAS Sensitivity Adjustment in the WEB menu and fill in HMW (distance detection), FCW (front vehicle collision), LDW (lane deviation), PCW (pedestrian collision) speed threshold parameters\nNote: The alarm will only occur when the vehicle speed reaches the value of the corresponding alarm type\n5.2 Fill in HMW (distance detection), PCW (pedestrian collision), FCW (front vehicle collision) Duration threshold\nDescription: The alarm will be triggered only when the duration of the corresponding alarm type reaches the configured value, except that the PCW alarm threshold will be triggered o…"
+    },
+    {
+      "heading": "6. Alarm test",
+      "text": "6.1 Alarm occurs in test mode\nClick \"AI Settings\" >>> \"Test Mode\" in the WEB menu Save and restart the device\n6.2 Normal driving mode alarm occurs, the GPS antenna needs to be connected and the alarm will occur when the previously configured threshold is reached if the positioning is successful\n6.3 Log in to the V7 client to view the alarm information\n6.3.1 Real-time preview interface OSD alarm message\n6.3.2 Active safety panel to view real-time alarm messages\n6.3.3 Active safety menu to view historical alarm messages"
+    }
+  ]
+}

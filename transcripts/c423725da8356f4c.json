@@ -1,0 +1,17 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "2.APP login to WEB（APP）",
+  "doc_title": "Client-APP previews the video through hotspot connection",
+  "doc_url": "/en/docs/303/",
+  "segments": [
+    {
+      "heading": "Prerequisites:",
+      "text": "- If the device has a WiFi module, switch to AP mode to connect. If the device does not have a WiFi module, insert E-set into the USB port to connect to the hotspot\n- Download and install the APP. For the download address, see the document above---Platform Software Download Article"
+    },
+    {
+      "heading": "Operation steps:",
+      "text": "#####The device has a WiFi module\n1. Remotely enter Menu>>Settings>>Network Settings>>WiFi, enter the WiFi configuration interface\n2. Move to the WiFi mode bar Select AP mode, confirm and save\n#####Insert the E-set module into the device\n1. Insert the E-set into the USB port of the device, the device will automatically recognize and switch to AP mode\n2. Press the arrow key on the remote control to go to the network status to view the AP mode status\n#####Connection and use\n1. Open the mobile phone wifi to connect to the wifi named \"MDVR+device number\", click to connect, the default password is…"
+    }
+  ]
+}

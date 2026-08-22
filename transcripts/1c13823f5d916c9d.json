@@ -1,0 +1,17 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "2 MDVR power on.mp4",
+  "doc_title": "Control configuration of power on/off mode and delay",
+  "doc_url": "/en/docs/194/",
+  "segments": [
+    {
+      "heading": "Prerequisites",
+      "text": "- A usable remote control and normal display screen"
+    },
+    {
+      "heading": "Operation steps",
+      "text": "1.Enter the main menu function interface, operate the direction keys and ENTER key of the remote control, and enter the settings-basic settings-power on/off menu\n2.Select \"Ignition Mode,\" check the \"Power-off Delay\" checkbox, enter the desired delay duration (range: 0–65535 minutes), and configure which cameras remain active during the ACC disconnection delay period.\nps: The vehicle ACC ignition device is turned on and works, and the ACC disconnection device is turned off. For wiring, refer to \"Power line wiring installation\" Ignition mode schematic diagram introduction.\n3.Select \"Timer Mode\"…"
+    }
+  ]
+}

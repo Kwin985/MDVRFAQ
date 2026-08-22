@@ -1,0 +1,29 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "1-DSM configuration",
+  "doc_title": "Active safety AI local remote control configuration",
+  "doc_url": "/en/docs/148/",
+  "segments": [
+    {
+      "heading": "Prerequisites:",
+      "text": "- A usable remote control and a normal display screen\n- The device is already in shipping status (AI has been authorized and the algorithm has been imported)"
+    },
+    {
+      "heading": "1. Login menu",
+      "text": "1.1 Press the middle \"ENTER\" confirmation button on the remote control to enter the login interface and enter the default administrator password \"999999\"\n1.2 In the first-level menu interface, press the arrow key on the remote control to move to the \"Settings\" button, and press the middle \"ENTER\" confirmation key on the remote control to enter the second-level \"Settings\" menu\n1.3 In the second-level \"Settings\" menu interface, press the right arrow key on the remote control to move to the \"Network Settings\" button, Press the middle \"ENTER\" confirmation key on the remote control to enter the thi…"
+    },
+    {
+      "heading": "2. Enable AI function",
+      "text": "Active safety AI can enable the following functions:\nADAS\nDSM\nL BSD (left BSD)\nR BSD (right BSD)\nF BSD (front BSD)\nB BSD (rear BSD)\n2.1 For example, if you need to enable ADAS function and associate it with CH1 channel, press the down key of the remote control &darr; to move to the ADAS checkbox, then press the confirmation key &crarr; to check, press the right key &rarr; to move to the ADAS channel selection box and press the confirmation key &crarr; to select the channel, the default is CH1 channel. You do not need to select the button here, and the method of enabling other AI functions is t…"
+    },
+    {
+      "heading": "3. Check if AI is running normally",
+      "text": "3.1 Check if the last human icon in the upper right corner is as shown in the figure below\n3.2 The device is in the real-time preview main interface. If you press \"RETURN\" in the lower right corner of the remote control direction key in the menu interface to exit to the real-time preview main interface.\nPress the left button on the remote control &larr; to go to the \"Serial Port, AI\" interface, check whether the AI ​​status in the red box in the lower left corner is running normally. If it is running normally, there should be the following information:\n3rd line MD5 verification: Success\n4th li…"
+    },
+    {
+      "heading": "4. Enable AI test mode",
+      "text": "If you need to test the AI ​​function without installing it in the vehicle, refer to \"2. Enable AI function\" above to enter the AI ​​menu and check the test mode Check the box to save. If you need to restore the normal mode after loading, uncheck the box to save and restart the device."
+    }
+  ]
+}

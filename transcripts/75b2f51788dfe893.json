@@ -1,0 +1,17 @@
+{
+  "source": "doc-derived",
+  "lang": "en",
+  "video_title": "1.wifi connect",
+  "doc_title": "Configure WiFi Network",
+  "doc_url": "/en/docs/201/",
+  "segments": [
+    {
+      "heading": "Prerequisites",
+      "text": "- A usable remote control, a normal display screen\n- A usable WiFi network, WiFi antenna, and a WiFi module built into the device"
+    },
+    {
+      "heading": "Operation steps",
+      "text": "1. Connect the device to the display screen, connect the WiFi antenna (if you don't know the location, refer to the \"Interface Status Definition\" column above), and power on the device.\n2. Use the remote control ENTER to enter the device network settings menu, press the confirmation key and press the direction key to select WiFi mode, and confirm to save.\n \n3. Press the right button on the remote control to move to the WiFi configuration menu, select WiFi mode \"client\", fill in the user name, password, authentication method, and encryption type. Usually, current WiFi routers are WPA2PSK authen…"
+    }
+  ]
+}

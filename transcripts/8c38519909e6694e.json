@@ -1,0 +1,29 @@
+{
+  "source": "doc-derived",
+  "lang": "zh",
+  "video_title": "检测服务器端口",
+  "doc_title": "服务端-端口相关配置",
+  "doc_url": "/zh/docs/351/",
+  "segments": [
+    {
+      "heading": "服务器软件端口说明",
+      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=24\n操作说明：\n服务器默认需要开放的端口：\n6601-6612 tcp udp\n6613-6613 tcp\n6617-6622 tcp\n6630-6636 tcp\n2121-2162 tcp\nWEB端口 tcp"
+    },
+    {
+      "heading": "服务器端口映射连通检测",
+      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=58"
+    },
+    {
+      "heading": "修改服务器软件端口",
+      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=224"
+    },
+    {
+      "heading": "自定义WEB端口(非80,88,8080,8088)",
+      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=6"
+    },
+    {
+      "heading": "网关服务器添加多个设备接入端口",
+      "text": "http://faq.cmsv8.com/808gps/helpcenter.html?page_id=225"
+    }
+  ]
+}
