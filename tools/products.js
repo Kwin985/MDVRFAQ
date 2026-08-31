@@ -634,16 +634,6 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
       ? `<nav class="pd-prevnext" aria-label="product navigation">${navLink(prevIt, 'prev')}${navLink(nextIt, 'next')}</nav>`
       : '';
 
-    const jsonld = JSON.stringify({
-      '@context': 'https://schema.org', '@type': 'Product',
-      name: it.name + (it.modelCode ? ' ' + it.modelCode : ''),
-      category: typeLabel(it.type, lang),
-      ...(it.modelCode ? { model: it.modelCode } : {}),
-      ...(it.summary ? { description: it.summary } : {}),
-      ...(main ? { image: SITE_URL + main } : {}),
-      brand: { '@type': 'Brand', name: SITE_NAME },
-    });
-
     const content = `
     <article class="pd-item">
       <div class="pd-pdp">
@@ -685,7 +675,7 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
       lang, title: it.name + (it.modelCode ? ' ' + it.modelCode : ''),
       desc: it.summary || `${typeLabel(it.type, lang)} ${it.name}`,
       active: it.id, canonical: BASE + '/item/' + it.id + '/',
-      bodyClass: 'pd-item-page', jsonld,
+      bodyClass: 'pd-item-page',
       breadcrumb: breadcrumb([
         { label: L.section, href: BASE + '/' },
         { label: typePlural(it.type, lang), href: catUrl(lang, it.type) },
