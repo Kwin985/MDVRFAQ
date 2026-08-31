@@ -1122,14 +1122,24 @@ writeFile('_headers', headers);
 // - 旧 /en、/zh 站点根（语言首页）-> 现行双语入口首页 /
 // - 旧 /accessories -> /products
 writeFile('_redirects', [
+  // 旧版分类页（不带/带结尾斜杠两种写法都覆盖，Cloudflare _redirects 为精确匹配）
   '/en/accessory /products/en/accessory/ 301',
+  '/en/accessory/ /products/en/accessory/ 301',
   '/en/host /products/en/host/ 301',
+  '/en/host/ /products/en/host/ 301',
   '/en/camera /products/en/camera/ 301',
+  '/en/camera/ /products/en/camera/ 301',
   '/zh/accessory /products/zh/accessory/ 301',
+  '/zh/accessory/ /products/zh/accessory/ 301',
   '/zh/host /products/zh/host/ 301',
+  '/zh/host/ /products/zh/host/ 301',
   '/zh/camera /products/zh/camera/ 301',
+  '/zh/camera/ /products/zh/camera/ 301',
+  // 旧版语言根（/en、/zh 及其带斜杠变体）-> 现行双语首页 /
   '/en / 301',
+  '/en/ / 301',
   '/zh / 301',
+  '/zh/ / 301',
   '/accessories/* /products/:splat 301',
   '/products /products/en/ 301',
 ].join('\n') + '\n');
