@@ -9,6 +9,7 @@ node_modules/
 dist/
 assets/videos/
 assets/images/
+assets/video-thumbs/
 assets/products-media/
 .wrangler/
 .tmp_thumbs/
