@@ -68,8 +68,13 @@ async function convertItem(item) {
 }
 
 (async () => {
+  const missingOnly = process.argv.includes('--missing-only');
   const catalog = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));
-  const items = catalog.items.filter(i => i.specDocx);
+  let items = catalog.items.filter(i => i.specDocx);
+  if (missingOnly) {
+    items = items.filter(i => !fs.existsSync(path.join(MEDIA, String(i.specDocx).replace(/^media\//, '').replace(/spec\.docx$/, ''), 'spec.html')));
+    console.log('--missing-only: 待转换', items.length);
+  }
   console.log('待转换:', items.length);
   let done = 0, fail = 0;
   const fails = [];

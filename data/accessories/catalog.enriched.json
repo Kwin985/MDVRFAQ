@@ -1177,11 +1177,11 @@
    "group": "",
    "specDocx": "media/zh/camera/cam-zh-110/spec.docx",
    "docCount": 1,
-   "cover": "media/zh/camera/cam-zh-110/images/01.webp",
+   "cover": "media/zh/camera/cam-zh-110/images/03.webp",
    "gallery": [
+    "media/zh/camera/cam-zh-110/images/03.webp",
     "media/zh/camera/cam-zh-110/images/01.webp",
-    "media/zh/camera/cam-zh-110/images/02.webp",
-    "media/zh/camera/cam-zh-110/images/03.webp"
+    "media/zh/camera/cam-zh-110/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -1237,11 +1237,11 @@
    "group": "",
    "specDocx": "media/zh/camera/cam-zh-113/spec.docx",
    "docCount": 1,
-   "cover": "media/zh/camera/cam-zh-113/images/01.webp",
+   "cover": "media/zh/camera/cam-zh-113/images/03.webp",
    "gallery": [
+    "media/zh/camera/cam-zh-113/images/03.webp",
     "media/zh/camera/cam-zh-113/images/01.webp",
-    "media/zh/camera/cam-zh-113/images/02.webp",
-    "media/zh/camera/cam-zh-113/images/03.webp"
+    "media/zh/camera/cam-zh-113/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -1296,10 +1296,10 @@
    "group": "",
    "specDocx": "media/zh/camera/cam-zh-115/spec.docx",
    "docCount": 1,
-   "cover": "media/zh/camera/cam-zh-115/images/01.webp",
+   "cover": "media/zh/camera/cam-zh-115/images/02.webp",
    "gallery": [
-    "media/zh/camera/cam-zh-115/images/01.webp",
-    "media/zh/camera/cam-zh-115/images/02.webp"
+    "media/zh/camera/cam-zh-115/images/02.webp",
+    "media/zh/camera/cam-zh-115/images/01.webp"
    ],
    "imageCount": 2,
    "lineKey": "",
@@ -1354,11 +1354,11 @@
    "group": "",
    "specDocx": "media/zh/camera/cam-zh-260/spec.docx",
    "docCount": 1,
-   "cover": "media/zh/camera/cam-zh-260/images/01.webp",
+   "cover": "media/zh/camera/cam-zh-260/images/03.webp",
    "gallery": [
+    "media/zh/camera/cam-zh-260/images/03.webp",
     "media/zh/camera/cam-zh-260/images/01.webp",
-    "media/zh/camera/cam-zh-260/images/02.webp",
-    "media/zh/camera/cam-zh-260/images/03.webp"
+    "media/zh/camera/cam-zh-260/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -1723,11 +1723,11 @@
    "group": "",
    "specDocx": "media/zh/camera/cam-zh-705/spec.docx",
    "docCount": 1,
-   "cover": "media/zh/camera/cam-zh-705/images/01.webp",
+   "cover": "media/zh/camera/cam-zh-705/images/03.webp",
    "gallery": [
+    "media/zh/camera/cam-zh-705/images/03.webp",
     "media/zh/camera/cam-zh-705/images/01.webp",
-    "media/zh/camera/cam-zh-705/images/02.webp",
-    "media/zh/camera/cam-zh-705/images/03.webp"
+    "media/zh/camera/cam-zh-705/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -1751,7 +1751,8 @@
     "media/zh/camera/cam-zh-708/images/03.webp"
    ],
    "imageCount": 3,
-   "lineKey": ""
+   "lineKey": "",
+   "modelCode": "MX-AHDH-708A-NNP-005H"
   },
   {
    "id": "cam-zh-803",
@@ -2094,8 +2095,12 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-113/spec.docx",
    "docCount": 1,
-   "cover": null,
-   "gallery": [],
+   "cover": "media/en/camera/cam-en-113/images/03.webp",
+   "gallery": [
+    "media/en/camera/cam-en-113/images/03.webp",
+    "media/en/camera/cam-en-113/images/01.webp",
+    "media/en/camera/cam-en-113/images/02.webp"
+   ],
    "imageCount": 0,
    "lineKey": "",
    "summary": "Exquisite design, exquisite workmanship, precise circuit and rigorous structure, reflecting the highest technology;",
@@ -2119,7 +2124,8 @@
    ],
    "chips": [
     "1080P"
-   ]
+   ],
+   "modelCode": "MX-AHDH-113A-AXP-005,2.8mm"
   },
   {
    "id": "cam-en-115",
@@ -2131,10 +2137,10 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-115/spec.docx",
    "docCount": 1,
-   "cover": "media/en/camera/cam-en-115/images/01.webp",
+   "cover": "media/en/camera/cam-en-115/images/02.webp",
    "gallery": [
-    "media/en/camera/cam-en-115/images/01.webp",
-    "media/en/camera/cam-en-115/images/02.webp"
+    "media/en/camera/cam-en-115/images/02.webp",
+    "media/en/camera/cam-en-115/images/01.webp"
    ],
    "imageCount": 2,
    "lineKey": "",
@@ -2148,7 +2154,8 @@
      "k": "Interface",
      "v": "BMW Connector"
     }
-   ]
+   ],
+   "modelCode": "MX-AHDH-115B-NNP-005,2.1mm"
   },
   {
    "id": "cam-en-260",
@@ -2282,7 +2289,8 @@
     "media/en/camera/cam-en-267/images/03.webp"
    ],
    "imageCount": 3,
-   "lineKey": ""
+   "lineKey": "",
+   "modelCode": "MX-AHDM-267A-NNP-005H"
   },
   {
    "id": "cam-en-301",
@@ -2294,11 +2302,11 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-301/spec.docx",
    "docCount": 2,
-   "cover": "media/en/camera/cam-en-301/images/01.webp",
+   "cover": "media/en/camera/cam-en-301/images/03.webp",
    "gallery": [
+    "media/en/camera/cam-en-301/images/03.webp",
     "media/en/camera/cam-en-301/images/01.webp",
-    "media/en/camera/cam-en-301/images/02.webp",
-    "media/en/camera/cam-en-301/images/03.webp"
+    "media/en/camera/cam-en-301/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -2339,10 +2347,10 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-610/spec.docx",
    "docCount": 1,
-   "cover": "media/en/camera/cam-en-610/images/01.webp",
+   "cover": "media/en/camera/cam-en-610/images/02.webp",
    "gallery": [
-    "media/en/camera/cam-en-610/images/01.webp",
-    "media/en/camera/cam-en-610/images/02.webp"
+    "media/en/camera/cam-en-610/images/02.webp",
+    "media/en/camera/cam-en-610/images/01.webp"
    ],
    "imageCount": 2,
    "lineKey": "",
@@ -2368,11 +2376,11 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-701/spec.docx",
    "docCount": 2,
-   "cover": "media/en/camera/cam-en-701/images/01.webp",
+   "cover": "media/en/camera/cam-en-701/images/03.webp",
    "gallery": [
+    "media/en/camera/cam-en-701/images/03.webp",
     "media/en/camera/cam-en-701/images/01.webp",
-    "media/en/camera/cam-en-701/images/02.webp",
-    "media/en/camera/cam-en-701/images/03.webp"
+    "media/en/camera/cam-en-701/images/02.webp"
    ],
    "imageCount": 3,
    "lineKey": "",
@@ -2402,14 +2410,15 @@
    "group": "",
    "specDocx": "media/en/camera/cam-en-705/spec.docx",
    "docCount": 2,
-   "cover": "media/en/camera/cam-en-705/images/01.webp",
+   "cover": "media/en/camera/cam-en-705/images/02.webp",
    "gallery": [
-    "media/en/camera/cam-en-705/images/01.webp",
     "media/en/camera/cam-en-705/images/02.webp",
+    "media/en/camera/cam-en-705/images/01.webp",
     "media/en/camera/cam-en-705/images/03.webp"
    ],
    "imageCount": 3,
-   "lineKey": ""
+   "lineKey": "",
+   "modelCode": "MX-AHDH-705A-NNP-005H,2.8mm"
   },
   {
    "id": "cam-en-708",
@@ -2421,13 +2430,14 @@
    "group": "",
    "specDocx": null,
    "docCount": 0,
-   "cover": "media/en/camera/cam-en-708/images/01.webp",
+   "cover": "media/en/camera/cam-en-708/images/02.webp",
    "gallery": [
-    "media/en/camera/cam-en-708/images/01.webp",
-    "media/en/camera/cam-en-708/images/02.webp"
+    "media/en/camera/cam-en-708/images/02.webp",
+    "media/en/camera/cam-en-708/images/01.webp"
    ],
    "imageCount": 2,
-   "lineKey": ""
+   "lineKey": "",
+   "modelCode": "MX-AHDH-708A-NNP-005H"
   },
   {
    "id": "cam-en-803",
@@ -2482,7 +2492,8 @@
    "chips": [
     "1080P",
     "IP68"
-   ]
+   ],
+   "modelCode": "MX-AHDH-806A-NNP-005H"
   },
   {
    "id": "cam-en-813",
@@ -2611,7 +2622,8 @@
      "k": "Horizontal angle",
      "v": "80 °"
     }
-   ]
+   ],
+   "modelCode": "MX-DSMM-839A-NNP-015H"
   },
   {
    "id": "cam-en-dsm-independent",
@@ -4226,6 +4238,468 @@
    "chips": [
     "1 sheet, maximum 512GB",
     "No"
+   ]
+  },
+  {
+   "id": "cam-zh-B2",
+   "type": "camera",
+   "lang": "zh",
+   "name": "B2",
+   "line": "",
+   "model": "B2",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-B2/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-B2/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-B2/images/01.webp",
+    "media/zh/camera/cam-zh-B2/images/02.webp",
+    "media/zh/camera/cam-zh-B2/images/03.webp",
+    "media/zh/camera/cam-zh-B2/images/04.webp",
+    "media/zh/camera/cam-zh-B2/images/05.webp",
+    "media/zh/camera/cam-zh-B2/images/06.webp",
+    "media/zh/camera/cam-zh-B2/images/07.webp",
+    "media/zh/camera/cam-zh-B2/images/08.webp"
+   ],
+   "imageCount": 8,
+   "modelCode": "MX-AHD-IR-B2",
+   "summary": "智能红外云台摄像机，0.9°精密电机驱动、运行平滑无抖动，360°连续旋转并支持256个预置位；内置欧司朗高强度发光芯片，配强力磁铁可作便携式室外车载监控，支持正装、倒装、磁吸、吸盘、抗震多种安装形态。",
+   "keySpecs": [
+    {
+     "k": "水平角度",
+     "v": "360°连续旋转"
+    },
+    {
+     "k": "垂直角度",
+     "v": "90°（180°自动反转）"
+    },
+    {
+     "k": "预置位",
+     "v": "256个"
+    },
+    {
+     "k": "防护等级",
+     "v": "IP66"
+    },
+    {
+     "k": "电源",
+     "v": "DC11V-DC18V"
+    },
+    {
+     "k": "工作温度",
+     "v": "-35°~+55°"
+    },
+    {
+     "k": "重量",
+     "v": "2.5kg"
+    }
+   ],
+   "chips": [
+    "360°旋转",
+    "IP66",
+    "256预置位"
+   ]
+  },
+  {
+   "id": "cam-zh-TA4",
+   "type": "camera",
+   "lang": "zh",
+   "name": "TA4",
+   "line": "",
+   "model": "TA4",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-TA4/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-TA4/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-TA4/images/01.webp",
+    "media/zh/camera/cam-zh-TA4/images/02.webp",
+    "media/zh/camera/cam-zh-TA4/images/03.webp",
+    "media/zh/camera/cam-zh-TA4/images/04.webp",
+    "media/zh/camera/cam-zh-TA4/images/05.webp",
+    "media/zh/camera/cam-zh-TA4/images/06.webp"
+   ],
+   "imageCount": 6,
+   "modelCode": "MX-AHDX-TA4",
+   "summary": "T型车载云台摄像机，镜头在安装固定过程中可任意调节角度，红外投射距离达100米；防水密封铝质护罩达IP66，一体化防震防松设计，适用于各种车载环境监控，可配合485控制键盘与继电器接入MDVR系统。",
+   "keySpecs": [
+    {
+     "k": "转动速度",
+     "v": "水平100°/S，上下60°/S"
+    },
+    {
+     "k": "预置位",
+     "v": "最多256个"
+    },
+    {
+     "k": "红外投射距离",
+     "v": "100米"
+    },
+    {
+     "k": "红外发光体",
+     "v": "高亮度阵列LED×7（850nm）"
+    },
+    {
+     "k": "防护等级",
+     "v": "IP66"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V（Iin≥4A）"
+    },
+    {
+     "k": "工作温度",
+     "v": "-35℃~55℃"
+    }
+   ],
+   "chips": [
+    "100米红外",
+    "IP66",
+    "256预置位"
+   ]
+  },
+  {
+   "id": "cam-zh-D30",
+   "type": "camera",
+   "lang": "zh",
+   "name": "D30",
+   "line": "",
+   "model": "D30",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-D30/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-D30/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-D30/images/01.webp",
+    "media/zh/camera/cam-zh-D30/images/02.webp",
+    "media/zh/camera/cam-zh-D30/images/03.webp"
+   ],
+   "imageCount": 3,
+   "modelCode": "MX-AHDL-D30-NNP-005H",
+   "summary": "双目客流统计摄像头，自带双摄像头建模检测功能，满足大部分客运车辆的客流统计需求；图像支持正像/镜像，专用航空接口设计，镜头间距5cm（12cm可根据检测范围选择）。",
+   "keySpecs": [
+    {
+     "k": "图像传感器",
+     "v": "1/3\" CMOS"
+    },
+    {
+     "k": "水平清晰度",
+     "v": "700TVLines"
+    },
+    {
+     "k": "镜头",
+     "v": "960×576像素，2.8mm（2.1~8mm可选）"
+    },
+    {
+     "k": "视场角",
+     "v": "水平105°，垂直60°（2.8mm）"
+    },
+    {
+     "k": "镜头间距",
+     "v": "5cm（12cm可选）"
+    },
+    {
+     "k": "视频输出",
+     "v": "复合视频输出，航空头接口"
+    },
+    {
+     "k": "电源",
+     "v": "DC12V，≤2W"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20~+70℃"
+    }
+   ],
+   "chips": [
+    "双目客流",
+    "700TVL",
+    "105°"
+   ]
+  },
+  {
+   "id": "cam-zh-M22",
+   "type": "camera",
+   "lang": "zh",
+   "name": "M22",
+   "line": "",
+   "model": "M22",
+   "group": "",
+   "specDocx": "media/zh/camera/cam-zh-M22/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/camera/cam-zh-M22/images/01.webp",
+   "gallery": [
+    "media/zh/camera/cam-zh-M22/images/01.webp"
+   ],
+   "imageCount": 1,
+   "modelCode": "M22-NNNN",
+   "summary": "双目客流统计一体机，内置Linux系统独立完成客流分析，统计精确率＞95%；支持OSD客流信息图像叠加与超员报警，RS485对接MDVR，宽压8~36V直接取用车载电源。",
+   "keySpecs": [
+    {
+     "k": "图像传感器",
+     "v": "1/3\" CMOS"
+    },
+    {
+     "k": "分辨率",
+     "v": "D1（960×576像素）"
+    },
+    {
+     "k": "压缩格式",
+     "v": "H.264"
+    },
+    {
+     "k": "统计精确率",
+     "v": "＞95%"
+    },
+    {
+     "k": "通讯接口",
+     "v": "RS485×1，RJ45×1"
+    },
+    {
+     "k": "报警",
+     "v": "视频丢失/遮挡，超员报警"
+    },
+    {
+     "k": "电源",
+     "v": "DC8~36V，功耗＜4W"
+    },
+    {
+     "k": "工作温度",
+     "v": "-20~70℃"
+    }
+   ],
+   "chips": [
+    "客流统计＞95%",
+    "宽压8~36V",
+    "超员报警"
+   ]
+  },
+  {
+   "id": "cam-en-B2",
+   "type": "camera",
+   "lang": "en",
+   "name": "B2",
+   "line": "",
+   "model": "B2",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-B2/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-B2/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-B2/images/01.webp",
+    "media/en/camera/cam-en-B2/images/02.webp",
+    "media/en/camera/cam-en-B2/images/03.webp"
+   ],
+   "imageCount": 3,
+   "modelCode": "MX-AHD-IR-B2",
+   "summary": "Smart IR PTZ camera driven by a 0.9° precision motor for smooth, jitter-free movement; 360° continuous pan rotation with 256 presets and Osram high-intensity IR chip. Mounts upright or inverted, with magnetic, sucker and vibration-proof bases for portable outdoor vehicle monitoring.",
+   "keySpecs": [
+    {
+     "k": "Pan range",
+     "v": "360° continuous rotation"
+    },
+    {
+     "k": "Tilt range",
+     "v": "90° (180° automatic reverse)"
+    },
+    {
+     "k": "Preset points",
+     "v": "256"
+    },
+    {
+     "k": "Protection level",
+     "v": "IP66"
+    },
+    {
+     "k": "Power",
+     "v": "DC11V-DC18V"
+    },
+    {
+     "k": "Working temperature",
+     "v": "-35°~+55°"
+    },
+    {
+     "k": "Weight",
+     "v": "2.5kg"
+    }
+   ],
+   "chips": [
+    "360° Pan",
+    "IP66",
+    "256 Presets"
+   ]
+  },
+  {
+   "id": "cam-en-TA4",
+   "type": "camera",
+   "lang": "en",
+   "name": "TA4",
+   "line": "",
+   "model": "TA4",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-TA4/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-TA4/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-TA4/images/01.webp",
+    "media/en/camera/cam-en-TA4/images/02.webp",
+    "media/en/camera/cam-en-TA4/images/03.webp",
+    "media/en/camera/cam-en-TA4/images/04.webp",
+    "media/en/camera/cam-en-TA4/images/05.webp"
+   ],
+   "imageCount": 5,
+   "modelCode": "MX-AHDX-TA4",
+   "summary": "T-type vehicle PTZ camera with a freely adjustable lens angle and 100 m IR projection distance; waterproof sealed aluminum housing rated IP66 with integrated shockproof and anti-loosening design. Works with a 485 control keyboard and relay to integrate into MDVR systems.",
+   "keySpecs": [
+    {
+     "k": "Pan/Tilt speed",
+     "v": "100°/S pan, 60°/S tilt"
+    },
+    {
+     "k": "Preset positions",
+     "v": "Up to 256"
+    },
+    {
+     "k": "IR projection distance",
+     "v": "100 meters"
+    },
+    {
+     "k": "IR emitter",
+     "v": "High-brightness LED array ×7 (850nm)"
+    },
+    {
+     "k": "Waterproof grade",
+     "v": "IP66"
+    },
+    {
+     "k": "Power",
+     "v": "DC12V (Iin≥4A)"
+    },
+    {
+     "k": "Working temperature",
+     "v": "-35℃~55℃"
+    }
+   ],
+   "chips": [
+    "100 m IR",
+    "IP66",
+    "256 Presets"
+   ]
+  },
+  {
+   "id": "cam-en-D30",
+   "type": "camera",
+   "lang": "en",
+   "name": "D30",
+   "line": "",
+   "model": "D30",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-D30/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-D30/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-D30/images/01.webp",
+    "media/en/camera/cam-en-D30/images/02.webp",
+    "media/en/camera/cam-en-D30/images/03.webp"
+   ],
+   "imageCount": 3,
+   "modelCode": "MX-AHDL-D30-NNP-005H",
+   "summary": "Dual-lens passenger counting camera with built-in dual-camera modeling and detection, meeting the needs of most passenger vehicles; positive/mirror image, specialized aviation connector, 5 cm lens spacing (12 cm optional for wider detection ranges).",
+   "keySpecs": [
+    {
+     "k": "Image sensor",
+     "v": "1/3\" CMOS"
+    },
+    {
+     "k": "Horizontal resolution",
+     "v": "700 TV Lines"
+    },
+    {
+     "k": "Lens",
+     "v": "960×576 pixels, 2.8mm (2.1~8mm optional)"
+    },
+    {
+     "k": "Field of view",
+     "v": "105° horizontal, 60° vertical (2.8mm)"
+    },
+    {
+     "k": "Lens spacing",
+     "v": "5cm (12cm optional)"
+    },
+    {
+     "k": "Interface",
+     "v": "Composite video output, aviation connector"
+    },
+    {
+     "k": "Power",
+     "v": "DC12V, ≤2W"
+    },
+    {
+     "k": "Working temperature",
+     "v": "-20~+70℃"
+    }
+   ],
+   "chips": [
+    "Passenger Counting",
+    "700TVL",
+    "105°"
+   ]
+  },
+  {
+   "id": "cam-en-M22",
+   "type": "camera",
+   "lang": "en",
+   "name": "M22",
+   "line": "",
+   "model": "M22",
+   "group": "",
+   "specDocx": "media/en/camera/cam-en-M22/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/camera/cam-en-M22/images/01.webp",
+   "gallery": [
+    "media/en/camera/cam-en-M22/images/01.webp"
+   ],
+   "imageCount": 1,
+   "modelCode": "M22-NNNN",
+   "summary": "Dual-lens passenger counting camera with a built-in Linux system for on-device analysis, counting accuracy >95%; OSD overlay of time, date and passenger-flow information plus overload alarm. Integrates with MDVR via RS485 and runs on wide 8~36V vehicle power.",
+   "keySpecs": [
+    {
+     "k": "Image sensor",
+     "v": "1/3\" CMOS"
+    },
+    {
+     "k": "Resolution",
+     "v": "D1 (960×576 pixels)"
+    },
+    {
+     "k": "Compression",
+     "v": "H.264"
+    },
+    {
+     "k": "Counting accuracy",
+     "v": "＞95%"
+    },
+    {
+     "k": "Interfaces",
+     "v": "RS485 ×1, RJ45 ×1"
+    },
+    {
+     "k": "Alarms",
+     "v": "Video loss/obstruction, overload alarm"
+    },
+    {
+     "k": "Power",
+     "v": "DC8~36V, <4W"
+    },
+    {
+     "k": "Working temperature",
+     "v": "-20~70℃"
+    }
+   ],
+   "chips": [
+    ">95% Accuracy",
+    "8~36V",
+    "Overload Alarm"
    ]
   }
  ]

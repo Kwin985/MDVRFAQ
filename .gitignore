@@ -13,3 +13,5 @@ assets/video-thumbs/
 assets/products-media/
 .wrangler/
 .tmp_thumbs/
+data/accessories/media/
+data/accessories/*.bak-*
