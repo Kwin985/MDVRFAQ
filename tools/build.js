@@ -10,7 +10,10 @@
  */
 const fs = require('fs');
 const path = require('path');
-const marked = require(path.resolve(__dirname, '../dist/assets/js/vendor/marked.min.js'));
+// marked 以仓库内 assets/js/vendor 为源码真相（dist 可能在构建前尚不存在）
+const MARKED_SRC = path.resolve(__dirname, '../assets/js/vendor/marked.min.js');
+const MARKED_FALLBACK = path.resolve(__dirname, '../dist/assets/js/vendor/marked.min.js');
+const marked = require(fs.existsSync(MARKED_SRC) ? MARKED_SRC : MARKED_FALLBACK);
 
 // ---------- 配置 ----------
 const SITE_URL = (process.env.SITE_URL || 'https://mdvrfaq.com').replace(/\/$/, '');
@@ -729,7 +732,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -820,7 +823,7 @@ function renderLanding() {
   <meta property="og:url" content="${SITE_URL}/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -958,7 +961,7 @@ writeFile('index.html', renderLanding());
 
 // 404
 writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=7"></head><body>
+<link rel="stylesheet" href="/assets/css/style.css?v=8"></head><body>
 <main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
 <h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
 
@@ -1027,6 +1030,23 @@ if (fs.existsSync(VTHUMB_SRC)) {
     }
   }
   console.log(`   视频缩略图已拷贝 ${copied} 张 -> dist/assets/video-thumbs/`);
+}
+
+// 静态前端资源（CSS / JS）以仓库内 assets/ 为源码真相，构建时覆盖到 dist
+// （此前 style.css / app.js 只存在于 dist，未纳入版本管理，dist 重建即整站丢样式）
+for (const rel of ['css', 'js']) {
+  const src = path.join(ROOT, 'assets', rel);
+  const dst = path.join(DIST, 'assets', rel);
+  if (!fs.existsSync(src)) continue;
+  const walk = (from, to) => {
+    fs.mkdirSync(to, { recursive: true });
+    for (const f of fs.readdirSync(from, { withFileTypes: true })) {
+      const s = path.join(from, f.name), d = path.join(to, f.name);
+      if (f.isDirectory()) walk(s, d); else fs.copyFileSync(s, d);
+    }
+  };
+  walk(src, dst);
+  console.log(`   assets/${rel}/ 已同步到 dist/assets/${rel}/`);
 }
 
 // robots.txt

@@ -69,10 +69,16 @@ async function convertItem(item) {
 
 (async () => {
   const missingOnly = process.argv.includes('--missing-only');
+  const onlyArg = process.argv.find(a => a.startsWith('--only='));
+  const onlyIds = onlyArg ? onlyArg.slice('--only='.length).split(',').map(s => s.trim()).filter(Boolean) : null;
   const catalog = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));
   let items = catalog.items.filter(i => i.specDocx);
+  if (onlyIds) {
+    items = items.filter(i => onlyIds.includes(i.id));
+    console.log('--only:', onlyIds.join(', '), '-> 匹配', items.length);
+  }
   if (missingOnly) {
-    items = items.filter(i => !fs.existsSync(path.join(MEDIA, String(i.specDocx).replace(/^media\//, '').replace(/spec\.docx$/, ''), 'spec.html')));
+    items = items.filter(i => !fs.existsSync(path.join(ACC_DATA, path.dirname(String(i.specDocx)), 'spec.html')));
     console.log('--missing-only: 待转换', items.length);
   }
   console.log('待转换:', items.length);

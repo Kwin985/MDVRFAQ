@@ -633,16 +633,83 @@
    "id": "acc-zh-U31",
    "type": "accessory",
    "lang": "zh",
-   "name": "UPS",
+   "name": "外置 UPS 电源（标准版）",
    "line": "",
    "model": "",
    "group": "U",
-   "specDocx": null,
-   "docCount": 0,
-   "cover": null,
-   "gallery": [],
-   "imageCount": 0,
-   "lineKey": ""
+   "specDocx": "media/zh/accessory/acc-zh-U31/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-U31/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-U31/images/01.webp",
+    "media/zh/accessory/acc-zh-U31/images/02.webp",
+    "media/zh/accessory/acc-zh-U31/images/03.webp"
+   ],
+   "imageCount": 3,
+   "lineKey": "",
+   "modelCode": "MX-UPS-05-V1.0",
+   "summary": "车载外置不间断电源，铝合金密封外壳达 IP66 防水防尘。输入 DC 8-36V 宽压，车辆断电后自动切换电池供电，配合主机可自行设定供电时长。标准版电池容量 3350mAh（49.6Wh），最大输出 7A，12V/1.5A 负载约可续航 2.76 小时；另有 2600/3000/6000/6700/15000mAh 容量档位与 5 种尾线接口可选。",
+   "keySpecs": [
+    {
+     "k": "产品型号",
+     "v": "MX-UPS-05（3350mAh 标准版）"
+    },
+    {
+     "k": "电池容量",
+     "v": "3350mAh / 49.6Wh（可选 2600mAh、15000mAh 等）"
+    },
+    {
+     "k": "电源输入",
+     "v": "DC 8-36V（10-19V 升压充电 92%，19-36V 降压充电 96%，自动切换）"
+    },
+    {
+     "k": "电池类型",
+     "v": "18650 锂电池组，额定 14.8V（4×3.70V）"
+    },
+    {
+     "k": "充电 / 放电电压",
+     "v": "充电结束 16.8V / 放电截止 11V"
+    },
+    {
+     "k": "充电电流",
+     "v": "2A"
+    },
+    {
+     "k": "最大输出电流",
+     "v": "7A"
+    },
+    {
+     "k": "防水等级",
+     "v": "IP66（密封铝合金外壳）"
+    },
+    {
+     "k": "工作温度",
+     "v": "充电 0~45℃ / 放电 -20~60℃ / 存储 -20~50℃"
+    },
+    {
+     "k": "尾线版本",
+     "v": "V1.0 5芯航空头 / V2.0 6PIN方口 / V3.0 9芯航空头 / V4.0、V5.0 DJ7031 端子（V4.0 可选 RS485）"
+    },
+    {
+     "k": "尺寸 / 重量",
+     "v": "99.7×48×79mm ±2mm / 约 700g ±10%"
+    },
+    {
+     "k": "充电时间",
+     "v": "约 1.6h±10%（＜2h）"
+    },
+    {
+     "k": "放电时长",
+     "v": "MDVR 12V/1.5A（18W）负载约 2.76h"
+    }
+   ],
+   "chips": [
+    "3350mAh / 49.6Wh",
+    "DC 8-36V",
+    "IP66 防水",
+    "7A 输出"
+   ],
+   "featured": true
   },
   {
    "id": "acc-zh-W32",
@@ -1152,20 +1219,83 @@
    "id": "acc-en-ups",
    "type": "accessory",
    "lang": "en",
-   "name": "UPS",
+   "name": "Waterproof UPS (Standard)",
    "line": "",
    "model": "",
    "group": "",
-   "specDocx": "media/en/accessory/acc-en-ups/spec.docx",
+   "specDocx": "media/en/accessory/acc-en-ups/spec-v5.1.docx",
    "docCount": 1,
-   "cover": "media/en/accessory/acc-en-ups/images/01.webp",
+   "cover": "media/en/accessory/acc-en-ups/images/11.webp",
    "gallery": [
-    "media/en/accessory/acc-en-ups/images/01.webp",
-    "media/en/accessory/acc-en-ups/images/02.webp"
+    "media/en/accessory/acc-en-ups/images/11.webp",
+    "media/en/accessory/acc-en-ups/images/12.webp",
+    "media/en/accessory/acc-en-ups/images/13.webp"
    ],
-   "imageCount": 2,
+   "imageCount": 3,
    "lineKey": "",
-   "summary": "It is a conversion device used in vehicles that uses batteries to generate on-board (8-36V) electrical energy. Mainly used for temporary pow…"
+   "summary": "On-board uninterruptible power supply with a sealed aluminium case rated IP66. Wide 8-36V DC input, automatic switch-over to battery power when the vehicle supply is cut off, and configurable power supply duration with the MDVR host. Standard version: 3350mAh (49.6Wh), 7A max output, about 2.76h runtime at 12V/1.5A. Other capacities (2600/3000/6000/6700/15000mAh) and five tail-cable versions are available.",
+   "modelCode": "MX-UPS-05-V1.0",
+   "keySpecs": [
+    {
+     "k": "Model",
+     "v": "MX-UPS-05 (3350mAh standard)"
+    },
+    {
+     "k": "Battery capacity",
+     "v": "3350mAh / 49.6Wh (2600mAh, 15000mAh optional)"
+    },
+    {
+     "k": "Power input",
+     "v": "DC 8-36V (10-19V step-up 92%, 19-36V step-down 96%, auto switching)"
+    },
+    {
+     "k": "Battery type",
+     "v": "18650 lithium pack, rated 14.8V (4 x 3.70V)"
+    },
+    {
+     "k": "Charge / cut-off voltage",
+     "v": "End of charge 16.8V / discharge cut-off 11V"
+    },
+    {
+     "k": "Charging current",
+     "v": "2A"
+    },
+    {
+     "k": "Max output current",
+     "v": "7A"
+    },
+    {
+     "k": "Waterproof grade",
+     "v": "IP66 (sealed aluminium case)"
+    },
+    {
+     "k": "Ambient temperature",
+     "v": "Charge 0-45C / Discharge -20-60C / Storage -20-50C"
+    },
+    {
+     "k": "Tail cable versions",
+     "v": "V1.0 5-pin aviation / V2.0 6-pin square / V3.0 9-pin aviation / V4.0 & V5.0 DJ7031 terminals (V4.0 RS485 optional)"
+    },
+    {
+     "k": "Dimensions / weight",
+     "v": "99.7 x 48 x 79mm +/-2mm / approx. 700g +/-10%"
+    },
+    {
+     "k": "Charging time",
+     "v": "approx. 1.6h +/-10% (<=2h)"
+    },
+    {
+     "k": "Runtime example",
+     "v": "about 2.76h with a 12V/1.5A (18W) MDVR load"
+    }
+   ],
+   "chips": [
+    "3350mAh / 49.6Wh",
+    "DC 8-36V",
+    "IP66",
+    "7A output"
+   ],
+   "featured": true
   },
   {
    "id": "cam-zh-110",
@@ -4701,6 +4831,168 @@
     "8~36V",
     "Overload Alarm"
    ]
+  },
+  {
+   "id": "acc-zh-U32",
+   "type": "accessory",
+   "lang": "zh",
+   "name": "外置 UPS 电源（加长版）",
+   "line": "",
+   "model": "",
+   "group": "U",
+   "specDocx": "media/zh/accessory/acc-zh-U32/spec.docx",
+   "docCount": 1,
+   "cover": "media/zh/accessory/acc-zh-U32/images/01.webp",
+   "gallery": [
+    "media/zh/accessory/acc-zh-U32/images/01.webp",
+    "media/zh/accessory/acc-zh-U32/images/02.webp"
+   ],
+   "imageCount": 2,
+   "modelCode": "MX-UPS-07-V1.0",
+   "summary": "标准加长版车载 UPS，与标准版同系列铝合金密封外壳（IP66）、同规格输入输出。电池容量 6700mAh（99.2Wh），尺寸 140.2×48×79mm、约 1400g，12V/1.5A 负载下约可续航 5.51 小时，适合需要更长断电续航的车载监控场景。",
+   "keySpecs": [
+    {
+     "k": "产品型号",
+     "v": "MX-UPS-07（6700mAh 标准加长版）"
+    },
+    {
+     "k": "电池容量",
+     "v": "6700mAh / 99.2Wh"
+    },
+    {
+     "k": "电源输入",
+     "v": "DC 8-36V（10-19V 升压充电 92%，19-36V 降压充电 96%，自动切换）"
+    },
+    {
+     "k": "电池类型",
+     "v": "18650 锂电池组，额定 14.8V（4×3.70V）"
+    },
+    {
+     "k": "充电 / 放电电压",
+     "v": "充电结束 16.8V / 放电截止 11V"
+    },
+    {
+     "k": "充电电流",
+     "v": "2A"
+    },
+    {
+     "k": "最大输出电流",
+     "v": "7A"
+    },
+    {
+     "k": "防水等级",
+     "v": "IP66（密封铝合金外壳）"
+    },
+    {
+     "k": "工作温度",
+     "v": "充电 0~45℃ / 放电 -20~60℃ / 存储 -20~50℃"
+    },
+    {
+     "k": "尾线版本",
+     "v": "V1.0 5芯航空头 / V2.0 6PIN方口 / V3.0 9芯航空头 / V4.0、V5.0 DJ7031 端子（V4.0 可选 RS485）"
+    },
+    {
+     "k": "尺寸 / 重量",
+     "v": "140.2×48×79mm ±2mm / 约 1400g ±10%"
+    },
+    {
+     "k": "充电时间",
+     "v": "约 3.5h±10%（＜4h）"
+    },
+    {
+     "k": "放电时长",
+     "v": "MDVR 12V/1.5A（18W）负载约 5.51h"
+    }
+   ],
+   "chips": [
+    "6700mAh / 99.2Wh",
+    "DC 8-36V",
+    "IP66 防水",
+    "续航 5.5h"
+   ],
+   "lineKey": "",
+   "featured": true
+  },
+  {
+   "id": "acc-en-ups-07",
+   "type": "accessory",
+   "lang": "en",
+   "name": "Waterproof UPS (Extended)",
+   "line": "",
+   "model": "",
+   "group": "",
+   "specDocx": "media/en/accessory/acc-en-ups-07/spec.docx",
+   "docCount": 1,
+   "cover": "media/en/accessory/acc-en-ups-07/images/01.webp",
+   "gallery": [
+    "media/en/accessory/acc-en-ups-07/images/01.webp",
+    "media/en/accessory/acc-en-ups-07/images/02.webp"
+   ],
+   "imageCount": 2,
+   "modelCode": "MX-UPS-07-V1.0",
+   "summary": "Standard extended version of the on-board UPS with the same sealed IP66 aluminium case and identical input/output ratings. 6700mAh (99.2Wh) battery, 140.2 x 48 x 79mm, approx. 1400g, and about 5.51h runtime at 12V/1.5A - suited to vehicle surveillance installations that need a longer backup time.",
+   "keySpecs": [
+    {
+     "k": "Model",
+     "v": "MX-UPS-07 (6700mAh standard extended)"
+    },
+    {
+     "k": "Battery capacity",
+     "v": "6700mAh / 99.2Wh"
+    },
+    {
+     "k": "Power input",
+     "v": "DC 8-36V (10-19V step-up 92%, 19-36V step-down 96%, auto switching)"
+    },
+    {
+     "k": "Battery type",
+     "v": "18650 lithium pack, rated 14.8V (4 x 3.70V)"
+    },
+    {
+     "k": "Charge / cut-off voltage",
+     "v": "End of charge 16.8V / discharge cut-off 11V"
+    },
+    {
+     "k": "Charging current",
+     "v": "2A"
+    },
+    {
+     "k": "Max output current",
+     "v": "7A"
+    },
+    {
+     "k": "Waterproof grade",
+     "v": "IP66 (sealed aluminium case)"
+    },
+    {
+     "k": "Ambient temperature",
+     "v": "Charge 0-45C / Discharge -20-60C / Storage -20-50C"
+    },
+    {
+     "k": "Tail cable versions",
+     "v": "V1.0 5-pin aviation / V2.0 6-pin square / V3.0 9-pin aviation / V4.0 & V5.0 DJ7031 terminals (V4.0 RS485 optional)"
+    },
+    {
+     "k": "Dimensions / weight",
+     "v": "140.2 x 48 x 79mm +/-2mm / approx. 1400g +/-10%"
+    },
+    {
+     "k": "Charging time",
+     "v": "approx. 3.5h +/-10% (<=4h)"
+    },
+    {
+     "k": "Runtime example",
+     "v": "about 5.51h with a 12V/1.5A (18W) MDVR load"
+    }
+   ],
+   "chips": [
+    "6700mAh / 99.2Wh",
+    "DC 8-36V",
+    "IP66",
+    "5.5h backup"
+   ],
+   "lineKey": "",
+   "featured": true
   }
  ]
 }

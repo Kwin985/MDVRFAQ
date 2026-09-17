@@ -83,6 +83,7 @@ module.exports = function createProducts(deps) {
       byLine: '按主机产品线',
       viewKit: '查看配置清单',
       items: '款',
+      featured: '主推',
       spec: '规格书',
       keySpec: '关键参数',
       fullSpec: '完整规格书',
@@ -127,6 +128,7 @@ module.exports = function createProducts(deps) {
       byLine: 'MDVR Product Lines',
       viewKit: 'View configuration',
       items: 'items',
+      featured: 'Recommended',
       spec: 'Specification',
       keySpec: 'Key Specs',
       fullSpec: 'Full Specification',
@@ -180,10 +182,11 @@ module.exports = function createProducts(deps) {
   }
 
   // 产品图：产品照多为白底，深色模式下强制浅色画布以保证可读
-  function thumb(it, cls) {
+  function thumb(it, cls, badge) {
     const src = it.cover ? mediaUrl(it.cover) : '';
     if (it.cover) addRel(it.cover);
-    return `<div class="${cls}">${src
+    const flag = badge ? `<span class="pd-badge">${esc(badge)}</span>` : '';
+    return `<div class="${cls}">${flag}${src
       ? `<img loading="lazy" decoding="async" src="${esc(src)}" alt="${esc(it.name)}">`
       : `<span class="pd-noimg">${esc((it.name || '?').slice(0, 2))}</span>`}</div>`;
   }
@@ -199,7 +202,7 @@ module.exports = function createProducts(deps) {
       .filter(Boolean).join(' ').toLowerCase();
     return `<a class="pd-card" href="${BASE}/item/${esc(it.id)}/"
       data-type="${esc(it.type)}" data-line="${esc(it.lineKey || '')}" data-hay="${esc(hay)}">
-      ${thumb(it, 'pd-card-img')}
+      ${thumb(it, 'pd-card-img', it.featured ? t(lang).featured : '')}
       <div class="pd-card-body">
         <span class="pd-tag pd-tag-${esc(it.type)}">${esc(typeLabel(it.type, lang))}</span>
         <h3 class="pd-card-name">${esc(it.name)}</h3>
@@ -239,7 +242,7 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
   <meta property="og:url" content="${esc(canonical)}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8">
   <script>try{var th=localStorage.getItem('theme');if(th)document.documentElement.setAttribute('data-theme',th);}catch(e){}</script>
   ${o.jsonld ? `<script type="application/ld+json">${o.jsonld}</script>` : ''}
 </head>
@@ -351,9 +354,10 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
       </a>`;
     }).join('');
 
-    // 品类卡（取该品类前 3 张图做拼贴）
+    // 品类卡（取该品类前 3 张图做拼贴，主推条目优先出图）
     const typeCards = TYPE_ORDER.map((ty) => {
-      const list = mine.filter((i) => i.type === ty);
+      const list = mine.filter((i) => i.type === ty).slice()
+        .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       if (!list.length) return '';
       const pics = list.filter((i) => i.cover).slice(0, 3);
       pics.forEach((p) => addRel(p.cover));
@@ -452,7 +456,9 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
           <div class="pd-grid">${g.list.map(productCard).join('')}</div>
         </div>`).join('');
       } else {
-        inner = `<div class="pd-grid">${list.map(productCard).join('')}</div>`;
+        // 主推条目置顶（保持各自原有相对顺序）
+        const shown = list.slice().sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+        inner = `<div class="pd-grid">${shown.map(productCard).join('')}</div>`;
       }
       sections += `<section class="pd-group" id="${ty}" data-group="${ty}">
         <h2 class="pd-group-title"><span class="pd-group-ico">${icon(ty)}</span>${esc(typePlural(ty, lang))}<span class="pd-count">${list.length}</span></h2>
