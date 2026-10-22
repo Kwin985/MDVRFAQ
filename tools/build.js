@@ -1049,6 +1049,21 @@ for (const rel of ['css', 'js']) {
   console.log(`   assets/${rel}/ 已同步到 dist/assets/${rel}/`);
 }
 
+// 外部工具页（如扫码上线配置 qrconfig）本地托管：assets/ext-tools/ -> dist/tools/
+const EXT_SRC = path.join(ROOT, 'assets', 'ext-tools');
+const EXT_DST = path.join(DIST, 'tools');
+if (fs.existsSync(EXT_SRC)) {
+  const walk = (from, to) => {
+    fs.mkdirSync(to, { recursive: true });
+    for (const f of fs.readdirSync(from, { withFileTypes: true })) {
+      const s = path.join(from, f.name), d = path.join(to, f.name);
+      if (f.isDirectory()) walk(s, d); else fs.copyFileSync(s, d);
+    }
+  };
+  walk(EXT_SRC, EXT_DST);
+  console.log(`   外部工具页已同步 -> dist/tools/`);
+}
+
 // robots.txt
 const robots = `User-agent: *
 Allow: /

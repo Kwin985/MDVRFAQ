@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Quick QR Config</title>
+<script>
+/* qrcodejs 1.0.0 内联（v6：去除 CDN 依赖，离线/受限 WebView 可用） */
+var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this.parsedData=[];for(var b=[],d=0,e=this.data.length;e>d;d++){var f=this.data.charCodeAt(d);f>65536?(b[0]=240|(1835008&f)>>>18,b[1]=128|(258048&f)>>>12,b[2]=128|(4032&f)>>>6,b[3]=128|63&f):f>2048?(b[0]=224|(61440&f)>>>12,b[1]=128|(4032&f)>>>6,b[2]=128|63&f):f>128?(b[0]=192|(1984&f)>>>6,b[1]=128|63&f):b[0]=f,this.parsedData=this.parsedData.concat(b)}this.parsedData.length!=this.data.length&&(this.parsedData.unshift(191),this.parsedData.unshift(187),this.parsedData.unshift(239))}function b(a,b){this.typeNumber=a,this.errorCorrectLevel=b,this.modules=null,this.moduleCount=0,this.dataCache=null,this.dataList=[]}function i(a,b){if(void 0==a.length)throw new Error(a.length+"/"+b);for(var c=0;c<a.length&&0==a[c];)c++;this.num=new Array(a.length-c+b);for(var d=0;d<a.length-c;d++)this.num[d]=a[d+c]}function j(a,b){this.totalCount=a,this.dataCount=b}function k(){this.buffer=[],this.length=0}function m(){return"undefined"!=typeof CanvasRenderingContext2D}function n(){var a=!1,b=navigator.userAgent;return/android/i.test(b)&&(a=!0,aMat=b.toString().match(/android ([0-9]\.[0-9])/i),aMat&&aMat[1]&&(a=parseFloat(aMat[1]))),a}function r(a,b){for(var c=1,e=s(a),f=0,g=l.length;g>=f;f++){var h=0;switch(b){case d.L:h=l[f][0];break;case d.M:h=l[f][1];break;case d.Q:h=l[f][2];break;case d.H:h=l[f][3]}if(h>=e)break;c++}if(c>l.length)throw new Error("Too long data");return c}function s(a){var b=encodeURI(a).toString().replace(/\%[0-9a-fA-F]{2}/g,"a");return b.length+(b.length!=a?3:0)}a.prototype={getLength:function(){return this.parsedData.length},write:function(a){for(var b=0,c=this.parsedData.length;c>b;b++)a.put(this.parsedData[b],8)}},b.prototype={addData:function(b){var c=new a(b);this.dataList.push(c),this.dataCache=null},isDark:function(a,b){if(0>a||this.moduleCount<=a||0>b||this.moduleCount<=b)throw new Error(a+","+b);return this.modules[a][b]},getModuleCount:function(){return this.moduleCount},make:function(){this.makeImpl(!1,this.getBestMaskPattern())},makeImpl:function(a,c){this.moduleCount=4*this.typeNumber+17,this.modules=new Array(this.moduleCount);for(var d=0;d<this.moduleCount;d++){this.modules[d]=new Array(this.moduleCount);for(var e=0;e<this.moduleCount;e++)this.modules[d][e]=null}this.setupPositionProbePattern(0,0),this.setupPositionProbePattern(this.moduleCount-7,0),this.setupPositionProbePattern(0,this.moduleCount-7),this.setupPositionAdjustPattern(),this.setupTimingPattern(),this.setupTypeInfo(a,c),this.typeNumber>=7&&this.setupTypeNumber(a),null==this.dataCache&&(this.dataCache=b.createData(this.typeNumber,this.errorCorrectLevel,this.dataList)),this.mapData(this.dataCache,c)},setupPositionProbePattern:function(a,b){for(var c=-1;7>=c;c++)if(!(-1>=a+c||this.moduleCount<=a+c))for(var d=-1;7>=d;d++)-1>=b+d||this.moduleCount<=b+d||(this.modules[a+c][b+d]=c>=0&&6>=c&&(0==d||6==d)||d>=0&&6>=d&&(0==c||6==c)||c>=2&&4>=c&&d>=2&&4>=d?!0:!1)},getBestMaskPattern:function(){for(var a=0,b=0,c=0;8>c;c++){this.makeImpl(!0,c);var d=f.getLostPoint(this);(0==c||a>d)&&(a=d,b=c)}return b},createMovieClip:function(a,b,c){var d=a.createEmptyMovieClip(b,c),e=1;this.make();for(var f=0;f<this.modules.length;f++)for(var g=f*e,h=0;h<this.modules[f].length;h++){var i=h*e,j=this.modules[f][h];j&&(d.beginFill(0,100),d.moveTo(i,g),d.lineTo(i+e,g),d.lineTo(i+e,g+e),d.lineTo(i,g+e),d.endFill())}return d},setupTimingPattern:function(){for(var a=8;a<this.moduleCount-8;a++)null==this.modules[a][6]&&(this.modules[a][6]=0==a%2);for(var b=8;b<this.moduleCount-8;b++)null==this.modules[6][b]&&(this.modules[6][b]=0==b%2)},setupPositionAdjustPattern:function(){for(var a=f.getPatternPosition(this.typeNumber),b=0;b<a.length;b++)for(var c=0;c<a.length;c++){var d=a[b],e=a[c];if(null==this.modules[d][e])for(var g=-2;2>=g;g++)for(var h=-2;2>=h;h++)this.modules[d+g][e+h]=-2==g||2==g||-2==h||2==h||0==g&&0==h?!0:!1}},setupTypeNumber:function(a){for(var b=f.getBCHTypeNumber(this.typeNumber),c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[Math.floor(c/3)][c%3+this.moduleCount-8-3]=d}for(var c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[c%3+this.moduleCount-8-3][Math.floor(c/3)]=d}},setupTypeInfo:function(a,b){for(var c=this.errorCorrectLevel<<3|b,d=f.getBCHTypeInfo(c),e=0;15>e;e++){var g=!a&&1==(1&d>>e);6>e?this.modules[e][8]=g:8>e?this.modules[e+1][8]=g:this.modules[this.moduleCount-15+e][8]=g}for(var e=0;15>e;e++){var g=!a&&1==(1&d>>e);8>e?this.modules[8][this.moduleCount-e-1]=g:9>e?this.modules[8][15-e-1+1]=g:this.modules[8][15-e-1]=g}this.modules[this.moduleCount-8][8]=!a},mapData:function(a,b){for(var c=-1,d=this.moduleCount-1,e=7,g=0,h=this.moduleCount-1;h>0;h-=2)for(6==h&&h--;;){for(var i=0;2>i;i++)if(null==this.modules[d][h-i]){var j=!1;g<a.length&&(j=1==(1&a[g]>>>e));var k=f.getMask(b,d,h-i);k&&(j=!j),this.modules[d][h-i]=j,e--,-1==e&&(g++,e=7)}if(d+=c,0>d||this.moduleCount<=d){d-=c,c=-c;break}}}},b.PAD0=236,b.PAD1=17,b.createData=function(a,c,d){for(var e=j.getRSBlocks(a,c),g=new k,h=0;h<d.length;h++){var i=d[h];g.put(i.mode,4),g.put(i.getLength(),f.getLengthInBits(i.mode,a)),i.write(g)}for(var l=0,h=0;h<e.length;h++)l+=e[h].dataCount;if(g.getLengthInBits()>8*l)throw new Error("code length overflow. ("+g.getLengthInBits()+">"+8*l+")");for(g.getLengthInBits()+4<=8*l&&g.put(0,4);0!=g.getLengthInBits()%8;)g.putBit(!1);for(;;){if(g.getLengthInBits()>=8*l)break;if(g.put(b.PAD0,8),g.getLengthInBits()>=8*l)break;g.put(b.PAD1,8)}return b.createBytes(g,e)},b.createBytes=function(a,b){for(var c=0,d=0,e=0,g=new Array(b.length),h=new Array(b.length),j=0;j<b.length;j++){var k=b[j].dataCount,l=b[j].totalCount-k;d=Math.max(d,k),e=Math.max(e,l),g[j]=new Array(k);for(var m=0;m<g[j].length;m++)g[j][m]=255&a.buffer[m+c];c+=k;var n=f.getErrorCorrectPolynomial(l),o=new i(g[j],n.getLength()-1),p=o.mod(n);h[j]=new Array(n.getLength()-1);for(var m=0;m<h[j].length;m++){var q=m+p.getLength()-h[j].length;h[j][m]=q>=0?p.get(q):0}}for(var r=0,m=0;m<b.length;m++)r+=b[m].totalCount;for(var s=new Array(r),t=0,m=0;d>m;m++)for(var j=0;j<b.length;j++)m<g[j].length&&(s[t++]=g[j][m]);for(var m=0;e>m;m++)for(var j=0;j<b.length;j++)m<h[j].length&&(s[t++]=h[j][m]);return s};for(var c={MODE_NUMBER:1,MODE_ALPHA_NUM:2,MODE_8BIT_BYTE:4,MODE_KANJI:8},d={L:1,M:0,Q:3,H:2},e={PATTERN000:0,PATTERN001:1,PATTERN010:2,PATTERN011:3,PATTERN100:4,PATTERN101:5,PATTERN110:6,PATTERN111:7},f={PATTERN_POSITION_TABLE:[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],G15:1335,G18:7973,G15_MASK:21522,getBCHTypeInfo:function(a){for(var b=a<<10;f.getBCHDigit(b)-f.getBCHDigit(f.G15)>=0;)b^=f.G15<<f.getBCHDigit(b)-f.getBCHDigit(f.G15);return(a<<10|b)^f.G15_MASK},getBCHTypeNumber:function(a){for(var b=a<<12;f.getBCHDigit(b)-f.getBCHDigit(f.G18)>=0;)b^=f.G18<<f.getBCHDigit(b)-f.getBCHDigit(f.G18);return a<<12|b},getBCHDigit:function(a){for(var b=0;0!=a;)b++,a>>>=1;return b},getPatternPosition:function(a){return f.PATTERN_POSITION_TABLE[a-1]},getMask:function(a,b,c){switch(a){case e.PATTERN000:return 0==(b+c)%2;case e.PATTERN001:return 0==b%2;case e.PATTERN010:return 0==c%3;case e.PATTERN011:return 0==(b+c)%3;case e.PATTERN100:return 0==(Math.floor(b/2)+Math.floor(c/3))%2;case e.PATTERN101:return 0==b*c%2+b*c%3;case e.PATTERN110:return 0==(b*c%2+b*c%3)%2;case e.PATTERN111:return 0==(b*c%3+(b+c)%2)%2;default:throw new Error("bad maskPattern:"+a)}},getErrorCorrectPolynomial:function(a){for(var b=new i([1],0),c=0;a>c;c++)b=b.multiply(new i([1,g.gexp(c)],0));return b},getLengthInBits:function(a,b){if(b>=1&&10>b)switch(a){case c.MODE_NUMBER:return 10;case c.MODE_ALPHA_NUM:return 9;case c.MODE_8BIT_BYTE:return 8;case c.MODE_KANJI:return 8;default:throw new Error("mode:"+a)}else if(27>b)switch(a){case c.MODE_NUMBER:return 12;case c.MODE_ALPHA_NUM:return 11;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 10;default:throw new Error("mode:"+a)}else{if(!(41>b))throw new Error("type:"+b);switch(a){case c.MODE_NUMBER:return 14;case c.MODE_ALPHA_NUM:return 13;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 12;default:throw new Error("mode:"+a)}}},getLostPoint:function(a){for(var b=a.getModuleCount(),c=0,d=0;b>d;d++)for(var e=0;b>e;e++){for(var f=0,g=a.isDark(d,e),h=-1;1>=h;h++)if(!(0>d+h||d+h>=b))for(var i=-1;1>=i;i++)0>e+i||e+i>=b||(0!=h||0!=i)&&g==a.isDark(d+h,e+i)&&f++;f>5&&(c+=3+f-5)}for(var d=0;b-1>d;d++)for(var e=0;b-1>e;e++){var j=0;a.isDark(d,e)&&j++,a.isDark(d+1,e)&&j++,a.isDark(d,e+1)&&j++,a.isDark(d+1,e+1)&&j++,(0==j||4==j)&&(c+=3)}for(var d=0;b>d;d++)for(var e=0;b-6>e;e++)a.isDark(d,e)&&!a.isDark(d,e+1)&&a.isDark(d,e+2)&&a.isDark(d,e+3)&&a.isDark(d,e+4)&&!a.isDark(d,e+5)&&a.isDark(d,e+6)&&(c+=40);for(var e=0;b>e;e++)for(var d=0;b-6>d;d++)a.isDark(d,e)&&!a.isDark(d+1,e)&&a.isDark(d+2,e)&&a.isDark(d+3,e)&&a.isDark(d+4,e)&&!a.isDark(d+5,e)&&a.isDark(d+6,e)&&(c+=40);for(var k=0,e=0;b>e;e++)for(var d=0;b>d;d++)a.isDark(d,e)&&k++;var l=Math.abs(100*k/b/b-50)/5;return c+=10*l}},g={glog:function(a){if(1>a)throw new Error("glog("+a+")");return g.LOG_TABLE[a]},gexp:function(a){for(;0>a;)a+=255;for(;a>=256;)a-=255;return g.EXP_TABLE[a]},EXP_TABLE:new Array(256),LOG_TABLE:new Array(256)},h=0;8>h;h++)g.EXP_TABLE[h]=1<<h;for(var h=8;256>h;h++)g.EXP_TABLE[h]=g.EXP_TABLE[h-4]^g.EXP_TABLE[h-5]^g.EXP_TABLE[h-6]^g.EXP_TABLE[h-8];for(var h=0;255>h;h++)g.LOG_TABLE[g.EXP_TABLE[h]]=h;i.prototype={get:function(a){return this.num[a]},getLength:function(){return this.num.length},multiply:function(a){for(var b=new Array(this.getLength()+a.getLength()-1),c=0;c<this.getLength();c++)for(var d=0;d<a.getLength();d++)b[c+d]^=g.gexp(g.glog(this.get(c))+g.glog(a.get(d)));return new i(b,0)},mod:function(a){if(this.getLength()-a.getLength()<0)return this;for(var b=g.glog(this.get(0))-g.glog(a.get(0)),c=new Array(this.getLength()),d=0;d<this.getLength();d++)c[d]=this.get(d);for(var d=0;d<a.getLength();d++)c[d]^=g.gexp(g.glog(a.get(d))+b);return new i(c,0).mod(a)}},j.RS_BLOCK_TABLE=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],j.getRSBlocks=function(a,b){var c=j.getRsBlockTable(a,b);if(void 0==c)throw new Error("bad rs block @ typeNumber:"+a+"/errorCorrectLevel:"+b);for(var d=c.length/3,e=[],f=0;d>f;f++)for(var g=c[3*f+0],h=c[3*f+1],i=c[3*f+2],k=0;g>k;k++)e.push(new j(h,i));return e},j.getRsBlockTable=function(a,b){switch(b){case d.L:return j.RS_BLOCK_TABLE[4*(a-1)+0];case d.M:return j.RS_BLOCK_TABLE[4*(a-1)+1];case d.Q:return j.RS_BLOCK_TABLE[4*(a-1)+2];case d.H:return j.RS_BLOCK_TABLE[4*(a-1)+3];default:return void 0}},k.prototype={get:function(a){var b=Math.floor(a/8);return 1==(1&this.buffer[b]>>>7-a%8)},put:function(a,b){for(var c=0;b>c;c++)this.putBit(1==(1&a>>>b-c-1))},getLengthInBits:function(){return this.length},putBit:function(a){var b=Math.floor(this.length/8);this.buffer.length<=b&&this.buffer.push(0),a&&(this.buffer[b]|=128>>>this.length%8),this.length++}};var l=[[17,14,11,7],[32,26,20,14],[53,42,32,24],[78,62,46,34],[106,84,60,44],[134,106,74,58],[154,122,86,64],[192,152,108,84],[230,180,130,98],[271,213,151,119],[321,251,177,137],[367,287,203,155],[425,331,241,177],[458,362,258,194],[520,412,292,220],[586,450,322,250],[644,504,364,280],[718,560,394,310],[792,624,442,338],[858,666,482,382],[929,711,509,403],[1003,779,565,439],[1091,857,611,461],[1171,911,661,511],[1273,997,715,535],[1367,1059,751,593],[1465,1125,805,625],[1528,1190,868,658],[1628,1264,908,698],[1732,1370,982,742],[1840,1452,1030,790],[1952,1538,1112,842],[2068,1628,1168,898],[2188,1722,1228,958],[2303,1809,1283,983],[2431,1911,1351,1051],[2563,1989,1423,1093],[2699,2099,1499,1139],[2809,2213,1579,1219],[2953,2331,1663,1273]],o=function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){function g(a,b){var c=document.createElementNS("http://www.w3.org/2000/svg",a);for(var d in b)b.hasOwnProperty(d)&&c.setAttribute(d,b[d]);return c}var b=this._htOption,c=this._el,d=a.getModuleCount();Math.floor(b.width/d),Math.floor(b.height/d),this.clear();var h=g("svg",{viewBox:"0 0 "+String(d)+" "+String(d),width:"100%",height:"100%",fill:b.colorLight});h.setAttributeNS("http://www.w3.org/2000/xmlns/","xmlns:xlink","http://www.w3.org/1999/xlink"),c.appendChild(h),h.appendChild(g("rect",{fill:b.colorDark,width:"1",height:"1",id:"template"}));for(var i=0;d>i;i++)for(var j=0;d>j;j++)if(a.isDark(i,j)){var k=g("use",{x:String(i),y:String(j)});k.setAttributeNS("http://www.w3.org/1999/xlink","href","#template"),h.appendChild(k)}},a.prototype.clear=function(){for(;this._el.hasChildNodes();)this._el.removeChild(this._el.lastChild)},a}(),p="svg"===document.documentElement.tagName.toLowerCase(),q=p?o:m()?function(){function a(){this._elImage.src=this._elCanvas.toDataURL("image/png"),this._elImage.style.display="block",this._elCanvas.style.display="none"}function d(a,b){var c=this;if(c._fFail=b,c._fSuccess=a,null===c._bSupportDataURI){var d=document.createElement("img"),e=function(){c._bSupportDataURI=!1,c._fFail&&_fFail.call(c)},f=function(){c._bSupportDataURI=!0,c._fSuccess&&c._fSuccess.call(c)};return d.onabort=e,d.onerror=e,d.onload=f,d.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",void 0}c._bSupportDataURI===!0&&c._fSuccess?c._fSuccess.call(c):c._bSupportDataURI===!1&&c._fFail&&c._fFail.call(c)}if(this._android&&this._android<=2.1){var b=1/window.devicePixelRatio,c=CanvasRenderingContext2D.prototype.drawImage;CanvasRenderingContext2D.prototype.drawImage=function(a,d,e,f,g,h,i,j){if("nodeName"in a&&/img/i.test(a.nodeName))for(var l=arguments.length-1;l>=1;l--)arguments[l]=arguments[l]*b;else"undefined"==typeof j&&(arguments[1]*=b,arguments[2]*=b,arguments[3]*=b,arguments[4]*=b);c.apply(this,arguments)}}var e=function(a,b){this._bIsPainted=!1,this._android=n(),this._htOption=b,this._elCanvas=document.createElement("canvas"),this._elCanvas.width=b.width,this._elCanvas.height=b.height,a.appendChild(this._elCanvas),this._el=a,this._oContext=this._elCanvas.getContext("2d"),this._bIsPainted=!1,this._elImage=document.createElement("img"),this._elImage.style.display="none",this._el.appendChild(this._elImage),this._bSupportDataURI=null};return e.prototype.draw=function(a){var b=this._elImage,c=this._oContext,d=this._htOption,e=a.getModuleCount(),f=d.width/e,g=d.height/e,h=Math.round(f),i=Math.round(g);b.style.display="none",this.clear();for(var j=0;e>j;j++)for(var k=0;e>k;k++){var l=a.isDark(j,k),m=k*f,n=j*g;c.strokeStyle=l?d.colorDark:d.colorLight,c.lineWidth=1,c.fillStyle=l?d.colorDark:d.colorLight,c.fillRect(m,n,f,g),c.strokeRect(Math.floor(m)+.5,Math.floor(n)+.5,h,i),c.strokeRect(Math.ceil(m)-.5,Math.ceil(n)-.5,h,i)}this._bIsPainted=!0},e.prototype.makeImage=function(){this._bIsPainted&&d.call(this,a)},e.prototype.isPainted=function(){return this._bIsPainted},e.prototype.clear=function(){this._oContext.clearRect(0,0,this._elCanvas.width,this._elCanvas.height),this._bIsPainted=!1},e.prototype.round=function(a){return a?Math.floor(1e3*a)/1e3:a},e}():function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){for(var b=this._htOption,c=this._el,d=a.getModuleCount(),e=Math.floor(b.width/d),f=Math.floor(b.height/d),g=['<table style="border:0;border-collapse:collapse;">'],h=0;d>h;h++){g.push("<tr>");for(var i=0;d>i;i++)g.push('<td style="border:0;border-collapse:collapse;padding:0;margin:0;width:'+e+"px;height:"+f+"px;background-color:"+(a.isDark(h,i)?b.colorDark:b.colorLight)+';"></td>');g.push("</tr>")}g.push("</table>"),c.innerHTML=g.join("");var j=c.childNodes[0],k=(b.width-j.offsetWidth)/2,l=(b.height-j.offsetHeight)/2;k>0&&l>0&&(j.style.margin=l+"px "+k+"px")},a.prototype.clear=function(){this._el.innerHTML=""},a}();QRCode=function(a,b){if(this._htOption={width:256,height:256,typeNumber:4,colorDark:"#000000",colorLight:"#ffffff",correctLevel:d.H},"string"==typeof b&&(b={text:b}),b)for(var c in b)this._htOption[c]=b[c];"string"==typeof a&&(a=document.getElementById(a)),this._android=n(),this._el=a,this._oQRCode=null,this._oDrawing=new q(this._el,this._htOption),this._htOption.text&&this.makeCode(this._htOption.text)},QRCode.prototype.makeCode=function(a){this._oQRCode=new b(r(a,this._htOption.correctLevel),this._htOption.correctLevel),this._oQRCode.addData(a),this._oQRCode.make(),this._el.title=a,this._oDrawing.draw(this._oQRCode),this.makeImage()},QRCode.prototype.makeImage=function(){"function"==typeof this._oDrawing.makeImage&&(!this._android||this._android>=3)&&this._oDrawing.makeImage()},QRCode.prototype.clear=function(){this._oDrawing.clear()},QRCode.CorrectLevel=d}();
+</script>
+<style>
+  :root {
+    --brand: #103048;
+    --brand2: #2c5a7a;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --line: #e2e7ec;
+    --text: #24313c;
+    --muted: #7c8a95;
+    --amber: #E8890C;
+    --danger: #d64530;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh; max-width: 520px; margin: 0 auto;
+    padding: 0 16px calc(24px + env(safe-area-inset-bottom));
+  }
+  header {
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand2) 100%);
+    color: #fff; margin: 0 -16px; padding: 18px 16px 20px 20px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  header .htxt { flex: 1; padding-right: 10px; }
+  header h1 { font-size: 20px; font-weight: 600; letter-spacing: 1px; }
+  header p  { font-size: 12px; opacity: .8; margin-top: 6px; line-height: 1.6; }
+  .lang-btn {
+    flex: none; background: rgba(255,255,255,.18); color: #fff; border: 1px solid rgba(255,255,255,.4);
+    border-radius: 16px; padding: 6px 14px; font-size: 13px; cursor: pointer; margin-top: 2px;
+  }
+  .lang-btn:active { background: rgba(255,255,255,.3); }
+
+  .tabs { display: flex; gap: 6px; margin: 14px 0 16px; }
+  .tab {
+    flex: 1; padding: 10px 4px; text-align: center; font-size: 13px;
+    background: #e9edf1; color: var(--muted); border: none; border-radius: 8px;
+    cursor: pointer; transition: all .15s; white-space: nowrap; overflow: hidden;
+  }
+  .tab.active { background: var(--brand); color: #fff; font-weight: 600; }
+
+  .panel { display: none; animation: fade .2s; }
+  .panel.active { display: block; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+
+  .card {
+    background: var(--card); border-radius: 12px; padding: 16px;
+    margin-bottom: 14px; box-shadow: 0 1px 3px rgba(16,48,72,.06);
+  }
+  .card h2 {
+    font-size: 14px; color: var(--brand); margin-bottom: 12px;
+    padding-left: 8px; border-left: 3px solid var(--amber); line-height: 1.2;
+  }
+  .field { margin-bottom: 14px; }
+  .field:last-child { margin-bottom: 0; }
+  .field label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .field input[type=text], .field input[type=password], .field select {
+    width: 100%; height: 44px; padding: 0 12px; font-size: 15px;
+    border: 1px solid var(--line); border-radius: 8px; background: #fbfcfd;
+    color: var(--text); outline: none; transition: border .15s;
+    -webkit-appearance: none; appearance: none;
+  }
+  .field select {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='7'><path d='M1 1l5 5 5-5' stroke='%237c8a95' stroke-width='2' fill='none'/></svg>");
+    background-repeat: no-repeat; background-position: right 12px center; padding-right: 34px;
+  }
+  .field input:focus, .field select:focus { border-color: var(--brand); background: #fff; }
+  /* v7：校验非法态（生成时标红，修正输入即时清除） */
+  .field input.invalid { border-color: #E24B4A; background: #fdf3f3; }
+  .field input.invalid:focus { border-color: #E24B4A; }
+  .field.disabled input { background: #f0f2f4; color: #aab4bc; }
+  .field.disabled label { color: #b6bfc6; }
+  .field .hint, .card > .hint { font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+  .card > .hint { margin-top: 10px; }
+
+  .seg { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button {
+    flex: 1; height: 42px; border: none; background: #fbfcfd; font-size: 14px;
+    color: var(--muted); cursor: pointer;
+  }
+  .seg button.on { background: var(--brand); color: #fff; font-weight: 600; }
+
+  .switch-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .switch-row span { font-size: 14px; font-weight: 600; }
+  /* 808 服务器 2 折叠：未启用时只显示“启用”开关，其余配置项隐藏；启用后展开 */
+  .collapse-body { overflow: hidden; }
+  .collapse-body.collapsed { display: none; }
+  .switch { position: relative; width: 48px; height: 28px; }
+  .switch input { opacity: 0; width: 100%; height: 100%; position: absolute; z-index: 2; cursor: pointer; }
+  .switch .track {
+    position: absolute; inset: 0; background: #d5dbe0; border-radius: 14px; transition: .2s;
+  }
+  .switch .track::after {
+    content: ''; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px;
+    background: #fff; border-radius: 50%; transition: .2s; box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  }
+  .switch input:checked + .track { background: var(--brand); }
+  .switch input:checked + .track::after { left: 23px; }
+
+  .divider { height: 1px; background: var(--line); margin: 16px -16px; }
+
+  .nav { display: flex; gap: 10px; margin-top: 18px; }
+  .btn {
+    flex: 1; height: 48px; border: none; border-radius: 10px; font-size: 16px;
+    cursor: pointer; transition: opacity .15s;
+  }
+  .btn-ghost { background: #e9edf1; color: var(--text); }
+  .btn-main  { background: var(--brand); color: #fff; font-weight: 600; }
+  .btn-main:active { opacity: .85; }
+  .btn-gen {
+    display: block; width: 100%; height: 52px; margin-top: 6px;
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: #fff; font-size: 17px; font-weight: 600; border: none; border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(16,48,72,.25); cursor: pointer;
+  }
+  .btn-gen:active { transform: translateY(1px); }
+
+  #result { display: none; }
+  .qr-wrap { text-align: center; padding: 20px 0 8px; }
+  #qrcode { display: inline-block; padding: 12px; background: #fff; border-radius: 12px; }
+  .qr-tip { font-size: 13px; color: var(--muted); margin-top: 12px; line-height: 1.7; }
+  .xml-box {
+    width: 100%; min-height: 140px; max-height: 220px; overflow: auto;
+    font-family: Menlo, Consolas, monospace; font-size: 11px; line-height: 1.6;
+    background: #f7f9fa; border: 1px solid var(--line); border-radius: 8px;
+    padding: 10px; color: #37474f; white-space: pre; margin-top: 8px;
+  }
+  .toast {
+    position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%) translateY(20px);
+    background: rgba(16,48,72,.92); color: #fff; font-size: 13px;
+    padding: 10px 18px; border-radius: 20px; opacity: 0; transition: all .25s;
+    pointer-events: none; z-index: 99; max-width: 86%;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .langhint { margin-top:6px; font-size:11.5px; opacity:.85; line-height:1.55; }
+  .langhint b { font-weight:600; color:#ffd79a; }
+  .sub2 b { font-weight:600; color:#fff; }
+
+  /* ═══ header 紧凑化（v6）：标题+按钮同行，说明整行铺满 ═══ */
+  header { padding: 13px 16px 14px !important; display: block !important; }  /* 原来是 flex，会把 .hrow 和 p 横排 */
+  header .hrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  header .hrow h1 { font-size: 18px !important; margin: 0 !important; letter-spacing: .5px; }
+  header .hbtns { display: flex; gap: 6px; flex: none; }
+  header .hbtns .lang-btn { padding: 5px 12px !important; font-size: 12px !important; margin-top: 0 !important; }
+  header p[data-i18n="subtitle"] {
+    display: block; width: 100%; margin: 8px 0 0 !important;
+    font-size: 11.5px !important; line-height: 1.55 !important; opacity: .86;
+  }
+  header p[data-i18n="subtitle"] b { font-weight: 600; color: #ffd79a; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <h1 data-i18n="title"></h1>
+    <div class="hbtns">
+      <a class="lang-btn" id="btn_help" data-i18n="help" href="/en/docs/675/"
+       target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">Guide</a>
+      <a class="lang-btn" id="btn_lang" href="qrconfig-zh.html" title="Switch to Chinese">中文</a>
+    </div>
+  </div>
+  <p data-i18n="subtitle"></p>
+</header>
+
+<div id="wizard">
+  <div class="tabs">
+    <button class="tab" data-tab="0" data-i18n="tab_tz"></button>
+    <button class="tab" data-tab="1" data-i18n="tab_45g"></button>
+    <button class="tab" data-tab="2" data-i18n="tab_center"></button>
+    <button class="tab" data-tab="3" data-i18n="tab_808"></button>
+  </div>
+
+  <!-- TAB 0：时区 -->
+  <div class="panel" data-panel="0">
+    <div class="card">
+      <h2 data-i18n="h_tz"></h2>
+      <div class="field">
+        <label data-i18n="l_timezone"></label>
+        <select id="f_timezone"></select>
+        <div class="hint" data-i18n="hint_tz"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 1：4/5G -->
+  <div class="panel" data-panel="1">
+    <div class="card">
+      <h2 data-i18n="h_45g"></h2>
+      <div class="field">
+        <label>APN</label>
+        <input type="text" id="f_apn" maxlength="32" value="3gnet" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_user"></label>
+        <input type="text" id="f_user" maxlength="32" value="card" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_pwd"></label>
+        <input type="password" id="f_pwd" maxlength="32" value="card" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label data-i18n="l_dial"></label>
+        <input type="text" id="f_dial" maxlength="32" value="*99#" autocomplete="off">
+      </div>
+      <div class="hint" data-i18n="hint_45g"></div>
+    </div>
+  </div>
+
+  <!-- TAB 2：中心平台 -->
+  <div class="panel" data-panel="2">
+    <div class="card">
+      <h2 data-i18n="h_center"></h2>
+      <div class="field">
+        <label data-i18n="l_device_no"></label>
+        <input type="text" id="f_devid" maxlength="12" data-i18n-ph="ph_devid" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_conn"></label>
+        <div class="seg" id="c_seg">
+          <button type="button" data-v="0" class="on" data-i18n="seg_ip"></button>
+          <button type="button" data-v="1" data-i18n="seg_domain"></button>
+        </div>
+      </div>
+      <div class="field" id="c_ip_f">
+        <label data-i18n="l_srv_ip"></label>
+        <input type="text" id="c_ip" maxlength="15" data-i18n-ph="ph_ip" autocomplete="off">
+      </div>
+      <div class="field" id="c_domain_f">
+        <label data-i18n="l_domain"></label>
+        <input type="text" id="c_domain" maxlength="64" data-i18n-ph="ph_domain" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_port"></label>
+        <input type="text" id="c_port" maxlength="6" data-i18n-ph="ph_port" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="hint" data-i18n="hint_center"></div>
+    </div>
+  </div>
+
+  <!-- TAB 3：808 平台 -->
+  <div class="panel" data-panel="3">
+    <div class="card">
+      <h2 data-i18n="h_p1"></h2>
+      <div class="switch-row">
+        <span data-i18n="l_enable_p1"></span>
+        <label class="switch"><input type="checkbox" id="p1_en"><i class="track"></i></label>
+      </div>
+      <div class="field">
+        <label data-i18n="l_phone"></label>
+        <input type="text" id="p1_phone" maxlength="11" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_devnum"></label>
+        <input type="text" id="p1_devnum" maxlength="12" data-i18n-ph="ph_devid" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_conn_mb"></label>
+        <div class="seg" id="p1_seg">
+          <button type="button" data-v="0" class="on" data-i18n="seg_ip"></button>
+          <button type="button" data-v="1" data-i18n="seg_domain"></button>
+        </div>
+      </div>
+      <div class="field" id="p1_ip_f">
+        <label data-i18n="l_srv_ip"></label>
+        <input type="text" id="p1_ip" maxlength="15" data-i18n-ph="ph_ip" autocomplete="off">
+      </div>
+      <div class="field" id="p1_domain_f">
+        <label data-i18n="l_domain"></label>
+        <input type="text" id="p1_domain" maxlength="64" data-i18n-ph="ph_domain" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_port"></label>
+        <input type="text" id="p1_port" maxlength="6" data-i18n-ph="ph_port" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="field" id="p1_bip_f">
+        <label data-i18n="l_bak_ip"></label>
+        <input type="text" id="p1_bip" maxlength="15" data-i18n-ph="ph_bak_ip" autocomplete="off">
+      </div>
+      <div class="field" id="p1_bdomain_f">
+        <label data-i18n="l_bak_domain"></label>
+        <input type="text" id="p1_bdomain" maxlength="64" data-i18n-ph="ph_domain" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_bak_port"></label>
+        <input type="text" id="p1_bport" maxlength="6" data-i18n-ph="ph_port" inputmode="numeric" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="h_p2"></h2>
+      <div class="switch-row">
+        <span data-i18n="l_enable_p2"></span>
+        <label class="switch"><input type="checkbox" id="p2_en"><i class="track"></i></label>
+      </div>
+      <div class="collapse-body collapsed" id="p2_body">
+      <div class="field">
+        <label data-i18n="l_phone"></label>
+        <input type="text" id="p2_phone" maxlength="11" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_devnum"></label>
+        <input type="text" id="p2_devnum" maxlength="12" data-i18n-ph="ph_devid" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_conn_mb"></label>
+        <div class="seg" id="p2_seg">
+          <button type="button" data-v="0" class="on" data-i18n="seg_ip"></button>
+          <button type="button" data-v="1" data-i18n="seg_domain"></button>
+        </div>
+      </div>
+      <div class="field" id="p2_ip_f">
+        <label data-i18n="l_srv_ip"></label>
+        <input type="text" id="p2_ip" maxlength="15" data-i18n-ph="ph_ip" autocomplete="off">
+      </div>
+      <div class="field" id="p2_domain_f">
+        <label data-i18n="l_domain"></label>
+        <input type="text" id="p2_domain" maxlength="64" data-i18n-ph="ph_domain" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_port"></label>
+        <input type="text" id="p2_port" maxlength="6" data-i18n-ph="ph_port" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="field" id="p2_bip_f">
+        <label data-i18n="l_bak_ip"></label>
+        <input type="text" id="p2_bip" maxlength="15" data-i18n-ph="ph_bak_ip" autocomplete="off">
+      </div>
+      <div class="field" id="p2_bdomain_f">
+        <label data-i18n="l_bak_domain"></label>
+        <input type="text" id="p2_bdomain" maxlength="64" data-i18n-ph="ph_domain" autocomplete="off">
+      </div>
+      <div class="field">
+        <label data-i18n="l_bak_port"></label>
+        <input type="text" id="p2_bport" maxlength="6" data-i18n-ph="ph_port" inputmode="numeric" autocomplete="off">
+      </div>
+      </div><!-- /collapse-body p2 -->
+    </div>
+  </div>
+
+  <div class="nav">
+    <button class="btn btn-ghost" id="btn_prev" data-i18n="btn_prev"></button>
+    <button class="btn btn-main" id="btn_next" data-i18n="btn_next"></button>
+  </div>
+  <button class="btn-gen" id="btn_gen" data-i18n="btn_gen"></button>
+</div>
+
+<!-- 结果页 -->
+<div id="result">
+  <div class="tabs">
+    <button class="tab active" style="cursor:default" data-i18n="res_title"></button>
+  </div>
+  <div class="card">
+    <div class="qr-wrap">
+      <div id="qrcode"></div>
+      <div class="qr-tip" data-i18n="qr_tip"></div>
+    </div>
+    <div class="divider"></div>
+    <h2 style="font-size:13px;color:var(--muted);border:none;padding:0;margin-bottom:2px;" data-i18n="xml_title"></h2>
+    <div class="xml-box" id="xml_preview"></div>
+  </div>
+  <div class="nav">
+    <button class="btn btn-ghost" id="btn_back" data-i18n="btn_back"></button>
+    <button class="btn btn-main" id="btn_copy" data-i18n="btn_copy"></button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+var $ = function (id) { return document.getElementById(id); };
+var curTab = 0;
+
+/* ================= 中英文 ================= */
+var I18N = {
+
+  en: {
+    title: 'Quick QR Config',
+    help: 'Guide',
+    subtitle: 'Fill in the tabs → Generate QR → Scan with the device<br><b>⚠ QR import is available within 5 minutes after power-on; it closes automatically after that — power-cycle the device to scan again</b>',
+    err_nonascii: 'The configuration contains non-ASCII characters the device cannot read. Please use English letters or digits for APN, username, password and domain.',
+    tab_tz: 'Time Zone', tab_45g: '4/5G', tab_center: 'Center', tab_808: '808',
+    h_tz: 'Time Zone',
+    l_timezone: 'Time Zone',
+    hint_tz: 'The selected time zone is always written into the QR code (including the default UTC+8).',
+    h_45g: '4/5G Dial-up',
+    l_user: 'Username', l_pwd: 'Password', l_dial: 'Dial Number',
+    hint_45g: 'Prefilled defaults: unchanged fields are excluded from the QR code.',
+    h_center: 'Center Platform',
+    l_device_no: 'Device No.', l_conn: 'Connection', l_srv_ip: 'Server IP',
+    l_domain: 'Domain', l_port: 'Port',
+    hint_center: 'Empty fields keep device values. IP / Domain are mutually exclusive. Port hint e.g. 6608: written only when filled.',
+    h_p1: '808 Platform 1', h_p2: '808 Platform 2',
+    l_enable_p1: 'Enable Platform 1', l_enable_p2: 'Enable Platform 2',
+    l_phone: 'Phone No.', l_devnum: 'Device No.', l_conn_mb: 'Connection (main & backup)',
+    l_bak_ip: 'Backup IP', l_bak_domain: 'Backup Domain', l_bak_port: 'Backup Port',
+    seg_ip: 'IP', seg_domain: 'Domain',
+    ph_devid: 'e.g. 20007', ph_ip: 'e.g. 139.9.251.220', ph_phone: 'e.g. 13800138000', ph_port: 'e.g. 6608',
+    err_devid: 'Device No.: letters and digits only, max 12 characters',
+    err_ip: 'Invalid IP address format',
+    err_domain: 'Invalid domain name format',
+    err_port: 'Port must be a number from 1025 to 65535',
+    err_phone: 'Phone: digits only, max 11 characters',
+    ph_domain: 'e.g. server.example.com', ph_bak_ip: 'Backup server IP',
+    btn_prev: 'Prev', btn_next: 'Next', btn_next_last: 'Generate',
+    btn_gen: 'Generate QR Code',
+    res_title: 'QR Code',
+    qr_tip: 'Scan this QR code with the device to import settings',
+    xml_title: 'Config Content (XML)',
+    btn_back: 'Back to Edit', btn_copy: 'Copy XML',
+    toast_empty: 'All values are defaults. Please modify or fill in at least one field.',
+    toast_copied: 'Copied to clipboard',
+  }
+};
+var lang = 'en';   /* 本文件固定 en 版，无语言切换 */
+/* ★ 操作说明按钮：把英文 FAQ 文档地址填到下面（非空即自动显示按钮） */
+var HELP_URL = '/en/docs/675/';
+(function(){ var a=document.getElementById('btn_help');
+  if(a && HELP_URL){ a.href=HELP_URL; a.style.display='inline-block'; } })();
+
+function applyLang() {
+  var T = I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    var k = el.getAttribute('data-i18n');
+    if (T[k] !== undefined) el.innerHTML = T[k];   /* 用 innerHTML 以支持文案里的 <b> 高亮 */
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
+    var k = el.getAttribute('data-i18n-ph');
+    if (T[k] !== undefined) el.setAttribute('placeholder', T[k]);
+  });
+  document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+  $('btn_next').textContent = (curTab === 3) ? T.btn_next_last : T.btn_next;
+}
+
+/* ================= 时区表（与设备端一致：UTC-12 ~ UTC+14，值 = 下标，UTC+8 = 20） ================= */
+(function () {
+  var sel = $('f_timezone');
+  for (var h = -12; h <= 14; h++) {
+    var off = (h < 0 ? '-' : '+') + String(Math.abs(h)).padStart(2, '0');
+    var o = document.createElement('option');
+    o.value = String(h + 12);
+    o.textContent = 'UTC' + off;
+    if (h === 8) o.selected = true;   /* 预填默认 UTC+8；未修改不进 XML */
+    sel.appendChild(o);
+  }
+})();
+
+/* ================= 预填默认值（用户未修改的字段不进 XML） ================= */
+/* v5：端口不再预填（placeholder 提示式「如 6608」），DEFAULTS 仅剩 4G 四项 */
+var DEFAULTS = { f_apn: '3gnet', f_user: 'card', f_pwd: 'card', f_dial: '*99#' };
+function modified(id) { return v(id) !== DEFAULTS[id]; }
+
+/* ================= TAB 切换 ================= */
+function showTab(i) {
+  curTab = i;
+  document.querySelectorAll('.tab[data-tab]').forEach(function (b) {
+    b.classList.toggle('active', +b.dataset.tab === i);
+  });
+  document.querySelectorAll('.panel').forEach(function (p) {
+    p.classList.toggle('active', +p.dataset.panel === i);
+  });
+  $('btn_prev').style.visibility = (i === 0) ? 'hidden' : 'visible';
+  $('btn_next').textContent = (i === 3) ? I18N[lang].btn_next_last : I18N[lang].btn_next;
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('.tab[data-tab]').forEach(function (b) {
+  b.addEventListener('click', function () { showTab(+b.dataset.tab); });
+});
+$('btn_prev').addEventListener('click', function () { if (curTab > 0) showTab(curTab - 1); });
+$('btn_next').addEventListener('click', function () {
+  if (curTab < 3) showTab(curTab + 1); else generate();
+});
+
+/* ================= IP / 域名互斥（中心 + 808 两平台，主/备共用连接方式） ================= */
+function bindSeg(segId, ipFieldId, domainFieldId, bakIpFieldId, bakDomainFieldId) {
+  var seg = $(segId), val = 0;
+  seg.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      val = +b.dataset.v;
+      seg.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+      apply();
+    });
+  });
+  function apply() {
+    var isIP = (val === 0);
+    ($(ipFieldId)).classList.toggle('disabled', !isIP);
+    ($(ipFieldId)).querySelector('input').disabled = !isIP;
+    ($(domainFieldId)).classList.toggle('disabled', isIP);
+    ($(domainFieldId)).querySelector('input').disabled = isIP;
+    if (bakIpFieldId) {
+      ($(bakIpFieldId)).classList.toggle('disabled', !isIP);
+      ($(bakIpFieldId)).querySelector('input').disabled = !isIP;
+      ($(bakDomainFieldId)).classList.toggle('disabled', isIP);
+      ($(bakDomainFieldId)).querySelector('input').disabled = isIP;
+    }
+  }
+  apply();
+  return { get: function () { return val; } };
+}
+var cConn  = bindSeg('c_seg',  'c_ip_f',  'c_domain_f');
+var p1Conn = bindSeg('p1_seg', 'p1_ip_f', 'p1_domain_f', 'p1_bip_f', 'p1_bdomain_f');
+var p2Conn = bindSeg('p2_seg', 'p2_ip_f', 'p2_domain_f', 'p2_bip_f', 'p2_bdomain_f');
+
+/* ================= 808 服务器 2 折叠：启用开关控制其余配置项显隐 ================= */
+function syncP2() {
+  var body = $('p2_body');
+  if (body) body.classList.toggle('collapsed', !$('p2_en').checked);
+}
+if ($('p2_en')) {
+  $('p2_en').addEventListener('change', syncP2);
+  syncP2();
+}
+
+/* ================= 输入校验（v7）=================
+ * 即时过滤：input 时剥离非法字符（maxlength 由 HTML 属性限制长度）；
+ * 生成校验：generate() 前统一校验非空字段格式，非法标红 + toast 首个错误。
+ * 空 = 未填写，跳过校验（沿用「留空不写入」规则）。 */
+var RE_IP     = /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}$/;
+var RE_DOMAIN = /^[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]{2,}$/;
+var RE_ALNUM  = /^[A-Za-z0-9]*$/;
+var RE_DIGITS = /^\d*$/;
+
+/* 即时过滤表：{id, keep}——keep 为允许字符正则（全局 g 剥离其余） */
+var SANITIZE = [
+  { id: 'f_devid',  keep: /[^A-Za-z0-9]/g },                 /* 中心设备编号 */
+  { id: 'c_ip',     keep: /[^0-9.]/g },                      /* IP 允许过渡输入点分 */
+  { id: 'c_domain', keep: /[^A-Za-z0-9.-]/g },
+  { id: 'c_port',   keep: /\D/g },
+  { id: 'p1_phone', keep: /\D/g },  { id: 'p2_phone', keep: /\D/g },
+  { id: 'p1_devnum', keep: /[^A-Za-z0-9]/g }, { id: 'p2_devnum', keep: /[^A-Za-z0-9]/g },
+  { id: 'p1_ip',    keep: /[^0-9.]/g }, { id: 'p2_ip',    keep: /[^0-9.]/g },
+  { id: 'p1_bip',   keep: /[^0-9.]/g }, { id: 'p2_bip',   keep: /[^0-9.]/g },
+  { id: 'p1_domain', keep: /[^A-Za-z0-9.-]/g }, { id: 'p2_domain', keep: /[^A-Za-z0-9.-]/g },
+  { id: 'p1_bdomain', keep: /[^A-Za-z0-9.-]/g }, { id: 'p2_bdomain', keep: /[^A-Za-z0-9.-]/g },
+  { id: 'p1_port',  keep: /\D/g }, { id: 'p2_port',  keep: /\D/g },
+  { id: 'p1_bport', keep: /\D/g }, { id: 'p2_bport', keep: /\D/g },
+];
+SANITIZE.forEach(function (s) {
+  var el = $(s.id);
+  if (!el) return;
+  el.addEventListener('input', function () {
+    var clean = el.value.replace(s.keep, '');
+    if (clean !== el.value) el.value = clean;
+    /* 修正即清除红框 */
+    el.classList.remove('invalid');
+  });
+});
+
+/* 生成时格式校验表：{id, test, err}——非空才校验 */
+var VALIDATORS = [
+  { id: 'f_devid',  test: function (x) { return RE_ALNUM.test(x) && x.length <= 12; }, err: 'err_devid' },
+  { id: 'c_ip',     test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
+  { id: 'c_domain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
+  { id: 'c_port',   test: function (x) { return /^\d+$/.test(x) && +x >= 1025 && +x <= 65535; }, err: 'err_port' },
+  { id: 'p1_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= 11; }, err: 'err_phone' },
+  { id: 'p2_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= 11; }, err: 'err_phone' },
+  { id: 'p1_devnum', test: function (x) { return RE_ALNUM.test(x) && x.length <= 12; }, err: 'err_devid' },
+  { id: 'p2_devnum', test: function (x) { return RE_ALNUM.test(x) && x.length <= 12; }, err: 'err_devid' },
+  { id: 'p1_ip',   test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
+  { id: 'p2_ip',   test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
+  { id: 'p1_bip',  test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
+  { id: 'p2_bip',  test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
+  { id: 'p1_domain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
+  { id: 'p2_domain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
+  { id: 'p1_bdomain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
+  { id: 'p2_bdomain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
+  /* v7b：808 四个端口补 err 键——漏写时 validateAll 返回 undefined，
+   * if(err) 判假 → 红框亮但不拦截生成（787878/999999 可生成的根因） */
+  { id: 'p1_port',  test: portOK, err: 'err_port' },
+  { id: 'p2_port',  test: portOK, err: 'err_port' },
+  { id: 'p1_bport', test: portOK, err: 'err_port' },
+  { id: 'p2_bport', test: portOK, err: 'err_port' },
+];
+function portOK(x) { return /^\d+$/.test(x) && +x >= 1025 && +x <= 65535; }
+
+/* 全量校验：所有非空非法字段标红；返回首个错误的 toast 键（null = 全部通过） */
+function validateAll() {
+  var firstErr = null;
+  VALIDATORS.forEach(function (r) {
+    var el = $(r.id), x = v(r.id);
+    var bad = x !== '' && !r.test(x);
+    el.classList.toggle('invalid', bad);
+    if (bad && !firstErr) firstErr = r.err;
+  });
+  return firstErr;
+}
+
+/* ================= XML 生成 ================= */
+function v(id) { var e = $(id); return e ? String(e.value || '').trim() : ''; }
+function esc(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+}
+function attrs(pairs) {
+  return pairs.filter(function (p) { return p[1] !== ''; })
+              .map(function (p) { return p[0] + '="' + esc(p[1]) + '"'; })
+              .join(' ');
+}
+function node(name, pairs) {
+  var a = attrs(pairs);
+  if (!a) return '';
+  return '  <' + name + ' ' + a + ' />';
+}
+
+function buildXML() {
+  var lines = [];
+
+  /* stBaseInfo：设备编号（中心 TAB）+ 时区；属性顺序照 config.xml 模板。
+   * v4：时区为特殊字段——选中即写入（含默认 UTC+8，用户可能确实需要显式配置）。 */
+  var base = [];
+  if (v('f_devid') !== '')        base.push(['strFD_DeviceNo', v('f_devid')]);
+  if (v('f_timezone') !== '')     base.push(['ucFD_TimeZone', v('f_timezone')]);
+  var n = node('stBaseInfo', base); if (n) lines.push(n);
+
+  /* stCMS：中心平台（任一参数填写才生成；连接方式随节写入；端口留空不写入） */
+  var cmsIP = v('c_ip'), cmsDomain = v('c_domain');
+  var cmsPort = v('c_port');
+  if (cmsIP || cmsDomain || cmsPort || v('f_devid')) {
+    var isIPc = (cConn.get() === 0);
+    lines.push(node('stCMS', [
+      ['ucFD_AddressType', String(cConn.get())],
+      ['uiFD_IP',  isIPc ? cmsIP : ''],
+      ['strFD_Domain', isIPc ? '' : cmsDomain],
+      ['usFD_Port', cmsPort],
+    ]));
+  }
+
+  /* stMobileGNet：4/5G 拨号——预填默认值未修改的字段不写入；全部未修改则整节不生成 */
+  var apn = modified('f_apn') ? v('f_apn') : '';
+  var user = modified('f_user') ? v('f_user') : '';
+  var pwd = modified('f_pwd') ? v('f_pwd') : '';
+  var dial = modified('f_dial') ? v('f_dial') : '';
+  if (apn || user || pwd || dial) {
+    lines.push(node('stMobileGNet', [
+      ['ucFD_NetType', '0'],
+      ['strFD_Apn', apn],
+      ['strFD_PhoneNo', dial],
+      ['strFD_UserName', user],
+      ['strFD_UserPasswd', pwd],
+    ]));
+  }
+
+  /* stNetWorkMode + 808 各节：平台使能才生成 */
+  var en1 = $('p1_en').checked, en2 = $('p2_en').checked;
+  if (en1 || en2) {
+    var enVal = (en1 ? 1 : 0) + (en2 ? 128 : 0);
+    lines.push(node('stNetWorkMode', [['ucFD_EnableHR808', String(enVal)]]));
+
+    /* ---- 平台 1：st808CMS1（主）/ st808CMS2（备）/ stCarInfo ---- */
+    if (en1) {
+      var isIP1 = (p1Conn.get() === 0);
+      lines.push(node('st808CMS1', [
+        ['ucFD_AddressType', String(p1Conn.get())],
+        ['uiFD_IP', isIP1 ? v('p1_ip') : ''],
+        ['strFD_Domain', isIP1 ? '' : v('p1_domain')],
+        ['usFD_Port', v('p1_port')],
+      ]));
+      var car1 = node('stCarInfo', [
+        ['strFD_DeviceNum', v('p1_devnum')],
+        ['strFD_Phonenumber', v('p1_phone')],
+        ['strFD_TerminalID', v('p1_devnum')],
+      ]);
+      if (car1) lines.push(car1);
+      lines.push(node('st808CMS2', [
+        ['ucFD_AddressType', String(p1Conn.get())],
+        ['uiFD_IP', isIP1 ? v('p1_bip') : ''],
+        ['strFD_Domain', isIP1 ? '' : v('p1_bdomain')],
+        ['usFD_Port', v('p1_bport')],
+      ]));
+    }
+
+    /* ---- 平台 2：st1078CMS1 / st1078CMS2 / stCarInfo1 ---- */
+    if (en2) {
+      var isIP2 = (p2Conn.get() === 0);
+      lines.push(node('st1078CMS1', [
+        ['ucFD_AddressType', String(p2Conn.get())],
+        ['uiFD_IP', isIP2 ? v('p2_ip') : ''],
+        ['strFD_Domain', isIP2 ? '' : v('p2_domain')],
+        ['usFD_Port', v('p2_port')],
+      ]));
+      var car2 = node('stCarInfo1', [
+        ['strFD_DeviceNum', v('p2_devnum')],
+        ['strFD_Phonenumber', v('p2_phone')],
+        ['strFD_TerminalID', v('p2_devnum')],
+      ]);
+      if (car2) lines.push(car2);
+      lines.push(node('st1078CMS2', [
+        ['ucFD_AddressType', String(p2Conn.get())],
+        ['uiFD_IP', isIP2 ? v('p2_bip') : ''],
+        ['strFD_Domain', isIP2 ? '' : v('p2_bdomain')],
+        ['usFD_Port', v('p2_bport')],
+      ]));
+    }
+  }
+
+  return '<?xml version="1.0" encoding="UTF-8" ?>\n<VariCfgSec>\n' +
+         lines.join('\n') + '\n</VariCfgSec>';
+}
+
+/* ================= 生成与展示 ================= */
+var lastXML = '';
+function toast(key) {
+  var t = $('toast');
+  t.textContent = I18N[lang][key];
+  t.classList.add('show');
+  clearTimeout(t._tm);
+  t._tm = setTimeout(function () { t.classList.remove('show'); }, 2200);
+}
+
+function generate() {
+  /* v7：生成前全量格式校验——非法字段标红 + toast 首个错误，不生成 */
+  var err = validateAll();
+  if (err) { toast(err); return; }
+  lastXML = buildXML();
+  if (lastXML.indexOf('<st') < 0 && lastXML.indexOf('ucFD') < 0) {
+    toast('toast_empty');
+    return;
+  }
+  /* ★ v8 新增：设备端按 ASCII 处理，含非 ASCII（中文等）会生成设备认不出的码，直接拦 */
+  if (/[^\x00-\x7F]/.test(lastXML)) { toast('err_nonascii'); return; }
+  $('wizard').style.display = 'none';
+  $('result').style.display = 'block';
+  $('xml_preview').textContent = lastXML;
+
+  var box = $('qrcode');
+  box.innerHTML = '';
+  /* ★ v8 修正：直接传 XML 原文。
+     本版 qrcodejs 自带 UTF-8 处理，外面再手工编码会造成【双重编码 + 多插 3 字节 BOM】
+     （"测" e6 b5 8b → c3 a6 c2 b5 c2 8b），设备按 UTF-8 解码就是乱码。
+     纯 ASCII 输入时，库原样写入，二维码内字节 == XML 的 UTF-8 字节，无 BOM。 */
+  new QRCode(box, {
+    text: lastXML,
+    width: 260, height: 260,
+    colorDark: '#103048', colorLight: '#ffffff',
+    correctLevel: QRCode.CorrectLevel.M,
+  });
+  window.scrollTo(0, 0);
+}
+
+$('btn_gen').addEventListener('click', generate);
+$('btn_back').addEventListener('click', function () {
+  $('result').style.display = 'none';
+  $('wizard').style.display = 'block';
+  window.scrollTo(0, 0);
+});
+$('btn_copy').addEventListener('click', function () {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(lastXML).then(function () { toast('toast_copied'); });
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = lastXML;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    toast('toast_copied');
+  }
+});
+
+applyLang();
+showTab(0);
+</script>
+<script>
+  /* 语言切换：单纯跳转到另一语言版本，不做任何记忆 */
+</script>
+</body>
+</html>
