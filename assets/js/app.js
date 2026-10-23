@@ -115,7 +115,7 @@
     return fetch("/content.json").then(function (r) { return r.json(); }).then(function (d) {
       SEARCH_DATA = Object.values(d.pages).map(function (p) {
         var text = (p.content || "").replace(/[#*`>_~\-]/g, " ").replace(/\[TOC\]/gi, " ");
-        return { id: p.id, section: p.section, title: p.title, cat: p.cat_name || "", text: text.slice(0, 400) };
+        return { id: p.id, section: p.section, title: p.title, cat: p.cat_name || "", text: text };
       });
       return SEARCH_DATA;
     });
