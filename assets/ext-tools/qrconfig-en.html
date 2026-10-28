@@ -252,6 +252,18 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
   <!-- TAB 3：808 平台 -->
   <div class="panel" data-panel="3">
     <div class="card">
+      <h2 data-i18n="h_proto"></h2>
+      <div class="field">
+        <label data-i18n="l_proto"></label>
+        <div class="seg" id="proto_seg">
+          <button type="button" data-v="0" class="on" data-i18n="proto_2013"></button>
+          <button type="button" data-v="1" data-i18n="proto_2019"></button>
+        </div>
+      </div>
+      <div class="hint" data-i18n="hint_proto"></div>
+    </div>
+
+    <div class="card">
       <h2 data-i18n="h_p1"></h2>
       <div class="switch-row">
         <span data-i18n="l_enable_p1"></span>
@@ -259,7 +271,7 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
       </div>
       <div class="field">
         <label data-i18n="l_phone"></label>
-        <input type="text" id="p1_phone" maxlength="11" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
+        <input type="text" id="p1_phone" maxlength="20" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
       </div>
       <div class="field">
         <label data-i18n="l_devnum"></label>
@@ -307,7 +319,7 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
       <div class="collapse-body collapsed" id="p2_body">
       <div class="field">
         <label data-i18n="l_phone"></label>
-        <input type="text" id="p2_phone" maxlength="11" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
+        <input type="text" id="p2_phone" maxlength="20" data-i18n-ph="ph_phone" inputmode="numeric" autocomplete="off">
       </div>
       <div class="field">
         <label data-i18n="l_devnum"></label>
@@ -401,6 +413,9 @@ var I18N = {
     l_device_no: 'Device No.', l_conn: 'Connection', l_srv_ip: 'Server IP',
     l_domain: 'Domain', l_port: 'Port',
     hint_center: 'Empty fields keep device values. IP / Domain are mutually exclusive. Port hint e.g. 6608: written only when filled.',
+    h_proto: 'Protocol Version', l_proto: 'JT/T 808 Protocol',
+    proto_2013: '808-2013 or earlier', proto_2019: '808-2019',
+    hint_proto: 'The protocol version sets the terminal phone number limit: 12 digits for 2013, 20 digits for 2019. The phone field is truncated to the active limit.',
     h_p1: '808 Platform 1', h_p2: '808 Platform 2',
     l_enable_p1: 'Enable Platform 1', l_enable_p2: 'Enable Platform 2',
     l_phone: 'Phone No.', l_devnum: 'Device No.', l_conn_mb: 'Connection (main & backup)',
@@ -411,7 +426,7 @@ var I18N = {
     err_ip: 'Invalid IP address format',
     err_domain: 'Invalid domain name format',
     err_port: 'Port must be a number from 1025 to 65535',
-    err_phone: 'Phone: digits only, max 11 characters',
+    err_phone: 'Phone: digits only — max 12 characters for 2013, 20 for 2019',
     ph_domain: 'e.g. server.example.com', ph_bak_ip: 'Backup server IP',
     btn_prev: 'Prev', btn_next: 'Next', btn_next_last: 'Generate',
     btn_gen: 'Generate QR Code',
@@ -522,6 +537,34 @@ if ($('p2_en')) {
   syncP2();
 }
 
+/* ================= 808 protocol version (ucFD_JT808ProVer) =================
+ * 0 = V2013 or earlier, 1 = V2019. It also drives the terminal phone number
+ * (strFD_Phonenumber) limit: 12 digits for 808-2013 (BCD[6]), 20 digits for 808-2019.
+ * The old hard-coded maxlength=11 blocked both. */
+var protoVal = 0;
+function phoneMaxLen() { return protoVal === 1 ? 20 : 12; }
+function applyPhoneLimit() {
+  var n = phoneMaxLen();
+  ['p1_phone', 'p2_phone'].forEach(function (id) {
+    var el = $(id);
+    if (!el) return;
+    el.maxLength = n;
+    if (el.value.length > n) el.value = el.value.slice(0, n);
+  });
+}
+(function bindProto() {
+  var seg = $('proto_seg');
+  if (!seg) return;
+  seg.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      protoVal = +b.dataset.v;
+      seg.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+      applyPhoneLimit();
+    });
+  });
+  applyPhoneLimit();
+})();
+
 /* ================= 输入校验（v7）=================
  * 即时过滤：input 时剥离非法字符（maxlength 由 HTML 属性限制长度）；
  * 生成校验：generate() 前统一校验非空字段格式，非法标红 + toast 首个错误。
@@ -552,6 +595,11 @@ SANITIZE.forEach(function (s) {
   el.addEventListener('input', function () {
     var clean = el.value.replace(s.keep, '');
     if (clean !== el.value) el.value = clean;
+    /* 填了某平台的参数就自动拨上该平台开关，避免「填了却不生效」 */
+    if (el.value !== '') {
+      if (s.id.indexOf('p1_') === 0 && $('p1_en')) $('p1_en').checked = true;
+      if (s.id.indexOf('p2_') === 0 && $('p2_en')) { $('p2_en').checked = true; syncP2(); }
+    }
     /* 修正即清除红框 */
     el.classList.remove('invalid');
   });
@@ -563,8 +611,9 @@ var VALIDATORS = [
   { id: 'c_ip',     test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
   { id: 'c_domain', test: function (x) { return RE_DOMAIN.test(x); }, err: 'err_domain' },
   { id: 'c_port',   test: function (x) { return /^\d+$/.test(x) && +x >= 1025 && +x <= 65535; }, err: 'err_port' },
-  { id: 'p1_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= 11; }, err: 'err_phone' },
-  { id: 'p2_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= 11; }, err: 'err_phone' },
+  /* Phone length limit follows the protocol version: 2013 = 12, 2019 = 20 */
+  { id: 'p1_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= phoneMaxLen(); }, err: 'err_phone' },
+  { id: 'p2_phone', test: function (x) { return RE_DIGITS.test(x) && x.length <= phoneMaxLen(); }, err: 'err_phone' },
   { id: 'p1_devnum', test: function (x) { return RE_ALNUM.test(x) && x.length <= 12; }, err: 'err_devid' },
   { id: 'p2_devnum', test: function (x) { return RE_ALNUM.test(x) && x.length <= 12; }, err: 'err_devid' },
   { id: 'p1_ip',   test: function (x) { return RE_IP.test(x); },     err: 'err_ip' },
@@ -613,6 +662,21 @@ function node(name, pairs) {
   return '  <' + name + ' ' + a + ' />';
 }
 
+/* 平台是否已填写任何字段。开关只负责「显式启用」，真正决定是否写入的是有没有数据：
+ * 否则用户把 808 参数填满、却没拨开关时，整节会被静默丢弃。 */
+var P1_FIELDS = ['p1_phone', 'p1_devnum', 'p1_ip', 'p1_domain', 'p1_port',
+                 'p1_bip', 'p1_bdomain', 'p1_bport'];
+var P2_FIELDS = ['p2_phone', 'p2_devnum', 'p2_ip', 'p2_domain', 'p2_port',
+                 'p2_bip', 'p2_bdomain', 'p2_bport'];
+function hasAny(ids) {
+  for (var i = 0; i < ids.length; i++) {
+    if (v(ids[i]) !== '') return true;
+  }
+  return false;
+}
+function hasP1Data() { return hasAny(P1_FIELDS); }
+function hasP2Data() { return hasAny(P2_FIELDS); }
+
 function buildXML() {
   var lines = [];
 
@@ -651,11 +715,17 @@ function buildXML() {
     ]));
   }
 
-  /* stNetWorkMode + 808 各节：平台使能才生成 */
-  var en1 = $('p1_en').checked, en2 = $('p2_en').checked;
+  /* stNetWorkMode + 808 各节：开关启用 **或** 该平台已填任何字段即写入。
+   * 只看开关会导致「字段填满但开关没拨」时整节丢失（只剩 base+CMS 两节）。 */
+  var en1 = $('p1_en').checked || hasP1Data();
+  var en2 = $('p2_en').checked || hasP2Data();
   if (en1 || en2) {
     var enVal = (en1 ? 1 : 0) + (en2 ? 128 : 0);
-    lines.push(node('stNetWorkMode', [['ucFD_EnableHR808', String(enVal)]]));
+    /* ucFD_JT808ProVer: 0 = V2013 or earlier, 1 = V2019. Always written explicitly. */
+    lines.push(node('stNetWorkMode', [
+      ['ucFD_JT808ProVer', String(protoVal)],
+      ['ucFD_EnableHR808', String(enVal)],
+    ]));
 
     /* ---- 平台 1：st808CMS1（主）/ st808CMS2（备）/ stCarInfo ---- */
     if (en1) {
@@ -672,12 +742,16 @@ function buildXML() {
         ['strFD_TerminalID', v('p1_devnum')],
       ]);
       if (car1) lines.push(car1);
-      lines.push(node('st808CMS2', [
-        ['ucFD_AddressType', String(p1Conn.get())],
-        ['uiFD_IP', isIP1 ? v('p1_bip') : ''],
-        ['strFD_Domain', isIP1 ? '' : v('p1_bdomain')],
-        ['usFD_Port', v('p1_bport')],
-      ]));
+      /* 备用服务器：没填任何备份地址/端口就不生成，避免出现只有 AddressType 的空节 */
+      var bk1 = v('p1_bip') || v('p1_bdomain') || v('p1_bport');
+      if (bk1) {
+        lines.push(node('st808CMS2', [
+          ['ucFD_AddressType', String(p1Conn.get())],
+          ['uiFD_IP', isIP1 ? v('p1_bip') : ''],
+          ['strFD_Domain', isIP1 ? '' : v('p1_bdomain')],
+          ['usFD_Port', v('p1_bport')],
+        ]));
+      }
     }
 
     /* ---- 平台 2：st1078CMS1 / st1078CMS2 / stCarInfo1 ---- */
@@ -695,12 +769,16 @@ function buildXML() {
         ['strFD_TerminalID', v('p2_devnum')],
       ]);
       if (car2) lines.push(car2);
-      lines.push(node('st1078CMS2', [
-        ['ucFD_AddressType', String(p2Conn.get())],
-        ['uiFD_IP', isIP2 ? v('p2_bip') : ''],
-        ['strFD_Domain', isIP2 ? '' : v('p2_bdomain')],
-        ['usFD_Port', v('p2_bport')],
-      ]));
+      /* 备用服务器：同 808，未填则不生成 */
+      var bk2 = v('p2_bip') || v('p2_bdomain') || v('p2_bport');
+      if (bk2) {
+        lines.push(node('st1078CMS2', [
+          ['ucFD_AddressType', String(p2Conn.get())],
+          ['uiFD_IP', isIP2 ? v('p2_bip') : ''],
+          ['strFD_Domain', isIP2 ? '' : v('p2_bdomain')],
+          ['usFD_Port', v('p2_bport')],
+        ]));
+      }
     }
   }
 
