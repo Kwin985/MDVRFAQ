@@ -138,6 +138,13 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
     box-shadow: 0 4px 12px rgba(16,48,72,.22);
   }
   .btn-bright:active { transform: translateY(1px); }
+  /* 结果页两个并排操作：亮码为主，分享为次 */
+  .res-actions { display: flex; gap: 10px; margin-top: 14px; }
+  .res-actions .btn-bright { width: auto; flex: 1; margin-top: 0; }
+  .btn-share {
+    background: #fff; color: var(--brand);
+    border: 1px solid var(--brand); box-shadow: none;
+  }
 
   /* ═══ Bright mode: full-screen white + maximum-size QR code ═══ */
   #bright {
@@ -400,7 +407,10 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
       <div id="qrcode"></div>
       <div class="qr-tip" data-i18n="qr_tip"></div>
     </div>
-    <button class="btn-bright" id="btn_bright" data-i18n="btn_bright"></button>
+    <div class="res-actions">
+      <button class="btn-bright" id="btn_bright" data-i18n="btn_bright"></button>
+      <button class="btn-bright btn-share" id="btn_share" data-i18n="btn_share"></button>
+    </div>
     <div class="divider"></div>
     <h2 style="font-size:13px;color:var(--muted);border:none;padding:0;margin-bottom:2px;" data-i18n="xml_title"></h2>
     <div class="xml-box" id="xml_preview"></div>
@@ -463,6 +473,11 @@ var I18N = {
     btn_gen: 'Generate QR Code',
     res_title: 'QR Code',
     qr_tip: 'Scan this QR code with the device to import settings',
+    btn_share: 'Share',
+    share_title: 'MDVR Configuration QR Code',
+    share_desc: 'Scan this QR code with the device to import the configuration',
+    share_fallback: 'This browser cannot share files directly — long-press the QR code to save it, then send it in WeChat',
+    share_no_qr: 'Generate the QR code first',
     btn_bright: 'Bright Mode',
     bright_tip: '<b>The QR code now fills the screen</b> — pure black on pure white for maximum contrast, and the screen stays awake. Browsers cannot change the system brightness, so please <b>turn the screen brightness up manually</b> before scanning.',
     bright_exit: 'Tap anywhere to exit (or press Esc)',
@@ -938,7 +953,72 @@ function hideBright() {
   }
   releaseWakeLock();
 }
+/* ================= 分享二维码 ================= */
+/* 单独渲染一张纯黑大图用于分享：不复用页面上的深蓝小图，
+   黑白对比最强、尺寸更大，转发到微信后依然好扫 */
+function buildSharePng() {
+  var tmp = document.createElement('div');
+  tmp.style.cssText = 'position:fixed;left:-9999px;top:0;';
+  document.body.appendChild(tmp);
+  try {
+    var qr = new QRCode(tmp, {
+      text: lastXML,
+      width: 640, height: 640,
+      colorDark: '#000000', colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.M,
+    });
+    var mod = qr._oQRCode;
+    var n = mod.moduleCount;
+    var quiet = 4;
+    /* 整数倍放大 + 静默区，避免半像素造成边缘发虚 */
+    var cell = Math.max(4, Math.floor(640 / (n + quiet * 2)));
+    var side = (n + quiet * 2) * cell;
+    var cv = document.createElement('canvas');
+    cv.width = side;
+    cv.height = side;
+    var c = cv.getContext('2d');
+    c.fillStyle = '#ffffff';
+    c.fillRect(0, 0, side, side);
+    c.fillStyle = '#000000';
+    for (var y = 0; y < n; y++) {
+      for (var x = 0; x < n; x++) {
+        if (mod.isDark(y, x)) {
+          c.fillRect((x + quiet) * cell, (y + quiet) * cell, cell, cell);
+        }
+      }
+    }
+    return cv.toDataURL('image/png');
+  } finally {
+    document.body.removeChild(tmp);
+  }
+}
+function shareQr() {
+  if (lastXML === '') { toast('share_no_qr'); return; }
+  var du = '';
+  try { du = buildSharePng(); } catch (e) { du = ''; }
+  if (!du) { toast('share_no_qr'); return; }
+  var file = null;
+  try {
+    var bin = atob(du.split(',')[1]);
+    var arr = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    file = new File([arr], 'MDVR-QR-Code.png', { type: 'image/png' });
+  } catch (e2) { file = null; }
+  /* Web Share API（带文件）：手机 Chrome / Edge / Safari 支持；
+     微信、QQ 内置浏览器不支持，降级为提示长按保存 */
+  if (file && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+    var p = navigator.share({
+      files: [file],
+      title: I18N[lang].share_title,
+      text: I18N[lang].share_desc,
+    });
+    if (p && p.catch) p.catch(function () {});
+    return;
+  }
+  toast('share_fallback');
+}
 $('btn_bright').addEventListener('click', showBright);
+$('btn_share').addEventListener('click', shareQr);
 $('bright').addEventListener('click', hideBright);
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') hideBright();
