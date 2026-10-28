@@ -476,7 +476,9 @@ var I18N = {
     btn_share: 'Share',
     share_title: 'MDVR Configuration QR Code',
     share_desc: 'Scan this QR code with the device to import the configuration',
-    share_fallback: 'This browser cannot share files directly — long-press the QR code to save it, then send it in WeChat',
+    share_copied: 'QR code image copied — press Ctrl+V in a WeChat chat to send it',
+    share_downloaded: 'QR code image saved — send it from WeChat by picking the image',
+    share_fallback: 'Sharing is not available inside WeChat — long-press the QR code to save it, then send it',
     share_no_qr: 'Generate the QR code first',
     btn_bright: 'Bright Mode',
     bright_tip: '<b>The QR code now fills the screen</b> — pure black on pure white for maximum contrast, and the screen stays awake. Browsers cannot change the system brightness, so please <b>turn the screen brightness up manually</b> before scanning.',
@@ -837,12 +839,12 @@ function buildXML() {
 
 /* ================= 生成与展示 ================= */
 var lastXML = '';
-function toast(key) {
+function toast(key, ms) {
   var t = $('toast');
   t.textContent = I18N[lang][key];
   t.classList.add('show');
   clearTimeout(t._tm);
-  t._tm = setTimeout(function () { t.classList.remove('show'); }, 2200);
+  t._tm = setTimeout(function () { t.classList.remove('show'); }, ms || 2200);
 }
 
 function generate() {
@@ -992,21 +994,49 @@ function buildSharePng() {
     document.body.removeChild(tmp);
   }
 }
+/* 微信 / QQ 内置浏览器：不给系统分享，也不给写剪贴板图片，只能长按保存 */
+function inAppBrowser() {
+  return /MicroMessenger|MQQBrowser|QQ\//i.test(navigator.userAgent);
+}
+function isMobileUA() {
+  return /Android|iPhone|iPad|iPod|HarmonyOS|Mobile/i.test(navigator.userAgent);
+}
+function downloadQr(du) {
+  var a = document.createElement('a');
+  a.href = du;
+  a.download = 'MDVR-QR-Code.png';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+/* 把图片写进剪贴板：桌面端最稳的“发微信”路径——微信聊天窗口 Ctrl+V 直接出图 */
+function copyQrImage(blob, done) {
+  if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
+    try {
+      navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+        .then(function () { done(true); })
+        .catch(function () { done(false); });
+      return;
+    } catch (e) {}
+  }
+  done(false);
+}
 function shareQr() {
   if (lastXML === '') { toast('share_no_qr'); return; }
   var du = '';
   try { du = buildSharePng(); } catch (e) { du = ''; }
   if (!du) { toast('share_no_qr'); return; }
-  var file = null;
+  if (inAppBrowser()) { toast('share_fallback', 4000); return; }
+  var blob = null, file = null;
   try {
     var bin = atob(du.split(',')[1]);
     var arr = new Uint8Array(bin.length);
     for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    blob = new Blob([arr], { type: 'image/png' });
     file = new File([arr], 'MDVR-QR-Code.png', { type: 'image/png' });
-  } catch (e2) { file = null; }
-  /* Web Share API（带文件）：手机 Chrome / Edge / Safari 支持；
-     微信、QQ 内置浏览器不支持，降级为提示长按保存 */
-  if (file && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+  } catch (e2) { blob = null; file = null; }
+  /* 手机：走系统分享面板，可直接选微信 / 企业微信 */
+  if (isMobileUA() && file && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
     var p = navigator.share({
       files: [file],
       title: I18N[lang].share_title,
@@ -1015,7 +1045,20 @@ function shareQr() {
     if (p && p.catch) p.catch(function () {});
     return;
   }
-  toast('share_fallback');
+  /* 电脑：坚决不走 navigator.share。
+     Windows 的 Chrome 会把文件流经系统分享契约交给微信 PC 版，
+     而微信 PC 端接不住这个通道 —— 表现就是弹出空白窗口、点“发送给好友”报“共享失败”。
+     改为把图片写进剪贴板，微信聊天窗口 Ctrl+V 即可发送；写不进去就退回下载 PNG。 */
+  if (blob) {
+    copyQrImage(blob, function (ok) {
+      if (ok) { toast('share_copied', 4000); return; }
+      downloadQr(du);
+      toast('share_downloaded', 4000);
+    });
+    return;
+  }
+  downloadQr(du);
+  toast('share_downloaded', 4000);
 }
 $('btn_bright').addEventListener('click', showBright);
 $('btn_share').addEventListener('click', shareQr);
