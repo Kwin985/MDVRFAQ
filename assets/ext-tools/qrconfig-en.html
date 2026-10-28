@@ -130,6 +130,29 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
   .qr-wrap { text-align: center; padding: 20px 0 8px; }
   #qrcode { display: inline-block; padding: 12px; background: #fff; border-radius: 12px; }
   .qr-tip { font-size: 13px; color: var(--muted); margin-top: 12px; line-height: 1.7; }
+  .btn-bright {
+    display: block; width: 100%; height: 48px; margin-top: 14px;
+    border: none; border-radius: 10px; cursor: pointer;
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: #fff; font-size: 16px; font-weight: 600;
+    box-shadow: 0 4px 12px rgba(16,48,72,.22);
+  }
+  .btn-bright:active { transform: translateY(1px); }
+
+  /* ═══ Bright mode: full-screen white + maximum-size QR code ═══ */
+  #bright {
+    position: fixed; inset: 0; z-index: 999;
+    display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: #ffffff;
+  }
+  #bright.show { display: flex; }
+  #bright .bright-frame { background: #fff; padding: 7vmin; line-height: 0; }
+  #bright .bright-tip {
+    margin-top: 3.4vmin; padding: 0 7vmin; text-align: center;
+    font-size: 14px; line-height: 1.7; color: #4a4a4a;
+  }
+  #bright .bright-tip b { color: #000; font-weight: 600; }
+  #bright .bright-exit { margin-top: 1.6vmin; color: #8a8a8a; font-size: 13px; }
   .xml-box {
     width: 100%; min-height: 140px; max-height: 220px; overflow: auto;
     font-family: Menlo, Consolas, monospace; font-size: 11px; line-height: 1.6;
@@ -377,6 +400,7 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
       <div id="qrcode"></div>
       <div class="qr-tip" data-i18n="qr_tip"></div>
     </div>
+    <button class="btn-bright" id="btn_bright" data-i18n="btn_bright"></button>
     <div class="divider"></div>
     <h2 style="font-size:13px;color:var(--muted);border:none;padding:0;margin-bottom:2px;" data-i18n="xml_title"></h2>
     <div class="xml-box" id="xml_preview"></div>
@@ -388,6 +412,13 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
 </div>
 
 <div class="toast" id="toast"></div>
+
+<!-- Bright mode: full-screen white background with a maximum-size QR code -->
+<div id="bright">
+  <div class="bright-frame"><div id="bright_qr"></div></div>
+  <div class="bright-tip" data-i18n="bright_tip"></div>
+  <div class="bright-tip bright-exit" data-i18n="bright_exit"></div>
+</div>
 
 <script>
 'use strict';
@@ -432,6 +463,9 @@ var I18N = {
     btn_gen: 'Generate QR Code',
     res_title: 'QR Code',
     qr_tip: 'Scan this QR code with the device to import settings',
+    btn_bright: 'Bright Mode',
+    bright_tip: '<b>The QR code now fills the screen</b> — pure black on pure white for maximum contrast, and the screen stays awake. Browsers cannot change the system brightness, so please <b>turn the screen brightness up manually</b> before scanning.',
+    bright_exit: 'Tap anywhere to exit (or press Esc)',
     xml_title: 'Config Content (XML)',
     btn_back: 'Back to Edit', btn_copy: 'Copy XML',
     toast_empty: 'All values are defaults. Please modify or fill in at least one field.',
@@ -828,6 +862,7 @@ function generate() {
 
 $('btn_gen').addEventListener('click', generate);
 $('btn_back').addEventListener('click', function () {
+  hideBright();
   $('result').style.display = 'none';
   $('wizard').style.display = 'block';
   window.scrollTo(0, 0);
@@ -843,6 +878,76 @@ $('btn_copy').addEventListener('click', function () {
     document.execCommand('copy');
     document.body.removeChild(ta);
     toast('toast_copied');
+  }
+});
+
+/* ================= Bright mode =================
+ * Goal: get the device to scan on the first try — QR fills the screen (centered, maximum size),
+ * pure black on pure white (highest contrast), screen kept awake.
+ * Brightness: no standard web API can change system brightness, so we only prompt the user;
+ * screen-wake uses Screen Wake Lock (needs HTTPS or localhost, degrades silently otherwise). */
+var wakeLock = null;
+function requestWakeLock() {
+  if (!(navigator.wakeLock && navigator.wakeLock.request)) return;
+  navigator.wakeLock.request('screen').then(function (l) {
+    wakeLock = l;
+  }).catch(function () {});
+}
+function releaseWakeLock() {
+  if (wakeLock) {
+    try { wakeLock.release(); } catch (e) {}
+    wakeLock = null;
+  }
+}
+function brightDraw() {
+  var box = $('bright_qr');
+  box.innerHTML = '';
+  /* 82% of the shorter edge: enough white margin (quiet zone) while staying large */
+  var side = Math.round(Math.min(window.innerWidth, window.innerHeight) * 0.80);
+  new QRCode(box, {
+    text: lastXML,
+    width: side, height: side,
+    colorDark: '#000000', colorLight: '#ffffff',
+    correctLevel: QRCode.CorrectLevel.M,
+  });
+}
+function showBright() {
+  if (lastXML === '') return;
+  $('bright').classList.add('show');
+  brightDraw();
+  var el = $('bright');
+  var req = el.requestFullscreen || el.webkitRequestFullscreen;
+  if (req) {
+    try {
+      var p = req.call(el);
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+  requestWakeLock();
+}
+function hideBright() {
+  var el = $('bright');
+  if (!el.classList.contains('show')) return;
+  el.classList.remove('show');
+  $('bright_qr').innerHTML = '';
+  if (document.fullscreenElement && document.exitFullscreen) {
+    try {
+      var p = document.exitFullscreen();
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+  releaseWakeLock();
+}
+$('btn_bright').addEventListener('click', showBright);
+$('bright').addEventListener('click', hideBright);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') hideBright();
+});
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    releaseWakeLock();
+  } else if ($('bright').classList.contains('show')) {
+    requestWakeLock();
   }
 });
 

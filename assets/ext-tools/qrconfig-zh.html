@@ -130,6 +130,29 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
   .qr-wrap { text-align: center; padding: 20px 0 8px; }
   #qrcode { display: inline-block; padding: 12px; background: #fff; border-radius: 12px; }
   .qr-tip { font-size: 13px; color: var(--muted); margin-top: 12px; line-height: 1.7; }
+  .btn-bright {
+    display: block; width: 100%; height: 48px; margin-top: 14px;
+    border: none; border-radius: 10px; cursor: pointer;
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: #fff; font-size: 16px; font-weight: 600;
+    box-shadow: 0 4px 12px rgba(16,48,72,.22);
+  }
+  .btn-bright:active { transform: translateY(1px); }
+
+  /* ═══ 亮码模式：全屏纯白 + 超大二维码（提高扫中率、减少反光） ═══ */
+  #bright {
+    position: fixed; inset: 0; z-index: 999;
+    display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: #ffffff;
+  }
+  #bright.show { display: flex; }
+  #bright .bright-frame { background: #fff; padding: 7vmin; line-height: 0; }
+  #bright .bright-tip {
+    margin-top: 3.4vmin; padding: 0 7vmin; text-align: center;
+    font-size: 14px; line-height: 1.7; color: #4a4a4a;
+  }
+  #bright .bright-tip b { color: #000; font-weight: 600; }
+  #bright .bright-exit { margin-top: 1.6vmin; color: #8a8a8a; font-size: 13px; }
   .xml-box {
     width: 100%; min-height: 140px; max-height: 220px; overflow: auto;
     font-family: Menlo, Consolas, monospace; font-size: 11px; line-height: 1.6;
@@ -377,6 +400,7 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
       <div id="qrcode"></div>
       <div class="qr-tip" data-i18n="qr_tip"></div>
     </div>
+    <button class="btn-bright" id="btn_bright" data-i18n="btn_bright"></button>
     <div class="divider"></div>
     <h2 style="font-size:13px;color:var(--muted);border:none;padding:0;margin-bottom:2px;" data-i18n="xml_title"></h2>
     <div class="xml-box" id="xml_preview"></div>
@@ -388,6 +412,13 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
 </div>
 
 <div class="toast" id="toast"></div>
+
+<!-- 亮码模式：全屏纯白背景 + 铺满屏幕的二维码 -->
+<div id="bright">
+  <div class="bright-frame"><div id="bright_qr"></div></div>
+  <div class="bright-tip" data-i18n="bright_tip"></div>
+  <div class="bright-tip bright-exit" data-i18n="bright_exit"></div>
+</div>
 
 <script>
 'use strict';
@@ -432,6 +463,9 @@ var I18N = {
     btn_gen: '生成配置二维码',
     res_title: '配置二维码',
     qr_tip: '请使用设备扫描上方二维码导入配置',
+    btn_bright: '亮码',
+    bright_tip: '<b>二维码已铺满屏幕</b>，白底黑码对比度最高，屏幕保持常亮。网页无法调节系统亮度，请把手机亮度<b>手动拉到最亮</b>后再扫。',
+    bright_exit: '轻触屏幕任意处退出（Esc 同效）',
     xml_title: '配置内容（XML）',
     btn_back: '返回修改', btn_copy: '复制 XML',
     toast_empty: '所有参数均为默认值，请先在前面几页修改或填写内容',
@@ -824,6 +858,7 @@ function generate() {
 
 $('btn_gen').addEventListener('click', generate);
 $('btn_back').addEventListener('click', function () {
+  hideBright();   /* 防御：万一亮码层还开着（函数声明提升，此处可调用） */
   $('result').style.display = 'none';
   $('wizard').style.display = 'block';
   window.scrollTo(0, 0);
@@ -839,6 +874,77 @@ $('btn_copy').addEventListener('click', function () {
     document.execCommand('copy');
     document.body.removeChild(ta);
     toast('toast_copied');
+  }
+});
+
+/* ================= 亮码模式 =================
+ * 让设备一次扫中：二维码铺满屏幕（居中、最大化）、纯白底纯黑码（对比度最高）、屏幕常亮。
+ * 亮度：网页没有修改系统亮度的标准 API，只能提示用户手动拉到最亮；
+ * 常亮用 Screen Wake Lock（需 HTTPS 或 localhost，旧浏览器/不支持时静默降级）。 */
+var wakeLock = null;
+function requestWakeLock() {
+  if (!(navigator.wakeLock && navigator.wakeLock.request)) return;
+  navigator.wakeLock.request('screen').then(function (l) {
+    wakeLock = l;
+  }).catch(function () {});
+}
+function releaseWakeLock() {
+  if (wakeLock) {
+    try { wakeLock.release(); } catch (e) {}
+    wakeLock = null;
+  }
+}
+function brightDraw() {
+  var box = $('bright_qr');
+  box.innerHTML = '';
+  /* 取短边的 82%：留出白边（静默区）又好扫；用纯黑加大对比 */
+  var side = Math.round(Math.min(window.innerWidth, window.innerHeight) * 0.80);
+  new QRCode(box, {
+    text: lastXML,
+    width: side, height: side,
+    colorDark: '#000000', colorLight: '#ffffff',
+    correctLevel: QRCode.CorrectLevel.M,
+  });
+}
+function showBright() {
+  if (lastXML === '') return;
+  $('bright').classList.add('show');
+  brightDraw();
+  /* 全屏：移动端拿掉地址栏，屏幕利用率更高；被拒绝也不影响白底大字 */
+  var el = $('bright');
+  var req = el.requestFullscreen || el.webkitRequestFullscreen;
+  if (req) {
+    try {
+      var p = req.call(el);
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+  requestWakeLock();
+}
+function hideBright() {
+  var el = $('bright');
+  if (!el.classList.contains('show')) return;
+  el.classList.remove('show');
+  $('bright_qr').innerHTML = '';
+  if (document.fullscreenElement && document.exitFullscreen) {
+    try {
+      var p = document.exitFullscreen();
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+  releaseWakeLock();
+}
+$('btn_bright').addEventListener('click', showBright);
+$('bright').addEventListener('click', hideBright);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') hideBright();
+});
+/* 切到后台时系统会自动释放 wakeLock，回到前台要重新申请 */
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    releaseWakeLock();
+  } else if ($('bright').classList.contains('show')) {
+    requestWakeLock();
   }
 });
 
