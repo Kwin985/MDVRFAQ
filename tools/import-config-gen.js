@@ -84,6 +84,13 @@ function adaptHtml(src) {
   );
   if (h.includes('../static/')) throw new Error('仍有未改写的 ../static/ 引用');
 
+  // 2.5 二维码弹窗增强（亮码 + 分享）：把本站增强脚本挂回主脚本之后
+  h = h.replace(
+    /(<script src="\/tools\/config-gen\/js\/mdvr-config\.min\.js\?v=\d+"><\/script>)/,
+    '$1\n<!-- QR dialog add-on: bright fullscreen + share (ported from qrconfig tool, bilingual) -->\n<script src="/tools/config-gen/js/qr-share.js?v=1" defer></script>'
+  );
+  if (!h.includes('qr-share.js')) throw new Error('qr-share.js 注入失败');
+
   // 3. 扫码工具外链 -> 本站
   h = h.replace(
     /href="http:\/\/pug2\.4000329988\.com\/fqa\/web\/tools\/qrconfig-zh\.html"/,
