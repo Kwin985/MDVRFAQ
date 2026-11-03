@@ -982,6 +982,11 @@ for (const lang of ['en', 'zh']) for (const ty of ['host', 'camera', 'accessory'
 }
 for (const it of PROD.ITEMS) urls.push({ loc: SITE_URL + '/products/item/' + it.id + '/', pri: '0.5', freq: 'weekly' });
 for (const b of PROD.KITS) urls.push({ loc: SITE_URL + '/products/bundle/' + b.id + '/', pri: '0.5', freq: 'weekly' });
+// 在线工具（静态页，由 assets/ext-tools/ 同步）
+urls.push({ loc: SITE_URL + '/tools/', pri: '0.7', freq: 'monthly' });
+urls.push({ loc: SITE_URL + '/tools/en/', pri: '0.6', freq: 'monthly' });
+urls.push({ loc: SITE_URL + '/tools/config-gen/', pri: '0.7', freq: 'monthly' });
+urls.push({ loc: SITE_URL + '/tools/config-gen/en/', pri: '0.6', freq: 'monthly' });
 let sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 for (const u of urls) {
   sm += `  <url><loc>${esc(u.loc)}</loc><lastmod>${BUILD_DATE}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>\n`;
@@ -1107,6 +1112,11 @@ llm += `- English Docs: ${SITE_URL}/en/docs/\n`;
 llm += `## Videos\n`;
 llm += `- 中文视频: ${SITE_URL}/zh/videos/\n`;
 llm += `- English Videos: ${SITE_URL}/en/videos/\n\n`;
+llm += `## Online Tools\n`;
+llm += `- 在线工具汇总: ${SITE_URL}/tools/\n`;
+llm += `- 扫码快速配置（手机）: ${SITE_URL}/tools/qrconfig-zh.html\n`;
+llm += `- 配置参数生成工具（电脑）: ${SITE_URL}/tools/config-gen/\n`;
+llm += `- Tools (English): ${SITE_URL}/tools/en/\n\n`;
 for (const s in SECTION_META) {
   const m = SECTION_META[s];
   llm += `### ${m.label} (${m.labelEn})\n`;

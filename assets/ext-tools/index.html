@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>在线配置工具 · 扫码配置 / 参数生成 | MDVR FAQ</title>
+<meta name="description" content="MDVR 车载录像机在线配置工具：手机扫码快速上线配置，电脑端全量参数生成在线命令、config.xml 与配置二维码。免安装，浏览器直接使用。">
+<link rel="canonical" href="https://mdvrfaq.com/tools/">
+<meta name="theme-color" content="#103048">
+<link rel="alternate" hreflang="zh-CN" href="https://mdvrfaq.com/tools/">
+<link rel="alternate" hreflang="en" href="https://mdvrfaq.com/tools/en/">
+<link rel="alternate" hreflang="x-default" href="https://mdvrfaq.com/tools/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+  :root{--brand:#103048;--brand2:#2c5a7a;--bg:#f4f6f8;--card:#fff;--line:#e2e7ec;--text:#24313c;--muted:#6b7a87;--accent:#2563eb}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{background:var(--brand);color:#fff}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.3px}
+  .brand svg{flex:none}
+  header nav{display:flex;gap:18px;font-size:13px}
+  header nav a{color:rgba(255,255,255,.82);text-decoration:none}
+  header nav a:hover{color:#fff}
+  main{padding:40px 0 8px}
+  h1{font-size:26px;letter-spacing:.5px;margin-bottom:10px}
+  .lead{color:var(--muted);font-size:14px;max-width:640px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(16,48,72,.04);transition:box-shadow .18s,transform .18s}
+  .card:hover{box-shadow:0 10px 26px rgba(16,48,72,.10);transform:translateY(-2px)}
+  .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(37,99,235,.09);color:var(--accent);margin-bottom:14px}
+  .card h2{font-size:17px;margin-bottom:6px}
+  .tagline{font-size:12px;color:var(--muted);margin-bottom:12px}
+  .card ul{list-style:none;font-size:13px;color:#3c4a56;margin:0 0 18px;display:grid;gap:6px}
+  .card li{padding-left:16px;position:relative}
+  .card li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:#9fb3c4}
+  .cta{margin-top:auto;display:inline-flex;align-items:center;gap:6px;justify-content:center;background:var(--brand);color:#fff;text-decoration:none;font-size:13.5px;font-weight:500;padding:10px 16px;border-radius:8px}
+  .cta:hover{background:#17415f}
+  .cta.ghost{background:#fff;color:var(--brand);border:1px solid #c8d5e0}
+  .cta.ghost:hover{background:#f2f6fa}
+  .note{background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:14px 16px;font-size:13px;color:#3c4a56;margin:22px 0 0}
+  .note b{color:var(--brand)}
+  .note a{color:var(--accent);text-decoration:none}
+  .note a:hover{text-decoration:underline}
+  footer{border-top:1px solid var(--line);margin-top:36px;padding:20px 0 30px;font-size:12.5px;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--brand)}
+  @media(max-width:720px){.cards{grid-template-columns:1fr}h1{font-size:22px}header nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/zh/docs/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M9 20h6"/></svg>
+      MDVR FAQ · 工具
+    </a>
+    <nav>
+      <a href="/zh/docs/">帮助中心</a>
+      <a href="/products/zh/">产品选型</a>
+      <a href="/tools/en/" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>在线配置工具</h1>
+  <p class="lead">不用装软件，浏览器打开就能用。两款工具按场景选：只改常用几项用手机扫码版，要全量参数用电脑版。</p>
+
+  <div class="cards">
+    <section class="card">
+      <div class="ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+      </div>
+      <h2>扫码快速配置</h2>
+      <p class="tagline">手机端 · 4 项常用参数 · 生成二维码</p>
+      <ul>
+        <li>时区 / 4G 拨号 / 中心平台 / JT/T 808</li>
+        <li>填完生成二维码，设备摄像头扫码导入</li>
+        <li>支持亮码全屏、分享给同事代扫</li>
+        <li>手机浏览器 / 微信内直接打开</li>
+      </ul>
+      <a class="cta ghost" href="/tools/qrconfig-zh.html">打开扫码工具 →</a>
+    </section>
+
+    <section class="card">
+      <div class="ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <h2>配置参数生成工具</h2>
+      <p class="tagline">电脑端 · 全量参数 · 在线命令 / config.xml / 二维码</p>
+      <ul>
+        <li>9 大模块 45 个子页：编码、录像、网络、平台、报警、AI、串口…</li>
+        <li>右侧实时出「在线命令」「导入配置」两种结果</li>
+        <li>支持把现有配置粘回来反解析、自动回填</li>
+        <li>可下载 M18EV / M20EV / M51HV / M93HV 出厂配置</li>
+      </ul>
+      <a class="cta" href="/tools/config-gen/">打开完整版工具 →</a>
+    </section>
+  </div>
+
+  <div class="note">
+    <b>都在本机算。</b>两款工具的参数只在你的浏览器里处理，不会上传到服务器；页面可保存到本地，无网环境下继续使用。
+    只想了解扫码怎么用，见 <a href="/zh/docs/674/">扫码快速上线配置</a>。
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© MDVR FAQ</span>
+    <span><a href="/tools/en/" hreflang="en">English tools</a> · <a href="/zh/docs/">帮助中心</a> · <a href="/products/zh/">产品选型</a></span>
+  </div>
+</footer>
+</body>
+</html>

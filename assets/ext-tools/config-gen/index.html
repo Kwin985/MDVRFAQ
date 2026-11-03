@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>配置参数生成工具 · 在线生成设备配置 / 在线命令 / 二维码 | MDVR FAQ</title>
+  <meta name="description" content="MDVR 车载录像机配置参数在线生成工具：按模块填写参数，实时生成可下发的在线命令、config.xml 配置文件或配置二维码，支持导入配置反解析回填。">
+  <link rel="canonical" href="https://mdvrfaq.com/tools/config-gen/">
+  <meta name="theme-color" content="#103048">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="配置参数生成工具 | MDVR FAQ">
+  <meta property="og:description" content="按模块填写设备参数，实时生成在线命令 / config.xml / 配置二维码，支持配置反解析。">
+  <meta property="og:url" content="https://mdvrfaq.com/tools/config-gen/">
+<link rel="stylesheet" href="/tools/config-gen/css/mdvr-config.min.css?v=1">
+
+</head>
+<body>
+<noscript><p style="padding:12px 20px;background:#fff7ed;color:#9a3412;font-size:13px">本工具需要启用 JavaScript。</p></noscript>
+
+<header class="h-14 shrink-0 border-b border-[#dae0e7] bg-white px-5" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px">
+  <a class="flex items-center gap-3" href="/zh/docs/" title="返回帮助中心" style="min-width:0;text-decoration:none;color:inherit">
+    <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style="background:#fff"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA5CAYAAACGRC3XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAleSURBVGhD7VoJU1THFs4/ionykmiMzyiyKQoMw77IvqgUiIhGFIlKIVFRNM8FnpQYKYkbKiqLLD52EYGgIqLsm4Agi+x8r06P93KnZ4DZQC38qk7N1J1ze7q/Pn36nNP9DZY4vuEfLDV8JYB/sNTwlQD+wWJgamoKVc9f4uctLpD7hqCxtZ1XWTR8EgI+jIzidmYuvjexhYmjL9Iy83iVRcMnIyAtIwffbbD58gmgwSRcuQa5307cydJsIAIBy4ytYeLorTEBQ8MfcCsjB07bdiPl1j1MT0/zKlpDLwLo/zvf9mCDgzeWm8gg8w7CwNAQr6aCsfEJ5BaVMQIs3QPxuLKGV1GLin+eY53cA8uMbRCw53eMjY3zKlpDLwIIwx9GcCrxMjPnHzc6IDr+Aq+iFkPDIygur0JhWQX/k1q0dnQhIvY0+581Nm44mXD501sAgTrR2NIGU0cf1rmNbgHo6O7h1fRGedUzrNzkiO83yOCz6wD63r/nVXSC3gQQRkZH8deNu1hhagsrzx1412+YzklB5v+LtSvMXfxx/V62QWafYBACCJOTk2hqbUdvn+EHT6DY4V1fPxqa2ww2eILBCPhS8ZUA/sFSw6IRMDo6hvLqZzhzMQWBew/BzNkPZs7+TCy3boP/nt8Rl5CMoidVGBvXf3/XFLMSQE7t7KVUGNt5I/pMAto63/Iq84KcVV//AJJS02DhGsC2SUEoD+BF8VyGTW6BSEq9hd53/XyT84Kc5YtXbxB+5ARk3sFIvn4Hk1NTvJqIWQmgWbDzD2UdW25qi3VyTyRfv42JiQleVS1Gx8bxsKAEZk6+LOKbbdC8SEna5B6ocXhN6OruRfx/r2D1Fhf2n0Tm7sPHMTo2xquKmJUAYjKnoBQmjj4fOyfDGitXtLR38aoq6B8YwB9nk2BkKsey9dZaEcATsWqzEyKP/8kInQ95RWX4wcKevUcxieuOcBSUVcy5bc5KgID+gUEcP38JqzY7w9J927xBTk9fP/ZGn2SDlgp16qdNjvAIjmB+gHIBMtW6N00ofPwUCVeuwyMkgoXTUisgoWc7o2LROU+EWfKkCqZOvrB0C8SVm+kYHB7mVVQwLwHa4P3AIGL+TFQZwEpLR4QejEVdQxP/ihLI6hpa2nDgjzNs2SmTYI+90XEs6jQkDEbAyOgYUtLus6UidJq+0xJ6kFfIq88JGmRmfpGYXwiyxsYdJy4kz2nS2sIgBExNTeNVQxPWWLtJ1rsMG10DUFJRzatrBGrzaU0tzJ39lXyDnV8oKmpe8Oo6wyAEUKEi5oyy6RvbeyK/+DGvqhWmpqdR+rQaP1k6iQQYmdsh5OBRTExM8uo6QW8CqJP1jc1YKekkfY868R9eVSdQveFaeia+2yD72L4Mtr7BKKmo4lV1gt4EUFXmxv3sj/uuImag3UKT7VJT1Lysx+at20WCqZp8JP6CQXyB3gQMDA4hODJGXPs/bnTErqhjvJpeoCV29fYDNvhv11vh23VWCAj/DEpixD/VBI3tvZhpUgcpYswvLudV9UZZ5T9s/Qs+xiNkH9q7tA/PeWhMAIvr3w+gub1TlKa2DhSVV2KFmZ3C/E1sWRzf1dPLv643Kp/VwtiBiFb4AadtYXj2sp5X0xpzEjA+PoG8knKEHTqO9XaKWZZ6+pn9XrE2l5vKYesTgnEN8wVtUP2iDhYu/qwmSP9FPiH94SNeTWuoJYA8e25hGbZ47GDeVxrOqhOBALIEh4AwvjmDgHYan7BIcTdYMAJGx8dx+OQ5VucXBkbCD1odAT9YOGDHviN8kwYBOcLU2xmMZLI0coK9fdqnyzyUCBgZGcW23w4rzbiUBBIjMzsYmctnxEyOf1nY49827gg+GLsg618AnShR8lRT+wp98yRlmkIkgNbtobhzKrNrZG4Pr9ADuJudr7PXpd2C4ntKdGrrG3SWF/VvWAbJhPtOvxM5ze0dLB3XFCIBWY+KmIMRZp4+18q24sa9bI2LIDxon35U+gQ+YQfFPF03oeWocMBS65z5rrxcKXX32rkf19Oz0N37ju+WEhgBNDvkVKSNr7P1YGf4uoLqCMfOJmGFmVxlGakOcGGEolJ7/1A8yC2YdRIZAfdyC5RepNnSx8MODg3j9MUUlYEvNgGC0An0xdSbardnRkBoVKyoTKbmtzuK19MYVEylYyxyjNJBrzCVs3RZUQ1eGKFq0FobdxaQKZMug7mzHztSp6KLFIwAKjQIBJDJ3snKV1LSBgNDw4g9myQuJeqMhbMfcgtL1c6AofFhZIRFp8GRR1noLCWC/EI1t6wZAdLyE2VaPb19SkraoONtN2RewWJ7q61cEXchmVdbcJAPuvT3bfxs5SISQGM7di5JqZbACJCuFzIlXWeK8oWmtna2e4jtOfmh+nkdr7oo6OjqxtEziTNB3QYZgiKi0S454zA4AS3tnayWJyyBX+WeuHn/Ia+6aKCKM5XmBF9ASVTB45lLGYolIFknq61d59075wKZXkRsvEgoRY4u28PR8XbukvZCobb+DbbvOyLGCkRG6p0M8XdGAF08oM6SAjmOa+lZ0ja0Ap0oZf+vRGJVigCG7vbQcdVvMaewLyZ+VtkfexqnEv8yWOGT7ixQm0JfqF6RmHJD/J0RQBeOBAugRINCX12XAYGSlB0R0UoEzJdRSoX03IL2sARIXzyve83GJ0SMG10D8ffdTPF3RsDNB3RnT2Ei9EkJjtRMtAWVtBuaW+EWtFdl0Ir/UB00L3Z+IXjd1MI3rTUoFKdbbEI/6Iod+QUBjADKsqiQKe3sr/KtqKyplbalFcgh0mFldHwCVlk6iW1rQgB5ba/Q/XpbAJ1o0601aSEnaD/tAt2ijpgM0UkMbRPSjqyVubNipD7Lgayhu7cPOQVl7Jj83OXUuSU5FVfT7qOxtY1vSisQ+XHnLzFrFsaz2soFcQmXMTE5Ew0qpcNUy+dngyJDp8DdSLp6C6+bWg12ILEQoDCXdjC6h0xFU7Ik6Vh8wyLx8nWj0jsiAQTKCrdHRCuFj7zJKqq/+ohiPzasKM4j6Dv1UV2KTLXKjLxClbMEJQIIrCR26rxSGstbxeclwkCls608eCvPIKRl5qhNiVUIIFBRNK/4Mez9donb2JclCgLoPoJ/eBSKn1SpzLwAtQQIIL/wqOQJO5ensjjFCJ+7RdBSMHbwZldjcgpL2Q43F+YkYClgyRPwf93Ib/WTArPeAAAAAElFTkSuQmCC" alt="" style="width:30px;height:30px;object-fit:contain"></div>
+    <div>
+      <h1 class="text-sm font-semibold leading-tight">配置参数生成工具<span style="margin-left:6px;font-size:10px;font-weight:500;color:#155dfc;background:rgba(21,93,252,.1);border-radius:4px;padding:1px 5px;vertical-align:middle">V1.81</span></h1>
+      <p class="text-[11px] text-[#65758b] leading-tight mt-0.5">导入配置/ 在线下发</p>
+    </div>
+  </a>
+  <!-- ★ V1.29 全局参数搜索（顶部居中，Ctrl+K 唤起） -->
+  <div id="fs-holder">
+    <div id="fs-wrap">
+      <span id="fs-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></span>
+      <input id="field-search" type="search" placeholder="搜索参数…" autocomplete="off" spellcheck="false">
+      <span id="fs-kbd">Ctrl K</span>
+      <button id="field-search-clear" title="清空搜索">✕</button>
+      <div id="fs-bar"></div>
+    </div>
+  </div>
+  <div class="flex items-center gap-2" style="justify-self:end">
+    <a class="mini-btn" href="/tools/config-gen/en/" title="English guide" style="text-decoration:none">EN</a>
+    <!-- ★ 反解析（主操作，实底主色，一眼可见） -->
+    <button id="btn-reverse" data-open-reverse title="把设备导出的配置或在线命令粘进来，自动解析并回填到左侧菜单">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="m9 12 3 3 3-3"/><path d="M12 8v7"/></svg>
+      <span>配置反解析</span>
+    </button>
+    <!-- ★ 扫码快速配置（跳外部工具，最右侧） -->
+    <a id="btn-qrconfig" href="/tools/qrconfig-zh.html"
+       target="_blank" rel="noopener" referrerpolicy="no-referrer" title="扫码快速配置 —— 手机上填常用参数生成二维码，设备摄像头扫码导入">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/></svg>
+      <span>扫码快速配置</span>
+    </a>
+    <a id="btn-phone" class="mini-btn" href="#" target="_blank" rel="noopener" style="display:none;text-decoration:none"
+       title="手机版快速配置（常用参数 + 生成二维码）">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg><span class="btn-txt">手机版</span>
+    </a>
+  </div>
+</header>
+
+<!-- 窄屏引导：本工具是电脑端完整版，手机上请改用手机版工具 -->
+<div id="layout" style="height:calc(100vh - 56px);display:grid;grid-template-columns:15rem minmax(0,1fr) 28rem">
+  <aside style="min-width:0;overflow:hidden" class="flex h-full flex-col border-r border-[#dae0e7] bg-white">
+    <div class="flex h-12 items-center px-4 border-b border-[#dae0e7] shrink-0">
+      <span class="text-[13px] font-semibold">功能模块</span>
+    </div>
+    <nav class="flex-1 overflow-y-auto py-2 px-2" id="nav-list"></nav>
+  </aside>
+
+  <main style="min-width:0;overflow:hidden" class="flex h-full flex-col bg-[#f9fafb]">
+    <div class="flex h-12 shrink-0 items-center gap-3 border-b border-[#dae0e7] bg-white px-5">
+      <div class="flex items-center gap-2">
+        <span class="text-[13px] text-[#65758b]">当前模块：</span>
+        <span id="ed-module" class="text-[13px] font-semibold">基本设置</span>
+        <select id="ed-sub" title="切换子菜单"></select>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;margin:0 auto">
+        <span style="color:#65758b">已修改：</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:rgba(21,93,252,.1);padding:3px 10px;font-weight:500;color:#155dfc">
+          <span style="width:6px;height:6px;border-radius:999px;background:#155dfc;display:inline-block"></span>
+          <span id="tb-dirty-top" style="font-variant-numeric:tabular-nums">0</span>
+          <span>字段</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button data-act="expand" class="mini-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>展开
+        </button>
+        <button data-act="collapse" class="mini-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 10 7-7"/><path d="M20 10h-6V4"/><path d="m3 21 7-7"/><path d="M4 14h6v6"/></svg>折叠
+        </button>
+        <button data-act="clear" class="mini-btn danger">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21"/><path d="m5.082 11.09 8.828 8.828"/></svg>清空
+        </button>
+      </div>
+    </div>
+    <div id="cfg-tip" class="border-b border-[#eef2f6] bg-[#f5f6f7]/40 px-5 py-1.5 text-[11.5px] text-[#8f959e] shrink-0">
+      提示：只改文件里出现的字段，未修改字段不会被写入配置。
+    </div>
+    <!-- ★ V1.28 新增：输入校验汇总条（有超范围字段时才显示） -->
+    <div id="valid-bar">
+      <span class="vb-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+      <span class="vb-txt" id="valid-bar-txt"></span>
+      <button id="valid-bar-jump">跳到第一个</button>
+    </div>
+    <div id="editor" class="flex-1 overflow-y-auto px-5 py-4"></div>
+  </main>
+
+  <aside style="min-width:0;overflow:hidden" class="flex h-full flex-col border-l border-[#dae0e7] bg-white">
+    <div class="flex h-12 shrink-0 items-stretch border-b border-[#dae0e7] px-3">
+      <button class="pv-tab on" data-tab="command">在线命令</button>
+      <button class="pv-tab" data-tab="import">导入配置</button>
+    </div>
+    <div class="flex items-center justify-between border-b border-[#e8edf5] px-4 py-2 text-[11.5px] text-[#8f959e] mono shrink-0">
+      <span id="pv-size">0 字节</span>
+      <span id="pv-fields">0 个字段</span>
+    </div>
+    <div id="pv-content" style="flex:1;min-height:0;overflow-y:auto;background:#f5f6f7;padding:12px 14px;display:flex;flex-direction:column"></div>
+    <div class="border-t border-[#dae0e7] p-3 space-y-3 shrink-0">
+      <div class="flex items-center gap-2">
+        <button id="btn-copy" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md border border-[#dae0e7] bg-white px-3 text-xs hover:bg-[#f8fafc]">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>复制
+        </button>
+        <button id="btn-download" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md border border-[#dae0e7] bg-white px-2 text-xs hover:bg-[#f8fafc]" style="display:none">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>下载
+        </button>
+        <button id="btn-qr" title="生成配置二维码（设备摄像头扫码导入）" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md bg-[#103048] px-2 text-xs font-medium text-white hover:bg-[#1a4a6b] transition-colors">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/>
+          </svg>二维码
+        </button>
+      </div>
+      <div class="pt-2 border-t border-[#e8edf5] text-[11px] leading-[1.6] text-[#8f959e]">
+        <p id="pv-hint">只输出已修改字段，未修改不写入。</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ══════════ ★ V1.29 新增：反解析弹窗 ══════════ -->
+<div id="revModal">
+  <div class="rv-box">
+    <div class="rv-hd">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="m9 12 3 3 3-3"/><path d="M12 8v7"/></svg>
+      <h3>反解析配置</h3>
+      <button class="rv-x" data-revclose title="关闭">✕</button>
+    </div>
+    <div class="rv-bd">
+      <div class="rv-tip">
+        把 <b>配置文件</b> 或 <b>在线命令</b> 粘到下面，解析成功后自动回填到左侧菜单，可直接查看和修改。<br>
+        支持格式：完整 <code>config.xml</code> ／ <code>&lt;VariCfgSec Action="DEVICE_SET"&gt;…&lt;/VariCfgSec&gt;</code> 片段（可多段）／ 裸节点片段 ／ <code>&lt;Control&gt;…&lt;/Control&gt;</code> 在线命令
+      </div>
+      <textarea id="rev-ta" placeholder="在这里粘贴配置内容…"></textarea>
+      <div class="rv-row">
+        <button class="rv-btn" id="rev-file">选择文件…</button>
+        <input type="file" id="rev-file-input" accept=".xml,.txt,.cfg,.conf,.ini,text/xml,text/plain" style="display:none">
+        <button class="rv-btn primary" id="rev-go">开始解析</button>
+        <button class="rv-btn" id="rev-clear">清空</button>
+        <span class="rv-drop" id="rev-drop">也可以把文件直接拖到这里（限 .xml/.txt，≤4MB）</span>
+      </div>
+      <div id="revStat"></div>
+      <div id="revList"></div>
+    </div>
+    <div class="rv-ft">
+      <span class="warn" id="rev-warn"></span>
+      <button class="rv-btn" data-revclose>关闭</button>
+      <button class="rv-btn primary" id="rev-apply" disabled>填入工具</button>
+    </div>
+  </div>
+</div>
+
+<div id="toasts" class="fixed top-20 left-1/2 -translate-x-1/2 z-[1000] flex flex-col gap-2 items-center pointer-events-none" style="position:fixed;top:76px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;flex-direction:column;align-items:center;pointer-events:none"></div>
+
+<!-- 二维码库 qrcodejs 1.0.0 (davidshimjs, MIT) 内联：避免离线环境 CDN 拉不到 -->
+<script src="/tools/config-gen/js/mdvr-config.min.js?v=1"></script>
+
+<!-- 移动端底部固定操作条（仅 <1120px 显示）：复制 + 下载配置文件 + 二维码 -->
+<div id="m-bar">
+  <button id="m-copy" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>复制
+  </button>
+  <button id="m-download" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>下载
+  </button>
+  <button id="m-qr" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/></svg>二维码
+  </button>
+</div>
+
+<div id="qr-mask" style="display:none;position:fixed;inset:0;z-index:951;background:rgba(15,23,43,.55);align-items:center;justify-content:center">
+  <div style="width:360px;background:#fff;border-radius:14px;padding:18px 20px 16px;box-shadow:0 24px 60px rgba(0,0,0,.35)">
+    <div class="flex items-center justify-between" style="margin-bottom:12px">
+      <h3 style="font-size:14px;font-weight:600;color:#103048">配置二维码</h3>
+      <button id="qr-close" style="width:26px;height:26px;border:1px solid #dae0e7;border-radius:6px;background:#fff;color:#65758b;font-size:15px;line-height:1;cursor:pointer">×</button>
+    </div>
+    <div id="qr-box" style="display:flex;align-items:center;justify-content:center;min-height:296px;border:1px solid #e8edf5;border-radius:10px;background:#fff;padding:8px"></div>
+    <div id="qr-meta" style="margin-top:10px;font-size:11.5px;line-height:1.7;color:#65758b"></div>
+    <div id="qr-warn" style="display:none;margin-top:8px;padding:7px 9px;border-radius:7px;font-size:11px;line-height:1.7"></div>
+    <p style="margin-top:10px;font-size:11px;line-height:1.7;color:#8f959e">
+      用<b>设备摄像头</b>扫描此二维码即可导入配置（设备开机后短时间内有效）。二维码内容 =
+      <b>导入配置</b>格式的 XML（UTF-8 字节，无 BOM），与下方「下载 config.xml」完全一致。
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
