@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Config Generator Reference · Modules, Sub-pages and XML Tags | MDVR FAQ</title>
+<meta name="description" content="Reference for the MDVR config generator: all 9 modules and 45 sub-pages, the XML tags behind common parameters, and the workflow for producing an online command, config.xml or a QR code.">
+<link rel="canonical" href="https://mdvrfaq.com/tools/config-gen/en/reference/">
+<meta name="theme-color" content="#103048">
+<link rel="alternate" hreflang="zh-CN" href="https://mdvrfaq.com/tools/config-gen/">
+<link rel="alternate" hreflang="en" href="https://mdvrfaq.com/tools/config-gen/en/">
+<link rel="alternate" hreflang="x-default" href="https://mdvrfaq.com/tools/config-gen/en/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+  :root{--brand:#103048;--bg:#f4f6f8;--card:#fff;--line:#e2e7ec;--text:#24313c;--muted:#6b7a87;--accent:#2563eb;--warn-bg:#fff8ec;--warn-line:#f0c37a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.68;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{background:var(--brand);color:#fff}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px}
+  header nav{display:flex;gap:18px;font-size:13px}
+  header nav a{color:rgba(255,255,255,.82);text-decoration:none}
+  header nav a:hover{color:#fff}
+  main{padding:36px 0 10px}
+  h1{font-size:25px;letter-spacing:.2px;margin-bottom:8px}
+  .lead{color:var(--muted);font-size:14.5px;max-width:680px}
+  h2{font-size:16px;margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  p{font-size:14px;margin-bottom:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;text-decoration:none;font-size:14px;font-weight:500;padding:12px 22px;border-radius:9px;margin:18px 0 6px}
+  .btn:hover{background:#17415f}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid #c8d5e0;margin-left:8px}
+  .btn.ghost:hover{background:#f2f6fa}
+  .note{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:9px;padding:14px 16px;font-size:13.5px;margin:18px 0}
+  .note b{color:#9a5b00}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:8px}
+  th,td{text-align:left;padding:9px 13px;border-bottom:1px solid #eef2f6;vertical-align:top}
+  th{background:#f7f9fb;font-weight:600;color:#3c4a56;font-size:12.5px;letter-spacing:.2px}
+  tr:last-child td{border-bottom:none}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;background:#eef3f8;padding:1px 5px;border-radius:4px}
+  ol,ul{margin:0 0 12px 20px;font-size:14px}
+  li{margin-bottom:6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
+  .box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+  .box h3{font-size:13.5px;margin-bottom:5px}
+  .box p{font-size:13px;color:var(--muted);margin:0}
+  footer{border-top:1px solid var(--line);margin-top:38px;padding:20px 0 30px;font-size:12.5px;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--brand)}
+  @media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:21px}header nav{display:none}table{font-size:12.5px}th,td{padding:8px 10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/en/docs/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M9 20h6"/></svg>
+      MDVR FAQ · Tools
+    </a>
+    <nav>
+      <a href="/en/docs/">Help Center</a>
+      <a href="/tools/en/">All tools</a>
+      <a href="/tools/config-gen/en/">Generator</a>
+      <a href="/tools/config-gen/" hreflang="zh-CN">中文</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Generator reference</h1>
+  <p class="lead">What the <a href="/tools/config-gen/en/">MDVR config generator</a> covers: nine modules, 45 sub-pages, and the XML tag behind every field. Use it to find the right page for a parameter, or to know which tag to search for.</p>
+
+  <a class="btn" href="/tools/config-gen/en/">Open the generator →</a>
+  <a class="btn ghost" href="/tools/qrconfig-en.html">I only need the basics</a>
+
+  <div class="note">
+    <b>Every field shows its XML tag.</b> Labels sit next to the tag name (for example <code>ucFD_TimeZone</code>), and the search box at the top accepts tag names, so you can jump straight to a parameter. The tables below map module names and the most-used tags.
+  </div>
+
+  <h2>What it produces</h2>
+  <div class="grid">
+    <div class="box"><h3>Online command</h3><p>A <code>&lt;Control&gt;…&lt;/Control&gt;</code> DEVICE_SET command you can paste into your platform and push to a device.</p></div>
+    <div class="box"><h3>config.xml</h3><p>A <code>&lt;VariCfgSec&gt;</code> file for SD-card / USB import. Only the fields you edited are written.</p></div>
+  </div>
+  <div class="grid">
+    <div class="box"><h3>QR code</h3><p>For devices that support scan-to-import. Point the camera at the screen; no network needed on the device.</p></div>
+    <div class="box"><h3>Reverse parsing</h3><p>Paste an existing <code>config.xml</code> or command back in and the form refills — handy for cloning a unit.</p></div>
+  </div>
+
+  <h2>Modules</h2>
+  <table>
+    <thead><tr><th>Module</th><th>Sub-pages</th><th>Covers</th></tr></thead>
+    <tbody>
+      <tr><td>Basic Settings</td><td>3</td><td>Time and time zone, device identity, power-on/off mode</td></tr>
+      <tr><td>Encoding</td><td>6</td><td>Main and sub stream, mirror, OSD overlay, IPC encoding</td></tr>
+      <tr><td>Recording</td><td>3</td><td>Record mode, weekly schedule, scheduled snapshot</td></tr>
+      <tr><td>Network</td><td>4</td><td>Network mode, cellular, Wi-Fi, Ethernet</td></tr>
+      <tr><td>Registration</td><td>9</td><td>CMSV7, JT/T 808 (two platforms), GB28181, pass-through, PTT, 1400, MQTT, XFRPC, FTP</td></tr>
+      <tr><td>Alarms</td><td>7</td><td>Alarm basics, IO input/output, ADC, speed, temperature, G-sensor</td></tr>
+      <tr><td>AI Alarms</td><td>7</td><td>ADAS, DSM, BSD, littering, road damage, plate recognition</td></tr>
+      <tr><td>Serial Peripherals</td><td>1</td><td>Serial ports, protocol, baud rate, PTZ</td></tr>
+      <tr><td>Maintenance</td><td>5</td><td>Passwords, storage commands, parameter query, factory configs</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Common parameters</h2>
+  <table>
+    <thead><tr><th>What you want to change</th><th>Search for</th></tr></thead>
+    <tbody>
+      <tr><td>Device number / ID</td><td><code>strFD_DeviceNo</code></td></tr>
+      <tr><td>Time zone</td><td><code>ucFD_TimeZone</code></td></tr>
+      <tr><td>License plate</td><td><code>strFD_LicensePlate</code></td></tr>
+      <tr><td>CMS / centre server IP and port</td><td><code>strFD_ServerIp</code>, <code>usFD_ServerPort</code></td></tr>
+      <tr><td>JT/T 808 protocol version (2013 / 2019)</td><td><code>ucFD_JT808ProVer</code></td></tr>
+      <tr><td>808 terminal phone number</td><td><code>strFD_PhoneNo</code></td></tr>
+      <tr><td>Frame rate / resolution</td><td><code>ucFD_FrameRate</code></td></tr>
+      <tr><td>Record mode</td><td><code>ucFD_RecordMode</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2>How to use it</h2>
+  <ol>
+    <li>Pick a module in the left sidebar, then a sub-page in the drop-down.</li>
+    <li>Edit only the fields you need — untouched fields are not written into the output. A counter at the top shows how many fields you have changed.</li>
+    <li>Read the result on the right: switch between <em>Command</em> and <em>Import Config</em>; the byte and field counts update live.</li>
+    <li>Copy the command, download <code>config.xml</code>, or generate the QR code.</li>
+  </ol>
+  <p>To start from an existing unit instead, click <em>Reverse Parse</em> (top right), paste the file or command, then apply the parsed values back into the form.</p>
+
+  <h2>Which tool do I need?</h2>
+  <table>
+    <thead><tr><th></th><th>QR quick config</th><th>Parameter generator</th></tr></thead>
+    <tbody>
+      <tr><td>Best for</td><td>Commissioning: device ID + platform address</td><td>Full parameter set, cloning, troubleshooting</td></tr>
+      <tr><td>Device</td><td>Phone</td><td>Desktop browser</td></tr>
+      <tr><td>Covers</td><td>Time zone, cellular, CMS, JT/T 808</td><td>All 9 modules / 45 sub-pages</td></tr>
+      <tr><td>Output</td><td>QR code only</td><td>Command, config.xml, QR code</td></tr>
+      <tr><td>Language</td><td>English / Chinese</td><td>English / Chinese</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:18px">Both tools are plain static HTML — save them to a laptop or phone and they keep working without a network connection. The generator can also download the factory configuration for M18EV, M20EV, M51HV and M93HV.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© MDVR FAQ</span>
+    <span><a href="/tools/en/">All tools</a> · <a href="/tools/config-gen/en/">Generator</a> · <a href="/tools/config-gen/" hreflang="zh-CN">中文工具</a> · <a href="/en/docs/">Help Center</a></span>
+  </div>
+</footer>
+</body>
+</html>

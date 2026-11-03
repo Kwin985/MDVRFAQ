@@ -1,0 +1,17 @@
+/* English UI overrides — loaded only on /tools/config-gen/en/
+   The Chinese bundle assumes short CJK labels; English text needs room to breathe. */
+
+/* Event-filter checkbox grids: let items wrap instead of truncating with ellipsis */
+.ev-grid{grid-template-columns:repeat(auto-fit,minmax(158px,1fr)) !important;gap:8px 12px !important}
+.ev-grid label{white-space:normal !important;overflow:visible !important;text-overflow:clip !important;line-height:1.35 !important;align-items:flex-start !important}
+.ev-grid label .chk{margin-top:1px}
+
+/* Any other nowrap label that can run long */
+.lbl{white-space:normal}
+
+/* Slightly wider left nav for the longer English module names */
+#layout{grid-template-columns:15.5rem minmax(0,1fr) 28rem !important}
+
+/* Inline hints that trail a checkbox label (DSM sensitivity): a full English sentence
+   cannot live in the leftover space of the label's line box — give it its own line. */
+.group-box > span.help{display:block !important;margin:6px 0 10px 0 !important;line-height:1.5;white-space:normal;overflow:visible;text-overflow:clip}

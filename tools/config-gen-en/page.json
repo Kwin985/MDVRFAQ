@@ -1,0 +1,230 @@
+[
+  [
+    "<title>配置参数生成工具 · 在线生成设备配置 / 在线命令 / 二维码 | MDVR FAQ</title>",
+    "<title>Config Generator - Device Config, Online Command, QR Code | MDVR FAQ</title>"
+  ],
+  [
+    "<meta name=\"description\" content=\"MDVR 车载录像机配置参数在线生成工具：按模块填写参数，实时生成可下发的在线命令、config.xml 配置文件或配置二维码，支持导入配置反解析回填。\">",
+    "<meta name=\"description\" content=\"Online config generator for MDVR recorders: fill in parameters by module and instantly get an online command, a config.xml file or a QR code. Paste an exported config to parse it back into the form.\">"
+  ],
+  [
+    "<link rel=\"canonical\" href=\"https://mdvrfaq.com/tools/config-gen/\">",
+    "<link rel=\"canonical\" href=\"https://mdvrfaq.com/tools/config-gen/en/\">\n  <link rel=\"alternate\" hreflang=\"zh-CN\" href=\"https://mdvrfaq.com/tools/config-gen/\">\n  <link rel=\"alternate\" hreflang=\"en\" href=\"https://mdvrfaq.com/tools/config-gen/en/\">\n  <link rel=\"alternate\" hreflang=\"x-default\" href=\"https://mdvrfaq.com/tools/config-gen/en/\">"
+  ],
+  [
+    "<meta property=\"og:title\" content=\"配置参数生成工具 | MDVR FAQ\">",
+    "<meta property=\"og:title\" content=\"MDVR Config Generator | MDVR FAQ\">\n  <meta property=\"og:locale\" content=\"en_US\">"
+  ],
+  [
+    "<meta property=\"og:description\" content=\"按模块填写设备参数，实时生成在线命令 / config.xml / 配置二维码，支持配置反解析。\">",
+    "<meta property=\"og:description\" content=\"Fill in device parameters by module and generate an online command, config.xml or QR code; paste a config to parse it back.\">"
+  ],
+  [
+    "<meta property=\"og:url\" content=\"https://mdvrfaq.com/tools/config-gen/\">",
+    "<meta property=\"og:url\" content=\"https://mdvrfaq.com/tools/config-gen/en/\">"
+  ],
+  [
+    "<html lang=\"zh-CN\">",
+    "<html lang=\"en\">"
+  ],
+  [
+    "本工具需要启用 JavaScript。",
+    "This tool requires JavaScript."
+  ],
+  [
+    "<h1 class=\"text-sm font-semibold leading-tight\">配置参数生成工具",
+    "<h1 class=\"text-sm font-semibold leading-tight\">MDVR Config Generator"
+  ],
+  [
+    "<p class=\"text-[11px] text-[#65758b] leading-tight mt-0.5\">导入配置/ 在线下发</p>",
+    "<p class=\"text-[11px] text-[#65758b] leading-tight mt-0.5\">Import config / send online</p>"
+  ],
+  [
+    "<a class=\"flex items-center gap-3\" href=\"/zh/docs/\" title=\"返回帮助中心\"",
+    "<a class=\"flex items-center gap-3\" href=\"/en/docs/\" title=\"Back to Help Center\""
+  ],
+  [
+    "placeholder=\"搜索参数…\"",
+    "placeholder=\"Search parameters...\""
+  ],
+  [
+    "title=\"清空搜索\"",
+    "title=\"Clear search\""
+  ],
+  [
+    "<a class=\"mini-btn\" href=\"/tools/config-gen/en/\" title=\"English guide\" style=\"text-decoration:none\">EN</a>",
+    "<a class=\"mini-btn\" href=\"/tools/config-gen/\" title=\"Chinese version\" style=\"text-decoration:none\">ZH</a>"
+  ],
+  [
+    "title=\"把设备导出的配置或在线命令粘进来，自动解析并回填到左侧菜单\"",
+    "title=\"Paste a config or online command exported from the device; it is parsed and filled into the left menu\""
+  ],
+  [
+    "<span>配置反解析</span>",
+    "<span>Reverse Parse</span>"
+  ],
+  [
+    "<a id=\"btn-qrconfig\" href=\"/tools/qrconfig-zh.html\"",
+    "<a id=\"btn-qrconfig\" href=\"/tools/qrconfig-en.html\""
+  ],
+  [
+    "title=\"扫码快速配置 —— 手机上填常用参数生成二维码，设备摄像头扫码导入\"",
+    "title=\"QR config: fill common parameters on a phone and generate a QR code the device camera can scan\""
+  ],
+  [
+    "<span>扫码快速配置</span>",
+    "<span>QR Config</span>"
+  ],
+  [
+    "title=\"手机版快速配置（常用参数 + 生成二维码）\"",
+    "title=\"Mobile quick config (common parameters and a QR code)\""
+  ],
+  [
+    "<span class=\"btn-txt\">手机版</span>",
+    "<span class=\"btn-txt\">Mobile</span>"
+  ],
+  [
+    ">功能模块<",
+    ">Modules<"
+  ],
+  [
+    "<span class=\"text-[13px] text-[#65758b]\">当前模块：</span>",
+    "<span class=\"text-[13px] text-[#65758b]\">Module:</span>"
+  ],
+  [
+    "<span id=\"ed-module\" class=\"text-[13px] font-semibold\">基本设置</span>",
+    "<span id=\"ed-module\" class=\"text-[13px] font-semibold\">Basic Settings</span>"
+  ],
+  [
+    "title=\"切换子菜单\"",
+    "title=\"Switch submenu\""
+  ],
+  [
+    "<span style=\"color:#65758b\">已修改：</span>",
+    "<span style=\"color:#65758b\">Modified:</span>"
+  ],
+  [
+    "<span>字段</span>",
+    "<span>fields</span>"
+  ],
+  [
+    "</svg>展开",
+    "</svg>Expand"
+  ],
+  [
+    "</svg>折叠",
+    "</svg>Collapse"
+  ],
+  [
+    "</svg>清空",
+    "</svg>Clear"
+  ],
+  [
+    "提示：只改文件里出现的字段，未修改字段不会被写入配置。",
+    "Tip: only fields present in the file are written; untouched fields are skipped."
+  ],
+  [
+    "<button id=\"valid-bar-jump\">跳到第一个</button>",
+    "<button id=\"valid-bar-jump\">Go to first</button>"
+  ],
+  [
+    "<button class=\"pv-tab on\" data-tab=\"command\">在线命令</button>",
+    "<button class=\"pv-tab on\" data-tab=\"command\">Command</button>"
+  ],
+  [
+    "<button class=\"pv-tab\" data-tab=\"import\">导入配置</button>",
+    "<button class=\"pv-tab\" data-tab=\"import\">Import Config</button>"
+  ],
+  [
+    "<span id=\"pv-size\">0 字节</span>",
+    "<span id=\"pv-size\">0 bytes</span>"
+  ],
+  [
+    "<span id=\"pv-fields\">0 个字段</span>",
+    "<span id=\"pv-fields\">0 fields</span>"
+  ],
+  [
+    "</svg>复制",
+    "</svg>Copy"
+  ],
+  [
+    "</svg>下载",
+    "</svg>Download"
+  ],
+  [
+    "</svg>二维码",
+    "</svg>QR Code"
+  ],
+  [
+    "title=\"生成配置二维码（设备摄像头扫码导入）\"",
+    "title=\"Generate a config QR code the device camera can scan\""
+  ],
+  [
+    "<p id=\"pv-hint\">只输出已修改字段，未修改不写入。</p>",
+    "<p id=\"pv-hint\">Only modified fields are output; untouched fields are not written.</p>"
+  ],
+  [
+    "<h3>反解析配置</h3>",
+    "<h3>Reverse parse</h3>"
+  ],
+  [
+    "把 <b>配置文件</b> 或 <b>在线命令</b> 粘到下面，解析成功后自动回填到左侧菜单，可直接查看和修改。<br>",
+    "Paste a <b>config file</b> or an <b>online command</b> below. Parsed values are filled into the left menu for review and editing.<br>"
+  ],
+  [
+    "支持格式：完整 <code>config.xml</code> ／ <code>&lt;VariCfgSec Action=\"DEVICE_SET\"&gt;…&lt;/VariCfgSec&gt;</code> 片段（可多段）／ 裸节点片段 ／ <code>&lt;Control&gt;…&lt;/Control&gt;</code> 在线命令",
+    "Supported: a full <code>config.xml</code> / a <code>&lt;VariCfgSec Action=\"DEVICE_SET\"&gt;…&lt;/VariCfgSec&gt;</code> fragment (multiple allowed) / bare nodes / a <code>&lt;Control&gt;…&lt;/Control&gt;</code> online command"
+  ],
+  [
+    "placeholder=\"在这里粘贴配置内容…\"",
+    "placeholder=\"Paste the configuration here...\""
+  ],
+  [
+    "<button class=\"rv-btn\" id=\"rev-file\">选择文件…</button>",
+    "<button class=\"rv-btn\" id=\"rev-file\">Choose file...</button>"
+  ],
+  [
+    "<button class=\"rv-btn primary\" id=\"rev-go\">开始解析</button>",
+    "<button class=\"rv-btn primary\" id=\"rev-go\">Parse</button>"
+  ],
+  [
+    "<button class=\"rv-btn\" id=\"rev-clear\">清空</button>",
+    "<button class=\"rv-btn\" id=\"rev-clear\">Clear</button>"
+  ],
+  [
+    "<span class=\"rv-drop\" id=\"rev-drop\">也可以把文件直接拖到这里（限 .xml/.txt，≤4MB）</span>",
+    "<span class=\"rv-drop\" id=\"rev-drop\">or drop a file here (.xml/.txt, up to 4 MB)</span>"
+  ],
+  [
+    "<button class=\"rv-btn\" data-revclose>关闭</button>",
+    "<button class=\"rv-btn\" data-revclose>Close</button>"
+  ],
+  [
+    "<button class=\"rv-btn primary\" id=\"rev-apply\" disabled>填入工具</button>",
+    "<button class=\"rv-btn primary\" id=\"rev-apply\" disabled>Apply to tool</button>"
+  ],
+  [
+    "<h3 style=\"font-size:14px;font-weight:600;color:#103048\">配置二维码</h3>",
+    "<h3 style=\"font-size:14px;font-weight:600;color:#103048\">Config QR code</h3>"
+  ],
+  [
+    "用<b>设备摄像头</b>扫描此二维码即可导入配置（设备开机后短时间内有效）。二维码内容 =",
+    "Scan this code with the <b>device camera</b> to import the config (valid for a short time after boot). The QR payload is the"
+  ],
+  [
+    "<b>导入配置</b>格式的 XML（UTF-8 字节，无 BOM），与下方「下载 config.xml」完全一致。",
+    "<b>Import Config</b> XML in UTF-8 without BOM, identical to Download config.xml."
+  ],
+  [
+    "<script src=\"/tools/config-gen/js/mdvr-config.min.js?v=1\"></script>",
+    "<script src=\"/tools/config-gen/js/mdvr-config.en.min.js?v=1\"></script>"
+  ],
+  [
+    "title=\"关闭\"",
+    "title=\"Close\""
+  ],
+  [
+    "<link rel=\"stylesheet\" href=\"/tools/config-gen/css/mdvr-config.min.css?v=1\">",
+    "<link rel=\"stylesheet\" href=\"/tools/config-gen/css/mdvr-config.min.css?v=1\">\n<link rel=\"stylesheet\" href=\"/tools/config-gen/en/overrides.css?v=1\">"
+  ]
+]

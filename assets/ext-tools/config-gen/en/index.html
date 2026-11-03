@@ -3,151 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Configuration Parameter Generator · Full MDVR Parameter Set | MDVR FAQ</title>
-<meta name="description" content="Generate the full MDVR parameter set in your browser: online command (DEVICE_SET), importable config.xml, or a QR code. Includes reverse parsing of an existing device config.">
-<link rel="canonical" href="https://mdvrfaq.com/tools/config-gen/en/">
-<meta name="theme-color" content="#103048">
-<link rel="alternate" hreflang="zh-CN" href="https://mdvrfaq.com/tools/config-gen/">
-<link rel="alternate" hreflang="en" href="https://mdvrfaq.com/tools/config-gen/en/">
-<link rel="alternate" hreflang="x-default" href="https://mdvrfaq.com/tools/config-gen/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-<style>
-  :root{--brand:#103048;--bg:#f4f6f8;--card:#fff;--line:#e2e7ec;--text:#24313c;--muted:#6b7a87;--accent:#2563eb;--warn-bg:#fff8ec;--warn-line:#f0c37a}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.68;-webkit-font-smoothing:antialiased}
-  a{color:inherit}
-  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-  header{background:var(--brand);color:#fff}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
-  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px}
-  header nav{display:flex;gap:18px;font-size:13px}
-  header nav a{color:rgba(255,255,255,.82);text-decoration:none}
-  header nav a:hover{color:#fff}
-  main{padding:36px 0 10px}
-  h1{font-size:25px;letter-spacing:.2px;margin-bottom:8px}
-  .lead{color:var(--muted);font-size:14.5px;max-width:680px}
-  h2{font-size:16px;margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-  p{font-size:14px;margin-bottom:12px}
-  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;text-decoration:none;font-size:14px;font-weight:500;padding:12px 22px;border-radius:9px;margin:18px 0 6px}
-  .btn:hover{background:#17415f}
-  .btn.ghost{background:#fff;color:var(--brand);border:1px solid #c8d5e0;margin-left:8px}
-  .btn.ghost:hover{background:#f2f6fa}
-  .warn{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:9px;padding:14px 16px;font-size:13.5px;margin:18px 0}
-  .warn b{color:#9a5b00}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:8px}
-  th,td{text-align:left;padding:9px 13px;border-bottom:1px solid #eef2f6;vertical-align:top}
-  th{background:#f7f9fb;font-weight:600;color:#3c4a56;font-size:12.5px;letter-spacing:.2px}
-  tr:last-child td{border-bottom:none}
-  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;background:#eef3f8;padding:1px 5px;border-radius:4px}
-  ol,ul{margin:0 0 12px 20px;font-size:14px}
-  li{margin-bottom:6px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
-  .box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 17px}
-  .box h3{font-size:13.5px;margin-bottom:5px}
-  .box p{font-size:13px;color:var(--muted);margin:0}
-  footer{border-top:1px solid var(--line);margin-top:38px;padding:20px 0 30px;font-size:12.5px;color:var(--muted)}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
-  footer a{color:var(--muted);text-decoration:none}
-  footer a:hover{color:var(--brand)}
-  @media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:21px}header nav{display:none}table{font-size:12.5px}th,td{padding:8px 10px}}
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Config Generator - Device Config, Online Command, QR Code | MDVR FAQ</title>
+  <meta name="description" content="Online config generator for MDVR recorders: fill in parameters by module and instantly get an online command, a config.xml file or a QR code. Paste an exported config to parse it back into the form.">
+  <link rel="canonical" href="https://mdvrfaq.com/tools/config-gen/en/">
+  <link rel="alternate" hreflang="zh-CN" href="https://mdvrfaq.com/tools/config-gen/">
+  <link rel="alternate" hreflang="en" href="https://mdvrfaq.com/tools/config-gen/en/">
+  <link rel="alternate" hreflang="x-default" href="https://mdvrfaq.com/tools/config-gen/en/">
+  <meta name="theme-color" content="#103048">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MDVR Config Generator | MDVR FAQ">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Fill in device parameters by module and generate an online command, config.xml or QR code; paste a config to parse it back.">
+  <meta property="og:url" content="https://mdvrfaq.com/tools/config-gen/en/">
+<link rel="stylesheet" href="/tools/config-gen/css/mdvr-config.min.css?v=1">
+<link rel="stylesheet" href="/tools/config-gen/en/overrides.css?v=1">
+
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a class="brand" href="/en/docs/">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M9 20h6"/></svg>
-      MDVR FAQ · Tools
+<noscript><p style="padding:12px 20px;background:#fff7ed;color:#9a3412;font-size:13px">This tool requires JavaScript.</p></noscript>
+
+<header class="h-14 shrink-0 border-b border-[#dae0e7] bg-white px-5" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px">
+  <a class="flex items-center gap-3" href="/en/docs/" title="Back to Help Center" style="min-width:0;text-decoration:none;color:inherit">
+    <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style="background:#fff"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA5CAYAAACGRC3XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAleSURBVGhD7VoJU1THFs4/ionykmiMzyiyKQoMw77IvqgUiIhGFIlKIVFRNM8FnpQYKYkbKiqLLD52EYGgIqLsm4Agi+x8r06P93KnZ4DZQC38qk7N1J1ze7q/Pn36nNP9DZY4vuEfLDV8JYB/sNTwlQD+wWJgamoKVc9f4uctLpD7hqCxtZ1XWTR8EgI+jIzidmYuvjexhYmjL9Iy83iVRcMnIyAtIwffbbD58gmgwSRcuQa5307cydJsIAIBy4ytYeLorTEBQ8MfcCsjB07bdiPl1j1MT0/zKlpDLwLo/zvf9mCDgzeWm8gg8w7CwNAQr6aCsfEJ5BaVMQIs3QPxuLKGV1GLin+eY53cA8uMbRCw53eMjY3zKlpDLwIIwx9GcCrxMjPnHzc6IDr+Aq+iFkPDIygur0JhWQX/k1q0dnQhIvY0+581Nm44mXD501sAgTrR2NIGU0cf1rmNbgHo6O7h1fRGedUzrNzkiO83yOCz6wD63r/nVXSC3gQQRkZH8deNu1hhagsrzx1412+YzklB5v+LtSvMXfxx/V62QWafYBACCJOTk2hqbUdvn+EHT6DY4V1fPxqa2ww2eILBCPhS8ZUA/sFSw6IRMDo6hvLqZzhzMQWBew/BzNkPZs7+TCy3boP/nt8Rl5CMoidVGBvXf3/XFLMSQE7t7KVUGNt5I/pMAto63/Iq84KcVV//AJJS02DhGsC2SUEoD+BF8VyGTW6BSEq9hd53/XyT84Kc5YtXbxB+5ARk3sFIvn4Hk1NTvJqIWQmgWbDzD2UdW25qi3VyTyRfv42JiQleVS1Gx8bxsKAEZk6+LOKbbdC8SEna5B6ocXhN6OruRfx/r2D1Fhf2n0Tm7sPHMTo2xquKmJUAYjKnoBQmjj4fOyfDGitXtLR38aoq6B8YwB9nk2BkKsey9dZaEcATsWqzEyKP/8kInQ95RWX4wcKevUcxieuOcBSUVcy5bc5KgID+gUEcP38JqzY7w9J927xBTk9fP/ZGn2SDlgp16qdNjvAIjmB+gHIBMtW6N00ofPwUCVeuwyMkgoXTUisgoWc7o2LROU+EWfKkCqZOvrB0C8SVm+kYHB7mVVQwLwHa4P3AIGL+TFQZwEpLR4QejEVdQxP/ihLI6hpa2nDgjzNs2SmTYI+90XEs6jQkDEbAyOgYUtLus6UidJq+0xJ6kFfIq88JGmRmfpGYXwiyxsYdJy4kz2nS2sIgBExNTeNVQxPWWLtJ1rsMG10DUFJRzatrBGrzaU0tzJ39lXyDnV8oKmpe8Oo6wyAEUKEi5oyy6RvbeyK/+DGvqhWmpqdR+rQaP1k6iQQYmdsh5OBRTExM8uo6QW8CqJP1jc1YKekkfY868R9eVSdQveFaeia+2yD72L4Mtr7BKKmo4lV1gt4EUFXmxv3sj/uuImag3UKT7VJT1Lysx+at20WCqZp8JP6CQXyB3gQMDA4hODJGXPs/bnTErqhjvJpeoCV29fYDNvhv11vh23VWCAj/DEpixD/VBI3tvZhpUgcpYswvLudV9UZZ5T9s/Qs+xiNkH9q7tA/PeWhMAIvr3w+gub1TlKa2DhSVV2KFmZ3C/E1sWRzf1dPLv643Kp/VwtiBiFb4AadtYXj2sp5X0xpzEjA+PoG8knKEHTqO9XaKWZZ6+pn9XrE2l5vKYesTgnEN8wVtUP2iDhYu/qwmSP9FPiH94SNeTWuoJYA8e25hGbZ47GDeVxrOqhOBALIEh4AwvjmDgHYan7BIcTdYMAJGx8dx+OQ5VucXBkbCD1odAT9YOGDHviN8kwYBOcLU2xmMZLI0coK9fdqnyzyUCBgZGcW23w4rzbiUBBIjMzsYmctnxEyOf1nY49827gg+GLsg618AnShR8lRT+wp98yRlmkIkgNbtobhzKrNrZG4Pr9ADuJudr7PXpd2C4ntKdGrrG3SWF/VvWAbJhPtOvxM5ze0dLB3XFCIBWY+KmIMRZp4+18q24sa9bI2LIDxon35U+gQ+YQfFPF03oeWocMBS65z5rrxcKXX32rkf19Oz0N37ju+WEhgBNDvkVKSNr7P1YGf4uoLqCMfOJmGFmVxlGakOcGGEolJ7/1A8yC2YdRIZAfdyC5RepNnSx8MODg3j9MUUlYEvNgGC0An0xdSbardnRkBoVKyoTKbmtzuK19MYVEylYyxyjNJBrzCVs3RZUQ1eGKFq0FobdxaQKZMug7mzHztSp6KLFIwAKjQIBJDJ3snKV1LSBgNDw4g9myQuJeqMhbMfcgtL1c6AofFhZIRFp8GRR1noLCWC/EI1t6wZAdLyE2VaPb19SkraoONtN2RewWJ7q61cEXchmVdbcJAPuvT3bfxs5SISQGM7di5JqZbACJCuFzIlXWeK8oWmtna2e4jtOfmh+nkdr7oo6OjqxtEziTNB3QYZgiKi0S454zA4AS3tnayWJyyBX+WeuHn/Ia+6aKCKM5XmBF9ASVTB45lLGYolIFknq61d59075wKZXkRsvEgoRY4u28PR8XbukvZCobb+DbbvOyLGCkRG6p0M8XdGAF08oM6SAjmOa+lZ0ja0Ap0oZf+vRGJVigCG7vbQcdVvMaewLyZ+VtkfexqnEv8yWOGT7ixQm0JfqF6RmHJD/J0RQBeOBAugRINCX12XAYGSlB0R0UoEzJdRSoX03IL2sARIXzyve83GJ0SMG10D8ffdTPF3RsDNB3RnT2Ei9EkJjtRMtAWVtBuaW+EWtFdl0Ir/UB00L3Z+IXjd1MI3rTUoFKdbbEI/6Iod+QUBjADKsqiQKe3sr/KtqKyplbalFcgh0mFldHwCVlk6iW1rQgB5ba/Q/XpbAJ1o0601aSEnaD/tAt2ijpgM0UkMbRPSjqyVubNipD7Lgayhu7cPOQVl7Jj83OXUuSU5FVfT7qOxtY1vSisQ+XHnLzFrFsaz2soFcQmXMTE5Ew0qpcNUy+dngyJDp8DdSLp6C6+bWg12ILEQoDCXdjC6h0xFU7Ik6Vh8wyLx8nWj0jsiAQTKCrdHRCuFj7zJKqq/+ohiPzasKM4j6Dv1UV2KTLXKjLxClbMEJQIIrCR26rxSGstbxeclwkCls608eCvPIKRl5qhNiVUIIFBRNK/4Mez9donb2JclCgLoPoJ/eBSKn1SpzLwAtQQIIL/wqOQJO5ensjjFCJ+7RdBSMHbwZldjcgpL2Q43F+YkYClgyRPwf93Ib/WTArPeAAAAAElFTkSuQmCC" alt="" style="width:30px;height:30px;object-fit:contain"></div>
+    <div>
+      <h1 class="text-sm font-semibold leading-tight">MDVR Config Generator<span style="margin-left:6px;font-size:10px;font-weight:500;color:#155dfc;background:rgba(21,93,252,.1);border-radius:4px;padding:1px 5px;vertical-align:middle">V1.81</span></h1>
+      <p class="text-[11px] text-[#65758b] leading-tight mt-0.5">Import config / send online</p>
+    </div>
+  </a>
+  
+  <div id="fs-holder">
+    <div id="fs-wrap">
+      <span id="fs-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></span>
+      <input id="field-search" type="search" placeholder="Search parameters..." autocomplete="off" spellcheck="false">
+      <span id="fs-kbd">Ctrl K</span>
+      <button id="field-search-clear" title="Clear search">✕</button>
+      <div id="fs-bar"></div>
+    </div>
+  </div>
+  <div class="flex items-center gap-2" style="justify-self:end">
+    <a class="mini-btn" href="/tools/config-gen/" title="Chinese version" style="text-decoration:none">ZH</a>
+    
+    <button id="btn-reverse" data-open-reverse title="Paste a config or online command exported from the device; it is parsed and filled into the left menu">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="m9 12 3 3 3-3"/><path d="M12 8v7"/></svg>
+      <span>Reverse Parse</span>
+    </button>
+    
+    <a id="btn-qrconfig" href="/tools/qrconfig-en.html"
+       target="_blank" rel="noopener" referrerpolicy="no-referrer" title="QR config: fill common parameters on a phone and generate a QR code the device camera can scan">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/></svg>
+      <span>QR Config</span>
     </a>
-    <nav>
-      <a href="/en/docs/">Help Center</a>
-      <a href="/tools/en/">All tools</a>
-      <a href="/tools/config-gen/" hreflang="zh-CN">中文</a>
-    </nav>
+    <a id="btn-phone" class="mini-btn" href="#" target="_blank" rel="noopener" style="display:none;text-decoration:none"
+       title="Mobile quick config (common parameters and a QR code)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg><span class="btn-txt">Mobile</span>
+    </a>
   </div>
 </header>
 
-<main class="wrap">
-  <h1>Configuration parameter generator</h1>
-  <p class="lead">A desktop-class generator for the complete device parameter set. Fill in what you need, and it produces an online command, an importable <code>config.xml</code>, or a QR code — all computed in your browser.</p>
 
-  <a class="btn" href="/tools/config-gen/">Open the generator →</a>
-  <a class="btn ghost" href="/tools/qrconfig-en.html">I only need the basics</a>
+<div id="layout" style="height:calc(100vh - 56px);display:grid;grid-template-columns:15rem minmax(0,1fr) 28rem">
+  <aside style="min-width:0;overflow:hidden" class="flex h-full flex-col border-r border-[#dae0e7] bg-white">
+    <div class="flex h-12 items-center px-4 border-b border-[#dae0e7] shrink-0">
+      <span class="text-[13px] font-semibold">Modules</span>
+    </div>
+    <nav class="flex-1 overflow-y-auto py-2 px-2" id="nav-list"></nav>
+  </aside>
 
-  <div class="warn">
-    <b>The generator's interface is in Chinese.</b> Every field shows its XML tag right next to the label (for example <code>ucFD_TimeZone</code>), and the search box at the top accepts tag names — so you can jump to a parameter even if you don't read Chinese. The sections below map the module names and the most common tags.
+  <main style="min-width:0;overflow:hidden" class="flex h-full flex-col bg-[#f9fafb]">
+    <div class="flex h-12 shrink-0 items-center gap-3 border-b border-[#dae0e7] bg-white px-5">
+      <div class="flex items-center gap-2">
+        <span class="text-[13px] text-[#65758b]">Module:</span>
+        <span id="ed-module" class="text-[13px] font-semibold">Basic Settings</span>
+        <select id="ed-sub" title="Switch submenu"></select>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;margin:0 auto">
+        <span style="color:#65758b">Modified:</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:rgba(21,93,252,.1);padding:3px 10px;font-weight:500;color:#155dfc">
+          <span style="width:6px;height:6px;border-radius:999px;background:#155dfc;display:inline-block"></span>
+          <span id="tb-dirty-top" style="font-variant-numeric:tabular-nums">0</span>
+          <span>fields</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button data-act="expand" class="mini-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>Expand
+        </button>
+        <button data-act="collapse" class="mini-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 10 7-7"/><path d="M20 10h-6V4"/><path d="m3 21 7-7"/><path d="M4 14h6v6"/></svg>Collapse
+        </button>
+        <button data-act="clear" class="mini-btn danger">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21"/><path d="m5.082 11.09 8.828 8.828"/></svg>Clear
+        </button>
+      </div>
+    </div>
+    <div id="cfg-tip" class="border-b border-[#eef2f6] bg-[#f5f6f7]/40 px-5 py-1.5 text-[11.5px] text-[#8f959e] shrink-0">
+      Tip: only fields present in the file are written; untouched fields are skipped.
+    </div>
+    
+    <div id="valid-bar">
+      <span class="vb-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+      <span class="vb-txt" id="valid-bar-txt"></span>
+      <button id="valid-bar-jump">Go to first</button>
+    </div>
+    <div id="editor" class="flex-1 overflow-y-auto px-5 py-4"></div>
+  </main>
+
+  <aside style="min-width:0;overflow:hidden" class="flex h-full flex-col border-l border-[#dae0e7] bg-white">
+    <div class="flex h-12 shrink-0 items-stretch border-b border-[#dae0e7] px-3">
+      <button class="pv-tab on" data-tab="command">Command</button>
+      <button class="pv-tab" data-tab="import">Import Config</button>
+    </div>
+    <div class="flex items-center justify-between border-b border-[#e8edf5] px-4 py-2 text-[11.5px] text-[#8f959e] mono shrink-0">
+      <span id="pv-size">0 bytes</span>
+      <span id="pv-fields">0 fields</span>
+    </div>
+    <div id="pv-content" style="flex:1;min-height:0;overflow-y:auto;background:#f5f6f7;padding:12px 14px;display:flex;flex-direction:column"></div>
+    <div class="border-t border-[#dae0e7] p-3 space-y-3 shrink-0">
+      <div class="flex items-center gap-2">
+        <button id="btn-copy" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md border border-[#dae0e7] bg-white px-3 text-xs hover:bg-[#f8fafc]">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>Copy
+        </button>
+        <button id="btn-download" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md border border-[#dae0e7] bg-white px-2 text-xs hover:bg-[#f8fafc]" style="display:none">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>Download
+        </button>
+        <button id="btn-qr" title="Generate a config QR code the device camera can scan" class="flex-1 inline-flex items-center justify-center gap-1.5 h-8 rounded-md bg-[#103048] px-2 text-xs font-medium text-white hover:bg-[#1a4a6b] transition-colors">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/>
+          </svg>QR Code
+        </button>
+      </div>
+      <div class="pt-2 border-t border-[#e8edf5] text-[11px] leading-[1.6] text-[#8f959e]">
+        <p id="pv-hint">Only modified fields are output; untouched fields are not written.</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+<div id="revModal">
+  <div class="rv-box">
+    <div class="rv-hd">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="m9 12 3 3 3-3"/><path d="M12 8v7"/></svg>
+      <h3>Reverse parse</h3>
+      <button class="rv-x" data-revclose title="Close">✕</button>
+    </div>
+    <div class="rv-bd">
+      <div class="rv-tip">
+        Paste a <b>config file</b> or an <b>online command</b> below. Parsed values are filled into the left menu for review and editing.<br>
+        Supported: a full <code>config.xml</code> / a <code>&lt;VariCfgSec Action="DEVICE_SET"&gt;…&lt;/VariCfgSec&gt;</code> fragment (multiple allowed) / bare nodes / a <code>&lt;Control&gt;…&lt;/Control&gt;</code> online command
+      </div>
+      <textarea id="rev-ta" placeholder="Paste the configuration here..."></textarea>
+      <div class="rv-row">
+        <button class="rv-btn" id="rev-file">Choose file...</button>
+        <input type="file" id="rev-file-input" accept=".xml,.txt,.cfg,.conf,.ini,text/xml,text/plain" style="display:none">
+        <button class="rv-btn primary" id="rev-go">Parse</button>
+        <button class="rv-btn" id="rev-clear">Clear</button>
+        <span class="rv-drop" id="rev-drop">or drop a file here (.xml/.txt, up to 4 MB)</span>
+      </div>
+      <div id="revStat"></div>
+      <div id="revList"></div>
+    </div>
+    <div class="rv-ft">
+      <span class="warn" id="rev-warn"></span>
+      <button class="rv-btn" data-revclose>Close</button>
+      <button class="rv-btn primary" id="rev-apply" disabled>Apply to tool</button>
+    </div>
   </div>
+</div>
 
-  <h2>What it produces</h2>
-  <div class="grid">
-    <div class="box"><h3>Online command</h3><p>A <code>&lt;Control&gt;…&lt;/Control&gt;</code> DEVICE_SET command you can paste into your platform and push to a device.</p></div>
-    <div class="box"><h3>config.xml</h3><p>A <code>&lt;VariCfgSec&gt;</code> file for SD-card / USB import. Only the fields you edited are written.</p></div>
+<div id="toasts" class="fixed top-20 left-1/2 -translate-x-1/2 z-[1000] flex flex-col gap-2 items-center pointer-events-none" style="position:fixed;top:76px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;flex-direction:column;align-items:center;pointer-events:none"></div>
+
+
+<script src="/tools/config-gen/js/mdvr-config.en.min.js?v=1"></script>
+
+
+<div id="m-bar">
+  <button id="m-copy" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>Copy
+  </button>
+  <button id="m-download" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>Download
+  </button>
+  <button id="m-qr" type="button">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v3"/><path d="M14 21h7"/><path d="M18 18h3"/></svg>QR Code
+  </button>
+</div>
+
+<div id="qr-mask" style="display:none;position:fixed;inset:0;z-index:951;background:rgba(15,23,43,.55);align-items:center;justify-content:center">
+  <div style="width:360px;background:#fff;border-radius:14px;padding:18px 20px 16px;box-shadow:0 24px 60px rgba(0,0,0,.35)">
+    <div class="flex items-center justify-between" style="margin-bottom:12px">
+      <h3 style="font-size:14px;font-weight:600;color:#103048">Config QR code</h3>
+      <button id="qr-close" style="width:26px;height:26px;border:1px solid #dae0e7;border-radius:6px;background:#fff;color:#65758b;font-size:15px;line-height:1;cursor:pointer">×</button>
+    </div>
+    <div id="qr-box" style="display:flex;align-items:center;justify-content:center;min-height:296px;border:1px solid #e8edf5;border-radius:10px;background:#fff;padding:8px"></div>
+    <div id="qr-meta" style="margin-top:10px;font-size:11.5px;line-height:1.7;color:#65758b"></div>
+    <div id="qr-warn" style="display:none;margin-top:8px;padding:7px 9px;border-radius:7px;font-size:11px;line-height:1.7"></div>
+    <p style="margin-top:10px;font-size:11px;line-height:1.7;color:#8f959e">
+      Scan this code with the <b>device camera</b> to import the config (valid for a short time after boot). The QR payload is the
+      <b>Import Config</b> XML in UTF-8 without BOM, identical to Download config.xml.
+    </p>
   </div>
-  <div class="grid">
-    <div class="box"><h3>QR code</h3><p>For devices that support scan-to-import. Point the camera at the screen; no network needed on the device.</p></div>
-    <div class="box"><h3>Reverse parsing</h3><p>Paste an existing <code>config.xml</code> or command back in and the form refills — handy for cloning a unit.</p></div>
-  </div>
+</div>
 
-  <h2>Modules</h2>
-  <table>
-    <thead><tr><th>Chinese menu</th><th>Meaning</th><th>Sub-pages</th></tr></thead>
-    <tbody>
-      <tr><td>基本设置</td><td>Basic — time, device info, power</td><td>3</td></tr>
-      <tr><td>编码设置</td><td>Encoding — main/sub stream, mirror, OSD, IPC</td><td>6</td></tr>
-      <tr><td>录像设置</td><td>Recording — record mode, schedule, snapshot</td><td>3</td></tr>
-      <tr><td>网络设置</td><td>Network — cellular, Wi-Fi, wired</td><td>4</td></tr>
-      <tr><td>注册平台</td><td>Platform registration — CMS, JT/T 808, GB28181, PTT, MQTT, XFRPC, FTP</td><td>9</td></tr>
-      <tr><td>报警设置</td><td>Alarms — IO, ADC, speed, temperature, G-sensor</td><td>7</td></tr>
-      <tr><td>AI 报警设置</td><td>AI — ADAS, DSM, BSD, trash, road, plate recognition</td><td>7</td></tr>
-      <tr><td>串口外设</td><td>Serial port / peripherals</td><td>1</td></tr>
-      <tr><td>设备维护</td><td>Maintenance — passwords, storage commands, query, factory configs</td><td>5</td></tr>
-    </tbody>
-  </table>
-
-  <h2>Common parameters</h2>
-  <table>
-    <thead><tr><th>What you want to change</th><th>Search for</th></tr></thead>
-    <tbody>
-      <tr><td>Device number / ID</td><td><code>strFD_DeviceNo</code></td></tr>
-      <tr><td>Time zone</td><td><code>ucFD_TimeZone</code></td></tr>
-      <tr><td>License plate</td><td><code>strFD_LicensePlate</code></td></tr>
-      <tr><td>CMS / centre server IP and port</td><td><code>strFD_ServerIp</code>, <code>usFD_ServerPort</code></td></tr>
-      <tr><td>JT/T 808 protocol version (2013 / 2019)</td><td><code>ucFD_JT808ProVer</code></td></tr>
-      <tr><td>808 terminal phone number</td><td><code>strFD_PhoneNo</code></td></tr>
-      <tr><td>Frame rate / resolution</td><td><code>ucFD_FrameRate</code></td></tr>
-      <tr><td>Record mode</td><td><code>ucFD_RecordMode</code></td></tr>
-    </tbody>
-  </table>
-
-  <h2>How to use it</h2>
-  <ol>
-    <li>Pick a module in the left sidebar, then a sub-page in the drop-down.</li>
-    <li>Edit only the fields you need — untouched fields are not written into the output. A counter at the top shows how many fields you have changed.</li>
-    <li>Read the result on the right: switch between <em>online command</em> and <em>import config</em>; the byte and field counts update live.</li>
-    <li>Copy the command, download <code>config.xml</code>, or generate the QR code.</li>
-  </ol>
-  <p>To start from an existing unit instead, click <em>配置反解析</em> (top right), paste the file or command, then apply the parsed values back into the form.</p>
-
-  <h2>Which tool do I need?</h2>
-  <table>
-    <thead><tr><th></th><th>QR quick config</th><th>Parameter generator</th></tr></thead>
-    <tbody>
-      <tr><td>Best for</td><td>Commissioning: device ID + platform address</td><td>Full parameter set, cloning, troubleshooting</td></tr>
-      <tr><td>Device</td><td>Phone</td><td>Desktop browser</td></tr>
-      <tr><td>Covers</td><td>Time zone, cellular, CMS, JT/T 808</td><td>All 9 modules</td></tr>
-      <tr><td>Output</td><td>QR code only</td><td>Command, config.xml, QR code</td></tr>
-      <tr><td>Language</td><td>English / Chinese</td><td>Chinese</td></tr>
-    </tbody>
-  </table>
-
-  <p style="margin-top:18px">Both pages are plain static HTML — save them to a laptop or phone and they keep working without a network connection.</p>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>© MDVR FAQ</span>
-    <span><a href="/tools/en/">All tools</a> · <a href="/tools/config-gen/" hreflang="zh-CN">中文工具</a> · <a href="/en/docs/">Help Center</a></span>
-  </div>
-</footer>
 </body>
 </html>
