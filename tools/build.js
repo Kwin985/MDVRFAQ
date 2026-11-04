@@ -63,7 +63,8 @@ const PRIMARY_LANG_SECTION = { zh_docs: 'zh_docs', en_docs: 'zh_docs', zh_videos
 const CONTACT = {
   email: 'kwin@citops.com',
   phone: '18682037629',
-  author: 'MDVR FAQ 作者',
+  author: 'Kwin',
+  aboutUrl: '/about/',
   zh: {
     title: '联系作者',
     text: '如果您对本文有任何建议或咨询，欢迎随时联系作者，我们将竭诚为您解答。如果您想更详细了解车载录像产品，也欢迎联系我们。',
@@ -94,6 +95,8 @@ function renderFooter(lang) {
   <div class="footer-inner">
     <span class="footer-label">${esc(label)}</span>
     <nav class="footer-links" aria-label="${esc(label)}">${links}</nav>
+    <span class="footer-label">${lang === 'en' ? 'Site' : '本站'}</span>
+    <nav class="footer-links" aria-label="${lang === 'en' ? 'Site' : '本站'}"><a href="${CONTACT.aboutUrl}">${lang === 'en' ? 'About' : '关于本站'}</a></nav>
   </div>
 </footer>`;
 }
@@ -433,6 +436,14 @@ function detectFAQ(md) {
   return qa.length >= 2 ? qa : null;
 }
 
+// ---------- 问答型页面判定（放宽 FAQPage 覆盖）----------
+// 标题本身是"问题/故障排查"形态的页面（如"录像相关--不识别SD卡或硬盘"、"GPS不定位排查方法"），
+// 用页题作问题、首段作答案，注入单组 FAQPage 结构化数据，提升 AI 搜索的问答抽取率。
+const QUESTION_TITLE_RE = /问题|排查|失败|无法|不能|不识别|不上报|不上|不成功|不显示|无画面|错误|异常|如何|怎么|怎样|为什么|什么原因|？|\?|cannot|can't|fail(?:ed|ure)?|not\s+(?:work|working|recognized|connect(?:ing|ed)?|display|save|upload|locate)|\bissue\b|\berror\b|\bproblem\b|troubleshoot|why|\bhow\s+to\b/i;
+function isQuestionPage(page) {
+  return QUESTION_TITLE_RE.test(String(page.title || ''));
+}
+
 // ---------- 侧边栏渲染 ----------
 // 文档正文内联产品链接：把型号自动链接到产品页（避开标签与已有链接）
 function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
@@ -536,8 +547,13 @@ function jsonLd(page, renderedHtml, faq) {
       inLanguage: m.locale,
       articleSection: page.cat_name || '',
       mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-      publisher: { '@type': 'Organization', name: SITE_NAME },
-      author: { '@type': 'Person', name: CONTACT.author, email: CONTACT.email },
+      publisher: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        logo: { '@type': 'ImageObject', url: SITE_URL + '/assets/og-cover.png' },
+        sameAs: FRIENDLY_LINKS.map((l) => l.url),
+      },
+      author: { '@type': 'Person', name: CONTACT.author, email: CONTACT.email, url: SITE_URL + CONTACT.aboutUrl },
     },
     {
       '@context': 'https://schema.org',
@@ -664,12 +680,27 @@ function videoTranscript(page) {
 }
 
 // ---------- 页面模板 ----------
+// 每个页面 URL -> 内容图片绝对地址列表（供 sitemap 图片扩展用）
+const PAGE_IMAGES = {};
+
 function renderPage(page) {
   const m = SECTION_META[page.section];
   const canonical = pageAbsUrl(page.section, page.id);
   const htmlContent = linkifyProducts(renderContent(page.content, page.title, m.lang), m.lang);
-  const faq = detectFAQ(page.content);
+  let faq = detectFAQ(page.content);
+  if (!faq && isQuestionPage(page)) {
+    const ans = makeDesc(page.content);
+    if (ans.length >= 20) faq = [[page.title, ans]];
+  }
   const ogImg = firstImage(htmlContent);
+  // 收集本页本地内容图片（sitemap 图片扩展，去重、上限 50 张）
+  const imgSet = [];
+  const imgRe = /<img[^>]+src="(\/assets\/images\/[^"]+)"/g;
+  let im;
+  while ((im = imgRe.exec(htmlContent)) !== null) {
+    if (imgSet.indexOf(im[1]) === -1 && imgSet.length < 50) imgSet.push(SITE_URL + im[1]);
+  }
+  PAGE_IMAGES[canonical] = imgSet;
 
   // 语言/区域 hreflang
   const alt = [];
@@ -732,7 +763,7 @@ function renderPage(page) {
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg.startsWith('http') ? ogImg : SITE_URL + ogImg)}">` : ''}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=8">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   ${jsonLd(page, htmlContent, faq)}
 </head>
@@ -776,7 +807,7 @@ function renderPage(page) {
     <div class="content-wrapper">
       ${breadcrumb}
       <article class="article">
-        <div class="article-content">${htmlContent}${videoTranscript(page)}${relatedSection(page)}</div>
+        <div class="article-content"><h1 class="page-title">${esc(page.title)}</h1>${htmlContent}${videoTranscript(page)}${relatedSection(page)}</div>
       </article>
       ${pageNav}
       ${renderContact(m.lang)}
@@ -794,7 +825,7 @@ function renderPage(page) {
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
   </button>
 
-  <script src="/assets/js/app.js?v=4"></script>
+  <script src="/assets/js/app.js?v=5"></script>
 </body>
 </html>`;
   return html;
@@ -821,9 +852,13 @@ function renderLanding() {
   <meta property="og:title" content="${SITE_NAME}">
   <meta property="og:description" content="MDVR（车载录像机）使用指南与教学视频中心：设备配置、平台操作、故障排查、安装演示">
   <meta property="og:url" content="${SITE_URL}/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${SITE_URL}/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${SITE_URL}/assets/og-cover.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=8">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite',
@@ -887,6 +922,188 @@ function renderLanding() {
   </div>
 
   ${renderFooter('zh')}
+</body>
+</html>`;
+  return html;
+}
+
+// ---------- 关于页 (E-E-A-T: 作者实体、内容来源、联系方式) ----------
+function renderAbout() {
+  const canonical = SITE_URL + '/about/';
+  const title = '关于本站 / About';
+  const desc = 'MDVR FAQ 是面向 MDVR / Mobile DVR（车载录像机）终端设备及监控平台的中英双语使用指南与教学视频中心，由作者 Kwin 维护。';
+  const orgLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: SITE_URL + '/assets/og-cover.png',
+    sameAs: FRIENDLY_LINKS.map((l) => l.url),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: CONTACT.email,
+      telephone: '+86' + CONTACT.phone,
+      contactType: 'customer support',
+    },
+  };
+  const webPageLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    url: canonical,
+    inLanguage: 'zh-CN',
+    description: desc,
+  };
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  ${GA_TAG}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
+  <title>${esc(title)} - ${SITE_NAME}</title>
+  <meta name="description" content="${esc(desc)}">
+  <link rel="canonical" href="${esc(canonical)}">
+  <link rel="alternate" hreflang="zh" href="${esc(canonical)}">
+  <link rel="alternate" hreflang="x-default" href="${esc(canonical)}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(desc)}">
+  <meta property="og:url" content="${esc(canonical)}">
+  <meta property="og:site_name" content="${SITE_NAME}">
+  <meta property="og:image" content="${SITE_URL}/assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${SITE_URL}/assets/og-cover.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <script type="application/ld+json">${JSON.stringify(orgLd)}</script>
+  <script type="application/ld+json">${JSON.stringify(webPageLd)}</script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="menuToggle" aria-label="切换菜单">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="18" x2="12" y2="20"/></svg>
+        <span class="logo-text">${SITE_NAME}</span>
+      </a>
+    </div>
+    <nav class="header-nav" id="headerNav">${renderHeaderNav(null, 'zh')}</nav>
+    <div class="header-right">
+      <button class="theme-btn" id="themeBtn" title="切换主题">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-wrapper">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="/">首页</a><span class="separator">/</span>
+        <span class="current">关于本站</span>
+      </nav>
+      <article class="article">
+        <div class="article-content">
+          <h1 class="page-title">关于本站 / About</h1>
+          <h2 id="h-1">站点定位</h2>
+          <p>MDVR FAQ 是面向 MDVR / Mobile DVR（车载录像机）终端设备及监控平台的<strong>中英双语使用指南与教学视频中心</strong>，内容涵盖设备配置、平台注册、网络配置、录像编码、AI 主动安全、故障排查与安装演示等 350 余篇真实使用问题，并配套教学视频与逐字稿。</p>
+          <p>除图文与视频外，本站还提供在线工具（扫码快速配置、配置参数生成工具）与产品选型资料（主机、摄像头、配件规格与整车配置方案）。</p>
+          <h2 id="h-2">作者与联系方式</h2>
+          <p>本站由 <strong>Kwin</strong> 创建并维护，长期从事车载视频监控行业。如有任何建议、勘误或产品咨询，欢迎联系：</p>
+          <p>✉ 邮箱：<a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a><br>☎ 电话：+86 ${esc(CONTACT.phone)}</p>
+          <h2 id="h-3">内容来源与说明</h2>
+          <p>站内文档整理自设备官方帮助文档与一线实施经验，图片与视频版权归原厂商所有，仅用于帮助客户正确使用产品；语音生成的视频文字稿可能存在识别误差，仅供参考。若内容涉及侵权请联系删除。</p>
+          <h2 id="h-4">相关站点</h2>
+          <ul>
+            ${FRIENDLY_LINKS.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.name)}</a></li>`).join('\n            ')}
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  ${renderFooter('zh')}
+
+  <button class="back-to-top" id="backToTop" title="回到顶部">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="/assets/js/app.js?v=5"></script>
+</body>
+</html>`;
+  return html;
+}
+
+// ---------- 404 页（完整站点壳：导航 + 侧栏搜索，便于访客回流） ----------
+function render404() {
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  ${GA_TAG}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff" id="themeColorMeta">
+  <title>页面不存在 - ${SITE_NAME}</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <button class="menu-toggle" id="menuToggle" aria-label="切换菜单">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="18" x2="12" y2="20"/></svg>
+        <span class="logo-text">${SITE_NAME}</span>
+      </a>
+    </div>
+    <nav class="header-nav" id="headerNav">${renderHeaderNav(null, 'zh')}</nav>
+    <div class="header-right">
+      <button class="theme-btn" id="themeBtn" title="切换主题">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="search-toggle" id="searchToggle" aria-label="搜索文档" title="搜索文档">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="search-box">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="搜索文档..." autocomplete="off">
+      <button class="search-clear" id="searchClear" style="display:none;">✕</button>
+    </div>
+    <div class="search-results" id="searchResults" style="display:none;"></div>
+    ${renderSidebar('zh_docs', '', 'zh')}
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main class="main-content">
+    <div class="content-wrapper" style="text-align:center;padding-top:80px;">
+      <h1 style="font-size:72px;margin-bottom:8px;">404</h1>
+      <p style="font-size:17px;color:var(--color-text-secondary);margin-bottom:8px;">页面不存在或已迁移。</p>
+      <p style="margin-bottom:24px;">可以用左侧搜索找内容，或 <a href="/">返回首页</a>。</p>
+      <p style="margin-bottom:32px;"><a class="pd-inline" href="/zh/docs/62/">中文使用指南</a> · <a class="pd-inline" href="/en/docs/64/">English Guide</a> · <a class="pd-inline" href="/products/en/">产品选型 / Products</a></p>
+    </div>
+  </main>
+
+  ${renderFooter('zh')}
+
+  <button class="back-to-top" id="backToTop" title="回到顶部">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="/assets/js/app.js?v=5"></script>
 </body>
 </html>`;
   return html;
@@ -959,20 +1176,37 @@ console.log(`✅ 产品选型: ${prodCount} 个页面 -> dist/products/ ; 拷贝
 // 落地页
 writeFile('index.html', renderLanding());
 
-// 404
-writeFile('404.html', `<!DOCTYPE html><html lang="zh-CN"><head>${GA_TAG}<meta charset="UTF-8"><title>404 - ${SITE_NAME}</title>
-<link rel="stylesheet" href="/assets/css/style.css?v=8"></head><body>
-<main class="main-content"><div class="content-wrapper" style="text-align:center;padding-top:120px;">
-<h1>404</h1><p>页面不存在。<a href="/">返回首页</a></p></div></main></body></html>`);
+// 404（完整站点壳）与关于页
+writeFile('404.html', render404());
+writeFile('about/index.html', renderAbout());
 
-// sitemap.xml
+// lastmod 取数据源文件真实修改时间（而非构建日期），为 Google 提供可信的更新信号
+const DATA_DIR = path.join(ROOT, 'data');
+const SEC_DATA_DIR = { zh_docs: 'zh_docs', en_docs: 'en_docs', zh_videos: 'zh_videos', en_videos: 'en_videos' };
+function pageLastmod(p) {
+  const dir = SEC_DATA_DIR[p.section];
+  if (!dir) return BUILD_DATE;
+  const fp = path.join(DATA_DIR, dir, 'page_' + p.id + '.json');
+  try { return fs.statSync(fp).mtime.toISOString().slice(0, 10); } catch (e) { return BUILD_DATE; }
+}
+
+// sitemap.xml（含 image 扩展：每页内容图片，利于图片搜索收录）
 const urls = [];
-urls.push({ loc: SITE_URL + '/', pri: '0.5', freq: 'weekly' });
+urls.push({ loc: SITE_URL + '/', pri: '0.6', freq: 'weekly' });
 for (const id in pages) {
   const p = pages[id];
   const isVideo = p.section.endsWith('videos');
-  urls.push({ loc: pageAbsUrl(p.section, p.id), pri: isVideo ? '0.6' : '0.8', freq: 'weekly' });
+  const abs = pageAbsUrl(p.section, p.id);
+  urls.push({
+    loc: abs,
+    pri: isVideo ? '0.6' : '0.8',
+    freq: 'weekly',
+    lastmod: pageLastmod(p),
+    images: PAGE_IMAGES[abs] || [],
+  });
 }
+// 关于页
+urls.push({ loc: SITE_URL + '/about/', pri: '0.4', freq: 'monthly' });
 // 产品选型（英文优先）
 urls.push({ loc: SITE_URL + '/products/', pri: '0.6', freq: 'weekly' });
 urls.push({ loc: SITE_URL + '/products/en/', pri: '0.7', freq: 'weekly' });
@@ -988,12 +1222,51 @@ urls.push({ loc: SITE_URL + '/tools/en/', pri: '0.6', freq: 'monthly' });
 urls.push({ loc: SITE_URL + '/tools/config-gen/', pri: '0.7', freq: 'monthly' });
 urls.push({ loc: SITE_URL + '/tools/config-gen/en/', pri: '0.6', freq: 'monthly' });
 urls.push({ loc: SITE_URL + '/tools/config-gen/en/reference/', pri: '0.5', freq: 'monthly' });
-let sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+let sm = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' +
+  '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
 for (const u of urls) {
-  sm += `  <url><loc>${esc(u.loc)}</loc><lastmod>${BUILD_DATE}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>\n`;
+  const imgXml = (u.images || [])
+    .map((iu) => `<image:image><image:loc>${esc(iu)}</image:loc></image:image>`)
+    .join('');
+  sm += `  <url><loc>${esc(u.loc)}</loc><lastmod>${esc(u.lastmod || BUILD_DATE)}</lastmod><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority>${imgXml}</url>\n`;
 }
 sm += '</urlset>';
 writeFile('sitemap.xml', sm);
+
+// 站内搜索精简索引（按板块拆分 + 构建期剥离 Markdown/URL，替代原 900KB content.json 全量拉取）
+function searchStrip(s) {
+  return String(s || '')
+    .replace(/<video\b[^>]*>[\s\S]*?<\/video>/gi, ' ')
+    .replace(/<video\b[^>]*>/gi, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/\[TOC\]/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/[#*`>_~|]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+const SEARCH_SECTIONS = ['zh_docs', 'en_docs', 'zh_videos', 'en_videos'];
+let searchTotal = 0;
+for (const s of SEARCH_SECTIONS) {
+  const items = [];
+  for (const id in pages) {
+    const p = pages[id];
+    if (p.section !== s) continue;
+    items.push({
+      id: p.id,
+      section: p.section,
+      title: p.title,
+      cat: p.cat_name || '',
+      text: searchStrip(p.content).slice(0, 20000),
+    });
+  }
+  items.sort((a, b) => (orderIndex[s][String(a.id)] || 0) - (orderIndex[s][String(b.id)] || 0));
+  writeFile('search/' + s + '.json', JSON.stringify(items));
+  searchTotal += items.length;
+}
+console.log(`   搜索索引: ${searchTotal} 条 -> dist/search/ (按板块拆分)`);
 
 // video-sitemap.xml（Google 视频搜索专用；含缩略图地址）
 let vsm = '<?xml version="1.0" encoding="UTF-8"?>\n' +
@@ -1055,6 +1328,13 @@ for (const rel of ['css', 'js']) {
   console.log(`   assets/${rel}/ 已同步到 dist/assets/${rel}/`);
 }
 
+// OG 封面图（源码真相在仓库 assets/og-cover.png）
+const OGSRC = path.join(ROOT, 'assets', 'og-cover.png');
+if (fs.existsSync(OGSRC)) {
+  fs.copyFileSync(OGSRC, path.join(DIST, 'assets', 'og-cover.png'));
+  console.log('   og-cover.png 已同步 -> dist/assets/');
+}
+
 // 外部工具页（如扫码上线配置 qrconfig）本地托管：assets/ext-tools/ -> dist/tools/
 const EXT_SRC = path.join(ROOT, 'assets', 'ext-tools');
 const EXT_DST = path.join(DIST, 'tools');
@@ -1104,8 +1384,10 @@ writeFile('robots.txt', robots);
 let llm = `# ${SITE_NAME}\n\n`;
 llm += `> 面向 MDVR / Mobile DVR（车载录像机）终端设备及监控平台的使用指南与教学视频中心，涵盖设备配置、平台操作、故障排查、安装演示等常见问题解答。\n\n`;
 llm += `## Contact\n`;
+llm += `- 作者 (Author): ${CONTACT.author}\n`;
 llm += `- 邮箱 (Email): ${CONTACT.email}\n`;
 llm += `- 电话 (Phone): +86 ${CONTACT.phone}\n`;
+llm += `- 关于本站 (About): ${SITE_URL}/about/\n`;
 llm += `- 说明: 如有任何建议或咨询，请联系作者。\n\n`;
 llm += `## Documentation\n`;
 llm += `- 中文文档: ${SITE_URL}/zh/docs/\n`;

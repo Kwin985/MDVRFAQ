@@ -240,9 +240,11 @@ ${alts.map(a => '  <meta property="og:locale:alternate" content="' + (a.lang ===
   <meta property="og:title" content="${esc(o.title)}">
   <meta property="og:description" content="${esc(o.desc || L.heroSub)}">
   <meta property="og:url" content="${esc(canonical)}">
+  <meta property="og:image" content="${esc(SITE_URL)}/assets/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${esc(SITE_URL)}/assets/og-cover.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='14' rx='2' fill='%232563eb'/%3E%3Cline x1='3' y1='9' x2='21' y2='9' stroke='white' stroke-width='1.5'/%3E%3Cline x1='9' y1='20' x2='15' y2='20' stroke='%232563eb' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/style.css?v=8">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
   <script>try{var th=localStorage.getItem('theme');if(th)document.documentElement.setAttribute('data-theme',th);}catch(e){}</script>
   ${o.jsonld ? `<script type="application/ld+json">${o.jsonld}</script>` : ''}
 </head>

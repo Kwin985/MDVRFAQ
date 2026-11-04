@@ -104,21 +104,23 @@
     backToTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
   }
 
-  // ---------- 搜索 (基于 content.json) ----------
+  // ---------- 搜索 (基于构建期生成的精简索引 /search/<section>.json) ----------
   var searchInput = document.getElementById("searchInput");
   var searchClear = document.getElementById("searchClear");
   var searchResults = document.getElementById("searchResults");
   var SEARCH_DATA = null;
+  var SEARCH_SECTIONS = ["zh_docs", "en_docs", "zh_videos", "en_videos"];
 
   function buildIndex() {
     if (SEARCH_DATA) return Promise.resolve(SEARCH_DATA);
-    return fetch("/content.json").then(function (r) { return r.json(); }).then(function (d) {
-      SEARCH_DATA = Object.values(d.pages).map(function (p) {
-        var text = (p.content || "").replace(/[#*`>_~\-]/g, " ").replace(/\[TOC\]/gi, " ");
-        return { id: p.id, section: p.section, title: p.title, cat: p.cat_name || "", text: text };
-      });
+    if (buildIndex._pending) return buildIndex._pending;
+    buildIndex._pending = Promise.all(SEARCH_SECTIONS.map(function (s) {
+      return fetch("/search/" + s + ".json").then(function (r) { return r.json(); });
+    })).then(function (arrs) {
+      SEARCH_DATA = Array.prototype.concat.apply([], arrs);
       return SEARCH_DATA;
     });
+    return buildIndex._pending;
   }
 
   function sectionPath(section, id) {
