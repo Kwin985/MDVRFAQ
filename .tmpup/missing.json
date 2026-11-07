@@ -1,0 +1,170 @@
+{
+ "zh_docs": [
+  [
+   "683",
+   "产品外观六视图",
+   "下载中心",
+   null
+  ],
+  [
+   "653",
+   "M18EV LED灯状态定义",
+   "功能使用--接口状态定义",
+   null
+  ],
+  [
+   "655",
+   "M19EV LED灯状态定义",
+   "功能使用--接口状态定义",
+   null
+  ],
+  [
+   "665",
+   "开启Gsensor功能使用(新算法)",
+   "功能使用--报警功能配置",
+   null
+  ],
+  [
+   "681",
+   "远程 ADAS/DSM/BSD 授权说明",
+   "功能使用--日常维护",
+   null
+  ],
+  [
+   "657",
+   "4G模块发送短信配置",
+   "功能使用--日常维护",
+   null
+  ],
+  [
+   "677",
+   "API-插件参数下发接口",
+   "平台功能--通天星CMSV7",
+   null
+  ]
+ ],
+ "en_docs": [
+  [
+   "684",
+   "Product Six-View Images",
+   "Download Center",
+   null
+  ],
+  [
+   "654",
+   "M18EV LED Light Status Definitions",
+   "Function--Interface Status Definition",
+   null
+  ],
+  [
+   "656",
+   "M19EV LED Indicator Status Definitions",
+   "Function--Interface Status Definition",
+   null
+  ],
+  [
+   "663",
+   "National Standard GB28181--Parameter Issuance Registration Platform",
+   "Function--Registration platform configuration",
+   null
+  ],
+  [
+   "662",
+   "National Standard GB28181--Local Configuration Import Registration Platform",
+   "Function--Registration platform configuration",
+   null
+  ],
+  [
+   "661",
+   "National Standard GB28181--Local Web Registration Platform",
+   "Function--Registration platform configuration",
+   null
+  ],
+  [
+   "666",
+   "Enable Gsensor function (new algorithm)",
+   "Function--Alarm function",
+   null
+  ],
+  [
+   "682",
+   "Remote ADAS / DSM / BSD Authorization Guide",
+   "Function--Daily maintenance",
+   null
+  ],
+  [
+   "658",
+   "4G module SMS sending configuration",
+   "Function--Daily maintenance",
+   null
+  ],
+  [
+   "664",
+   "“Three One” Standard Transparent Transmission Delivery Tool",
+   "Function--Configuration Tool",
+   null
+  ],
+  [
+   "667",
+   "Network related--Other terminals connect to the 2.4G WiFi router normally, but the MDVR cannot",
+   "Daily Maintenance--Handling Common Issues",
+   null
+  ],
+  [
+   "668",
+   "Platform related--Registration on the Sany department standard platform fails",
+   "Daily Maintenance--Handling Common Issues",
+   null
+  ],
+  [
+   "678",
+   "API - Plug-in Parameter Setting Interface",
+   "Platform Function - Tongtianxing CMSV7",
+   null
+  ],
+  [
+   "669",
+   "Operator Communication Frequency Bands",
+   "Industry Science",
+   null
+  ],
+  [
+   "670",
+   "Relationship between camera angle and distance",
+   "Industry Science",
+   null
+  ],
+  [
+   "671",
+   "WLAN (WiFi) protocol standards",
+   "Industry Science",
+   null
+  ],
+  [
+   "672",
+   "Chinese standard document naming terminology",
+   "Industry Science",
+   null
+  ],
+  [
+   "673",
+   "GB/T 28181 public security video surveillance requirements",
+   "Industry Science",
+   null
+  ],
+  [
+   "679",
+   "Alibaba Cloud SMS pricing",
+   "Industry Science",
+   null
+  ],
+  [
+   "680",
+   "Amazon SMS pricing",
+   "Industry Science",
+   null
+  ]
+ ],
+ "zh_videos": [],
+ "en_videos": []
+}

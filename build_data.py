@@ -23,21 +23,34 @@ def load_menu(section_file):
         data = json.load(f)
     return data['data']['menu']
 
+def resolve_local(local):
+    """映射到的本地文件若已被 webp 管线转为 .webp 并删除原文件，则返回 .webp 路径。"""
+    if not local:
+        return ''
+    if os.path.exists(local):
+        return local
+    base, ext = os.path.splitext(local)
+    if ext.lower() in ('.png', '.jpg', '.jpeg'):
+        webp = base + '.webp'
+        if os.path.exists(webp):
+            return webp
+    return ''
+
 def process_content(content, mapping, section, page_id):
     """Process page content: fix image URLs, video embeds, etc."""
     if not content:
         return ""
-    
+
     # HTML entity decode
     decoded = content.replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"')
-    
+
     # Fix image URLs in markdown syntax: ![alt](url)
     def replace_md_img(match):
         alt = match.group(1)
         url = match.group(2).replace('&amp;', '&').strip()
         url = url.replace('attach ment', 'attachment')
-        local = mapping.get(url, '')
-        if local and os.path.exists(local):
+        local = resolve_local(mapping.get(url, ''))
+        if local:
             return f'![{alt}]({local})'
         return f'![{alt}]({url})'
     
@@ -48,8 +61,8 @@ def process_content(content, mapping, section, page_id):
         full = match.group(0)
         url = match.group(1).replace('&amp;', '&').strip()
         url = url.replace('attach ment', 'attachment')
-        local = mapping.get(url, '')
-        if local and os.path.exists(local):
+        local = resolve_local(mapping.get(url, ''))
+        if local:
             return full.replace(match.group(1), local)
         return full
     
@@ -63,9 +76,9 @@ def process_content(content, mapping, section, page_id):
         full_tag = match.group(0)
         src_match = re.search(r'src="([^"]+)"', full_tag) or re.search(r"src='([^']+)'", full_tag)
         if src_match:
-            video_url = src_match.group(1).strip()
-            local = mapping.get(video_url, '')
-            if local and os.path.exists(local):
+            video_url = src_match.group(1).strip().replace('attach ment', 'attachment')
+            local = resolve_local(mapping.get(video_url, ''))
+            if local:
                 video_url = local
             html = f'\n\n<video src="{video_url}" controls style="width:100%;max-width:800px;border-radius:8px;"></video>\n\n'
         else:

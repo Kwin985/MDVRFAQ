@@ -1,0 +1,93 @@
+{
+ "zh_docs": [
+  [
+   "62",
+   "帮助文档使用（Help Document Usage）",
+   "帮助文档导航"
+  ],
+  [
+   "66",
+   "说明书",
+   "说明书-规格书"
+  ],
+  [
+   "69",
+   "常用工具",
+   "常用工具包"
+  ],
+  [
+   "171",
+   "M20Hv LED灯状态定义",
+   "M20EV LED灯状态定义"
+  ],
+  [
+   "174",
+   "航空头针脚详细定义",
+   "航空头接口针脚详细定义"
+  ],
+  [
+   "300",
+   "服务端-平台最新安装包下载",
+   "服务端-平台资料安装包链接"
+  ],
+  [
+   "151",
+   "运营商通讯频段",
+   "运营商通信频段"
+  ]
+ ],
+ "en_docs": [
+  [
+   "64",
+   "Help Documentation",
+   "Help Document Navigation"
+  ],
+  [
+   "77",
+   "Manual",
+   "Manual-Specification"
+  ],
+  [
+   "80",
+   "common tools",
+   "Commonly Used Toolkit"
+  ],
+  [
+   "179",
+   "M20Hv LED light status definition",
+   "M20Ev LED light status definition"
+  ],
+  [
+   "182",
+   "Detailed definition of aviation header pins",
+   "Aviation Connector Pin‑out Definitions"
+  ],
+  [
+   "305",
+   "WEB configuration and installation of ADAS camera",
+   "Web-based configuration and installation of ADAS camera"
+  ],
+  [
+   "307",
+   "WEB configuration and installation of DSM camera",
+   "Web-based configuration and installation of DSM camera"
+  ],
+  [
+   "309",
+   "WEB configuration and installation of BSD camera",
+   "Web-based configuration and installation of BSD camera"
+  ],
+  [
+   "633",
+   "WiFi speichert bilder automatisch",
+   "WiFi Auto Download - System Block"
+  ],
+  [
+   "301",
+   "Server-Download the latest platform installation package",
+   "Server-Platform Data Installation Package Link"
+  ]
+ ],
+ "zh_videos": [],
+ "en_videos": []
+}
