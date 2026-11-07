@@ -21,6 +21,28 @@ const VIDEO_BASE = (process.env.VIDEO_BASE || 'https://media.mdvrfaq.com').repla
 const SITE_NAME = 'MDVR FAQ';
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 
+// ---------- IndexNow (Bing / Yandex / Seznam 即时收录) ----------
+// 固定 key：每次构建保持不变，否则搜索引擎记录的 key 会失效。
+const INDEXNOW_KEY = '8f2c1a9b3e4d5f6a7b8c9d0e1f2a3b4c';
+const INDEXNOW_HOST = 'mdvrfaq.com';
+
+// ---------- 标题 SEO 增强 ----------
+// 上游部分页标题极短（单字/双字，如「屏」「提示音」），SEO 工具判为 too short。
+// 策略：核心标题 <12 字符时，从分类名末级补上下文；分类为空则用站点定位兜底。
+// 仅影响 <title> 与 og:title（页面内 h1/面包屑保持原始短标题，配合上下文已可读）。
+function seoTitle(page) {
+  const base = (page.title || '').trim();
+  if (base.length >= 12) return base;            // 已足够描述性，不动
+  const name = (page.cat_name || '').trim();
+  const leaf = name.includes('--') ? name.split('--').pop().trim() : name;
+  if (leaf && leaf !== base && !base.includes(leaf)) {
+    return `${base} - ${leaf}`;
+  }
+  const isVideo = String(page.section || '').includes('video');
+  const pad = isVideo ? '车载录像机教学视频' : '车载录像机使用说明';
+  return `${base} - ${pad}`;
+}
+
 // ---------- Google Analytics (gtag.js) ----------
 // 在每个页面 <head> 之后注入，用于流量统计。GA_ID 即 Google 代码中的衡量 ID。
 const GA_ID = 'G-5T43SBNCLL';
@@ -751,12 +773,12 @@ function renderPage(page) {
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>${esc(page.title)} - ${SITE_NAME}</title>
+  <title>${esc(seoTitle(page))} - ${SITE_NAME}</title>
   <meta name="description" content="${esc(makeDesc(page.content))}">
   <link rel="canonical" href="${esc(canonical)}">
   ${alt.join('\n  ')}
   <meta property="og:type" content="article">
-  <meta property="og:title" content="${esc(page.title)}">
+  <meta property="og:title" content="${esc(seoTitle(page))}">
   <meta property="og:description" content="${esc(makeDesc(page.content))}">
   <meta property="og:url" content="${esc(canonical)}">
   <meta property="og:site_name" content="${SITE_NAME}">
@@ -1427,6 +1449,10 @@ for (const lang of ['en', 'zh']) for (const ty of ['host', 'camera', 'accessory'
 for (const b of PROD.KITS) llm += `- [${b.lang === 'zh' ? b.name : b.nameEn}](${SITE_URL}/products/bundle/${b.id}/)\n`;
 llm += '\n';
 writeFile('llms.txt', llm);
+
+// IndexNow 验证文件（内容即 key，供 Bing/Yandex/Seznam 校验所有权）
+writeFile(INDEXNOW_KEY + '.txt', INDEXNOW_KEY);
+console.log('   IndexNow 验证文件已写入: ' + INDEXNOW_KEY + '.txt');
 
 // _headers (Cloudflare Pages)
 const headers = `/assets/*
