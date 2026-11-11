@@ -9,7 +9,12 @@
   3. 两边都有的页面若标题变更 → 写回 page_<id>.json 的 page_title
   4. 打印摘要，供后续 download_media.py / webp_convert.py / build_data.py / build.js 使用
 
-用法: 在仓库根目录运行  python tools/sync_upstream.py
+用法:
+  python tools/sync_upstream.py                          # 菜单级同步：新增页 / 标题变更 / 刷新菜单文件
+  python tools/sync_upstream.py --check-content 683,684  # 正文级检查指定页：上游正文有更新则覆盖本地
+
+注意: 菜单级同步只能发现「新增页 / 标题变更」。上游若只优化正文而标题不变，
+必须用 --check-content 指定页 ID 才会比对正文（会还原本地 /fqa/server/ 规范化后逐字节比对）。
 """
 import json
 import os
@@ -55,7 +60,7 @@ def flatten_menu(menu):
     def walk(node, cat_id, cat_name):
         if node.get("page_id"):
             pages[str(node["page_id"])] = {
-                "title": node.get("page_title", ""),
+                "title": (node.get("page_title") or "").strip(),
                 "cat_id": cat_id,
                 "cat_name": cat_name,
             }
@@ -66,7 +71,7 @@ def flatten_menu(menu):
             cats[str(cid)] = cname
         for p in node.get("pages", []) or []:
             pages[str(p["page_id"])] = {
-                "title": p.get("page_title", ""),
+                "title": (p.get("page_title") or "").strip(),
                 "cat_id": cid,
                 "cat_name": cname,
             }
@@ -77,7 +82,66 @@ def flatten_menu(menu):
     return pages, cats
 
 
+def find_section(pid):
+    for sec, _item, _menu in SECTIONS:
+        if os.path.exists(os.path.join(DATA, sec, f"page_{pid}.json")):
+            return sec
+    return None
+
+
+def check_content_updates(ids):
+    """对指定页做正文级比对：上游正文与本地(还原规范化后)不同则覆盖本地。"""
+    changed, same = [], []
+    for pid in ids:
+        sec = find_section(pid)
+        if not sec:
+            print(f"   ! page {pid} 本地不存在，跳过")
+            continue
+        fp = os.path.join(DATA, sec, f"page_{pid}.json")
+        with open(fp, "r", encoding="utf-8") as f:
+            page = json.load(f)
+        pr = fetch_json(f"{BASE}/server/index.php?s=/api/page/info&page_id={pid}")
+        up = pr.get("data")
+        if not up or str(up.get("is_del", "0")) == "1":
+            print(f"   ! page {pid} 上游不可用或已删除，跳过")
+            continue
+        up_content = up.get("page_content", "") or ""
+        old_content = page.get("page_content", "") or ""
+        local_normalized = old_content.replace("/fqa/server/", "/server/").replace("attach ment", "attachment")
+        if local_normalized == up_content:
+            same.append(pid)
+            print(f"   = page {pid} 正文与上游逐字节一致（无更新）")
+            continue
+        # 用上游最新数据覆盖，保留本地 cat_name，并把附件 URL 统一到 /fqa/server/ 前缀
+        new = dict(up)
+        new["page_title"] = (new.get("page_title") or "").strip()
+        new["cat_name"] = page.get("cat_name", "")
+        new["page_content"] = SERVER_RE.sub(
+            r"\1/fqa/server/index.php?s=/api/attachment/visitFile", up_content
+        )
+        with open(fp, "w", encoding="utf-8") as f:
+            json.dump(new, f, ensure_ascii=False)
+        changed.append(pid)
+        print(f"   * page {pid} 正文已更新: {len(old_content)} -> {len(new['page_content'])} 字符 "
+              f"| addtime {page.get('addtime')} -> {up.get('addtime')}")
+        if page.get("page_title") != up.get("page_title"):
+            print(f"     标题同步: {page.get('page_title')!r} -> {up.get('page_title')!r}")
+    print(f"   正文检查摘要: 更新 {len(changed)} 页 {changed}, 一致 {len(same)} 页 {same}")
+    return changed
+
+
 def main():
+    args = sys.argv[1:]
+    if "--check-content" in args:
+        idx = args.index("--check-content")
+        ids = [x.strip() for x in args[idx + 1].split(",") if x.strip()] if idx + 1 < len(args) else []
+        if not ids:
+            print("用法: --check-content <id1,id2,...>")
+            return 1
+        print(f"== 正文级检查: {', '.join(ids)}")
+        check_content_updates(ids)
+        return 0
+
     added, renamed, skipped = [], [], []
     for sec, item_id, menu_file in SECTIONS:
         print(f"== {sec} (item {item_id})")
