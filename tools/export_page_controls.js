@@ -46,13 +46,59 @@ function startServer() {
   });
 }
 
-/** 在页面内提取「指定子页 section」的控件定义，避免抓到其它子页的隐藏 DOM。 */
-function collectInPage(subId) {
+/**
+ * 在页面内提取「指定子页 section」的控件定义，避免抓到其它子页的隐藏 DOM。
+ *
+ * 上游页面大量使用「表头列名 + 行头 + 分组标题」来表达重复参数：
+ *   · 串口页：行头 RS232 / RS485，列名 串口功能 / 波特率…
+ *   · 定时录像：行头 星期日 / 星期一，列名 时段1 开始…
+ *   · 808 平台：h4 「第一个 808 配置」「第二个 808 配置」
+ * 只取字段标签会得到一堆同名控件（8 个「串口功能」），所以这里把行头/分组一并带出，
+ * APP 端按 group 分小节渲染。
+ */
+function collectInPage(subId, isEn) {
   const sec = document.querySelector(`[data-sec="${subId}"]`);
   const root = sec || document.querySelector('#editor') || document;
   const out = [];
   const seen = new Set();
-  // [data-k] 才是真正的输入元素；[data-fk] 只是部分控件的标签包裹，不能作为抓取依据
+  // BSD 的分区没有标题，只有 data-bsdzone 标记
+  const BSD_ZONE = { f: '前盲区', l: '左盲区', r: '右盲区', b: '后盲区' };
+  const normRowHead = (t) => {
+    const m = /^TopicNum_(\d+)$/i.exec(t);
+    return m ? `主题 ${Number(m[1]) + 1}` : t;
+  };
+  const groupOf = (el) => {
+    const td = el.closest('td');
+    const tr = el.closest('tr');
+    const table = el.closest('table');
+    if (tr && table) {
+      const first = tr.children[0];
+      if (first && first !== td && !first.querySelector('[data-k]')) {
+        const t = (first.textContent || '').trim();
+        if (t) {
+          // 行头只有编号时（串口编号 1~5、通道 1~2），带上表头文字才看得懂
+          if (/^\d+$/.test(t)) {
+            const th0 = table.querySelector('thead th');
+            const cap = th0 ? (th0.textContent || '').trim() : '';
+            return cap ? `${cap} ${t}` : t;
+          }
+          return normRowHead(t);
+        }
+      }
+    }
+    let p = el.parentElement;
+    while (p && p !== sec) {
+      const h = p.querySelector(':scope > h4, :scope > legend, :scope > summary');
+      if (h) {
+        const t = (h.textContent || '').trim();
+        if (t) return t;
+      }
+      const zone = p.getAttribute && p.getAttribute('data-bsdzone');
+      if (zone) return BSD_ZONE[zone] || '';
+      p = p.parentElement;
+    }
+    return '';
+  };
   root.querySelectorAll('[data-k]').forEach(el => {
     const key = el.getAttribute('data-k');
     if (!key || seen.has(key)) return;
@@ -72,6 +118,10 @@ function collectInPage(subId) {
     const wrap = el.closest('[data-fk]') || el.parentElement;
     const lab = wrap ? wrap.querySelector('label,span') : null;
     if (lab && lab !== el) label = (lab.textContent || '').trim();
+    // <label class="inl-chk"><input data-k=…>开启xx</label>：标签就是包裹元素自身的文字
+    if (!label && wrap && wrap.tagName && wrap.tagName.toLowerCase() === 'label') {
+      label = (wrap.textContent || '').trim();
+    }
     if (!label) {
       const tr = el.closest('tr');
       const td = el.closest('td');
@@ -86,8 +136,49 @@ function collectInPage(subId) {
       if (prev && prev.children.length === 0) label = (prev.textContent || '').trim();
     }
     if (label.length > 40) label = label.slice(0, 40);
-    out.push({ key, kind, label, options });
+    // 上游输入框预填了设备默认值（数据位 8、停止位 1、各类阈值…），
+    // APP 需要把它当作「当前值」显示，否则用户看到的是空框，根本不知道默认是多少。
+    let dv = '';
+    if (tag === 'input' && el.type === 'checkbox') {
+      dv = el.checked ? '1' : '0';
+    } else if (tag === 'select' || tag === 'input' || tag === 'textarea') {
+      dv = el.value === undefined || el.value === null ? '' : String(el.value);
+      // 上游把默认值放在 placeholder 上（数据位 8、停止位 1…），value 是空的。
+      // 只接受短、纯 ASCII 的 placeholder，避免把「如 139.9.251.220」这类提示当成默认值。
+      const ph = el.getAttribute ? (el.getAttribute('placeholder') || '') : '';
+      if (!dv && ph && ph.length <= 12 && !/[\u4e00-\u9fa5\s]/.test(ph)) {
+        dv = ph;
+      }
+    }
+    out.push({ key, kind, label, options, dv, group: groupOf(el) });
   });
+  // 同一页里标签重名且没有分组的（如「录像保存天数」的开关与天数），给开关补一个后缀，
+  // 否则列表里会出现两个完全一样的行。
+  const count = new Map();
+  for (const c of out) count.set(c.label, (count.get(c.label) || 0) + 1);
+  for (const c of out) {
+    if (count.get(c.label) > 1 && !c.group && c.kind === 'toggle' && c.label) {
+      c.label = c.label + (isEn ? ' (switch)' : ' (开关)');
+    }
+  }
+  // 夏令时的 4 个「开始」「结束」下拉在 DOM 里没有行头/分组，只能靠字段名尾词区分
+  // （…FromMon / …FromDay / …FromWeekday / …FromHour）。把公共部分提成小节标题，
+  // 尾词翻成「月 / 日 / 星期 / 时」，列表才不会出现 4 行一模一样的「开始」。
+  const SUFFIX = {
+    Mon: ['月', 'Month'], Month: ['月', 'Month'], Day: ['日', 'Day'],
+    Weekday: ['星期', 'Weekday'], Hour: ['时', 'Hour'],
+    Min: ['分', 'Minute'], Minute: ['分', 'Minute'], Sec: ['秒', 'Second'],
+  };
+  for (const c of out) {
+    if (count.get(c.label) > 1 && !c.group) {
+      const tail = (c.key.split('_').pop() || '').match(/[A-Z][a-z]+$/);
+      const w = tail && SUFFIX[tail[0]];
+      if (w) {
+        c.group = c.label;
+        c.label = isEn ? w[1] : w[0];
+      }
+    }
+  }
   return out;
 }
 
@@ -162,8 +253,8 @@ async function main() {
           return false;
         }, mod.key, sub.id);
         if (!clicked) noButton++;
-        await new Promise(r => setTimeout(r, 90));
-        const controls = await page.evaluate(collectInPage, sub.id);
+        await new Promise(r => setTimeout(r, 180));
+        const controls = await page.evaluate(collectInPage, sub.id, EN);
         results.push({ module: mod.key, id: sub.id, title: sub.label, controls });
       }
     }
@@ -213,6 +304,7 @@ async function main() {
         // 全量覆盖：抓到 0 控件的页也要清空，避免多次运行累积出重复控件
         p.controls = hit ? hit.controls.map(c => ({
           key: c.key, label: c.label, labelEn: '', kind: c.kind, options: c.options,
+          dv: c.dv, group: c.group, groupEn: '',
         })) : [];
       } else {
         if (!hit || hit.controls.length === 0) continue;
@@ -222,6 +314,7 @@ async function main() {
           if (!en) continue;
           if (en.label) c.labelEn = en.label;
           if (en.options && en.options.length > 0) c.optionsEn = en.options;
+          if (en.group) c.groupEn = en.group;
         }
       }
     }

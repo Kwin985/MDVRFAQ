@@ -20,6 +20,15 @@ function main() {
   const idx = process.argv.indexOf('--out');
   const out = idx >= 0 ? process.argv[idx + 1] : DEFAULT_OUT;
   const schema = JSON.parse(fs.readFileSync(SRC, 'utf8'));
+
+  // ArkTS 不接受嵌套数组字面量（arkts-no-noninferrable-arr-literals），
+  // 把 nodeGroups 的 argOpts 从 [["0","CH1~CH2"]] 规范成 [{v:"0",l:"CH1~CH2"}] 对象数组。
+  // 只改 APP 侧的落盘形态，schema.json 本身保持原样供网页版使用。
+  for (const g of schema.nodeGroups || []) {
+    if (Array.isArray(g.argOpts)) {
+      g.argOpts = g.argOpts.map(p => (Array.isArray(p) ? { v: String(p[0]), l: String(p[1]) } : p));
+    }
+  }
   const controls = schema.pageFields.reduce((n, p) => n + p.controls.length, 0);
   const enLabels = schema.pageFields.reduce(
     (n, p) => n + p.controls.filter(c => c.labelEn).length, 0);
