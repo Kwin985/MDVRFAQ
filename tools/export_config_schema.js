@@ -152,12 +152,26 @@ function main() {
       for (const p of schema.pageFields) {
         const hit = enById.get(p.id);
         if (!hit) continue;
-        const enMap = new Map(hit.controls.map(c => [c.key, c.label]));
+        const enByKey = new Map(hit.controls.map(c => [c.key, c]));
         for (const c of p.controls) {
-          const en = enMap.get(c.key);
-          if (en) c.labelEn = en;
+          const en = enByKey.get(c.key);
+          if (!en) continue;
+          if (en.label) c.labelEn = en.label;
+          if (en.options && en.options.length > 0) c.optionsEn = en.options;
         }
       }
+    }
+    const navPath = path.join(dir, 'nav.en.json');
+    if (fs.existsSync(navPath)) {
+      const nav = JSON.parse(fs.readFileSync(navPath, 'utf8'));
+      for (const m of schema.modules) {
+        if (nav.modules[m.key]) m.labelEn = nav.modules[m.key];
+        for (const sub of m.subs) {
+          const v = nav.subs[m.key + '/' + sub.id];
+          if (v) sub.labelEn = v;
+        }
+      }
+      console.log('  已合并英文导航名');
     }
     console.log('  已合并 DOM 精化控件与双语标签');
   }

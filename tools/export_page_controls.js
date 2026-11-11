@@ -167,6 +167,42 @@ async function main() {
         results.push({ module: mod.key, id: sub.id, title: sub.label, controls });
       }
     }
+    // 英文运行：逐个展开模块，收集模块名与子页名的英文文案
+    const navPath = path.join(DIST, 'tools/config-gen/nav.en.json');
+    if (EN) {
+      const nav = await page.evaluate(() => {
+        const out = { modules: {}, subs: {} };
+        const modBtns = [...document.querySelectorAll('button[data-mod]:not([data-sub])')];
+        for (const mb of modBtns) {
+          const m = mb.getAttribute('data-mod');
+          const sp = mb.querySelector('span.flex-1') || mb.querySelector('span');
+          if (sp) out.modules[m] = (sp.textContent || '').trim();
+          mb.click();
+          document.querySelectorAll(`[data-mod="${m}"][data-sub]`).forEach(b => {
+            out.subs[m + '/' + b.getAttribute('data-sub')] = (b.textContent || '').trim();
+          });
+        }
+        return out;
+      });
+      fs.writeFileSync(navPath, JSON.stringify(nav, null, 1), 'utf8');
+      for (const m of schema.modules) {
+        if (nav.modules[m.key]) m.labelEn = nav.modules[m.key];
+        for (const sub of m.subs) {
+          const v = nav.subs[m.key + '/' + sub.id];
+          if (v) sub.labelEn = v;
+        }
+      }
+    } else if (fs.existsSync(navPath)) {
+      const nav = JSON.parse(fs.readFileSync(navPath, 'utf8'));
+      for (const m of schema.modules) {
+        if (nav.modules[m.key]) m.labelEn = nav.modules[m.key];
+        for (const sub of m.subs) {
+          const v = nav.subs[m.key + '/' + sub.id];
+          if (v) sub.labelEn = v;
+        }
+      }
+    }
+
     fs.writeFileSync(OUT, JSON.stringify(results, null, 1), 'utf8');
 
     // 中文运行：写回完整控件定义；英文运行：只补 labelEn，不动中文与其它字段
@@ -180,10 +216,12 @@ async function main() {
         })) : [];
       } else {
         if (!hit || hit.controls.length === 0) continue;
-        const enMap = new Map(hit.controls.map(c => [c.key, c.label]));
+        const enByKey = new Map(hit.controls.map(c => [c.key, c]));
         for (const c of p.controls) {
-          const en = enMap.get(c.key);
-          if (en) c.labelEn = en;
+          const en = enByKey.get(c.key);
+          if (!en) continue;
+          if (en.label) c.labelEn = en.label;
+          if (en.options && en.options.length > 0) c.optionsEn = en.options;
         }
       }
     }
