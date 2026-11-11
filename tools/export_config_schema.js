@@ -131,6 +131,36 @@ function main() {
     modules, pageFields,
     fieldMap, fieldAttrs, nodeGroups, calib, fields,
   };
+
+  // 保留 DOM 精化结果：export_page_controls.js 产出的控件定义与双语标签。
+  // 这样上游升级后单跑本脚本也不会退回「只有字段名」的初稿。
+  const dir = path.dirname(outPath);
+  const zhPath = path.join(dir, 'controls.json');
+  const enPath = path.join(dir, 'controls.en.json');
+  if (fs.existsSync(zhPath)) {
+    const byId = new Map(JSON.parse(fs.readFileSync(zhPath, 'utf8')).map(r => [r.id, r]));
+    for (const p of schema.pageFields) {
+      const hit = byId.get(p.id);
+      if (hit) {
+        p.controls = hit.controls.map(c => ({
+          key: c.key, label: c.label, labelEn: '', kind: c.kind, options: c.options,
+        }));
+      }
+    }
+    if (fs.existsSync(enPath)) {
+      const enById = new Map(JSON.parse(fs.readFileSync(enPath, 'utf8')).map(r => [r.id, r]));
+      for (const p of schema.pageFields) {
+        const hit = enById.get(p.id);
+        if (!hit) continue;
+        const enMap = new Map(hit.controls.map(c => [c.key, c.label]));
+        for (const c of p.controls) {
+          const en = enMap.get(c.key);
+          if (en) c.labelEn = en;
+        }
+      }
+    }
+    console.log('  已合并 DOM 精化控件与双语标签');
+  }
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(schema), 'utf8');
   console.log('导出:', outPath);
