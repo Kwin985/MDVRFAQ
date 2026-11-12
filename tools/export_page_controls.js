@@ -179,6 +179,83 @@ function collectInPage(subId, isEn) {
       }
     }
   }
+  // ---- 通道级「虚拟控件」----
+  // 上游有 5 个子页用的是 data-vt / data-mir / data-chnname / data-gbchn，
+  // 没有 data-k，所以上面的循环抓不到。这些控件在网页版里对应虚拟字段
+  // （__res_0、__mir_ud_0…），生成 XML 时展开成嵌套节点或位掩码：
+  //   __res_N      -> stMainStream/stVideoPara/VChn_N @ ucFD_Resolution
+  //   __fps_N      -> … @ ucFD_FrameRate        __br_N -> … @ uiFD_BitRate
+  //   __aud_N      -> … @ uiFD_DisableAudio     __vid_N -> … @ uiFD_DisableVideo（值反转）
+  //   __mir_ud_N   -> stVideoMirror/stVideoMirrorPara/VChn_N @ ucFD_UpDown
+  //   __mir_lr_N   -> … @ ucFD_LeftRight
+  //   __chnname_N  -> stChnOSD/stChnOSDPara/VChn_N @ strFD_ChnName
+  //   __gb_chn_N   -> stGB28181/stGB28181SubID/SUBDEVID_N @ strFD_LensId
+  //   __cam_N      -> stMainStream @ uiFD_VideoFmt（每通道 4bit 位掩码）
+  //   __pal_N      -> stMainStream @ uiFD_VideoMode（每通道 1bit 位掩码）
+  // 规则取自上游 mdvr-config.min.js 的 XML 生成段，已用真实输出逐条比对。
+  const VIRT = {
+    cam: { k: '__cam_', maskField: 'uiFD_VideoFmt', maskShift: 4, maskBits: 15, def: ['分辨率(摄像头)', 'Camera resolution'] },
+    enc: { k: '__res_', path: 'stMainStream/stVideoPara/VChn_', attr: 'ucFD_Resolution', def: ['分辨率(编码)', 'Encode resolution'] },
+    fps: { k: '__fps_', path: 'stMainStream/stVideoPara/VChn_', attr: 'ucFD_FrameRate', def: ['帧率', 'Frame rate'] },
+    br: { k: '__br_', path: 'stMainStream/stVideoPara/VChn_', attr: 'uiFD_BitRate', def: ['码率', 'Bitrate'] },
+    audio: { k: '__aud_', path: 'stMainStream/stVideoPara/VChn_', attr: 'uiFD_DisableAudio', invert: true, def: ['音频', 'Audio'] },
+    video: { k: '__vid_', path: 'stMainStream/stVideoPara/VChn_', attr: 'uiFD_DisableVideo', invert: true, def: ['视频', 'Video'] },
+    pal: { k: '__pal_', maskField: 'uiFD_VideoMode', maskShift: 1, maskBits: 1, def: ['通道制式', 'Channel format'] },
+    ud: { k: '__mir_ud_', path: 'stVideoMirror/stVideoMirrorPara/VChn_', attr: 'ucFD_UpDown', def: ['上下镜像', 'Flip vertical'] },
+    lr: { k: '__mir_lr_', path: 'stVideoMirror/stVideoMirrorPara/VChn_', attr: 'ucFD_LeftRight', def: ['左右镜像', 'Flip horizontal'] },
+    chnname: { k: '__chnname_', path: 'stChnOSD/stChnOSDPara/VChn_', attr: 'strFD_ChnName', def: ['通道名称', 'Channel name'] },
+    gbchn: { k: '__gb_chn_', path: 'stGB28181/stGB28181SubID/SUBDEVID_', attr: 'strFD_LensId', def: ['通道编码 ID', 'Channel device ID'] },
+  };
+  const virtualLabel = (el, def) => {
+    // 主码流表：列名在 td[data-label]；镜像表：行名在 tr 首格；其余用内置双语名
+    const td = el.closest('td');
+    const tr = el.closest('tr');
+    const col = td ? (td.getAttribute('data-label') || '').trim() : '';
+    const row = tr && tr.children[0] ? (tr.children[0].textContent || '').trim() : '';
+    if (col && !/^\d+$/.test(col) && !/^CH\d+$/.test(col)) return col.slice(0, 40);
+    if (row && !/^\d+$/.test(row) && !/^PAL|NTSC/.test(row)) return row.slice(0, 40);
+    return def[isEn ? 1 : 0];
+  };
+  root.querySelectorAll('[data-vt],[data-mir],[data-chnname],[data-gbchn]').forEach(el => {
+    const vt = el.getAttribute('data-vt');
+    const mir = el.getAttribute('data-mir');
+    const kind = vt || mir || (el.hasAttribute('data-chnname') ? 'chnname' : 'gbchn');
+    const spec = VIRT[kind];
+    if (!spec) return;
+    const ch = el.getAttribute('data-ch') || el.getAttribute('data-chnname') || el.getAttribute('data-gbchn');
+    if (ch === null || ch === undefined || !/^\d+$/.test(ch)) return;
+    const key = spec.k + ch;
+    if (seen.has(key)) return;
+    seen.add(key);
+    const tag = el.tagName ? el.tagName.toLowerCase() : 'input';
+    let ck = 'text';
+    let options = [];
+    let dv = '';
+    if (tag === 'select') {
+      ck = 'select';
+      options = [...el.options].map(o => ({ v: o.value, l: o.textContent.trim() }));
+      dv = el.value === undefined || el.value === null ? '' : String(el.value);
+    } else if (tag === 'input' && el.type === 'checkbox') {
+      ck = 'toggle';
+      dv = el.checked ? '1' : '0';
+    } else {
+      dv = el.value === undefined || el.value === null ? '' : String(el.value);
+    }
+    const c = {
+      key, kind: ck, label: virtualLabel(el, spec.def), options, dv,
+      group: '', groupEn: '', channel: Number(ch),
+    };
+    if (spec.path) {
+      c.xmlPath = spec.path + ch;
+      c.xmlAttr = spec.attr;
+      if (spec.invert) c.invert = true;
+    } else if (spec.maskField) {
+      c.maskField = spec.maskField;
+      c.maskShift = spec.maskShift * Number(ch);
+      c.maskBits = spec.maskBits;
+    }
+    out.push(c);
+  });
   return out;
 }
 
@@ -302,10 +379,20 @@ async function main() {
       const hit = byId.get(p.id);
       if (!EN) {
         // 全量覆盖：抓到 0 控件的页也要清空，避免多次运行累积出重复控件
-        p.controls = hit ? hit.controls.map(c => ({
-          key: c.key, label: c.label, labelEn: '', kind: c.kind, options: c.options,
-          dv: c.dv, group: c.group, groupEn: '',
-        })) : [];
+        p.controls = hit ? hit.controls.map(c => {
+          // 通道级虚拟控件带的 XML 映射元数据也要原样带到 APP（ArkTS 侧有对应可选字段）
+          const o = {
+            key: c.key, label: c.label, labelEn: '', kind: c.kind, options: c.options,
+            dv: c.dv, group: c.group, groupEn: '',
+          };
+          if (c.channel !== undefined) o.channel = c.channel;
+          if (c.xmlPath) { o.xmlPath = c.xmlPath; o.xmlAttr = c.xmlAttr; }
+          if (c.invert) o.invert = true;
+          if (c.maskField) {
+            o.maskField = c.maskField; o.maskShift = c.maskShift; o.maskBits = c.maskBits;
+          }
+          return o;
+        }) : [];
       } else {
         if (!hit || hit.controls.length === 0) continue;
         const enByKey = new Map(hit.controls.map(c => [c.key, c]));
